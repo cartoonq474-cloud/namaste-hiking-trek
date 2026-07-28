@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: "14 DAYS",
         tags: ["CLASSIC", "HIGH ALTITUDE", "TEAHOUSE"],
         name: "Everest Base Camp Trek",
+        slug: "everest-base-camp-trek",
         region: "Khumbu Region, Nepal",
         altitude: "5545 m",
         difficulty: "challenging",
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: "12 DAYS",
         tags: ["SCENIC", "PASS CROSSING", "LODGE"],
         name: "Annapurna Circuit Expedition",
+        slug: "annapurna-circuit-trek",
         region: "Annapurna Massif, Nepal",
         altitude: "5416 m",
         difficulty: "moderate",
@@ -37,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: "16 DAYS",
         tags: ["RESTRICTED", "REMOTE", "CULTURE"],
         name: "Manaslu Circuit & Larke Pass",
+        slug: "manaslu-circuit-trek",
         region: "Manaslu Conservation Area",
         altitude: "5106 m",
         difficulty: "challenging",
@@ -250,6 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="act-price-val">${pkg.price}</span>
               </div>
               <button class="btn-inquire-now open-inquiry-btn">Inquire Now</button>
+              ${pkg.slug ? `<a href="trek/${pkg.slug}/" class="btn-inquire-now" style="text-decoration:none; text-align:center;">View Itinerary</a>` : ''}
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@
 export const sampleTreks = [
   {
     id: "ebc-trek",
+    slug: "everest-base-camp-trek",
     title: "Everest Base Camp Trek",
     region: "everest",
     subregion: "Solukhumbu, Everest Region",
@@ -20,6 +21,7 @@ export const sampleTreks = [
   },
   {
     id: "abc-trek",
+    slug: "annapurna-base-camp",
     title: "Annapurna Base Camp Trek",
     region: "annapurna",
     subregion: "Gandaki, Annapurna Region",
@@ -35,6 +37,7 @@ export const sampleTreks = [
   },
   {
     id: "manaslu-circuit",
+    slug: "manaslu-circuit-trek",
     title: "Manaslu Circuit Trek",
     region: "manaslu",
     subregion: "Gorkha, Manaslu Region",
@@ -50,6 +53,7 @@ export const sampleTreks = [
   },
   {
     id: "mardi-himal",
+    slug: null,
     title: "Mardi Himal Ridge Trek",
     region: "annapurna",
     subregion: "Kaski, Annapurna Region",
@@ -65,6 +69,7 @@ export const sampleTreks = [
   },
   {
     id: "gokyo-lakes",
+    slug: "gokyo-lakes-and-cho-la-pass",
     title: "Gokyo Lakes & Cho La Pass Trek",
     region: "everest",
     subregion: "Solukhumbu, Everest Region",
@@ -80,6 +85,7 @@ export const sampleTreks = [
   },
   {
     id: "langtang-valley",
+    slug: "langtang-valley-trek",
     title: "Langtang Valley Trek",
     region: "langtang",
     subregion: "Rasuwa, Langtang Region",
@@ -153,6 +159,7 @@ export function initTrekFinder(containerId, treks = sampleTreks) {
             <button class="btn-inquire-orange open-inquiry-btn" data-trek-title="${t.title}" onclick="document.getElementById('inquiry-modal').classList.add('active'); document.body.style.overflow='hidden';">
               Inquire Now
             </button>
+            ${t.slug ? `<a href="trek/${t.slug}/" class="btn-inquire-orange" style="text-decoration:none; text-align:center;">View Itinerary</a>` : ''}
           </div>
 
         </div>
