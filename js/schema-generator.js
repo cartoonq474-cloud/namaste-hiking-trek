@@ -34,7 +34,7 @@ export function injectStructuredData() {
       },
       {
         "@type": "TouristTrip",
-        "@id": "https://namastehikingtrek.com/treks/everest-base-camp-trek/#trip",
+        "@id": "https://namastehikingtrek.com/trek/everest-base-camp-trek/#trip",
         "name": "Everest Base Camp Trek",
         "description": "14-day iconic teahouse trek through Sagarmatha National Park to Everest Base Camp (5,364m) and Kala Patthar (5,545m).",
         "touristType": ["Hikers", "Trekking Enthusiasts"],
