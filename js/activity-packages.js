@@ -22,11 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 142
       },
       {
-        image: "https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?auto=format&fit=crop&w=600&q=80",
+        image: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=600&q=80",
         duration: "12 DAYS",
         tags: ["SCENIC", "PASS CROSSING", "LODGE"],
         name: "Annapurna Circuit Expedition",
         slug: "annapurna-circuit-trek",
+        // Annapurna mountain image replacement
         region: "Annapurna Massif, Nepal",
         altitude: "5416 m",
         difficulty: "moderate",
@@ -150,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 34
       },
       {
-        image: "https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?auto=format&fit=crop&w=600&q=80",
+        image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80",
         duration: "2 DAYS",
         tags: ["NATIONAL PARK", "OVERNIGHT", "FLORA"],
         name: "Shivapuri Peak & Chisapani Hike",
@@ -176,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 118
       },
       {
-        image: "https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?auto=format&fit=crop&w=600&q=80",
+        image: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=600&q=80",
         duration: "1 DAY",
         tags: ["ANNAPURNA", "PANORAMA", "EXPRESS"],
         name: "Annapurna Base Camp Heli Sightseeing",

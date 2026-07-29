@@ -31,7 +31,7 @@ export const sampleTreks = [
     basePriceUSD: 980,
     summary: "Spectacular journey through rhododendron forests into the heart of Annapurna Sanctuary and natural Jhinu hot springs.",
     bestSeason: ["spring", "autumn", "winter"],
-    image: "https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=800&q=80",
     tags: ["HOT SPRINGS", "SANCTUARY", "POPULAR"],
     reviews: 98
   },

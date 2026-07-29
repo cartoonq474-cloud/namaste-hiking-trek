@@ -3141,21 +3141,27 @@ textarea {
   color: #10B981;
 }
 
-/* Right 3-Column Packages Grid */
+/* Right Flex-based Scrollable Packages Row */
 .act-packages-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 22px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 10px 4px 28px 4px;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
 }
 
-@media (max-width: 900px) {
-  .act-packages-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.act-packages-grid::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, Opera */
 }
 
 /* Package Card Base (Clean & Uncluttered Layout) */
 .act-package-card {
+  flex: 0 0 calc(33.333% - 15px);
+  min-width: 325px;
+  scroll-snap-align: start;
   background: #FFFFFF;
   border-radius: 28px;
   padding: 16px;
