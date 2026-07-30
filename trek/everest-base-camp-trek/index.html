@@ -108,7 +108,9 @@
           <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=1200&q=80" alt="Everest Base Camp Trek View">
           <!-- TripAdvisor Travelers' Choice Badge -->
           <div class="trek-gallery-badge">
-            <div class="trek-gallery-badge-icon">🦉</div>
+            <div class="trek-gallery-badge-icon" style="background: #00af87; display: flex; align-items: center; justify-content: center;">
+              <svg class="icon-svg icon-sm icon-svg-fill" style="stroke: none; fill: white;" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
             <div class="trek-gallery-badge-text">
               <span>Travelers' Choice</span>
               <span>Best of the Best 2026</span>
@@ -124,7 +126,7 @@
           <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80" alt="Trekkers walking in snow">
           <!-- See all photos button -->
           <button class="trek-gallery-see-all-btn">
-            <span>🖼️ See all photos</span>
+            <span><svg class="icon-svg icon-xs icon-margin-right" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>See all photos</span>
           </button>
         </div>
         <div class="trek-gallery-sub">
@@ -140,28 +142,36 @@
     <div class="container">
       <div class="trek-metrics-strip">
         <div class="trek-metric-card">
-          <div class="trek-metric-icon">⏱️</div>
+          <div class="trek-metric-icon">
+            <svg class="icon-svg icon-md icon-navy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
           <div class="trek-metric-info">
             <span class="trek-metric-label">Duration</span>
             <span class="trek-metric-value">14 Days / 13 Nights</span>
           </div>
         </div>
         <div class="trek-metric-card">
-          <div class="trek-metric-icon">⛰️</div>
+          <div class="trek-metric-icon">
+            <svg class="icon-svg icon-md icon-navy" viewBox="0 0 24 24"><path d="M4 22L12 2l8 20H4z"/><path d="M9 22l3-7 3 7H9z" fill="currentColor"/></svg>
+          </div>
           <div class="trek-metric-info">
             <span class="trek-metric-label">Max Altitude</span>
             <span class="trek-metric-value" data-altitude-m="5545">5,545 m</span>
           </div>
         </div>
         <div class="trek-metric-card">
-          <div class="trek-metric-icon">🥾</div>
+          <div class="trek-metric-icon">
+            <svg class="icon-svg icon-md icon-navy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          </div>
           <div class="trek-metric-info">
             <span class="trek-metric-label">Difficulty</span>
             <span class="trek-metric-value">Challenging</span>
           </div>
         </div>
         <div class="trek-metric-card">
-          <div class="trek-metric-icon">☀️</div>
+          <div class="trek-metric-icon">
+            <svg class="icon-svg icon-md icon-navy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </div>
           <div class="trek-metric-info">
             <span class="trek-metric-label">Best Season</span>
             <span class="trek-metric-value">Mar-May & Sep-Nov</span>
@@ -174,15 +184,33 @@
     <div class="trek-sub-nav">
       <div class="container">
         <div class="trek-sub-nav-list">
-          <button class="trek-sub-nav-btn active" data-tab="overview">📄 Overview</button>
-          <button class="trek-sub-nav-btn" data-tab="itinerary">🥾 Itinerary</button>
-          <button class="trek-sub-nav-btn" data-tab="includes">✅ Includes & Excludes</button>
-          <button class="trek-sub-nav-btn" data-tab="packing">🎒 Packing List</button>
-          <button class="trek-sub-nav-btn" data-tab="details">ℹ️ Trip Details</button>
-          <button class="trek-sub-nav-btn" data-tab="map">🗺️ Map</button>
-          <button class="trek-sub-nav-btn" data-tab="booking">📊 Booking</button>
-          <button class="trek-sub-nav-btn" data-tab="reviews">★ Reviews</button>
-          <button class="trek-sub-nav-btn" data-tab="faqs">❓ FAQs</button>
+          <button class="trek-sub-nav-btn active" data-tab="overview">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Overview
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="itinerary">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Itinerary
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="includes">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Includes & Excludes
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="packing">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>Packing List
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="details">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>Trip Details
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="map">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/></svg>Map
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="booking">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>Booking
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="reviews">
+            <svg class="icon-svg icon-sm icon-margin-right icon-svg-fill" style="fill: currentColor; stroke: none;" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>Reviews
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="faqs">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="12" r="10"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>FAQs
+          </button>
         </div>
       </div>
     </div>
@@ -207,27 +235,27 @@
             <h3 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--color-primary-navy);">Trek Highlights</h3>
             <div class="highlights-grid">
               <div class="highlight-row-item">
-                <span class="highlight-row-check">✔</span>
+                <svg class="icon-svg icon-sm icon-green icon-margin-right" style="flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
                 <span class="highlight-row-text">Stand on the Khumbu Glacier at Everest Base Camp (<span data-altitude-m="5364">5,364m</span>)</span>
               </div>
               <div class="highlight-row-item">
-                <span class="highlight-row-check">✔</span>
+                <svg class="icon-svg icon-sm icon-green icon-margin-right" style="flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
                 <span class="highlight-row-text">Climb Kala Patthar peak (<span data-altitude-m="5545">5,545m</span>) for golden sunrise views of Mt. Everest</span>
               </div>
               <div class="highlight-row-item">
-                <span class="highlight-row-check">✔</span>
+                <svg class="icon-svg icon-sm icon-green icon-margin-right" style="flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
                 <span class="highlight-row-text">Witness panoramic views of Ama Dablam, Lhotse, Nuptse, and Makalu</span>
               </div>
               <div class="highlight-row-item">
-                <span class="highlight-row-check">✔</span>
+                <svg class="icon-svg icon-sm icon-green icon-margin-right" style="flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
                 <span class="highlight-row-text">Experience Sherpa culture in Namche Bazaar and visit historic Tengboche Monastery</span>
               </div>
               <div class="highlight-row-item">
-                <span class="highlight-row-check">✔</span>
+                <svg class="icon-svg icon-sm icon-green icon-margin-right" style="flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
                 <span class="highlight-row-text">Take the thrilling flight to Lukla's Tenzing-Hillary Airport</span>
               </div>
               <div class="highlight-row-item">
-                <span class="highlight-row-check">✔</span>
+                <svg class="icon-svg icon-sm icon-green icon-margin-right" style="flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
                 <span class="highlight-row-text">Rest and enjoy local hospitality in high-altitude mountain teahouses</span>
               </div>
             </div>
