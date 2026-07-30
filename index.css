@@ -5924,6 +5924,11 @@ textarea {
   line-height: 1.6;
 }
 
+.faq-accordion-item.active .faq-toggle-icon-svg {
+  transform: rotate(180deg);
+  color: #10B981;
+}
+
 @media (max-width: 900px) {
   .about-hero-stats-row {
     grid-template-columns: repeat(2, 1fr);
