@@ -105,7 +105,7 @@ export function initTrekFinder(containerId, treks = sampleTreks) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  const isTreksPage = !!document.getElementById('filter-region');
+  const isTreksPage = window.location.pathname.includes('treks');
 
   const renderCards = (filtered) => {
     if (filtered.length === 0) {
