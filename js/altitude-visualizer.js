@@ -1,6 +1,4 @@
-/**
- * Interactive SVG Altitude Profile Visualizer Component
- */
+import { getCurrentUnit } from './i18n.js';
 
 const trekAltitudeProfiles = {
   "ebc": {
@@ -144,31 +142,45 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
   const data = trekAltitudeProfiles[trekKey] || trekAltitudeProfiles["ebc"];
   const points = data.points;
   
+  const unit = typeof getCurrentUnit === 'function' ? getCurrentUnit() : 'm';
+  const isFeet = unit === 'ft';
+  const unitLabel = isFeet ? 'ft' : 'm';
+
+  const convertAlt = (m) => isFeet ? Math.round(m * 3.28084) : m;
+
+  const convertedPoints = points.map(p => ({
+    ...p,
+    displayAlt: convertAlt(p.altitudeM)
+  }));
+
   const width = 800;
   const height = 240;
   const padding = 40;
 
-  const maxAlt = Math.max(...points.map(p => p.altitudeM)) + 400;
-  const minAlt = 500;
+  const maxAlt = Math.max(...convertedPoints.map(p => p.displayAlt)) + (isFeet ? 1200 : 400);
+  const minAlt = isFeet ? 1500 : 500;
 
-  const getX = (index) => padding + (index / (points.length - 1)) * (width - 2 * padding);
+  const getX = (index) => padding + (index / (convertedPoints.length - 1)) * (width - 2 * padding);
   const getY = (alt) => height - padding - ((alt - minAlt) / (maxAlt - minAlt)) * (height - 2 * padding);
 
-  const pathCoords = points.map((p, i) => `${getX(i)},${getY(p.altitudeM)}`).join(' L ');
-  const areaCoords = `M ${getX(0)},${height - padding} L ${pathCoords} L ${getX(points.length - 1)},${height - padding} Z`;
+  const pathCoords = convertedPoints.map((p, i) => `${getX(i)},${getY(p.displayAlt)}`).join(' L ');
+  const areaCoords = `M ${getX(0)},${height - padding} L ${pathCoords} L ${getX(convertedPoints.length - 1)},${height - padding} Z`;
+
+  const gridLine1Val = isFeet ? 6000 : 2000;
+  const gridLine2Val = isFeet ? 12000 : 4000;
 
   const svgHTML = `
     <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
       <h3 style="font-size: 1.1rem; color: var(--color-primary-navy);">${data.name} — Elevation Profile</h3>
       <select id="altitude-trek-selector" class="control-select" style="background: var(--color-neutral-100); color: var(--color-primary-navy); border-color: var(--color-neutral-300);">
-        <option value="ebc" ${trekKey === 'ebc' ? 'selected' : ''}>Everest Base Camp (5,545m)</option>
-        <option value="abc" ${trekKey === 'abc' ? 'selected' : ''}>Annapurna Base Camp (4,130m)</option>
-        <option value="annapurna_circuit" ${trekKey === 'annapurna_circuit' ? 'selected' : ''}>Annapurna Circuit (5,416m)</option>
-        <option value="manaslu" ${trekKey === 'manaslu' ? 'selected' : ''}>Manaslu Circuit (5,106m)</option>
-        <option value="langtang" ${trekKey === 'langtang' ? 'selected' : ''}>Langtang Valley (4,773m)</option>
-        <option value="poonhill" ${trekKey === 'poonhill' ? 'selected' : ''}>Ghorepani Poon Hill (3,210m)</option>
-        <option value="gokyo" ${trekKey === 'gokyo' ? 'selected' : ''}>Gokyo Lakes & Cho La Pass (5,420m)</option>
-        <option value="mustang" ${trekKey === 'mustang' ? 'selected' : ''}>Upper Mustang (3,840m)</option>
+        <option value="ebc" ${trekKey === 'ebc' ? 'selected' : ''}>Everest Base Camp (${isFeet ? '18,192ft' : '5,545m'})</option>
+        <option value="abc" ${trekKey === 'abc' ? 'selected' : ''}>Annapurna Base Camp (${isFeet ? '13,550ft' : '4,130m'})</option>
+        <option value="annapurna_circuit" ${trekKey === 'annapurna_circuit' ? 'selected' : ''}>Annapurna Circuit (${isFeet ? '17,769ft' : '5,416m'})</option>
+        <option value="manaslu" ${trekKey === 'manaslu' ? 'selected' : ''}>Manaslu Circuit (${isFeet ? '16,752ft' : '5,106m'})</option>
+        <option value="langtang" ${trekKey === 'langtang' ? 'selected' : ''}>Langtang Valley (${isFeet ? '15,659ft' : '4,773m'})</option>
+        <option value="poonhill" ${trekKey === 'poonhill' ? 'selected' : ''}>Ghorepani Poon Hill (${isFeet ? '10,531ft' : '3,210m'})</option>
+        <option value="gokyo" ${trekKey === 'gokyo' ? 'selected' : ''}>Gokyo Lakes & Cho La (${isFeet ? '17,782ft' : '5,420m'})</option>
+        <option value="mustang" ${trekKey === 'mustang' ? 'selected' : ''}>Upper Mustang (${isFeet ? '12,598ft' : '3,840m'})</option>
       </select>
     </div>
     <svg viewBox="0 0 ${width} ${height}" class="altitude-chart-svg">
@@ -179,19 +191,19 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
         </linearGradient>
       </defs>
       <!-- Background Grid -->
-      <line x1="${padding}" y1="${getY(2000)}" x2="${width - padding}" y2="${getY(2000)}" stroke="#E2E8F0" stroke-dasharray="4"/>
-      <line x1="${padding}" y1="${getY(4000)}" x2="${width - padding}" y2="${getY(4000)}" stroke="#E2E8F0" stroke-dasharray="4"/>
-      <text x="${padding - 5}" y="${getY(2000) + 4}" font-size="10" text-anchor="end" fill="#64748B">2000m</text>
-      <text x="${padding - 5}" y="${getY(4000) + 4}" font-size="10" text-anchor="end" fill="#64748B">4000m</text>
+      <line x1="${padding}" y1="${getY(gridLine1Val)}" x2="${width - padding}" y2="${getY(gridLine1Val)}" stroke="#E2E8F0" stroke-dasharray="4"/>
+      <line x1="${padding}" y1="${getY(gridLine2Val)}" x2="${width - padding}" y2="${getY(gridLine2Val)}" stroke="#E2E8F0" stroke-dasharray="4"/>
+      <text x="${padding - 5}" y="${getY(gridLine1Val) + 4}" font-size="10" text-anchor="end" fill="#64748B">${gridLine1Val.toLocaleString()} ${unitLabel}</text>
+      <text x="${padding - 5}" y="${getY(gridLine2Val) + 4}" font-size="10" text-anchor="end" fill="#64748B">${gridLine2Val.toLocaleString()} ${unitLabel}</text>
 
       <!-- Area & Line -->
       <path d="${areaCoords}" fill="url(#altitudeGradient)" />
       <path d="M ${pathCoords}" fill="none" stroke="#C85A17" stroke-width="3" stroke-linecap="round"/>
 
       <!-- Data Dots -->
-      ${points.map((p, i) => `
-        <circle cx="${getX(i)}" cy="${getY(p.altitudeM)}" r="5" fill="#0C2B4E" stroke="#FFFFFF" stroke-width="2"/>
-        <text x="${getX(i)}" y="${getY(p.altitudeM) - 10}" font-size="10" font-weight="bold" text-anchor="middle" fill="#0C2B4E" data-altitude-m="${p.altitudeM}">${p.altitudeM}m</text>
+      ${convertedPoints.map((p, i) => `
+        <circle cx="${getX(i)}" cy="${getY(p.displayAlt)}" r="5" fill="#0C2B4E" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="${getX(i)}" y="${getY(p.displayAlt) - 10}" font-size="10" font-weight="bold" text-anchor="middle" fill="#0C2B4E">${p.displayAlt.toLocaleString()} ${unitLabel}</text>
         <text x="${getX(i)}" y="${height - padding + 16}" font-size="9" text-anchor="middle" fill="#64748B">${p.spot.split(' ')[0]}</text>
       `).join('')}
     </svg>
@@ -206,6 +218,14 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const wrapper = document.getElementById('altitude-chart-wrapper');
+  if (wrapper) {
+    const key = wrapper.getAttribute('data-trek-key') || 'ebc';
+    renderAltitudeChart('altitude-chart-wrapper', key);
+  }
+});
+
+window.addEventListener('unitchange', () => {
   const wrapper = document.getElementById('altitude-chart-wrapper');
   if (wrapper) {
     const key = wrapper.getAttribute('data-trek-key') || 'ebc';

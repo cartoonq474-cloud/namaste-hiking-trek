@@ -254,7 +254,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="act-price-val">${pkg.price}</span>
               </div>
               <button class="btn-inquire-now open-inquiry-btn">Inquire Now</button>
-              ${pkg.slug ? `<a href="trek/${pkg.slug}/" class="btn-inquire-now" style="text-decoration:none; text-align:center;">View Itinerary</a>` : ''}
             </div>
           </div>
         </div>

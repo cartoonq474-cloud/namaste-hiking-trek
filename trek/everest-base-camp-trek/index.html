@@ -92,113 +92,425 @@
   </header>
 
   <main>
-    <!-- Trek Detail Hero -->
-    <section style="background: linear-gradient(rgba(7, 29, 54, 0.75), rgba(7, 29, 54, 0.9)), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; color: white; padding: 60px 0 80px 0;">
+    <!-- Page Title Section -->
+    <section style="padding: 30px 0 10px 0; background: var(--color-neutral-50);">
       <div class="container">
-        <span class="pill pill-copper">Everest Region • Classic Himalayan Expedition</span>
-        <h1 style="font-size: 3rem; color: white; margin-top: 12px; margin-bottom: 16px;">Everest Base Camp Trek</h1>
-        <div style="display: flex; gap: 24px; flex-wrap: wrap; align-items: center; font-size: 1.05rem; color: var(--color-neutral-300);">
-          <span>⏱️ <strong>Duration:</strong> 14 Days / 13 Nights</span>
-          <span>⛰️ <strong>Max Altitude:</strong> 5,545 m (Kala Patthar)</span>
-          <span>🥾 <strong>Difficulty:</strong> Challenging</span>
-          <span>☀️ <strong>Best Season:</strong> Mar-May & Sep-Nov</span>
-        </div>
+        <span class="pill pill-copper" style="margin-bottom: 8px;">Everest Region • Classic Himalayan Expedition</span>
+        <h1 style="font-size: 2.8rem; margin-top: 6px; margin-bottom: 8px; color: var(--color-primary-navy);">Everest Base Camp Trek</h1>
       </div>
     </section>
 
-    <!-- Main Content Layout with Sticky Booking Sidebar -->
-    <section class="section-padding">
-      <div class="container" style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 40px;">
-        
-        <!-- Main Details Column -->
-        <div>
-          <!-- Trek Overview -->
-          <div style="margin-bottom: 40px;">
-            <h2 class="section-title" style="font-size: 1.8rem;">Trek Overview</h2>
-            <p style="color: var(--color-neutral-700); font-size: 1.05rem; margin-bottom: 16px;">The 14-day Everest Base Camp Trek is the ultimate bucket-list adventure in the Nepalese Himalayas. Beginning with a scenic mountain flight to Lukla, the route follows the historic footprints of Sir Edmund Hillary and Tenzing Norgay Sherpa along the Dudh Koshi river.</p>
-            <p style="color: var(--color-neutral-700); font-size: 1.05rem; margin-bottom: 16px;">Highlight features include acclimatization days in Namche Bazaar, visiting Tengboche Monastery under the shadow of Ama Dablam, standing on Khumbu Glacier at Everest Base Camp (5,364m), and watching the sunrise over Mt. Everest from Kala Patthar (5,545m).</p>
-
-          </div>
-
-          <!-- Interactive Altitude Profile Graph Hook -->
-          <div style="background: white; padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-md); margin-bottom: 40px;">
-            <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Altitude & Elevation Profile</h3>
-            <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 20px;">
-              Interactive elevation map showing daily gain and acclimatization stopping points. Switch units above to view in meters or feet.
-            </p>
-            <div id="altitude-chart-wrapper" data-trek-key="ebc"></div>
-          </div>
-
-          <!-- Day by Day Itinerary Breakdown -->
-          <div style="margin-bottom: 40px;">
-            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 24px;">Day-by-Day Itinerary</h2>
-            
-            <div style="display: flex; flex-direction: column; gap: 16px;">
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 01: Arrival in Kathmandu & Trek Briefing</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Welcome to Tribhuvan International Airport. Transfer to hotel in Thamel, gear check, and team introduction. (Altitude: 1,400m)
-                </p>
-              </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 02: Scenic Flight to Lukla (2,860m) & Trek to Phakding (2,610m)</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  35-minute mountain flight to Lukla's Tenzing-Hillary Airport. 3-4 hours gentle downhill hike through Sherpa hamlets to Phakding.
-                </p>
-              </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 03: Phakding to Namche Bazaar (3,440m)</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Cross 5 iconic suspension bridges including Hillary Suspension Bridge. Final steep uphill climb into the vibrant Sherpa hub of Namche.
-                </p>
-              </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 04: Acclimatization Day in Namche (Hike to Everest View Hotel - 3,880m)</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Essential acclimatization day. Hike to Syangboche and Everest View Hotel for first panorama of Everest, Lhotse, and Ama Dablam.
-                </p>
-              </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 05: Namche Bazaar to Tengboche (3,867m)</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Descend to Imja Khola river before climbing through rhododendron forests to Tengboche Monastery, the spiritual center of Khumbu.
-                </p>
-              </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 06-08: Dingboche to Lobuche & Everest Base Camp Summit (5,364m)</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Trek past Himalayan memorials at Thokla Pass to Gorak Shep. Reach Everest Base Camp on Day 8 and witness the Khumbu Icefall.
-                </p>
-              </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 09: Sunrise Summit of Kala Patthar (5,545m) & Descend to Pheriche</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Early morning climb to Kala Patthar viewpoint for unhindered sunrise over Mt. Everest. Descend back towards Pheriche.
-                </p>
-              </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 10-14: Return Trek to Lukla & Flight to Kathmandu</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Descend through Namche Bazaar back to Lukla for celebratory dinner. Morning flight back to Kathmandu and farewell celebration.
-                </p>
-              </div>
+    <!-- Multi-Image Collage Gallery -->
+    <div class="container" style="margin-bottom: 24px;">
+      <div class="trek-gallery-collage">
+        <!-- Main Large Photo (Left) with Travelers' Choice badge -->
+        <div class="trek-gallery-main">
+          <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=1200&q=80" alt="Everest Base Camp Trek View">
+          <!-- TripAdvisor Travelers' Choice Badge -->
+          <div class="trek-gallery-badge">
+            <div class="trek-gallery-badge-icon">🦉</div>
+            <div class="trek-gallery-badge-text">
+              <span>Travelers' Choice</span>
+              <span>Best of the Best 2026</span>
             </div>
           </div>
+        </div>
+        
+        <!-- Grid Items (Right 2x2 Columns) -->
+        <div class="trek-gallery-sub">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80" alt="Himalayan Valley">
+        </div>
+        <div class="trek-gallery-sub trek-gallery-sub-top-right">
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80" alt="Trekkers walking in snow">
+          <!-- See all photos button -->
+          <button class="trek-gallery-see-all-btn">
+            <span>🖼️ See all photos</span>
+          </button>
+        </div>
+        <div class="trek-gallery-sub">
+          <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80" alt="Himalayan Peak">
+        </div>
+        <div class="trek-gallery-sub trek-gallery-sub-bottom-right">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Himalayan Range">
+        </div>
+      </div>
+    </div>
 
-          <!-- Included vs Excluded -->
-          <div style="background: white; padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
-            <h2 class="section-title" style="font-size: 1.6rem; margin-bottom: 20px;">What's Included & Excluded</h2>
+    <!-- Quick Metrics Strip -->
+    <div class="container">
+      <div class="trek-metrics-strip">
+        <div class="trek-metric-card">
+          <div class="trek-metric-icon">⏱️</div>
+          <div class="trek-metric-info">
+            <span class="trek-metric-label">Duration</span>
+            <span class="trek-metric-value">14 Days / 13 Nights</span>
+          </div>
+        </div>
+        <div class="trek-metric-card">
+          <div class="trek-metric-icon">⛰️</div>
+          <div class="trek-metric-info">
+            <span class="trek-metric-label">Max Altitude</span>
+            <span class="trek-metric-value" data-altitude-m="5545">5,545 m</span>
+          </div>
+        </div>
+        <div class="trek-metric-card">
+          <div class="trek-metric-icon">🥾</div>
+          <div class="trek-metric-info">
+            <span class="trek-metric-label">Difficulty</span>
+            <span class="trek-metric-value">Challenging</span>
+          </div>
+        </div>
+        <div class="trek-metric-card">
+          <div class="trek-metric-icon">☀️</div>
+          <div class="trek-metric-info">
+            <span class="trek-metric-label">Best Season</span>
+            <span class="trek-metric-value">Mar-May & Sep-Nov</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Scroll-Spy Sub-Navigation Bar -->
+    <div class="trek-sub-nav">
+      <div class="container">
+        <div class="trek-sub-nav-list">
+          <button class="trek-sub-nav-btn active" data-tab="overview">📄 Overview</button>
+          <button class="trek-sub-nav-btn" data-tab="itinerary">🥾 Itinerary</button>
+          <button class="trek-sub-nav-btn" data-tab="includes">✅ Includes & Excludes</button>
+          <button class="trek-sub-nav-btn" data-tab="packing">🎒 Packing List</button>
+          <button class="trek-sub-nav-btn" data-tab="details">ℹ️ Trip Details</button>
+          <button class="trek-sub-nav-btn" data-tab="map">🗺️ Map</button>
+          <button class="trek-sub-nav-btn" data-tab="booking">📊 Booking</button>
+          <button class="trek-sub-nav-btn" data-tab="reviews">★ Reviews</button>
+          <button class="trek-sub-nav-btn" data-tab="faqs">❓ FAQs</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Layout with Sticky Booking Sidebar -->
+    <section class="section-padding" style="padding-top: 10px;" data-trek-details-wrapper data-trek-key="ebc">
+      <div class="container" style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 40px;">
+        
+        <!-- Main Details Column (Sequential Sections) -->
+        <div>
+          
+          <!-- Section 1: Overview -->
+          <section id="section-overview" class="trek-detail-section">
+            <h2 class="trek-section-title">Trek Overview</h2>
+            <p style="color: var(--color-neutral-700); font-size: 1.05rem; margin-bottom: 16px; line-height: 1.7;">
+              The 14-day Everest Base Camp Trek is the ultimate bucket-list adventure in the Nepalese Himalayas. Beginning with a scenic mountain flight to Lukla, the route follows the historic footprints of Sir Edmund Hillary and Tenzing Norgay Sherpa along the Dudh Koshi river.
+            </p>
+            <p style="color: var(--color-neutral-700); font-size: 1.05rem; margin-bottom: 24px; line-height: 1.7;">
+              Highlight features include acclimatization days in Namche Bazaar, visiting Tengboche Monastery under the shadow of Ama Dablam, standing on Khumbu Glacier at Everest Base Camp (<span data-altitude-m="5364">5,364m</span>), and watching the sunrise over Mt. Everest from Kala Patthar (<span data-altitude-m="5545">5,545m</span>).
+            </p>
+            
+            <h3 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--color-primary-navy);">Trek Highlights</h3>
+            <div class="highlights-grid">
+              <div class="highlight-row-item">
+                <span class="highlight-row-check">✔</span>
+                <span class="highlight-row-text">Stand on the Khumbu Glacier at Everest Base Camp (<span data-altitude-m="5364">5,364m</span>)</span>
+              </div>
+              <div class="highlight-row-item">
+                <span class="highlight-row-check">✔</span>
+                <span class="highlight-row-text">Climb Kala Patthar peak (<span data-altitude-m="5545">5,545m</span>) for golden sunrise views of Mt. Everest</span>
+              </div>
+              <div class="highlight-row-item">
+                <span class="highlight-row-check">✔</span>
+                <span class="highlight-row-text">Witness panoramic views of Ama Dablam, Lhotse, Nuptse, and Makalu</span>
+              </div>
+              <div class="highlight-row-item">
+                <span class="highlight-row-check">✔</span>
+                <span class="highlight-row-text">Experience Sherpa culture in Namche Bazaar and visit historic Tengboche Monastery</span>
+              </div>
+              <div class="highlight-row-item">
+                <span class="highlight-row-check">✔</span>
+                <span class="highlight-row-text">Take the thrilling flight to Lukla's Tenzing-Hillary Airport</span>
+              </div>
+              <div class="highlight-row-item">
+                <span class="highlight-row-check">✔</span>
+                <span class="highlight-row-text">Rest and enjoy local hospitality in high-altitude mountain teahouses</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 2: Itinerary -->
+          <section id="section-itinerary" class="trek-detail-section">
+            <h2 class="trek-section-title">Day-by-Day Itinerary</h2>
+            
+            <div class="itinerary-timeline">
+              <div class="itinerary-card active">
+                <div class="itinerary-header">
+                  <div class="itinerary-header-left">
+                    <span class="itinerary-day-num">Day 01</span>
+                    <h4 class="itinerary-day-title">Arrival in Kathmandu & Trek Briefing</h4>
+                  </div>
+                  <div class="itinerary-header-right">
+                    <span class="itinerary-meta-pill">📍 Kathmandu</span>
+                    <span class="itinerary-meta-pill" data-altitude-m="1400">1,400 m</span>
+                    <span class="itinerary-toggle-icon">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="max-height: 500px;">
+                  <div class="itinerary-content-inner">
+                    Welcome to Tribhuvan International Airport in Kathmandu! A representative from Namaste Hiking Trek will meet you and transfer you to your hotel in Thamel. In the evening, we hold a comprehensive trek briefing, introduce your Sherpa guide, check your trekking gear, and enjoy a warm welcome dinner.
+                    <div class="itinerary-details-grid">
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Overnight</span>
+                        <span class="itinerary-detail-value">3★ Hotel in Kathmandu</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Meals</span>
+                        <span class="itinerary-detail-value">Welcome Dinner (D)</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Altitude</span>
+                        <span class="itinerary-detail-value" data-altitude-m="1400">1,400 m</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="itinerary-card">
+                <div class="itinerary-header">
+                  <div class="itinerary-header-left">
+                    <span class="itinerary-day-num">Day 02</span>
+                    <h4 class="itinerary-day-title">Scenic Flight to Lukla & Hike to Phakding</h4>
+                  </div>
+                  <div class="itinerary-header-right">
+                    <span class="itinerary-meta-pill">⏱️ 3-4 Hrs</span>
+                    <span class="itinerary-meta-pill" data-altitude-m="2610">2,610 m</span>
+                    <span class="itinerary-toggle-icon">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content">
+                  <div class="itinerary-content-inner">
+                    Early morning transfer to airport for the spectacular 35-minute mountain flight to Lukla (<span data-altitude-m="2860">2,860m</span>). After organizing our gear and meeting our porters, we begin trekking downhill along the Dudh Koshi River valley, passing small Sherpa farms and hand-carved mani stones to reach Phakding.
+                    <div class="itinerary-details-grid">
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Distance</span>
+                        <span class="itinerary-detail-value">8 km / 5 miles</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Meals</span>
+                        <span class="itinerary-detail-value">B, L, D</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Overnight</span>
+                        <span class="itinerary-detail-value">Teahouse Lodge in Phakding</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="itinerary-card">
+                <div class="itinerary-header">
+                  <div class="itinerary-header-left">
+                    <span class="itinerary-day-num">Day 03</span>
+                    <h4 class="itinerary-day-title">Phakding to Namche Bazaar</h4>
+                  </div>
+                  <div class="itinerary-header-right">
+                    <span class="itinerary-meta-pill">⏱️ 5-6 Hrs</span>
+                    <span class="itinerary-meta-pill" data-altitude-m="3440">3,440 m</span>
+                    <span class="itinerary-toggle-icon">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content">
+                  <div class="itinerary-content-inner">
+                    We trek through pine forests along the Dudh Koshi, crossing five suspension bridges (including the high Hillary Suspension Bridge). We enter the Sagarmatha National Park at Monjo, then face a final, challenging steep uphill climb to Namche Bazaar, the historical capital of the Khumbu region.
+                    <div class="itinerary-details-grid">
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Distance</span>
+                        <span class="itinerary-detail-value">11 km / 6.8 miles</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Meals</span>
+                        <span class="itinerary-detail-value">B, L, D</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Elevation Gain</span>
+                        <span class="itinerary-detail-value">+830 m</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="itinerary-card">
+                <div class="itinerary-header">
+                  <div class="itinerary-header-left">
+                    <span class="itinerary-day-num">Day 04</span>
+                    <h4 class="itinerary-day-title">Acclimatization in Namche Bazaar</h4>
+                  </div>
+                  <div class="itinerary-header-right">
+                    <span class="itinerary-meta-pill">📍 Acclimatization</span>
+                    <span class="itinerary-meta-pill" data-altitude-m="3440">3,440 m</span>
+                    <span class="itinerary-toggle-icon">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content">
+                  <div class="itinerary-content-inner">
+                    An essential rest day to acclimatize to high altitude. We take a scenic morning day-hike to Syangboche and the famous Everest View Hotel (<span data-altitude-m="3880">3,880m</span>) for a stunning panoramic view of Everest, Lhotse, Ama Dablam, and Thamserku before returning to Namche for coffee and exploration.
+                    <div class="itinerary-details-grid">
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Hike Duration</span>
+                        <span class="itinerary-detail-value">3-4 hours</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Target Max Alt</span>
+                        <span class="itinerary-detail-value" data-altitude-m="3880">3,880 m</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Meals</span>
+                        <span class="itinerary-detail-value">B, L, D</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="itinerary-card">
+                <div class="itinerary-header">
+                  <div class="itinerary-header-left">
+                    <span class="itinerary-day-num">Day 05</span>
+                    <h4 class="itinerary-day-title">Namche Bazaar to Tengboche</h4>
+                  </div>
+                  <div class="itinerary-header-right">
+                    <span class="itinerary-meta-pill">⏱️ 5-6 Hrs</span>
+                    <span class="itinerary-meta-pill" data-altitude-m="3867">3,867 m</span>
+                    <span class="itinerary-toggle-icon">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content">
+                  <div class="itinerary-content-inner">
+                    We trek on a winding scenic trail with views of Everest and Ama Dablam, descending to Phunki Thenga for lunch. From there, we climb steeply through rhododendron forests to Tengboche, home to the largest Buddhist monastery in the Khumbu region, offering unmatched mountain views.
+                    <div class="itinerary-details-grid">
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Distance</span>
+                        <span class="itinerary-detail-value">9.5 km / 6 miles</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Overnight</span>
+                        <span class="itinerary-detail-value">Teahouse Lodge in Tengboche</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Meals</span>
+                        <span class="itinerary-detail-value">B, L, D</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="itinerary-card">
+                <div class="itinerary-header">
+                  <div class="itinerary-header-left">
+                    <span class="itinerary-day-num">Day 06-08</span>
+                    <h4 class="itinerary-day-title">Trek to Dingboche, Lobuche & Everest Base Camp</h4>
+                  </div>
+                  <div class="itinerary-header-right">
+                    <span class="itinerary-meta-pill">⛰️ Summit EBC</span>
+                    <span class="itinerary-meta-pill" data-altitude-m="5364">5,364 m</span>
+                    <span class="itinerary-toggle-icon">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content">
+                  <div class="itinerary-content-inner">
+                    We trek past the timberline to Dingboche (<span data-altitude-m="4410">4,410m</span>) for a second rest day, then continue via Thokla Pass memorials to Lobuche (<span data-altitude-m="4940">4,940m</span>). On Day 8, we trek along the lateral moraine of Khumbu Glacier to Gorak Shep, drop our heavy packs, and hike to Everest Base Camp (<span data-altitude-m="5364">5,364m</span>) under the massive Khumbu Icefall.
+                    <div class="itinerary-details-grid">
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Key Milestones</span>
+                        <span class="itinerary-detail-value">Thokla Pass, EBC Landmark</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Acclimatization</span>
+                        <span class="itinerary-detail-value">Dingboche (Day 07)</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Meals</span>
+                        <span class="itinerary-detail-value">B, L, D</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="itinerary-card">
+                <div class="itinerary-header">
+                  <div class="itinerary-header-left">
+                    <span class="itinerary-day-num">Day 09</span>
+                    <h4 class="itinerary-day-title">Sunrise Kala Patthar Summit & Descend to Pheriche</h4>
+                  </div>
+                  <div class="itinerary-header-right">
+                    <span class="itinerary-meta-pill">⏱️ 6-7 Hrs</span>
+                    <span class="itinerary-meta-pill" data-altitude-m="5545">5,545 m</span>
+                    <span class="itinerary-toggle-icon">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content">
+                  <div class="itinerary-content-inner">
+                    A pre-dawn, chilly climb to Kala Patthar summit (<span data-altitude-m="5545">5,545m</span>), the highest point of our journey. This spot provides the absolute best view of Mt. Everest, Nuptse, and Lhotse bathed in golden sunrise. We return to Gorak Shep for hot breakfast, and descend down to Pheriche.
+                    <div class="itinerary-details-grid">
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Max Altitude</span>
+                        <span class="itinerary-detail-value" data-altitude-m="5545">5,545 m / 18,192 ft</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Descend to</span>
+                        <span class="itinerary-detail-value" data-altitude-m="4370">4,370 m (Pheriche)</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Meals</span>
+                        <span class="itinerary-detail-value">B, L, D</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="itinerary-card">
+                <div class="itinerary-header">
+                  <div class="itinerary-header-left">
+                    <span class="itinerary-day-num">Day 10-14</span>
+                    <h4 class="itinerary-day-title">Return Trek to Lukla & Flight to Kathmandu</h4>
+                  </div>
+                  <div class="itinerary-header-right">
+                    <span class="itinerary-meta-pill">⏱️ 4 Days</span>
+                    <span class="itinerary-meta-pill" data-altitude-m="1400">1,400 m</span>
+                    <span class="itinerary-toggle-icon">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content">
+                  <div class="itinerary-content-inner">
+                    We retrace our route back through Tengboche and Namche Bazaar, celebrating our successful expedition with our team of Sherpas and porters in Lukla on Day 13. On Day 14, we take an early morning scenic flight back to Kathmandu for leisure, shopping, and a farewell celebration dinner.
+                    <div class="itinerary-details-grid">
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Finish Point</span>
+                        <span class="itinerary-detail-value">Kathmandu</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Trek Celebration</span>
+                        <span class="itinerary-detail-value">Lukla (Day 13)</span>
+                      </div>
+                      <div class="itinerary-detail-block">
+                        <span class="itinerary-detail-label">Meals</span>
+                        <span class="itinerary-detail-value">B, L, D</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 3: Includes and Excludes -->
+          <section id="section-includes" class="trek-detail-section">
+            <h2 class="trek-section-title">What's Included & Excluded</h2>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
-              <div>
-                <h4 style="color: #10B981; margin-bottom: 12px;">✅ Included Services</h4>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
+              <div style="background: white; padding: 24px; border-radius: var(--radius-md); border: 1px solid rgba(16, 185, 129, 0.2); box-shadow: var(--shadow-sm);">
+                <h4 style="color: #10B981; margin-bottom: 12px; font-size: 1.15rem;">✅ Included Services</h4>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; color: var(--color-neutral-700);">
                   <li>✔ Roundtrip flight tickets Kathmandu ⇄ Lukla</li>
                   <li>✔ Government Licensed English-Speaking Sherpa Guide</li>
                   <li>✔ Porters (1 porter for 2 trekkers, max 20kg per duo)</li>
@@ -206,45 +518,341 @@
                   <li>✔ 3 Meals daily (Breakfast, Lunch, Dinner) during trek</li>
                   <li>✔ Teahouse lodge accommodation along route</li>
                   <li>✔ Medical kit & Pulse oximeter oxygen check daily</li>
+                  <li>✔ Welcome and farewell dinners in Kathmandu</li>
+                  <li>✔ Airport pick-up and drop-off transfers</li>
                 </ul>
               </div>
-              <div>
-                <h4 style="color: #EF4444; margin-bottom: 12px;">❌ Excluded Services</h4>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
-                  <li>✖ International flights & Nepal entry visa ($50)</li>
-                  <li>✖ High-altitude emergency travel insurance</li>
+              <div style="background: white; padding: 24px; border-radius: var(--radius-md); border: 1px solid rgba(239, 68, 68, 0.2); box-shadow: var(--shadow-sm);">
+                <h4 style="color: #EF4444; margin-bottom: 12px; font-size: 1.15rem;">❌ Excluded Services</h4>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; color: var(--color-neutral-700);">
+                  <li>✖ International flights & Nepal entry visa ($50 USD cash)</li>
+                  <li>✖ High-altitude emergency travel insurance (Must cover up to 6,000m & heli rescue)</li>
                   <li>✖ Hot shower & Wi-Fi fees in mountain lodges</li>
-                  <li>✖ Personal trekking gear (down jacket, sleeping bag)</li>
-                  <li>✖ Tipping for guides and porters</li>
+                  <li>✖ Personal trekking gear (down jacket, sleeping bag, trekking poles)</li>
+                  <li>✖ Tipping for guides and porters (voluntary)</li>
+                  <li>✖ Alcoholic beverages, mineral water, soft drinks</li>
+                  <li>✖ Personal items, laundry, phone calls</li>
                 </ul>
               </div>
             </div>
-          </div>
+          </section>
+
+          <!-- Section 4: Packing List -->
+          <section id="section-packing" class="trek-detail-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+              <h2 class="trek-section-title" style="margin-bottom: 0;">Required Packing Checklist</h2>
+              <div class="itinerary-meta-pill" style="font-size: 0.9rem; padding: 6px 14px; background: var(--color-glacier-bg); border-color: var(--color-alpine-blue); color: var(--color-primary-navy);">
+                Packed: <strong><span class="gear-checked-count">0</span> / <span class="gear-total-count">0</span></strong>
+              </div>
+            </div>
+            
+            <p style="color: var(--color-neutral-600); font-size: 0.95rem; margin-bottom: 24px;">
+              Check off items as you pack them. Your state is saved automatically in your browser!
+            </p>
+
+            <div class="gear-section">
+              <h3 class="gear-section-title">Clothing & Layers</h3>
+              <div class="gear-grid">
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-thermal" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Thermal Underwear</span>
+                  <span class="gear-item-desc">2-3 pairs, synthetic/merino</span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-fleece" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Fleece Jacket or Pullover</span>
+                  <span class="gear-item-desc">Mid-layer warmth</span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-shell" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Waterproof Shell Jacket</span>
+                  <span class="gear-item-desc">Gore-Tex or breathable windbreaker</span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-down" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Heavy Down Jacket</span>
+                  <span class="gear-item-desc">Crucial for temperatures below -10°C</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="gear-section">
+              <h3 class="gear-section-title">Footwear</h3>
+              <div class="gear-grid">
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-boots" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Trekking Boots</span>
+                  <span class="gear-item-desc">Ankle support, broken-in</span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-socks" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Hiking Socks</span>
+                  <span class="gear-item-desc">4-5 pairs, heavy merino wool</span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-camp" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Camp Shoes / Sandals</span>
+                  <span class="gear-item-desc">For teahouses in the evenings</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="gear-section">
+              <h3 class="gear-section-title">Equipment & Bags</h3>
+              <div class="gear-grid">
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-backpack" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Duffle Bag or Backpack (50-70L)</span>
+                  <span class="gear-item-desc">For porters to carry</span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-daypack" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Daypack (25-35L)</span>
+                  <span class="gear-item-desc">For water, camera, and extra layers</span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-sleeping" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Sleeping Bag (-15°C rated)</span>
+                  <span class="gear-item-desc">Teahouse rooms are unheated</span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-poles" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Trekking Poles</span>
+                  <span class="gear-item-desc">Saves knees on steep descents</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 5: Trip Details -->
+          <section id="section-details" class="trek-detail-section">
+            <h2 class="trek-section-title">Trek Trip Details</h2>
+            <div style="display: flex; flex-direction: column; gap: 24px; font-size: 1rem; color: var(--color-neutral-700); line-height: 1.7;">
+              <div>
+                <h4 style="font-size: 1.25rem; color: var(--color-primary-navy); margin-bottom: 8px;">Altitude & AMS (Acute Mountain Sickness) Safety</h4>
+                <p>
+                  The trek reaches a maximum altitude of <span data-altitude-m="5545">5,545m</span> at Kala Patthar. AMS is a real concern. Our itinerary includes two dedicated acclimatization days (Namche Bazaar and Dingboche). Our guides carry oximeters to test your oxygen levels daily, and we carry emergency bottled oxygen. Always hike slowly ("Bistari, Bistari" in Nepali), stay hydrated (drink 4L of water daily), and inform your guide immediately if you experience headache or nausea.
+                </p>
+              </div>
+              <div>
+                <h4 style="font-size: 1.25rem; color: var(--color-primary-navy); margin-bottom: 8px;">Physical Fitness & Preparation</h4>
+                <p>
+                  This trek is rated <strong>Challenging</strong>. You do not need technical mountaineering skills, but you must have excellent cardiovascular endurance. We recommend starting stair-climbing, jogging, or weekend hiking with a weighted daypack 2-3 months prior to arrival.
+                </p>
+              </div>
+              <div>
+                <h4 style="font-size: 1.25rem; color: var(--color-primary-navy); margin-bottom: 8px;">Required Travel Insurance</h4>
+                <p>
+                  Travel insurance is mandatory for this trek. Your policy <strong>MUST</strong> explicitly cover hiking up to 6,000 meters and cover helicopter evacuation (emergency rescue flight). We will collect a copy of your insurance policy and emergency contact details before departing Kathmandu.
+                </p>
+              </div>
+              <div>
+                <h4 style="font-size: 1.25rem; color: var(--color-primary-navy); margin-bottom: 8px;">Permits & Regulations</h4>
+                <p>
+                  For this trek, we arrange the Sagarmatha National Park entry permit and the Khumbu Pasang Lhamu rural municipality local permit. The costs of these permits are fully included in your package pricing.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 6: Map & Elevation -->
+          <section id="section-map" class="trek-detail-section">
+            <h2 class="trek-section-title">Altitude & Elevation Profile</h2>
+            <div style="background: white; padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-100); box-shadow: var(--shadow-sm); margin-bottom: 30px;">
+              <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 20px;">
+                Interactive elevation map showing daily gain and acclimatization stopping points. Switch units in the header bar above to convert between meters (m) and feet (ft).
+              </p>
+              <div id="altitude-chart-wrapper" data-trek-key="ebc"></div>
+            </div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--color-primary-navy);">Expedition Route Information</h3>
+            <p style="color: var(--color-neutral-700); font-size: 0.95rem; line-height: 1.6;">
+              The route commences with a flight into Lukla, following the Dudh Koshi river up to Namche Bazaar. The path then continues through Tengboche, Dingboche, Lobuche, and Gorak Shep, concluding at the Khumbu Glacier base camp.
+            </p>
+          </section>
+
+          <!-- Section 7: Booking Calculator Redirect Link -->
+          <section id="section-booking" class="trek-detail-section">
+            <h2 class="trek-section-title">Book This Trek</h2>
+            <p style="color: var(--color-neutral-700); font-size: 1.05rem; line-height: 1.7; margin-bottom: 16px;">
+              We offer standard group departures as well as custom private itineraries. Use the interactive <strong>Booking Calculator</strong> widget located in the sticky sidebar on the right side of this page to choose your group size and toggle options like the Helicopter return upgrade.
+            </p>
+            <p style="color: var(--color-neutral-700); font-size: 1.05rem; line-height: 1.7;">
+              Once you have calculated your estimated pricing, click the <strong>Book / Inquire Now</strong> button to submit an inquiry. Our lead Himalayan coordinators will get back to you within 4 hours with availability and booking steps!
+            </p>
+          </section>
+
+          <!-- Section 8: Reviews -->
+          <section id="section-reviews" class="trek-detail-section">
+            <h2 class="trek-section-title">Client Reviews & Testimonials</h2>
+            <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 24px;">
+              <span class="stars-gold" style="font-size: 1.3rem;">★★★★★</span>
+              <span style="font-weight: 700; font-size: 1.1rem; color: var(--color-primary-navy);">4.9 / 5</span>
+              <span style="color: var(--color-neutral-500); font-size: 0.9rem;">(Based on 142 client reviews)</span>
+            </div>
+
+            <div class="reviews-grid">
+              <div class="review-card-modern">
+                <div class="review-user-row">
+                  <div class="review-avatar-text">SJ</div>
+                  <div class="review-user-info">
+                    <span class="review-user-name">Sarah Jenkins</span>
+                    <span class="review-user-meta">United States • Trekked Oct 2025</span>
+                  </div>
+                  <span class="stars-gold" style="margin-left: auto;">★★★★★</span>
+                </div>
+                <p style="font-style: italic; color: var(--color-neutral-700); font-size: 0.95rem; line-height: 1.6;">
+                  "Trekking to Everest Base Camp with Namaste Hiking Trek was a life-changing experience. Our Sherpa guide was incredibly knowledgeable about AMS safety, check-ins, and local culture. The logistics, from the Lukla flight to tea houses, were flawless!"
+                </p>
+              </div>
+
+              <div class="review-card-modern">
+                <div class="review-user-row">
+                  <div class="review-avatar-text">DK</div>
+                  <div class="review-user-info">
+                    <span class="review-user-name">Dieter Koch</span>
+                    <span class="review-user-meta">Germany • Trekked April 2025</span>
+                  </div>
+                  <span class="stars-gold" style="margin-left: auto;">★★★★★</span>
+                </div>
+                <p style="font-style: italic; color: var(--color-neutral-700); font-size: 0.95rem; line-height: 1.6;">
+                  "Safety standard is outstanding. My guide monitored my blood oxygen level twice a day. The helicopter upgrade on the way back saved my knees and gave breathtaking aerial views of the glacier. Highly recommended!"
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 9: FAQs -->
+          <section id="section-faqs" class="trek-detail-section">
+            <h2 class="trek-section-title">Frequently Asked Questions</h2>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div class="itinerary-card active">
+                <div class="itinerary-header" style="padding: 16px 20px;">
+                  <h4 style="font-size: 1.05rem; color: var(--color-primary-navy);">What happens if the flight to or from Lukla is delayed?</h4>
+                  <span class="itinerary-toggle-icon" style="font-size: 0.8rem;">▼</span>
+                </div>
+                <div class="itinerary-content" style="max-height: 200px;">
+                  <div class="itinerary-content-inner" style="padding: 0 20px 20px 20px; font-size: 0.9rem;">
+                    Lukla airport is weather-dependent. Delays can occur, especially in summer/early autumn. We build a buffer day in the schedule, but in case of long delays, we can help coordinate shared helicopter flights (subject to availability and additional fees, often claimable on travel insurance).
+                  </div>
+                </div>
+              </div>
+
+              <div class="itinerary-card">
+                <div class="itinerary-header" style="padding: 16px 20px;">
+                  <h4 style="font-size: 1.05rem; color: var(--color-primary-navy);">What kind of accommodation is available along the route?</h4>
+                  <span class="itinerary-toggle-icon" style="font-size: 0.8rem;">▼</span>
+                </div>
+                <div class="itinerary-content">
+                  <div class="itinerary-content-inner" style="padding: 0 20px 20px 20px; font-size: 0.9rem;">
+                    We sleep in traditional mountain teahouses (lodges). These are clean but simple. Rooms are typically twin-sharing, unheated, with common toilets. Hot water showers and Wi-Fi are available for small local fees ($3-$5 USD).
+                  </div>
+                </div>
+              </div>
+
+              <div class="itinerary-card">
+                <div class="itinerary-header" style="padding: 16px 20px;">
+                  <h4 style="font-size: 1.05rem; color: var(--color-primary-navy);">Can I charge my phone and camera batteries on the trek?</h4>
+                  <span class="itinerary-toggle-icon" style="font-size: 0.8rem;">▼</span>
+                </div>
+                <div class="itinerary-content">
+                  <div class="itinerary-content-inner" style="padding: 0 20px 20px 20px; font-size: 0.9rem;">
+                    Yes, you can charge devices in the teahouse dining rooms for a small hourly fee ($2-$5 USD). We highly recommend bringing a high-capacity power bank (20,000mAh+) and keeping your batteries warm in your sleeping bag at night since the cold drains them quickly.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
         </div>
 
-        <!-- Sticky Booking Sidebar Widget -->
+        <!-- Sticky Booking Sidebar Column -->
         <div>
-          <div style="position: sticky; top: 100px; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); padding: 24px; border: 1px solid var(--color-neutral-100);">
-            <span style="font-size: 0.85rem; color: var(--color-neutral-500); text-transform: uppercase; font-weight: 700;">Standard Package Price</span>
-            <div style="display: flex; align-items: baseline; gap: 8px; margin: 8px 0 16px 0;">
-              <span style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-navy);">$1,350</span>
-              <span style="font-size: 0.9rem; color: var(--color-neutral-500);">/ Person</span>
-            </div>
+          <div style="position: sticky; top: 155px; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); padding: 24px; border: 1px solid var(--color-neutral-100);">
             
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem; color: var(--color-neutral-700); margin-bottom: 20px;">
-              <li>🔒 Guaranteed Price & No Hidden Charges</li>
-              <li>🛡️ 100% Safety Guarantee with Oxygen Support</li>
-              <li>🚁 Optional Helicopter Return Upgrade Available</li>
-            </ul>
+            <div id="booking-calculator" data-base-price="1350" data-heli-price="800" data-single-price="250">
+              <span style="font-size: 0.85rem; color: var(--color-neutral-500); text-transform: uppercase; font-weight: 700; display: block; margin-bottom: 4px;">Standard Package Price</span>
+              <div style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 16px;">
+                <span style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-navy);" data-price-usd="1350">$1,350</span>
+                <span style="font-size: 0.9rem; color: var(--color-neutral-500);">/ Person</span>
+              </div>
+              
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem; color: var(--color-neutral-700); margin-bottom: 20px; border-bottom: 1px solid var(--color-neutral-100); padding-bottom: 16px;">
+                <li>🔒 Guaranteed Price & No Hidden Charges</li>
+                <li>🛡️ 100% Safety Guarantee with Oxygen</li>
+              </ul>
 
-            <button class="btn btn-primary open-inquiry-btn" style="width: 100%; padding: 14px; margin-bottom: 12px;">Book / Inquire Now</button>
-            <a href="../../custom-plan.html" class="btn btn-outline" style="width: 100%; text-align: center; font-size: 0.9rem;">Customize Itinerary</a>
+              <!-- Embedded Sidebar Calculator Controls -->
+              <div class="calculator-form" style="gap: 14px; margin-bottom: 20px;">
+                <div class="calculator-group">
+                  <label for="calc-group-size" style="font-weight: 700; color: var(--color-primary-navy); font-size: 0.85rem; display: block; margin-bottom: 4px;">Number of Trekkers</label>
+                  <input type="number" id="calc-group-size" value="1" min="1" max="30" class="form-input" style="padding: 10px 12px; border-radius: var(--radius-sm); border: 1px solid var(--color-neutral-300); font-size: 0.9rem; width: 100%; box-sizing: border-box;">
+                  <small style="color: var(--color-neutral-500); font-size: 0.75rem; display: block; margin-top: 2px;">Discounts: 2-4 pax (5%), 5-9 pax (10%), 10+ pax (15%)</small>
+                </div>
 
-            <div style="border-top: 1px solid var(--color-neutral-100); margin-top: 20px; padding-top: 16px; text-align: center;">
-              <span style="font-size: 0.85rem; color: var(--color-neutral-600); display: block;">Have instant questions?</span>
-              <span style="font-weight: 700; color: #16a34a; font-size: 0.95rem;">🟢 Chat on WhatsApp: +977-9800000000</span>
+                <div class="calculator-group" style="gap: 8px; display: flex; flex-direction: column; margin-top: 10px;">
+                  <span style="font-weight: 700; color: var(--color-primary-navy); font-size: 0.85rem; display: block; margin-bottom: 2px;">Optional Upgrades</span>
+                  
+                  <label class="calculator-group-horizontal" for="calc-upgrade-heli" style="padding: 10px 12px; border-radius: var(--radius-sm); background: var(--color-neutral-50); border: 1px solid var(--color-neutral-100); display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;">
+                    <div class="calculator-checkbox-label" style="display: flex; flex-direction: column; text-align: left;">
+                      <span class="calculator-checkbox-title" style="font-size: 0.85rem; font-weight: bold; color: var(--color-primary-navy);">Helicopter Return</span>
+                      <span class="calculator-checkbox-desc" style="font-size: 0.7rem; color: var(--color-neutral-500);">Fly back from Gorak Shep</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                      <span style="font-weight: 700; color: var(--color-alpine-blue); font-size: 0.85rem;" data-price-usd="800">+$800</span>
+                      <input type="checkbox" id="calc-upgrade-heli" class="gear-item-checkbox" style="margin: 0; width: 16px; height: 16px; cursor: pointer;">
+                    </div>
+                  </label>
+
+                  <label class="calculator-group-horizontal" for="calc-upgrade-single" style="padding: 10px 12px; border-radius: var(--radius-sm); background: var(--color-neutral-50); border: 1px solid var(--color-neutral-100); display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;">
+                    <div class="calculator-checkbox-label" style="display: flex; flex-direction: column; text-align: left;">
+                      <span class="calculator-checkbox-title" style="font-size: 0.85rem; font-weight: bold; color: var(--color-primary-navy);">Single Room Supp.</span>
+                      <span class="calculator-checkbox-desc" style="font-size: 0.7rem; color: var(--color-neutral-500);">Private room along route</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                      <span style="font-weight: 700; color: var(--color-alpine-blue); font-size: 0.85rem;" data-price-usd="250">+$250</span>
+                      <input type="checkbox" id="calc-upgrade-single" class="gear-item-checkbox" style="margin: 0; width: 16px; height: 16px; cursor: pointer;">
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Price Breakdown List inside sticky widget -->
+              <div class="calculator-results" style="min-height: auto; padding: 16px; border-radius: var(--radius-md); margin-bottom: 20px; font-size: 0.85rem; background: var(--color-primary-dark); color: var(--color-white);">
+                <h4 style="font-size: 0.9rem; color: var(--color-neutral-300); text-transform: uppercase; margin-bottom: 10px; font-weight: bold;">Pricing Summary</h4>
+                <div class="calc-row" style="padding: 6px 0; font-size: 0.8rem; display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                  <span>Base Price (Per Person):</span>
+                  <span id="calc-display-base" data-price-usd="1350">$1,350</span>
+                </div>
+                <div class="calc-row" style="padding: 6px 0; font-size: 0.8rem; display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                  <span>Group Discount:</span>
+                  <span id="calc-display-discount">0%</span>
+                </div>
+                <div class="calc-row" style="padding: 6px 0; font-size: 0.8rem; display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                  <span>Helicopter Add-on:</span>
+                  <span id="calc-display-heli" data-price-usd="0">+$0</span>
+                </div>
+                <div class="calc-row" style="padding: 6px 0; font-size: 0.8rem; display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                  <span>Single Supplement:</span>
+                  <span id="calc-display-single" data-price-usd="0">+$0</span>
+                </div>
+                <div class="calc-row" style="padding: 8px 0; font-size: 0.85rem; font-weight: bold; color: var(--color-alpine-light); display: flex; justify-content: space-between;">
+                  <span>Price Per Person:</span>
+                  <span id="calc-display-per-person" data-price-usd="1350">$1,350</span>
+                </div>
+                <div class="calc-row-total" style="border-top: 1px solid rgba(255, 255, 255, 0.2); margin-top: 12px; padding-top: 12px; display: flex; flex-direction: column; align-items: flex-start; text-align: left;">
+                  <span style="font-size: 0.85rem; color: var(--color-neutral-300);">Estimated Total Price:</span>
+                  <div id="calc-display-total" class="calc-value-total" style="font-size: 1.8rem; font-weight: 900; color: white;" data-price-usd="1350">$1,350</div>
+                </div>
+              </div>
+
+              <button class="btn btn-primary open-inquiry-btn" data-trek-title="Everest Base Camp Trek" style="width: 100%; padding: 14px; margin-bottom: 12px;">Book / Inquire Now</button>
+              
+              <div style="border-top: 1px solid var(--color-neutral-100); margin-top: 16px; padding-top: 12px; text-align: center;">
+                <span style="font-size: 0.85rem; color: var(--color-neutral-600); display: block;">Have instant questions?</span>
+                <span style="font-weight: 700; color: #16a34a; font-size: 0.95rem;">🟢 Chat on WhatsApp: +977-9800000000</span>
+              </div>
             </div>
+
           </div>
         </div>
 
@@ -336,6 +944,7 @@
   <script type="module" src="../../js/i18n.js"></script>
   <script type="module" src="../../js/altitude-visualizer.js"></script>
   <script type="module" src="../../js/inquiry-modal.js"></script>
+  <script type="module" src="../../js/trek-details.js?v=2"></script>
   <script src="../../js/header-scroll.js"></script>
 </body>
 </html>

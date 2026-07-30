@@ -185,6 +185,7 @@ export function setLanguage(lang) {
     currentLang = lang;
     document.documentElement.lang = lang;
     updateDOMTranslations();
+    window.dispatchEvent(new CustomEvent('languagechange', { detail: { lang } }));
   }
 }
 
@@ -192,12 +193,22 @@ export function setCurrency(curr) {
   if (currencyRates[curr]) {
     currentCurrency = curr;
     updateCurrencyDisplay();
+    window.dispatchEvent(new CustomEvent('currencychange', { detail: { currency: curr } }));
   }
 }
 
 export function setUnit(unit) {
   currentUnit = unit;
   updateUnitDisplay();
+  window.dispatchEvent(new CustomEvent('unitchange', { detail: { unit } }));
+}
+
+export function getCurrentUnit() {
+  return currentUnit;
+}
+
+export function getCurrentCurrency() {
+  return currentCurrency;
 }
 
 function updateDOMTranslations() {

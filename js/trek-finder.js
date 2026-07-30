@@ -105,6 +105,8 @@ export function initTrekFinder(containerId, treks = sampleTreks) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
+  const isTreksPage = !!document.getElementById('filter-region');
+
   const renderCards = (filtered) => {
     if (filtered.length === 0) {
       container.innerHTML = `<div class="exotic-trek-card" style="padding: 40px; text-align: center; grid-column: 1 / -1;"><p style="color:#64748B;">No treks matched your selected destination. Please try selecting another category!</p></div>`;
@@ -159,7 +161,7 @@ export function initTrekFinder(containerId, treks = sampleTreks) {
             <button class="btn-inquire-orange open-inquiry-btn" data-trek-title="${t.title}" onclick="document.getElementById('inquiry-modal').classList.add('active'); document.body.style.overflow='hidden';">
               Inquire Now
             </button>
-            ${t.slug ? `<a href="trek/${t.slug}/" class="btn-inquire-orange" style="text-decoration:none; text-align:center;">View Itinerary</a>` : ''}
+            ${isTreksPage && t.slug ? `<a href="trek/${t.slug}/" class="btn-inquire-orange" style="text-decoration:none; text-align:center;">View Itinerary</a>` : ''}
           </div>
 
         </div>
