@@ -1147,89 +1147,423 @@
 
           <!-- Section 4: Packing List -->
           <section id="section-packing" class="trek-detail-section">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-              <h2 class="trek-section-title" style="margin-bottom: 0;">Required Packing Checklist</h2>
-              <div class="itinerary-meta-pill" style="font-size: 0.9rem; padding: 6px 14px; background: var(--color-glacier-bg); border-color: var(--color-alpine-blue); color: var(--color-primary-navy);">
-                Packed: <strong><span class="gear-checked-count">0</span> / <span class="gear-total-count">0</span></strong>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; gap: 16px; flex-wrap: wrap;">
+              <div>
+                <h2 class="trek-section-title" style="margin-bottom: 8px;">Packing List for Everest Base Camp Trek</h2>
+                <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                  <span style="font-size: 0.95rem; color: var(--color-neutral-600); font-weight: 500;">
+                    Essential Info: Don’t have it? Rent it with us — <strong>USD 1/day per item</strong>
+                  </span>
+                  <a href="#" onclick="window.print(); return false;" style="font-size: 0.9rem; color: var(--color-copper-orange); text-decoration: underline; font-weight: 600; display: inline-flex; align-items: center; gap: 4px;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Printable PDF
+                  </a>
+                </div>
+              </div>
+              <div class="itinerary-meta-pill" style="font-size: 1rem; padding: 8px 18px; background: var(--color-glacier-bg); border-color: var(--color-alpine-blue); color: var(--color-primary-navy); border-radius: 12px; font-weight: 700; box-shadow: var(--shadow-sm);">
+                Packed: <strong><span class="gear-checked-count">4</span> / <span class="gear-total-count">70</span></strong>
               </div>
             </div>
-            
+
             <p style="color: var(--color-neutral-600); font-size: 0.95rem; margin-bottom: 24px;">
-              Check off items as you pack them. Your state is saved automatically in your browser!
+              Check off items as you pack them. Your packing state is saved automatically in your browser!
             </p>
 
+            <!-- Hiking Gear (11 items) -->
             <div class="gear-section">
-              <h3 class="gear-section-title">Clothing & Layers</h3>
+              <h3 class="gear-section-title">Hiking Gear <span style="font-size: 0.85rem; font-weight: normal; color: var(--color-neutral-500); margin-left: 6px;">(11 items)</span></h3>
               <div class="gear-grid">
-                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
-                  <input type="checkbox" id="gear-thermal" class="gear-item-checkbox" onclick="event.stopPropagation();">
-                  <span class="gear-item-label">Thermal Underwear</span>
-                  <span class="gear-item-desc">2-3 pairs, synthetic/merino</span>
-                </div>
-                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
-                  <input type="checkbox" id="gear-fleece" class="gear-item-checkbox" onclick="event.stopPropagation();">
-                  <span class="gear-item-label">Fleece Jacket or Pullover</span>
-                  <span class="gear-item-desc">Mid-layer warmth</span>
-                </div>
-                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
-                  <input type="checkbox" id="gear-shell" class="gear-item-checkbox" onclick="event.stopPropagation();">
-                  <span class="gear-item-label">Waterproof Shell Jacket</span>
-                  <span class="gear-item-desc">Gore-Tex or breathable windbreaker</span>
-                </div>
-                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
-                  <input type="checkbox" id="gear-down" class="gear-item-checkbox" onclick="event.stopPropagation();">
-                  <span class="gear-item-label">Heavy Down Jacket</span>
-                  <span class="gear-item-desc">Crucial for temperatures below -10°C</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="gear-section">
-              <h3 class="gear-section-title">Footwear</h3>
-              <div class="gear-grid">
-                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
-                  <input type="checkbox" id="gear-boots" class="gear-item-checkbox" onclick="event.stopPropagation();">
-                  <span class="gear-item-label">Trekking Boots</span>
-                  <span class="gear-item-desc">Ankle support, broken-in</span>
-                </div>
-                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
-                  <input type="checkbox" id="gear-socks" class="gear-item-checkbox" onclick="event.stopPropagation();">
-                  <span class="gear-item-label">Hiking Socks</span>
-                  <span class="gear-item-desc">4-5 pairs, heavy merino wool</span>
-                </div>
-                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
-                  <input type="checkbox" id="gear-camp" class="gear-item-checkbox" onclick="event.stopPropagation();">
-                  <span class="gear-item-label">Camp Shoes / Sandals</span>
-                  <span class="gear-item-desc">For teahouses in the evenings</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="gear-section">
-              <h3 class="gear-section-title">Equipment & Bags</h3>
-              <div class="gear-grid">
-                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
-                  <input type="checkbox" id="gear-backpack" class="gear-item-checkbox" onclick="event.stopPropagation();">
-                  <span class="gear-item-label">Duffle Bag or Backpack (50-70L)</span>
-                  <span class="gear-item-desc">For porters to carry</span>
-                </div>
-                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
-                  <input type="checkbox" id="gear-daypack" class="gear-item-checkbox" onclick="event.stopPropagation();">
-                  <span class="gear-item-label">Daypack (25-35L)</span>
-                  <span class="gear-item-desc">For water, camera, and extra layers</span>
-                </div>
-                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
-                  <input type="checkbox" id="gear-sleeping" class="gear-item-checkbox" onclick="event.stopPropagation();">
-                  <span class="gear-item-label">Sleeping Bag (-15°C rated)</span>
-                  <span class="gear-item-desc">Teahouse rooms are unheated</span>
-                </div>
                 <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
                   <input type="checkbox" id="gear-poles" class="gear-item-checkbox" onclick="event.stopPropagation();">
                   <span class="gear-item-label">Trekking Poles</span>
-                  <span class="gear-item-desc">Saves knees on steep descents</span>
+                  <span class="gear-item-desc">Trail stabilizers, save those knees downhill! • <strong>1 pair</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-backpack" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Backpack</span>
+                  <span class="gear-item-desc">With porter 25–35L, going solo 40–60L • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-bottles" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Reusable Water Bottles</span>
+                  <span class="gear-item-desc">Hydrate — and hug at night when it’s filled with hot water! • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-spikes" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">MicroSpikes</span>
+                  <span class="gear-item-desc">Grip it, handle icy paths like a boss • <strong>1 pair</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-boots" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Trekking Boots</span>
+                  <span class="gear-item-desc">Boots for support, trail runners for pros • <strong>1 pair</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-headlamp" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Headlamp</span>
+                  <span class="gear-item-desc">Keeps hands free — early hikes and midnight nature calls! • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-drybag" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Dry Bag / Zip-Lock Bags</span>
+                  <span class="gear-item-desc">Stay organized and stash the stinky • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-raincover" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Rain Cover for Backpack</span>
+                  <span class="gear-item-desc">Shields your bag from rain and rough rides! • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-sunglasses" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Sunglasses</span>
+                  <span class="gear-item-desc">Lose one, break one, still look cool • <strong>2 pairs</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-sunhat" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Sun Hat / Cap</span>
+                  <span class="gear-item-desc">Shield your face — no one likes a sunburned selfie • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-organizers" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Packing Organizers</span>
+                  <span class="gear-item-desc">Tame your packing chaos like a pro-level trekker • <strong>1</strong></span>
                 </div>
               </div>
             </div>
+
+            <!-- Garments (19 items) -->
+            <div class="gear-section">
+              <h3 class="gear-section-title">Garments <span style="font-size: 0.85rem; font-weight: normal; color: var(--color-neutral-500); margin-left: 6px;">(19 items)</span></h3>
+              <div class="gear-grid">
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-baselayer" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Base Layer Set (Thermal)</span>
+                  <span class="gear-item-desc">A thermal hug for windy ridges • <strong>2</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-fleece" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Fleece / Microfiber Jacket</span>
+                  <span class="gear-item-desc">Like a wearable hug — light, warm, essential • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-quicktees" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Quick-Dry Tees (Merino)</span>
+                  <span class="gear-item-desc">Sweat less, smell less, hike more • <strong>3</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-quickpants" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Quick-Dry Pants</span>
+                  <span class="gear-item-desc">Dries fast — cross rivers, dodge rain • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-softpant" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Trekking Pant (Soft Shell)</span>
+                  <span class="gear-item-desc">Built for Nepal’s trails, tough and comfy • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-hardpant" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Trekking Pant (Hard Shell)</span>
+                  <span class="gear-item-desc">Bring the big guns for snow and storm duty • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-windbreaker" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Windbreaker Jacket</span>
+                  <span class="gear-item-desc">Windproof your journey without packing bulk • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-waterproofjacket" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Waterproof Jacket</span>
+                  <span class="gear-item-desc">Because soggy trekkers aren’t happy trekkers • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-waterproofpant" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Waterproof Pant</span>
+                  <span class="gear-item-desc">Wet pants? No thanks — bring these just in case • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-downjacket" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Down Jacket</span>
+                  <span class="gear-item-desc">Your puffy cloud for chilly dawns and nights • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-cosywear" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Cosy Outfit for Teahouses</span>
+                  <span class="gear-item-desc">Trade hiking boots for this once you’re in the teahouse • <strong>1 set</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-socks" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Socks (Liner / Trekking)</span>
+                  <span class="gear-item-desc">Happy feet = happy trek. Bring extras! • <strong>6 pairs</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-glove-liner" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Gloves — Liner</span>
+                  <span class="gear-item-desc">Wear under gloves or for chilly tea stops • <strong>1 pair</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-glove-windproof" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Gloves — Windproof</span>
+                  <span class="gear-item-desc">Block those winds sweeping down from the peaks • <strong>1 pair</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-woolhat" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Woolen Hat</span>
+                  <span class="gear-item-desc">Block out wind and keep your brain warm • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-beanie" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Beanie</span>
+                  <span class="gear-item-desc">Extra warmth while sipping tea in the yard • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-gaiter" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Neck Gaiter</span>
+                  <span class="gear-item-desc">Neck protector, face warmer, and style icon in one • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-undergarments" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Under Garments</span>
+                  <span class="gear-item-desc">Laundry day is rare — pack backups! • <strong>3</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-bra" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Bra</span>
+                  <span class="gear-item-desc">Supportive and breathable for long trail days • <strong>3</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sleeping (5 items) -->
+            <div class="gear-section">
+              <h3 class="gear-section-title">Sleeping <span style="font-size: 0.85rem; font-weight: normal; color: var(--color-neutral-500); margin-left: 6px;">(5 items)</span></h3>
+              <div class="gear-grid">
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-sleepingbag" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Sleeping Bag</span>
+                  <span class="gear-item-desc">Sleep snug — from stars to teahouse beds • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-sleepingbagliner" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Sleeping Bag Liner</span>
+                  <span class="gear-item-desc">Add warmth and avoid funky smells • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-earplugs" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Earplugs</span>
+                  <span class="gear-item-desc">Snorers in the next room? Problem solved • <strong>2 sets</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-travelpillow" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Travel Pillow</span>
+                  <span class="gear-item-desc">Nap like royalty, even in the Himalayas • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-eyemask" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Eye Mask</span>
+                  <span class="gear-item-desc">Sun’s up? Not till you are • <strong>1</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Toiletries & Hygiene (16 items) -->
+            <div class="gear-section">
+              <h3 class="gear-section-title">Toiletries & Hygiene <span style="font-size: 0.85rem; font-weight: normal; color: var(--color-neutral-500); margin-left: 6px;">(16 items)</span></h3>
+              <div class="gear-grid">
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-towel" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Microfiber Towel</span>
+                  <span class="gear-item-desc">Dries fast, packs light — towel off in style • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-toothbrush" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Toothbrush & Toothpaste</span>
+                  <span class="gear-item-desc">Morning breath? Not on these trails • <strong>1 set</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-wipes" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Wet Wipes</span>
+                  <span class="gear-item-desc">No shower? No problem — wipes to the rescue • <strong>2 packs</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-firstaid" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">First Aid Kit</span>
+                  <span class="gear-item-desc">Leeches, scrapes, bruises — be ready • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-sunscreen" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Sunscreen</span>
+                  <span class="gear-item-desc">High-altitude sun bites — lather up • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-blisterkit" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Blister Kit</span>
+                  <span class="gear-item-desc">Blisters sneak up — treat them quick • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-soap" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Soap / Shampoo</span>
+                  <span class="gear-item-desc">Bucket shower? You’ll still feel fresh • <strong>1 set</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-lipbalm" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Lip Balm</span>
+                  <span class="gear-item-desc">Wind or sun, protect those lips • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-comb" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Comb or Brush</span>
+                  <span class="gear-item-desc">Brush off the dust — hair’s still happy • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-period" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Period Supplies</span>
+                  <span class="gear-item-desc">Periods don’t pause for mountains • <strong>As needed</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-clippers" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Nail Clippers / Tweezers</span>
+                  <span class="gear-item-desc">Snagged gear or sharp toenail? Clip it clean • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-tp" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Toilet Paper</span>
+                  <span class="gear-item-desc">Don’t get caught short — carry your own roll • <strong>Varies</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-sanitizer" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Sanitising Gel</span>
+                  <span class="gear-item-desc">Sanitize before snack time, at every stop • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-deodorant" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Deodorant</span>
+                  <span class="gear-item-desc">Feel fresh, even 3 days from a shower • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-mirror" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Mirror (Optional)</span>
+                  <span class="gear-item-desc">For grooming or checking windburn • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-waterpurification" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Water Purification Tablets / Filters</span>
+                  <span class="gear-item-desc">Turn glacier melt into safe drinking water • <strong>1</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Electronics (9 items) -->
+            <div class="gear-section">
+              <h3 class="gear-section-title">Electronics <span style="font-size: 0.85rem; font-weight: normal; color: var(--color-neutral-500); margin-left: 6px;">(9 items)</span></h3>
+              <div class="gear-grid">
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-camera" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Camera</span>
+                  <span class="gear-item-desc">Snap yaks, peaks, and village smiles • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-phone" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Phone</span>
+                  <span class="gear-item-desc">Call home, check maps, jam tunes — one device • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-gps" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">GPS Watch / Device</span>
+                  <span class="gear-item-desc">Track your climbs, brag later • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-harddrive" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">External Hard Drive</span>
+                  <span class="gear-item-desc">No backup, no proof — save it all • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-cables" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Cables</span>
+                  <span class="gear-item-desc">Juice up your phone, cam, or headlamp • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-powerbank" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Power Bank</span>
+                  <span class="gear-item-desc">Dead battery? This keeps you going • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-ebook" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">E-Book Reader</span>
+                  <span class="gear-item-desc">Books in your pocket — read and relax • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-adapter" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Travel Adapter (Type D, C & M)</span>
+                  <span class="gear-item-desc">Stay charged across Nepal • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-earphones" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Earphones</span>
+                  <span class="gear-item-desc">Tunes or podcasts — your trail soundtrack • <strong>1</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Miscellaneous (10 items) -->
+            <div class="gear-section">
+              <h3 class="gear-section-title">Miscellaneous <span style="font-size: 0.85rem; font-weight: normal; color: var(--color-neutral-500); margin-left: 6px;">(10 items)</span></h3>
+              <div class="gear-grid">
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-shoes" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Lightweight Shoes / Sandals</span>
+                  <span class="gear-item-desc">Post-hike bliss — slip into comfort • <strong>1 pair</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-gaiters" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Gaiters</span>
+                  <span class="gear-item-desc">Keep snow and grit out of your boots • <strong>1 pair</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-cards" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Playing Cards / Card Games</span>
+                  <span class="gear-item-desc">Perfect for rest days or teahouse hangs • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-multitool" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Multitool</span>
+                  <span class="gear-item-desc">Solves (almost) everything in one flip • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-journal" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Journal / Pen</span>
+                  <span class="gear-item-desc">Write. Reflect. Doodle. Dream. • <strong>1 set</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-repair" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Repair Kit</span>
+                  <span class="gear-item-desc">Patch up gear before it falls apart • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-flask" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Insulated Flask</span>
+                  <span class="gear-item-desc">Sip hot tea in icy wind like a local • <strong>1</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-cash" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">USD 15–20 in Nepalese Currency</span>
+                  <span class="gear-item-desc">Tea, snacks, or surprise tips — always handy • <strong>As needed</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-snacks" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Snacks</span>
+                  <span class="gear-item-desc">Energy Bars, Protein, Trail Mix • <strong>Varies</strong></span>
+                </div>
+                <div class="gear-item-row" onclick="this.querySelector('input').click(); event.stopPropagation();">
+                  <input type="checkbox" id="gear-electrolytes" class="gear-item-checkbox" onclick="event.stopPropagation();">
+                  <span class="gear-item-label">Electrolyte Tablets or Powder</span>
+                  <span class="gear-item-desc">Beat cramps — fuel up with electrolytes • <strong>Varies</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--color-neutral-600); line-height: 1.6; margin-top: 30px; padding: 16px; background: var(--color-neutral-50); border-left: 4px solid var(--color-copper-orange); border-radius: 0 12px 12px 0;">
+              This packing list is a guide, not a rulebook. On the meeting day in Kathmandu we go through your gear together — anything missing you can rent from us for USD 1 a day per item, or we’ll point you to the right shop for your budget. Almost everything is available in Kathmandu, so first-time trekkers arrive light and leave prepared.
+            </p>
           </section>
 
           <!-- Section 5: Trip Details -->
