@@ -187,6 +187,7 @@ function setupBookingCalculator() {
   if (!calcContainer) return;
 
   const groupSizeInput = document.getElementById('calc-group-size');
+  if (!groupSizeInput) return; // Exit early if we are not displaying the calculator inputs
   const heliCheckbox = document.getElementById('calc-upgrade-heli');
   const singleCheckbox = document.getElementById('calc-upgrade-single');
   
