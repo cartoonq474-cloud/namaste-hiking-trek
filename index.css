@@ -6332,3 +6332,43 @@ textarea {
     padding: 16px;
   }
 }
+
+/* Altitude Profile Redesign */
+.altitude-unit-toggle-btn {
+  border: none;
+  background: transparent;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: var(--color-neutral-500);
+}
+
+.altitude-unit-toggle-btn.active {
+  background: #f0fdf4 !important; /* Brand soft light green */
+  color: #10B981 !important; /* Brand green */
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.08);
+}
+
+.altitude-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid var(--color-primary-navy);
+  background: white;
+  color: var(--color-primary-navy);
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.altitude-download-btn:hover {
+  background: #10B981 !important; /* Brand green */
+  color: white !important;
+  border-color: #10B981 !important;
+}

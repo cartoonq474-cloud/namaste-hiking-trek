@@ -1,22 +1,22 @@
-import { getCurrentUnit } from './i18n.js';
+import { getCurrentUnit, setUnit } from './i18n.js';
 
 const trekAltitudeProfiles = {
   "ebc": {
     name: "Everest Base Camp Trek",
     points: [
-      { day: "Day 1", spot: "Kathmandu", altitudeM: 1400 },
-      { day: "Day 2", spot: "Lukla", altitudeM: 2860 },
-      { day: "Day 3", spot: "Namche Bazaar", altitudeM: 3440 },
-      { day: "Day 4", spot: "Namche (Acclimatization)", altitudeM: 3440 },
-      { day: "Day 5", spot: "Tengboche", altitudeM: 3867 },
-      { day: "Day 6", spot: "Dingboche", altitudeM: 4410 },
-      { day: "Day 7", spot: "Dingboche (Acclimatization)", altitudeM: 4410 },
-      { day: "Day 8", spot: "Lobuche", altitudeM: 4940 },
-      { day: "Day 9", spot: "EBC / Gorakshep", altitudeM: 5364 },
-      { day: "Day 10", spot: "Kala Patthar Peak", altitudeM: 5545 },
-      { day: "Day 11", spot: "Pheriche", altitudeM: 4370 },
-      { day: "Day 12", spot: "Namche Bazaar", altitudeM: 3440 },
-      { day: "Day 14", spot: "Lukla -> Kathmandu", altitudeM: 1400 }
+      { day: "Day 1", spot: "Kathmandu", altitudeM: 1300, altitudeFt: 4265 },
+      { day: "Day 2", spot: "Phakding", altitudeM: 2651, altitudeFt: 8697 },
+      { day: "Day 3", spot: "Namche Bazaar", altitudeM: 3440, altitudeFt: 11286 },
+      { day: "Day 4", spot: "Namche Bazaar", altitudeM: 3700, altitudeFt: 12139 },
+      { day: "Day 5", spot: "Tengboche", altitudeM: 3956, altitudeFt: 12979 },
+      { day: "Day 6", spot: "Dingboche", altitudeM: 4380, altitudeFt: 14370 },
+      { day: "Day 7", spot: "Dingboche", altitudeM: 4380, altitudeFt: 14370 },
+      { day: "Day 8", spot: "Lobuche", altitudeM: 4938, altitudeFt: 16201 },
+      { day: "Day 9", spot: "Gorakshep", altitudeM: 5160, altitudeFt: 16929 },
+      { day: "Day 10", spot: "Pheriche", altitudeM: 4371, altitudeFt: 14340 },
+      { day: "Day 11", spot: "Namche Bazaar", altitudeM: 3440, altitudeFt: 11286 },
+      { day: "Day 12", spot: "Lukla", altitudeM: 2860, altitudeFt: 9383 },
+      { day: "Day 13", spot: "Kathmandu", altitudeM: 1300, altitudeFt: 4265 }
     ]
   },
   "abc": {
@@ -146,74 +146,176 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
   const isFeet = unit === 'ft';
   const unitLabel = isFeet ? 'ft' : 'm';
 
-  const convertAlt = (m) => isFeet ? Math.round(m * 3.28084) : m;
+  const convertAlt = (p) => isFeet ? (p.altitudeFt || Math.round(p.altitudeM * 3.28084)) : p.altitudeM;
 
   const convertedPoints = points.map(p => ({
     ...p,
-    displayAlt: convertAlt(p.altitudeM)
+    displayAlt: convertAlt(p)
   }));
 
   const width = 800;
-  const height = 240;
-  const padding = 40;
+  const height = 280;
+  const paddingLeft = 50;
+  const paddingRight = 40;
+  const paddingTop = 40;
+  const paddingBottom = 60;
 
-  const maxAlt = Math.max(...convertedPoints.map(p => p.displayAlt)) + (isFeet ? 1200 : 400);
-  const minAlt = isFeet ? 1500 : 500;
+  const maxPoint = Math.max(...convertedPoints.map(p => p.displayAlt));
+  const minPoint = Math.min(...convertedPoints.map(p => p.displayAlt));
+  const maxAlt = maxPoint + (isFeet ? 1500 : 500);
+  const minAlt = Math.max(0, minPoint - (isFeet ? 1500 : 500));
 
-  const getX = (index) => padding + (index / (convertedPoints.length - 1)) * (width - 2 * padding);
-  const getY = (alt) => height - padding - ((alt - minAlt) / (maxAlt - minAlt)) * (height - 2 * padding);
+  const getX = (index) => paddingLeft + (index / (convertedPoints.length - 1)) * (width - paddingLeft - paddingRight);
+  const getY = (alt) => height - paddingBottom - ((alt - minAlt) / (maxAlt - minAlt)) * (height - paddingTop - paddingBottom);
 
   const pathCoords = convertedPoints.map((p, i) => `${getX(i)},${getY(p.displayAlt)}`).join(' L ');
-  const areaCoords = `M ${getX(0)},${height - padding} L ${pathCoords} L ${getX(convertedPoints.length - 1)},${height - padding} Z`;
+  const areaCoords = `M ${getX(0)},${height - paddingBottom} L ${pathCoords} L ${getX(convertedPoints.length - 1)},${height - paddingBottom} Z`;
 
   const gridLine1Val = isFeet ? 6000 : 2000;
   const gridLine2Val = isFeet ? 12000 : 4000;
 
-  const svgHTML = `
-    <div style="margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
-      <h3 style="font-size: 1.1rem; color: var(--color-primary-navy);">${data.name} — Elevation Profile</h3>
-      <select id="altitude-trek-selector" class="control-select" style="background: var(--color-neutral-100); color: var(--color-primary-navy); border-color: var(--color-neutral-300);">
-        <option value="ebc" ${trekKey === 'ebc' ? 'selected' : ''}>Everest Base Camp (${isFeet ? '18,192ft' : '5,545m'})</option>
-        <option value="abc" ${trekKey === 'abc' ? 'selected' : ''}>Annapurna Base Camp (${isFeet ? '13,550ft' : '4,130m'})</option>
-        <option value="annapurna_circuit" ${trekKey === 'annapurna_circuit' ? 'selected' : ''}>Annapurna Circuit (${isFeet ? '17,769ft' : '5,416m'})</option>
-        <option value="manaslu" ${trekKey === 'manaslu' ? 'selected' : ''}>Manaslu Circuit (${isFeet ? '16,752ft' : '5,106m'})</option>
-        <option value="langtang" ${trekKey === 'langtang' ? 'selected' : ''}>Langtang Valley (${isFeet ? '15,659ft' : '4,773m'})</option>
-        <option value="poonhill" ${trekKey === 'poonhill' ? 'selected' : ''}>Ghorepani Poon Hill (${isFeet ? '10,531ft' : '3,210m'})</option>
-        <option value="gokyo" ${trekKey === 'gokyo' ? 'selected' : ''}>Gokyo Lakes & Cho La (${isFeet ? '17,782ft' : '5,420m'})</option>
-        <option value="mustang" ${trekKey === 'mustang' ? 'selected' : ''}>Upper Mustang (${isFeet ? '12,598ft' : '3,840m'})</option>
-      </select>
+  const chartHTML = `
+    <!-- Card Header Row -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px; border-bottom: 1px solid #f1f5f9; padding-bottom: 16px;">
+      <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <!-- Trek Selector -->
+        <select id="altitude-trek-selector" class="control-select" style="background: #ffffff; color: var(--color-primary-navy); border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px 12px; font-size: 0.9rem; font-weight: 600; cursor: pointer; outline: none; transition: border-color var(--transition-fast);">
+          <option value="ebc" ${trekKey === 'ebc' ? 'selected' : ''}>Everest Base Camp</option>
+          <option value="abc" ${trekKey === 'abc' ? 'selected' : ''}>Annapurna Base Camp</option>
+          <option value="annapurna_circuit" ${trekKey === 'annapurna_circuit' ? 'selected' : ''}>Annapurna Circuit</option>
+          <option value="manaslu" ${trekKey === 'manaslu' ? 'selected' : ''}>Manaslu Circuit</option>
+          <option value="langtang" ${trekKey === 'langtang' ? 'selected' : ''}>Langtang Valley</option>
+          <option value="poonhill" ${trekKey === 'poonhill' ? 'selected' : ''}>Ghorepani Poon Hill</option>
+          <option value="gokyo" ${trekKey === 'gokyo' ? 'selected' : ''}>Gokyo Lakes & Cho La</option>
+          <option value="mustang" ${trekKey === 'mustang' ? 'selected' : ''}>Upper Mustang</option>
+        </select>
+
+        <!-- Inline Unit Selector Toggle -->
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-neutral-400); text-transform: uppercase; letter-spacing: 0.05em; user-select: none;">Altitude in:</span>
+          <div style="display: inline-flex; background: #f1f5f9; padding: 3px; border-radius: 30px; border: 1px solid #e2e8f0;">
+            <button type="button" class="altitude-unit-toggle-btn ${!isFeet ? 'active' : ''}" data-unit="m">METER</button>
+            <button type="button" class="altitude-unit-toggle-btn ${isFeet ? 'active' : ''}" data-unit="ft">FEET</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Download Export Button -->
+      <button type="button" id="altitude-download-btn" class="altitude-download-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        DOWNLOAD
+      </button>
     </div>
-    <svg viewBox="0 0 ${width} ${height}" class="altitude-chart-svg">
-      <defs>
-        <linearGradient id="altitudeGradient" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#2C82C9" stop-opacity="0.6"/>
-          <stop offset="100%" stop-color="#2C82C9" stop-opacity="0.05"/>
-        </linearGradient>
-      </defs>
-      <!-- Background Grid -->
-      <line x1="${padding}" y1="${getY(gridLine1Val)}" x2="${width - padding}" y2="${getY(gridLine1Val)}" stroke="#E2E8F0" stroke-dasharray="4"/>
-      <line x1="${padding}" y1="${getY(gridLine2Val)}" x2="${width - padding}" y2="${getY(gridLine2Val)}" stroke="#E2E8F0" stroke-dasharray="4"/>
-      <text x="${padding - 5}" y="${getY(gridLine1Val) + 4}" font-size="10" text-anchor="end" fill="#64748B">${gridLine1Val.toLocaleString()} ${unitLabel}</text>
-      <text x="${padding - 5}" y="${getY(gridLine2Val) + 4}" font-size="10" text-anchor="end" fill="#64748B">${gridLine2Val.toLocaleString()} ${unitLabel}</text>
 
-      <!-- Area & Line -->
-      <path d="${areaCoords}" fill="url(#altitudeGradient)" />
-      <path d="M ${pathCoords}" fill="none" stroke="#C85A17" stroke-width="3" stroke-linecap="round"/>
+    <!-- SVG Area Chart -->
+    <div style="overflow-x: auto; width: 100%;">
+      <svg viewBox="0 0 ${width} ${height}" class="altitude-chart-svg" style="width: 100%; min-width: 650px; height: auto; display: block;">
+        <defs>
+          <linearGradient id="altitudeGradient-${trekKey}" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#10B981" stop-opacity="0.45"/>
+            <stop offset="100%" stop-color="#10B981" stop-opacity="0.01"/>
+          </linearGradient>
+        </defs>
+        
+        <!-- Background Grid Lines -->
+        <line x1="${paddingLeft}" y1="${getY(gridLine1Val)}" x2="${width - paddingRight}" y2="${getY(gridLine1Val)}" stroke="#E2E8F0" stroke-dasharray="4" stroke-width="1"/>
+        <line x1="${paddingLeft}" y1="${getY(gridLine2Val)}" x2="${width - paddingRight}" y2="${getY(gridLine2Val)}" stroke="#E2E8F0" stroke-dasharray="4" stroke-width="1"/>
+        
+        <!-- Grid Labels -->
+        <text x="${paddingLeft - 8}" y="${getY(gridLine1Val) + 4}" font-size="10.5" font-weight="600" text-anchor="end" fill="#94A3B8">${gridLine1Val.toLocaleString()} ${unitLabel}</text>
+        <text x="${paddingLeft - 8}" y="${getY(gridLine2Val) + 4}" font-size="10.5" font-weight="600" text-anchor="end" fill="#94A3B8">${gridLine2Val.toLocaleString()} ${unitLabel}</text>
 
-      <!-- Data Dots -->
-      ${convertedPoints.map((p, i) => `
-        <circle cx="${getX(i)}" cy="${getY(p.displayAlt)}" r="5" fill="#0C2B4E" stroke="#FFFFFF" stroke-width="2"/>
-        <text x="${getX(i)}" y="${getY(p.displayAlt) - 10}" font-size="10" font-weight="bold" text-anchor="middle" fill="#0C2B4E">${p.displayAlt.toLocaleString()} ${unitLabel}</text>
-        <text x="${getX(i)}" y="${height - padding + 16}" font-size="9" text-anchor="middle" fill="#64748B">${p.spot.split(' ')[0]}</text>
-      `).join('')}
-    </svg>
+        <!-- Area & Peak Line -->
+        <path d="${areaCoords}" fill="url(#altitudeGradient-${trekKey})" />
+        <path d="M ${pathCoords}" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- Nodes and Labels -->
+        ${convertedPoints.map((p, i) => `
+          <!-- Vertical Dotted Anchor Lines to X-axis -->
+          <line x1="${getX(i)}" y1="${getY(p.displayAlt)}" x2="${getX(i)}" y2="${height - paddingBottom}" stroke="#F1F5F9" stroke-dasharray="2" stroke-width="1"/>
+          
+          <!-- Data Dots -->
+          <circle cx="${getX(i)}" cy="${getY(p.displayAlt)}" r="5.5" fill="#FFFFFF" stroke="#10B981" stroke-width="2.5"/>
+          
+          <!-- Altitude values above nodes -->
+          <text x="${getX(i)}" y="${getY(p.displayAlt) - 12}" font-size="10.5" font-weight="700" text-anchor="middle" fill="#334155">${p.displayAlt.toLocaleString()}${unitLabel}</text>
+          
+          <!-- Slanted Spot Names on X-axis -->
+          <g transform="translate(${getX(i)}, ${height - paddingBottom + 20})">
+            <text transform="rotate(-25)" font-size="9.5" font-weight="600" text-anchor="end" fill="#64748B">${p.spot}</text>
+          </g>
+        `).join('')}
+      </svg>
+    </div>
   `;
 
-  container.innerHTML = svgHTML;
+  container.innerHTML = chartHTML;
 
+  // Re-bind selector event listener
   const selector = document.getElementById('altitude-trek-selector');
   if (selector) {
     selector.addEventListener('change', (e) => renderAltitudeChart(containerId, e.target.value));
+  }
+
+  // Bind unit switcher toggle buttons
+  const unitButtons = container.querySelectorAll('.altitude-unit-toggle-btn');
+  unitButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const selectedUnit = e.target.getAttribute('data-unit');
+      if (typeof setUnit === 'function') {
+        setUnit(selectedUnit);
+        
+        // Also update unit selector value in header to match
+        const globalUnitSelect = document.getElementById('unit-select');
+        if (globalUnitSelect) {
+          globalUnitSelect.value = selectedUnit;
+        }
+      }
+    });
+  });
+
+  // Bind download button click
+  const downloadBtn = document.getElementById('altitude-download-btn');
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', () => {
+      const svg = container.querySelector('.altitude-chart-svg');
+      if (!svg) return;
+      
+      const svgClone = svg.cloneNode(true);
+      svgClone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+      
+      // Inline styles for high-fidelity rendering on exported SVG
+      svgClone.style.background = "#FFFFFF";
+      svgClone.style.padding = "20px 10px 10px 10px";
+      svgClone.style.borderRadius = "12px";
+      
+      svgClone.querySelectorAll('text').forEach(t => {
+        t.style.fontFamily = "system-ui, -apple-system, sans-serif";
+      });
+
+      // Embed gradient definition styles in exported SVG
+      const styleTag = document.createElementNS("http://www.w3.org/2000/svg", "style");
+      styleTag.textContent = `
+        text { font-family: system-ui, -apple-system, sans-serif; }
+      `;
+      svgClone.insertBefore(styleTag, svgClone.firstChild);
+      
+      const svgData = new XMLSerializer().serializeToString(svgClone);
+      const svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+      const svgUrl = URL.createObjectURL(svgBlob);
+      
+      const downloadLink = document.createElement('a');
+      downloadLink.href = svgUrl;
+      downloadLink.download = `${trekKey}-altitude-profile.svg`;
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+      URL.revokeObjectURL(svgUrl);
+    });
   }
 }
 
