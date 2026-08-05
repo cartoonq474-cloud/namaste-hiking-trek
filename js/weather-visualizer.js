@@ -52,10 +52,33 @@ let currentMonth = "January";
 
 function formatTemp(c) {
   if (tempUnit === "f") {
-    const f = Math.round((c * 9) / 5 + 32);
+    const f = Math.floor((c * 9) / 5 + 32);
     return `${f}°F`;
   }
   return `${c}°C`;
+}
+
+function getSplinePath(points, includeM = true) {
+  if (points.length === 0) return "";
+  let d = includeM ? `M ${points[0].x},${points[0].y}` : `L ${points[0].x},${points[0].y}`;
+  if (points.length === 1) return d;
+  
+  const tension = 0.15;
+  for (let i = 0; i < points.length - 1; i++) {
+    const p0 = points[i - 1] || points[i];
+    const p1 = points[i];
+    const p2 = points[i + 1];
+    const p3 = points[i + 2] || p2;
+    
+    const cpX1 = p1.x + (p2.x - p0.x) * tension;
+    const cpY1 = p1.y + (p2.y - p0.y) * tension;
+    
+    const cpX2 = p2.x - (p3.x - p1.x) * tension;
+    const cpY2 = p2.y - (p3.y - p1.y) * tension;
+    
+    d += ` C ${cpX1},${cpY1} ${cpX2},${cpY2} ${p2.x},${p2.y}`;
+  }
+  return d;
 }
 
 export function renderWeatherChart(containerId) {
@@ -97,9 +120,40 @@ export function renderWeatherChart(containerId) {
   const getX = (index) => paddingLeft + (index / (points.length - 1)) * (width - paddingLeft - paddingRight);
   const getY = (val) => height - paddingBottom - ((val - minVal) / (maxVal - minVal)) * (height - paddingTop - paddingBottom);
 
-  // Path coordinates (drawing a line in between averages)
-  const pathCoords = points.map((p, i) => `${getX(i)},${getY((p.min + p.max) / 2)}`).join(' L ');
-  const areaCoords = `M ${getX(0)},${height - paddingBottom} L ${pathCoords} L ${getX(points.length - 1)},${height - paddingBottom} Z`;
+  // Generate Splines and Range Areas
+  let pathHTML = "";
+  let areaCoords = "";
+  const colorTheme = isDaily ? "#00a8ff" : "#f59e0b"; // Blue for daily, Orange for monthly
+  const fillOpacity = isDaily ? "0.15" : "0.12";
+
+  if (isDaily) {
+    // Range Area Chart with top/bottom lines
+    const maxCoords = points.map((p, i) => ({ x: getX(i), y: getY(p.max) }));
+    const minCoords = points.map((p, i) => ({ x: getX(i), y: getY(p.min) }));
+    
+    const maxSpline = getSplinePath(maxCoords, true);
+    const minCoordsReversed = [...minCoords].reverse();
+    const minSplineReversed = getSplinePath(minCoordsReversed, false);
+    
+    areaCoords = `${maxSpline} ${minSplineReversed} Z`;
+    
+    pathHTML = `
+      <path d="${areaCoords}" fill="url(#weatherGradient)" />
+      <path d="${maxSpline}" fill="none" stroke="${colorTheme}" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="${getSplinePath(minCoords, true)}" fill="none" stroke="${colorTheme}" stroke-width="2.5" stroke-linecap="round"/>
+    `;
+  } else {
+    // Single Average Max Chart
+    const maxCoords = points.map((p, i) => ({ x: getX(i), y: getY(p.max) }));
+    const maxSpline = getSplinePath(maxCoords, true);
+    
+    areaCoords = `${maxSpline} L ${getX(points.length - 1)},${height - paddingBottom} L ${getX(0)},${height - paddingBottom} Z`;
+    
+    pathHTML = `
+      <path d="${areaCoords}" fill="url(#weatherGradient)" />
+      <path d="${maxSpline}" fill="none" stroke="${colorTheme}" stroke-width="2.5" stroke-linecap="round"/>
+    `;
+  }
 
   // Draw grid lines
   const gridLines = [];
@@ -109,9 +163,6 @@ export function renderWeatherChart(containerId) {
   for (let val = startGrid; val <= endGrid; val += step) {
     gridLines.push(val);
   }
-
-  const colorTheme = isDaily ? "#00a8ff" : "#f59e0b"; // Blue for daily, Orange for monthly
-  const fillOpacity = isDaily ? "0.15" : "0.12";
 
   const wrapperHTML = `
     <!-- Segmented Tab Group Switcher -->
@@ -159,30 +210,28 @@ export function renderWeatherChart(containerId) {
           <text x="${paddingLeft - 8}" y="${getY(val) + 4}" font-size="10.5" font-weight="600" text-anchor="end" fill="#94A3B8">${isFahrenheit ? Math.round((val * 9)/5 + 32) : val}°</text>
         `).join('')}
 
-        <!-- Gradient Area and Connecting Line -->
-        <path d="${areaCoords}" fill="url(#weatherGradient)" />
-        <path d="M ${pathCoords}" fill="none" stroke="${colorTheme}" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Spline Line and Shaded Areas -->
+        ${pathHTML}
+
+        <!-- Solid X-axis Base Line -->
+        <line x1="${paddingLeft}" y1="${height - paddingBottom}" x2="${width - paddingRight}" y2="${height - paddingBottom}" stroke="#CBD5E1" stroke-width="1.5"/>
 
         <!-- Nodes, Anchors, and Labels -->
         ${points.map((p, i) => {
           const x = getX(i);
           const yMin = getY(p.min);
           const yMax = getY(p.max);
-          const yMid = getY((p.min + p.max) / 2);
 
           const minLabel = formatTemp(p.min);
           const maxLabel = formatTemp(p.max);
 
           return `
-            <!-- Vertical Anchor Line -->
-            <line x1="${x}" y1="${yMax}" x2="${x}" y2="${yMin}" stroke="${colorTheme}" stroke-dasharray="2" stroke-width="1.5" opacity="0.6"/>
+            <!-- Vertical Anchor Line (Between Max and Min for daily, or to baseline for monthly) -->
+            <line x1="${x}" y1="${yMax}" x2="${x}" y2="${isDaily ? yMin : height - paddingBottom}" stroke="${colorTheme}" stroke-dasharray="2" stroke-width="1.5" opacity="0.6"/>
             
             <!-- Nodes (Min/Max points) -->
-            <circle cx="${x}" cy="${yMin}" r="4.5" fill="#FFFFFF" stroke="${colorTheme}" stroke-width="2"/>
             <circle cx="${x}" cy="${yMax}" r="4.5" fill="#FFFFFF" stroke="${colorTheme}" stroke-width="2"/>
-            
-            <!-- Midpoint average dot -->
-            <circle cx="${x}" cy="${yMid}" r="3.5" fill="${colorTheme}"/>
+            ${isDaily ? `<circle cx="${x}" cy="${yMin}" r="4.5" fill="#FFFFFF" stroke="${colorTheme}" stroke-width="2"/>` : ''}
 
             <!-- Min/Max Floating Label Box -->
             <g transform="translate(${x}, ${yMax - 22})">

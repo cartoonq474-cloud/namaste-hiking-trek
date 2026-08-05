@@ -135,6 +135,29 @@ const trekAltitudeProfiles = {
   }
 };
 
+function getSplinePath(points, includeM = true) {
+  if (points.length === 0) return "";
+  let d = includeM ? `M ${points[0].x},${points[0].y}` : `L ${points[0].x},${points[0].y}`;
+  if (points.length === 1) return d;
+  
+  const tension = 0.15;
+  for (let i = 0; i < points.length - 1; i++) {
+    const p0 = points[i - 1] || points[i];
+    const p1 = points[i];
+    const p2 = points[i + 1];
+    const p3 = points[i + 2] || p2;
+    
+    const cpX1 = p1.x + (p2.x - p0.x) * tension;
+    const cpY1 = p1.y + (p2.y - p0.y) * tension;
+    
+    const cpX2 = p2.x - (p3.x - p1.x) * tension;
+    const cpY2 = p2.y - (p3.y - p1.y) * tension;
+    
+    d += ` C ${cpX1},${cpY1} ${cpX2},${cpY2} ${p2.x},${p2.y}`;
+  }
+  return d;
+}
+
 export function renderAltitudeChart(containerId, trekKey = "ebc") {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -168,8 +191,9 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
   const getX = (index) => paddingLeft + (index / (convertedPoints.length - 1)) * (width - paddingLeft - paddingRight);
   const getY = (alt) => height - paddingBottom - ((alt - minAlt) / (maxAlt - minAlt)) * (height - paddingTop - paddingBottom);
 
-  const pathCoords = convertedPoints.map((p, i) => `${getX(i)},${getY(p.displayAlt)}`).join(' L ');
-  const areaCoords = `M ${getX(0)},${height - paddingBottom} L ${pathCoords} L ${getX(convertedPoints.length - 1)},${height - paddingBottom} Z`;
+  const coords = convertedPoints.map((p, i) => ({ x: getX(i), y: getY(p.displayAlt) }));
+  const pathCoords = getSplinePath(coords, true);
+  const areaCoords = `${pathCoords} L ${getX(convertedPoints.length - 1)},${height - paddingBottom} L ${getX(0)},${height - paddingBottom} Z`;
 
   const gridLine1Val = isFeet ? 6000 : 2000;
   const gridLine2Val = isFeet ? 12000 : 4000;
@@ -231,7 +255,10 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
 
         <!-- Area & Peak Line -->
         <path d="${areaCoords}" fill="url(#altitudeGradient-${trekKey})" />
-        <path d="M ${pathCoords}" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+        <path d="${pathCoords}" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- Solid X-axis Base Line -->
+        <line x1="${paddingLeft}" y1="${height - paddingBottom}" x2="${width - paddingRight}" y2="${height - paddingBottom}" stroke="#CBD5E1" stroke-width="1.5"/>
 
         <!-- Nodes and Labels -->
         ${convertedPoints.map((p, i) => `
