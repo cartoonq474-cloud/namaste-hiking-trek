@@ -108,7 +108,7 @@ export function renderWeatherChart(containerId) {
   // Dimensions
   const width = isDaily ? 1000 : 800; // Scrollable if daily
   const height = 300;
-  const paddingLeft = 60;
+  const paddingLeft = isDaily ? 130 : 60;
   const paddingRight = 40;
   const paddingTop = 50;
   const paddingBottom = 60;
