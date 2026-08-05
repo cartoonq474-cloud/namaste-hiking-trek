@@ -606,6 +606,239 @@
                   </div>
                 </div>
               </div>
+              </div>
+            </div>
+
+            <style>
+              .why-book-container {
+                margin-top: 45px;
+                padding-top: 35px;
+                border-top: 1px solid var(--color-neutral-100);
+              }
+              .why-book-title-wrapper {
+                border-left: 4px solid var(--color-copper-orange);
+                padding-left: 14px;
+                margin-bottom: 16px;
+              }
+              .why-book-title {
+                font-size: 1.8rem;
+                margin: 0;
+                color: var(--color-primary-navy);
+                font-weight: 700;
+              }
+              .why-book-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+                margin-top: 30px;
+              }
+              .why-book-card {
+                background: var(--color-white);
+                border: 1px solid #e2e8f0;
+                border-radius: 16px;
+                padding: 24px;
+                display: flex;
+                gap: 16px;
+                transition: all var(--transition-fast);
+              }
+              .why-book-card:hover {
+                border-color: var(--color-copper-orange);
+                box-shadow: 0 10px 25px rgba(16, 185, 129, 0.08);
+                transform: translateY(-2px);
+              }
+              .why-book-icon-box {
+                flex-shrink: 0;
+                width: 44px;
+                height: 44px;
+                background: rgba(16, 185, 129, 0.08);
+                color: var(--color-copper-orange);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .why-book-card-content {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+              }
+              .why-book-card-title {
+                font-size: 1.05rem;
+                font-weight: 700;
+                color: var(--color-primary-navy);
+                line-height: 1.4;
+              }
+              .why-book-card-text {
+                font-size: 0.92rem;
+                line-height: 1.6;
+                color: var(--color-neutral-600);
+              }
+              @media (max-width: 800px) {
+                .why-book-grid {
+                  grid-template-columns: 1fr;
+                  gap: 16px;
+                }
+              }
+            </style>
+
+            <div class="why-book-container">
+              <div class="why-book-title-wrapper">
+                <h2 class="why-book-title">Why Book the Everest Base Camp Trek with Namaste Hiking Trek?</h2>
+              </div>
+              
+              <p style="color: var(--color-neutral-600); font-size: 1.05rem; margin-bottom: 24px; line-height: 1.6; max-width: 850px;">
+                Most operators in Kathmandu can get you to base camp. The difference is in what happens around the trek — before you arrive, during the harder days, and when something doesn’t go to plan. These are the things our guests from across the world keep writing about in their <a href="https://www.tripadvisor.com" target="_blank" style="color: var(--color-copper-orange); text-decoration: underline; font-weight: 600;">TripAdvisor reviews</a> as what actually mattered to them. We’re currently ranked #2 out of more than 2,900 trekking agencies in Nepal on TripAdvisor — a position we don’t take lightly, and one that comes from genuinely hard work on every single trip rather than marketing.
+              </p>
+              
+              <div class="why-book-grid">
+                <!-- Card 1: Guides -->
+                <div class="why-book-card">
+                  <div class="why-book-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <div class="why-book-card-content">
+                    <h4 class="why-book-card-title">Guides who've worked the Khumbu for 6 to 7 years with us</h4>
+                    <p class="why-book-card-text">not seasons, years. Sujan, Sharad, Bishal, Sandip, Biraj, Prem — these names appear over and over in our reviews because they’re the same faces returning every season. They know which teahouses cook the best Dal Bhat in Dingboche, which days the Tengboche puja is open, and which trekkers need slowing down before anyone says it out loud. Make sure you read our reviews before booking the trek</p>
+                  </div>
+                </div>
+
+                <!-- Card 2: 100% Guaranteed departures -->
+                <div class="why-book-card">
+                  <div class="why-book-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                  </div>
+                  <div class="why-book-card-content">
+                    <h4 class="why-book-card-title">100% guaranteed departures</h4>
+                    <p class="why-book-card-text">Every date on our calendar runs, with no minimum group size required. If you book a solo private trek, it still runs as a solo private trek. We don’t cancel you off a date because the numbers didn’t work out.</p>
+                  </div>
+                </div>
+
+                <!-- Card 3: You see your group -->
+                <div class="why-book-card">
+                  <div class="why-book-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="why-book-card-content">
+                    <h4 class="why-book-card-title">You see your group before you arrive</h4>
+                    <p class="why-book-card-text">Through our client portal you can check who else is on your departure — names, ages, countries — so there’s no awkward first meeting in the office. Most of our group trekkers message each other on WhatsApp before they fly out.</p>
+                  </div>
+                </div>
+
+                <!-- Card 4: Pre-trek briefing -->
+                <div class="why-book-card">
+                  <div class="why-book-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="why-book-card-content">
+                    <h4 class="why-book-card-title">A real pre-trek briefing at the office</h4>
+                    <p class="why-book-card-text">You sit down at our office in NayaBazar with your guide and walk through the route, altitude protocol, packing check, weather forecast, and anything else on your mind. It’s usually 60 to 90 minutes. Most clients tell us this is where the trip stops feeling abstract.</p>
+                  </div>
+                </div>
+
+                <!-- Card 5: 24/7 replies -->
+                <div class="why-book-card">
+                  <div class="why-book-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                  </div>
+                  <div class="why-book-card-content">
+                    <h4 class="why-book-card-title">24/7 replies from real people you'll meet</h4>
+                    <p class="why-book-card-text">Lal, Kamal and Hemlal handle pre-trek messages personally — not a chatbot, not a shift worker. On WhatsApp during Nepal hours we usually reply within minutes; overnight, within a few hours. Once you’re on the trail, your guide carries a working SIM and we can be reached through them.</p>
+                  </div>
+                </div>
+
+                <!-- Card 6: Private airport pickup -->
+                <div class="why-book-card">
+                  <div class="why-book-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
+                      <circle cx="7" cy="17" r="2"></circle>
+                      <circle cx="15" cy="17" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div class="why-book-card-content">
+                    <h4 class="why-book-card-title">Private airport pickup and drop-off, included</h4>
+                    <p class="why-book-card-text">A driver with a name card of Namaste Hiking Trek meets you at Tribhuvan International, takes you to your hotel, and the same arrangement gets you back at the end. No queueing for a prepaid taxi after a 14-hour flight.</p>
+                  </div>
+                </div>
+
+                <!-- Card 7: Gear Rentals -->
+                <div class="why-book-card">
+                  <div class="why-book-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20.38 3.46L16 2.14a1 1 0 0 0-1 0L3.62 9.24a1 1 0 0 0-.5.85v8.5a1 1 0 0 0 1 1h16.76a1 1 0 0 0 1-1v-14a1 1 0 0 0-.5-.85zM6.5 12h11M6.5 16h11"></path>
+                    </svg>
+                  </div>
+                  <div class="why-book-card-content">
+                    <h4 class="why-book-card-title">Sleeping bag and down jacket rentals at the office</h4>
+                    <p class="why-book-card-text">USD 15 each for the trip. Trekking poles, crampons, and other gear available to buy at reasonable prices. If you arrive with nothing but boots, we can have you fully kitted out the morning before departure.</p>
+                  </div>
+                </div>
+
+                <!-- Card 8: Duffle bag -->
+                <div class="why-book-card">
+                  <div class="why-book-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                      <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                      <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                  </div>
+                  <div class="why-book-card-content">
+                    <h4 class="why-book-card-title">Complimentary Namaste Hiking Trek-branded waterproof duffle bag</h4>
+                    <p class="why-book-card-text">when you book with a porter (returned after the trek). It’s sized to fit the 20 kg porter weight limit so you don’t have to think about packing geometry.</p>
+                  </div>
+                </div>
+
+                <!-- Card 9: Booking System -->
+                <div class="why-book-card">
+                  <div class="why-book-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="2" y1="10" x2="22" y2="10"></line>
+                    </svg>
+                  </div>
+                  <div class="why-book-card-content">
+                    <h4 class="why-book-card-title">A booking system that doesn't bury you in emails</h4>
+                    <p class="why-book-card-text">Book and pay by card, upload your passport scan, insurance PDF, and flight details directly through app.namastehikingtrek.com. Update your inbound flight up to the day before — you don’t have to email us each time something changes. We built it ourselves around how we actually run trips, and it’s the piece of our operation we’re most quietly proud of.</p>
+                  </div>
+                </div>
+
+                <!-- Card 10: 24/7 Emergency Support -->
+                <div class="why-book-card">
+                  <div class="why-book-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="4"></circle>
+                      <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                      <line x1="19.07" y1="4.93" x2="14.83" y2="9.17"></line>
+                      <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                      <line x1="9.17" y1="14.83" x2="4.93" y2="19.07"></line>
+                    </svg>
+                  </div>
+                  <div class="why-book-card-content">
+                    <h4 class="why-book-card-title">24/7 emergency support from a local team that picks up</h4>
+                    <p class="why-book-card-text">When something goes wrong on the trail — a sudden altitude issue, a teahouse mix-up, a flight cancellation back home you need to work around — you don’t wait. Message us on WhatsApp and someone in our Kathmandu office picks it up immediately, day or night. Because we’re local, we can act on it the same hour: re-route, re-book, send a horse, arrange a helicopter — whatever the situation actually needs.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
