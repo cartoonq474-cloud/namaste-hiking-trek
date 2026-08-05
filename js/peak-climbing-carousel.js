@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dots.forEach((dot, index) => {
         if (index === activeIndex) {
           dot.classList.add('active');
-          dot.style.background = '#E05600';
+          dot.style.background = '#10B981';
           dot.style.width = '48px';
         } else {
           dot.classList.remove('active');

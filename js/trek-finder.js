@@ -132,7 +132,7 @@ export function initTrekFinder(containerId, treks = sampleTreks) {
                 <span>Max: <strong>${t.maxAltitudeM} m</strong></span>
               </div>
               <div class="exotic-hover-meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E05600" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
                 <span>${t.difficulty}</span>
               </div>
             </div>

@@ -50,7 +50,7 @@ export function setupInquiryModal() {
       
       card.innerHTML = `
         <div style="text-align: center; padding: 40px 24px; animation: fadeIn 0.4s ease;">
-          <div style="width: 72px; height: 72px; background: rgba(224, 86, 0, 0.1); color: #E05600; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; font-size: 2.2rem; font-weight: bold;">✓</div>
+          <div style="width: 72px; height: 72px; background: rgba(16, 185, 129, 0.1); color: #10B981; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; font-size: 2.2rem; font-weight: bold;">✓</div>
           <h3 style="font-size: 1.8rem; margin-bottom: 12px; color: var(--color-primary-navy);">Inquiry Received!</h3>
           <p style="color: var(--color-neutral-600); margin-bottom: 28px; font-size: 1.05rem; line-height: 1.6;">
             Thank you! A Senior Himalayan Guide from <strong>Namaste Hiking Trek</strong> will contact you within 4 hours to customize your itinerary.
