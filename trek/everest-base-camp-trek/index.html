@@ -1114,33 +1114,277 @@
 
           <!-- Section 3: Includes and Excludes -->
           <section id="section-includes" class="trek-detail-section">
-            <h2 class="trek-section-title">What's Included & Excluded</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
-              <div style="background: white; padding: 24px; border-radius: var(--radius-md); border: 1px solid rgba(16, 185, 129, 0.2); box-shadow: var(--shadow-sm);">
-                <h4 style="color: #10B981; margin-bottom: 12px; font-size: 1.15rem;">✅ Included Services</h4>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; color: var(--color-neutral-700);">
-                  <li>✔ Roundtrip flight tickets Kathmandu ⇄ Lukla</li>
-                  <li>✔ Government Licensed English-Speaking Sherpa Guide</li>
-                  <li>✔ Porters (1 porter for 2 trekkers, max 20kg per duo)</li>
-                  <li>✔ Sagarmatha National Park & Khumbu Pasang Lhamu Permits</li>
-                  <li>✔ 3 Meals daily (Breakfast, Lunch, Dinner) during trek</li>
-                  <li>✔ Teahouse lodge accommodation along route</li>
-                  <li>✔ Medical kit & Pulse oximeter oxygen check daily</li>
-                  <li>✔ Welcome and farewell dinners in Kathmandu</li>
-                  <li>✔ Airport pick-up and drop-off transfers</li>
-                </ul>
+            <style>
+              .inc-exc-container {
+                margin-top: 10px;
+              }
+              .inc-exc-section-title-wrapper {
+                border-left: 4px solid var(--color-copper-orange);
+                padding-left: 14px;
+                margin-bottom: 24px;
+                margin-top: 30px;
+              }
+              .inc-exc-section-title {
+                font-size: 1.8rem;
+                margin: 0;
+                color: var(--color-primary-navy);
+                font-weight: 700;
+              }
+              .inc-exc-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                margin-bottom: 40px;
+              }
+              .inc-exc-card {
+                background: var(--color-white);
+                border: 1px solid #e2e8f0;
+                border-radius: 16px;
+                padding: 20px;
+                display: flex;
+                gap: 14px;
+                transition: all var(--transition-fast);
+              }
+              .inc-exc-card:hover {
+                border-color: var(--color-copper-orange);
+                box-shadow: 0 8px 20px rgba(16, 185, 129, 0.05);
+                transform: translateY(-1px);
+              }
+              .inc-exc-card.exclude-card:hover {
+                border-color: #ef4444;
+                box-shadow: 0 8px 20px rgba(239, 68, 68, 0.05);
+              }
+              .inc-exc-icon-box {
+                flex-shrink: 0;
+                margin-top: 2px;
+              }
+              .inc-exc-card-content {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+              }
+              .inc-exc-card-title {
+                font-size: 1rem;
+                font-weight: 700;
+                color: var(--color-primary-navy);
+                line-height: 1.4;
+              }
+              .inc-exc-card-text {
+                font-size: 0.9rem;
+                line-height: 1.5;
+                color: var(--color-neutral-600);
+              }
+              @media (max-width: 800px) {
+                .inc-exc-grid {
+                  grid-template-columns: 1fr;
+                  gap: 16px;
+                }
+              }
+            </style>
+
+            <div class="inc-exc-container">
+              <!-- Includes Heading -->
+              <div class="inc-exc-section-title-wrapper">
+                <h2 class="inc-exc-section-title">Includes</h2>
+                <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
               </div>
-              <div style="background: white; padding: 24px; border-radius: var(--radius-md); border: 1px solid rgba(239, 68, 68, 0.2); box-shadow: var(--shadow-sm);">
-                <h4 style="color: #EF4444; margin-bottom: 12px; font-size: 1.15rem;">❌ Excluded Services</h4>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; color: var(--color-neutral-700);">
-                  <li>✖ International flights & Nepal entry visa ($50 USD cash)</li>
-                  <li>✖ High-altitude emergency travel insurance (Must cover up to 6,000m & heli rescue)</li>
-                  <li>✖ Hot shower & Wi-Fi fees in mountain lodges</li>
-                  <li>✖ Personal trekking gear (down jacket, sleeping bag, trekking poles)</li>
-                  <li>✖ Tipping for guides and porters (voluntary)</li>
-                  <li>✖ Alcoholic beverages, mineral water, soft drinks</li>
-                  <li>✖ Personal items, laundry, phone calls</li>
-                </ul>
+
+              <!-- Includes Grid -->
+              <div class="inc-exc-grid">
+                <!-- Include 1 -->
+                <div class="inc-exc-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="16 10 11 15 8 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">Local transfers for your international flight x 2 (arrival/departure)</h4>
+                    <p class="inc-exc-card-text">Airport pick-up and drop-off by private vehicle to your hotel in Kathmandu.</p>
+                  </div>
+                </div>
+
+                <!-- Include 2 -->
+                <div class="inc-exc-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="16 10 11 15 8 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">Local transfers for your domestic flight x 2</h4>
+                    <p class="inc-exc-card-text">Vehicle transfers between your hotel and the domestic airport terminal in Kathmandu.</p>
+                  </div>
+                </div>
+
+                <!-- Include 3 -->
+                <div class="inc-exc-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="16 10 11 15 8 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">Kathmandu Lukla Kathmandu Flight</h4>
+                    <p class="inc-exc-card-text">Scheduled mountain flights as listed in the itinerary; weather delays are possible.</p>
+                  </div>
+                </div>
+
+                <!-- Include 4 -->
+                <div class="inc-exc-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="16 10 11 15 8 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">Guide for 12 Days, Porter for 11 Days</h4>
+                    <p class="inc-exc-card-text">Licensed, English-speaking local guide — salary, insurance, meals and lodging all covered.</p>
+                  </div>
+                </div>
+
+                <!-- Include 5 -->
+                <div class="inc-exc-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="16 10 11 15 8 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">Sagarmatha National Park Entry Permit and Local Entry Permits</h4>
+                    <p class="inc-exc-card-text">We arrange this trekking permit for you before departure — no paperwork on your side.</p>
+                  </div>
+                </div>
+
+                <!-- Include 6 -->
+                <div class="inc-exc-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="16 10 11 15 8 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">2 nights accommodation in a Kathmandu (Kathmandu Business Hotel or similar)</h4>
+                    <p class="inc-exc-card-text">Comfortable hotel stay in Kathmandu before and after the trek with breakfast included.</p>
+                  </div>
+                </div>
+
+                <!-- Include 7 -->
+                <div class="inc-exc-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="16 10 11 15 8 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">11 nights accommodation in mountain teahouses</h4>
+                    <p class="inc-exc-card-text">Twin-sharing rooms in local mountain teahouses along the trail.</p>
+                  </div>
+                </div>
+
+                <!-- Include 8 -->
+                <div class="inc-exc-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="16 10 11 15 8 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">Staff insurance and necessary ground transport for support staff</h4>
+                    <p class="inc-exc-card-text">Full insurance cover, clothing, gear, and travel expenses for all our guides and porters.</p>
+                  </div>
+                </div>
+
+                <!-- Include 9 -->
+                <div class="inc-exc-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="16 10 11 15 8 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">12 x set breakfast, 11 x set lunch and 11 x set dinner while on trek.</h4>
+                    <p class="inc-exc-card-text">Three meals a day, chosen from the teahouse menus while on the trek.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Excludes Heading -->
+              <div class="inc-exc-section-title-wrapper" style="margin-top: 10px;">
+                <h2 class="inc-exc-section-title">Excludes</h2>
+                <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
+              </div>
+
+              <!-- Excludes Grid -->
+              <div class="inc-exc-grid">
+                <!-- Exclude 1 -->
+                <div class="inc-exc-card exclude-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="15" y1="9" x2="9" y2="15"></line>
+                      <line x1="9" y1="9" x2="15" y2="15"></line>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">Lunch and dinner in Kathmandu</h4>
+                    <p class="inc-exc-card-text">Meals in Kathmandu are not included to give you flexibility to explore local restaurants.</p>
+                  </div>
+                </div>
+
+                <!-- Exclude 2 -->
+                <div class="inc-exc-card exclude-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="15" y1="9" x2="9" y2="15"></line>
+                      <line x1="9" y1="9" x2="15" y2="15"></line>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">Personnel expenses of any kind and travel insurance</h4>
+                    <p class="inc-exc-card-text">Your policy must cover emergency helicopter evacuation up to 6,000 m.</p>
+                  </div>
+                </div>
+
+                <!-- Exclude 3 -->
+                <div class="inc-exc-card exclude-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="15" y1="9" x2="9" y2="15"></line>
+                      <line x1="9" y1="9" x2="15" y2="15"></line>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">Any Hot and Cold drinks</h4>
+                    <p class="inc-exc-card-text">Hot and cold drinks along the trail are paid directly at the teahouses.</p>
+                  </div>
+                </div>
+
+                <!-- Exclude 4 -->
+                <div class="inc-exc-card exclude-card">
+                  <div class="inc-exc-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="15" y1="9" x2="9" y2="15"></line>
+                      <line x1="9" y1="9" x2="15" y2="15"></line>
+                    </svg>
+                  </div>
+                  <div class="inc-exc-card-content">
+                    <h4 class="inc-exc-card-title">Tips to the Guide and Porter (Expected) - Recommended 10% to the guide and 5% to the porter of the Total Cost</h4>
+                    <p class="inc-exc-card-text">Customary in Nepal — given at the end of the trek if you are happy with the service.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
