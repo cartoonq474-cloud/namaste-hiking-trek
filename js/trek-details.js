@@ -416,6 +416,20 @@ function setupReadTracker(trekKey) {
   updateProgress();
 }
 
+// Setup Collapsible Group Discount Accordion
+function setupDiscountAccordion() {
+  const toggleBtn = document.getElementById('booking-discount-toggle');
+  const content = document.getElementById('booking-discount-content');
+  const chevron = document.getElementById('booking-discount-chevron');
+
+  if (toggleBtn && content && chevron) {
+    toggleBtn.addEventListener('click', () => {
+      const isOpen = content.classList.toggle('open');
+      chevron.classList.toggle('open', isOpen);
+    });
+  }
+}
+
 // Initialise everything on page load
 document.addEventListener('DOMContentLoaded', () => {
   const detailsWrapper = document.querySelector('[data-trek-details-wrapper]');
@@ -426,4 +440,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setupGearChecklist(trekKey);
   setupBookingCalculator();
   setupReadTracker(trekKey);
+  setupDiscountAccordion();
 });

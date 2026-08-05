@@ -3684,20 +3684,25 @@
                 <span style="font-size: 0.85rem; color: var(--color-neutral-500); font-weight: 600;">/ person <a href="#section-itinerary" style="text-decoration: underline; color: var(--color-neutral-500); margin-left: 6px;">14 days trip</a></span>
               </div>
 
-              <!-- Group Discount Tier Rates Table -->
-              <div style="font-size: 0.72rem; font-weight: 800; color: var(--color-neutral-400); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">We Offer Group Discount</div>
-              <div class="booking-discount-table">
-                <div class="booking-discount-row" id="discount-row-1">
-                  <span>1 pax</span>
-                  <span data-price-usd="1499">$1,499</span>
-                </div>
-                <div class="booking-discount-row" id="discount-row-2">
-                  <span>2–7 pax</span>
-                  <span data-price-usd="1299">$1,299</span>
-                </div>
-                <div class="booking-discount-row" id="discount-row-3">
-                  <span>8–29 pax</span>
-                  <span data-price-usd="1199">$1,199</span>
+              <!-- Group Discount Tier Rates Table Accordion -->
+              <div id="booking-discount-toggle" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 0.72rem; font-weight: 800; color: var(--color-neutral-400); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; user-select: none;">
+                <span>We Offer Group Discount</span>
+                <span id="booking-discount-chevron" class="booking-discount-chevron" style="font-size: 0.7rem; color: var(--color-neutral-400);">▼</span>
+              </div>
+              <div id="booking-discount-content" class="booking-discount-content">
+                <div class="booking-discount-table" style="margin-top: 4px; margin-bottom: 16px;">
+                  <div class="booking-discount-row" id="discount-row-1">
+                    <span>1 pax</span>
+                    <span data-price-usd="1499">$1,499</span>
+                  </div>
+                  <div class="booking-discount-row active" id="discount-row-2">
+                    <span>2–7 pax</span>
+                    <span data-price-usd="1299">$1,299</span>
+                  </div>
+                  <div class="booking-discount-row" id="discount-row-3">
+                    <span>8–29 pax</span>
+                    <span data-price-usd="1199">$1,199</span>
+                  </div>
                 </div>
               </div>
 

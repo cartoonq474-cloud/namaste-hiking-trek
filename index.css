@@ -6612,3 +6612,24 @@ textarea {
   background: #f8fafc !important;
   border-color: var(--color-primary-navy) !important;
 }
+
+/* EBC Booking Sidebar Accordion */
+.booking-discount-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.booking-discount-content.open {
+  max-height: 180px; /* fit 3 rows nicely */
+}
+
+.booking-discount-chevron {
+  transition: transform var(--transition-fast) ease;
+  display: inline-block;
+  transform-origin: center;
+}
+
+.booking-discount-chevron.open {
+  transform: rotate(180deg);
+}
