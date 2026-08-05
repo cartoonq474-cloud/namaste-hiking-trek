@@ -96,11 +96,29 @@ function setupAccordions() {
         card.classList.remove('active');
         content.style.maxHeight = '';
       } else {
+        // Collapse other cards first to make it a clean accordion
+        const otherCards = document.querySelectorAll('.itinerary-card.active');
+        otherCards.forEach(c => {
+          if (c !== card) {
+            c.classList.remove('active');
+            const otherContent = c.querySelector('.itinerary-content');
+            if (otherContent) otherContent.style.maxHeight = '';
+          }
+        });
+
         card.classList.add('active');
         content.style.maxHeight = content.scrollHeight + 'px';
       }
     });
   });
+
+  // Automatically compute and set initial heights for active items on page load
+  setTimeout(() => {
+    const activeContents = document.querySelectorAll('.itinerary-card.active .itinerary-content');
+    activeContents.forEach(content => {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    });
+  }, 300);
 }
 
 // Setup Interactive Gear Checklist
