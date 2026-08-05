@@ -213,7 +213,7 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
 
     <!-- SVG Area Chart -->
     <div style="overflow-x: auto; width: 100%;">
-      <svg viewBox="0 0 ${width} ${height}" class="altitude-chart-svg" style="width: ${width}px; height: ${height}px; display: block; overflow: visible;">
+      <svg viewBox="0 0 ${width} ${height}" class="altitude-chart-svg" style="width: 100%; max-width: 100%; min-width: 650px; height: auto; display: block; overflow: visible;">
         <defs>
           <linearGradient id="altitudeGradient-${trekKey}" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#10B981" stop-opacity="0.45"/>

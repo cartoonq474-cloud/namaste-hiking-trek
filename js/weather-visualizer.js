@@ -145,7 +145,7 @@ export function renderWeatherChart(containerId) {
 
     <!-- Scrollable Chart Container -->
     <div class="weather-scroll-container">
-      <svg viewBox="0 0 ${width} ${height}" style="width: ${width}px; height: ${height}px; display: block; overflow: visible;">
+      <svg viewBox="0 0 ${width} ${height}" style="width: 100%; max-width: 100%; min-width: ${isDaily ? '850px' : '650px'}; height: auto; display: block; overflow: visible;">
         <defs>
           <linearGradient id="weatherGradient" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="${colorTheme}" stop-opacity="${fillOpacity}"/>
@@ -251,11 +251,14 @@ export function renderWeatherChart(containerId) {
   if (scrollContainer && thumb) {
     const updateThumb = () => {
       const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+      const controls = container.querySelector('.weather-scroll-controls');
       if (maxScroll <= 0) {
         thumb.style.width = '100%';
         thumb.style.left = '0%';
+        if (controls) controls.style.display = 'none';
         return;
       }
+      if (controls) controls.style.display = 'flex';
       const scrollRatio = scrollContainer.scrollLeft / maxScroll;
       const visibleRatio = scrollContainer.clientWidth / scrollContainer.scrollWidth;
       const thumbWidth = Math.max(20, visibleRatio * 100);
