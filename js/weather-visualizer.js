@@ -145,7 +145,7 @@ export function renderWeatherChart(containerId) {
 
     <!-- Scrollable Chart Container -->
     <div class="weather-scroll-container">
-      <svg viewBox="0 0 ${width} ${height}" style="width: 100%; min-width: ${isDaily ? '950px' : '750px'}; height: auto; display: block; overflow: visible;">
+      <svg viewBox="0 0 ${width} ${height}" style="width: ${width}px; height: ${height}px; display: block; overflow: visible;">
         <defs>
           <linearGradient id="weatherGradient" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="${colorTheme}" stop-opacity="${fillOpacity}"/>
@@ -201,6 +201,15 @@ export function renderWeatherChart(containerId) {
         }).join('')}
       </svg>
     </div>
+
+    <!-- Custom Navigation Scrollbar Bar -->
+    <div class="weather-scroll-controls">
+      <button type="button" class="weather-scroll-btn prev">◀</button>
+      <div class="weather-scrollbar-track">
+        <div class="weather-scrollbar-thumb"></div>
+      </div>
+      <button type="button" class="weather-scroll-btn next">▶</button>
+    </div>
   `;
 
   container.innerHTML = wrapperHTML;
@@ -232,6 +241,45 @@ export function renderWeatherChart(containerId) {
       renderWeatherChart(containerId);
     });
   });
+
+  // Setup scrollbar thumb tracking and sync logic
+  const scrollContainer = container.querySelector('.weather-scroll-container');
+  const thumb = container.querySelector('.weather-scrollbar-thumb');
+  const prevBtn = container.querySelector('.weather-scroll-btn.prev');
+  const nextBtn = container.querySelector('.weather-scroll-btn.next');
+  
+  if (scrollContainer && thumb) {
+    const updateThumb = () => {
+      const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+      if (maxScroll <= 0) {
+        thumb.style.width = '100%';
+        thumb.style.left = '0%';
+        return;
+      }
+      const scrollRatio = scrollContainer.scrollLeft / maxScroll;
+      const visibleRatio = scrollContainer.clientWidth / scrollContainer.scrollWidth;
+      const thumbWidth = Math.max(20, visibleRatio * 100);
+      thumb.style.width = `${thumbWidth}%`;
+      thumb.style.left = `${scrollRatio * (100 - thumbWidth)}%`;
+    };
+
+    scrollContainer.addEventListener('scroll', updateThumb);
+    window.addEventListener('resize', updateThumb);
+    
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        scrollContainer.scrollBy({ left: -200, behavior: 'smooth' });
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        scrollContainer.scrollBy({ left: 200, behavior: 'smooth' });
+      });
+    }
+    
+    // Call initially to size and position
+    setTimeout(updateThumb, 50);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

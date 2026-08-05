@@ -6424,17 +6424,62 @@ textarea {
   overflow-x: auto;
   width: 100%;
   border-radius: 8px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .weather-scroll-container::-webkit-scrollbar {
-  height: 6px;
+  display: none; /* Chrome, Safari and Opera */
 }
 
-.weather-scroll-container::-webkit-scrollbar-track {
+/* Custom Scroll Navigation Bar */
+.weather-scroll-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.weather-scroll-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-neutral-400);
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.weather-scroll-btn:hover {
+  color: var(--color-primary-navy);
   background: #f1f5f9;
 }
 
-.weather-scroll-container::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 3px;
+.weather-scrollbar-track {
+  flex: 1;
+  max-width: 320px;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.weather-scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  background: #94a3b8;
+  border-radius: 4px;
+  transition: background var(--transition-fast);
+}
+
+.weather-scrollbar-track:hover .weather-scrollbar-thumb {
+  background: #64748b;
 }
