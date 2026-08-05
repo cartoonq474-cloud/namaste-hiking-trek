@@ -276,6 +276,119 @@ function setupBookingCalculator() {
   calculate();
 }
 
+// Setup Interactive Read Tracker (Trip Details)
+function setupReadTracker(trekKey) {
+  const cards = document.querySelectorAll('.detail-accordion-card');
+  const bar = document.querySelector('.details-progress-ring-bar');
+  const countText = document.querySelector('.details-progress-count');
+  const statusText = document.querySelector('.details-progress-status');
+  
+  if (!cards.length) return;
+
+  const storageKey = `namaste-read-${trekKey || 'default'}`;
+  
+  // Load read states
+  let readStates = {};
+  try {
+    const data = localStorage.getItem(storageKey);
+    if (data) readStates = JSON.parse(data);
+  } catch (e) {
+    console.error("Error reading read states:", e);
+  }
+
+  // Initial setup of classes
+  cards.forEach(card => {
+    const id = card.getAttribute('data-detail-id');
+    if (readStates[id]) {
+      card.classList.add('read');
+    }
+  });
+
+  function updateProgress() {
+    const totalCount = cards.length;
+    const readCount = document.querySelectorAll('.detail-accordion-card.read').length;
+    
+    // Update count display
+    if (countText) {
+      countText.textContent = `${readCount}/${totalCount} read`;
+    }
+
+    // Update status subtext
+    if (statusText) {
+      if (readCount === 0) {
+        statusText.textContent = 'Nice start — keep going';
+      } else if (readCount <= Math.floor(totalCount / 3)) {
+        statusText.textContent = 'Doing great — learning more';
+      } else if (readCount < totalCount) {
+        statusText.textContent = 'Almost there — well prepared!';
+      } else {
+        statusText.textContent = 'All read — you are ready to trek! 🚀';
+      }
+    }
+
+    // Update progress ring SVG
+    if (bar) {
+      const radius = 18;
+      const circumference = 2 * Math.PI * radius; // 113.1
+      const percent = (readCount / totalCount) * 100;
+      const offset = circumference - (percent / 100) * circumference;
+      bar.style.strokeDashoffset = offset;
+    }
+  }
+
+  // Click handler to expand/collapse and mark as read
+  cards.forEach(card => {
+    const header = card.querySelector('.detail-accordion-header');
+    const content = card.querySelector('.detail-accordion-content');
+    const id = card.getAttribute('data-detail-id');
+
+    if (!header || !content) return;
+
+    header.addEventListener('click', () => {
+      const isExpanded = card.classList.contains('active');
+
+      if (isExpanded) {
+        card.classList.remove('active');
+        content.style.maxHeight = '';
+      } else {
+        // Collapse other cards first to make it a clean accordion
+        const otherCards = document.querySelectorAll('.detail-accordion-card.active');
+        otherCards.forEach(c => {
+          if (c !== card) {
+            c.classList.remove('active');
+            const otherContent = c.querySelector('.detail-accordion-content');
+            if (otherContent) otherContent.style.maxHeight = '';
+          }
+        });
+
+        // Expand this card
+        card.classList.add('active');
+        content.style.maxHeight = content.scrollHeight + 'px';
+
+        // Mark as read if not already read
+        if (!card.classList.contains('read')) {
+          card.classList.add('read');
+          readStates[id] = true;
+          try {
+            localStorage.setItem(storageKey, JSON.stringify(readStates));
+          } catch (e) {
+            console.error("Error saving read states:", e);
+          }
+          updateProgress();
+        }
+      }
+    });
+
+    // Make sure initial active content is sized properly (if any starts expanded)
+    if (card.classList.contains('active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    }
+  });
+
+  // Run progress calculation on load
+  updateProgress();
+}
+
 // Initialise everything on page load
 document.addEventListener('DOMContentLoaded', () => {
   const detailsWrapper = document.querySelector('[data-trek-details-wrapper]');
@@ -285,4 +398,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setupAccordions();
   setupGearChecklist(trekKey);
   setupBookingCalculator();
+  setupReadTracker(trekKey);
 });
