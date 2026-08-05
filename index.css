@@ -6481,3 +6481,134 @@ textarea {
 .weather-scrollbar-track:hover .weather-scrollbar-thumb {
   background: #64748b;
 }
+
+/* EBC Booking Sidebar Redesign */
+.best-seller-ribbon {
+  position: absolute;
+  top: 24px;
+  right: -8px;
+  background: #f59e0b; /* Orange best seller color */
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 4px 0 0 4px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  user-select: none;
+}
+
+.best-seller-ribbon::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  border-width: 6px 8px 0 0;
+  border-style: solid;
+  border-color: #d97706 transparent transparent transparent; /* Ribbon fold crease back */
+}
+
+.booking-discount-table {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.booking-discount-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary-navy);
+  background: #ffffff;
+  border-bottom: 1.5px solid #e2e8f0;
+  transition: all var(--transition-fast);
+}
+
+.booking-discount-row:last-child {
+  border-bottom: none;
+}
+
+.booking-discount-row.active {
+  background: #f1f5f9 !important; /* light grey/blue highlight from screenshot */
+}
+
+/* Call and WhatsApp Contact Link Circles */
+.contact-circle-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.contact-circle-btn.phone {
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  color: var(--color-primary-navy);
+}
+
+.contact-circle-btn.phone:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+  transform: translateY(-2px);
+}
+
+.contact-circle-btn.whatsapp {
+  background: #25D366; /* Solid WhatsApp green */
+  color: #ffffff;
+}
+
+.contact-circle-btn.whatsapp:hover {
+  background: #20ba5a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+/* Modernized Book / Inquiry buttons */
+.booking-btn-book {
+  background: #008060 !important; /* Deep green from screenshot */
+  color: white !important;
+  border: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 30px !important;
+  padding: 14px 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.booking-btn-book:hover {
+  background: #00664d !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 128, 96, 0.2);
+}
+
+.booking-btn-enquiry {
+  background: #ffffff !important;
+  color: var(--color-primary-navy) !important;
+  border: 1.5px solid #cbd5e1 !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 30px !important;
+  padding: 12px 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.booking-btn-enquiry:hover {
+  background: #f8fafc !important;
+  border-color: var(--color-primary-navy) !important;
+}

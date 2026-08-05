@@ -198,7 +198,7 @@ function setupBookingCalculator() {
   const totalPriceDisplay = document.getElementById('calc-display-total');
 
   // Load configuration from dataset values (default to EBC pricing if missing)
-  const basePriceVal = parseFloat(calcContainer.getAttribute('data-base-price') || '1350');
+  const basePriceVal = parseFloat(calcContainer.getAttribute('data-base-price') || '1299');
   const heliPriceVal = parseFloat(calcContainer.getAttribute('data-heli-price') || '800');
   const singlePriceVal = parseFloat(calcContainer.getAttribute('data-single-price') || '250');
 
@@ -207,28 +207,54 @@ function setupBookingCalculator() {
     const isHeliChecked = heliCheckbox ? heliCheckbox.checked : false;
     const isSingleChecked = singleCheckbox ? singleCheckbox.checked : false;
 
-    // Standard progressive group discount percentages
-    let discountPercent = 0;
-    if (groupSize >= 2 && groupSize <= 4) {
-      discountPercent = 0.05; // 5% discount
-    } else if (groupSize >= 5 && groupSize <= 9) {
-      discountPercent = 0.10; // 10% discount
-    } else if (groupSize >= 10) {
-      discountPercent = 0.15; // 15% discount
+    // Custom group discount model based on design:
+    // 1 pax = $1,499
+    // 2-7 pax = $1,299
+    // 8-29 pax = $1,199
+    let currentBasePrice = basePriceVal;
+    
+    const row1 = document.getElementById('discount-row-1');
+    const row2 = document.getElementById('discount-row-2');
+    const row3 = document.getElementById('discount-row-3');
+    
+    if (basePriceVal === 1299) { // New EBC pricing model
+      if (row1) row1.classList.remove('active');
+      if (row2) row2.classList.remove('active');
+      if (row3) row3.classList.remove('active');
+
+      if (groupSize === 1) {
+        currentBasePrice = 1499;
+        if (row1) row1.classList.add('active');
+      } else if (groupSize >= 2 && groupSize <= 7) {
+        currentBasePrice = 1299;
+        if (row2) row2.classList.add('active');
+      } else if (groupSize >= 8) {
+        currentBasePrice = 1199;
+        if (row3) row3.classList.add('active');
+      }
+    } else {
+      // Standard progressive group discount percentages
+      let discountPercent = 0;
+      if (groupSize >= 2 && groupSize <= 4) {
+        discountPercent = 0.05;
+      } else if (groupSize >= 5 && groupSize <= 9) {
+        discountPercent = 0.10;
+      } else if (groupSize >= 10) {
+        discountPercent = 0.15;
+      }
+      currentBasePrice = basePriceVal * (1 - discountPercent);
     }
 
-    // Calculations
-    const discountedBase = basePriceVal * (1 - discountPercent);
     const addonsPerPerson = (isHeliChecked ? heliPriceVal : 0) + (isSingleChecked ? singlePriceVal : 0);
-    const finalPerPerson = discountedBase + addonsPerPerson;
+    const finalPerPerson = currentBasePrice + addonsPerPerson;
 
     // Set attributes for dynamic currency updates
     if (basePricePerPersonDisplay) {
-      basePricePerPersonDisplay.setAttribute('data-price-usd', basePriceVal);
-      basePricePerPersonDisplay.textContent = formatPrice(basePriceVal);
+      basePricePerPersonDisplay.setAttribute('data-price-usd', currentBasePrice);
+      basePricePerPersonDisplay.textContent = formatPrice(currentBasePrice);
     }
     if (discountRateDisplay) {
-      discountRateDisplay.textContent = `${Math.round(discountPercent * 100)}%`;
+      discountRateDisplay.textContent = `0%`; // Standard EBC uses direct price tiers instead of discount percent
     }
     if (heliPriceDisplay) {
       heliPriceDisplay.setAttribute('data-price-usd', heliPriceVal);
