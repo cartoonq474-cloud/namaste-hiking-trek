@@ -6625,7 +6625,7 @@ textarea {
 }
 
 .booking-discount-chevron {
-  transition: transform var(--transition-fast) ease;
+  transition: transform 0.2s ease;
   display: inline-block;
   transform-origin: center;
 }

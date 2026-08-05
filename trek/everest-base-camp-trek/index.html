@@ -24,7 +24,7 @@
   <meta name="twitter:description" content="Detailed 14 Days Everest Base Camp Trek Itinerary with altitude profile, included services, and local guide expertise.">
   <meta name="twitter:image" content="https://namastehikingtrek.com/images/hero-himalayas.jpg">
 
-  <link rel="stylesheet" href="../../index.css">
+  <link rel="stylesheet" href="../../index.css?v=3">
 </head>
 <body>
 
@@ -3685,7 +3685,7 @@
               </div>
 
               <!-- Group Discount Tier Rates Table Accordion -->
-              <div id="booking-discount-toggle" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 0.72rem; font-weight: 800; color: var(--color-neutral-400); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; user-select: none;">
+              <div id="booking-discount-toggle" onclick="document.getElementById('booking-discount-content').classList.toggle('open'); document.getElementById('booking-discount-chevron').classList.toggle('open');" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 0.72rem; font-weight: 800; color: var(--color-neutral-400); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; user-select: none;">
                 <span>We Offer Group Discount</span>
                 <span id="booking-discount-chevron" class="booking-discount-chevron" style="font-size: 0.7rem; color: var(--color-neutral-400);">▼</span>
               </div>
@@ -3845,7 +3845,7 @@
   <script type="module" src="../../js/altitude-visualizer.js"></script>
   <script type="module" src="../../js/weather-visualizer.js"></script>
   <script type="module" src="../../js/inquiry-modal.js"></script>
-  <script type="module" src="../../js/trek-details.js?v=2"></script>
+  <script type="module" src="../../js/trek-details.js?v=3"></script>
   <script src="../../js/header-scroll.js"></script>
 </body>
 </html>
