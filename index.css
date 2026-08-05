@@ -6001,9 +6001,9 @@ textarea {
 }
 
 .itinerary-card.active .itinerary-toggle-btn-new {
-  background: var(--color-primary-navy);
+  background: #10B981;
   color: #ffffff;
-  border-color: var(--color-primary-navy);
+  border-color: #10B981;
   transform: rotate(180deg);
 }
 
