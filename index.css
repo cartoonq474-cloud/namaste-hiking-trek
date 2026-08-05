@@ -5282,8 +5282,8 @@ textarea {
 }
 
 .gear-item-row.packed {
-  background: var(--color-glacier-bg);
-  border-color: var(--color-alpine-blue);
+  background: #f0fdf4;
+  border-color: #10B981;
 }
 
 .gear-item-checkbox {
@@ -5291,7 +5291,7 @@ textarea {
   height: 20px;
   border-radius: 4px;
   border: 2px solid var(--color-neutral-300);
-  accent-color: var(--color-alpine-blue);
+  accent-color: #10B981;
   cursor: pointer;
 }
 
