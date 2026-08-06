@@ -431,7 +431,7 @@ function setupDiscountAccordion() {
 }
 
 // Initialise everything on page load
-document.addEventListener('DOMContentLoaded', () => {
+function initTrekDetails() {
   const detailsWrapper = document.querySelector('[data-trek-details-wrapper]');
   const trekKey = detailsWrapper ? detailsWrapper.getAttribute('data-trek-key') : 'ebc';
 
@@ -441,4 +441,10 @@ document.addEventListener('DOMContentLoaded', () => {
   setupBookingCalculator();
   setupReadTracker(trekKey);
   setupDiscountAccordion();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initTrekDetails);
+} else {
+  initTrekDetails();
+}
