@@ -430,6 +430,228 @@ function setupDiscountAccordion() {
   }
 }
 
+// Setup Interactive Booking Dates & Availability Section
+function setupDatesAndAvailability() {
+  const modeBtns = document.querySelectorAll('.dates-mode-btn');
+  const groupView = document.getElementById('dates-group-view');
+  const privateView = document.getElementById('dates-private-view');
+  
+  if (!groupView || !privateView) return;
+
+  // 1. Toggle between Group Joining & Private Date mode
+  modeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modeBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const mode = btn.getAttribute('data-mode');
+      if (mode === 'group') {
+        groupView.style.display = 'block';
+        privateView.style.display = 'none';
+      } else {
+        groupView.style.display = 'none';
+        privateView.style.display = 'block';
+      }
+    });
+  });
+
+  // 2. Group Joining Month Tabs Filter
+  const monthTabs = document.querySelectorAll('.dates-month-tab');
+  const departureRows = document.querySelectorAll('.departure-item-row');
+
+  monthTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      monthTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const targetMonth = tab.getAttribute('data-month');
+      departureRows.forEach(row => {
+        const rowMonth = row.getAttribute('data-month');
+        if (rowMonth === targetMonth) {
+          if (row.classList.contains('extra-date')) {
+            row.style.display = 'none'; // Keep extra dates hidden until load more is clicked
+          } else {
+            row.style.display = 'flex';
+          }
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // 3. Load More Dates Expander
+  const loadMoreBtn = document.getElementById('btn-load-more-dates');
+  if (loadMoreBtn) {
+    let expanded = false;
+    loadMoreBtn.addEventListener('click', () => {
+      expanded = !expanded;
+      const activeMonthTab = document.querySelector('.dates-month-tab.active');
+      const activeMonth = activeMonthTab ? activeMonthTab.getAttribute('data-month') : 'AUG';
+
+      const extraRows = document.querySelectorAll(`.departure-item-row.extra-date[data-month="${activeMonth}"]`);
+      extraRows.forEach(row => {
+        row.style.display = expanded ? 'flex' : 'none';
+      });
+
+      loadMoreBtn.textContent = expanded ? 'Show fewer dates' : 'Load more dates';
+    });
+  }
+
+  // 4. Private Date Interactive Dual Calendar Widget
+  const calendarMount = document.getElementById('dual-calendar-mount');
+  const selectedText = document.getElementById('private-selected-date-text');
+  const selectBtn = document.getElementById('btn-select-private-date');
+
+  if (!calendarMount) return;
+
+  let currentYear = 2026;
+  let currentMonth = 7; // August (0-indexed: 7 = Aug)
+  let selectedStartDate = null;
+
+  const monthNames = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+
+  // Specific sold out dates for demonstration matching mockup
+  const soldOutDates = [
+    '2026-08-01', '2026-08-10', '2026-08-11', '2026-08-12', '2026-08-14',
+    '2026-08-15', '2026-08-16', '2026-09-01', '2026-09-18'
+  ];
+
+  function renderCalendar() {
+    let html = '';
+
+    // Render 2 side-by-side consecutive months
+    for (let i = 0; i < 2; i++) {
+      const mDate = new Date(currentYear, currentMonth + i, 1);
+      const year = mDate.getFullYear();
+      const month = mDate.getMonth();
+      const monthName = monthNames[month];
+
+      const firstDayIndex = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      const prevNavBtn = (i === 0) ? `
+        <button type="button" class="calendar-nav-btn prev-month-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>` : '<span></span>';
+
+      const nextNavBtn = (i === 1) ? `
+        <button type="button" class="calendar-nav-btn next-month-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>` : '<span></span>';
+
+      html += `
+        <div class="calendar-month-block">
+          <div class="calendar-header-nav">
+            ${prevNavBtn}
+            <div class="calendar-month-title">
+              ${monthName} <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              ${year} <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            ${nextNavBtn}
+          </div>
+          <div class="calendar-weekdays-grid">
+            <div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div>
+          </div>
+          <div class="calendar-days-grid">
+      `;
+
+      // Empty lead cells
+      for (let e = 0; e < firstDayIndex; e++) {
+        html += `<div class="cal-day-cell empty"></div>`;
+      }
+
+      // Day numbers
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        const isSoldOut = soldOutDates.includes(dateStr);
+        const thisDate = new Date(year, month, day);
+
+        let cellClasses = ['cal-day-cell'];
+        if (isSoldOut) {
+          cellClasses.push('disabled');
+        }
+
+        if (selectedStartDate) {
+          const startTime = selectedStartDate.getTime();
+          const endTime = startTime + 13 * 86400000;
+          const thisTime = thisDate.getTime();
+
+          if (thisTime === startTime) {
+            cellClasses.push('selected');
+          } else if (thisTime > startTime && thisTime <= endTime) {
+            cellClasses.push('in-range');
+          }
+        }
+
+        html += `
+          <div class="${cellClasses.join(' ')}" data-date="${dateStr}" ${isSoldOut ? 'title="Sold out date"' : ''}>
+            ${day}
+          </div>
+        `;
+      }
+
+      html += `
+          </div>
+        </div>
+      `;
+    }
+
+    calendarMount.innerHTML = html;
+
+    // Attach month navigation event listeners
+    const prevBtn = calendarMount.querySelector('.prev-month-btn');
+    const nextBtn = calendarMount.querySelector('.next-month-btn');
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        currentMonth--;
+        renderCalendar();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        currentMonth++;
+        renderCalendar();
+      });
+    }
+
+    // Attach day cell click listeners
+    const dayCells = calendarMount.querySelectorAll('.cal-day-cell:not(.disabled):not(.empty)');
+    dayCells.forEach(cell => {
+      cell.addEventListener('click', () => {
+        const dateVal = cell.getAttribute('data-date');
+        const [y, m, d] = dateVal.split('-').map(Number);
+        selectedStartDate = new Date(y, m - 1, d);
+
+        const endDate = new Date(selectedStartDate);
+        endDate.setDate(endDate.getDate() + 13);
+
+        const startTxt = `${monthNames[selectedStartDate.getMonth()].slice(0, 3)} ${selectedStartDate.getDate()}`;
+        const endTxt = `${monthNames[endDate.getMonth()].slice(0, 3)} ${endDate.getDate()}, ${endDate.getFullYear()}`;
+        const rangeString = `${startTxt} – ${endTxt}`;
+
+        if (selectedText) {
+          selectedText.innerHTML = `<strong>Selected Date:</strong> ${rangeString} (14 Days)`;
+        }
+
+        if (selectBtn) {
+          selectBtn.removeAttribute('disabled');
+          selectBtn.setAttribute('data-trek-title', `Everest Base Camp Private Trek (${rangeString})`);
+        }
+
+        renderCalendar();
+      });
+    });
+  }
+
+  renderCalendar();
+}
+
 // Initialise everything on page load
 function initTrekDetails() {
   const detailsWrapper = document.querySelector('[data-trek-details-wrapper]');
@@ -441,6 +663,7 @@ function initTrekDetails() {
   setupBookingCalculator();
   setupReadTracker(trekKey);
   setupDiscountAccordion();
+  setupDatesAndAvailability();
 }
 
 if (document.readyState === 'loading') {
@@ -448,3 +671,4 @@ if (document.readyState === 'loading') {
 } else {
   initTrekDetails();
 }
+
