@@ -7125,4 +7125,764 @@ textarea {
     width: 100%;
     justify-content: space-between;
   }
-}
+}
+
+/* ==========================================================================
+   Best Himalayan Trekking Reviews Section Styles
+   ========================================================================== */
+.review-tabs-container {
+  display: inline-flex;
+  background: #f1f5f9;
+  padding: 6px;
+  border-radius: 9999px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 36px;
+  gap: 6px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.review-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  color: var(--color-neutral-700);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+}
+
+.review-tab-btn.active {
+  background: #0c2b4e;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(12, 43, 78, 0.2);
+}
+
+#section-reviews {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.video-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  min-width: 0;
+}
+
+.video-review-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(12, 43, 78, 0.12);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.video-review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(12, 43, 78, 0.22);
+}
+
+.video-card-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.video-review-card:hover .video-card-bg {
+  transform: scale(1.05);
+}
+
+.video-review-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.2) 60%, rgba(12, 43, 78, 0.9) 100%);
+  pointer-events: none;
+}
+
+.video-card-badge-top {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.video-rating-pill {
+  background: #10b981;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.video-date-pill {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+.video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, background 0.25s ease;
+  cursor: pointer;
+}
+
+.video-review-card:hover .video-play-btn {
+  transform: translate(-50%, -50%) scale(1.12);
+  background: #ffffff;
+}
+
+.video-card-user-info {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 2;
+  text-align: left;
+}
+
+.video-user-avatar {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.video-user-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+}
+
+.verified-check {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 16px;
+  height: 16px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #ffffff;
+}
+
+.video-user-name {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.blue-check {
+  color: #3b82f6;
+  font-size: 0.85rem;
+}
+
+.video-user-trek {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Platform Reviews Grid */
+.platform-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+.platform-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(12, 43, 78, 0.05);
+  transition: transform 0.25s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(12, 43, 78, 0.1);
+}
+
+.platform-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.platform-logo-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #0c2b4e;
+}
+
+.platform-score {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0c2b4e;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.platform-sub {
+  font-size: 0.85rem;
+  color: var(--color-neutral-500);
+  margin-bottom: 14px;
+}
+
+.platform-quote {
+  font-style: italic;
+  color: var(--color-neutral-700);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.stars-green {
+  color: #10b981;
+  letter-spacing: 1px;
+}
+
+.video-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 29, 54, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-modal-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.video-modal-card {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 720px;
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+.video-modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #f1f5f9;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #0c2b4e;
+  transition: all 0.2s ease;
+}
+
+.video-modal-close-btn:hover {
+  background: #e2e8f0;
+  color: #ef4444;
+}
+
+.video-modal-header {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.video-modal-player-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .video-reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .platform-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Redesigned Customer Review Card Styles (Matching Mockup)
+   ========================================================================== */
+.customer-reviews-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: left;
+}
+
+.customer-review-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(12, 43, 78, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.customer-review-card:hover {
+  box-shadow: 0 12px 32px rgba(12, 43, 78, 0.08);
+}
+
+.customer-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.reviewer-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.reviewer-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e2e8f0;
+}
+
+.reviewer-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reviewer-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0c2b4e;
+}
+
+.reviewer-country {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+}
+
+.review-date-txt {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 9999px;
+}
+
+.review-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.review-heading-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0c2b4e;
+  margin: 0;
+}
+
+.stars-gold {
+  color: #f59e0b;
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+}
+
+.review-meta-subline {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.book-trek-link {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.book-trek-link:hover {
+  color: #0369a1;
+}
+
+.review-body-text {
+  margin-bottom: 20px;
+}
+
+.review-text-content {
+  font-size: 0.98rem;
+  color: #334155;
+  line-height: 1.65;
+  margin-bottom: 6px;
+}
+
+.review-see-more-btn {
+  background: none;
+  border: none;
+  color: #0284c7;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.review-photos-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.review-photo-thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.review-photo-thumb:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.customer-review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.guided-by-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.guide-avatar-sm {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.helpful-vote-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.helpful-vote-btn:hover {
+  border-color: #0c2b4e;
+  color: #0c2b4e;
+  background: #f8fafc;
+}
+
+.helpful-vote-btn.voted {
+  background: #e0f2fe;
+  border-color: #0284c7;
+  color: #0369a1;
+}
+
+/* ==========================================================================
+   Platform Reviews Redesign Styles (Matching Mockup)
+   ========================================================================== */
+.platform-sub-tabs-wrapper {
+  margin-bottom: 24px;
+}
+
+.platform-sub-tabs {
+  display: flex;
+  gap: 32px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 8px;
+  overflow-x: auto;
+}
+
+.platform-sub-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #64748b;
+  cursor: pointer;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.platform-sub-tab:hover {
+  color: #0c2b4e;
+}
+
+.platform-sub-tab.active {
+  color: #008060;
+}
+
+.platform-sub-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #008060;
+  border-radius: 3px 3px 0 0;
+}
+
+.platform-summary-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 20px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  box-shadow: 0 6px 20px rgba(12, 43, 78, 0.04);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.summary-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.summary-score {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0c2b4e;
+}
+
+.summary-count {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.btn-leave-review {
+  background: #008060;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-leave-review:hover {
+  background: #00664d;
+  box-shadow: 0 4px 12px rgba(0, 128, 96, 0.25);
+}
+
+.platform-cards-carousel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: left;
+  width: 100%;
+  min-width: 0;
+}
+
+.platform-review-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(12, 43, 78, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.platform-review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(12, 43, 78, 0.1);
+}
+
+.card-stars {
+  color: #f59e0b;
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.card-review-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0c2b4e;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.card-review-desc {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.card-reviewer-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviewer-initial-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.blue-bg { background: #dbeafe; color: #1d4ed8; }
+.green-bg { background: #dcfce7; color: #15803d; }
+.yellow-bg { background: #fef3c7; color: #b45309; }
+.purple-bg { background: #f3e8ff; color: #6b21a8; }
+
+.reviewer-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0c2b4e;
+}
+
+.check-mark {
+  color: #008060;
+  font-size: 0.85rem;
+}
+
+.review-date {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 992px) {
+  .platform-cards-carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .platform-cards-carousel {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

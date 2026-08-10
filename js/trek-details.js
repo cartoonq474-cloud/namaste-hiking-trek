@@ -652,18 +652,193 @@ function setupDatesAndAvailability() {
   renderCalendar();
 }
 
+// Setup Best Himalayan Trekking Reviews Section
+function setupHimalayanReviews() {
+  const tabBtns = document.querySelectorAll('.review-tab-btn');
+  const panes = document.querySelectorAll('.review-pane-content');
+
+  // 1. Tab Switcher
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const targetId = btn.getAttribute('data-target');
+      panes.forEach(pane => {
+        if (pane.id === targetId) {
+          pane.style.display = 'block';
+          pane.classList.add('active');
+        } else {
+          pane.style.display = 'none';
+          pane.classList.remove('active');
+        }
+      });
+    });
+  });
+
+  // 2. Video Player Modal Lightbox
+  const videoCards = document.querySelectorAll('.video-review-card');
+  const modal = document.getElementById('video-review-modal');
+  const closeBtn = document.getElementById('video-modal-close');
+  const modalTitle = document.getElementById('video-modal-title');
+  const modalSub = document.getElementById('video-modal-sub');
+  const player = document.getElementById('video-modal-player');
+
+  if (!modal) return;
+
+  const openVideoModal = (card) => {
+    const trekker = card.getAttribute('data-trekker') || 'Trekker';
+    const trek = card.getAttribute('data-trek') || 'Himalayan Trek';
+    const videoUrl = card.getAttribute('data-video-url') || 'https://www.w3schools.com/html/mov_bbb.mp4';
+    const bgImg = card.querySelector('.video-card-bg');
+
+    if (modalTitle) modalTitle.textContent = `${trekker}'s Experience`;
+    if (modalSub) modalSub.textContent = trek;
+    if (player) {
+      if (bgImg) player.poster = bgImg.src;
+      player.src = videoUrl;
+      player.play().catch(() => {});
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeVideoModal = () => {
+    modal.classList.remove('active');
+    if (player) {
+      player.pause();
+      player.currentTime = 0;
+    }
+    document.body.style.overflow = 'auto';
+  };
+
+  videoCards.forEach(card => {
+    card.addEventListener('click', () => openVideoModal(card));
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeVideoModal);
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeVideoModal();
+    });
+  }
+
+  // 3. Helpful Vote Buttons
+  const helpfulBtns = document.querySelectorAll('.helpful-vote-btn');
+  helpfulBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const countSpan = btn.querySelector('.vote-count');
+      let votes = parseInt(btn.getAttribute('data-votes') || '0', 10);
+      const isVoted = btn.classList.contains('voted');
+
+      if (isVoted) {
+        votes -= 1;
+        btn.classList.remove('voted');
+      } else {
+        votes += 1;
+        btn.classList.add('voted');
+      }
+
+      btn.setAttribute('data-votes', votes);
+      if (countSpan) countSpan.textContent = votes;
+    });
+  });
+
+  // 4. Photo Lightbox Trigger
+  const photoThumbs = document.querySelectorAll('.review-photo-thumb');
+  photoThumbs.forEach(thumb => {
+    thumb.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (modal) {
+        if (modalTitle) modalTitle.textContent = "Trek Photo Gallery";
+        if (modalSub) modalSub.textContent = "Customer Uploaded Memory";
+        if (player) player.style.display = 'none';
+
+        let imgPreview = modal.querySelector('#photo-modal-img');
+        if (!imgPreview) {
+          imgPreview = document.createElement('img');
+          imgPreview.id = 'photo-modal-img';
+          imgPreview.style.cssText = 'width: 100%; max-height: 70vh; border-radius: 12px; object-fit: contain;';
+          if (player && player.parentNode) {
+            player.parentNode.appendChild(imgPreview);
+          }
+        }
+        imgPreview.src = thumb.src;
+        imgPreview.style.display = 'block';
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  // Reset modal elements when closed
+  if (closeBtn) {
+    const originalClose = closeVideoModal;
+    closeBtn.addEventListener('click', () => {
+      if (player) player.style.display = 'block';
+      const imgPreview = modal ? modal.querySelector('#photo-modal-img') : null;
+      if (imgPreview) imgPreview.style.display = 'none';
+    });
+  }
+
+  // 5. Sub-Platform Tab Switcher
+  const platformSubTabs = document.querySelectorAll('.platform-sub-tab');
+  const platformCards = document.querySelectorAll('.platform-review-card');
+  const summaryCount = document.getElementById('platform-summary-count');
+
+  const platformCounts = {
+    google: '(1,549 Verified Reviews)',
+    tripadvisor: '(380 Verified Reviews)',
+    trustpilot: '(250 Verified Reviews)',
+    sourceforge: '(120 Verified Reviews)'
+  };
+
+  platformSubTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      platformSubTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const targetPlatform = tab.getAttribute('data-platform');
+      if (summaryCount && platformCounts[targetPlatform]) {
+        summaryCount.textContent = platformCounts[targetPlatform];
+      }
+
+      platformCards.forEach(card => {
+        const cardPlatform = card.getAttribute('data-platform');
+        if (cardPlatform === targetPlatform) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
 // Initialise everything on page load
 function initTrekDetails() {
   const detailsWrapper = document.querySelector('[data-trek-details-wrapper]');
   const trekKey = detailsWrapper ? detailsWrapper.getAttribute('data-trek-key') : 'ebc';
 
-  setupSubNavScrollSpy();
-  setupAccordions();
-  setupGearChecklist(trekKey);
-  setupBookingCalculator();
-  setupReadTracker(trekKey);
-  setupDiscountAccordion();
-  setupDatesAndAvailability();
+  const safeRun = (fn, label) => {
+    try {
+      fn();
+    } catch (e) {
+      console.warn(`[initTrekDetails] Error initializing ${label}:`, e);
+    }
+  };
+
+  safeRun(() => setupSubNavScrollSpy(), 'setupSubNavScrollSpy');
+  safeRun(() => setupAccordions(), 'setupAccordions');
+  safeRun(() => setupGearChecklist(trekKey), 'setupGearChecklist');
+  safeRun(() => setupBookingCalculator(), 'setupBookingCalculator');
+  safeRun(() => setupReadTracker(trekKey), 'setupReadTracker');
+  safeRun(() => setupDiscountAccordion(), 'setupDiscountAccordion');
+  safeRun(() => setupDatesAndAvailability(), 'setupDatesAndAvailability');
+  safeRun(() => setupHimalayanReviews(), 'setupHimalayanReviews');
 }
 
 if (document.readyState === 'loading') {
@@ -671,4 +846,5 @@ if (document.readyState === 'loading') {
 } else {
   initTrekDetails();
 }
+
 
