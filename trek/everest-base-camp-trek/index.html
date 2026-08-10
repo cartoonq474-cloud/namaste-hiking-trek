@@ -426,7 +426,7 @@
       <div class="container" style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 40px;">
         
         <!-- Main Details Column (Sequential Sections) -->
-        <div>
+        <div style="min-width: 0;">
           
           <!-- Section 1: Overview -->
           <section id="section-overview" class="trek-detail-section">
@@ -3890,8 +3890,8 @@
 
           <!-- Section 8: Reviews -->
           <section id="section-reviews" class="trek-detail-section">
-            <h2 class="trek-section-title" style="font-size: 2.2rem; margin-bottom: 8px; text-align: center;">Best Himalayan Trekking Reviews</h2>
-            <p style="color: var(--color-neutral-600); font-size: 1.05rem; margin-bottom: 28px; text-align: center; max-width: 680px; margin-left: auto; margin-right: auto;">
+            <h2 class="trek-section-title" style="font-size: 2.2rem; margin-bottom: 8px; text-align: left;">Best Himalayan Trekking Reviews</h2>
+            <p style="color: var(--color-neutral-600); font-size: 1.05rem; margin-bottom: 28px; text-align: left; max-width: 100%; margin-left: 0; margin-right: 0;">
               Over 15,000 adventure seekers have explored Everest, Annapurna, and Manaslu with Namaste Hiking Trek.
             </p>
 
@@ -4166,7 +4166,7 @@
                     Trustpilot
                   </button>
                   <button type="button" class="platform-sub-tab" data-platform="sourceforge">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#EE5A24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polygon points="2 17 12 22 22 17 12 12 2 17"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#EE5A24"><polygon points="12 2 7 12 12 22 7 12 2"/><polygon points="2 17 12 22 22 17 12 12 2 17"/></svg>
                     SourceForge
                   </button>
                 </div>
@@ -4182,132 +4182,297 @@
                 <button type="button" class="btn-leave-review open-inquiry-btn" data-trek-title="Leave a Review for Namaste Hiking Trek">Leave a Review</button>
               </div>
 
-              <!-- Platform Cards Row -->
-              <div class="platform-cards-carousel" id="platform-cards-container">
-                <!-- Google Card 1 -->
-                <div class="platform-review-card" data-platform="google">
-                  <div class="card-stars">★★★★★</div>
-                  <h4 class="card-review-title">Quality & Authentic Local Service</h4>
-                  <p class="card-review-desc">
-                    Namaste Hiking Trek helped our small group trek to Everest Base Camp. Quick response, clear gear packing lists, and top-tier Sherpa guides.
-                  </p>
-                  <div class="card-reviewer-meta">
-                    <div class="reviewer-initial-badge blue-bg">MA</div>
-                    <div>
-                      <div class="reviewer-name">Matthew A. <span class="check-mark">✓</span></div>
-                      <div class="review-date">27/11/2025</div>
+              <!-- Platform Rich Review Cards Stack -->
+              <div class="customer-reviews-stack" id="platform-cards-container">
+                <!-- Google Review Card 1: Madeline Thomson -->
+                <div class="customer-review-card platform-review-item" data-platform="google">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-madeline.png" alt="Madeline Thomson" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Madeline Thomson</span>
+                          <span class="reviewer-country">· AUSTRALIA</span>
+                        </div>
+                        <div class="review-date-txt">16th June 2026</div>
+                      </div>
                     </div>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Purchase
+                    </div>
+                  </div>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold">★★★★★</span>
+                    <h3 class="review-heading-title">the BEST EBC trek experience ever</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Everest Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      Our Everest Base Camp trek with Namaste Hiking Trek went beyond every expectation we had. What first pulled us towards them was their strict safety protocol and personal care. From the landing at Lukla to reaching Everest Base Camp (5,364m) and Kala Patthar, Sagar and the team made sure we were comfortable, safe, and hydrated every single day!
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <!-- 10 Photo Thumbnails Grid -->
+                  <div class="review-photos-grid">
+                    <img src="../../images/gallery-peak.jpg" alt="Trek photo 1" class="review-photo-thumb">
+                    <img src="../../images/hero-himalayas.jpg" alt="Trek photo 2" class="review-photo-thumb">
+                    <img src="../../images/gallery-pass.jpg" alt="Trek photo 3" class="review-photo-thumb">
+                    <img src="../../images/gallery-teahouse.jpg" alt="Trek photo 4" class="review-photo-thumb">
+                    <img src="../../images/gallery-bridge.jpg" alt="Trek photo 5" class="review-photo-thumb">
+                    <img src="../../images/gallery-lake.jpg" alt="Trek photo 6" class="review-photo-thumb">
+                    <img src="../../images/himalayan-bg.jpg" alt="Trek photo 7" class="review-photo-thumb">
+                    <img src="../../images/gallery-pass.jpg" alt="Trek photo 8" class="review-photo-thumb">
+                    <img src="../../images/gallery-bridge.jpg" alt="Trek photo 9" class="review-photo-thumb">
+                    <img src="../../images/gallery-teahouse.jpg" alt="Trek photo 10" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="15">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">15</span>)
+                    </button>
                   </div>
                 </div>
 
-                <!-- Google Card 2 -->
-                <div class="platform-review-card" data-platform="google">
-                  <div class="card-stars">★★★★★</div>
-                  <h4 class="card-review-title">Delivers on all safety promises</h4>
-                  <p class="card-review-desc">
-                    After reading all the positive reviews on TripAdvisor, I gave Namaste Hiking Trek a try. They really deliver what they promise - genuine local expertise.
-                  </p>
-                  <div class="card-reviewer-meta">
-                    <div class="reviewer-initial-badge green-bg">NM</div>
-                    <div>
-                      <div class="reviewer-name">Natalia M. <span class="check-mark">✓</span></div>
-                      <div class="review-date">12/10/2025</div>
+                <!-- Google Review Card 2: Brenna Shaw -->
+                <div class="customer-review-card platform-review-item" data-platform="google">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-brenna.png" alt="Brenna Shaw" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Brenna Shaw</span>
+                          <span class="reviewer-country">· UNITED STATES</span>
+                        </div>
+                        <div class="review-date-txt">9th June 2026</div>
+                      </div>
                     </div>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Purchase
+                    </div>
+                  </div>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold">★★★★★</span>
+                    <h3 class="review-heading-title">5+++ stars for Namaste Hiking Trek</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Everest Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      Absolute 5-star experience from start to finish! Our guide Sagar checked oxygen levels daily, monitored our pacing, and adjusted our day-by-day walks based on how we were acclimatizing. The tea lodge arrangements were high quality, clean, and warm. Highly recommend Namaste Hiking Trek!
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <!-- 8 Photo Thumbnails Grid -->
+                  <div class="review-photos-grid">
+                    <img src="../../images/gallery-bridge.jpg" alt="Trek photo 1" class="review-photo-thumb">
+                    <img src="../../images/gallery-lake.jpg" alt="Trek photo 2" class="review-photo-thumb">
+                    <img src="../../images/gallery-pass.jpg" alt="Trek photo 3" class="review-photo-thumb">
+                    <img src="../../images/gallery-peak.jpg" alt="Trek photo 4" class="review-photo-thumb">
+                    <img src="../../images/gallery-teahouse.jpg" alt="Trek photo 5" class="review-photo-thumb">
+                    <img src="../../images/hero-himalayas.jpg" alt="Trek photo 6" class="review-photo-thumb">
+                    <img src="../../images/himalayan-bg.jpg" alt="Trek photo 7" class="review-photo-thumb">
+                    <img src="../../images/gallery-bridge.jpg" alt="Trek photo 8" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="22">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">22</span>)
+                    </button>
                   </div>
                 </div>
 
-                <!-- Google Card 3 -->
-                <div class="platform-review-card" data-platform="google">
-                  <div class="card-stars">★★★★★</div>
-                  <h4 class="card-review-title">Unmatched Himalayan Support</h4>
-                  <p class="card-review-desc">
-                    Used Namaste Hiking Trek for our custom Annapurna Circuit trip. Unbeatable price, exceptional tea house accommodations, and friendly staff!
-                  </p>
-                  <div class="card-reviewer-meta">
-                    <div class="reviewer-initial-badge yellow-bg">NP</div>
-                    <div>
-                      <div class="reviewer-name">Niko P. <span class="check-mark">✓</span></div>
-                      <div class="review-date">03/09/2025</div>
+                <!-- TripAdvisor Review Card -->
+                <div class="customer-review-card platform-review-item" data-platform="tripadvisor" style="display: none;">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-madeline.png" alt="Sarah Jenkins" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Sarah Jenkins</span>
+                          <span class="reviewer-country">· TRIPADVISOR</span>
+                        </div>
+                        <div class="review-date-txt">14th May 2025</div>
+                      </div>
                     </div>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Purchase
+                    </div>
+                  </div>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold">★★★★★</span>
+                    <h3 class="review-heading-title">Top #1 Agency in Kathmandu</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Everest Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      Booking Everest Base Camp through Namaste Hiking Trek was seamless. Exceptional Sherpa guides and flawless logistics! From airport pickup to high altitude tea houses, every detail was handled professionally.
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <div class="review-photos-grid">
+                    <img src="../../images/gallery-peak.jpg" alt="Trek photo 1" class="review-photo-thumb">
+                    <img src="../../images/gallery-pass.jpg" alt="Trek photo 2" class="review-photo-thumb">
+                    <img src="../../images/gallery-teahouse.jpg" alt="Trek photo 3" class="review-photo-thumb">
+                    <img src="../../images/gallery-bridge.jpg" alt="Trek photo 4" class="review-photo-thumb">
+                    <img src="../../images/gallery-lake.jpg" alt="Trek photo 5" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="35">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">35</span>)
+                    </button>
                   </div>
                 </div>
 
-                <!-- Google Card 4 -->
-                <div class="platform-review-card" data-platform="google">
-                  <div class="card-stars">★★★★★</div>
-                  <h4 class="card-review-title">Best Everest Base Camp Experience</h4>
-                  <p class="card-review-desc">
-                    The entire team made sure we were acclimatizing properly. Reaching Kala Patthar was the peak moment of my life!
-                  </p>
-                  <div class="card-reviewer-meta">
-                    <div class="reviewer-initial-badge purple-bg">DL</div>
-                    <div>
-                      <div class="reviewer-name">David L. <span class="check-mark">✓</span></div>
-                      <div class="review-date">15/08/2025</div>
+                <!-- Trustpilot Review Card -->
+                <div class="customer-review-card platform-review-item" data-platform="trustpilot" style="display: none;">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-brenna.png" alt="Emily Taylor" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Emily Taylor</span>
+                          <span class="reviewer-country">· TRUSTPILOT</span>
+                        </div>
+                        <div class="review-date-txt">19th February 2025</div>
+                      </div>
                     </div>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Purchase
+                    </div>
+                  </div>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold">★★★★★</span>
+                    <h3 class="review-heading-title">Transparent & Reliable Company</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Everest Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      No hidden costs, 100% transparent pricing, and instant communication. Best trekking operator in Nepal hands down!
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <div class="review-photos-grid">
+                    <img src="../../images/gallery-bridge.jpg" alt="Trek photo 1" class="review-photo-thumb">
+                    <img src="../../images/gallery-lake.jpg" alt="Trek photo 2" class="review-photo-thumb">
+                    <img src="../../images/gallery-pass.jpg" alt="Trek photo 3" class="review-photo-thumb">
+                    <img src="../../images/gallery-peak.jpg" alt="Trek photo 4" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="18">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">18</span>)
+                    </button>
                   </div>
                 </div>
 
-                <!-- TripAdvisor Cards -->
-                <div class="platform-review-card" data-platform="tripadvisor" style="display: none;">
-                  <div class="card-stars">★★★★★</div>
-                  <h4 class="card-review-title">Top #1 Agency in Kathmandu</h4>
-                  <p class="card-review-desc">
-                    Booking Everest Base Camp through Namaste Hiking Trek was seamless. Exceptional Sherpa guides and flawless logistics!
-                  </p>
-                  <div class="card-reviewer-meta">
-                    <div class="reviewer-initial-badge green-bg">SJ</div>
-                    <div>
-                      <div class="reviewer-name">Sarah J. <span class="check-mark">✓</span></div>
-                      <div class="review-date">14/05/2025</div>
+                <!-- SourceForge Review Card -->
+                <div class="customer-review-card platform-review-item" data-platform="sourceforge" style="display: none;">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-madeline.png" alt="Mark Roberts" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Mark Roberts</span>
+                          <span class="reviewer-country">· SOURCEFORGE</span>
+                        </div>
+                        <div class="review-date-txt">1st January 2025</div>
+                      </div>
+                    </div>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Purchase
                     </div>
                   </div>
-                </div>
 
-                <div class="platform-review-card" data-platform="tripadvisor" style="display: none;">
-                  <div class="card-stars">★★★★★</div>
-                  <h4 class="card-review-title">Unforgettable EBC Trek</h4>
-                  <p class="card-review-desc">
-                    Everything from airport reception to tea houses was managed with high standards of safety and hospitality.
-                  </p>
-                  <div class="card-reviewer-meta">
-                    <div class="reviewer-initial-badge blue-bg">DK</div>
-                    <div>
-                      <div class="reviewer-name">Dieter K. <span class="check-mark">✓</span></div>
-                      <div class="review-date">08/04/2025</div>
-                    </div>
+                  <div class="review-rating-row">
+                    <span class="stars-gold">★★★★★</span>
+                    <h3 class="review-heading-title">Verified High Altitude Team</h3>
                   </div>
-                </div>
 
-                <!-- Trustpilot Cards -->
-                <div class="platform-review-card" data-platform="trustpilot" style="display: none;">
-                  <div class="card-stars">★★★★★</div>
-                  <h4 class="card-review-title">Transparent & Reliable Company</h4>
-                  <p class="card-review-desc">
-                    No hidden costs, 100% transparent pricing, and instant communication. Best trekking operator in Nepal hands down!
-                  </p>
-                  <div class="card-reviewer-meta">
-                    <div class="reviewer-initial-badge purple-bg">ET</div>
-                    <div>
-                      <div class="reviewer-name">Emily T. <span class="check-mark">✓</span></div>
-                      <div class="review-date">19/02/2025</div>
-                    </div>
+                  <div class="review-meta-subline">
+                    Review for Everest Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
                   </div>
-                </div>
 
-                <!-- SourceForge Cards -->
-                <div class="platform-review-card" data-platform="sourceforge" style="display: none;">
-                  <div class="card-stars">★★★★★</div>
-                  <h4 class="card-review-title">Verified High Altitude Team</h4>
-                  <p class="card-review-desc">
-                    Professional itinerary, detailed gear lists, and responsive customer support team. Highly recommended!
-                  </p>
-                  <div class="card-reviewer-meta">
-                    <div class="reviewer-initial-badge yellow-bg">MR</div>
-                    <div>
-                      <div class="reviewer-name">Mark R. <span class="check-mark">✓</span></div>
-                      <div class="review-date">01/01/2025</div>
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      Professional itinerary, detailed gear lists, and responsive customer support team. Highly recommended!
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <div class="review-photos-grid">
+                    <img src="../../images/gallery-pass.jpg" alt="Trek photo 1" class="review-photo-thumb">
+                    <img src="../../images/gallery-peak.jpg" alt="Trek photo 2" class="review-photo-thumb">
+                    <img src="../../images/hero-himalayas.jpg" alt="Trek photo 3" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
                     </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="12">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">12</span>)
+                    </button>
                   </div>
                 </div>
               </div>
@@ -4550,7 +4715,7 @@
   <script type="module" src="../../js/altitude-visualizer.js"></script>
   <script type="module" src="../../js/weather-visualizer.js"></script>
   <script type="module" src="../../js/inquiry-modal.js"></script>
-  <script type="module" src="../../js/trek-details.js?v=6"></script>
+  <script type="module" src="../../js/trek-details.js?v=9"></script>
   <script src="../../js/header-scroll.js"></script>
 </body>
 </html>

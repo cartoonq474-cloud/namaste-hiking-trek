@@ -786,7 +786,7 @@ function setupHimalayanReviews() {
 
   // 5. Sub-Platform Tab Switcher
   const platformSubTabs = document.querySelectorAll('.platform-sub-tab');
-  const platformCards = document.querySelectorAll('.platform-review-card');
+  const platformCards = document.querySelectorAll('.platform-review-item');
   const summaryCount = document.getElementById('platform-summary-count');
 
   const platformCounts = {
@@ -809,7 +809,7 @@ function setupHimalayanReviews() {
       platformCards.forEach(card => {
         const cardPlatform = card.getAttribute('data-platform');
         if (cardPlatform === targetPlatform) {
-          card.style.display = 'flex';
+          card.style.display = 'block';
         } else {
           card.style.display = 'none';
         }

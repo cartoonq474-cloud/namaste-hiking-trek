@@ -7164,6 +7164,12 @@ textarea {
   box-shadow: 0 4px 12px rgba(12, 43, 78, 0.2);
 }
 
+.review-pane-content {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
 #section-reviews {
   width: 100%;
   min-width: 0;
@@ -7171,11 +7177,18 @@ textarea {
 }
 
 .video-reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: nowrap;
   gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 14px;
   width: 100%;
   min-width: 0;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
 }
 
 .video-review-card {
@@ -7183,6 +7196,10 @@ textarea {
   border-radius: 24px;
   overflow: hidden;
   aspect-ratio: 3 / 4;
+  flex: 0 0 240px;
+  min-width: 240px;
+  max-width: 240px;
+  scroll-snap-align: start;
   cursor: pointer;
   box-shadow: 0 10px 25px rgba(12, 43, 78, 0.12);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
@@ -7786,15 +7803,48 @@ textarea {
 }
 
 .platform-cards-carousel {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: nowrap;
   gap: 20px;
-  text-align: left;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 14px;
   width: 100%;
   min-width: 0;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  text-align: left;
+}
+
+.platform-cards-carousel::-webkit-scrollbar,
+.video-reviews-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.platform-cards-carousel::-webkit-scrollbar-track,
+.video-reviews-grid::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 9999px;
+}
+
+.platform-cards-carousel::-webkit-scrollbar-thumb,
+.video-reviews-grid::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.platform-cards-carousel::-webkit-scrollbar-thumb:hover,
+.video-reviews-grid::-webkit-scrollbar-thumb:hover {
+  background: #008060;
 }
 
 .platform-review-card {
+  flex: 0 0 310px;
+  min-width: 310px;
+  max-width: 310px;
+  scroll-snap-align: start;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 20px;
