@@ -6694,7 +6694,7 @@ textarea {
 }
 
 .dates-year-badge {
-  background: #0c2b4e;
+  background: #008060;
   color: #ffffff;
   font-weight: 700;
   font-size: 0.95rem;
@@ -6723,7 +6723,7 @@ textarea {
 }
 
 .dates-month-tab.active {
-  color: #0c2b4e;
+  color: #008060;
 }
 
 .dates-month-tab.active::after {
@@ -6733,7 +6733,7 @@ textarea {
   left: 0;
   right: 0;
   height: 3px;
-  background: #0c2b4e;
+  background: #008060;
   border-radius: 3px 3px 0 0;
 }
 
@@ -6854,7 +6854,7 @@ textarea {
 }
 
 .btn-book-now {
-  background: #0c2b4e;
+  background: #008060;
   color: #ffffff;
   font-weight: 700;
   font-size: 0.95rem;
@@ -6866,9 +6866,9 @@ textarea {
 }
 
 .btn-book-now:hover {
-  background: #008060;
+  background: #00664d;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 128, 96, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 128, 96, 0.3);
 }
 
 .dates-load-more-wrapper {
