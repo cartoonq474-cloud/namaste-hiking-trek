@@ -818,6 +818,75 @@ function setupHimalayanReviews() {
   });
 }
 
+// 6. Categorized FAQ Section Handler
+function setupFaqSection() {
+  const categoryBtns = document.querySelectorAll('.faq-category-btn');
+  const categoryPanels = document.querySelectorAll('.faq-category-content');
+  const currentCategoryTitle = document.getElementById('faq-current-category-title');
+  const expandAllBtn = document.getElementById('faq-expand-all-btn');
+
+  if (!categoryBtns.length) return;
+
+  // Category Tab Switcher
+  categoryBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      categoryBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const targetCat = btn.getAttribute('data-category');
+      const catText = btn.innerText.trim();
+
+      if (currentCategoryTitle) {
+        currentCategoryTitle.textContent = catText;
+      }
+
+      categoryPanels.forEach(panel => {
+        if (panel.id === `faq-cat-${targetCat}`) {
+          panel.classList.add('active');
+        } else {
+          panel.classList.remove('active');
+        }
+      });
+
+      // Reset Expand All button label
+      if (expandAllBtn) {
+        expandAllBtn.textContent = 'Expand All';
+      }
+    });
+  });
+
+  // Accordion Item Toggle
+  document.querySelectorAll('.faq-item-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      if (item) {
+        item.classList.toggle('active');
+      }
+    });
+  });
+
+  // Expand All / Collapse All Button
+  if (expandAllBtn) {
+    expandAllBtn.addEventListener('click', () => {
+      const activePanel = document.querySelector('.faq-category-content.active');
+      if (!activePanel) return;
+
+      const items = activePanel.querySelectorAll('.faq-item');
+      const isExpanded = expandAllBtn.textContent.trim() === 'Collapse All';
+
+      items.forEach(item => {
+        if (isExpanded) {
+          item.classList.remove('active');
+        } else {
+          item.classList.add('active');
+        }
+      });
+
+      expandAllBtn.textContent = isExpanded ? 'Expand All' : 'Collapse All';
+    });
+  }
+}
+
 // Initialise everything on page load
 function initTrekDetails() {
   const detailsWrapper = document.querySelector('[data-trek-details-wrapper]');
@@ -839,6 +908,7 @@ function initTrekDetails() {
   safeRun(() => setupDiscountAccordion(), 'setupDiscountAccordion');
   safeRun(() => setupDatesAndAvailability(), 'setupDatesAndAvailability');
   safeRun(() => setupHimalayanReviews(), 'setupHimalayanReviews');
+  safeRun(() => setupFaqSection(), 'setupFaqSection');
 }
 
 if (document.readyState === 'loading') {
