@@ -15,16 +15,23 @@
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://namastehikingtrek.com/trek/annapurna-circuit-trek/">
   <meta property="og:title" content="Annapurna Circuit Trek (16 Days) — Namaste Hiking Trek">
-  <meta property="og:description" content="Detailed 16 Days Annapurna Circuit Trek Itinerary with altitude profile, included services, and local guide expertise.">
+  <meta property="og:description" content="Detailed 16 Days Annapurna Circuit Trek Itinerary crossing Thorong La Pass (5,416m), Manang village, Muktinath, and Kali Gandaki Gorge with local Sherpa guides.">
   <meta property="og:image" content="https://namastehikingtrek.com/images/hero-himalayas.jpg">
 
   <!-- Twitter Card Metadata -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Annapurna Circuit Trek (16 Days) — Namaste Hiking Trek">
-  <meta name="twitter:description" content="Detailed 16 Days Annapurna Circuit Trek Itinerary with altitude profile, included services, and local guide expertise.">
+  <meta name="twitter:description" content="Detailed 16 Days Annapurna Circuit Trek Itinerary crossing Thorong La Pass (5,416m), Manang village, Muktinath, and Kali Gandaki Gorge with local Sherpa guides.">
   <meta name="twitter:image" content="https://namastehikingtrek.com/images/hero-himalayas.jpg">
 
-  <link rel="stylesheet" href="../../index.css">
+  <link rel="stylesheet" href="../../index.css?v=7">
+  <style>
+    .trek-sub-nav-btn.active {
+      border-bottom-color: var(--color-copper-orange) !important;
+      color: var(--color-copper-orange) !important;
+      font-weight: 700;
+    }
+  </style>
 </head>
 <body>
 
@@ -92,131 +99,742 @@
   </header>
 
   <main>
-    <!-- Trek Detail Hero -->
-    <section style="background: linear-gradient(rgba(7, 29, 54, 0.75), rgba(7, 29, 54, 0.9)), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; color: white; padding: 60px 0 80px 0;">
+    <!-- Trek Detail Hero Banner -->
+    <section class="hero-sub-page" style="background: linear-gradient(rgba(7, 29, 54, 0.75), rgba(7, 29, 54, 0.9)), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; color: white; padding: 60px 0 80px 0;">
       <div class="container">
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb" style="margin-bottom: 16px;">
+          <ol style="display: flex; gap: 8px; font-size: 0.85rem; color: rgba(255,255,255,0.7); list-style: none; padding: 0;">
+            <li><a href="../../index.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">Home</a></li>
+            <li>/</li>
+            <li><a href="../../treks.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">All Treks</a></li>
+            <li>/</li>
+            <li><a href="../../regions.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">Annapurna Region</a></li>
+            <li>/</li>
+            <li style="color: #ffffff; font-weight: 600;">Annapurna Circuit Trek</li>
+          </ol>
+        </nav>
+
         <span class="pill pill-copper">Annapurna Region • High Alpine Circuit</span>
-        <h1 style="font-size: 3rem; color: white; margin-top: 12px; margin-bottom: 16px;">Annapurna Circuit Trek</h1>
-        <div style="display: flex; gap: 24px; flex-wrap: wrap; align-items: center; font-size: 1.05rem; color: var(--color-neutral-300);">
+        <h1 style="font-size: 3rem; color: white; margin-top: 12px; margin-bottom: 16px; font-weight: 800;">Annapurna Circuit Trek (16 Days)</h1>
+        
+        <div style="display: flex; gap: 24px; flex-wrap: wrap; align-items: center; font-size: 1.05rem; color: var(--color-neutral-300); margin-bottom: 24px;">
           <span>⏱️ <strong>Duration:</strong> 16 Days / 15 Nights</span>
           <span>⛰️ <strong>Max Altitude:</strong> 5,416 m (Thorong La Pass)</span>
           <span>🥾 <strong>Difficulty:</strong> Challenging</span>
           <span>☀️ <strong>Best Season:</strong> Mar-May & Sep-Nov</span>
+          <span>⭐ <strong>Rating:</strong> 4.95 / 5 (64 Reviews)</span>
+        </div>
+
+        <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+          <button class="btn btn-primary open-inquiry-btn" style="padding: 14px 28px; font-size: 1rem;">Book This Trek — From $1,250</button>
+          <a href="#section-itinerary" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.4); padding: 14px 24px; text-decoration: none;">View 16-Day Itinerary ↓</a>
         </div>
       </div>
     </section>
 
+    <!-- Photo Gallery Preview -->
+    <section style="background: #0f172a; padding: 20px 0;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 12px; height: 320px; border-radius: var(--radius-md); overflow: hidden;">
+          <div style="position: relative; overflow: hidden; height: 100%;">
+            <img src="../../images/similar-trek-abc.png" alt="Thorong La Pass Annapurna Circuit" style="width: 100%; height: 100%; object-fit: cover;">
+            <span style="position: absolute; bottom: 12px; left: 12px; background: rgba(0,0,0,0.6); color: white; padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600;">Thorong La Pass (5,416m)</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px; height: 100%;">
+            <img src="../../images/gallery-pass.jpg" alt="Manang Village Panorama" style="width: 100%; height: calc(50% - 6px); object-fit: cover;">
+            <img src="../../images/gallery-teahouse.jpg" alt="High Altitude Teahouse Lodge" style="width: 100%; height: calc(50% - 6px); object-fit: cover;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px; height: 100%;">
+            <img src="../../images/gallery-bridge.jpg" alt="Suspension Bridge crossing" style="width: 100%; height: calc(50% - 6px); object-fit: cover;">
+            <div style="position: relative; height: calc(50% - 6px); overflow: hidden;">
+              <img src="../../images/gallery-peak.jpg" alt="Annapurna Mountain Range" style="width: 100%; height: 100%; object-fit: cover;">
+              <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; cursor: pointer;">
+                📷 View Photo Gallery (18)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky Sub-Navigation Bar -->
+    <nav id="trek-sub-nav" style="position: sticky; top: 72px; z-index: 100; background: white; border-bottom: 1px solid var(--color-neutral-200); box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+      <div class="container" style="display: flex; gap: 8px; overflow-x: auto; padding: 0 16px;">
+        <button class="trek-sub-nav-btn active" data-tab="overview" style="background: none; border: none; padding: 16px 20px; font-size: 0.95rem; cursor: pointer; border-bottom: 3px solid transparent; color: var(--color-neutral-600); white-space: nowrap;">Overview</button>
+        <button class="trek-sub-nav-btn" data-tab="highlights" style="background: none; border: none; padding: 16px 20px; font-size: 0.95rem; cursor: pointer; border-bottom: 3px solid transparent; color: var(--color-neutral-600); white-space: nowrap;">Highlights</button>
+        <button class="trek-sub-nav-btn" data-tab="dates" style="background: none; border: none; padding: 16px 20px; font-size: 0.95rem; cursor: pointer; border-bottom: 3px solid transparent; color: var(--color-neutral-600); white-space: nowrap;">Dates & Availability</button>
+        <button class="trek-sub-nav-btn" data-tab="itinerary" style="background: none; border: none; padding: 16px 20px; font-size: 0.95rem; cursor: pointer; border-bottom: 3px solid transparent; color: var(--color-neutral-600); white-space: nowrap;">Itinerary</button>
+        <button class="trek-sub-nav-btn" data-tab="altitude" style="background: none; border: none; padding: 16px 20px; font-size: 0.95rem; cursor: pointer; border-bottom: 3px solid transparent; color: var(--color-neutral-600); white-space: nowrap;">Altitude Profile</button>
+        <button class="trek-sub-nav-btn" data-tab="includes" style="background: none; border: none; padding: 16px 20px; font-size: 0.95rem; cursor: pointer; border-bottom: 3px solid transparent; color: var(--color-neutral-600); white-space: nowrap;">Includes / Excludes</button>
+        <button class="trek-sub-nav-btn" data-tab="reviews" style="background: none; border: none; padding: 16px 20px; font-size: 0.95rem; cursor: pointer; border-bottom: 3px solid transparent; color: var(--color-neutral-600); white-space: nowrap;">Reviews (64)</button>
+        <button class="trek-sub-nav-btn" data-tab="faqs" style="background: none; border: none; padding: 16px 20px; font-size: 0.95rem; cursor: pointer; border-bottom: 3px solid transparent; color: var(--color-neutral-600); white-space: nowrap;">FAQs</button>
+      </div>
+    </nav>
+
     <!-- Main Content Layout with Sticky Booking Sidebar -->
-    <section class="section-padding">
+    <section class="section-padding" style="padding-top: 40px;">
       <div class="container" style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 40px;">
         
         <!-- Main Details Column -->
         <div>
-          <!-- Trek Overview -->
-          <div style="margin-bottom: 40px;">
-            <h2 class="section-title" style="font-size: 1.8rem;">Trek Overview</h2>
-            <p style="color: var(--color-neutral-700); font-size: 1.05rem; margin-bottom: 16px;">The 16-day Annapurna Circuit Trek is one of the world's classic long-distance treks, famous for its incredible diversity of landscape, climate, and culture. The trek starts in green sub-tropical foothills and climbs to the high-altitude Tibetan-style plateau of Manang before crossing the high pass of Thorong La.</p>
-            <p style="color: var(--color-neutral-700); font-size: 1.05rem; margin-bottom: 16px;">Descend into the rain shadow of the Mustang region, visit the sacred temples of Muktinath, and walk through the world's deepest gorge along the Kali Gandaki river.</p>
-
-          </div>
-
-          <!-- Interactive Altitude Profile Graph Hook -->
-          <div style="background: white; padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-md); margin-bottom: 40px;">
-            <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Altitude & Elevation Profile</h3>
-            <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 20px;">
-              Interactive elevation map showing daily gain and acclimatization stopping points. Switch units above to view in meters or feet.
-            </p>
-            <div id="altitude-chart-wrapper" data-trek-key="annapurna_circuit"></div>
-          </div>
-
-          <!-- Day by Day Itinerary Breakdown -->
-          <div style="margin-bottom: 40px;">
-            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 24px;">Day-by-Day Itinerary</h2>
+          
+          <!-- Trek Overview Section -->
+          <div id="section-overview" class="trek-detail-section" style="margin-bottom: 48px; scroll-margin-top: 160px;">
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 16px;">Trek Overview</h2>
             
-            <div style="display: flex; flex-direction: column; gap: 16px;">
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 01: Arrival in Kathmandu & Trek Briefing</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Welcome to Tribhuvan International Airport. Transfer to hotel in Thamel, gear check, and team introduction. (Altitude: 1,400m)
+            <div id="overview-content-wrapper" style="position: relative;">
+              <p style="color: var(--color-neutral-700); font-size: 1.05rem; line-height: 1.7; margin-bottom: 16px;">
+                The 16-day <strong>Annapurna Circuit Trek</strong> is widely considered one of the ultimate classic long-distance trekking journeys in the world. Encircling the massive Annapurna Massif, this trek takes you through an astounding variety of landscapes — from lush subtropical pine forests and cascading waterfalls to barren Tibetan-style high plateaus and glacial valleys.
+              </p>
+              
+              <div id="overview-extra-text" style="display: none;">
+                <p style="color: var(--color-neutral-700); font-size: 1.05rem; line-height: 1.7; margin-bottom: 16px;">
+                  The emotional peak of the trek comes on Day 9 as you cross the high mountain pass of <strong>Thorong La (5,416 meters / 17,769 feet)</strong>. Descending from the pass leads into the rain-shadow region of Mustang and the sacred pilgrimage town of <strong>Muktinath</strong>, revered by both Hindus and Buddhists.
+                </p>
+                <p style="color: var(--color-neutral-700); font-size: 1.05rem; line-height: 1.7; margin-bottom: 16px;">
+                  You will also walk along the Kali Gandaki Gorge — the deepest gorge on Earth — framed by Annapurna I (8,091m) and Dhaulagiri (8,167m). Relax at the natural thermal hot springs in Tatopani before climbing to Poon Hill for a world-renowned sunrise over 14 Himalayan peaks.
                 </p>
               </div>
 
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 02: Scenic Flight to Lukla (2,860m) & Trek to Phakding (2,610m)</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  35-minute mountain flight to Lukla's Tenzing-Hillary Airport. 3-4 hours gentle downhill hike through Sherpa hamlets to Phakding.
-                </p>
-              </div>
+              <button id="overview-expander-btn" style="background: none; border: none; color: #10b981; font-weight: 700; font-size: 1rem; cursor: pointer; padding: 4px 0; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                <span id="expander-label">Learn more →</span>
+              </button>
+            </div>
 
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 03: Phakding to Namche Bazaar (3,440m)</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Cross 5 iconic suspension bridges including Hillary Suspension Bridge. Final steep uphill climb into the vibrant Sherpa hub of Namche.
-                </p>
+            <!-- Quick Facts Cards Grid -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 28px;">
+              <div style="background: #f8fafc; padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); text-align: center;">
+                <span style="font-size: 1.5rem; display: block; margin-bottom: 4px;">🏃</span>
+                <span style="font-size: 0.8rem; color: var(--color-neutral-500); display: block; text-transform: uppercase;">Total Distance</span>
+                <strong style="font-size: 1rem; color: var(--color-primary-navy);">160 – 210 km</strong>
               </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 04: Acclimatization Day in Namche (Hike to Everest View Hotel - 3,880m)</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Essential acclimatization day. Hike to Syangboche and Everest View Hotel for first panorama of Everest, Lhotse, and Ama Dablam.
-                </p>
+              <div style="background: #f8fafc; padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); text-align: center;">
+                <span style="font-size: 1.5rem; display: block; margin-bottom: 4px;">🛌</span>
+                <span style="font-size: 0.8rem; color: var(--color-neutral-500); display: block; text-transform: uppercase;">Accommodation</span>
+                <strong style="font-size: 1rem; color: var(--color-primary-navy);">Mountain Teahouses</strong>
               </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 05: Namche Bazaar to Tengboche (3,867m)</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Descend to Imja Khola river before climbing through rhododendron forests to Tengboche Monastery, the spiritual center of Khumbu.
-                </p>
+              <div style="background: #f8fafc; padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); text-align: center;">
+                <span style="font-size: 1.5rem; display: block; margin-bottom: 4px;">📄</span>
+                <span style="font-size: 0.8rem; color: var(--color-neutral-500); display: block; text-transform: uppercase;">Permits Required</span>
+                <strong style="font-size: 1rem; color: var(--color-primary-navy);">ACAP & TIMS</strong>
               </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 06-08: Dingboche to Lobuche & Everest Base Camp Summit (5,364m)</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Trek past Himalayan memorials at Thokla Pass to Gorak Shep. Reach Everest Base Camp on Day 8 and witness the Khumbu Icefall.
-                </p>
-              </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 09: Sunrise Summit of Kala Patthar (5,545m) & Descend to Pheriche</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Early morning climb to Kala Patthar viewpoint for unhindered sunrise over Mt. Everest. Descend back towards Pheriche.
-                </p>
-              </div>
-
-              <div class="card" style="padding: 20px;">
-                <h4 style="font-size: 1.15rem; color: var(--color-primary-navy);">Day 10-14: Return Trek to Lukla & Flight to Kathmandu</h4>
-                <p style="font-size: 0.95rem; color: var(--color-neutral-600); margin-top: 6px;">
-                  Descend through Namche Bazaar back to Lukla for celebratory dinner. Morning flight back to Kathmandu and farewell celebration.
-                </p>
+              <div style="background: #f8fafc; padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); text-align: center;">
+                <span style="font-size: 1.5rem; display: block; margin-bottom: 4px;">🚌</span>
+                <span style="font-size: 0.8rem; color: var(--color-neutral-500); display: block; text-transform: uppercase;">Start / End Point</span>
+                <strong style="font-size: 1rem; color: var(--color-primary-navy);">Besisahar / Pokhara</strong>
               </div>
             </div>
           </div>
 
-          <!-- Included vs Excluded -->
-          <div style="background: white; padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
-            <h2 class="section-title" style="font-size: 1.6rem; margin-bottom: 20px;">What's Included & Excluded</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <!-- WhatsApp Trek Expert CTA Banner -->
+          <div class="trek-expert-cta-card" style="background: linear-gradient(135deg, #071d36 0%, #0f2d4a 100%); border-radius: 16px; padding: 24px 28px; margin-bottom: 48px; color: white; display: flex; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 8px 24px rgba(7, 29, 54, 0.15);">
+            <div style="display: flex; align-items: center; gap: 18px;">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(0, 168, 181, 0.2); border: 2px solid #00a8b5; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; color: #00a8b5; font-weight: 800;">?</div>
               <div>
-                <h4 style="color: #10B981; margin-bottom: 12px;">✅ Included Services</h4>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
-                  <li>✔ Roundtrip flight tickets Kathmandu ⇄ Lukla</li>
-                  <li>✔ Government Licensed English-Speaking Sherpa Guide</li>
-                  <li>✔ Porters (1 porter for 2 trekkers, max 20kg per duo)</li>
-                  <li>✔ Sagarmatha National Park & Khumbu Pasang Lhamu Permits</li>
-                  <li>✔ 3 Meals daily (Breakfast, Lunch, Dinner) during trek</li>
-                  <li>✔ Teahouse lodge accommodation along route</li>
-                  <li>✔ Medical kit & Pulse oximeter oxygen check daily</li>
-                </ul>
+                <h3 style="font-size: 1.25rem; font-weight: 800; margin: 0 0 4px 0; color: #ffffff;">Want to know more about this trek?</h3>
+                <p style="margin: 0 0 6px 0; font-size: 0.92rem; color: rgba(255,255,255,0.85);">Chat with us — real trekking experts, not bots.</p>
+                <div style="display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: #34d399; font-weight: 600;">
+                  <span>●</span> <span>Replies within 6–7 hours</span>
+                </div>
               </div>
+            </div>
+            <a href="https://wa.me/9779800000000" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background: #e6f7f0; color: #008060; font-weight: 700; font-size: 0.9rem; padding: 12px 22px; border-radius: 9999px; text-decoration: none; transition: all 0.2s ease; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+              <span>WhatsApp us</span>
+            </a>
+          </div>
+
+          <!-- Trek Highlights Section -->
+          <div id="section-highlights" class="trek-detail-section" style="margin-bottom: 48px; scroll-margin-top: 160px;">
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 20px;">Trek Highlights</h2>
+            
+            <div style="background: white; border-radius: var(--radius-md); padding: 28px; box-shadow: var(--shadow-md); border: 1px solid var(--color-neutral-100);">
+              <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 16px;">
+                <li style="display: flex; gap: 14px; align-items: flex-start;">
+                  <span style="background: #e0f2fe; color: #0284c7; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✓</span>
+                  <div>
+                    <strong style="color: var(--color-primary-navy); font-size: 1.05rem;">Cross Thorong La Pass (5,416m / 17,769ft)</strong>
+                    <p style="margin: 4px 0 0 0; color: var(--color-neutral-600); font-size: 0.92rem;">Reach the thrilling highest point of the circuit offering dramatic panoramic views of the Damodar Himal and Annapurna range.</p>
+                  </div>
+                </li>
+                <li style="display: flex; gap: 14px; align-items: flex-start;">
+                  <span style="background: #e0f2fe; color: #0284c7; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✓</span>
+                  <div>
+                    <strong style="color: var(--color-primary-navy); font-size: 1.05rem;">Explore Manang Village & Ancient Tibetan Culture</strong>
+                    <p style="margin: 4px 0 0 0; color: var(--color-neutral-600); font-size: 0.92rem;">Spend acclimatization days exploring stone-walled Buddhist villages, ancient monasteries, prayer wheels, and Gangapurna Glacier Lake.</p>
+                  </div>
+                </li>
+                <li style="display: flex; gap: 14px; align-items: flex-start;">
+                  <span style="background: #e0f2fe; color: #0284c7; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✓</span>
+                  <div>
+                    <strong style="color: var(--color-primary-navy); font-size: 1.05rem;">Visit Sacred Muktinath Temple (3,800m)</strong>
+                    <p style="margin: 4px 0 0 0; color: var(--color-neutral-600); font-size: 0.92rem;">Experience the holy pilgrimage shrine of 108 water spouts and eternal natural gas flame revered by Hindus and Buddhists.</p>
+                  </div>
+                </li>
+                <li style="display: flex; gap: 14px; align-items: flex-start;">
+                  <span style="background: #e0f2fe; color: #0284c7; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✓</span>
+                  <div>
+                    <strong style="color: var(--color-primary-navy); font-size: 1.05rem;">Walk Through Kali Gandaki — World's Deepest Gorge</strong>
+                    <p style="margin: 4px 0 0 0; color: var(--color-neutral-600); font-size: 0.92rem;">Hike between 8,000m giants Annapurna I and Dhaulagiri through the dramatic rain-shadow canyon of Mustang.</p>
+                  </div>
+                </li>
+                <li style="display: flex; gap: 14px; align-items: flex-start;">
+                  <span style="background: #e0f2fe; color: #0284c7; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✓</span>
+                  <div>
+                    <strong style="color: var(--color-primary-navy); font-size: 1.05rem;">Natural Hot Springs in Tatopani & Poon Hill Sunrise</strong>
+                    <p style="margin: 4px 0 0 0; color: var(--color-neutral-600); font-size: 0.92rem;">Soothe tired muscles in geothermal hot springs and witness legendary sunrise views from Poon Hill (3,210m).</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Dates & Availability Section -->
+          <div id="section-dates" class="trek-detail-section" style="margin-bottom: 48px; scroll-margin-top: 160px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
               <div>
-                <h4 style="color: #EF4444; margin-bottom: 12px;">❌ Excluded Services</h4>
-                <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem;">
-                  <li>✖ International flights & Nepal entry visa ($50)</li>
-                  <li>✖ High-altitude emergency travel insurance</li>
-                  <li>✖ Hot shower & Wi-Fi fees in mountain lodges</li>
-                  <li>✖ Personal trekking gear (down jacket, sleeping bag)</li>
-                  <li>✖ Tipping for guides and porters</li>
-                </ul>
+                <h2 class="section-title" style="font-size: 1.8rem; margin: 0;">Booking Dates & Availability for Annapurna Circuit trek</h2>
+                <p style="color: var(--color-neutral-600); font-size: 0.95rem; margin-top: 4px;">Small group departures guaranteed to run with lead Sherpa guides.</p>
+              </div>
+              <span class="dates-year-badge" style="background: #008060; color: white; padding: 6px 16px; border-radius: 9999px; font-weight: 700; font-size: 0.9rem;">2026 Season</span>
+            </div>
+
+            <!-- Month Filter Tabs -->
+            <div style="display: flex; gap: 8px; margin-bottom: 20px; border-bottom: 2px solid var(--color-neutral-200); padding-bottom: 2px; overflow-x: auto;">
+              <button class="dates-month-tab active" style="background: none; border: none; padding: 10px 18px; font-weight: 700; font-size: 0.9rem; cursor: pointer; border-bottom: 3px solid #008060; color: #008060; margin-bottom: -2px;">MAR 2026</button>
+              <button class="dates-month-tab" style="background: none; border: none; padding: 10px 18px; font-weight: 600; font-size: 0.9rem; cursor: pointer; color: var(--color-neutral-600);">APR 2026</button>
+              <button class="dates-month-tab" style="background: none; border: none; padding: 10px 18px; font-weight: 600; font-size: 0.9rem; cursor: pointer; color: var(--color-neutral-600);">MAY 2026</button>
+              <button class="dates-month-tab" style="background: none; border: none; padding: 10px 18px; font-weight: 600; font-size: 0.9rem; cursor: pointer; color: var(--color-neutral-600);">SEP 2026</button>
+              <button class="dates-month-tab" style="background: none; border: none; padding: 10px 18px; font-weight: 600; font-size: 0.9rem; cursor: pointer; color: var(--color-neutral-600);">OCT 2026</button>
+              <button class="dates-month-tab" style="background: none; border: none; padding: 10px 18px; font-weight: 600; font-size: 0.9rem; cursor: pointer; color: var(--color-neutral-600);">NOV 2026</button>
+            </div>
+
+            <!-- Departure Dates List -->
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div style="background: white; border-radius: var(--radius-md); padding: 18px 24px; border: 1px solid var(--color-neutral-200); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+                    <span style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary-navy);">Mar 05, 2026 – Mar 20, 2026</span>
+                    <span style="background: #dcfce7; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 2px 10px; border-radius: 9999px;">Guaranteed</span>
+                  </div>
+                  <span style="font-size: 0.85rem; color: var(--color-neutral-500);">16 Days • Small Group (Max 10) • 4 Slots Remaining</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                  <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy);">$1,250</span>
+                  <button class="btn btn-book-now open-inquiry-btn" style="background: #008060; color: white; padding: 10px 20px; font-size: 0.9rem; border-radius: 9999px; border: none; cursor: pointer; font-weight: 700;">Book Now</button>
+                </div>
+              </div>
+
+              <div style="background: white; border-radius: var(--radius-md); padding: 18px 24px; border: 1px solid var(--color-neutral-200); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+                    <span style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary-navy);">Mar 15, 2026 – Mar 30, 2026</span>
+                    <span style="background: #dcfce7; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 2px 10px; border-radius: 9999px;">Guaranteed</span>
+                  </div>
+                  <span style="font-size: 0.85rem; color: var(--color-neutral-500);">16 Days • Small Group (Max 10) • 2 Slots Remaining</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                  <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy);">$1,250</span>
+                  <button class="btn btn-book-now open-inquiry-btn" style="background: #008060; color: white; padding: 10px 20px; font-size: 0.9rem; border-radius: 9999px; border: none; cursor: pointer; font-weight: 700;">Book Now</button>
+                </div>
+              </div>
+
+              <div style="background: white; border-radius: var(--radius-md); padding: 18px 24px; border: 1px solid var(--color-neutral-200); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+                    <span style="font-weight: 800; font-size: 1.05rem; color: var(--color-primary-navy);">Mar 25, 2026 – Apr 09, 2026</span>
+                    <span style="background: #dcfce7; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 2px 10px; border-radius: 9999px;">Guaranteed</span>
+                  </div>
+                  <span style="font-size: 0.85rem; color: var(--color-neutral-500);">16 Days • Small Group (Max 10) • 6 Slots Remaining</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                  <span style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy);">$1,250</span>
+                  <button class="btn btn-book-now open-inquiry-btn" style="background: #008060; color: white; padding: 10px 20px; font-size: 0.9rem; border-radius: 9999px; border: none; cursor: pointer; font-weight: 700;">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day-by-Day Itinerary Section -->
+          <div id="section-itinerary" class="trek-detail-section" style="margin-bottom: 48px; scroll-margin-top: 160px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
+              <h2 class="section-title" style="font-size: 1.8rem; margin: 0;">16-Day Detailed Itinerary</h2>
+              <div style="display: flex; gap: 10px;">
+                <button id="expand-all-itinerary" style="background: #f1f5f9; border: 1px solid var(--color-neutral-300); padding: 6px 14px; border-radius: 6px; font-size: 0.85rem; cursor: pointer; font-weight: 600; color: var(--color-neutral-700);">Expand All</button>
+                <button id="collapse-all-itinerary" style="background: #f1f5f9; border: 1px solid var(--color-neutral-300); padding: 6px 14px; border-radius: 6px; font-size: 0.85rem; cursor: pointer; font-weight: 600; color: var(--color-neutral-700);">Collapse All</button>
+              </div>
+            </div>
+
+            <!-- Itinerary Accordion Cards -->
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <!-- Day 01 -->
+              <div class="itinerary-card active" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 01</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Arrival in Kathmandu & Welcome Briefing</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">1,400m / 4,593ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▲</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Upon arrival at Tribhuvan International Airport in Kathmandu, our representative welcomes you and transfers you to your hotel in Thamel. In the evening, attend a trip briefing with your lead Sherpa guide and enjoy a welcome Nepali dinner.
+                </div>
+              </div>
+
+              <!-- Day 02 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 02</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Drive from Kathmandu to Besisahar & Dharapani</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">1,860m / 6,102ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Scenic drive along Trishuli and Marsyangdi river valleys past terrace farms to Besisahar. Switch to 4WD jeep to reach Dharapani village, the official entry point of the Annapurna Conservation Area. (7–8 hrs drive)
+                </div>
+              </div>
+
+              <!-- Day 03 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 03</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Dharapani to Chame</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">2,670m / 8,760ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Trek through pine forests and along the Marsyangdi River. Pass traditional Gurung villages and enjoy breathtaking views of Annapurna II and Lamjung Himal as you arrive in Chame, district headquarters of Manang. (5–6 hrs hike)
+                </div>
+              </div>
+
+              <!-- Day 04 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 04</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Chame to Pisang</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">3,200m / 10,498ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Walk through dense apple orchards and cross a suspension bridge. Gaze up at the sheer rock face of Paungda Danda rising 1,500m above the river before entering Upper Pisang with Tibetan-style prayer walls. (5–6 hrs hike)
+                </div>
+              </div>
+
+              <!-- Day 05 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 05</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Pisang to Manang Village</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">3,540m / 11,614ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Take the upper route via Ghyaru and Ngawal for magnificent views of Annapurna III and Tilicho Peak. Descend into the dry, arid valley of Manang where Buddhist chortens line the stone pathways. (6–7 hrs hike)
+                </div>
+              </div>
+
+              <!-- Day 06 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 06</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Acclimatization Day in Manang (Ice Lake / Gangapurna Hike)</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">3,540m / 11,614ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Critical acclimatization day. Take an active day-hike to Chongkor viewpoint or high altitude Ice Lake (Kicho Tal at 4,600m). In the afternoon, attend the Himalayan Rescue Association (HRA) lecture on altitude sickness.
+                </div>
+              </div>
+
+              <!-- Day 07 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 07</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Manang to Yak Kharka</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">4,050m / 13,287ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Ascend gradually through alpine pastures above the tree line. Spot grazing yaks, blue sheep (bharal), and Himalayan eagles as you reach Yak Kharka lodge settlement. (4–5 hrs hike)
+                </div>
+              </div>
+
+              <!-- Day 08 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 08</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Yak Kharka to Thorong Phedi / High Camp</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">4,450m / 14,599ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Walk along rocky scree slopes before crossing the Thorong Khola stream. Ascend steep switchbacks to reach Thorong Phedi base camp. Rest early for the pre-dawn pass crossing. (4–5 hrs hike)
+                </div>
+              </div>
+
+              <!-- Day 09 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 09</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Thorong Phedi to Muktinath via Thorong La Pass (5,416m)</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #fef3c7; color: #b45309; padding: 4px 10px; border-radius: 9999px; font-weight: 700;">5,416m Max Altitude</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Start at 3:30 AM to climb Thorong La Pass (5,416m), marked by fluttering chortens and prayer flags. Celebrate the pinnacle triumph before descending 1,600m into Mustang to the sacred temples of Muktinath. (8–9 hrs hike)
+                </div>
+              </div>
+
+              <!-- Day 10 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 10</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Muktinath to Jomsom via Kagbeni</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">2,720m / 8,923ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Visit Muktinath's 108 water spouts before descending through the windy river valley to Kagbeni, gateway to Upper Mustang. Continue along the Kali Gandaki riverbed to Jomsom town. (5–6 hrs hike)
+                </div>
+              </div>
+
+              <!-- Day 11 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 11</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Jomsom to Tatopani Hot Springs</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">1,190m / 3,904ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Scenic drive or hike down through Marpha apple villages and Rupse Waterfall into Tatopani. Spend the afternoon relaxing in natural riverside thermal hot springs. (4–5 hrs drive)
+                </div>
+              </div>
+
+              <!-- Day 12 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 12</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Tatopani to Ghorepani</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">2,860m / 9,383ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Ascend through terraced farmland and dense rhododendron forests to the ridge settlement of Ghorepani, offering breathtaking views of Dhaulagiri and Annapurna South. (6–7 hrs hike)
+                </div>
+              </div>
+
+              <!-- Day 13 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 13</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Sunrise Hike to Poon Hill (3,210m) & Trek to Tadapani</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">3,210m / 10,531ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Early 4:30 AM hike up Poon Hill for sunrise over Dhaulagiri, Annapurna I, Machhapuchhre (Fishtail), and Nilgiri. Return to lodge for breakfast and trek to Tadapani. (6–7 hrs hike)
+                </div>
+              </div>
+
+              <!-- Day 14 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 14</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Tadapani to Nayapul & Drive to Pokhara</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">822m / 2,696ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Descend through bamboo forests to Ghandruk village and Nayapul trailhead. Private vehicle drive to lakeside Pokhara hotel. Enjoy a hot shower and lakeside dinner celebration. (5 hrs hike + 2 hrs drive)
+                </div>
+              </div>
+
+              <!-- Day 15 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 15</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Scenic Drive / Flight Pokhara to Kathmandu</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">1,400m / 4,593ft</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Return drive or optional 25-minute flight from Pokhara to Kathmandu. Afternoon free for souvenir shopping in Thamel. Evening farewell dinner with cultural performance.
+                </div>
+              </div>
+
+              <!-- Day 16 -->
+              <div class="itinerary-card" style="background: white; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-200); overflow: hidden; box-shadow: var(--shadow-sm);">
+                <div class="itinerary-header" style="padding: 18px 24px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #fafafa;">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <span style="background: var(--color-primary-navy); color: white; font-weight: 800; font-size: 0.85rem; padding: 6px 12px; border-radius: 8px;">Day 16</span>
+                    <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0; font-weight: 700;">Final Airport Transfer & Departure</h4>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <span style="font-size: 0.8rem; background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 9999px; font-weight: 600;">Departure</span>
+                    <span class="accordion-arrow" style="transition: transform 0.2s ease;">▼</span>
+                  </div>
+                </div>
+                <div class="itinerary-content" style="padding: 20px 24px; border-top: 1px solid var(--color-neutral-100); line-height: 1.6; color: var(--color-neutral-700); font-size: 0.95rem;">
+                  Transfer to Kathmandu International Airport 3 hours prior to your scheduled flight home. Namaste & safe travels home!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Altitude Profile Section -->
+          <div id="section-altitude" class="trek-detail-section" style="margin-bottom: 48px; scroll-margin-top: 160px;">
+            <div style="background: white; padding: 28px; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border: 1px solid var(--color-neutral-100);">
+              <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 8px;">Altitude & Elevation Profile</h2>
+              <p style="font-size: 0.92rem; color: var(--color-neutral-600); margin-bottom: 24px;">
+                Interactive elevation map showing daily gain and acclimatization stopping points across the 16-day circuit. Switch units above to view in meters or feet.
+              </p>
+              <div id="altitude-chart-wrapper" data-trek-key="annapurna_circuit"></div>
+            </div>
+          </div>
+
+          <!-- Custom Trip CTA Banner -->
+          <div class="custom-trip-cta-card" style="background: #e6f7f0; border: 1.5px solid #b3e6d8; border-radius: 16px; padding: 26px 30px; margin-bottom: 48px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 4px 16px rgba(0, 128, 96, 0.06);">
+            <!-- Decorative Dotted Arc Line -->
+            <svg style="position: absolute; right: -20px; top: -30px; width: 220px; height: 180px; pointer-events: none; opacity: 0.6;" viewBox="0 0 200 160" fill="none">
+              <path d="M10 150 C 80 20, 180 40, 210 140" stroke="#80d6bf" stroke-width="2.5" stroke-dasharray="6 6" />
+            </svg>
+            <div>
+              <h3 style="font-size: 1.3rem; font-weight: 800; color: #004d38; margin: 0 0 4px 0;">Not satisfied with this Itinerary?</h3>
+              <p style="margin: 0; font-size: 0.95rem; color: #00664d; font-weight: 500;">Are you interested on planning custom trip? It only takes 2 minutes.</p>
+            </div>
+            <a href="../../custom-plan.html" style="display: inline-flex; align-items: center; gap: 8px; background: #008060; color: #ffffff; font-weight: 700; font-size: 0.92rem; padding: 12px 24px; border-radius: 9999px; text-decoration: none; transition: all 0.2s ease; flex-shrink: 0; box-shadow: 0 4px 14px rgba(0, 128, 96, 0.25);">
+              <span>Plan Your Trip</span>
+            </a>
+          </div>
+
+          <!-- What's Included & Excluded Section -->
+          <div id="section-includes" class="trek-detail-section" style="margin-bottom: 48px; scroll-margin-top: 160px;">
+            <div style="background: white; padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border: 1px solid var(--color-neutral-100);">
+              <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 24px;">What's Included & Excluded</h2>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+                <div>
+                  <h4 style="color: #10B981; margin-bottom: 16px; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">✅ Included Services</h4>
+                  <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 0.92rem; color: var(--color-neutral-700);">
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #10B981; font-weight: 800;">✓</span>
+                      <span>Airport transfers in private vehicle</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #10B981; font-weight: 800;">✓</span>
+                      <span>Kathmandu ⇄ Besisahar / Pokhara land transfers</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #10B981; font-weight: 800;">✓</span>
+                      <span>Annapurna Conservation Area Permit (ACAP)</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #10B981; font-weight: 800;">✓</span>
+                      <span>Trekker's Information Management System (TIMS) Card</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #10B981; font-weight: 800;">✓</span>
+                      <span>Licensed English-Speaking Lead Himalayan Guide</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #10B981; font-weight: 800;">✓</span>
+                      <span>Porters (1 porter per 2 trekkers, max 20kg limit)</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #10B981; font-weight: 800;">✓</span>
+                      <span>3 Meals daily (Breakfast, Lunch, Dinner) during trek</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #10B981; font-weight: 800;">✓</span>
+                      <span>15 Nights Teahouse lodge accommodation</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #10B981; font-weight: 800;">✓</span>
+                      <span>Medical first aid kit & Daily oximeter oxygen check</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 style="color: #EF4444; margin-bottom: 16px; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">❌ Excluded Services</h4>
+                  <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 0.92rem; color: var(--color-neutral-700);">
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #EF4444; font-weight: 800;">✕</span>
+                      <span>International airfare & Nepal entry visa ($50 USD)</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #EF4444; font-weight: 800;">✕</span>
+                      <span>High-altitude travel & medical evacuation insurance</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #EF4444; font-weight: 800;">✕</span>
+                      <span>Hot shower, battery charging, and Wi-Fi in teahouses</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #EF4444; font-weight: 800;">✕</span>
+                      <span>Personal clothing, sleeping bag (-15°C), and gear</span>
+                    </li>
+                    <li style="display: flex; gap: 10px;">
+                      <span style="color: #EF4444; font-weight: 800;">✕</span>
+                      <span>Tipping for guides and porters</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customer Reviews Section -->
+          <div id="section-reviews" class="trek-detail-section" style="margin-bottom: 48px; scroll-margin-top: 160px;">
+            <div style="background: white; padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border: 1px solid var(--color-neutral-100);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+                <div>
+                  <h2 class="section-title" style="font-size: 1.8rem; margin: 0;">Trekkers' Experiences</h2>
+                  <p style="color: var(--color-neutral-600); font-size: 0.92rem; margin-top: 4px;">Verified reviews from travelers who completed the Annapurna Circuit with us.</p>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; padding: 12px 20px; border-radius: 12px; border: 1px solid var(--color-neutral-200);">
+                  <span style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-navy);">4.95</span>
+                  <div>
+                    <div style="color: #f59e0b; font-size: 0.9rem;">★★★★★</div>
+                    <span style="font-size: 0.8rem; color: var(--color-neutral-500); font-weight: 600;">64 Verified Reviews</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reviews List Cards -->
+              <div style="display: flex; flex-direction: column; gap: 20px;">
+                <!-- Review 1 -->
+                <div style="background: #f8fafc; border-radius: 14px; padding: 20px; border: 1px solid var(--color-neutral-200);">
+                  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                    <div>
+                      <strong style="font-size: 1.05rem; color: var(--color-primary-navy); display: block;">"Crossing Thorong La Pass was unforgettable!"</strong>
+                      <span style="font-size: 0.82rem; color: var(--color-neutral-500);">Markus & Clara (Munich, Germany) — Oct 2025</span>
+                    </div>
+                    <span style="color: #f59e0b; font-size: 0.9rem;">★★★★★</span>
+                  </div>
+                  <p style="margin: 0; font-size: 0.92rem; color: var(--color-neutral-700); line-height: 1.6;">
+                    The 16-day Annapurna Circuit exceeded all our expectations. Crossing Thorong La Pass at sunrise with our Sherpa guide Pemba was the proudest physical achievement of our lives. The transition from sub-tropical river valleys to high mountain desert in Manang is unbelievable.
+                  </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div style="background: #f8fafc; border-radius: 14px; padding: 20px; border: 1px solid var(--color-neutral-200);">
+                  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                    <div>
+                      <strong style="font-size: 1.05rem; color: var(--color-primary-navy); display: block;">"Incredible diversity and flawless logistics"</strong>
+                      <span style="font-size: 0.82rem; color: var(--color-neutral-500);">David R. (Melbourne, Australia) — Nov 2025</span>
+                    </div>
+                    <span style="color: #f59e0b; font-size: 0.9rem;">★★★★★</span>
+                  </div>
+                  <p style="margin: 0; font-size: 0.92rem; color: var(--color-neutral-700); line-height: 1.6;">
+                    Namaste Hiking Trek arranged everything smoothly from Besisahar to Pokhara. Our guide monitored our blood oxygen levels daily, which gave us huge peace of mind above 4,000m. Recommending this team to all my friends!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categorized FAQs Section -->
+          <div id="section-faqs" class="trek-detail-section" style="margin-bottom: 48px; scroll-margin-top: 160px;">
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 20px;">Frequently Asked Questions</h2>
+            
+            <div style="display: grid; grid-template-columns: 240px 1fr; gap: 24px;">
+              <!-- Category Sidebar with Vector SVG Icons -->
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <button class="faq-category-btn active" style="display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: var(--color-primary-navy); color: white; border: none; border-radius: 10px; font-weight: 700; font-size: 0.88rem; cursor: pointer; text-align: left;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                  <span>Permits & Rules</span>
+                </button>
+
+                <button class="faq-category-btn" style="display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: #f8fafc; color: var(--color-neutral-700); border: 1px solid var(--color-neutral-200); border-radius: 10px; font-weight: 600; font-size: 0.88rem; cursor: pointer; text-align: left;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Best Season</span>
+                </button>
+
+                <button class="faq-category-btn" style="display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: #f8fafc; color: var(--color-neutral-700); border: 1px solid var(--color-neutral-200); border-radius: 10px; font-weight: 600; font-size: 0.88rem; cursor: pointer; text-align: left;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                  <span>Accommodation</span>
+                </button>
+
+                <button class="faq-category-btn" style="display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: #f8fafc; color: var(--color-neutral-700); border: 1px solid var(--color-neutral-200); border-radius: 10px; font-weight: 600; font-size: 0.88rem; cursor: pointer; text-align: left;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                  <span>AMS & Safety</span>
+                </button>
+              </div>
+
+              <!-- FAQ Content Cards -->
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid var(--color-neutral-200);">
+                  <strong style="font-size: 1.05rem; color: var(--color-primary-navy); display: block; margin-bottom: 8px;">What permits are required for the Annapurna Circuit Trek?</strong>
+                  <p style="margin: 0; color: var(--color-neutral-600); font-size: 0.92rem; line-height: 1.6;">
+                    You need two permits: the Annapurna Conservation Area Permit (ACAP) and the TIMS (Trekker's Information Management System) card. Both permits are included in our standard package and issued by us prior to departure.
+                  </p>
+                </div>
+
+                <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid var(--color-neutral-200);">
+                  <strong style="font-size: 1.05rem; color: var(--color-primary-navy); display: block; margin-bottom: 8px;">How difficult is crossing Thorong La Pass (5,416m)?</strong>
+                  <p style="margin: 0; color: var(--color-neutral-600); font-size: 0.92rem; line-height: 1.6;">
+                    Thorong La is a high alpine pass that requires good physical endurance and proper acclimatization. We include an essential acclimatization day in Manang (3,540m) and climb gradually over several days to ensure safe crossing.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -225,38 +843,149 @@
 
         <!-- Sticky Booking Sidebar Widget -->
         <div>
-          <div style="position: sticky; top: 100px; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); padding: 24px; border: 1px solid var(--color-neutral-100);">
-            <span style="font-size: 0.85rem; color: var(--color-neutral-500); text-transform: uppercase; font-weight: 700;">Standard Package Price</span>
-            <div style="display: flex; align-items: baseline; gap: 8px; margin: 8px 0 16px 0;">
-              <span style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-navy);">$1,350</span>
-              <span style="font-size: 0.9rem; color: var(--color-neutral-500);">/ Person</span>
-            </div>
+          <div class="trek-details-sidebar" style="position: sticky; top: 150px; background: white; border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); padding: 26px; border: 1px solid var(--color-neutral-200);">
             
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem; color: var(--color-neutral-700); margin-bottom: 20px;">
-              <li>🔒 Guaranteed Price & No Hidden Charges</li>
-              <li>🛡️ 100% Safety Guarantee with Oxygen Support</li>
-              <li>🚁 Optional Helicopter Return Upgrade Available</li>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+              <div>
+                <span style="font-size: 0.78rem; color: var(--color-neutral-500); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;">Standard Package</span>
+                <div style="display: flex; align-items: baseline; gap: 6px; margin-top: 2px;">
+                  <span style="font-size: 2.3rem; font-weight: 800; color: var(--color-primary-navy);">$1,250</span>
+                  <span style="font-size: 0.88rem; color: var(--color-neutral-500); font-weight: 500;">/ Person</span>
+                </div>
+              </div>
+              <span style="background: #dcfce7; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 9999px;">Best Value</span>
+            </div>
+
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: var(--color-neutral-700); margin-bottom: 22px;">
+              <li style="display: flex; gap: 8px; align-items: center;">
+                <span style="color: #10B981; font-weight: 800;">✓</span>
+                <span>All ACAP & TIMS Permits Included</span>
+              </li>
+              <li style="display: flex; gap: 8px; align-items: center;">
+                <span style="color: #10B981; font-weight: 800;">✓</span>
+                <span>Licensed Himalayan Sherpa Guide & Porters</span>
+              </li>
+              <li style="display: flex; gap: 8px; align-items: center;">
+                <span style="color: #10B981; font-weight: 800;">✓</span>
+                <span>15 Nights Accommodation & All Meals</span>
+              </li>
+              <li style="display: flex; gap: 8px; align-items: center;">
+                <span style="color: #10B981; font-weight: 800;">✓</span>
+                <span>No Hidden Booking Fees</span>
+              </li>
             </ul>
 
-            <button class="btn btn-primary open-inquiry-btn" style="width: 100%; padding: 14px; margin-bottom: 12px;">Book / Inquire Now</button>
-            <a href="../../custom-plan.html" class="btn btn-outline" style="width: 100%; text-align: center; font-size: 0.9rem;">Customize Itinerary</a>
+            <button class="btn btn-primary open-inquiry-btn" style="width: 100%; padding: 14px; margin-bottom: 10px; font-size: 1rem; border-radius: 9999px; font-weight: 700;">Book / Inquire Now</button>
+            <a href="../../custom-plan.html" class="btn btn-outline" style="width: 100%; text-align: center; font-size: 0.9rem; border-radius: 9999px; display: block; box-sizing: border-box; text-decoration: none; padding: 12px;">Customize Itinerary</a>
 
             <div style="border-top: 1px solid var(--color-neutral-100); margin-top: 20px; padding-top: 16px; text-align: center;">
-              <span style="font-size: 0.85rem; color: var(--color-neutral-600); display: block;">Have instant questions?</span>
-              <span style="font-weight: 700; color: #16a34a; font-size: 0.95rem;">🟢 Chat on WhatsApp: +977-9800000000</span>
+              <span style="font-size: 0.82rem; color: var(--color-neutral-500); display: block;">Have instant questions?</span>
+              <a href="https://wa.me/9779800000000" target="_blank" style="font-weight: 700; color: #008060; font-size: 0.92rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-top: 4px;">
+                <span>🟢 WhatsApp Us: +977-9800000000</span>
+              </a>
             </div>
+
           </div>
         </div>
 
       </div>
     </section>
+
   </main>
+
+  <!-- You Might Also Like — Full-Width Recommendation Section -->
+  <section class="you-might-like-section">
+    <div class="container">
+      <div class="yml-header">
+        <span class="yml-pill-tag">MORE ADVENTURES</span>
+        <div class="yml-title-row">
+          <span class="yml-accent-bar"></span>
+          <h2 class="yml-title">You might also like</h2>
+        </div>
+        <p class="yml-subtitle">Handpicked trips in the same region and style — a natural next step from this one.</p>
+      </div>
+
+      <div class="yml-cards-grid">
+        <!-- Card 1: Annapurna Base Camp Trek -->
+        <a href="../annapurna-base-camp/" class="yml-card">
+          <div class="yml-card-image">
+            <img src="../../images/similar-trek-abc.png" alt="Annapurna Base Camp Trek" loading="lazy">
+            <div class="yml-card-overlay"></div>
+            <span class="yml-card-badge">Annapurna Region</span>
+          </div>
+          <div class="yml-card-body">
+            <h3 class="yml-card-title">Annapurna Base Camp Trek</h3>
+            <div class="yml-card-rating">
+              <span class="yml-stars">★★★★★</span>
+              <span class="yml-rating-text">5 · 8 reviews</span>
+            </div>
+            <div class="yml-card-footer">
+              <div class="yml-card-price">
+                <span class="yml-price-label">Starting from</span>
+                <span class="yml-price-value">USD <strong>950</strong></span>
+              </div>
+              <span class="yml-view-trip-btn">View Trip →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2: Ghorepani Poon Hill Trek -->
+        <a href="../ghorepani-poon-hill-trek/" class="yml-card">
+          <div class="yml-card-image">
+            <img src="../../images/similar-trek-poonhill.png" alt="Ghorepani Poon Hill Trek" loading="lazy">
+            <div class="yml-card-overlay"></div>
+            <span class="yml-card-badge">Annapurna Region</span>
+          </div>
+          <div class="yml-card-body">
+            <h3 class="yml-card-title">Ghorepani Poon Hill Trek</h3>
+            <div class="yml-card-rating">
+              <span class="yml-stars">★★★★★</span>
+              <span class="yml-rating-text">5 · 12 reviews</span>
+            </div>
+            <div class="yml-card-footer">
+              <div class="yml-card-price">
+                <span class="yml-price-label">Starting from</span>
+                <span class="yml-price-value">USD <strong>495</strong></span>
+              </div>
+              <span class="yml-view-trip-btn">View Trip →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3: Manaslu Circuit Trek -->
+        <a href="../manaslu-circuit-trek/" class="yml-card">
+          <div class="yml-card-image">
+            <img src="../../images/similar-trek-manaslu.png" alt="Manaslu Circuit Trek" loading="lazy">
+            <div class="yml-card-overlay"></div>
+            <span class="yml-card-badge yml-badge-duration">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              14 Days
+            </span>
+          </div>
+          <div class="yml-card-body">
+            <h3 class="yml-card-title">Manaslu Circuit Trek</h3>
+            <div class="yml-card-rating">
+              <span class="yml-stars">★★★★★</span>
+              <span class="yml-rating-text">5 · 4 reviews</span>
+            </div>
+            <div class="yml-card-footer">
+              <div class="yml-card-price">
+                <span class="yml-price-label">Starting from</span>
+                <span class="yml-price-value">USD <strong>1390</strong></span>
+              </div>
+              <span class="yml-view-trip-btn">View Trip →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- Inquiry Modal -->
   <div id="inquiry-modal" class="modal-overlay">
     <div class="modal-card">
       <button class="modal-close" id="modal-close-btn">&times;</button>
-      <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Inquire About Everest Base Camp Trek</h3>
+      <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Inquire About Annapurna Circuit Trek</h3>
       <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 20px;">
         Fill out this quick form and our lead Himalayan guide will respond within 4 hours.
       </p>
@@ -273,7 +1002,7 @@
         </div>
         <div class="form-group" style="margin-bottom: 20px;">
           <label class="form-label" for="inq-notes">Preferred Start Date & Questions</label>
-          <textarea id="inq-notes" class="form-textarea" rows="3" placeholder="Tell us your target travel month, group size, or helicopter upgrade request..."></textarea>
+          <textarea id="inq-notes" class="form-textarea" rows="3" placeholder="Tell us your target travel month, group size, or custom request..."></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit Booking Inquiry</button>
       </form>
@@ -337,5 +1066,6 @@
   <script type="module" src="../../js/altitude-visualizer.js"></script>
   <script type="module" src="../../js/inquiry-modal.js"></script>
   <script src="../../js/header-scroll.js"></script>
+  <script type="module" src="../../js/trek-details.js"></script>
 </body>
 </html>
