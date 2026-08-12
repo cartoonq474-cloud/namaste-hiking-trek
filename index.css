@@ -8337,7 +8337,239 @@ textarea {
   box-shadow: 0 6px 18px rgba(0, 128, 96, 0.35);
 }
 
+/* ==========================================================================
+   You Might Also Like — Full-Width Recommendation Section
+   ========================================================================== */
+.you-might-like-section {
+  padding: 60px 0 72px 0;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
 
+.yml-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.yml-pill-tag {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0284c7;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  margin-bottom: 16px;
+}
+
+.yml-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.yml-accent-bar {
+  width: 5px;
+  height: 32px;
+  background: #00a8b5;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.yml-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--color-primary-navy);
+  margin: 0;
+}
+
+.yml-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-neutral-500);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Cards Grid */
+.yml-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 900px) {
+  .yml-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* Individual Card */
+.yml-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.yml-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Image Container */
+.yml-card-image {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.yml-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.yml-card:hover .yml-card-image img {
+  transform: scale(1.06);
+}
+
+.yml-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.55) 100%);
+  pointer-events: none;
+}
+
+/* Card Badge */
+.yml-card-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  letter-spacing: 0.3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.yml-badge-duration {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Card Body */
+.yml-card-body {
+  padding: 18px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.yml-card-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-primary-navy);
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Rating */
+.yml-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.yml-stars {
+  color: #f59e0b;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.yml-rating-text {
+  font-size: 0.82rem;
+  color: var(--color-neutral-500);
+  font-weight: 600;
+}
+
+.yml-new-tag {
+  font-size: 0.82rem;
+  color: var(--color-neutral-500);
+  font-weight: 600;
+}
+
+/* Card Footer */
+.yml-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 8px;
+  gap: 12px;
+}
+
+.yml-card-price {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.yml-price-label {
+  font-size: 0.75rem;
+  color: var(--color-neutral-500);
+  font-weight: 500;
+}
+
+.yml-price-value {
+  font-size: 0.95rem;
+  color: var(--color-primary-navy);
+  font-weight: 600;
+}
+
+.yml-price-value strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* View Trip Button */
+.yml-view-trip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--color-primary-navy);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.yml-card:hover .yml-view-trip-btn {
+  background: #008060;
+  box-shadow: 0 4px 12px rgba(0, 128, 96, 0.25);
+}
 
 
 
