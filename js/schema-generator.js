@@ -4,6 +4,9 @@
  */
 
 export function injectStructuredData() {
+  // Skip injection if static JSON-LD already exists in <head> (centerpiece annotation optimization)
+  if (document.querySelector('script[type="application/ld+json"]')) return;
+
   const schemaGraph = {
     "@context": "https://schema.org",
     "@graph": [
