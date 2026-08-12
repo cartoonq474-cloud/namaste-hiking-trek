@@ -1308,13 +1308,13 @@ textarea {
 }
 
 .review-tab-btn:hover {
-  color: var(--color-primary-navy);
+  color: #008060;
 }
 
 .review-tab-btn.active {
-  background: #0C2B4E;
+  background: #008060;
   color: #FFFFFF;
-  box-shadow: 0 4px 12px rgba(12, 43, 78, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 128, 96, 0.25);
 }
 
 /* Tab Panels */
@@ -7159,9 +7159,9 @@ textarea {
 }
 
 .review-tab-btn.active {
-  background: #0c2b4e;
+  background: #008060;
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(12, 43, 78, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 128, 96, 0.25);
 }
 
 .review-pane-content {
