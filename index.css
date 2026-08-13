@@ -1275,10 +1275,13 @@ textarea {
   border-top: 1px solid #E2E8F0;
 }
 
-.review-tabs-container {
+.review-section .review-tabs-container {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .segmented-tab-bar {
