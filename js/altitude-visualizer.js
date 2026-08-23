@@ -1,5 +1,3 @@
-import { getCurrentUnit, setUnit } from './i18n.js';
-
 const trekAltitudeProfiles = {
   "ebc": {
     name: "Everest Base Camp Trek",

@@ -3,8 +3,6 @@
  * Handles: Scroll-Spy navigation, Smooth anchor scrolling, Collapsible itinerary, Gear checklist, Booking calculator
  */
 
-import { formatPrice, getCurrentCurrency } from './i18n.js';
-
 // Setup Anchor Scroll & Scroll Spy
 function setupSubNavScrollSpy() {
   const subNavButtons = document.querySelectorAll('.trek-sub-nav-btn');
