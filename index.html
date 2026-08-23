@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -135,54 +135,6 @@
     </div>
   </noscript>
 
-  <!-- Top Bar: i18n & Multi-Currency Controls -->
-  <div class="top-bar">
-    <div class="container flex-between">
-      <div style="display: flex; gap: 20px; align-items: center;">
-        <span style="display: flex; align-items: center; gap: 6px;">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-            <circle cx="12" cy="10" r="3" />
-          </svg>
-          Thamel, Kathmandu, Nepal
-        </span>
-        <span style="display: flex; align-items: center; gap: 6px;">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-          </svg>
-          +977-1-4700000 | WhatsApp: +977-9800000000
-        </span>
-      </div>
-      <div class="top-bar-controls">
-        <!-- Language Selector -->
-        <select id="lang-select" class="control-select" aria-label="Select Language">
-          <option value="en">English (US)</option>
-          <option value="de">Deutsch</option>
-          <option value="fr">Français</option>
-          <option value="es">Español</option>
-          <option value="it">Italiano</option>
-          <option value="ja">日本語</option>
-          <option value="zh">中文</option>
-        </select>
-        <!-- Currency Selector -->
-        <select id="curr-select" class="control-select" aria-label="Select Currency">
-          <option value="USD">USD ($)</option>
-          <option value="EUR">EUR (€)</option>
-          <option value="GBP">GBP (£)</option>
-          <option value="NPR">NPR (Rs.)</option>
-        </select>
-        <!-- Altitude Unit Switcher -->
-        <select id="unit-select" class="control-select" aria-label="Select Unit">
-          <option value="m">Meters (m)</option>
-          <option value="ft">Feet (ft)</option>
-        </select>
-      </div>
-    </div>
-  </div>
-
   <!-- Header Navigation -->
   <header class="main-header">
     <div class="container flex-between">
@@ -205,10 +157,10 @@
       <!-- Navigation Links -->
       <nav>
         <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a></li>
-          <li><a href="treks.html" class="nav-link" data-i18n="nav_treks">All Treks</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="treks.html" class="nav-link">All Treks</a></li>
           <li class="nav-item-dropdown">
-            <a href="regions.html" class="nav-link" data-i18n="nav_regions">Trekking Regions ▾</a>
+            <a href="regions.html" class="nav-link">Trekking Regions ▾</a>
             <div class="nav-dropdown-menu">
               <a href="everest-region-treks/" class="nav-dropdown-link">Everest Region Treks</a>
               <a href="annapurna-region-treks/" class="nav-dropdown-link">Annapurna Region Treks</a>
@@ -233,7 +185,7 @@
       </nav>
 
       <div>
-        <button class="btn btn-primary open-inquiry-btn" data-i18n="btn_plan_trip">Customize My Trek</button>
+        <button class="btn btn-primary open-inquiry-btn">Customize My Trek</button>
       </div>
     </div>
   </header>
@@ -518,9 +470,7 @@
       </section>
     </div>
 
-
     <!-- Section 1: Entity Regions Hub (Level 2) -->
-
 
     <section id="regions" class="section-padding">
       <div class="container text-center">
@@ -1696,13 +1646,13 @@
 
         <!-- Interactive Trek Finder Box (Widget) -->
         <div class="trek-finder-box" style="margin-top: 0; margin-bottom: 50px;">
-          <h2 style="font-size: 1.4rem; color: white; margin-bottom: 20px;" data-i18n="btn_search_treks">Find Your
+          <h2 style="font-size: 1.4rem; color: white; margin-bottom: 20px;">Find Your
             Perfect Trek</h2>
           <div class="filter-grid">
             <div class="filter-group">
-              <label for="filter-region" data-i18n="label_region">Select Region</label>
+              <label for="filter-region">Select Region</label>
               <select id="filter-region" class="filter-select">
-                <option value="all" data-i18n="label_all">All Regions</option>
+                <option value="all">All Regions</option>
                 <option value="everest">Everest Region</option>
                 <option value="annapurna">Annapurna Region</option>
                 <option value="langtang">Langtang Region</option>
@@ -1710,27 +1660,27 @@
               </select>
             </div>
             <div class="filter-group">
-              <label for="filter-duration" data-i18n="label_duration">Duration</label>
+              <label for="filter-duration">Duration</label>
               <select id="filter-duration" class="filter-select">
-                <option value="all" data-i18n="label_all">All Durations</option>
+                <option value="all">All Durations</option>
                 <option value="short">Short (1 - 7 Days)</option>
                 <option value="medium">Medium (8 - 12 Days)</option>
                 <option value="long">Long (13+ Days)</option>
               </select>
             </div>
             <div class="filter-group">
-              <label for="filter-difficulty" data-i18n="label_difficulty">Difficulty Level</label>
+              <label for="filter-difficulty">Difficulty Level</label>
               <select id="filter-difficulty" class="filter-select">
-                <option value="all" data-i18n="label_all">All Levels</option>
+                <option value="all">All Levels</option>
                 <option value="easy-moderate">Easy to Moderate</option>
                 <option value="moderate">Moderate</option>
                 <option value="challenging">Challenging</option>
               </select>
             </div>
             <div class="filter-group">
-              <label for="filter-season" data-i18n="nav_seasons">Season</label>
+              <label for="filter-season">Season</label>
               <select id="filter-season" class="filter-select">
-                <option value="all" data-i18n="label_all">All Seasons</option>
+                <option value="all">All Seasons</option>
                 <option value="spring">Spring (Mar - May)</option>
                 <option value="autumn">Autumn (Sep - Nov)</option>
                 <option value="winter">Winter (Dec - Feb)</option>
@@ -4615,7 +4565,6 @@
   </footer>
 
   <!-- Client JavaScript Modules -->
-  <script type="module" src="js/i18n.js"></script>
   <script type="module" src="js/trek-finder.js?v=13"></script>
   <script type="module" src="js/inquiry-modal.js"></script>
   <script src="js/header-scroll.js"></script>
