@@ -383,8 +383,6 @@ textarea {
   }
 }
 
-@media (max-width: 768px) {
-
 /* Buttons */
 .btn {
   display: inline-flex;
