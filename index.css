@@ -8578,24 +8578,9 @@ textarea {
    Applies to trek/*/index.html pages
    ======================================================= */
 
-/* Desktop base: 2-column grid with sticky sidebar */
-.trek-detail-layout {
-  display: grid;
-  grid-template-columns: 2.2fr 1fr;
-  gap: 40px;
-}
-
 /* Floating mobile Book CTA — hidden on desktop */
 .mobile-book-cta {
   display: none;
-}
-
-/* ---- Tablet (≤ 1024px) ---- */
-@media (max-width: 1024px) {
-  .trek-detail-layout {
-    grid-template-columns: 1.6fr 1fr;
-    gap: 28px;
-  }
 }
 
 /* ---- Mobile (≤ 768px) ---- */
