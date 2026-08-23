@@ -308,6 +308,50 @@
       font-size: 0.92rem;
       line-height: 1.6;
     }
+    /* Mobile & Responsive Typography & Spacing Overrides */
+    @media (max-width: 992px) {
+      .hero-title-responsive {
+        font-size: 2.5rem !important;
+      }
+      .cta-heading-responsive {
+        font-size: 2rem !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .hero-section-responsive {
+        min-height: auto !important;
+        padding: 70px 16px !important;
+      }
+      .hero-title-responsive {
+        font-size: 2rem !important;
+      }
+      .hero-desc-responsive {
+        font-size: 0.98rem !important;
+      }
+      .section-heading-responsive {
+        font-size: 1.65rem !important;
+      }
+      .cta-heading-responsive {
+        font-size: 1.6rem !important;
+      }
+      .compare-map-grid,
+      .three-col-guide-grid,
+      .four-col-travel-grid,
+      .cta-banner-grid,
+      .faq-planner-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title-responsive {
+        font-size: 1.65rem !important;
+      }
+      .category-filter-card {
+        padding: 16px 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -351,10 +395,10 @@
   <main>
 
     <!-- Hero Banner Section -->
-    <section style="background: linear-gradient(rgba(7, 29, 54, 0.7), rgba(7, 29, 54, 0.85)), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; color: white; min-height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center; padding: 60px 0;">
+    <section class="hero-section-responsive" style="background: linear-gradient(rgba(7, 29, 54, 0.7), rgba(7, 29, 54, 0.85)), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; color: white; min-height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center; padding: 60px 0;">
       <div class="container" style="max-width: 980px; text-align: center;">
-        <h1 style="font-size: 3.4rem; color: white; font-weight: 800; line-height: 1.15; margin-bottom: 16px;">Everest Region Treks</h1>
-        <p style="font-size: 1.18rem; color: var(--color-neutral-200); line-height: 1.7; margin: 0 auto 32px auto; max-width: 840px;">
+        <h1 class="hero-title-responsive" style="font-size: 3.4rem; color: white; font-weight: 800; line-height: 1.15; margin-bottom: 16px;">Everest Region Treks</h1>
+        <p class="hero-desc-responsive" style="font-size: 1.18rem; color: var(--color-neutral-200); line-height: 1.7; margin: 0 auto 32px auto; max-width: 840px;">
           Explore the Everest region through classic base camp journeys, high-altitude passes, turquoise alpine lakes, Sherpa villages, luxury itineraries, short treks and peak-climbing adventures in the Khumbu.
         </p>
 
@@ -369,7 +413,7 @@
     <section class="section-padding" style="padding: 60px 0; background: #ffffff;">
       <div class="container">
         <div style="text-align: center; max-width: 800px; margin: 0 auto 30px auto;">
-          <h2 style="font-size: 2.2rem; color: var(--color-primary-navy); font-weight: 800; margin-bottom: 10px;">Find the Right Everest Region Trek</h2>
+          <h2 class="section-heading-responsive" style="font-size: 2.2rem; color: var(--color-primary-navy); font-weight: 800; margin-bottom: 10px;">Find the Right Everest Region Trek</h2>
           <p style="color: var(--color-neutral-600); font-size: 1.02rem; line-height: 1.6;">
             The Everest region offers far more than a single route to Everest Base Camp. Choose from scenic lakes, challenging high passes, shorter itineraries, luxury treks and peak-climbing adventures.
           </p>
@@ -446,7 +490,7 @@
     <section id="best-treks" class="section-padding" style="padding: 70px 0; background: var(--color-neutral-100);">
       <div class="container">
         <div style="margin-bottom: 36px;">
-          <h2 style="font-size: 2.2rem; color: var(--color-primary-navy); font-weight: 800;">Best Treks in the Everest Region</h2>
+          <h2 class="section-heading-responsive" style="font-size: 2.2rem; color: var(--color-primary-navy); font-weight: 800;">Best Treks in the Everest Region</h2>
           <p style="color: var(--color-neutral-600); margin-top: 6px;">Handcrafted itineraries guided by licensed local Sherpa experts.</p>
         </div>
 
@@ -657,7 +701,7 @@
 
           <!-- Left Column: Compare Table -->
           <div>
-            <h2 style="font-size: 1.8rem; color: var(--color-primary-navy); font-weight: 800; margin-bottom: 6px;">Compare Everest Region Treks</h2>
+            <h2 class="section-heading-responsive" style="font-size: 1.8rem; color: var(--color-primary-navy); font-weight: 800; margin-bottom: 6px;">Compare Everest Region Treks</h2>
             <p style="color: var(--color-neutral-600); font-size: 0.92rem; margin-bottom: 20px;">See how each trek differs in terms of experience, terrain and highlights.</p>
 
             <div class="compare-table-wrapper">
@@ -730,7 +774,7 @@
           <!-- Right Column: Trekking Map Graphic -->
           <div>
             <div class="map-card-wrapper">
-              <h2 style="font-size: 1.8rem; color: var(--color-primary-navy); font-weight: 800; margin-bottom: 6px;">Everest Region Trekking Map</h2>
+              <h2 class="section-heading-responsive" style="font-size: 1.8rem; color: var(--color-primary-navy); font-weight: 800; margin-bottom: 6px;">Everest Region Trekking Map</h2>
               <p style="color: var(--color-neutral-600); font-size: 0.92rem;">Explore the key trekking routes and major highlights in the Everest region.</p>
 
               <!-- Map Visual Diagram Box -->
@@ -787,7 +831,7 @@
     <section class="section-padding" style="padding: 70px 0; background: var(--color-neutral-100);">
       <div class="container">
         <div style="margin-bottom: 24px;">
-          <h2 style="font-size: 2.2rem; color: var(--color-primary-navy); font-weight: 800;">Choose Your Trek by Experience</h2>
+          <h2 class="section-heading-responsive" style="font-size: 2.2rem; color: var(--color-primary-navy); font-weight: 800;">Choose Your Trek by Experience</h2>
           <p style="color: var(--color-neutral-600); margin-top: 6px;">Match your personal travel style, timeline, and physical goals.</p>
         </div>
 
@@ -1041,7 +1085,7 @@
           </style>
           <div>
             <span style="color: #F59E0B; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">TREK THE EVEREST REGION WITH NAMASTE HIKING TREK</span>
-            <h2 style="font-size: 2.6rem; color: white; font-weight: 800; line-height: 1.2; margin: 10px 0 16px 0;">Experienced Guides. Proven Support. Real Adventures.</h2>
+            <h2 class="cta-heading-responsive" style="font-size: 2.6rem; color: white; font-weight: 800; line-height: 1.2; margin: 10px 0 16px 0;">Experienced Guides. Proven Support. Real Adventures.</h2>
             <p style="color: var(--color-neutral-300); font-size: 1.05rem; line-height: 1.6; margin-bottom: 28px;">
               From planning to the summit, we're with you every step of the way. Join our Everest region treks and experience the Himalayas with confidence.
             </p>
@@ -1082,7 +1126,7 @@
 
           <!-- Left Column: FAQ Accordion -->
           <div>
-            <h2 style="font-size: 2.2rem; color: var(--color-primary-navy); font-weight: 800; margin-bottom: 24px;">Frequently Asked Questions</h2>
+            <h2 class="section-heading-responsive" style="font-size: 2.2rem; color: var(--color-primary-navy); font-weight: 800; margin-bottom: 24px;">Frequently Asked Questions</h2>
 
             <details class="faq-accordion-item">
               <summary class="faq-accordion-summary">What are the best treks in the Everest region?</summary>
