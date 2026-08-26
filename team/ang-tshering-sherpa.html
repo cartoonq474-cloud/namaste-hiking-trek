@@ -94,24 +94,6 @@
       color: #ffffff;
       border-color: #10b981;
     }
-    .rev-heading {
-      font-size: 0.88rem;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #4a90b8;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .rev-heading::before {
-      content: "";
-      width: 22px;
-      height: 3px;
-      background: #4a90b8;
-      border-radius: 2px;
-      display: inline-block;
-    }
   </style>
 </head>
 <body>
@@ -298,12 +280,15 @@
       </div>
     </section>
 
-    <!-- 07. VERIFIED GUEST REVIEWS (Exact Screenshot Replica) -->
+    <!-- 07. VERIFIED GUEST REVIEWS (Prominent Previous H3 Heading Restored) -->
     <section style="padding-bottom: 50px;">
       <div class="container" style="max-width: 1000px;">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
-          <div class="rev-heading">WHAT GUESTS SAY ABOUT ANG TSHERING</div>
-          <div style="font-size: 0.85rem; color: #5a7a8a;">Rated <b style="color: #243a6b; font-size: 1rem;">4.9 / 5</b> across 120+ verified guest reviews</div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
+          <div>
+            <span style="font-size: 0.8rem; font-weight: 800; color: #10b981; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 4px;">Verified Feedback</span>
+            <h3 style="font-size: 1.6rem; color: #0f172a; font-weight: 800; margin: 0;">What Trekkers Say About Ang</h3>
+          </div>
+          <div style="font-size: 0.88rem; color: #5a7a8a;">Rated <b style="color: #0f172a; font-size: 1.05rem;">4.9 / 5</b> across 120+ verified guest reviews</div>
         </div>
         
         <div class="rev-grid-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
