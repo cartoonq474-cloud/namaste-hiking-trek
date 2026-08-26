@@ -222,8 +222,29 @@
       align-items: center;
       justify-content: center;
       margin: 0 auto 16px auto;
-      font-weight: 800;
-      font-size: 1.2rem;
+    }
+
+    /* Region Hub Link Cards with SVG Icons */
+    .region-hub-card {
+      padding: 16px;
+      text-align: center;
+      text-decoration: none;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #ffffff;
+    }
+    .region-hub-card:hover {
+      border-color: var(--color-copper-orange, #d97706);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
     }
 
     /* FAQ Tabs Styling */
@@ -551,7 +572,9 @@
 
         <!-- NTB Regulation Callout -->
         <div style="background: #f1f5f9; border-radius: 14px; padding: 24px; margin-top: 30px; display: flex; gap: 20px; align-items: center;">
-          <div style="width: 48px; height: 48px; background: #0f172a; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; flex-shrink: 0;">i</div>
+          <div style="width: 48px; height: 48px; background: #0f172a; color: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          </div>
           <div>
             <h4 style="font-size: 1rem; color: #0f172a; margin-bottom: 4px;">Nepal Tourism Board (NTB) Regulatory Requirement</h4>
             <p style="font-size: 0.88rem; color: #475569; margin: 0; line-height: 1.5;">
@@ -784,9 +807,11 @@
           </div>
         </div>
 
-        <!-- Honest Risk Statement Box -->
+        <!-- Honest Risk Statement Box with Warning Triangle SVG -->
         <div style="background: #fffbe6; border: 1px solid #ffe58f; border-radius: 16px; padding: 28px; display: flex; gap: 24px; align-items: center;">
-          <div style="font-size: 2.2rem; flex-shrink: 0;">⚠️</div>
+          <div style="flex-shrink: 0;">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
           <div>
             <h4 style="font-size: 1.1rem; color: #856404; margin-bottom: 6px;">Honest Mountain Risk Transparency Statement</h4>
             <p style="font-size: 0.92rem; color: #856404; margin: 0; line-height: 1.6;">
@@ -823,19 +848,31 @@
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
               <div style="background: #ffffff; padding: 20px; border-radius: 14px; border: 1px solid #e2e8f0;">
-                <strong style="color: #0f172a; font-size: 1rem; display: block; margin-bottom: 4px;">👥 People First</strong>
+                <strong style="color: #0f172a; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  People First
+                </strong>
                 <span style="color: #64748b; font-size: 0.84rem; line-height: 1.5; display: block;">Local Sherpa employment and fair wage distribution in mountain villages.</span>
               </div>
               <div style="background: #ffffff; padding: 20px; border-radius: 14px; border: 1px solid #e2e8f0;">
-                <strong style="color: #0f172a; font-size: 1rem; display: block; margin-bottom: 4px;">🌱 Plastic-Free Trails</strong>
+                <strong style="color: #0f172a; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                  Plastic-Free Trails
+                </strong>
                 <span style="color: #64748b; font-size: 0.84rem; line-height: 1.5; display: block;">Filtered water systems, reusable bottles, and trail clean-up initiatives.</span>
               </div>
               <div style="background: #ffffff; padding: 20px; border-radius: 14px; border: 1px solid #e2e8f0;">
-                <strong style="color: #0f172a; font-size: 1rem; display: block; margin-bottom: 4px;">⛩️ Cultural Respect</strong>
+                <strong style="color: #0f172a; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-8a3 3 0 0 1 6 0v8"/></svg>
+                  Cultural Respect
+                </strong>
                 <span style="color: #64748b; font-size: 0.84rem; line-height: 1.5; display: block;">Respecting Sherpa, Tamang & Gurung traditions and sacred Mani walls.</span>
               </div>
               <div style="background: #ffffff; padding: 20px; border-radius: 14px; border: 1px solid #e2e8f0;">
-                <strong style="color: #0f172a; font-size: 1rem; display: block; margin-bottom: 4px;">🏘️ Village Economy</strong>
+                <strong style="color: #0f172a; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  Village Economy
+                </strong>
                 <span style="color: #64748b; font-size: 0.84rem; line-height: 1.5; display: block;">Sourcing meals and accommodation directly from local family teahouses.</span>
               </div>
             </div>
@@ -894,7 +931,9 @@
 
         <div class="proof-grid">
           <div class="proof-card">
-            <div class="proof-icon-box">🏛️</div>
+            <div class="proof-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="4" rx="1"/><path d="M4 7v10"/><path d="M8 7v10"/><path d="M12 7v10"/><path d="M16 7v10"/><path d="M20 7v10"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+            </div>
             <h4 style="font-size: 1rem; color: #0f172a; margin-bottom: 4px;">Ministry of Tourism</h4>
             <div style="font-weight: 700; color: #059669; font-size: 0.85rem; margin-bottom: 8px;">License #1482 / 068</div>
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 14px;">Official expedition operator license issued by Nepal Dept. of Tourism.</p>
@@ -902,7 +941,9 @@
           </div>
 
           <div class="proof-card">
-            <div class="proof-icon-box">📜</div>
+            <div class="proof-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
             <h4 style="font-size: 1rem; color: #0f172a; margin-bottom: 4px;">Company Registrar</h4>
             <div style="font-weight: 700; color: #059669; font-size: 0.85rem; margin-bottom: 8px;">PAN/VAT #60124859</div>
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 14px;">Registered under the Nepal Ministry of Industry & Tax Department.</p>
@@ -910,7 +951,9 @@
           </div>
 
           <div class="proof-card">
-            <div class="proof-icon-box">🏔️</div>
+            <div class="proof-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/><path d="M4.14 15.08 7.9 7.64l3.18 6.36"/></svg>
+            </div>
             <h4 style="font-size: 1rem; color: #0f172a; margin-bottom: 4px;">TAAN Member</h4>
             <div style="font-weight: 700; color: #059669; font-size: 0.85rem; margin-bottom: 8px;">Member Agency</div>
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 14px;">Trekking Agencies' Association of Nepal certified general member.</p>
@@ -918,7 +961,9 @@
           </div>
 
           <div class="proof-card">
-            <div class="proof-icon-box">🧗</div>
+            <div class="proof-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/><path d="M12 9v12"/></svg>
+            </div>
             <h4 style="font-size: 1rem; color: #0f172a; margin-bottom: 4px;">NMA Member</h4>
             <div style="font-weight: 700; color: #059669; font-size: 0.85rem; margin-bottom: 8px;">Mountaineering Assoc.</div>
             <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 14px;">Nepal Mountaineering Association licensed peak climbing operator.</p>
@@ -940,14 +985,23 @@
             </p>
             
             <div style="background: #f8fafc; padding: 20px; border-radius: 14px; border: 1px solid #e2e8f0;">
-              <strong style="color: #0f172a; display: block; margin-bottom: 6px;">📍 Physical Office Address:</strong>
-              <p style="color: #475569; font-size: 0.9rem; margin-bottom: 10px;">Paknajol Marg, Thamel-16, Kathmandu, Nepal</p>
+              <strong style="color: #0f172a; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Physical Office Address:
+              </strong>
+              <p style="color: #475569; font-size: 0.9rem; margin-bottom: 12px; padding-left: 24px;">Paknajol Marg, Thamel-16, Kathmandu, Nepal</p>
               
-              <strong style="color: #0f172a; display: block; margin-bottom: 6px;">🕒 Opening Hours:</strong>
-              <p style="color: #475569; font-size: 0.9rem; margin-bottom: 10px;">Sunday – Friday: 08:00 AM – 07:00 PM (NPT)<br>Saturday: 09:00 AM – 04:00 PM</p>
+              <strong style="color: #0f172a; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Opening Hours:
+              </strong>
+              <p style="color: #475569; font-size: 0.9rem; margin-bottom: 12px; padding-left: 24px;">Sunday – Friday: 08:00 AM – 07:00 PM (NPT)<br>Saturday: 09:00 AM – 04:00 PM</p>
 
-              <strong style="color: #0f172a; display: block; margin-bottom: 6px;">📞 Direct Emergency Hotline:</strong>
-              <p style="color: #475569; font-size: 0.9rem; margin: 0;">WhatsApp: +977 980 000 0000 | Call: +977 1 4700000</p>
+              <strong style="color: #0f172a; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Direct Emergency Hotline:
+              </strong>
+              <p style="color: #475569; font-size: 0.9rem; margin: 0; padding-left: 24px;">WhatsApp: +977 980 000 0000 | Call: +977 1 4700000</p>
             </div>
           </div>
 
@@ -956,17 +1010,26 @@
             <h3 style="font-size: 1.8rem; color: #0f172a; margin-top: 8px; margin-bottom: 16px;">What We Will Never Promise & When We Say No</h3>
 
             <div style="display: flex; flex-direction: column; gap: 14px;">
-              <div style="background: #fff1f2; border-left: 4px solid #e11d48; padding: 14px 18px; border-radius: 8px;">
-                <strong style="color: #9f1239; font-size: 0.92rem; display: block;">✖ We Will Never Rushing Acclimatization</strong>
-                <span style="color: #881337; font-size: 0.84rem;">We refuse to sell compressed 8-day EBC itineraries that skip crucial rest days in Namche or Dingboche.</span>
+              <div style="background: #fff1f2; border-left: 4px solid #e11d48; padding: 14px 18px; border-radius: 8px; display: flex; gap: 12px; align-items: flex-start;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <div>
+                  <strong style="color: #9f1239; font-size: 0.92rem; display: block;">We Will Never Rush Acclimatization</strong>
+                  <span style="color: #881337; font-size: 0.84rem;">We refuse to sell compressed 8-day EBC itineraries that skip crucial rest days in Namche or Dingboche.</span>
+                </div>
               </div>
-              <div style="background: #fff1f2; border-left: 4px solid #e11d48; padding: 14px 18px; border-radius: 8px;">
-                <strong style="color: #9f1239; font-size: 0.92rem; display: block;">✖ We Will Never Risk Pass Crossings in Storms</strong>
-                <span style="color: #881337; font-size: 0.84rem;">If Cho La or Thorong La is buried in heavy blizzards, our lead guide has authority to hold or reroute the trek.</span>
+              <div style="background: #fff1f2; border-left: 4px solid #e11d48; padding: 14px 18px; border-radius: 8px; display: flex; gap: 12px; align-items: flex-start;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <div>
+                  <strong style="color: #9f1239; font-size: 0.92rem; display: block;">We Will Never Risk Pass Crossings in Storms</strong>
+                  <span style="color: #881337; font-size: 0.84rem;">If Cho La or Thorong La is buried in heavy blizzards, our lead guide has authority to hold or reroute the trek.</span>
+                </div>
               </div>
-              <div style="background: #fff1f2; border-left: 4px solid #e11d48; padding: 14px 18px; border-radius: 8px;">
-                <strong style="color: #9f1239; font-size: 0.92rem; display: block;">✖ We Will Never Overload Porters</strong>
-                <span style="color: #881337; font-size: 0.84rem;">If a group's luggage exceeds 20kg per porter, we add extra porters rather than overloading staff.</span>
+              <div style="background: #fff1f2; border-left: 4px solid #e11d48; padding: 14px 18px; border-radius: 8px; display: flex; gap: 12px; align-items: flex-start;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <div>
+                  <strong style="color: #9f1239; font-size: 0.92rem; display: block;">We Will Never Overload Porters</strong>
+                  <span style="color: #881337; font-size: 0.84rem;">If a group's luggage exceeds 20kg per porter, we add extra porters rather than overloading staff.</span>
+                </div>
               </div>
             </div>
           </div>
@@ -989,11 +1052,11 @@
             <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
               <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Sarah M." style="width: 54px; height: 54px; border-radius: 50%; object-fit: cover;">
               <div>
-                <strong style="color: #0f172a; font-size: 1rem; display: block;">Sarah Jenkins & Group 🇬🇧</strong>
+                <strong style="color: #0f172a; font-size: 1rem; display: block;">Sarah Jenkins & Group (United Kingdom)</strong>
                 <span style="color: #059669; font-size: 0.8rem; font-weight: 700;">Verified EBC Trekker • April 2026</span>
               </div>
             </div>
-            <p style="color: #475569; font-size: 0.92rem; line-height: 1.6; italic; margin: 0;">
+            <p style="color: #475569; font-size: 0.92rem; line-height: 1.6; font-style: italic; margin: 0;">
               "When bad weather grounded Lukla flights for 2 days, Ang Tshering and Pemba arranged an emergency private 4WD to Salleri within 2 hours so we didn't lose a single trekking day. That operational quick thinking made our entire Everest Base Camp dream possible!"
             </p>
           </div>
@@ -1001,7 +1064,9 @@
           <!-- Journal Note -->
           <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px; box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
             <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
-              <div style="width: 54px; height: 54px; background: #fef3c7; color: #d97706; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">📓</div>
+              <div style="width: 54px; height: 54px; background: #fef3c7; color: #d97706; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
               <div>
                 <strong style="color: #0f172a; font-size: 1rem; display: block;">Expedition Journal Note</strong>
                 <span style="color: #d97706; font-size: 0.8rem; font-weight: 700;">Cho La Pass Safety Check</span>
@@ -1025,14 +1090,38 @@
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
-          <a href="everest-region-treks/" class="card" style="padding: 16px; text-align: center; text-decoration: none; border: 1px solid #e2e8f0; border-radius: 12px; color: #0f172a; font-weight: 700; font-size: 0.92rem; transition: border-color 0.2s ease;">🏔️ Everest Region</a>
-          <a href="annapurna-region-treks/" class="card" style="padding: 16px; text-align: center; text-decoration: none; border: 1px solid #e2e8f0; border-radius: 12px; color: #0f172a; font-weight: 700; font-size: 0.92rem; transition: border-color 0.2s ease;">🏞️ Annapurna Region</a>
-          <a href="manaslu-region-treks/" class="card" style="padding: 16px; text-align: center; text-decoration: none; border: 1px solid #e2e8f0; border-radius: 12px; color: #0f172a; font-weight: 700; font-size: 0.92rem; transition: border-color 0.2s ease;">⛰️ Manaslu Region</a>
-          <a href="langtang-region-treks/" class="card" style="padding: 16px; text-align: center; text-decoration: none; border: 1px solid #e2e8f0; border-radius: 12px; color: #0f172a; font-weight: 700; font-size: 0.92rem; transition: border-color 0.2s ease;">🌲 Langtang Region</a>
-          <a href="mustang-region-treks/" class="card" style="padding: 16px; text-align: center; text-decoration: none; border: 1px solid #e2e8f0; border-radius: 12px; color: #0f172a; font-weight: 700; font-size: 0.92rem; transition: border-color 0.2s ease;">🏰 Mustang Region</a>
-          <a href="dolpo-region-treks/" class="card" style="padding: 16px; text-align: center; text-decoration: none; border: 1px solid #e2e8f0; border-radius: 12px; color: #0f172a; font-weight: 700; font-size: 0.92rem; transition: border-color 0.2s ease;">🏜️ Dolpo Region</a>
-          <a href="kanchenjunga-region-treks/" class="card" style="padding: 16px; text-align: center; text-decoration: none; border: 1px solid #e2e8f0; border-radius: 12px; color: #0f172a; font-weight: 700; font-size: 0.92rem; transition: border-color 0.2s ease;">🗻 Kanchenjunga</a>
-          <a href="peak-climbing-nepal/" class="card" style="padding: 16px; text-align: center; text-decoration: none; border: 1px solid #e2e8f0; border-radius: 12px; color: #0f172a; font-weight: 700; font-size: 0.92rem; transition: border-color 0.2s ease;">🧗 Peak Climbing</a>
+          <a href="everest-region-treks/" class="region-hub-card">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+            Everest Region
+          </a>
+          <a href="annapurna-region-treks/" class="region-hub-card">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Annapurna Region
+          </a>
+          <a href="manaslu-region-treks/" class="region-hub-card">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/><path d="M4.14 15.08 7.9 7.64l3.18 6.36"/></svg>
+            Manaslu Region
+          </a>
+          <a href="langtang-region-treks/" class="region-hub-card">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 22h20L12 2z"/></svg>
+            Langtang Region
+          </a>
+          <a href="mustang-region-treks/" class="region-hub-card">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-8a3 3 0 0 1 6 0v8"/></svg>
+            Mustang Region
+          </a>
+          <a href="dolpo-region-treks/" class="region-hub-card">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/></svg>
+            Dolpo Region
+          </a>
+          <a href="kanchenjunga-region-treks/" class="region-hub-card">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+            Kanchenjunga
+          </a>
+          <a href="peak-climbing-nepal/" class="region-hub-card">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/><path d="M12 9v12"/></svg>
+            Peak Climbing
+          </a>
         </div>
       </div>
     </section>
@@ -1095,7 +1184,10 @@
         
         <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
           <button class="btn btn-primary open-inquiry-btn" style="padding: 14px 32px; font-size: 1.05rem;">Plan My Custom Trek →</button>
-          <a href="https://wa.me/9779800000000" target="_blank" class="btn btn-secondary" style="padding: 14px 28px; font-size: 1.05rem; background: #25d366; color: white; border: none;">Chat on WhatsApp ↗</a>
+          <a href="https://wa.me/9779800000000" target="_blank" class="btn btn-secondary" style="padding: 14px 28px; font-size: 1.05rem; background: #25d366; color: white; border: none; display: inline-flex; align-items: center; gap: 8px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Chat on WhatsApp ↗
+          </a>
         </div>
       </div>
     </section>
@@ -1109,7 +1201,9 @@
       <h3 id="modalTitle" style="font-size: 1.4rem; color: #0f172a; margin-bottom: 10px;">Official Document</h3>
       <p id="modalDesc" style="color: #64748b; font-size: 0.95rem; line-height: 1.6;">Verification detail content...</p>
       <div style="background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 12px; padding: 20px; text-align: center; margin-top: 16px;">
-        <div style="font-size: 2rem; margin-bottom: 6px;">📜</div>
+        <div style="display: flex; justify-content: center; margin-bottom: 8px;">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
         <strong style="color: #0f172a; font-size: 0.9rem;">Verified Official Certificate Record</strong>
         <p style="font-size: 0.8rem; color: #94a3b8; margin: 4px 0 0 0;">Ministry of Industry & Tourism Department Registry, Nepal</p>
       </div>
