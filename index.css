@@ -266,6 +266,9 @@ textarea {
   color: var(--color-neutral-700);
   position: relative;
   padding: 6px 0;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
 }
 
 .nav-link:hover,
