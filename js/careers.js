@@ -71,7 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (appForm) {
           appForm.innerHTML = `
             <div style="text-align: center; padding: 30px 10px;">
-              <div style="width: 60px; height: 60px; background: #ECFDF5; color: #10B981; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 2rem; margin-bottom: 16px;">✓</div>
+              <div style="width: 60px; height: 60px; background: #ECFDF5; color: #10B981; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
               <h3 style="font-size: 1.5rem; color: #0F172A; margin-bottom: 8px;">Application Submitted Successfully!</h3>
               <p style="color: #64748B; font-size: 0.98rem; line-height: 1.6; max-width: 480px; margin: 0 auto 20px auto;">
                 Thank you for applying to Namaste Hiking Trek. Our HR & Expedition team will review your qualifications and reach out via email/WhatsApp shortly.
