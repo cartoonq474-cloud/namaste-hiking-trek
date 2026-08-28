@@ -7,15 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. FAQ Accordion Toggle
   const faqHeaders = document.querySelectorAll('.faq-accordion-header');
   faqHeaders.forEach(header => {
-    header.addEventListener('click', () => {
+    header.addEventListener('click', (e) => {
+      e.preventDefault();
       const item = header.parentElement;
-      const isOpen = item.classList.contains('open');
+      const isOpen = item.classList.contains('open') || item.classList.contains('active');
       
       // Close all other open items
-      document.querySelectorAll('.faq-accordion-item').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.faq-accordion-item').forEach(el => {
+        el.classList.remove('open', 'active');
+      });
       
       if (!isOpen) {
-        item.classList.add('open');
+        item.classList.add('open', 'active');
       }
     });
   });
