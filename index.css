@@ -9512,24 +9512,23 @@ textarea {
 }
 
 /* ==========================================================================
-   DEDICATED REVIEWS PAGE STYLES
+   DEDICATED REVIEWS PAGE STYLES — HIGH-IMPACT LUXURY DESIGN
    ========================================================================== */
 
 /* Hero Section */
 .reviews-hero-section {
   position: relative;
-  background: linear-gradient(135deg, rgba(7, 29, 54, 0.92) 0%, rgba(15, 23, 42, 0.96) 100%), 
-              url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(7, 29, 54, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%), 
+              url('images/himalayan-bg.jpg') center/cover no-repeat;
   color: #FFFFFF;
-  padding: 85px 0 75px 0;
-  text-align: center;
+  padding: 80px 0 75px 0;
 }
 
 .reviews-hero-title {
-  font-size: 3.2rem;
+  font-size: 3.4rem;
   font-weight: 900;
   color: #FFFFFF;
-  line-height: 1.15;
+  line-height: 1.12;
   margin-top: 10px;
   margin-bottom: 16px;
   letter-spacing: -0.02em;
@@ -9537,35 +9536,86 @@ textarea {
 
 .reviews-hero-desc {
   font-size: 1.15rem;
-  color: #E2E8F0;
-  max-width: 780px;
-  margin: 0 auto 28px auto;
+  color: #CBD5E1;
+  max-width: 760px;
   line-height: 1.7;
+  margin-bottom: 24px;
 }
 
-.trust-stats-strip {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Split Hero Scorecard Grid */
+.review-scorecard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
   gap: 32px;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-  padding: 16px 28px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  max-width: 920px;
-  margin: 0 auto 32px auto;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  padding: 32px 36px;
+  margin-top: 32px;
 }
 
-.trust-stat-item {
+.scorecard-main-stat {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 0.95rem;
-  font-weight: 700;
+  gap: 20px;
+}
+
+.big-rating-number {
+  font-size: 4.5rem;
+  font-weight: 900;
   color: #FFFFFF;
+  line-height: 1;
+}
+
+.rating-stars-gold {
+  color: #F59E0B;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+/* Rating Bar Breakdown */
+.rating-breakdown-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rating-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: #E2E8F0;
+  font-weight: 600;
+}
+
+.rating-bar-label {
+  width: 55px;
+  white-space: nowrap;
+}
+
+.rating-bar-bg {
+  flex-grow: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.rating-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10B981, #34D399);
+  border-radius: 50px;
+}
+
+.rating-bar-percent {
+  width: 75px;
+  text-align: right;
+  font-size: 0.82rem;
+  color: #94A3B8;
 }
 
 /* Platform Badges */
@@ -9579,47 +9629,109 @@ textarea {
   background: #FFFFFF;
   border: 1px solid #E2E8F0;
   border-radius: 20px;
-  padding: 24px 20px;
+  padding: 24px;
   text-align: center;
   box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .platform-badge-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   border-color: #10B981;
-  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.12);
+  box-shadow: 0 16px 36px rgba(16, 185, 129, 0.12);
+}
+
+.platform-logo-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
 }
 
 .platform-logo-title {
   font-size: 1.2rem;
   font-weight: 800;
   color: #0F172A;
-  margin-bottom: 6px;
-
-.platform-stars {
-  color: #F59E0B;
-  font-size: 1.1rem;
   margin-bottom: 4px;
 }
 
-/* Filter Controls */
+.platform-stars {
+  color: #F59E0B;
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.platform-link-btn {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #10B981;
+  text-decoration: none;
+}
+
+.platform-link-btn:hover {
+  text-decoration: underline;
+}
+
+/* Search & Filter Bar */
+.reviews-search-filter-wrapper {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+  margin-bottom: 40px;
+}
+
+.review-search-box {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.review-search-input {
+  width: 100%;
+  padding: 14px 20px 14px 44px;
+  font-size: 0.98rem;
+  border: 1px solid #CBD5E1;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.25s ease;
+  box-sizing: border-box;
+}
+
+.review-search-input:focus {
+  border-color: #10B981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+.search-icon-inside {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94A3B8;
+}
+
 .reviews-filter-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 36px;
 }
 
 .filter-pill-btn {
-  background: #FFFFFF;
+  background: #F1F5F9;
   border: 1px solid #E2E8F0;
   color: #475569;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 8px 18px;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -9631,14 +9743,14 @@ textarea {
   background: #10B981;
   color: #FFFFFF;
   border-color: #10B981;
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
 }
 
-/* Review Cards Grid */
+/* Standalone Review Cards */
 .reviews-grid-standalone {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 26px;
 }
 
 .review-card-standalone {
@@ -9646,7 +9758,7 @@ textarea {
   border-radius: 20px;
   border: 1px solid #E2E8F0;
   padding: 28px;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9654,39 +9766,22 @@ textarea {
 }
 
 .review-card-standalone:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
   border-color: #10B981;
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
 }
 
-.review-card-header {
+.review-card-top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
 }
 
-.review-user-block {
-  display: flex;
+.verified-shield-badge {
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-}
-
-.review-avatar-circle {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #10B981;
-  color: #FFFFFF;
-  font-weight: 800;
-  font-size: 1.05rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.review-trek-badge {
+  gap: 5px;
   background: #ECFDF5;
   color: #047857;
   font-size: 0.76rem;
@@ -9694,40 +9789,245 @@ textarea {
   padding: 4px 10px;
   border-radius: 50px;
   border: 1px solid #A7F3D0;
-  display: inline-block;
-  margin-bottom: 6px;
 }
 
-.review-guide-tag {
-  font-size: 0.8rem;
+.review-source-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
   color: #64748B;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-/* Guide Spotlight */
-.guide-spotlight-card {
+.review-user-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.review-avatar-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #10B981;
+  flex-shrink: 0;
+}
+
+.review-avatar-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10B981, #059669);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.review-tags-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.review-trek-link-pill {
+  background: #F1F5F9;
+  color: #0F172A;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.review-trek-link-pill:hover {
+  background: #10B981;
+  color: #FFFFFF;
+}
+
+.review-guide-link {
+  background: #FFFBEB;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.review-guide-link:hover {
+  background: #F59E0B;
+  color: #FFFFFF;
+  border-color: #F59E0B;
+}
+
+.review-guide-mini-avatar {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-photo-thumb-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 14px 0 16px 0;
+}
+
+.review-photo-thumb {
+  width: 100%;
+  height: 72px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #E2E8F0;
+  transition: transform 0.25s ease;
+}
+
+.review-photo-thumb:hover {
+  transform: scale(1.05);
+  border-color: #10B981;
+}
+
+.review-helpful-btn {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  color: #64748B;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.review-helpful-btn:hover,
+.review-helpful-btn.voted {
+  background: #ECFDF5;
+  color: #047857;
+  border-color: #A7F3D0;
+}
+
+/* Video Stories Section */
+.video-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.video-story-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 280px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+  background: #0F172A;
+  cursor: pointer;
+}
+
+.video-story-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.video-story-card:hover .video-story-img {
+  transform: scale(1.06);
+  opacity: 0.95;
+}
+
+.video-story-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(15, 23, 42, 0.88) 100%);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.video-play-btn-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #10B981;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0 0 0 8px rgba(16, 185, 129, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-story-card:hover .video-play-btn-circle {
+  transform: scale(1.12);
+  box-shadow: 0 0 0 14px rgba(16, 185, 129, 0.25);
+}
+
+/* Guide Leaderboard Cards */
+.guide-leaderboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.guide-leaderboard-card {
   background: #FFFFFF;
   border-radius: 20px;
   border: 1px solid #E2E8F0;
   padding: 24px;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.guide-spotlight-card:hover {
-  transform: translateY(-4px);
+.guide-leaderboard-card:hover {
+  transform: translateY(-5px);
   border-color: #10B981;
+  box-shadow: 0 16px 36px rgba(16, 185, 129, 0.1);
 }
 
-.guide-avatar-img {
-  width: 68px;
-  height: 68px;
+.guide-leaderboard-img {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #10B981;
   margin: 0 auto 12px auto;
 }
+
+@media (max-width: 768px) {
+  .review-scorecard-grid {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .reviews-hero-title {
+    font-size: 2.3rem;
+  }
+}
+
 
 
 
