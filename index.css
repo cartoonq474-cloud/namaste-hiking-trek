@@ -9800,6 +9800,18 @@ textarea {
   font-weight: 700;
 }
 
+.stars-gold,
+.review-stars-gold,
+.review-source-tag .stars-gold,
+.platform-stars,
+.rating-stars-gold {
+  color: #F59E0B !important;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .review-user-header {
   display: flex;
   align-items: center;
