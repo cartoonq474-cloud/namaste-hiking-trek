@@ -700,7 +700,313 @@ const tourPackages = [
   }
 ];
 
-// Generate 100% Complete Tour Landing Pages (Matching Trek Page Layout, Accordions, Reviews & Scripts)
+function getHeaderMarkup(relPrefix) {
+  return `<header class="main-header">
+    <div class="container flex-between">
+      <a href="${relPrefix}index.html" class="logo-brand">
+        <img src="${relPrefix}images/logo.png" alt="Namaste Hiking Trek Logo" style="height: 54px; width: auto; object-fit: contain;">
+        <div class="logo-text-group">
+          <span class="brand-title">NAMASTE</span>
+          <span class="brand-subtitle">HIKING TREK</span>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav>
+        <ul class="nav-menu">
+          <!-- Mega Menu Dropdown for All Treks -->
+          <li class="nav-item-dropdown mega-nav-item">
+            <a href="${relPrefix}treks.html" class="nav-link">All Treks ▾</a>
+            <div class="mega-menu-dropdown">
+              <div class="mega-menu-container">
+                <!-- Left Sidebar Navigation -->
+                <div class="mega-menu-sidebar">
+                  <div class="mega-sidebar-item active" data-target="tab-popular">Popular Treks in Nepal</div>
+                  <div class="mega-sidebar-item" data-target="tab-annapurna">Annapurna</div>
+                  <div class="mega-sidebar-item" data-target="tab-everest">Everest</div>
+                  <div class="mega-sidebar-item" data-target="tab-manaslu">Manaslu</div>
+                  <div class="mega-sidebar-item" data-target="tab-langtang">Langtang</div>
+                  <div class="mega-sidebar-item" data-target="tab-kanchenjunga">Kanchenjunga</div>
+                  <div class="mega-sidebar-item" data-target="tab-dolpo">Dolpo</div>
+                  <div class="mega-sidebar-item" data-target="tab-makalu">Makalu</div>
+                  <div class="mega-sidebar-item" data-target="tab-rolwaling">Rolwaling</div>
+                  <div class="mega-sidebar-item" data-target="tab-farwest">Far West</div>
+                  <div class="mega-sidebar-item" data-target="tab-ganesh">Ganesh Himal</div>
+                </div>
+
+                <!-- Right Content Area -->
+                <div class="mega-menu-content-wrap">
+                  <div class="mega-top-bar">
+                    <button class="mega-talk-pill open-inquiry-btn">Confused? Let's Talk ↗</button>
+                  </div>
+
+                  <!-- Tab 1: Popular Treks in Nepal -->
+                  <div class="mega-tab-content active" id="tab-popular">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">Two weeks Trek</div>
+                        <a href="${relPrefix}trek/everest-base-camp-trek/" class="mega-trek-link"><span>Everest Base Camp Trek</span> <span class="days-badge">14 DAYS</span></a>
+                        <a href="${relPrefix}trek/manaslu-circuit-trek/" class="mega-trek-link"><span>Manaslu Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
+                        <a href="${relPrefix}trek/annapurna-circuit-trek/" class="mega-trek-link"><span>Annapurna Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
+                        <a href="${relPrefix}trek/annapurna-base-camp/" class="mega-trek-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">9 DAYS</span></a>
+                      </div>
+
+                      <div class="mega-col">
+                        <div class="mega-col-title">One week Treks</div>
+                        <a href="${relPrefix}trek/langtang-valley-trek/" class="mega-trek-link"><span>Langtang Valley Trek</span> <span class="days-badge">8 DAYS</span></a>
+                        <a href="${relPrefix}trek/ghorepani-poon-hill-trek/" class="mega-trek-link"><span>Ghorepani Poon Hill Trek</span> <span class="days-badge">4 DAYS</span></a>
+                        <a href="${relPrefix}trek/mardi-himal-trek/" class="mega-trek-link"><span>Mardi Base Camp Trek</span> <span class="days-badge">6 DAYS</span></a>
+                        <a href="${relPrefix}trek/everest-view-trek/" class="mega-trek-link"><span>Everest View Trek</span> <span class="days-badge">7 DAYS</span></a>
+                      </div>
+
+                      <div class="mega-col">
+                        <div class="mega-col-title">Remote and Unexplored</div>
+                        <a href="${relPrefix}trek/kanchenjunga-base-camp-trek/" class="mega-trek-link"><span>Kanchenjunga Circuit Trek</span> <span class="days-badge">18 DAYS</span></a>
+                        <a href="${relPrefix}trek/manaslu-tsum-valley-trek/" class="mega-trek-link"><span>Manaslu Tsum Valley Trek</span> <span class="days-badge">18 DAYS</span></a>
+                        <a href="${relPrefix}trek/nar-phu-valley-trek/" class="mega-trek-link"><span>Narphu Valley Trek</span> <span class="days-badge">16 DAYS</span></a>
+                      </div>
+
+                      <div class="mega-col">
+                        <div class="mega-col-title">Camping Off the Grid – Extreme Wilderness</div>
+                        <a href="${relPrefix}trek/dhaulagiri-circuit-trek/" class="mega-trek-link"><span>Dhaulagiri Circuit Trek</span> <span class="days-badge">16 DAYS</span></a>
+                        <a href="${relPrefix}trek/rolwaling-valley-trek/" class="mega-trek-link"><span>Sherpani Col Pass Trek</span> <span class="days-badge">22 DAYS</span></a>
+                        <a href="${relPrefix}dolpo-region-treks/" class="mega-trek-link"><span>Upper Dolpo Circuit Trek</span> <span class="days-badge">24 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 2: Annapurna -->
+                  <div class="mega-tab-content" id="tab-annapurna">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">Classic Treks</div>
+                        <a href="${relPrefix}trek/annapurna-base-camp/" class="mega-trek-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">9 DAYS</span></a>
+                        <a href="${relPrefix}trek/annapurna-circuit-trek/" class="mega-trek-link"><span>Annapurna Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
+                        <a href="${relPrefix}trek/tilicho-lake-trek/" class="mega-trek-link"><span>Tilicho Lake & Annapurna Circuit</span> <span class="days-badge">14 DAYS</span></a>
+                      </div>
+                      <div class="mega-col">
+                        <div class="mega-col-title">Short & Panoramic</div>
+                        <a href="${relPrefix}trek/ghorepani-poon-hill-trek/" class="mega-trek-link"><span>Ghorepani Poon Hill Trek</span> <span class="days-badge">4 DAYS</span></a>
+                        <a href="${relPrefix}trek/mardi-himal-trek/" class="mega-trek-link"><span>Mardi Himal Ridge Trek</span> <span class="days-badge">6 DAYS</span></a>
+                        <a href="${relPrefix}trek/khopra-ridge-trek/" class="mega-trek-link"><span>Khopra Ridge & Mohare Danda</span> <span class="days-badge">9 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 3: Everest -->
+                  <div class="mega-tab-content" id="tab-everest">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">High Expedition</div>
+                        <a href="${relPrefix}trek/everest-base-camp-trek/" class="mega-trek-link"><span>Everest Base Camp Trek</span> <span class="days-badge">14 DAYS</span></a>
+                        <a href="${relPrefix}trek/everest-three-passes-trek/" class="mega-trek-link"><span>Everest Three Passes Trek</span> <span class="days-badge">19 DAYS</span></a>
+                        <a href="${relPrefix}trek/everest-base-camp-via-gokyo-lakes/" class="mega-trek-link"><span>Cho La Pass & Gokyo Lakes</span> <span class="days-badge">16 DAYS</span></a>
+                      </div>
+                      <div class="mega-col">
+                        <div class="mega-col-title">Scenic & Cultural</div>
+                        <a href="${relPrefix}trek/gokyo-lakes-trek/" class="mega-trek-link"><span>Gokyo Lakes Trek</span> <span class="days-badge">12 DAYS</span></a>
+                        <a href="${relPrefix}trek/everest-view-trek/" class="mega-trek-link"><span>Everest View Trek</span> <span class="days-badge">7 DAYS</span></a>
+                        <a href="${relPrefix}trek/pikey-peak-trek/" class="mega-trek-link"><span>Pikey Peak Panorama Trek</span> <span class="days-badge">9 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 4: Manaslu -->
+                  <div class="mega-tab-content" id="tab-manaslu">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">Circuit & Passes</div>
+                        <a href="${relPrefix}trek/manaslu-circuit-trek/" class="mega-trek-link"><span>Manaslu Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
+                        <a href="${relPrefix}trek/manaslu-tsum-valley-trek/" class="mega-trek-link"><span>Manaslu & Tsum Valley Combo</span> <span class="days-badge">18 DAYS</span></a>
+                      </div>
+                      <div class="mega-col">
+                        <div class="mega-col-title">Restricted Valley</div>
+                        <a href="${relPrefix}trek/tsum-valley-trek/" class="mega-trek-link"><span>Hidden Tsum Valley Trek</span> <span class="days-badge">14 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 5: Langtang -->
+                  <div class="mega-tab-content" id="tab-langtang">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">Valley & Lakes</div>
+                        <a href="${relPrefix}trek/langtang-valley-trek/" class="mega-trek-link"><span>Langtang Valley Trek</span> <span class="days-badge">8 DAYS</span></a>
+                        <a href="${relPrefix}trek/gosaikunda-lake-trek/" class="mega-trek-link"><span>Sacred Gosaikunda Lake Trek</span> <span class="days-badge">7 DAYS</span></a>
+                      </div>
+                      <div class="mega-col">
+                        <div class="mega-col-title">Heritage & Ridge</div>
+                        <a href="${relPrefix}trek/tamang-heritage-trail-trek/" class="mega-trek-link"><span>Tamang Heritage Trail</span> <span class="days-badge">9 DAYS</span></a>
+                        <a href="${relPrefix}trek/helambu-trek/" class="mega-trek-link"><span>Helambu Circuit Trek</span> <span class="days-badge">6 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 6: Kanchenjunga -->
+                  <div class="mega-tab-content" id="tab-kanchenjunga">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">Far Eastern Wilderness</div>
+                        <a href="${relPrefix}trek/kanchenjunga-base-camp-trek/" class="mega-trek-link"><span>Kanchenjunga Circuit Trek</span> <span class="days-badge">18 DAYS</span></a>
+                        <a href="${relPrefix}kanchenjunga-region-treks/" class="mega-trek-link"><span>Kanchenjunga North & South</span> <span class="days-badge">22 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 7: Dolpo -->
+                  <div class="mega-tab-content" id="tab-dolpo">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">Trans-Himalayan Plateau</div>
+                        <a href="${relPrefix}dolpo-region-treks/" class="mega-trek-link"><span>Upper Dolpo Circuit Trek</span> <span class="days-badge">24 DAYS</span></a>
+                        <a href="${relPrefix}dolpo-region-treks/" class="mega-trek-link"><span>Lower Dolpo & Phoksundo Lake</span> <span class="days-badge">15 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 8: Makalu -->
+                  <div class="mega-tab-content" id="tab-makalu">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">High Alpine Sanctuary</div>
+                        <a href="${relPrefix}trek/makalu-base-camp-trek/" class="mega-trek-link"><span>Makalu Base Camp Trek</span> <span class="days-badge">16 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 9: Rolwaling -->
+                  <div class="mega-tab-content" id="tab-rolwaling">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">Glacial Pass Expedition</div>
+                        <a href="${relPrefix}trek/rolwaling-valley-trek/" class="mega-trek-link"><span>Rolwaling & Tashi Lapcha Pass</span> <span class="days-badge">19 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 10: Far West & Mustang -->
+                  <div class="mega-tab-content" id="tab-farwest">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">Forbidden Kingdom & Rara</div>
+                        <a href="${relPrefix}trek/upper-mustang-trek/" class="mega-trek-link"><span>Upper Mustang Kingdom Trek</span> <span class="days-badge">14 DAYS</span></a>
+                        <a href="${relPrefix}trek/rara-lake-trek/" class="mega-trek-link"><span>Rara Lake Wilderness Trek</span> <span class="days-badge">10 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 11: Ganesh Himal -->
+                  <div class="mega-tab-content" id="tab-ganesh">
+                    <div class="mega-content-grid">
+                      <div class="mega-col">
+                        <div class="mega-col-title">Ruby Valley & Foothills</div>
+                        <a href="${relPrefix}trek/ruby-valley-trek/" class="mega-trek-link"><span>Ganesh Himal Ruby Valley Trek</span> <span class="days-badge">11 DAYS</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Tour Packages Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="${relPrefix}tours.html" class="nav-link active">Nepal Tours ▾</a>
+            <div class="nav-dropdown-menu">
+              <a href="${relPrefix}tours.html" class="nav-dropdown-link">All Tour Packages</a>
+              <a href="${relPrefix}tour/kathmandu-pokhara-chitwan-tour/" class="nav-dropdown-link">Best of Nepal (8 Days)</a>
+              <a href="${relPrefix}tour/kathmandu-cultural-heritage-tour/" class="nav-dropdown-link">Kathmandu Heritage (4 Days)</a>
+              <a href="${relPrefix}tour/pokhara-valley-nature-tour/" class="nav-dropdown-link">Pokhara Scenic (4 Days)</a>
+              <a href="${relPrefix}tour/chitwan-national-park-safari/" class="nav-dropdown-link">Chitwan Jungle Safari (3 Days)</a>
+              <a href="${relPrefix}tour/nagarkot-sunrise-bhaktapur-tour/" class="nav-dropdown-link">Nagarkot Sunrise (3 Days)</a>
+              <a href="${relPrefix}tour/nepal-luxury-helicopter-tour/" class="nav-dropdown-link">Luxury Helicopter Tour (5 Days)</a>
+            </div>
+          </li>
+
+          <li class="nav-item-dropdown">
+            <a href="${relPrefix}trekking-regions-nepal/" class="nav-link">Trekking Regions ▾</a>
+          </li>
+
+          <li class="nav-item-dropdown">
+            <span class="nav-link">Company Info ▾</span>
+            <div class="nav-dropdown-menu">
+              <a href="${relPrefix}about.html" class="nav-dropdown-link">About Us</a>
+              <a href="${relPrefix}team.html" class="nav-dropdown-link">Meet Our Team</a>
+              <a href="${relPrefix}careers.html" class="nav-dropdown-link">Careers & Jobs</a>
+              <a href="${relPrefix}reviews.html" class="nav-dropdown-link">Reviews & Testimonials</a>
+            </div>
+          </li>
+
+          <li><a href="${relPrefix}blogs.html" class="nav-link">Blog</a></li>
+          <li><a href="${relPrefix}contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <button class="btn btn-primary open-inquiry-btn">Book Custom Tour</button>
+      </div>
+    </div>
+  </header>`;
+}
+
+const getInquiryModalMarkup = () => `
+  <!-- Modal: Custom Trip Planner & Inquiry -->
+  <div id="inquiry-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button id="modal-close-btn" class="modal-close" aria-label="Close Modal">&times;</button>
+      <h3 id="modal-trek-title" style="font-size: 1.5rem; margin-bottom: 6px;">Request a Custom Trip Quote</h3>
+      <p style="color: var(--color-neutral-600); margin-bottom: 24px; font-size: 0.95rem;">Tell us your preferences, and our senior trip planner will craft a detailed day-by-day itinerary and pricing options for you.</p>
+
+      <form id="custom-inquiry-form">
+        <div class="form-group">
+          <label class="form-label" for="inq-name">Full Name *</label>
+          <input type="text" id="inq-name" class="form-input" placeholder="e.g. Alex Smith" required>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="form-group">
+            <label class="form-label" for="inq-email">Email Address *</label>
+            <input type="email" id="inq-email" class="form-input" placeholder="alex@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="inq-phone">WhatsApp / Phone *</label>
+            <input type="tel" id="inq-phone" class="form-input" placeholder="+1 (555) 000-0000" required>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="form-group">
+            <label class="form-label" for="inq-trekkers">Number of Travellers</label>
+            <input type="number" id="inq-trekkers" class="form-input" min="1" value="2">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="inq-month">Expected Travel Month</label>
+            <select id="inq-month" class="form-select">
+              <option value="autumn">Autumn (Sep - Nov)</option>
+              <option value="spring">Spring (Mar - May)</option>
+              <option value="winter">Winter (Dec - Feb)</option>
+              <option value="monsoon">Monsoon (Jun - Aug)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inq-notes">Custom Requirements / Questions</label>
+          <textarea id="inq-notes" class="form-textarea" rows="4" placeholder="Tell us your preferred itinerary, travel dates, hotel grade, or special requests..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">Send Custom Inquiry Request</button>
+      </form>
+    </div>
+  </div>`;
+
+// Generate 6 Tour Landing Pages
 tourPackages.forEach(pkg => {
   const dirPath = path.join(projectRoot, 'tour', pkg.slug);
   fs.mkdirSync(dirPath, { recursive: true });
@@ -748,7 +1054,7 @@ tourPackages.forEach(pkg => {
   }
   </script>
 
-  <link rel="stylesheet" href="../../index.css?v=8">
+  <link rel="stylesheet" href="../../index.css?v=29">
   <style>
     .trek-sub-nav-btn.active {
       border-bottom-color: #10B981 !important;
@@ -766,66 +1072,7 @@ tourPackages.forEach(pkg => {
   </noscript>
 
   <!-- Header Navigation -->
-  <header class="main-header">
-    <div class="container flex-between">
-      <a href="../../index.html" class="logo-brand">
-        <img src="../../images/logo.png" alt="Namaste Hiking Trek Logo" style="height: 54px; width: auto; object-fit: contain;">
-        <div class="logo-text-group">
-          <span class="brand-title">NAMASTE</span>
-          <span class="brand-subtitle">HIKING TREK</span>
-        </div>
-      </a>
-
-      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-      </button>
-
-      <nav>
-        <ul class="nav-menu">
-          <li class="nav-item-dropdown mega-nav-item">
-            <a href="../../treks.html" class="nav-link">All Treks ▾</a>
-          </li>
-
-          <!-- Tour Packages Dropdown -->
-          <li class="nav-item-dropdown">
-            <a href="../../tours.html" class="nav-link active">Nepal Tours ▾</a>
-            <div class="nav-dropdown-menu">
-              <a href="../../tours.html" class="nav-dropdown-link">All Tour Packages</a>
-              <a href="../../tour/kathmandu-pokhara-chitwan-tour/" class="nav-dropdown-link">Best of Nepal (8 Days)</a>
-              <a href="../../tour/kathmandu-cultural-heritage-tour/" class="nav-dropdown-link">Kathmandu Heritage (4 Days)</a>
-              <a href="../../tour/pokhara-valley-nature-tour/" class="nav-dropdown-link">Pokhara Scenic (4 Days)</a>
-              <a href="../../tour/chitwan-national-park-safari/" class="nav-dropdown-link">Chitwan Jungle Safari (3 Days)</a>
-              <a href="../../tour/nagarkot-sunrise-bhaktapur-tour/" class="nav-dropdown-link">Nagarkot Sunrise (3 Days)</a>
-              <a href="../../tour/nepal-luxury-helicopter-tour/" class="nav-dropdown-link">Luxury Helicopter Tour (5 Days)</a>
-            </div>
-          </li>
-
-          <li class="nav-item-dropdown">
-            <a href="../../trekking-regions-nepal/" class="nav-link">Trekking Regions ▾</a>
-          </li>
-
-          <li class="nav-item-dropdown">
-            <span class="nav-link">Company Info ▾</span>
-            <div class="nav-dropdown-menu">
-              <a href="../../about.html" class="nav-dropdown-link">About Us</a>
-              <a href="../../team.html" class="nav-dropdown-link">Meet Our Team</a>
-              <a href="../../careers.html" class="nav-dropdown-link">Careers & Jobs</a>
-              <a href="../../reviews.html" class="nav-dropdown-link">Reviews & Testimonials</a>
-            </div>
-          </li>
-
-          <li><a href="../../blogs.html" class="nav-link">Blog</a></li>
-          <li><a href="../../contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <button class="btn btn-primary open-inquiry-btn">Book This Tour</button>
-      </div>
-    </div>
-  </header>
+  ${getHeaderMarkup('../../')}
 
   <main>
     <article itemscope itemtype="https://schema.org/TouristTrip">
@@ -1191,7 +1438,7 @@ tourPackages.forEach(pkg => {
               </div>
             </section>
 
-            <!-- Exact Includes and Excludes Section (Matching Trek Page Layout in User Screenshot) -->
+            <!-- Exact Includes and Excludes Section -->
             <section id="section-includes" class="trek-detail-section" style="margin-bottom: 36px;">
               <style>
                 .inc-exc-container {
@@ -1336,21 +1583,21 @@ tourPackages.forEach(pkg => {
                       <td style="padding: 14px 20px; color: #64748B;">${15 + pkg.days} Oct 2026</td>
                       <td style="padding: 14px 20px;"><span style="background: #ECFDF5; color: #047857; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 50px;">Guaranteed</span></td>
                       <td style="padding: 14px 20px; font-weight: 800; color: #0F172A;">$${pkg.price}</td>
-                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
+                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" data-trek-title="${pkg.title}" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
                     </tr>
                     <tr style="border-bottom: 1px solid #F1F5F9;">
                       <td style="padding: 14px 20px; font-weight: 700; color: #0F172A;">01 Nov 2026</td>
                       <td style="padding: 14px 20px; color: #64748B;">0${1 + pkg.days} Nov 2026</td>
                       <td style="padding: 14px 20px;"><span style="background: #ECFDF5; color: #047857; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 50px;">Guaranteed</span></td>
                       <td style="padding: 14px 20px; font-weight: 800; color: #0F172A;">$${pkg.price}</td>
-                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
+                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" data-trek-title="${pkg.title}" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
                     </tr>
                     <tr>
                       <td style="padding: 14px 20px; font-weight: 700; color: #0F172A;">10 Mar 2027</td>
                       <td style="padding: 14px 20px; color: #64748B;">${10 + pkg.days} Mar 2027</td>
                       <td style="padding: 14px 20px;"><span style="background: #EFF6FF; color: #1D4ED8; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 50px;">Available</span></td>
                       <td style="padding: 14px 20px; font-weight: 800; color: #0F172A;">$${pkg.price}</td>
-                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
+                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" data-trek-title="${pkg.title}" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -1444,8 +1691,8 @@ tourPackages.forEach(pkg => {
               </div>
               <span style="font-size: 0.85rem; color: #64748B; display: block; margin-bottom: 20px;">per person (Includes Hotel, AC Vehicle & Guide)</span>
 
-              <button class="btn btn-primary open-inquiry-btn" style="width: 100%; padding: 14px; font-size: 1.05rem; font-weight: 800; margin-bottom: 12px;">Book This Tour Package ↗</button>
-              <button class="btn open-inquiry-btn" style="width: 100%; padding: 12px; background: #F1F5F9; color: #334155; border: 1px solid #CBD5E1; font-weight: 700;">Inquire / Customize Itinerary</button>
+              <button class="btn btn-primary open-inquiry-btn" data-trek-title="${pkg.title}" style="width: 100%; padding: 14px; font-size: 1.05rem; font-weight: 800; margin-bottom: 12px;">Book This Tour Package ↗</button>
+              <button class="btn open-inquiry-btn" data-trek-title="${pkg.title}" style="width: 100%; padding: 12px; background: #F1F5F9; color: #334155; border: 1px solid #CBD5E1; font-weight: 700;">Inquire / Customize Itinerary</button>
 
               <div style="margin-top: 24px; padding-top: 20px; border-top: 1px dashed #E2E8F0; display: flex; align-items: center; gap: 14px;">
                 <img src="../../images/pemba-sherpa.jpg" alt="Local Tour Expert" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid #10B981;">
@@ -1463,6 +1710,8 @@ tourPackages.forEach(pkg => {
 
     </article>
   </main>
+
+  ${getInquiryModalMarkup()}
 
   <footer class="site-footer">
     <div class="container">
@@ -1489,7 +1738,7 @@ tourPackages.forEach(pkg => {
         </div>
         <div class="footer-cta-center">
           <h2 class="footer-cta-title">Tour Expertise<br>at Your Service</h2>
-          <button class="btn-journey-pill open-inquiry-btn">
+          <button class="btn-journey-pill open-inquiry-btn" data-trek-title="${pkg.title}">
             <span>Begin Your Journey</span>
             <span class="arrow-circle-green">↗</span>
           </button>
@@ -1516,15 +1765,16 @@ tourPackages.forEach(pkg => {
   <script type="module" src="../../js/inquiry-modal.js"></script>
   <script type="module" src="../../js/trek-details.js?v=10"></script>
   <script src="../../js/header-scroll.js"></script>
+  <script src="../../js/mega-menu.js"></script>
 </body>
 </html>
 `;
 
   fs.writeFileSync(path.join(dirPath, 'index.html'), htmlContent, 'utf8');
-  console.log(`Generated Tour Page with Exact Trek Includes/Excludes Grid: tour/${pkg.slug}/index.html`);
+  console.log(`Generated Tour Page with Complete Mega Menu Header & Inquiry Modal: tour/${pkg.slug}/index.html`);
 });
 
-// 2. Generate Central Tour Directory Hub Page: tours.html
+// Generate Central Tour Directory Hub Page: tours.html
 const toursHubHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1534,58 +1784,12 @@ const toursHubHtml = `<!DOCTYPE html>
   <meta name="description" content="Explore 6 official Nepal tour packages with Namaste Hiking Trek. Kathmandu cultural heritage, Pokhara lake views, Chitwan jungle safari, Nagarkot sunrise & luxury helicopter tours.">
   <link rel="canonical" href="https://namastehikingtrek.com/tours.html" />
   <link rel="icon" type="image/png" href="images/logo.png">
-  <link rel="stylesheet" href="index.css?v=8">
+  <link rel="stylesheet" href="index.css?v=29">
 </head>
 <body>
 
   <!-- Header Navigation -->
-  <header class="main-header">
-    <div class="container flex-between">
-      <a href="index.html" class="logo-brand">
-        <img src="images/logo.png" alt="Namaste Hiking Trek Logo" style="height: 54px; width: auto; object-fit: contain;">
-        <div class="logo-text-group">
-          <span class="brand-title">NAMASTE</span>
-          <span class="brand-subtitle">HIKING TREK</span>
-        </div>
-      </a>
-
-      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-      </button>
-
-      <nav>
-        <ul class="nav-menu">
-          <li class="nav-item-dropdown mega-nav-item">
-            <a href="treks.html" class="nav-link">All Treks ▾</a>
-          </li>
-          <li class="nav-item-dropdown">
-            <a href="tours.html" class="nav-link active">Nepal Tours ▾</a>
-            <div class="nav-dropdown-menu">
-              <a href="tours.html" class="nav-dropdown-link">All Tour Packages</a>
-              <a href="tour/kathmandu-pokhara-chitwan-tour/" class="nav-dropdown-link">Best of Nepal (8 Days)</a>
-              <a href="tour/kathmandu-cultural-heritage-tour/" class="nav-dropdown-link">Kathmandu Heritage (4 Days)</a>
-              <a href="tour/pokhara-valley-nature-tour/" class="nav-dropdown-link">Pokhara Scenic (4 Days)</a>
-              <a href="tour/chitwan-national-park-safari/" class="nav-dropdown-link">Chitwan Jungle Safari (3 Days)</a>
-              <a href="tour/nagarkot-sunrise-bhaktapur-tour/" class="nav-dropdown-link">Nagarkot Sunrise (3 Days)</a>
-              <a href="tour/nepal-luxury-helicopter-tour/" class="nav-dropdown-link">Luxury Helicopter Tour (5 Days)</a>
-            </div>
-          </li>
-          <li class="nav-item-dropdown">
-            <a href="trekking-regions-nepal/" class="nav-link">Trekking Regions ▾</a>
-          </li>
-          <li><a href="about.html" class="nav-link">About Us</a></li>
-          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <button class="btn btn-primary open-inquiry-btn">Book Custom Tour</button>
-      </div>
-    </div>
-  </header>
+  ${getHeaderMarkup('')}
 
   <main>
     <!-- Hero Section -->
@@ -1636,6 +1840,8 @@ const toursHubHtml = `<!DOCTYPE html>
       </div>
     </section>
   </main>
+
+  ${getInquiryModalMarkup()}
 
   <footer class="site-footer">
     <div class="container">
@@ -1688,15 +1894,141 @@ const toursHubHtml = `<!DOCTYPE html>
 
   <script type="module" src="js/inquiry-modal.js"></script>
   <script src="js/header-scroll.js"></script>
+  <script src="js/mega-menu.js"></script>
 </body>
 </html>
 `;
 
 fs.writeFileSync(path.join(projectRoot, 'tours.html'), toursHubHtml, 'utf8');
-console.log('Generated: tours.html');
+console.log('Generated: tours.html with Mega Menu Header & Inquiry Modal');
 
-// Create canonical directory tours-nepal/index.html
+// Create canonical directory tours-nepal/index.html with depth ../ prefix
 const toursNepalDir = path.join(projectRoot, 'tours-nepal');
 fs.mkdirSync(toursNepalDir, { recursive: true });
-fs.writeFileSync(path.join(toursNepalDir, 'index.html'), toursHubHtml.replace('href="index.html"', 'href="../index.html"').replace('href="index.css', 'href="../index.css'), 'utf8');
-console.log('Generated: tours-nepal/index.html');
+
+const toursNepalHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nepal Tour Packages & Sightseeing — Namaste Hiking Trek</title>
+  <meta name="description" content="Explore 6 official Nepal tour packages with Namaste Hiking Trek. Kathmandu cultural heritage, Pokhara lake views, Chitwan jungle safari, Nagarkot sunrise & luxury helicopter tours.">
+  <link rel="canonical" href="https://namastehikingtrek.com/tours-nepal/" />
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="stylesheet" href="../index.css?v=29">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  ${getHeaderMarkup('../')}
+
+  <main>
+    <!-- Hero Section -->
+    <section class="reviews-hero-section">
+      <div class="container">
+        <div style="max-width: 820px; margin: 0 auto; text-align: center;">
+          <span class="pill pill-copper">Nepal Cultural & Wildlife Journeys</span>
+          <h1 class="reviews-hero-title">Nepal Tour Packages & Sightseeing</h1>
+          <p class="reviews-hero-desc">
+            Discover ancient UNESCO World Heritage temples in Kathmandu, tranquil lakes in Pokhara, subtropical wildlife safaris in Chitwan, and luxury helicopter flights across Everest.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tour Packages Grid -->
+    <section class="section-padding" style="background: #F8FAFC;">
+      <div class="container">
+        
+        <div class="text-center" style="margin-bottom: 36px;">
+          <span class="badge badge-alpine" style="margin-bottom: 8px; display: inline-block;">Official Tour Itineraries</span>
+          <h2 style="font-size: 2.2rem; color: #0F172A;">Browse All Nepal Tour Packages</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+          ${tourPackages.map(pkg => `
+            <div style="background: #FFFFFF; border-radius: 18px; overflow: hidden; border: 1px solid #E2E8F0; box-shadow: 0 4px 20px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <div style="position: relative; height: 200px; overflow: hidden;">
+                  <img src="${pkg.imgMain}" alt="${pkg.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                  <span style="position: absolute; top: 12px; left: 12px; background: #10B981; color: #FFFFFF; font-size: 0.78rem; font-weight: 800; padding: 4px 10px; border-radius: 50px;">${pkg.days} DAYS</span>
+                  <span style="position: absolute; top: 12px; right: 12px; background: rgba(15,23,42,0.85); color: #FFFFFF; font-size: 0.88rem; font-weight: 800; padding: 4px 10px; border-radius: 50px;">$${pkg.price}</span>
+                </div>
+                <div style="padding: 20px;">
+                  <span style="font-size: 0.8rem; color: #64748B; font-weight: 700; text-transform: uppercase;">${pkg.category}</span>
+                  <h3 style="font-size: 1.15rem; color: #0F172A; margin: 6px 0 10px 0; line-height: 1.35;">${pkg.title}</h3>
+                  <p style="font-size: 0.88rem; color: #475569; line-height: 1.55; margin-bottom: 14px;">${pkg.desc}</p>
+                </div>
+              </div>
+              <div style="padding: 16px 20px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
+                <span style="color: #F59E0B; font-size: 0.9rem; font-weight: 700;">★★★★★ ${pkg.rating}</span>
+                <a href="../tour/${pkg.slug}/" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.84rem;">View Itinerary →</a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  ${getInquiryModalMarkup()}
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-luxury-layout">
+        <div class="footer-nav-col">
+          <h4>Main Pages</h4>
+          <ul class="footer-nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../treks.html">All Trek Packages</a></li>
+            <li><a href="../tours.html">All Tour Packages</a></li>
+            <li><a href="../trekking-regions-nepal/">Trekking Regions</a></li>
+            <li><a href="../custom-plan.html">Tailor-Made Trip</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h4>Essential Info</h4>
+          <ul class="footer-nav-links">
+            <li><a href="../travel-info.html">Travel Guide & AMS</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../team.html">Meet Our Team</a></li>
+            <li><a href="../reviews.html">Reviews & Testimonials</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-cta-center">
+          <h2 class="footer-cta-title">Expedition Expertise<br>at Your Service</h2>
+          <button class="btn-journey-pill open-inquiry-btn">
+            <span>Begin Your Journey</span>
+            <span class="arrow-circle-green">↗</span>
+          </button>
+        </div>
+        <div class="footer-social-col" style="text-align: right;">
+          <h4>Social Media</h4>
+          <ul class="footer-nav-links">
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://wa.me/9779800000000" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-strip">
+        <div>&copy; 2026 Namaste Hiking Trek. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="../privacy-policy.html">Privacy Policy</a>
+          <a href="../terms-and-conditions.html">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/inquiry-modal.js"></script>
+  <script src="../js/header-scroll.js"></script>
+  <script src="../js/mega-menu.js"></script>
+</body>
+</html>
+`;
+
+fs.writeFileSync(path.join(toursNepalDir, 'index.html'), toursNepalHtml, 'utf8');
+console.log('Generated: tours-nepal/index.html with Mega Menu Header & Inquiry Modal');
