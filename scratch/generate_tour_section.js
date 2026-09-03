@@ -97,24 +97,6 @@ const tourPackages = [
     ]
   },
   {
-    slug: 'lumbini-birthplace-of-buddha-tour',
-    title: 'Lumbini Sacred Buddhist Pilgrimage & Monastic Zone Tour',
-    days: 4,
-    price: 499,
-    maxAlt: '150m',
-    category: 'Pilgrimage & Spiritual',
-    rating: '5.0',
-    reviewsCount: '130+',
-    img: 'images/gallery-pass.jpg',
-    desc: 'Visit the sacred birthplace of Lord Buddha in Lumbini, exploring the Maya Devi Temple, Ashoka Pillar, and international monastic zone.',
-    itinerary: [
-      { day: 1, title: 'Fly / Drive to Lumbini', desc: 'Arrival in Lumbini. Hotel check-in and evening meditation in the Sacred Garden.' },
-      { day: 2, title: 'Maya Devi Temple & Sacred Garden', desc: 'Explore the marker stone at Maya Devi Temple, Nativity pond, and Emperor Ashoka’s pillar erected in 249 BC.' },
-      { day: 3, title: 'International Monastic Zone & Tilaurakot', desc: 'Visit international monasteries (German, Chinese, Thai, Japanese) and drive to Tilaurakot (ancient Kapilavastu palace).' },
-      { day: 4, title: 'Return Flight to Kathmandu', desc: 'Breakfast and morning prayer before flight back to Kathmandu.' }
-    ]
-  },
-  {
     slug: 'nepal-luxury-helicopter-tour',
     title: 'Nepal Everest & Annapurna Luxury Helicopter Sightseeing Tour',
     days: 5,
@@ -131,24 +113,6 @@ const tourPackages = [
       { day: 3, title: 'Helicopter Transfer to Pokhara & Annapurna Sanctuary Flight', desc: 'Fly past Langtang and Manaslu to Pokhara. Aerial flight over Annapurna Base Camp & Machhapuchhre.' },
       { day: 4, title: 'Pokhara Luxury Leisure Day', desc: 'Private boat ride on Phewa Lake and spa treatment at luxury resort.' },
       { day: 5, title: 'Fly back to Kathmandu & Final Departure', desc: 'Return flight to Kathmandu and VIP airport transfer.' }
-    ]
-  },
-  {
-    slug: 'bandipur-gorkha-heritage-tour',
-    title: 'Bandipur Newari Hill Station & Historic Gorkha Palace Tour',
-    days: 4,
-    price: 399,
-    maxAlt: '1,030m',
-    category: 'Heritage & Hill Station',
-    rating: '4.9',
-    reviewsCount: '110+',
-    img: 'images/gallery-teahouse.jpg',
-    desc: 'Step back in time in vehicle-free Bandipur town with preserved 18th-century Newari architecture, combined with historic Gorkha Durbar.',
-    itinerary: [
-      { day: 1, title: 'Drive to Gorkha & Explore Gorkha Durbar', desc: 'Drive from Kathmandu to historic Gorkha hill. Tour Gorkha Durbar palace and Kalika temple.' },
-      { day: 2, title: 'Drive to Bandipur Hill Station', desc: 'Continue drive to hilltop Newari town of Bandipur. Sunset walk along the cobblestone bazaar.' },
-      { day: 3, title: 'Bandipur Village Walk & Siddha Cave Excursion', desc: 'Hike to Siddha Cave (largest cave in Nepal) and visit local silkworm farms and Gurung villages.' },
-      { day: 4, title: 'Return Drive to Kathmandu', desc: 'Enjoy final mountain views over Marsyangdi valley before drive back to Kathmandu.' }
     ]
   }
 ];
@@ -217,6 +181,7 @@ tourPackages.forEach(pkg => {
               <a href="../../tour/kathmandu-cultural-heritage-tour/" class="nav-dropdown-link">Kathmandu Heritage (4 Days)</a>
               <a href="../../tour/pokhara-valley-nature-tour/" class="nav-dropdown-link">Pokhara Scenic (4 Days)</a>
               <a href="../../tour/chitwan-national-park-safari/" class="nav-dropdown-link">Chitwan Jungle Safari (3 Days)</a>
+              <a href="../../tour/nagarkot-sunrise-bhaktapur-tour/" class="nav-dropdown-link">Nagarkot Sunrise (3 Days)</a>
               <a href="../../tour/nepal-luxury-helicopter-tour/" class="nav-dropdown-link">Luxury Helicopter Tour (5 Days)</a>
             </div>
           </li>
@@ -414,7 +379,7 @@ const toursHubHtml = `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nepal Tour Packages & Sightseeing — Namaste Hiking Trek</title>
-  <meta name="description" content="Explore 8+ official Nepal tour packages with Namaste Hiking Trek. Kathmandu cultural heritage, Pokhara lake views, Chitwan jungle safari, Lumbini & luxury helicopter tours.">
+  <meta name="description" content="Explore 6 official Nepal tour packages with Namaste Hiking Trek. Kathmandu cultural heritage, Pokhara lake views, Chitwan jungle safari, Nagarkot sunrise & luxury helicopter tours.">
   <link rel="canonical" href="https://namastehikingtrek.com/tours.html" />
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="index.css?v=8">
@@ -451,6 +416,7 @@ const toursHubHtml = `<!DOCTYPE html>
               <a href="tour/kathmandu-cultural-heritage-tour/" class="nav-dropdown-link">Kathmandu Heritage (4 Days)</a>
               <a href="tour/pokhara-valley-nature-tour/" class="nav-dropdown-link">Pokhara Scenic (4 Days)</a>
               <a href="tour/chitwan-national-park-safari/" class="nav-dropdown-link">Chitwan Jungle Safari (3 Days)</a>
+              <a href="tour/nagarkot-sunrise-bhaktapur-tour/" class="nav-dropdown-link">Nagarkot Sunrise (3 Days)</a>
               <a href="tour/nepal-luxury-helicopter-tour/" class="nav-dropdown-link">Luxury Helicopter Tour (5 Days)</a>
             </div>
           </li>

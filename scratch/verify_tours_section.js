@@ -9,9 +9,7 @@ const requiredTourDirs = [
   'tour/kathmandu-pokhara-chitwan-tour',
   'tour/chitwan-national-park-safari',
   'tour/nagarkot-sunrise-bhaktapur-tour',
-  'tour/lumbini-birthplace-of-buddha-tour',
-  'tour/nepal-luxury-helicopter-tour',
-  'tour/bandipur-gorkha-heritage-tour'
+  'tour/nepal-luxury-helicopter-tour'
 ];
 
 let errors = [];
@@ -62,7 +60,7 @@ if (errors.length > 0) {
   errors.forEach(err => console.error(' - ' + err));
   process.exit(1);
 } else {
-  console.log(`SUCCESS: All ${requiredTourDirs.length} Tour Packages verified cleanly!`);
+  console.log(`SUCCESS: All ${requiredTourDirs.length} active Tour Packages verified cleanly!`);
   console.log(`Central Tour Hub live at tours.html and tours-nepal/index.html.`);
   console.log(`Total HTML files verified across workspace: ${totalHtmlCount}`);
 }
