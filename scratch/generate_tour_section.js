@@ -94,11 +94,25 @@ const tourPackages = [
         ]
       }
     ],
+    includes: [
+      { title: 'Local transfers for your international flight x 2 (arrival/departure)', text: 'Airport pick-up and drop-off by private vehicle to your hotel in Kathmandu.' },
+      { title: 'Private AC Tourist Vehicle for All Sightseeing', text: 'Comfortable air-conditioned car or van throughout the entire 4-day tour.' },
+      { title: 'Licensed English-Speaking Local Tour Guide', text: 'Government-certified expert guide covering salary, meals, and insurance.' },
+      { title: 'All UNESCO World Heritage Site Entrance Permits', text: 'Pre-arranged entrance fees for Pashupatinath, Boudhanath, Swayambhunath, and Durbar Squares.' },
+      { title: '3 Nights Deluxe Accommodation in Kathmandu', text: '3-Star / 4-Star boutique hotel stay with daily breakfast included.' },
+      { title: 'Authentic Nepali Welcome Dinner', text: 'Traditional multi-course dinner accompanied by cultural music and dance.' }
+    ],
+    excludes: [
+      { title: 'International Airfare to & from Kathmandu', text: 'Flights to/from your home country are not included.' },
+      { title: 'Nepal Entry Tourist Visa Fee', text: 'Visa on arrival fee ($30 USD for 15 days) payable at Kathmandu airport.' },
+      { title: 'Lunch & Dinner Meals (except Welcome Dinner)', text: 'Allows you flexibility to sample local restaurants and cafes.' },
+      { title: 'Personal Expenses & Souvenirs', text: 'Laundry, phone calls, drinks, and tipping for guide & driver.' }
+    ],
     faqs: [
       { q: 'Is airport transfer included in this tour package?', a: 'Yes! We provide private AC car/van airport pickup and drop-off service for all flights.' },
       { q: 'What category of hotels are provided?', a: 'We provide deluxe 3-Star to 4-Star boutique heritage hotels in Kathmandu with daily breakfast included.' },
       { q: 'Are monument entrance fees included?', a: 'Yes, all UNESCO heritage site entrance tickets and local monument fees are 100% included in the package price.' },
-      { q: 'Can this tour be customized?', a: 'Absoluely! We can extend your stay, add mountain flights, or upgrade to 5-star luxury hotels upon request.' }
+      { q: 'Can this tour be customized?', a: 'Absolutely! We can extend your stay, add mountain flights, or upgrade to 5-star luxury hotels upon request.' }
     ]
   },
   {
@@ -190,6 +204,18 @@ const tourPackages = [
           'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80'
         ]
       }
+    ],
+    includes: [
+      { title: 'Kathmandu - Pokhara - Kathmandu Vehicle Transfers', text: 'Private AC tourist car or van for all intercity highway journeys.' },
+      { title: 'Sarangkot Sunrise Hill Excursion', text: 'Early morning private vehicle trip to Sarangkot for mountain sunrise.' },
+      { title: 'Phewa Lake Boating & Tal Barahi Temple Visit', text: 'Private wooden boat ride to island temple with life jackets provided.' },
+      { title: '3 Nights Deluxe Accommodation in Pokhara', text: '3-Star / 4-Star hotel near Lakeside with daily breakfast included.' },
+      { title: 'Licensed Professional Tour Guide', text: 'Local expert guide handling all sightseeing details and permits.' }
+    ],
+    excludes: [
+      { title: 'International Airfare & Visa', text: 'International flights to Nepal and visa fees.' },
+      { title: 'Optional Domestic Flight Upgrade', text: 'Flight option between Kathmandu and Pokhara available upon request.' },
+      { title: 'Personal Expenses & Tipping', text: 'Personal snacks, beverages, and tips for guide & driver.' }
     ],
     faqs: [
       { q: 'Can we take a domestic flight to Pokhara instead of driving?', a: 'Yes! Domestic flights between Kathmandu and Pokhara (25 minutes) can be added to your package.' },
@@ -351,6 +377,20 @@ const tourPackages = [
         ]
       }
     ],
+    includes: [
+      { title: 'Local transfers for your international flight x 2 (arrival/departure)', text: 'Airport pick-up and drop-off by private vehicle to your hotel in Kathmandu.' },
+      { title: 'Private AC Tourist Vehicle for All Intercity & Sightseeing Journeys', text: 'Dedicated AC car or van between Kathmandu, Pokhara, Chitwan, and back.' },
+      { title: 'Chitwan National Park Safari Package & All Wildlife Permits', text: '4WD open jeep safari, Rapti river canoe ride, bird watching, and elephant center tickets.' },
+      { title: 'Full Board Meals in Chitwan (Breakfast, Lunch & Dinner)', text: 'All meals included during the 2-night Chitwan jungle safari resort stay.' },
+      { title: '7 Nights Hotel Accommodations (Kathmandu, Pokhara & Chitwan)', text: '3-Star / 4-Star hotel & safari resort stays with daily breakfast included.' },
+      { title: 'Licensed English-Speaking Local Tour Guides', text: 'Government certified heritage guide in Kathmandu/Pokhara & resident naturalist in Chitwan.' }
+    ],
+    excludes: [
+      { title: 'International Airfare to & from Kathmandu', text: 'Flights to/from your home country are not included.' },
+      { title: 'Nepal Entry Tourist Visa Fee', text: 'Visa on arrival fee ($30 USD for 15 days) payable at Kathmandu airport.' },
+      { title: 'Lunch & Dinner Meals in Kathmandu & Pokhara', text: 'Gives you flexibility to explore local restaurants in Kathmandu and Lakeside Pokhara.' },
+      { title: 'Personal Expenses & Tipping', text: 'Personal laundry, beverages, souvenirs, and tips for guide & driver.' }
+    ],
     faqs: [
       { q: 'Is this tour suitable for families and senior citizens?', a: 'Yes! This Golden Triangle tour is easy-paced, uses private AC vehicles, and is suitable for all age groups.' },
       { q: 'Are meals included in Chitwan National Park?', a: 'Yes! All breakfast, lunch, and dinner meals during the Chitwan jungle safari resort stay are 100% included.' },
@@ -431,6 +471,18 @@ const tourPackages = [
         ]
       }
     ],
+    includes: [
+      { title: 'Chitwan National Park Entry Permits', text: 'All government wildlife permits and conservation entry fees arranged.' },
+      { title: 'Deep Jungle 4WD Open Jeep Safari', text: 'Guided forest jeep safari inside national park core zone.' },
+      { title: 'Rapti River Dugout Canoe Excursion', text: 'Canoe ride with local boatman observing mugger and gharial crocodiles.' },
+      { title: 'Full Board Resort Meals (Breakfast, Lunch & Dinner)', text: 'All meals included during the 2-night safari resort stay.' },
+      { title: 'Tharu Tribal Cultural Dance Performance', text: 'Evening stick dance and music show by indigenous villagers.' }
+    ],
+    excludes: [
+      { title: 'International & Domestic Airfare', text: 'Flights to/from Kathmandu or Bharatpur airport.' },
+      { title: 'Personal Bar Bills & Beverages', text: 'Alcoholic drinks, soft drinks, and personal laundry.' },
+      { title: 'Guide & Driver Tipping', text: 'Gratuities for nature guide, jeep driver, and resort staff.' }
+    ],
     faqs: [
       { q: 'What is the chance of seeing one-horned rhinos?', a: 'Over 95%! One-horned rhinos are frequently spotted during the jeep safari and river canoe ride.' },
       { q: 'Are all resort meals included?', a: 'Yes! Breakfast, lunch, and dinner are 100% included during your Chitwan resort stay.' }
@@ -509,6 +561,17 @@ const tourPackages = [
           'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80'
         ]
       }
+    ],
+    includes: [
+      { title: 'Nagarkot Hill Station Mountain View Resort Stay', text: 'Overnight stay at hilltop resort with panoramic Himalayan sunrise views.' },
+      { title: 'Bhaktapur & Changu Narayan Entrance Permits', text: 'All local monument permits and ancient city entry fees included.' },
+      { title: 'Private AC Vehicle Transfers Throughout', text: 'Private vehicle pickup from Kathmandu hotel, Nagarkot drive, and airport drop-off.' },
+      { title: 'Licensed Cultural & Nature Guide', text: 'Professional local guide for Bhaktapur tour and Changu Narayan ridge hike.' }
+    ],
+    excludes: [
+      { title: 'International Flights & Visa Fees', text: 'International travel and visa charges.' },
+      { title: 'Lunch & Dinner Meals', text: 'Freedom to choose local restaurants in Bhaktapur and Nagarkot.' },
+      { title: 'Personal Tipping', text: 'Gratuities for tour guide and private driver.' }
     ],
     faqs: [
       { q: 'Can we see Mt. Everest from Nagarkot?', a: 'Yes! On clear days (especially Oct-Nov & Mar-Apr), Mt. Everest is visible as a white peak on the eastern horizon.' }
@@ -618,6 +681,17 @@ const tourPackages = [
           'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80'
         ]
       }
+    ],
+    includes: [
+      { title: 'Private Helicopter Charters (Airbus B3e / Eurocopter)', text: 'Private helicopter flights to Everest Kala Patthar (5,545m) and Annapurna Sanctuary.' },
+      { title: 'Gourmet Champagne Breakfast at Hotel Everest View (3,880m)', text: 'Luxury hot breakfast facing Mt. Everest, Nuptse, and Ama Dablam.' },
+      { title: '5-Star Deluxe Hotel Accommodation', text: 'Stays at Dwarika’s Heritage Resort Kathmandu & Pokhara Luxury Spa Resort.' },
+      { title: 'VIP Ground Transfers in Luxury Vehicles', text: 'Private Mercedes / SUV airport pickups and city tours throughout.' }
+    ],
+    excludes: [
+      { title: 'International Airfare to Kathmandu', text: 'International flights to/from Nepal.' },
+      { title: 'Nepal Entry Tourist Visa', text: 'Visa on arrival fees.' },
+      { title: 'Personal Shopping & Tips', text: 'Personal items and tips for helicopter pilots & private guides.' }
     ],
     faqs: [
       { q: 'Do we land at Everest Base Camp / Kala Patthar?', a: 'Yes! Weather permitting, the helicopter lands at Kala Patthar (5,545m) for 10-15 minutes for photo opportunities.' },
@@ -1039,7 +1113,7 @@ tourPackages.forEach(pkg => {
               </div>
             </section>
 
-            <!-- Day-by-Day Expandable Itinerary Accordion (Identical to Trek Page Layout) -->
+            <!-- Day-by-Day Expandable Itinerary Accordion -->
             <section id="section-itinerary" class="trek-detail-section" style="margin-bottom: 36px;">
               <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 20px;">Day-by-Day Detailed Itinerary</h2>
               
@@ -1117,38 +1191,126 @@ tourPackages.forEach(pkg => {
               </div>
             </section>
 
-            <!-- Includes & Excludes (Identical to Trek Page Layout) -->
+            <!-- Exact Includes and Excludes Section (Matching Trek Page Layout in User Screenshot) -->
             <section id="section-includes" class="trek-detail-section" style="margin-bottom: 36px;">
-              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 20px;">What's Included & Excluded</h2>
-              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
-                
-                <!-- Included -->
-                <div style="background: #ECFDF5; border: 1px solid #A7F3D0; border-radius: 16px; padding: 24px;">
-                  <h3 style="color: #047857; font-size: 1.15rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
-                    <span style="font-weight: 800;">✓</span> Included Services
-                  </h3>
-                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; font-size: 0.94rem; color: #064E3B;">
-                    <li>✓ Private AC Tourist Vehicle Airport Pickups & Transfers</li>
-                    <li>✓ 3-Star / 4-Star Deluxe Hotel Accommodations</li>
-                    <li>✓ Government Licensed Experienced Tour Guide</li>
-                    <li>✓ All Monument Entrance Fees & National Park Permits</li>
-                    <li>✓ Daily Breakfast & Authentic Nepali Welcome Dinner</li>
-                    <li>✓ 24/7 Concierge Support & Emergency Coordination</li>
-                  </ul>
+              <style>
+                .inc-exc-container {
+                  margin-top: 10px;
+                }
+                .inc-exc-section-title-wrapper {
+                  border-left: 4px solid var(--color-copper-orange);
+                  padding-left: 14px;
+                  margin-bottom: 24px;
+                  margin-top: 30px;
+                }
+                .inc-exc-section-title {
+                  font-size: 1.8rem;
+                  margin: 0;
+                  color: var(--color-primary-navy);
+                  font-weight: 700;
+                }
+                .inc-exc-grid {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 20px;
+                  margin-bottom: 36px;
+                }
+                .inc-exc-card {
+                  background: var(--color-white);
+                  border: 1px solid #e2e8f0;
+                  border-radius: 16px;
+                  padding: 20px;
+                  display: flex;
+                  gap: 14px;
+                  transition: all var(--transition-fast);
+                }
+                .inc-exc-card:hover {
+                  border-color: var(--color-copper-orange);
+                  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.05);
+                  transform: translateY(-1px);
+                }
+                .inc-exc-card.exclude-card:hover {
+                  border-color: #ef4444;
+                  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.05);
+                }
+                .inc-exc-icon-box {
+                  flex-shrink: 0;
+                  margin-top: 2px;
+                }
+                .inc-exc-card-content {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 6px;
+                }
+                .inc-exc-card-title {
+                  font-size: 1rem;
+                  font-weight: 700;
+                  color: var(--color-primary-navy);
+                  line-height: 1.4;
+                  margin: 0;
+                }
+                .inc-exc-card-text {
+                  font-size: 0.9rem;
+                  line-height: 1.5;
+                  color: var(--color-neutral-600);
+                  margin: 0;
+                }
+                @media (max-width: 800px) {
+                  .inc-exc-grid {
+                    grid-template-columns: 1fr;
+                    gap: 16px;
+                  }
+                }
+              </style>
+
+              <div class="inc-exc-container">
+                <!-- Includes Heading -->
+                <div class="inc-exc-section-title-wrapper">
+                  <h2 class="inc-exc-section-title">Includes</h2>
+                  <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
                 </div>
 
-                <!-- Excluded -->
-                <div style="background: #FEF2F2; border: 1px solid #FECACA; border-radius: 16px; padding: 24px;">
-                  <h3 style="color: #B91C1C; font-size: 1.15rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
-                    <span style="font-weight: 800;">✕</span> Excluded Services
-                  </h3>
-                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; font-size: 0.94rem; color: #7F1D1D;">
-                    <li>✕ International Airfare to/from Kathmandu</li>
-                    <li>✕ Nepal Entry Tourist Visa Fee</li>
-                    <li>✕ Personal Expenses (Laundry, Drinks, Souvenirs)</li>
-                    <li>✕ Lunch & Dinner Meals (Except Welcome Dinner)</li>
-                    <li>✕ Tipping for Tour Guide and Driver</li>
-                  </ul>
+                <!-- Includes Grid -->
+                <div class="inc-exc-grid">
+                  ${pkg.includes.map(inc => `
+                    <div class="inc-exc-card">
+                      <div class="inc-exc-icon-box">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="16 10 11 15 8 12"></polyline>
+                        </svg>
+                      </div>
+                      <div class="inc-exc-card-content">
+                        <h4 class="inc-exc-card-title">${inc.title}</h4>
+                        <p class="inc-exc-card-text">${inc.text}</p>
+                      </div>
+                    </div>
+                  `).join('')}
+                </div>
+
+                <!-- Excludes Heading -->
+                <div class="inc-exc-section-title-wrapper" style="margin-top: 10px;">
+                  <h2 class="inc-exc-section-title">Excludes</h2>
+                  <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
+                </div>
+
+                <!-- Excludes Grid -->
+                <div class="inc-exc-grid">
+                  ${pkg.excludes.map(exc => `
+                    <div class="inc-exc-card exclude-card">
+                      <div class="inc-exc-icon-box">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <line x1="15" y1="9" x2="9" y2="15"></line>
+                          <line x1="9" y1="9" x2="15" y2="15"></line>
+                        </svg>
+                      </div>
+                      <div class="inc-exc-card-content">
+                        <h4 class="inc-exc-card-title">${exc.title}</h4>
+                        <p class="inc-exc-card-text">${exc.text}</p>
+                      </div>
+                    </div>
+                  `).join('')}
                 </div>
 
               </div>
@@ -1195,7 +1357,7 @@ tourPackages.forEach(pkg => {
               </div>
             </section>
 
-            <!-- Customer Reviews & Ratings Section (Identical to Trek Page Layout) -->
+            <!-- Customer Reviews & Ratings Section -->
             <section id="section-reviews" class="trek-detail-section" style="margin-bottom: 36px;">
               <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
                 <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin: 0;">Verified Customer Reviews</h2>
@@ -1239,7 +1401,7 @@ tourPackages.forEach(pkg => {
               </div>
             </section>
 
-            <!-- FAQs Accordion Section (Identical to Trek Page Layout) -->
+            <!-- FAQs Accordion Section -->
             <section id="section-faqs" class="trek-detail-section" style="margin-bottom: 36px;">
               <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Frequently Asked Questions</h2>
               <div class="itinerary-timeline">
@@ -1359,7 +1521,7 @@ tourPackages.forEach(pkg => {
 `;
 
   fs.writeFileSync(path.join(dirPath, 'index.html'), htmlContent, 'utf8');
-  console.log(`Generated 100% Interactive Tour Page: tour/${pkg.slug}/index.html`);
+  console.log(`Generated Tour Page with Exact Trek Includes/Excludes Grid: tour/${pkg.slug}/index.html`);
 });
 
 // 2. Generate Central Tour Directory Hub Page: tours.html
