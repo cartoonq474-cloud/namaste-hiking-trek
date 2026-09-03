@@ -9,17 +9,30 @@ const tourPackages = [
     title: 'Kathmandu Valley UNESCO World Heritage Cultural Tour',
     days: 4,
     price: 399,
-    maxAlt: '1,400m',
+    origPrice: 499,
+    maxAlt: '1,400 m',
+    difficulty: 'Easy / Cultural',
     category: 'Cultural & Heritage',
     rating: '5.0',
-    reviewsCount: '180+',
-    img: 'images/gallery-teahouse.jpg',
+    reviewsCount: '180',
+    imgMain: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80',
+    imgSub1: 'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=600&q=80',
+    imgSub2: 'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=600&q=80',
+    imgSub3: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80',
+    imgSub4: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
     desc: 'Explore the ancient heart of Nepal with a 4-day guided tour of 7 UNESCO World Heritage Sites in Kathmandu, Patan, and Bhaktapur.',
+    moreDesc: 'Traverse historic royal palace courtyards, ancient pagoda temples, sacred Hindu shrines at Pashupatinath, and giant Buddhist stupas at Boudhanath and Swayambhunath. Enjoy luxury private AC vehicle transfers and stays at 3-Star to 4-Star boutique hotels.',
+    highlights: [
+      { title: 'Pashupatinath Temple', desc: 'Sacred Hindu temple complex on Bagmati river bank with evening Aarati rituals.' },
+      { title: 'Boudhanath Stupa', desc: 'World’s largest spherical Buddhist stupa filled with prayer wheels and butter lamps.' },
+      { title: 'Swayambhunath Monkey Temple', desc: 'Hilltop ancient stupa overlooking Kathmandu valley with panoramic mountain views.' },
+      { title: 'Bhaktapur Durbar Square', desc: 'Medieval pottery city with 55-Window Palace, Golden Gate, and Nyatapola Temple.' }
+    ],
     itinerary: [
-      { day: 1, title: 'Arrival in Kathmandu & Welcome Dinner', desc: 'Transfer from Tribhuvan International Airport to hotel. Evening orientation and authentic Nepali welcome cultural dinner.' },
-      { day: 2, title: 'Kathmandu City Tour: Swayambhunath, Kathmandu Durbar Square & Pashupatinath', desc: 'Visit the ancient Monkey Temple (Swayambhunath), medieval royal courtyards, and the sacred Hindu temple of Pashupatinath on the Bagmati River.' },
-      { day: 3, title: 'Boudhanath Stupa, Patan Durbar Square & Bhaktapur', desc: 'Circumambulate the giant white dome of Boudhanath Stupa, marvel at Patan fine metal arts, and explore the medieval pottery city of Bhaktapur.' },
-      { day: 4, title: 'Final Souvenir Shopping & Airport Departure', desc: 'Morning walk in Thamel market for cashmere and tea shopping. Private transfer to airport for final departure.' }
+      { day: 1, title: 'Arrival in Kathmandu & Authentic Welcome Dinner', desc: 'Transfer from Tribhuvan International Airport to boutique hotel. Evening briefing and traditional Nepali dinner with cultural dance.' },
+      { day: 2, title: 'Kathmandu City Sightseeing: Swayambhunath, Durbar Square & Pashupatinath', desc: 'Guided exploration of ancient Swayambhunath monkey temple, Kathmandu royal palace square, and Pashupatinath Hindu temple.' },
+      { day: 3, title: 'Boudhanath Stupa, Patan Durbar Square & Bhaktapur Pottery City', desc: 'Circumambulate Boudhanath Stupa, admire Patan fine metalwork, and explore the cobblestone alleys of Bhaktapur.' },
+      { day: 4, title: 'Thamel Market Shopping & Airport Transfer', desc: 'Morning walk in Thamel market for pashmina and tea. Private AC vehicle transfer to airport for final departure.' }
     ]
   },
   {
@@ -27,17 +40,30 @@ const tourPackages = [
     title: 'Pokhara Lakes, Caves & Sarangkot Himalayan Sunrise Tour',
     days: 4,
     price: 449,
-    maxAlt: '1,600m',
+    origPrice: 549,
+    maxAlt: '1,600 m',
+    difficulty: 'Easy / Scenic',
     category: 'Nature & Scenic',
     rating: '4.9',
-    reviewsCount: '210+',
-    img: 'images/gallery-lake.jpg',
+    reviewsCount: '210',
+    imgMain: 'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=80',
+    imgSub1: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80',
+    imgSub2: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80',
+    imgSub3: 'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=600&q=80',
+    imgSub4: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80',
     desc: 'Immerse yourself in Pokhara\'s breathtaking scenery with Phewa Lake boating, Sarangkot mountain sunrise, and underground limestone caves.',
+    moreDesc: 'Marvel at 180-degree panoramic views of Annapurna, Dhaulagiri, and Machhapuchhre (Fishtail) peaks. Visit World Peace Pagoda, Davis Fall, and Gupteshwor Cave while enjoying luxury lakeside hotel accommodations.',
+    highlights: [
+      { title: 'Sarangkot Sunrise', desc: '180-degree panoramic sunrise over Annapurna & Dhaulagiri Himalayan range.' },
+      { title: 'Phewa Lake Boating', desc: 'Tranquil wooden boat ride to island temple of Tal Barahi.' },
+      { title: 'World Peace Pagoda', desc: 'Hilltop Buddhist stupa offering spectacular views of Pokhara valley and lake.' },
+      { title: 'International Mountain Museum', desc: 'Exhibits detailing Himalayan mountaineering history, Sherpa culture, and flora.' }
+    ],
     itinerary: [
-      { day: 1, title: 'Scenic Drive / Flight from Kathmandu to Pokhara', desc: 'Enjoy scenic countryside views along the Trishuli River to Pokhara. Sunset stroll along Lakeside Phewa.' },
-      { day: 2, title: 'Sarangkot Sunrise & Pokhara Sightseeing', desc: 'Early morning drive to Sarangkot hill for 180-degree sunrise over Annapurna & Dhaulagiri. Afternoon boat ride to Tal Barahi Temple.' },
-      { day: 3, title: 'Peace Pagoda, Davis Fall & Mountain Museum', desc: 'Hike to World Peace Pagoda, explore Gupteshwor Cave and Davis Fall, and visit the International Mountain Museum.' },
-      { day: 4, title: 'Return Journey to Kathmandu', desc: 'Morning breakfast overlooking Phewa Lake before scenic return drive or 25-minute flight to Kathmandu.' }
+      { day: 1, title: 'Scenic Highway Travel from Kathmandu to Pokhara', desc: 'Travel along Trishuli & Marsyangdi rivers to Pokhara. Evening stroll along Lakeside Phewa.' },
+      { day: 2, title: 'Sarangkot Sunrise & Pokhara Lakes Sightseeing', desc: 'Early morning drive to Sarangkot hill for Annapurna sunrise. Afternoon boat ride to Tal Barahi Temple.' },
+      { day: 3, title: 'World Peace Pagoda, Davis Fall & Gupteshwor Cave', desc: 'Hike up to World Peace Pagoda, explore underground Gupteshwor cave, Davis Fall, and Mountain Museum.' },
+      { day: 4, title: 'Return Journey to Kathmandu & Departure', desc: 'Morning breakfast overlooking Phewa Lake before scenic return drive or flight back to Kathmandu.' }
     ]
   },
   {
@@ -45,21 +71,34 @@ const tourPackages = [
     title: 'Best of Nepal: Kathmandu, Pokhara & Chitwan Wildlife Tour',
     days: 8,
     price: 799,
-    maxAlt: '1,600m',
+    origPrice: 999,
+    maxAlt: '1,600 m',
+    difficulty: 'Easy / Multi-Activity',
     category: 'Golden Triangle',
     rating: '5.0',
-    reviewsCount: '420+',
-    img: 'images/hero-himalayas.jpg',
+    reviewsCount: '420',
+    imgMain: 'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=1200&q=80',
+    imgSub1: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80',
+    imgSub2: 'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80',
+    imgSub3: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80',
+    imgSub4: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
     desc: 'The ultimate 8-day Nepal experience combining Kathmandu valley heritage, Pokhara lake views, and Chitwan subtropical jungle safari.',
+    moreDesc: 'Covering the iconic Golden Triangle of Nepal, this package includes UNESCO heritage monuments in Kathmandu, Annapurna mountain sunrises in Pokhara, and deep jungle jeep safaris spotting one-horned rhinos and Bengal tigers in Chitwan.',
+    highlights: [
+      { title: 'UNESCO Kathmandu Heritage', desc: 'Pashupatinath, Boudhanath, Swayambhunath, and Patan Durbar Square.' },
+      { title: 'Chitwan Jungle Safari', desc: 'Jeep safari, Rapti river canoeing, rhino spotting, and Tharu tribal cultural dance.' },
+      { title: 'Pokhara Mountain Panorama', desc: 'Sarangkot sunrise over Annapurna Massif and Phewa Lake boating.' },
+      { title: 'Luxury Comfort', desc: 'Private tourist vehicle transfers and 3-Star to 4-Star deluxe hotel stays.' }
+    ],
     itinerary: [
-      { day: 1, title: 'Arrival in Kathmandu', desc: 'Airport greeting and hotel check-in. Evening briefing with trip leader.' },
-      { day: 2, title: 'Kathmandu UNESCO World Heritage Sightseeing', desc: 'Guided tours of Pashupatinath, Boudhanath, and Swayambhunath.' },
-      { day: 3, title: 'Drive to Chitwan National Park', desc: 'Descend to subtropical Terai lowlands. Tharu village walk and evening Tharu cultural dance.' },
-      { day: 4, title: 'Full Day Chitwan Jungle Safari Activities', desc: 'Jeep safari inside Chitwan National Park to spot one-horned rhinos, rapti river canoeing, and elephant breeding center visit.' },
-      { day: 5, title: 'Drive from Chitwan to Pokhara', desc: 'Scenic highway travel following Marsyangdi River to Pokhara. Relax by Lakeside Phewa.' },
-      { day: 6, title: 'Sarangkot Sunrise & Pokhara City Tour', desc: 'Panoramic Annapurna sunrise from Sarangkot, boat ride to Tal Barahi, Davis Fall and Peace Pagoda.' },
-      { day: 7, title: 'Return to Kathmandu', desc: 'Fly or drive back to Kathmandu. Evening farewell dinner.' },
-      { day: 8, title: 'Final Departure', desc: 'Airport transfer for your flight home.' }
+      { day: 1, title: 'Arrival in Kathmandu & Welcome Briefing', desc: 'Airport transfer to hotel. Trip briefing with lead guide and evening welcome dinner.' },
+      { day: 2, title: 'Full Day Kathmandu UNESCO Heritage Tour', desc: 'Guided sightseeing at Swayambhunath monkey temple, Kathmandu Durbar Square, Pashupatinath, and Boudhanath.' },
+      { day: 3, title: 'Drive to Chitwan National Park', desc: 'Drive down to subtropical Terai plains. Evening Tharu village walk and cultural dance.' },
+      { day: 4, title: 'Chitwan Jungle Safari & Wildlife Excursions', desc: 'Jeep safari inside Chitwan National Park to spot one-horned rhinos, canoe ride on Rapti River, and elephant center visit.' },
+      { day: 5, title: 'Drive from Chitwan to Pokhara', desc: 'Travel along Marsyangdi River valley to Pokhara. Sunset relaxing along Lakeside Phewa.' },
+      { day: 6, title: 'Sarangkot Sunrise & Pokhara Sightseeing', desc: 'Early morning Annapurna sunrise from Sarangkot, boat ride to Tal Barahi, Davis Fall, and Peace Pagoda.' },
+      { day: 7, title: 'Return Drive to Kathmandu', desc: 'Scenic highway travel back to Kathmandu. Evening farewell dinner.' },
+      { day: 8, title: 'Final Departure Transfer', desc: 'Morning breakfast before private airport transfer for your flight home.' }
     ]
   },
   {
@@ -67,16 +106,29 @@ const tourPackages = [
     title: 'Chitwan National Park Jungle Safari & Tharu Cultural Tour',
     days: 3,
     price: 299,
-    maxAlt: '415m',
+    origPrice: 399,
+    maxAlt: '415 m',
+    difficulty: 'Easy / Wildlife',
     category: 'Wildlife & Safari',
     rating: '4.9',
-    reviewsCount: '160+',
-    img: 'images/gallery-bridge.jpg',
+    reviewsCount: '160',
+    imgMain: 'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=1200&q=80',
+    imgSub1: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80',
+    imgSub2: 'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=600&q=80',
+    imgSub3: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80',
+    imgSub4: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
     desc: 'Discover Nepal\'s rich wildlife in Chitwan National Park with deep jungle jeep safaris, river canoeing, and Tharu tribal traditions.',
+    moreDesc: 'Chitwan is a UNESCO World Heritage natural sanctuary home to Asian one-horned rhinos, Royal Bengal tigers, mugger crocodiles, and over 500 species of exotic birds.',
+    highlights: [
+      { title: 'Jeep Jungle Safari', desc: 'Deep forest safari spotting rhinos, wild elephants, deer, and leopards.' },
+      { title: 'Rapti River Canoe Ride', desc: 'Traditional dugout canoe ride observing marsh muggers and gharial crocodiles.' },
+      { title: 'Tharu Cultural Dance', desc: 'Vibrant evening stick dance and music performance by indigenous Tharu villagers.' },
+      { title: 'Bird Watching Sanctuary', desc: 'Guided morning walk spotting hornbills, kingfishers, and peacocks.' }
+    ],
     itinerary: [
-      { day: 1, title: 'Travel to Chitwan & Tharu Village Walk', desc: 'Drive to Sauhara, Chitwan. Sunset view over Rapti River followed by Tharu cultural stick dance performance.' },
-      { day: 2, title: 'Jungle Safari, Canoe Ride & Elephant Breeding Center', desc: 'Traditional dugout canoe ride spotting crocodiles, guided jungle walk, and jeep safari inside the national park to spot rhinos and deer.' },
-      { day: 3, title: 'Bird Watching & Departure', desc: 'Early morning bird watching tour (over 500 species). Breakfast before departure to Kathmandu or Pokhara.' }
+      { day: 1, title: 'Drive to Chitwan National Park & Tharu Village Walk', desc: 'Drive to Sauraha, Chitwan. Sunset view over Rapti River followed by Tharu cultural stick dance performance.' },
+      { day: 2, title: 'Deep Jungle Jeep Safari, Canoe Ride & Elephant Center', desc: 'Dugout canoe ride along Rapti river, guided nature walk, deep jeep safari inside park, and elephant breeding center visit.' },
+      { day: 3, title: 'Bird Watching & Departure', desc: 'Early morning bird watching tour with resident naturalist. Breakfast before departure to Kathmandu or Pokhara.' }
     ]
   },
   {
@@ -84,16 +136,29 @@ const tourPackages = [
     title: 'Nagarkot Himalayan Sunrise & Bhaktapur Ancient City Tour',
     days: 3,
     price: 349,
-    maxAlt: '2,175m',
+    origPrice: 449,
+    maxAlt: '2,175 m',
+    difficulty: 'Easy / Panoramic',
     category: 'Scenic & Cultural',
     rating: '4.9',
-    reviewsCount: '140+',
-    img: 'images/gallery-peak.jpg',
+    reviewsCount: '140',
+    imgMain: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
+    imgSub1: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80',
+    imgSub2: 'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80',
+    imgSub3: 'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=600&q=80',
+    imgSub4: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
     desc: 'Witness panoramic Himalayan views stretching from Annapurna to Mt. Everest from Nagarkot ridge, combined with Bhaktapur pottery heritage.',
+    moreDesc: 'Perched at 2,175m on the rim of Kathmandu valley, Nagarkot offers one of the broadest mountain views in Nepal. Combine hill station serenity with Bhaktapur’s ancient brick courtyards and Changu Narayan temple.',
+    highlights: [
+      { title: 'Nagarkot Sunrise', desc: '180-degree panoramic sunrise view stretching from Dhaulagiri to Mt. Everest.' },
+      { title: 'Bhaktapur Medieval City', desc: '55-Window Palace, Golden Gate, pottery square, and Nyatapola temple.' },
+      { title: 'Changu Narayan Temple', desc: 'Oldest pagoda Hindu temple in Nepal with 5th-century stone inscriptions.' },
+      { title: 'Ridge Trail Walk', desc: 'Gentle nature walk through pine forests and Tamang hill villages.' }
+    ],
     itinerary: [
-      { day: 1, title: 'Drive to Bhaktapur & Transfer to Nagarkot', desc: 'Explore the 55-Window Palace and Nyatapola Temple in Bhaktapur. Drive up to Nagarkot hill station for sunset.' },
-      { day: 2, title: 'Nagarkot Sunrise & Hike to Changu Narayan', desc: 'Spectacular sunrise over the Himalayan range. Gentle 3-hour downhill ridge hike to ancient Changu Narayan Temple.' },
-      { day: 3, title: 'Return to Kathmandu & Departure', desc: 'Morning breakfast with mountain views. Private transfer back to Kathmandu.' }
+      { day: 1, title: 'Explore Bhaktapur Durbar Square & Drive to Nagarkot', desc: 'Guided tour of Bhaktapur ancient pottery city and 55-window palace. Drive up to Nagarkot hill station for sunset.' },
+      { day: 2, title: 'Nagarkot Sunrise & Hike to Changu Narayan Temple', desc: 'Spectacular Himalayan sunrise over Everest range. 3-hour downhill ridge hike to ancient Changu Narayan Temple.' },
+      { day: 3, title: 'Return Drive to Kathmandu & Airport Departure', desc: 'Morning breakfast with mountain views. Private transfer back to Kathmandu for departure.' }
     ]
   },
   {
@@ -101,23 +166,35 @@ const tourPackages = [
     title: 'Nepal Everest & Annapurna Luxury Helicopter Sightseeing Tour',
     days: 5,
     price: 2499,
-    maxAlt: '5,545m (Flight)',
+    origPrice: 2999,
+    maxAlt: '5,545 m (Flight)',
     category: 'Luxury & Aviation',
     rating: '5.0',
-    reviewsCount: '95+',
-    img: 'images/hero-himalayas.jpg',
+    reviewsCount: '95',
+    imgMain: 'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=1200&q=80',
+    imgSub1: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80',
+    imgSub2: 'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=600&q=80',
+    imgSub3: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80',
+    imgSub4: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&q=80',
     desc: 'Experience the ultimate VIP Himalayan journey with private helicopter landings at Everest Base Camp and 5-star luxury accommodations.',
+    moreDesc: 'Avoid weeks of grueling trekking with direct helicopter flights to Kala Patthar (5,545m), Everest Base Camp, and Annapurna Sanctuary. Enjoy champagne breakfast at Hotel Everest View (3,880m) and 5-star resort stays.',
+    highlights: [
+      { title: 'Everest Heli Landing', desc: 'Private helicopter flight over Khumbu Glacier with landing at Kala Patthar (5,545m).' },
+      { title: 'Champagne Breakfast', desc: 'Gourmet breakfast at Hotel Everest View (3,880m) facing Mt. Everest & Ama Dablam.' },
+      { title: 'Annapurna Sanctuary Flight', desc: 'Aerial helicopter tour over Annapurna Base Camp & Machhapuchhre.' },
+      { title: '5-Star Luxury Resorts', desc: 'Stay at Dwarika’s Heritage Resort Kathmandu & Pokhara Luxury Lakeside Spa Resort.' }
+    ],
     itinerary: [
-      { day: 1, title: 'VIP Arrival in Kathmandu', desc: 'Private luxury car transfer to 5-star hotel (Dwarikas or Marriott). Evening fine dining briefing.' },
-      { day: 2, title: 'Everest Base Camp & Kala Patthar Helicopter Excursion', desc: 'Fly by private helicopter over Lukla, Syangboche, Kala Patthar, and Everest Base Camp. Champagne breakfast at Hotel Everest View (3,880m).' },
-      { day: 3, title: 'Helicopter Transfer to Pokhara & Annapurna Sanctuary Flight', desc: 'Fly past Langtang and Manaslu to Pokhara. Aerial flight over Annapurna Base Camp & Machhapuchhre.' },
-      { day: 4, title: 'Pokhara Luxury Leisure Day', desc: 'Private boat ride on Phewa Lake and spa treatment at luxury resort.' },
-      { day: 5, title: 'Fly back to Kathmandu & Final Departure', desc: 'Return flight to Kathmandu and VIP airport transfer.' }
+      { day: 1, title: 'VIP Airport Arrival in Kathmandu', desc: 'Private luxury Mercedes/SUV transfer to 5-Star Hotel (Dwarika’s or Marriott). Fine dining briefing.' },
+      { day: 2, title: 'Everest Base Camp & Kala Patthar Helicopter Excursion', desc: 'Fly by private helicopter over Lukla, Syangboche, Kala Patthar (5,545m), and Khumbu glacier. Champagne breakfast at Hotel Everest View.' },
+      { day: 3, title: 'Helicopter Transfer to Pokhara & Annapurna Aerial Flight', desc: 'Helicopter transfer past Langtang to Pokhara. Aerial flight over Annapurna Base Camp & Machhapuchhre peak.' },
+      { day: 4, title: 'Pokhara Luxury Leisure & Lakeside Spa Day', desc: 'Private boat ride on Phewa Lake, body massage treatment at luxury spa resort, and lakeside fine dining.' },
+      { day: 5, title: 'Fly back to Kathmandu & VIP Departure', desc: 'Private return flight to Kathmandu and VIP airport transfer.' }
     ]
   }
 ];
 
-// 1. Generate Individual Tour Package Pages
+// 1. Generate Rich Tour Package Landing Pages (Replicating Trek Landing Page Design)
 tourPackages.forEach(pkg => {
   const dirPath = path.join(projectRoot, 'tour', pkg.slug);
   fs.mkdirSync(dirPath, { recursive: true });
@@ -130,26 +207,57 @@ tourPackages.forEach(pkg => {
   <title>${pkg.title} (${pkg.days} Days) — Namaste Hiking Trek</title>
   <meta name="description" content="${pkg.desc}">
   <link rel="canonical" href="https://namastehikingtrek.com/tour/${pkg.slug}/" />
+
   <link rel="icon" type="image/png" href="../../images/logo.png">
-  <link rel="stylesheet" href="../../index.css?v=8">
+  <link rel="apple-touch-icon" href="../../images/logo.png">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "${pkg.title}",
-    "description": "${pkg.desc}",
-    "touristType": ["Tourists", "Cultural Enthusiasts", "Families"],
-    "offers": {
-      "@type": "Offer",
-      "price": "${pkg.price}",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://namastehikingtrek.com/tour/${pkg.slug}/"
-    }
+    "@graph": [
+      {
+        "@type": "TouristTrip",
+        "@id": "https://namastehikingtrek.com/tour/${pkg.slug}/#trip",
+        "name": "${pkg.title}",
+        "description": "${pkg.desc}",
+        "touristType": ["Tourists", "Cultural Enthusiasts", "Families"],
+        "offers": {
+          "@type": "Offer",
+          "price": "${pkg.price}",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://namastehikingtrek.com/tour/${pkg.slug}/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://namastehikingtrek.com/tour/${pkg.slug}/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://namastehikingtrek.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Nepal Tours", "item": "https://namastehikingtrek.com/tours.html" },
+          { "@type": "ListItem", "position": 3, "name": "${pkg.title}", "item": "https://namastehikingtrek.com/tour/${pkg.slug}/" }
+        ]
+      }
+    ]
   }
   </script>
+
+  <link rel="stylesheet" href="../../index.css?v=8">
+  <style>
+    .trek-sub-nav-btn.active {
+      border-bottom-color: #10B981 !important;
+      color: #10B981 !important;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Noscript Fallback Notice -->
+  <noscript>
+    <div style="background:#FEF3C7;color:#92400E;padding:12px 20px;text-align:center;font-size:0.9rem;">
+      Interactive features require JavaScript. All tour details, itinerary, included services, and pricing are fully accessible.
+    </div>
+  </noscript>
 
   <!-- Header Navigation -->
   <header class="main-header">
@@ -173,6 +281,8 @@ tourPackages.forEach(pkg => {
           <li class="nav-item-dropdown mega-nav-item">
             <a href="../../treks.html" class="nav-link">All Treks ▾</a>
           </li>
+
+          <!-- Tour Packages Dropdown -->
           <li class="nav-item-dropdown">
             <a href="../../tours.html" class="nav-link active">Nepal Tours ▾</a>
             <div class="nav-dropdown-menu">
@@ -185,11 +295,22 @@ tourPackages.forEach(pkg => {
               <a href="../../tour/nepal-luxury-helicopter-tour/" class="nav-dropdown-link">Luxury Helicopter Tour (5 Days)</a>
             </div>
           </li>
+
           <li class="nav-item-dropdown">
             <a href="../../trekking-regions-nepal/" class="nav-link">Trekking Regions ▾</a>
           </li>
-          <li><a href="../../about.html" class="nav-link">About Us</a></li>
-          <li><a href="../../reviews.html" class="nav-link">Reviews</a></li>
+
+          <li class="nav-item-dropdown">
+            <span class="nav-link">Company Info ▾</span>
+            <div class="nav-dropdown-menu">
+              <a href="../../about.html" class="nav-dropdown-link">About Us</a>
+              <a href="../../team.html" class="nav-dropdown-link">Meet Our Team</a>
+              <a href="../../careers.html" class="nav-dropdown-link">Careers & Jobs</a>
+              <a href="../../reviews.html" class="nav-dropdown-link">Reviews & Testimonials</a>
+            </div>
+          </li>
+
+          <li><a href="../../blogs.html" class="nav-link">Blog</a></li>
           <li><a href="../../contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -201,116 +322,374 @@ tourPackages.forEach(pkg => {
   </header>
 
   <main>
-    <!-- Package Hero -->
-    <section class="reviews-hero-section" style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('../../${pkg.img}');">
-      <div class="container">
-        
-        <div style="display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.88rem; color: #CBD5E1; margin-bottom: 16px;">
-          <a href="../../index.html" style="color: #10B981; text-decoration: none;">Home</a> <span>/</span>
-          <a href="../../tours.html" style="color: #10B981; text-decoration: none;">Nepal Tours</a> <span>/</span>
-          <span>${pkg.title}</span>
-        </div>
+    <article itemscope itemtype="https://schema.org/TouristTrip">
 
-        <div style="max-width: 860px; margin: 0 auto; text-align: center;">
-          <span class="pill pill-copper" style="background: #10B981; color: #FFFFFF;">${pkg.category} • ${pkg.days} DAYS</span>
-          <h1 class="reviews-hero-title">${pkg.title}</h1>
-          <p class="reviews-hero-desc">${pkg.desc}</p>
-        </div>
-
-        <div class="review-scorecard-grid" style="max-width: 780px; margin-top: 28px;">
-          <div class="scorecard-main-stat">
-            <div class="big-rating-number">$${pkg.price}</div>
-            <div>
-              <span style="color: #94A3B8; font-size: 0.88rem; display: block;">Starting Price per Person</span>
-              <strong style="color: #10B981; font-size: 1.05rem;">Includes Hotel, Vehicle & Licensed Guide</strong>
-            </div>
-          </div>
-          <div class="scorecard-main-stat">
-            <div class="big-rating-number">${pkg.rating}</div>
-            <div>
-              <div class="rating-stars-gold">★★★★★</div>
-              <strong style="color: #FFFFFF; font-size: 0.95rem;">${pkg.reviewsCount} Verified Reviews</strong>
-            </div>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 16px; justify-content: center; margin-top: 28px; flex-wrap: wrap;">
-          <button class="btn btn-primary open-inquiry-btn" style="padding: 14px 32px; font-size: 1.05rem;">Book This Tour Package ↗</button>
-          <a href="#itinerary" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.3); padding: 14px 28px;">View Day-by-Day Itinerary ↓</a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Overview & Quick Facts -->
-    <section class="section-padding" style="background: #FFFFFF;">
-      <div class="container">
-        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 36px;">
-          <div>
-            <span class="badge badge-alpine" style="margin-bottom: 8px;">Tour Highlights</span>
-            <h2 style="font-size: 2rem; color: #0F172A; margin-bottom: 16px;">What Makes This Tour Special</h2>
-            <p style="font-size: 1rem; color: #475569; line-height: 1.65; margin-bottom: 24px;">${pkg.desc}</p>
+      <!-- Page Title Section -->
+      <section style="padding: 30px 0 10px 0; background: var(--color-neutral-50);">
+        <div class="container">
+          
+          <!-- Top Row: Region Pill & Review Badges -->
+          <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px;">
+            <span class="pill pill-copper" style="margin-bottom: 0; background: #10B981; color: #FFFFFF;">${pkg.category} • Official Tour Package</span>
             
-            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px;">
-              <h3 style="font-size: 1.2rem; color: #0F172A; margin-bottom: 14px;">Key Tour Package Services Included</h3>
-              <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; font-size: 0.94rem; color: #334155;">
-                <li>✓ Private AC Vehicle Airport Transfers</li>
-                <li>✓ 3-Star / 4-Star Deluxe Hotel Stays</li>
-                <li>✓ Government Licensed Tour Guide</li>
-                <li>✓ Monument Entrance & Heritage Permits</li>
-                <li>✓ Daily Breakfast & Welcome Dinner</li>
-                <li>✓ 24/7 Office Concierge Support</li>
-              </ul>
+            <!-- TripAdvisor Review Badge -->
+            <div style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 100px; padding: 4px 12px; font-size: 0.85rem; color: #475569; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; background: #00af87; border-radius: 50%;">
+                <svg viewBox="0 0 24 24" fill="#000000" width="10" height="10">
+                  <path d="M12 3.2c-4.8 0-8.8 4-8.8 8.8 0 4.8 4 8.8 8.8 8.8 4.8 0 8.8-4 8.8-8.8 0-4.8-4-8.8-8.8-8.8z"/>
+                </svg>
+              </span>
+              <span style="font-weight: 700; color: #0f172a;">${pkg.rating}</span>
+              <span style="display: inline-flex; gap: 2px;">
+                <span style="width: 8px; height: 8px; background: #00af87; border-radius: 50%;"></span>
+                <span style="width: 8px; height: 8px; background: #00af87; border-radius: 50%;"></span>
+                <span style="width: 8px; height: 8px; background: #00af87; border-radius: 50%;"></span>
+                <span style="width: 8px; height: 8px; background: #00af87; border-radius: 50%;"></span>
+                <span style="width: 8px; height: 8px; background: #00af87; border-radius: 50%;"></span>
+              </span>
+              <span>reviews on <strong style="font-weight: 600; color: #0f172a;">TripAdvisor</strong></span>
+            </div>
+
+            <!-- Google Review Badge -->
+            <div style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 100px; padding: 4px 12px; font-size: 0.85rem; color: #475569; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+              <svg width="14" height="14" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+              </svg>
+              <span style="font-weight: 700; color: #0f172a;">${pkg.rating}</span>
+              <span style="color: #FBBF24; display: inline-flex; gap: 1px; font-size: 0.9rem;">★★★★★</span>
+              <span><strong style="font-weight: 600; color: #0f172a;">${pkg.reviewsCount}</strong> reviews on Google</span>
             </div>
           </div>
 
-          <div style="background: #F1F5F9; border-radius: 16px; padding: 24px; border: 1px solid #E2E8F0;">
-            <h3 style="font-size: 1.25rem; color: #0F172A; margin-bottom: 16px;">Quick Facts</h3>
-            <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.92rem;">
-              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #CBD5E1; padding-bottom: 8px;">
-                <span style="color: #64748B;">Duration</span> <strong>${pkg.days} Days / ${pkg.days - 1} Nights</strong>
+          <h1 class="trek-hero-title" style="font-size: 2.8rem; margin-top: 6px; margin-bottom: 8px; color: var(--color-primary-navy);">${pkg.title}</h1>
+          
+          <p style="font-size: 1.15rem; color: var(--color-neutral-600); line-height: 1.7; margin-top: 12px; margin-bottom: 0;">
+            ${pkg.desc}
+            <span id="tour-more-text" style="display: none;">
+              ${pkg.moreDesc}
+            </span>
+            <button id="tour-toggle-btn" style="background: none; border: none; color: #10b981; font-weight: 700; font-size: 1.05rem; cursor: pointer; padding: 0; margin-left: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle;">
+              Learn more <span style="font-size: 1.1rem; margin-left: 2px;">→</span>
+            </button>
+          </p>
+          
+          <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const toggleBtn = document.getElementById('tour-toggle-btn');
+              const moreText = document.getElementById('tour-more-text');
+              if (toggleBtn && moreText) {
+                toggleBtn.addEventListener('click', () => {
+                  const isHidden = moreText.style.display === 'none';
+                  moreText.style.display = isHidden ? 'inline' : 'none';
+                  toggleBtn.innerHTML = isHidden 
+                    ? 'Learn less <span style="font-size: 1.1rem; margin-left: 2px;">↑</span>' 
+                    : 'Learn more <span style="font-size: 1.1rem; margin-left: 2px;">→</span>';
+                });
+              }
+            });
+          </script>
+
+        </div>
+      </section>
+
+      <!-- Multi-Image Collage Gallery -->
+      <div class="container" style="margin-bottom: 24px;">
+        <div class="trek-gallery-collage">
+          <!-- Main Large Photo (Left) -->
+          <div class="trek-gallery-main">
+            <img src="${pkg.imgMain}" alt="${pkg.title} Main View">
+            <!-- TripAdvisor Travelers' Choice Badge -->
+            <div class="trek-gallery-badge">
+              <div class="trek-gallery-badge-icon" style="background: #00af87; display: flex; align-items: center; justify-content: center;">
+                <svg class="icon-svg icon-sm" style="stroke: none; fill: white;" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
               </div>
-              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #CBD5E1; padding-bottom: 8px;">
-                <span style="color: #64748B;">Max Elevation</span> <strong>${pkg.maxAlt}</strong>
-              </div>
-              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #CBD5E1; padding-bottom: 8px;">
-                <span style="color: #64748B;">Group Size</span> <strong>1 to 16 People</strong>
-              </div>
-              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #CBD5E1; padding-bottom: 8px;">
-                <span style="color: #64748B;">Best Season</span> <strong>All Year Round</strong>
-              </div>
-              <div style="display: flex; justify-content: space-between;">
-                <span style="color: #64748B;">Transportation</span> <strong>Private Tourist Vehicle</strong>
+              <div class="trek-gallery-badge-text">
+                <span>Travelers' Choice</span>
+                <span>Best of the Best 2026</span>
               </div>
             </div>
-            <button class="btn btn-primary open-inquiry-btn" style="width: 100%; margin-top: 20px; padding: 12px;">Get Instant Quote</button>
+          </div>
+          
+          <!-- Grid Items (Right 2x2 Columns) -->
+          <div class="trek-gallery-sub">
+            <img src="${pkg.imgSub1}" alt="${pkg.title} Sight 1">
+          </div>
+          <div class="trek-gallery-sub trek-gallery-sub-top-right">
+            <img src="${pkg.imgSub2}" alt="${pkg.title} Sight 2">
+            <button class="trek-gallery-see-all-btn">
+              <span><svg class="icon-svg icon-xs icon-margin-right" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>See all photos</span>
+            </button>
+          </div>
+          <div class="trek-gallery-sub">
+            <img src="${pkg.imgSub3}" alt="${pkg.title} Sight 3">
+          </div>
+          <div class="trek-gallery-sub trek-gallery-sub-bottom-right">
+            <img src="${pkg.imgSub4}" alt="${pkg.title} Sight 4">
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Itinerary Section -->
-    <section id="itinerary" class="section-padding" style="background: #F8FAFC; border-top: 1px solid #E2E8F0; border-bottom: 1px solid #E2E8F0;">
-      <div class="container">
-        <div class="text-center" style="margin-bottom: 36px;">
-          <span class="pill pill-copper">Day by Day Schedule</span>
-          <h2 style="font-size: 2.2rem; color: #0F172A; margin-top: 8px;">Detailed Tour Itinerary</h2>
-        </div>
-
-        <div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
-          ${pkg.itinerary.map(item => `
-            <div style="background: #FFFFFF; border-radius: 14px; border: 1px solid #E2E8F0; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
-                <span style="background: #10B981; color: #FFFFFF; font-weight: 800; padding: 4px 12px; border-radius: 50px; font-size: 0.82rem;">DAY ${item.day}</span>
-                <h3 style="font-size: 1.15rem; color: #0F172A; margin: 0;">${item.title}</h3>
+      <!-- Key Trip Facts Grid -->
+      <div class="container" style="margin-bottom: 30px;">
+        <div style="background: #ffffff; border: 1px solid var(--color-neutral-100); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); padding: 24px 30px;">
+          <h3 style="font-size: 1.3rem; margin-bottom: 24px; color: var(--color-primary-navy); display: flex; align-items: center; gap: 8px; font-weight: 700;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-navy);"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+            Key Tour Facts
+          </h3>
+          
+          <div class="trek-facts-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 24px 20px;">
+            <!-- 1. Duration -->
+            <div class="trip-fact-item" style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
-              <p style="font-size: 0.94rem; color: #475569; line-height: 1.6; margin: 0;">${item.desc}</p>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-neutral-500); font-weight: 700;">Duration</span>
+                <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">${pkg.days} Days / ${pkg.days - 1} Nights</span>
+              </div>
             </div>
-          `).join('')}
+
+            <!-- 2. Grade -->
+            <div class="trip-fact-item" style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-neutral-500); font-weight: 700;">Tour Difficulty</span>
+                <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">${pkg.difficulty}</span>
+              </div>
+            </div>
+
+            <!-- 3. Max Altitude -->
+            <div class="trip-fact-item" style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><path d="M4 22L12 2l8 20H4z"/><path d="M9 22l3-7 3 7H9z" fill="#008060"/></svg>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-neutral-500); font-weight: 700;">Max Altitude</span>
+                <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">${pkg.maxAlt}</span>
+              </div>
+            </div>
+
+            <!-- 4. Destination -->
+            <div class="trip-fact-item" style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-neutral-500); font-weight: 700;">Destination</span>
+                <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">Nepal</span>
+              </div>
+            </div>
+
+            <!-- 5. Activity -->
+            <div class="trip-fact-item" style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-neutral-500); font-weight: 700;">Activity Type</span>
+                <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">Sightseeing & Tour</span>
+              </div>
+            </div>
+
+            <!-- 6. Accommodation -->
+            <div class="trip-fact-item" style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-neutral-500); font-weight: 700;">Accommodation</span>
+                <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">3-5 Star Hotels & Resorts</span>
+              </div>
+            </div>
+
+            <!-- 7. Transport -->
+            <div class="trip-fact-item" style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 2 2h14a2 2 0 0 2 2-2zM3 10h18M7 15h.01M11 15h.01"/></svg>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-neutral-500); font-weight: 700;">Transport</span>
+                <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">Private AC Tourist Vehicle</span>
+              </div>
+            </div>
+
+            <!-- 8. Meals -->
+            <div class="trip-fact-item" style="display: flex; align-items: center; gap: 16px;">
+              <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+              </div>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-neutral-500); font-weight: 700;">Meals</span>
+                <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">Breakfast & Welcome Dinner</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
+      <!-- Trust Badges Section -->
+      <div class="container" style="margin-bottom: 30px;">
+        <div class="trek-trust-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+          <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+            <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy);">Govt-registered local agency</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+            <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+            </div>
+            <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy);">10,000+ happy travellers</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+            <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy);">Secure payment · No hidden fees</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+            <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy);">Instant confirmation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sticky Scroll-Spy Sub-Navigation Bar -->
+      <div class="trek-sub-nav">
+        <div class="container">
+          <div class="trek-sub-nav-list">
+            <button class="trek-sub-nav-btn active" data-tab="overview">Overview</button>
+            <button class="trek-sub-nav-btn" data-tab="itinerary">Itinerary</button>
+            <button class="trek-sub-nav-btn" data-tab="includes">Includes & Excludes</button>
+            <button class="trek-sub-nav-btn" data-tab="booking">Booking</button>
+            <button class="trek-sub-nav-btn" data-tab="reviews">Reviews</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main 2-Column Content Layout with Sticky Sidebar -->
+      <section class="section-padding" style="padding-top: 20px;">
+        <div class="container trek-detail-layout" style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 40px;">
+          
+          <!-- Left Column -->
+          <div style="min-width: 0;">
+            
+            <!-- Overview & Highlights -->
+            <section id="section-overview" class="trek-detail-section" style="margin-bottom: 36px;">
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Tour Overview</h2>
+              <p style="font-size: 1.05rem; color: #475569; line-height: 1.7; margin-bottom: 24px;">${pkg.desc}</p>
+              
+              <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 16px; padding: 28px;">
+                <h3 style="font-size: 1.25rem; color: #0F172A; margin-bottom: 18px;">Tour Highlights</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                  ${pkg.highlights.map(h => `
+                    <div style="display: flex; gap: 12px; align-items: flex-start;">
+                      <div style="color: #10B981; font-weight: 800; font-size: 1.1rem; flex-shrink: 0;">✓</div>
+                      <div>
+                        <strong style="color: #0F172A; font-size: 0.98rem; display: block;">${h.title}</strong>
+                        <span style="font-size: 0.88rem; color: #64748B; line-height: 1.5;">${h.desc}</span>
+                      </div>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            </section>
+
+            <!-- Day-by-Day Detailed Itinerary -->
+            <section id="section-itinerary" class="trek-detail-section" style="margin-bottom: 36px;">
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 20px;">Day-by-Day Itinerary</h2>
+              <div style="display: flex; flex-direction: column; gap: 16px;">
+                ${pkg.itinerary.map(item => `
+                  <div style="background: #FFFFFF; border-radius: 14px; border: 1px solid #E2E8F0; padding: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                      <span style="background: #10B981; color: #FFFFFF; font-weight: 800; padding: 4px 14px; border-radius: 50px; font-size: 0.82rem;">DAY ${item.day}</span>
+                      <h3 style="font-size: 1.15rem; color: #0F172A; margin: 0;">${item.title}</h3>
+                    </div>
+                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin: 0;">${item.desc}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </section>
+
+            <!-- Includes & Excludes -->
+            <section id="section-includes" class="trek-detail-section" style="margin-bottom: 36px;">
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 20px;">What's Included & Excluded</h2>
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
+                
+                <!-- Included -->
+                <div style="background: #ECFDF5; border: 1px solid #A7F3D0; border-radius: 16px; padding: 24px;">
+                  <h3 style="color: #047857; font-size: 1.15rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-weight: 800;">✓</span> Included Services
+                  </h3>
+                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: #064E3B;">
+                    <li>✓ Private AC Tourist Vehicle Airport Pickups & Transfers</li>
+                    <li>✓ 3-Star / 4-Star Deluxe Hotel Accommodations</li>
+                    <li>✓ Government Licensed Experienced Tour Guide</li>
+                    <li>✓ All Monument Entrance Fees & National Park Permits</li>
+                    <li>✓ Daily Breakfast & Authentic Nepali Welcome Dinner</li>
+                    <li>✓ 24/7 Concierge Support & Emergency Coordination</li>
+                  </ul>
+                </div>
+
+                <!-- Excluded -->
+                <div style="background: #FEF2F2; border: 1px solid #FECACA; border-radius: 16px; padding: 24px;">
+                  <h3 style="color: #B91C1C; font-size: 1.15rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-weight: 800;">✕</span> Excluded Services
+                  </h3>
+                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: #7F1D1D;">
+                    <li>✕ International Airfare to/from Kathmandu</li>
+                    <li>✕ Nepal Entry Tourist Visa Fee</li>
+                    <li>✕ Personal Expenses (Laundry, Drinks, Souvenirs)</li>
+                    <li>✕ Lunch & Dinner Meals (Except Welcome Dinner)</li>
+                    <li>✕ Tipping for Tour Guide and Driver</li>
+                  </ul>
+                </div>
+
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Right Column: Sticky Booking Sidebar Widget -->
+          <div style="min-width: 0;">
+            <div style="position: sticky; top: 100px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; padding: 28px; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
+              
+              <div style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 8px;">
+                <span style="font-size: 2.2rem; font-weight: 800; color: #0F172A;">$${pkg.price}</span>
+                <span style="font-size: 1.1rem; color: #94A3B8; text-decoration: line-through;">$${pkg.origPrice}</span>
+                <span style="background: #ECFDF5; color: #047857; font-size: 0.78rem; font-weight: 800; padding: 3px 8px; border-radius: 50px; margin-left: auto;">SAVE $${pkg.origPrice - pkg.price}</span>
+              </div>
+              <span style="font-size: 0.85rem; color: #64748B; display: block; margin-bottom: 20px;">per person (Includes Hotel, AC Vehicle & Guide)</span>
+
+              <button class="btn btn-primary open-inquiry-btn" style="width: 100%; padding: 14px; font-size: 1.05rem; font-weight: 800; margin-bottom: 12px;">Book This Tour Package ↗</button>
+              <button class="btn open-inquiry-btn" style="width: 100%; padding: 12px; background: #F1F5F9; color: #334155; border: 1px solid #CBD5E1; font-weight: 700;">Inquire / Customize Itinerary</button>
+
+              <div style="margin-top: 24px; padding-top: 20px; border-top: 1px dashed #E2E8F0; display: flex; align-items: center; gap: 14px;">
+                <img src="../../images/pemba-sherpa.jpg" alt="Local Tour Expert" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid #10B981;">
+                <div>
+                  <strong style="color: #0F172A; font-size: 0.92rem; display: block;">Need Custom Tour Help?</strong>
+                  <span style="font-size: 0.82rem; color: #64748B;">Talk with Pemba Sherpa (24/7)</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
   </main>
 
   <footer class="site-footer">
@@ -369,7 +748,7 @@ tourPackages.forEach(pkg => {
 `;
 
   fs.writeFileSync(path.join(dirPath, 'index.html'), htmlContent, 'utf8');
-  console.log(`Generated: tour/${pkg.slug}/index.html`);
+  console.log(`Upgraded Tour Page: tour/${pkg.slug}/index.html`);
 });
 
 // 2. Generate Central Tour Directory Hub Page: tours.html
@@ -463,7 +842,7 @@ const toursHubHtml = `<!DOCTYPE html>
             <div style="background: #FFFFFF; border-radius: 18px; overflow: hidden; border: 1px solid #E2E8F0; box-shadow: 0 4px 20px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
               <div>
                 <div style="position: relative; height: 200px; overflow: hidden;">
-                  <img src="${pkg.img}" alt="${pkg.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                  <img src="${pkg.imgMain}" alt="${pkg.title}" style="width: 100%; height: 100%; object-fit: cover;">
                   <span style="position: absolute; top: 12px; left: 12px; background: #10B981; color: #FFFFFF; font-size: 0.78rem; font-weight: 800; padding: 4px 10px; border-radius: 50px;">${pkg.days} DAYS</span>
                   <span style="position: absolute; top: 12px; right: 12px; background: rgba(15,23,42,0.85); color: #FFFFFF; font-size: 0.88rem; font-weight: 800; padding: 4px 10px; border-radius: 50px;">$${pkg.price}</span>
                 </div>
