@@ -682,41 +682,39 @@ function setupHimalayanReviews() {
   const modalSub = document.getElementById('video-modal-sub');
   const player = document.getElementById('video-modal-player');
 
-  if (!modal) return;
-
-  const openVideoModal = (card) => {
-    const trekker = card.getAttribute('data-trekker') || 'Trekker';
-    const trek = card.getAttribute('data-trek') || 'Himalayan Trek';
-    const videoUrl = card.getAttribute('data-video-url') || 'https://www.w3schools.com/html/mov_bbb.mp4';
-    const bgImg = card.querySelector('.video-card-bg');
-
-    if (modalTitle) modalTitle.textContent = `${trekker}'s Experience`;
-    if (modalSub) modalSub.textContent = trek;
-    if (player) {
-      if (bgImg) player.poster = bgImg.src;
-      player.src = videoUrl;
-      player.play().catch(() => {});
-    }
-
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  };
-
-  const closeVideoModal = () => {
-    modal.classList.remove('active');
-    if (player) {
-      player.pause();
-      player.currentTime = 0;
-    }
-    document.body.style.overflow = 'auto';
-  };
-
-  videoCards.forEach(card => {
-    card.addEventListener('click', () => openVideoModal(card));
-  });
-
-  if (closeBtn) closeBtn.addEventListener('click', closeVideoModal);
   if (modal) {
+    const openVideoModal = (card) => {
+      const trekker = card.getAttribute('data-trekker') || 'Trekker';
+      const trek = card.getAttribute('data-trek') || 'Himalayan Trek';
+      const videoUrl = card.getAttribute('data-video-url') || 'https://www.w3schools.com/html/mov_bbb.mp4';
+      const bgImg = card.querySelector('.video-card-bg');
+
+      if (modalTitle) modalTitle.textContent = `${trekker}'s Experience`;
+      if (modalSub) modalSub.textContent = trek;
+      if (player) {
+        if (bgImg) player.poster = bgImg.src;
+        player.src = videoUrl;
+        player.play().catch(() => {});
+      }
+
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeVideoModal = () => {
+      modal.classList.remove('active');
+      if (player) {
+        player.pause();
+        player.currentTime = 0;
+      }
+      document.body.style.overflow = 'auto';
+    };
+
+    videoCards.forEach(card => {
+      card.addEventListener('click', () => openVideoModal(card));
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeVideoModal);
     modal.addEventListener('click', (e) => {
       if (e.target === modal) closeVideoModal();
     });
@@ -773,11 +771,10 @@ function setupHimalayanReviews() {
   });
 
   // Reset modal elements when closed
-  if (closeBtn) {
-    const originalClose = closeVideoModal;
+  if (modal && closeBtn) {
     closeBtn.addEventListener('click', () => {
       if (player) player.style.display = 'block';
-      const imgPreview = modal ? modal.querySelector('#photo-modal-img') : null;
+      const imgPreview = modal.querySelector('#photo-modal-img');
       if (imgPreview) imgPreview.style.display = 'none';
     });
   }
@@ -813,6 +810,27 @@ function setupHimalayanReviews() {
         }
       });
     });
+  });
+
+  // 6. Review "See more" / "See less" text expander (Delegated listener)
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.review-see-more-btn');
+    if (!btn) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+    const parent = btn.closest('.review-body-text');
+    const textContent = parent ? parent.querySelector('.review-text-content') : null;
+    if (!textContent) return;
+
+    const isExpanded = textContent.classList.contains('expanded');
+    if (isExpanded) {
+      textContent.classList.remove('expanded');
+      btn.textContent = 'See more';
+    } else {
+      textContent.classList.add('expanded');
+      btn.textContent = 'See less';
+    }
   });
 }
 

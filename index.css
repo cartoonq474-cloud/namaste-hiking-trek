@@ -7789,7 +7789,7 @@ textarea {
 }
 
 .review-body-text {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .review-text-content {
@@ -7797,6 +7797,17 @@ textarea {
   color: #334155;
   line-height: 1.65;
   margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.review-text-content.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
 }
 
 .review-see-more-btn {
@@ -7804,10 +7815,16 @@ textarea {
   border: none;
   color: #0284c7;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   cursor: pointer;
-  padding: 0;
+  padding: 2px 0;
   text-decoration: underline;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.review-see-more-btn:hover {
+  color: #0369a1;
 }
 
 .review-photos-grid {
