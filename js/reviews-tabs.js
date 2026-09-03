@@ -1,9 +1,10 @@
 /**
- * Interactive 3-Tab Review Switcher & Subtab Handler
+ * Interactive Review Section Handler for Homepage (index.html)
+ * Controls Main Tabs (Video, Customer, Platform) & Platform Subtabs (Google, TripAdvisor, Trustpilot, Facebook)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Main Review Tab Switching
+  // Main 3-Tab Switcher (.review-tab-btn)
   const tabBtns = document.querySelectorAll('.review-tab-btn');
   const tabPanels = document.querySelectorAll('.review-tab-panel');
 
@@ -11,11 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const targetId = btn.getAttribute('data-tab');
 
-      // Deactivate all buttons & panels
       tabBtns.forEach(b => b.classList.remove('active'));
       tabPanels.forEach(p => p.classList.remove('active'));
 
-      // Activate selected button & panel
       btn.classList.add('active');
       const targetPanel = document.getElementById(targetId);
       if (targetPanel) {
@@ -24,29 +23,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Platform Subtab Switching
+  // Platform Sub-Tabs Switcher (.platform-subtab-btn)
   const subtabBtns = document.querySelectorAll('.platform-subtab-btn');
+  const platformContents = document.querySelectorAll('.platform-reviews-content');
+
   subtabBtns.forEach(subBtn => {
     subBtn.addEventListener('click', () => {
+      const platformKey = subBtn.getAttribute('data-platform');
+
       subtabBtns.forEach(b => b.classList.remove('active'));
+      platformContents.forEach(c => c.classList.remove('active'));
+
       subBtn.classList.add('active');
+      const targetContent = document.querySelector(`.platform-reviews-content[data-platform="${platformKey}"]`);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
     });
   });
 
-  // Interactive Pagination Dots
-  const dotGroups = document.querySelectorAll('.pagination-dots');
-  dotGroups.forEach(group => {
-    const dots = group.querySelectorAll('.dot');
-    dots.forEach(dot => {
-      dot.addEventListener('click', () => {
-        dots.forEach(d => d.classList.remove('active'));
-        dot.classList.add('active');
-      });
-    });
-  });
-
-  // ==================== FAQ Interaction Logic ====================
-  // FAQ Category Pill Switching
+  // FAQ Category Pill Switcher
   const faqCatBtns = document.querySelectorAll('.faq-category-btn');
   const faqPanels = document.querySelectorAll('.faq-category-panel');
 
@@ -73,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
       header.addEventListener('click', () => {
         const isOpen = item.classList.contains('active');
         
-        // Optional: Close sibling items in the same panel
         const parentPanel = item.closest('.faq-category-panel');
         if (parentPanel) {
           parentPanel.querySelectorAll('.faq-accordion-item').forEach(sibling => {
@@ -88,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ==================== Resources Subtab Logic ====================
+  // Resources Subtab Handler
   const resTabBtns = document.querySelectorAll('.res-tab-btn');
   const resourceData = {
     webinars: [
