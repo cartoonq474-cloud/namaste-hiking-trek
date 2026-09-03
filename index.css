@@ -7813,41 +7813,17 @@ textarea {
 .review-photos-grid {
   display: flex !important;
   flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  gap: 12px !important;
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-  padding: 6px 2px 14px 2px !important;
+  gap: 14px !important;
   margin: 16px 0 20px 0 !important;
-  scrollbar-width: thin !important;
-  scrollbar-color: #CBD5E1 transparent !important;
-  -webkit-overflow-scrolling: touch !important;
-}
-
-.review-photos-grid::-webkit-scrollbar {
-  height: 6px !important;
-}
-
-.review-photos-grid::-webkit-scrollbar-track {
-  background: #F1F5F9 !important;
-  border-radius: 10px !important;
-}
-
-.review-photos-grid::-webkit-scrollbar-thumb {
-  background: #CBD5E1 !important;
-  border-radius: 10px !important;
-}
-
-.review-photos-grid::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8 !important;
+  overflow: visible !important;
 }
 
 .review-photo-thumb {
-  width: 92px !important;
-  height: 92px !important;
-  min-width: 92px !important;
-  max-width: 92px !important;
-  flex: 0 0 92px !important;
+  width: 105px !important;
+  height: 105px !important;
+  min-width: 105px !important;
+  max-width: 105px !important;
+  flex: 0 0 105px !important;
   aspect-ratio: 1 / 1 !important;
   border-radius: 14px !important;
   object-fit: cover !important;
@@ -7858,7 +7834,7 @@ textarea {
 }
 
 .review-photo-thumb:hover {
-  transform: translateY(-4px) scale(1.06) !important;
+  transform: translateY(-4px) scale(1.05) !important;
   box-shadow: 0 10px 22px rgba(16, 185, 129, 0.2) !important;
   border-color: #10B981 !important;
 }
