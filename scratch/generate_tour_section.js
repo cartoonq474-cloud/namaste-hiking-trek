@@ -29,15 +29,76 @@ const tourPackages = [
       { title: 'Bhaktapur Durbar Square', desc: 'Medieval pottery city with 55-Window Palace, Golden Gate, and Nyatapola Temple.' }
     ],
     itinerary: [
-      { day: 1, title: 'Arrival in Kathmandu & Authentic Welcome Dinner', desc: 'Transfer from Tribhuvan International Airport to boutique hotel. Evening briefing and traditional Nepali dinner with cultural dance.' },
-      { day: 2, title: 'Kathmandu City Sightseeing: Swayambhunath, Durbar Square & Pashupatinath', desc: 'Guided exploration of ancient Swayambhunath monkey temple, Kathmandu royal palace square, and Pashupatinath Hindu temple.' },
-      { day: 3, title: 'Boudhanath Stupa, Patan Durbar Square & Bhaktapur Pottery City', desc: 'Circumambulate Boudhanath Stupa, admire Patan fine metalwork, and explore the cobblestone alleys of Bhaktapur.' },
-      { day: 4, title: 'Thamel Market Shopping & Airport Transfer', desc: 'Morning walk in Thamel market for pashmina and tea. Private AC vehicle transfer to airport for final departure.' }
+      {
+        day: 1,
+        title: 'Arrival in Kathmandu & Authentic Welcome Dinner',
+        subtitle: 'Kathmandu – 1,400 m / 4,593 ft',
+        transfer: '20 to 30 minutes airport pickup',
+        hotel: '3-Star / 4-Star Boutique Heritage Hotel in Kathmandu',
+        meals: 'Welcome Dinner (D)',
+        overnight: 'Kathmandu',
+        desc: 'Welcome to Kathmandu! Upon arrival at Tribhuvan International Airport (TIA), our representative will warmly welcome you with a traditional marigold garland and transfer you to your boutique hotel in Thamel. In the evening, gather at our office for a pre-tour briefing followed by an authentic Nepali welcome dinner with cultural dance.',
+        photos: [
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Full Day Sightseeing: Swayambhunath, Kathmandu Durbar Square & Pashupatinath',
+        subtitle: 'Kathmandu Heritage Tour – 5 to 6 hours',
+        transfer: 'Private AC Tourist Vehicle',
+        hotel: 'Boutique Hotel in Kathmandu',
+        meals: 'Breakfast (B)',
+        overnight: 'Kathmandu',
+        desc: 'Start your morning with a drive up to Swayambhunath Monkey Temple for panoramic views of the Kathmandu valley. Next, explore Kathmandu Durbar Square, home of the Living Goddess Kumari and ancient royal palaces. In the afternoon, visit Pashupatinath Temple to observe sacred Hindu rituals along the Bagmati River.',
+        photos: [
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Boudhanath Stupa, Patan Durbar Square & Bhaktapur Pottery City',
+        subtitle: 'Heritage Triangle – 6 hours',
+        transfer: 'Private AC Tourist Vehicle',
+        hotel: 'Boutique Hotel in Kathmandu',
+        meals: 'Breakfast (B)',
+        overnight: 'Kathmandu',
+        desc: 'Visit Boudhanath Stupa, one of the largest spherical stupas in the world. Next, head to Patan Durbar Square to admire fine Newari architecture and metal craftsmanship. Conclude the day in Bhaktapur, exploring cobblestone alleys, 55-Window Palace, and traditional pottery squares.',
+        photos: [
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Thamel Market Shopping & Airport Transfer',
+        subtitle: 'Departure Day',
+        transfer: 'Private AC Airport Drop-off',
+        hotel: 'Check-out',
+        meals: 'Breakfast (B)',
+        overnight: 'Departure',
+        desc: 'Enjoy a leisurely morning in Thamel market to pick up pashminas, tea, and souvenirs. Your private AC vehicle driver will meet you at the hotel lobby and drop you off at Tribhuvan International Airport 3 hours prior to your flight.',
+        photos: [
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80'
+        ]
+      }
     ],
     faqs: [
       { q: 'Is airport transfer included in this tour package?', a: 'Yes! We provide private AC car/van airport pickup and drop-off service for all flights.' },
-      { q: 'What category of hotels are provided?', a: 'We provide deluxe 3-Star to 4-Star boutique heritage hotels in Kathmandu with breakfast included.' },
-      { q: 'Are monument entry fees included?', a: 'Yes, all UNESCO heritage site entrance tickets and local monument fees are 100% included.' }
+      { q: 'What category of hotels are provided?', a: 'We provide deluxe 3-Star to 4-Star boutique heritage hotels in Kathmandu with daily breakfast included.' },
+      { q: 'Are monument entrance fees included?', a: 'Yes, all UNESCO heritage site entrance tickets and local monument fees are 100% included in the package price.' },
+      { q: 'Can this tour be customized?', a: 'Absoluely! We can extend your stay, add mountain flights, or upgrade to 5-star luxury hotels upon request.' }
     ]
   },
   {
@@ -65,14 +126,75 @@ const tourPackages = [
       { title: 'International Mountain Museum', desc: 'Exhibits detailing Himalayan mountaineering history, Sherpa culture, and flora.' }
     ],
     itinerary: [
-      { day: 1, title: 'Scenic Highway Travel from Kathmandu to Pokhara', desc: 'Travel along Trishuli & Marsyangdi rivers to Pokhara. Evening stroll along Lakeside Phewa.' },
-      { day: 2, title: 'Sarangkot Sunrise & Pokhara Lakes Sightseeing', desc: 'Early morning drive to Sarangkot hill for Annapurna sunrise. Afternoon boat ride to Tal Barahi Temple.' },
-      { day: 3, title: 'World Peace Pagoda, Davis Fall & Gupteshwor Cave', desc: 'Hike up to World Peace Pagoda, explore underground Gupteshwor cave, Davis Fall, and Mountain Museum.' },
-      { day: 4, title: 'Return Journey to Kathmandu & Departure', desc: 'Morning breakfast overlooking Phewa Lake before scenic return drive or flight back to Kathmandu.' }
+      {
+        day: 1,
+        title: 'Scenic Highway Travel from Kathmandu to Pokhara',
+        subtitle: 'Kathmandu to Pokhara – 6 to 7 hours drive',
+        transfer: 'Private AC Tourist Car / Van',
+        hotel: 'Deluxe Lakeside Hotel in Pokhara',
+        meals: 'Breakfast (B)',
+        overnight: 'Pokhara',
+        desc: 'Enjoy a scenic highway drive along Trishuli and Marsyangdi river valleys to Pokhara. Arrive in the afternoon, check into your lakeside hotel, and take a relaxing evening walk along the Phewa Lake promenade.',
+        photos: [
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Sarangkot Sunrise & Pokhara Lakes Sightseeing',
+        subtitle: 'Pokhara Valley Tour',
+        transfer: 'Private AC Vehicle & Boating',
+        hotel: 'Deluxe Lakeside Hotel in Pokhara',
+        meals: 'Breakfast (B)',
+        overnight: 'Pokhara',
+        desc: 'Early morning drive up to Sarangkot hill station for an unforgettable sunrise over the Annapurna and Dhaulagiri ranges. Return to hotel for breakfast, followed by a serene wooden boat ride on Phewa Lake to Tal Barahi Temple.',
+        photos: [
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 3,
+        title: 'World Peace Pagoda, Davis Fall & Gupteshwor Cave',
+        subtitle: 'Pokhara Excursions',
+        transfer: 'Private AC Vehicle',
+        hotel: 'Deluxe Lakeside Hotel in Pokhara',
+        meals: 'Breakfast (B)',
+        overnight: 'Pokhara',
+        desc: 'Drive up to World Peace Pagoda for breathtaking views over Pokhara Lake. Explore underground Gupteshwor Mahadev Cave, witness Davis Fall waterfall, and visit the International Mountain Museum.',
+        photos: [
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Return Journey to Kathmandu & Departure',
+        subtitle: 'Pokhara to Kathmandu',
+        transfer: 'Private AC Vehicle / Airport Transfer',
+        hotel: 'Check-out',
+        meals: 'Breakfast (B)',
+        overnight: 'Departure',
+        desc: 'Enjoy morning breakfast with views of Machhapuchhre before your private vehicle return drive or domestic flight back to Kathmandu.',
+        photos: [
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80'
+        ]
+      }
     ],
     faqs: [
       { q: 'Can we take a domestic flight to Pokhara instead of driving?', a: 'Yes! Domestic flights between Kathmandu and Pokhara (25 minutes) can be added to your package.' },
-      { q: 'Is Sarangkot sunrise trip early in the morning?', a: 'Yes, we depart hotel around 5:00 AM to catch the golden morning light over the Annapurna peak range.' }
+      { q: 'Is Sarangkot sunrise trip early in the morning?', a: 'Yes, we depart hotel around 5:00 AM to catch the golden morning light over the Annapurna peak range.' },
+      { q: 'Is boating on Phewa Lake safe?', a: 'Yes, all boats are equipped with life jackets and guided by professional local boatmen.' }
     ]
   },
   {
@@ -100,18 +222,139 @@ const tourPackages = [
       { title: 'Luxury Comfort', desc: 'Private tourist vehicle transfers and 3-Star to 4-Star deluxe hotel stays.' }
     ],
     itinerary: [
-      { day: 1, title: 'Arrival in Kathmandu & Welcome Briefing', desc: 'Airport transfer to hotel. Trip briefing with lead guide and evening welcome dinner.' },
-      { day: 2, title: 'Full Day Kathmandu UNESCO Heritage Tour', desc: 'Guided sightseeing at Swayambhunath monkey temple, Kathmandu Durbar Square, Pashupatinath, and Boudhanath.' },
-      { day: 3, title: 'Drive to Chitwan National Park', desc: 'Drive down to subtropical Terai plains. Evening Tharu village walk and cultural dance.' },
-      { day: 4, title: 'Chitwan Jungle Safari & Wildlife Excursions', desc: 'Jeep safari inside Chitwan National Park to spot one-horned rhinos, canoe ride on Rapti River, and elephant center visit.' },
-      { day: 5, title: 'Drive from Chitwan to Pokhara', desc: 'Travel along Marsyangdi River valley to Pokhara. Sunset relaxing along Lakeside Phewa.' },
-      { day: 6, title: 'Sarangkot Sunrise & Pokhara Sightseeing', desc: 'Early morning Annapurna sunrise from Sarangkot, boat ride to Tal Barahi, Davis Fall, and Peace Pagoda.' },
-      { day: 7, title: 'Return Drive to Kathmandu', desc: 'Scenic highway travel back to Kathmandu. Evening farewell dinner.' },
-      { day: 8, title: 'Final Departure Transfer', desc: 'Morning breakfast before private airport transfer for your flight home.' }
+      {
+        day: 1,
+        title: 'Arrival in Kathmandu & Welcome Briefing',
+        subtitle: 'Kathmandu – 1,400 m / 4,593 ft',
+        transfer: 'Private Airport Pickup',
+        hotel: '3-Star / 4-Star Boutique Hotel in Kathmandu',
+        meals: 'Welcome Dinner (D)',
+        overnight: 'Kathmandu',
+        desc: 'Airport transfer to hotel. Trip briefing with lead guide and evening welcome dinner with Nepalese cultural music.',
+        photos: [
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Full Day Kathmandu UNESCO Heritage Tour',
+        subtitle: 'Kathmandu Sightseeing',
+        transfer: 'Private AC Tourist Vehicle',
+        hotel: 'Boutique Hotel in Kathmandu',
+        meals: 'Breakfast (B)',
+        overnight: 'Kathmandu',
+        desc: 'Guided sightseeing at Swayambhunath monkey temple, Kathmandu Durbar Square, Pashupatinath Hindu shrine, and Boudhanath Stupa.',
+        photos: [
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Drive to Chitwan National Park',
+        subtitle: 'Kathmandu to Chitwan – 5 hours drive',
+        transfer: 'Private AC Tourist Vehicle',
+        hotel: 'Jungle Safari Resort in Chitwan',
+        meals: 'Breakfast, Lunch & Dinner (B, L, D)',
+        overnight: 'Chitwan',
+        desc: 'Drive down to subtropical Terai plains. Arrive at safari resort, enjoy lunch, followed by a Tharu village walk and evening cultural dance.',
+        photos: [
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Chitwan Jungle Safari & Wildlife Excursions',
+        subtitle: 'Full Day Safari Activities',
+        transfer: '4WD Open Jeep & Canoe',
+        hotel: 'Jungle Safari Resort in Chitwan',
+        meals: 'Breakfast, Lunch & Dinner (B, L, D)',
+        overnight: 'Chitwan',
+        desc: 'Jeep safari inside Chitwan National Park to spot one-horned rhinos, canoe ride on Rapti River observing mugger crocodiles, and elephant breeding center visit.',
+        photos: [
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Drive from Chitwan to Pokhara',
+        subtitle: 'Chitwan to Pokhara – 4 to 5 hours drive',
+        transfer: 'Private AC Tourist Vehicle',
+        hotel: 'Deluxe Lakeside Hotel in Pokhara',
+        meals: 'Breakfast (B)',
+        overnight: 'Pokhara',
+        desc: 'Travel along Marsyangdi River valley to Pokhara. Sunset relaxing along Lakeside Phewa.',
+        photos: [
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Sarangkot Sunrise & Pokhara Sightseeing',
+        subtitle: 'Pokhara Sightseeing',
+        transfer: 'Private AC Vehicle & Boating',
+        hotel: 'Deluxe Lakeside Hotel in Pokhara',
+        meals: 'Breakfast (B)',
+        overnight: 'Pokhara',
+        desc: 'Early morning Annapurna sunrise from Sarangkot, boat ride to Tal Barahi, Davis Fall, and Peace Pagoda.',
+        photos: [
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 7,
+        title: 'Return Drive to Kathmandu',
+        subtitle: 'Pokhara to Kathmandu – 6 hours drive',
+        transfer: 'Private AC Tourist Vehicle',
+        hotel: 'Boutique Hotel in Kathmandu',
+        meals: 'Breakfast & Farewell Dinner (B, D)',
+        overnight: 'Kathmandu',
+        desc: 'Scenic highway travel back to Kathmandu. Evening farewell dinner celebrating your Golden Triangle journey.',
+        photos: [
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 8,
+        title: 'Final Departure Transfer',
+        subtitle: 'Airport Transfer',
+        transfer: 'Private Airport Transfer',
+        hotel: 'Check-out',
+        meals: 'Breakfast (B)',
+        overnight: 'Departure',
+        desc: 'Morning breakfast before private airport transfer for your flight home.',
+        photos: [
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80'
+        ]
+      }
     ],
     faqs: [
       { q: 'Is this tour suitable for families and senior citizens?', a: 'Yes! This Golden Triangle tour is easy-paced, uses private AC vehicles, and is suitable for all age groups.' },
-      { q: 'Are meals included in Chitwan National Park?', a: 'Yes! All breakfast, lunch, and dinner meals during the Chitwan jungle safari resort stay are 100% included.' }
+      { q: 'Are meals included in Chitwan National Park?', a: 'Yes! All breakfast, lunch, and dinner meals during the Chitwan jungle safari resort stay are 100% included.' },
+      { q: 'What vehicles are used for transfers?', a: 'We use private AC cars for 1-2 passengers, luxury AC vans for 3-5 passengers, and coaster buses for larger groups.' }
     ]
   },
   {
@@ -139,12 +382,58 @@ const tourPackages = [
       { title: 'Bird Watching Sanctuary', desc: 'Guided morning walk spotting hornbills, kingfishers, and peacocks.' }
     ],
     itinerary: [
-      { day: 1, title: 'Drive to Chitwan National Park & Tharu Village Walk', desc: 'Drive to Sauraha, Chitwan. Sunset view over Rapti River followed by Tharu cultural stick dance performance.' },
-      { day: 2, title: 'Deep Jungle Jeep Safari, Canoe Ride & Elephant Center', desc: 'Dugout canoe ride along Rapti river, guided nature walk, deep jeep safari inside park, and elephant breeding center visit.' },
-      { day: 3, title: 'Bird Watching & Departure', desc: 'Early morning bird watching tour with resident naturalist. Breakfast before departure to Kathmandu or Pokhara.' }
+      {
+        day: 1,
+        title: 'Drive to Chitwan National Park & Tharu Village Walk',
+        subtitle: 'Kathmandu to Chitwan – 5 hours drive',
+        transfer: 'Private AC Tourist Vehicle',
+        hotel: 'Jungle Safari Resort in Chitwan',
+        meals: 'Lunch & Dinner (L, D)',
+        overnight: 'Chitwan',
+        desc: 'Drive to Sauraha, Chitwan. Sunset view over Rapti River followed by Tharu cultural stick dance performance.',
+        photos: [
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Deep Jungle Jeep Safari, Canoe Ride & Elephant Center',
+        subtitle: 'Full Day Safari Activities',
+        transfer: '4WD Open Safari Jeep & Canoe',
+        hotel: 'Jungle Safari Resort in Chitwan',
+        meals: 'Breakfast, Lunch & Dinner (B, L, D)',
+        overnight: 'Chitwan',
+        desc: 'Dugout canoe ride along Rapti river, guided nature walk, deep jeep safari inside park, and elephant breeding center visit.',
+        photos: [
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Bird Watching & Departure',
+        subtitle: 'Chitwan to Kathmandu / Pokhara',
+        transfer: 'Private AC Tourist Vehicle',
+        hotel: 'Check-out',
+        meals: 'Breakfast (B)',
+        overnight: 'Departure',
+        desc: 'Early morning bird watching tour with resident naturalist. Breakfast before departure to Kathmandu or Pokhara.',
+        photos: [
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&q=80'
+        ]
+      }
     ],
     faqs: [
-      { q: 'What is the chance of seeing one-horned rhinos?', a: 'Over 95%! One-horned rhinos are frequently spotted during the jeep safari and river canoe ride.' }
+      { q: 'What is the chance of seeing one-horned rhinos?', a: 'Over 95%! One-horned rhinos are frequently spotted during the jeep safari and river canoe ride.' },
+      { q: 'Are all resort meals included?', a: 'Yes! Breakfast, lunch, and dinner are 100% included during your Chitwan resort stay.' }
     ]
   },
   {
@@ -172,9 +461,54 @@ const tourPackages = [
       { title: 'Ridge Trail Walk', desc: 'Gentle nature walk through pine forests and Tamang hill villages.' }
     ],
     itinerary: [
-      { day: 1, title: 'Explore Bhaktapur Durbar Square & Drive to Nagarkot', desc: 'Guided tour of Bhaktapur ancient pottery city and 55-window palace. Drive up to Nagarkot hill station for sunset.' },
-      { day: 2, title: 'Nagarkot Sunrise & Hike to Changu Narayan Temple', desc: 'Spectacular Himalayan sunrise over Everest range. 3-hour downhill ridge hike to ancient Changu Narayan Temple.' },
-      { day: 3, title: 'Return Drive to Kathmandu & Airport Departure', desc: 'Morning breakfast with mountain views. Private transfer back to Kathmandu for departure.' }
+      {
+        day: 1,
+        title: 'Explore Bhaktapur Durbar Square & Drive to Nagarkot',
+        subtitle: 'Kathmandu to Nagarkot via Bhaktapur',
+        transfer: 'Private AC Tourist Vehicle',
+        hotel: 'Nagarkot Mountain View Resort',
+        meals: 'Breakfast (B)',
+        overnight: 'Nagarkot (2,175m)',
+        desc: 'Guided tour of Bhaktapur ancient pottery city and 55-window palace. Drive up to Nagarkot hill station for sunset.',
+        photos: [
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Nagarkot Sunrise & Hike to Changu Narayan Temple',
+        subtitle: 'Himalayan Sunrise & Heritage Hike',
+        transfer: 'Private AC Tourist Vehicle',
+        hotel: 'Boutique Hotel in Kathmandu',
+        meals: 'Breakfast (B)',
+        overnight: 'Kathmandu',
+        desc: 'Spectacular Himalayan sunrise over Everest range. 3-hour downhill ridge hike through pine forest to ancient Changu Narayan Temple.',
+        photos: [
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Return Drive to Kathmandu & Airport Departure',
+        subtitle: 'Airport Transfer',
+        transfer: 'Private Airport Drop-off',
+        hotel: 'Check-out',
+        meals: 'Breakfast (B)',
+        overnight: 'Departure',
+        desc: 'Morning breakfast with mountain views. Private transfer back to Kathmandu for departure.',
+        photos: [
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80'
+        ]
+      }
     ],
     faqs: [
       { q: 'Can we see Mt. Everest from Nagarkot?', a: 'Yes! On clear days (especially Oct-Nov & Mar-Apr), Mt. Everest is visible as a white peak on the eastern horizon.' }
@@ -204,11 +538,86 @@ const tourPackages = [
       { title: '5-Star Luxury Resorts', desc: 'Stay at Dwarika’s Heritage Resort Kathmandu & Pokhara Luxury Lakeside Spa Resort.' }
     ],
     itinerary: [
-      { day: 1, title: 'VIP Airport Arrival in Kathmandu', desc: 'Private luxury Mercedes/SUV transfer to 5-Star Hotel (Dwarika’s or Marriott). Fine dining briefing.' },
-      { day: 2, title: 'Everest Base Camp & Kala Patthar Helicopter Excursion', desc: 'Fly by private helicopter over Lukla, Syangboche, Kala Patthar (5,545m), and Khumbu glacier. Champagne breakfast at Hotel Everest View.' },
-      { day: 3, title: 'Helicopter Transfer to Pokhara & Annapurna Aerial Flight', desc: 'Helicopter transfer past Langtang to Pokhara. Aerial flight over Annapurna Base Camp & Machhapuchhre peak.' },
-      { day: 4, title: 'Pokhara Luxury Leisure & Lakeside Spa Day', desc: 'Private boat ride on Phewa Lake, body massage treatment at luxury spa resort, and lakeside fine dining.' },
-      { day: 5, title: 'Fly back to Kathmandu & VIP Departure', desc: 'Private return flight to Kathmandu and VIP airport transfer.' }
+      {
+        day: 1,
+        title: 'VIP Airport Arrival in Kathmandu',
+        subtitle: '5-Star Hotel Transfer',
+        transfer: 'Private Mercedes / Luxury SUV Transfer',
+        hotel: '5-Star Dwarika’s Heritage Resort or Marriott Kathmandu',
+        meals: 'Welcome Gourmet Dinner (D)',
+        overnight: 'Kathmandu',
+        desc: 'Private luxury Mercedes/SUV transfer to 5-Star Hotel (Dwarika’s or Marriott). Fine dining briefing.',
+        photos: [
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 2,
+        title: 'Everest Base Camp & Kala Patthar Helicopter Excursion',
+        subtitle: 'Everest Heli Tour (5,545m Landing)',
+        transfer: 'Private Airbus B3e / Eurocopter Helicopter',
+        hotel: '5-Star Resort in Kathmandu',
+        meals: 'Champagne Breakfast at Hotel Everest View (3,880m)',
+        overnight: 'Kathmandu',
+        desc: 'Fly by private helicopter over Lukla, Syangboche, Kala Patthar (5,545m), and Khumbu glacier. Champagne breakfast at Hotel Everest View.',
+        photos: [
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 3,
+        title: 'Helicopter Transfer to Pokhara & Annapurna Aerial Flight',
+        subtitle: 'Heli Transfer to Pokhara',
+        transfer: 'Private Helicopter Flight',
+        hotel: '5-Star Luxury Lakeside Resort Pokhara',
+        meals: 'Breakfast (B)',
+        overnight: 'Pokhara',
+        desc: 'Helicopter transfer past Langtang to Pokhara. Aerial flight over Annapurna Base Camp & Machhapuchhre peak.',
+        photos: [
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Pokhara Luxury Leisure & Lakeside Spa Day',
+        subtitle: 'Relaxation & Spa',
+        transfer: 'Private Luxury Vehicle',
+        hotel: '5-Star Luxury Lakeside Resort Pokhara',
+        meals: 'Breakfast (B)',
+        overnight: 'Pokhara',
+        desc: 'Private boat ride on Phewa Lake, body massage treatment at luxury spa resort, and lakeside fine dining.',
+        photos: [
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Fly back to Kathmandu & VIP Departure',
+        subtitle: 'VIP Departure',
+        transfer: 'Private Flight & Luxury SUV Airport Transfer',
+        hotel: 'Check-out',
+        meals: 'Breakfast (B)',
+        overnight: 'Departure',
+        desc: 'Private return flight to Kathmandu and VIP airport transfer.',
+        photos: [
+          'https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80',
+          'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80'
+        ]
+      }
     ],
     faqs: [
       { q: 'Do we land at Everest Base Camp / Kala Patthar?', a: 'Yes! Weather permitting, the helicopter lands at Kala Patthar (5,545m) for 10-15 minutes for photo opportunities.' },
@@ -217,7 +626,7 @@ const tourPackages = [
   }
 ];
 
-// Generate 100% Complete Tour Landing Pages (Matching Trek Page Layout & All Sections)
+// Generate 100% Complete Tour Landing Pages (Matching Trek Page Layout, Accordions, Reviews & Scripts)
 tourPackages.forEach(pkg => {
   const dirPath = path.join(projectRoot, 'tour', pkg.slug);
   fs.mkdirSync(dirPath, { recursive: true });
@@ -630,23 +1039,85 @@ tourPackages.forEach(pkg => {
               </div>
             </section>
 
-            <!-- Day-by-Day Detailed Itinerary -->
+            <!-- Day-by-Day Expandable Itinerary Accordion (Identical to Trek Page Layout) -->
             <section id="section-itinerary" class="trek-detail-section" style="margin-bottom: 36px;">
-              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 20px;">Day-by-Day Itinerary</h2>
-              <div style="display: flex; flex-direction: column; gap: 16px;">
-                ${pkg.itinerary.map(item => `
-                  <div style="background: #FFFFFF; border-radius: 14px; border: 1px solid #E2E8F0; padding: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
-                      <span style="background: #10B981; color: #FFFFFF; font-weight: 800; padding: 4px 14px; border-radius: 50px; font-size: 0.82rem;">DAY ${item.day}</span>
-                      <h3 style="font-size: 1.15rem; color: #0F172A; margin: 0;">${item.title}</h3>
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 20px;">Day-by-Day Detailed Itinerary</h2>
+              
+              <div class="itinerary-timeline">
+                ${pkg.itinerary.map((item, idx) => `
+                  <div class="itinerary-card ${idx === 0 ? 'active' : ''}">
+                    <div class="itinerary-header">
+                      <div class="itinerary-header-left">
+                        <h4 class="itinerary-day-title-new">
+                          <span class="day-label">Day ${item.day}:</span> ${item.title}
+                        </h4>
+                        <p class="itinerary-day-subtitle-new">
+                          ${item.subtitle}
+                        </p>
+                      </div>
+                      <div class="itinerary-header-right">
+                        <div class="itinerary-toggle-btn-new">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin: 0;">${item.desc}</p>
+                    <div class="itinerary-content" style="${idx === 0 ? 'max-height: 1200px;' : ''}">
+                      <div class="itinerary-content-inner">
+                        <div class="itinerary-metrics-list">
+                          <div class="itinerary-metric-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Transport / Activity: ${item.transfer}</span>
+                          </div>
+                          <div class="itinerary-metric-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <span>Hotel: ${item.hotel}</span>
+                          </div>
+                        </div>
+
+                        <div class="itinerary-meta-box">
+                          <div class="itinerary-meta-box-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            </svg>
+                            <span>Meals: ${item.meals}</span>
+                          </div>
+                          <div class="itinerary-meta-box-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+                              <circle cx="12" cy="9" r="2.5"></circle>
+                            </svg>
+                            <span>Overnight: ${item.overnight}</span>
+                          </div>
+                        </div>
+
+                        <div class="itinerary-description">
+                          <p>${item.desc}</p>
+                        </div>
+
+                        <div class="itinerary-photos-grid">
+                          ${item.photos.map(photo => `
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="${photo}" alt="Day ${item.day} Sightseeing View">
+                            </div>
+                          `).join('')}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 `).join('')}
               </div>
             </section>
 
-            <!-- Includes & Excludes -->
+            <!-- Includes & Excludes (Identical to Trek Page Layout) -->
             <section id="section-includes" class="trek-detail-section" style="margin-bottom: 36px;">
               <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 20px;">What's Included & Excluded</h2>
               <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
@@ -656,7 +1127,7 @@ tourPackages.forEach(pkg => {
                   <h3 style="color: #047857; font-size: 1.15rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
                     <span style="font-weight: 800;">✓</span> Included Services
                   </h3>
-                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: #064E3B;">
+                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; font-size: 0.94rem; color: #064E3B;">
                     <li>✓ Private AC Tourist Vehicle Airport Pickups & Transfers</li>
                     <li>✓ 3-Star / 4-Star Deluxe Hotel Accommodations</li>
                     <li>✓ Government Licensed Experienced Tour Guide</li>
@@ -671,7 +1142,7 @@ tourPackages.forEach(pkg => {
                   <h3 style="color: #B91C1C; font-size: 1.15rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
                     <span style="font-weight: 800;">✕</span> Excluded Services
                   </h3>
-                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: #7F1D1D;">
+                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; font-size: 0.94rem; color: #7F1D1D;">
                     <li>✕ International Airfare to/from Kathmandu</li>
                     <li>✕ Nepal Entry Tourist Visa Fee</li>
                     <li>✕ Personal Expenses (Laundry, Drinks, Souvenirs)</li>
@@ -724,36 +1195,75 @@ tourPackages.forEach(pkg => {
               </div>
             </section>
 
-            <!-- Customer Reviews & Ratings Section -->
+            <!-- Customer Reviews & Ratings Section (Identical to Trek Page Layout) -->
             <section id="section-reviews" class="trek-detail-section" style="margin-bottom: 36px;">
-              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Verified Customer Reviews</h2>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin: 0;">Verified Customer Reviews</h2>
+                <a href="../../reviews.html" class="btn" style="background: #ECFDF5; color: #047857; font-weight: 700; font-size: 0.88rem; padding: 8px 16px;">View All 1,200+ Reviews →</a>
+              </div>
+
               <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
                 
-                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-                  <div style="color: #F59E0B; margin-bottom: 8px;">★★★★★</div>
-                  <h4 style="font-size: 1.05rem; color: #0F172A; margin-bottom: 6px;">Unforgettable Tour Experience</h4>
-                  <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">"Namaste Hiking Trek organized our custom tour perfectly. Driver and tour guide were professional, polite, and punctual throughout!"</p>
-                  <div style="font-size: 0.82rem; color: #64748B;"><strong>Mark & Sarah H.</strong> (UK) • Verified Traveler</div>
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 22px; box-shadow: 0 4px 14px rgba(0,0,0,0.04);">
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                    <div style="color: #F59E0B; font-size: 1.1rem;">★★★★★</div>
+                    <span style="background: #ECFDF5; color: #047857; font-weight: 800; font-size: 0.75rem; padding: 3px 8px; border-radius: 50px;">TripAdvisor Verified</span>
+                  </div>
+                  <h4 style="font-size: 1.08rem; color: #0F172A; margin-bottom: 8px;">Unforgettable Tour Experience</h4>
+                  <p style="font-size: 0.92rem; color: #475569; line-height: 1.65; margin-bottom: 16px;">"Namaste Hiking Trek organized our custom tour perfectly. Driver and tour guide were professional, polite, and punctual throughout!"</p>
+                  <div style="display: flex; align-items: center; gap: 12px; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                    <div style="width: 36px; height: 36px; background: #10B981; color: #FFF; border-radius: 50%; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 0.88rem;">MH</div>
+                    <div>
+                      <strong style="color: #0F172A; font-size: 0.9rem; display: block;">Mark & Sarah H.</strong>
+                      <span style="font-size: 0.8rem; color: #64748B;">United Kingdom • Oct 2025</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-                  <div style="color: #F59E0B; margin-bottom: 8px;">★★★★★</div>
-                  <h4 style="font-size: 1.05rem; color: #0F172A; margin-bottom: 6px;">Top-Tier Local Service</h4>
-                  <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">"Highly recommend Namaste Hiking Trek for any Nepal tour or safari. Smooth logistics, luxury vehicles, and genuine local hospitality."</p>
-                  <div style="font-size: 0.82rem; color: #64748B;"><strong>Sophie Martin</strong> (France) • Verified Traveler</div>
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 22px; box-shadow: 0 4px 14px rgba(0,0,0,0.04);">
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                    <div style="color: #F59E0B; font-size: 1.1rem;">★★★★★</div>
+                    <span style="background: #EFF6FF; color: #1D4ED8; font-weight: 800; font-size: 0.75rem; padding: 3px 8px; border-radius: 50px;">Google Verified</span>
+                  </div>
+                  <h4 style="font-size: 1.08rem; color: #0F172A; margin-bottom: 8px;">Top-Tier Local Service</h4>
+                  <p style="font-size: 0.92rem; color: #475569; line-height: 1.65; margin-bottom: 16px;">"Highly recommend Namaste Hiking Trek for any Nepal tour or safari. Smooth logistics, luxury vehicles, and genuine local hospitality."</p>
+                  <div style="display: flex; align-items: center; gap: 12px; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                    <div style="width: 36px; height: 36px; background: #3B82F6; color: #FFF; border-radius: 50%; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 0.88rem;">SM</div>
+                    <div>
+                      <strong style="color: #0F172A; font-size: 0.9rem; display: block;">Sophie Martin</strong>
+                      <span style="font-size: 0.8rem; color: #64748B;">France • Nov 2025</span>
+                    </div>
+                  </div>
                 </div>
 
               </div>
             </section>
 
-            <!-- FAQs Section -->
+            <!-- FAQs Accordion Section (Identical to Trek Page Layout) -->
             <section id="section-faqs" class="trek-detail-section" style="margin-bottom: 36px;">
               <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Frequently Asked Questions</h2>
-              <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div class="itinerary-timeline">
                 ${pkg.faqs.map(faq => `
-                  <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px;">
-                    <strong style="color: #0F172A; font-size: 1.02rem; display: block; margin-bottom: 6px;">Q: ${faq.q}</strong>
-                    <p style="color: #475569; font-size: 0.92rem; margin: 0; line-height: 1.6;">${faq.a}</p>
+                  <div class="itinerary-card">
+                    <div class="itinerary-header">
+                      <div class="itinerary-header-left">
+                        <h4 class="itinerary-day-title-new" style="font-size: 1.05rem;">
+                          Q: ${faq.q}
+                        </h4>
+                      </div>
+                      <div class="itinerary-header-right">
+                        <div class="itinerary-toggle-btn-new">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="itinerary-content">
+                      <div class="itinerary-content-inner">
+                        <p style="color: #475569; font-size: 0.95rem; margin: 0; line-height: 1.65;">${faq.a}</p>
+                      </div>
+                    </div>
                   </div>
                 `).join('')}
               </div>
@@ -842,13 +1352,14 @@ tourPackages.forEach(pkg => {
   </footer>
 
   <script type="module" src="../../js/inquiry-modal.js"></script>
+  <script type="module" src="../../js/trek-details.js?v=10"></script>
   <script src="../../js/header-scroll.js"></script>
 </body>
 </html>
 `;
 
   fs.writeFileSync(path.join(dirPath, 'index.html'), htmlContent, 'utf8');
-  console.log(`Generated 100% Complete Tour Page: tour/${pkg.slug}/index.html`);
+  console.log(`Generated 100% Interactive Tour Page: tour/${pkg.slug}/index.html`);
 });
 
 // 2. Generate Central Tour Directory Hub Page: tours.html

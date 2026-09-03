@@ -430,39 +430,259 @@
               </div>
             </section>
 
-            <!-- Day-by-Day Detailed Itinerary -->
+            <!-- Day-by-Day Expandable Itinerary Accordion (Identical to Trek Page Layout) -->
             <section id="section-itinerary" class="trek-detail-section" style="margin-bottom: 36px;">
-              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 20px;">Day-by-Day Itinerary</h2>
-              <div style="display: flex; flex-direction: column; gap: 16px;">
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 20px;">Day-by-Day Detailed Itinerary</h2>
+              
+              <div class="itinerary-timeline">
                 
-                  <div style="background: #FFFFFF; border-radius: 14px; border: 1px solid #E2E8F0; padding: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
-                      <span style="background: #10B981; color: #FFFFFF; font-weight: 800; padding: 4px 14px; border-radius: 50px; font-size: 0.82rem;">DAY 1</span>
-                      <h3 style="font-size: 1.15rem; color: #0F172A; margin: 0;">Explore Bhaktapur Durbar Square & Drive to Nagarkot</h3>
+                  <div class="itinerary-card active">
+                    <div class="itinerary-header">
+                      <div class="itinerary-header-left">
+                        <h4 class="itinerary-day-title-new">
+                          <span class="day-label">Day 1:</span> Explore Bhaktapur Durbar Square & Drive to Nagarkot
+                        </h4>
+                        <p class="itinerary-day-subtitle-new">
+                          Kathmandu to Nagarkot via Bhaktapur
+                        </p>
+                      </div>
+                      <div class="itinerary-header-right">
+                        <div class="itinerary-toggle-btn-new">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin: 0;">Guided tour of Bhaktapur ancient pottery city and 55-window palace. Drive up to Nagarkot hill station for sunset.</p>
+                    <div class="itinerary-content" style="max-height: 1200px;">
+                      <div class="itinerary-content-inner">
+                        <div class="itinerary-metrics-list">
+                          <div class="itinerary-metric-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Transport / Activity: Private AC Tourist Vehicle</span>
+                          </div>
+                          <div class="itinerary-metric-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <span>Hotel: Nagarkot Mountain View Resort</span>
+                          </div>
+                        </div>
+
+                        <div class="itinerary-meta-box">
+                          <div class="itinerary-meta-box-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            </svg>
+                            <span>Meals: Breakfast (B)</span>
+                          </div>
+                          <div class="itinerary-meta-box-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+                              <circle cx="12" cy="9" r="2.5"></circle>
+                            </svg>
+                            <span>Overnight: Nagarkot (2,175m)</span>
+                          </div>
+                        </div>
+
+                        <div class="itinerary-description">
+                          <p>Guided tour of Bhaktapur ancient pottery city and 55-window palace. Drive up to Nagarkot hill station for sunset.</p>
+                        </div>
+
+                        <div class="itinerary-photos-grid">
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80" alt="Day 1 Sightseeing View">
+                            </div>
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80" alt="Day 1 Sightseeing View">
+                            </div>
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=80" alt="Day 1 Sightseeing View">
+                            </div>
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80" alt="Day 1 Sightseeing View">
+                            </div>
+                          
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 
-                  <div style="background: #FFFFFF; border-radius: 14px; border: 1px solid #E2E8F0; padding: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
-                      <span style="background: #10B981; color: #FFFFFF; font-weight: 800; padding: 4px 14px; border-radius: 50px; font-size: 0.82rem;">DAY 2</span>
-                      <h3 style="font-size: 1.15rem; color: #0F172A; margin: 0;">Nagarkot Sunrise & Hike to Changu Narayan Temple</h3>
+                  <div class="itinerary-card ">
+                    <div class="itinerary-header">
+                      <div class="itinerary-header-left">
+                        <h4 class="itinerary-day-title-new">
+                          <span class="day-label">Day 2:</span> Nagarkot Sunrise & Hike to Changu Narayan Temple
+                        </h4>
+                        <p class="itinerary-day-subtitle-new">
+                          Himalayan Sunrise & Heritage Hike
+                        </p>
+                      </div>
+                      <div class="itinerary-header-right">
+                        <div class="itinerary-toggle-btn-new">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin: 0;">Spectacular Himalayan sunrise over Everest range. 3-hour downhill ridge hike to ancient Changu Narayan Temple.</p>
+                    <div class="itinerary-content" style="">
+                      <div class="itinerary-content-inner">
+                        <div class="itinerary-metrics-list">
+                          <div class="itinerary-metric-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Transport / Activity: Private AC Tourist Vehicle</span>
+                          </div>
+                          <div class="itinerary-metric-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <span>Hotel: Boutique Hotel in Kathmandu</span>
+                          </div>
+                        </div>
+
+                        <div class="itinerary-meta-box">
+                          <div class="itinerary-meta-box-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            </svg>
+                            <span>Meals: Breakfast (B)</span>
+                          </div>
+                          <div class="itinerary-meta-box-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+                              <circle cx="12" cy="9" r="2.5"></circle>
+                            </svg>
+                            <span>Overnight: Kathmandu</span>
+                          </div>
+                        </div>
+
+                        <div class="itinerary-description">
+                          <p>Spectacular Himalayan sunrise over Everest range. 3-hour downhill ridge hike through pine forest to ancient Changu Narayan Temple.</p>
+                        </div>
+
+                        <div class="itinerary-photos-grid">
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80" alt="Day 2 Sightseeing View">
+                            </div>
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80" alt="Day 2 Sightseeing View">
+                            </div>
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80" alt="Day 2 Sightseeing View">
+                            </div>
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=400&q=80" alt="Day 2 Sightseeing View">
+                            </div>
+                          
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 
-                  <div style="background: #FFFFFF; border-radius: 14px; border: 1px solid #E2E8F0; padding: 22px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
-                      <span style="background: #10B981; color: #FFFFFF; font-weight: 800; padding: 4px 14px; border-radius: 50px; font-size: 0.82rem;">DAY 3</span>
-                      <h3 style="font-size: 1.15rem; color: #0F172A; margin: 0;">Return Drive to Kathmandu & Airport Departure</h3>
+                  <div class="itinerary-card ">
+                    <div class="itinerary-header">
+                      <div class="itinerary-header-left">
+                        <h4 class="itinerary-day-title-new">
+                          <span class="day-label">Day 3:</span> Return Drive to Kathmandu & Airport Departure
+                        </h4>
+                        <p class="itinerary-day-subtitle-new">
+                          Airport Transfer
+                        </p>
+                      </div>
+                      <div class="itinerary-header-right">
+                        <div class="itinerary-toggle-btn-new">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                          </svg>
+                        </div>
+                      </div>
                     </div>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin: 0;">Morning breakfast with mountain views. Private transfer back to Kathmandu for departure.</p>
+                    <div class="itinerary-content" style="">
+                      <div class="itinerary-content-inner">
+                        <div class="itinerary-metrics-list">
+                          <div class="itinerary-metric-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Transport / Activity: Private Airport Drop-off</span>
+                          </div>
+                          <div class="itinerary-metric-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <span>Hotel: Check-out</span>
+                          </div>
+                        </div>
+
+                        <div class="itinerary-meta-box">
+                          <div class="itinerary-meta-box-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            </svg>
+                            <span>Meals: Breakfast (B)</span>
+                          </div>
+                          <div class="itinerary-meta-box-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+                              <circle cx="12" cy="9" r="2.5"></circle>
+                            </svg>
+                            <span>Overnight: Departure</span>
+                          </div>
+                        </div>
+
+                        <div class="itinerary-description">
+                          <p>Morning breakfast with mountain views. Private transfer back to Kathmandu for departure.</p>
+                        </div>
+
+                        <div class="itinerary-photos-grid">
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=400&q=80" alt="Day 3 Sightseeing View">
+                            </div>
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?auto=format&fit=crop&w=400&q=80" alt="Day 3 Sightseeing View">
+                            </div>
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=400&q=80" alt="Day 3 Sightseeing View">
+                            </div>
+                          
+                            <div class="itinerary-photo-wrapper">
+                              <img loading="lazy" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=400&q=80" alt="Day 3 Sightseeing View">
+                            </div>
+                          
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 
               </div>
             </section>
 
-            <!-- Includes & Excludes -->
+            <!-- Includes & Excludes (Identical to Trek Page Layout) -->
             <section id="section-includes" class="trek-detail-section" style="margin-bottom: 36px;">
               <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 20px;">What's Included & Excluded</h2>
               <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
@@ -472,7 +692,7 @@
                   <h3 style="color: #047857; font-size: 1.15rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
                     <span style="font-weight: 800;">✓</span> Included Services
                   </h3>
-                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: #064E3B;">
+                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; font-size: 0.94rem; color: #064E3B;">
                     <li>✓ Private AC Tourist Vehicle Airport Pickups & Transfers</li>
                     <li>✓ 3-Star / 4-Star Deluxe Hotel Accommodations</li>
                     <li>✓ Government Licensed Experienced Tour Guide</li>
@@ -487,7 +707,7 @@
                   <h3 style="color: #B91C1C; font-size: 1.15rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
                     <span style="font-weight: 800;">✕</span> Excluded Services
                   </h3>
-                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.92rem; color: #7F1D1D;">
+                  <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; font-size: 0.94rem; color: #7F1D1D;">
                     <li>✕ International Airfare to/from Kathmandu</li>
                     <li>✕ Nepal Entry Tourist Visa Fee</li>
                     <li>✕ Personal Expenses (Laundry, Drinks, Souvenirs)</li>
@@ -540,36 +760,75 @@
               </div>
             </section>
 
-            <!-- Customer Reviews & Ratings Section -->
+            <!-- Customer Reviews & Ratings Section (Identical to Trek Page Layout) -->
             <section id="section-reviews" class="trek-detail-section" style="margin-bottom: 36px;">
-              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Verified Customer Reviews</h2>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin: 0;">Verified Customer Reviews</h2>
+                <a href="../../reviews.html" class="btn" style="background: #ECFDF5; color: #047857; font-weight: 700; font-size: 0.88rem; padding: 8px 16px;">View All 1,200+ Reviews →</a>
+              </div>
+
               <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
                 
-                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-                  <div style="color: #F59E0B; margin-bottom: 8px;">★★★★★</div>
-                  <h4 style="font-size: 1.05rem; color: #0F172A; margin-bottom: 6px;">Unforgettable Tour Experience</h4>
-                  <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">"Namaste Hiking Trek organized our custom tour perfectly. Driver and tour guide were professional, polite, and punctual throughout!"</p>
-                  <div style="font-size: 0.82rem; color: #64748B;"><strong>Mark & Sarah H.</strong> (UK) • Verified Traveler</div>
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 22px; box-shadow: 0 4px 14px rgba(0,0,0,0.04);">
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                    <div style="color: #F59E0B; font-size: 1.1rem;">★★★★★</div>
+                    <span style="background: #ECFDF5; color: #047857; font-weight: 800; font-size: 0.75rem; padding: 3px 8px; border-radius: 50px;">TripAdvisor Verified</span>
+                  </div>
+                  <h4 style="font-size: 1.08rem; color: #0F172A; margin-bottom: 8px;">Unforgettable Tour Experience</h4>
+                  <p style="font-size: 0.92rem; color: #475569; line-height: 1.65; margin-bottom: 16px;">"Namaste Hiking Trek organized our custom tour perfectly. Driver and tour guide were professional, polite, and punctual throughout!"</p>
+                  <div style="display: flex; align-items: center; gap: 12px; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                    <div style="width: 36px; height: 36px; background: #10B981; color: #FFF; border-radius: 50%; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 0.88rem;">MH</div>
+                    <div>
+                      <strong style="color: #0F172A; font-size: 0.9rem; display: block;">Mark & Sarah H.</strong>
+                      <span style="font-size: 0.8rem; color: #64748B;">United Kingdom • Oct 2025</span>
+                    </div>
+                  </div>
                 </div>
 
-                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-                  <div style="color: #F59E0B; margin-bottom: 8px;">★★★★★</div>
-                  <h4 style="font-size: 1.05rem; color: #0F172A; margin-bottom: 6px;">Top-Tier Local Service</h4>
-                  <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">"Highly recommend Namaste Hiking Trek for any Nepal tour or safari. Smooth logistics, luxury vehicles, and genuine local hospitality."</p>
-                  <div style="font-size: 0.82rem; color: #64748B;"><strong>Sophie Martin</strong> (France) • Verified Traveler</div>
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 22px; box-shadow: 0 4px 14px rgba(0,0,0,0.04);">
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                    <div style="color: #F59E0B; font-size: 1.1rem;">★★★★★</div>
+                    <span style="background: #EFF6FF; color: #1D4ED8; font-weight: 800; font-size: 0.75rem; padding: 3px 8px; border-radius: 50px;">Google Verified</span>
+                  </div>
+                  <h4 style="font-size: 1.08rem; color: #0F172A; margin-bottom: 8px;">Top-Tier Local Service</h4>
+                  <p style="font-size: 0.92rem; color: #475569; line-height: 1.65; margin-bottom: 16px;">"Highly recommend Namaste Hiking Trek for any Nepal tour or safari. Smooth logistics, luxury vehicles, and genuine local hospitality."</p>
+                  <div style="display: flex; align-items: center; gap: 12px; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                    <div style="width: 36px; height: 36px; background: #3B82F6; color: #FFF; border-radius: 50%; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 0.88rem;">SM</div>
+                    <div>
+                      <strong style="color: #0F172A; font-size: 0.9rem; display: block;">Sophie Martin</strong>
+                      <span style="font-size: 0.8rem; color: #64748B;">France • Nov 2025</span>
+                    </div>
+                  </div>
                 </div>
 
               </div>
             </section>
 
-            <!-- FAQs Section -->
+            <!-- FAQs Accordion Section (Identical to Trek Page Layout) -->
             <section id="section-faqs" class="trek-detail-section" style="margin-bottom: 36px;">
               <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Frequently Asked Questions</h2>
-              <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div class="itinerary-timeline">
                 
-                  <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px;">
-                    <strong style="color: #0F172A; font-size: 1.02rem; display: block; margin-bottom: 6px;">Q: Can we see Mt. Everest from Nagarkot?</strong>
-                    <p style="color: #475569; font-size: 0.92rem; margin: 0; line-height: 1.6;">Yes! On clear days (especially Oct-Nov & Mar-Apr), Mt. Everest is visible as a white peak on the eastern horizon.</p>
+                  <div class="itinerary-card">
+                    <div class="itinerary-header">
+                      <div class="itinerary-header-left">
+                        <h4 class="itinerary-day-title-new" style="font-size: 1.05rem;">
+                          Q: Can we see Mt. Everest from Nagarkot?
+                        </h4>
+                      </div>
+                      <div class="itinerary-header-right">
+                        <div class="itinerary-toggle-btn-new">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="itinerary-content">
+                      <div class="itinerary-content-inner">
+                        <p style="color: #475569; font-size: 0.95rem; margin: 0; line-height: 1.65;">Yes! On clear days (especially Oct-Nov & Mar-Apr), Mt. Everest is visible as a white peak on the eastern horizon.</p>
+                      </div>
+                    </div>
                   </div>
                 
               </div>
@@ -658,6 +917,7 @@
   </footer>
 
   <script type="module" src="../../js/inquiry-modal.js"></script>
+  <script type="module" src="../../js/trek-details.js?v=10"></script>
   <script src="../../js/header-scroll.js"></script>
 </body>
 </html>
