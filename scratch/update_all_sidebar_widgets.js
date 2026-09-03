@@ -17,7 +17,7 @@ function processFile(filePath) {
   let titleMatch = content.match(/data-trek-title="([^"]+)"/) || content.match(/<h1[^>]*>([^<]+)<\/h1>/i);
   let trekTitle = titleMatch ? titleMatch[1].replace(/—.*/, '').trim() : 'Everest Base Camp Trek';
 
-  const newSidebarHtml = `<div class="sidebar-booking-card" style="position: sticky; top: 100px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 24px; box-shadow: 0 10px 35px rgba(0,0,0,0.07); position: relative; overflow: hidden;">
+  const newSidebarHtml = `<div class="sidebar-booking-card" style="position: sticky; top: 150px; z-index: 80; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 24px; box-shadow: 0 10px 35px rgba(0,0,0,0.07); position: relative;">
               
               <!-- Top Right Best Seller Ribbon Badge -->
               <div style="position: absolute; top: 18px; right: 0; background: #F59E0B; color: #FFFFFF; font-size: 0.72rem; font-weight: 800; padding: 5px 14px; border-radius: 4px 0 0 4px; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);">
