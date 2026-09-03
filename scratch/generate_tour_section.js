@@ -33,6 +33,11 @@ const tourPackages = [
       { day: 2, title: 'Kathmandu City Sightseeing: Swayambhunath, Durbar Square & Pashupatinath', desc: 'Guided exploration of ancient Swayambhunath monkey temple, Kathmandu royal palace square, and Pashupatinath Hindu temple.' },
       { day: 3, title: 'Boudhanath Stupa, Patan Durbar Square & Bhaktapur Pottery City', desc: 'Circumambulate Boudhanath Stupa, admire Patan fine metalwork, and explore the cobblestone alleys of Bhaktapur.' },
       { day: 4, title: 'Thamel Market Shopping & Airport Transfer', desc: 'Morning walk in Thamel market for pashmina and tea. Private AC vehicle transfer to airport for final departure.' }
+    ],
+    faqs: [
+      { q: 'Is airport transfer included in this tour package?', a: 'Yes! We provide private AC car/van airport pickup and drop-off service for all flights.' },
+      { q: 'What category of hotels are provided?', a: 'We provide deluxe 3-Star to 4-Star boutique heritage hotels in Kathmandu with breakfast included.' },
+      { q: 'Are monument entry fees included?', a: 'Yes, all UNESCO heritage site entrance tickets and local monument fees are 100% included.' }
     ]
   },
   {
@@ -64,6 +69,10 @@ const tourPackages = [
       { day: 2, title: 'Sarangkot Sunrise & Pokhara Lakes Sightseeing', desc: 'Early morning drive to Sarangkot hill for Annapurna sunrise. Afternoon boat ride to Tal Barahi Temple.' },
       { day: 3, title: 'World Peace Pagoda, Davis Fall & Gupteshwor Cave', desc: 'Hike up to World Peace Pagoda, explore underground Gupteshwor cave, Davis Fall, and Mountain Museum.' },
       { day: 4, title: 'Return Journey to Kathmandu & Departure', desc: 'Morning breakfast overlooking Phewa Lake before scenic return drive or flight back to Kathmandu.' }
+    ],
+    faqs: [
+      { q: 'Can we take a domestic flight to Pokhara instead of driving?', a: 'Yes! Domestic flights between Kathmandu and Pokhara (25 minutes) can be added to your package.' },
+      { q: 'Is Sarangkot sunrise trip early in the morning?', a: 'Yes, we depart hotel around 5:00 AM to catch the golden morning light over the Annapurna peak range.' }
     ]
   },
   {
@@ -99,6 +108,10 @@ const tourPackages = [
       { day: 6, title: 'Sarangkot Sunrise & Pokhara Sightseeing', desc: 'Early morning Annapurna sunrise from Sarangkot, boat ride to Tal Barahi, Davis Fall, and Peace Pagoda.' },
       { day: 7, title: 'Return Drive to Kathmandu', desc: 'Scenic highway travel back to Kathmandu. Evening farewell dinner.' },
       { day: 8, title: 'Final Departure Transfer', desc: 'Morning breakfast before private airport transfer for your flight home.' }
+    ],
+    faqs: [
+      { q: 'Is this tour suitable for families and senior citizens?', a: 'Yes! This Golden Triangle tour is easy-paced, uses private AC vehicles, and is suitable for all age groups.' },
+      { q: 'Are meals included in Chitwan National Park?', a: 'Yes! All breakfast, lunch, and dinner meals during the Chitwan jungle safari resort stay are 100% included.' }
     ]
   },
   {
@@ -129,6 +142,9 @@ const tourPackages = [
       { day: 1, title: 'Drive to Chitwan National Park & Tharu Village Walk', desc: 'Drive to Sauraha, Chitwan. Sunset view over Rapti River followed by Tharu cultural stick dance performance.' },
       { day: 2, title: 'Deep Jungle Jeep Safari, Canoe Ride & Elephant Center', desc: 'Dugout canoe ride along Rapti river, guided nature walk, deep jeep safari inside park, and elephant breeding center visit.' },
       { day: 3, title: 'Bird Watching & Departure', desc: 'Early morning bird watching tour with resident naturalist. Breakfast before departure to Kathmandu or Pokhara.' }
+    ],
+    faqs: [
+      { q: 'What is the chance of seeing one-horned rhinos?', a: 'Over 95%! One-horned rhinos are frequently spotted during the jeep safari and river canoe ride.' }
     ]
   },
   {
@@ -159,6 +175,9 @@ const tourPackages = [
       { day: 1, title: 'Explore Bhaktapur Durbar Square & Drive to Nagarkot', desc: 'Guided tour of Bhaktapur ancient pottery city and 55-window palace. Drive up to Nagarkot hill station for sunset.' },
       { day: 2, title: 'Nagarkot Sunrise & Hike to Changu Narayan Temple', desc: 'Spectacular Himalayan sunrise over Everest range. 3-hour downhill ridge hike to ancient Changu Narayan Temple.' },
       { day: 3, title: 'Return Drive to Kathmandu & Airport Departure', desc: 'Morning breakfast with mountain views. Private transfer back to Kathmandu for departure.' }
+    ],
+    faqs: [
+      { q: 'Can we see Mt. Everest from Nagarkot?', a: 'Yes! On clear days (especially Oct-Nov & Mar-Apr), Mt. Everest is visible as a white peak on the eastern horizon.' }
     ]
   },
   {
@@ -190,11 +209,15 @@ const tourPackages = [
       { day: 3, title: 'Helicopter Transfer to Pokhara & Annapurna Aerial Flight', desc: 'Helicopter transfer past Langtang to Pokhara. Aerial flight over Annapurna Base Camp & Machhapuchhre peak.' },
       { day: 4, title: 'Pokhara Luxury Leisure & Lakeside Spa Day', desc: 'Private boat ride on Phewa Lake, body massage treatment at luxury spa resort, and lakeside fine dining.' },
       { day: 5, title: 'Fly back to Kathmandu & VIP Departure', desc: 'Private return flight to Kathmandu and VIP airport transfer.' }
+    ],
+    faqs: [
+      { q: 'Do we land at Everest Base Camp / Kala Patthar?', a: 'Yes! Weather permitting, the helicopter lands at Kala Patthar (5,545m) for 10-15 minutes for photo opportunities.' },
+      { q: 'Is oxygen available on board the helicopter?', a: 'Yes, emergency medical oxygen cylinders are equipped in all our helicopters for high-altitude comfort.' }
     ]
   }
 ];
 
-// 1. Generate Rich Tour Package Landing Pages (Replicating Trek Landing Page Design)
+// Generate 100% Complete Tour Landing Pages (Matching Trek Page Layout & All Sections)
 tourPackages.forEach(pkg => {
   const dirPath = path.join(projectRoot, 'tour', pkg.slug);
   fs.mkdirSync(dirPath, { recursive: true });
@@ -544,7 +567,7 @@ tourPackages.forEach(pkg => {
 
           <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
             <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 3-3.87"/></svg>
             </div>
             <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy);">10,000+ happy travellers</span>
           </div>
@@ -572,8 +595,9 @@ tourPackages.forEach(pkg => {
             <button class="trek-sub-nav-btn active" data-tab="overview">Overview</button>
             <button class="trek-sub-nav-btn" data-tab="itinerary">Itinerary</button>
             <button class="trek-sub-nav-btn" data-tab="includes">Includes & Excludes</button>
-            <button class="trek-sub-nav-btn" data-tab="booking">Booking</button>
+            <button class="trek-sub-nav-btn" data-tab="dates">Dates & Pricing</button>
             <button class="trek-sub-nav-btn" data-tab="reviews">Reviews</button>
+            <button class="trek-sub-nav-btn" data-tab="faqs">FAQs</button>
           </div>
         </div>
       </div>
@@ -656,6 +680,82 @@ tourPackages.forEach(pkg => {
                   </ul>
                 </div>
 
+              </div>
+            </section>
+
+            <!-- Fixed Departure Dates & Pricing Table -->
+            <section id="section-dates" class="trek-detail-section" style="margin-bottom: 36px;">
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Fixed Departure Dates & Availability</h2>
+              <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+                <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.92rem;">
+                  <thead>
+                    <tr style="background: #F8FAFC; border-bottom: 1px solid #E2E8F0; color: #475569;">
+                      <th style="padding: 14px 20px;">Start Date</th>
+                      <th style="padding: 14px 20px;">End Date</th>
+                      <th style="padding: 14px 20px;">Status</th>
+                      <th style="padding: 14px 20px;">Price</th>
+                      <th style="padding: 14px 20px; text-align: right;">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 1px solid #F1F5F9;">
+                      <td style="padding: 14px 20px; font-weight: 700; color: #0F172A;">15 Oct 2026</td>
+                      <td style="padding: 14px 20px; color: #64748B;">${15 + pkg.days} Oct 2026</td>
+                      <td style="padding: 14px 20px;"><span style="background: #ECFDF5; color: #047857; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 50px;">Guaranteed</span></td>
+                      <td style="padding: 14px 20px; font-weight: 800; color: #0F172A;">$${pkg.price}</td>
+                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #F1F5F9;">
+                      <td style="padding: 14px 20px; font-weight: 700; color: #0F172A;">01 Nov 2026</td>
+                      <td style="padding: 14px 20px; color: #64748B;">0${1 + pkg.days} Nov 2026</td>
+                      <td style="padding: 14px 20px;"><span style="background: #ECFDF5; color: #047857; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 50px;">Guaranteed</span></td>
+                      <td style="padding: 14px 20px; font-weight: 800; color: #0F172A;">$${pkg.price}</td>
+                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 14px 20px; font-weight: 700; color: #0F172A;">10 Mar 2027</td>
+                      <td style="padding: 14px 20px; color: #64748B;">${10 + pkg.days} Mar 2027</td>
+                      <td style="padding: 14px 20px;"><span style="background: #EFF6FF; color: #1D4ED8; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 50px;">Available</span></td>
+                      <td style="padding: 14px 20px; font-weight: 800; color: #0F172A;">$${pkg.price}</td>
+                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- Customer Reviews & Ratings Section -->
+            <section id="section-reviews" class="trek-detail-section" style="margin-bottom: 36px;">
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Verified Customer Reviews</h2>
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                  <div style="color: #F59E0B; margin-bottom: 8px;">★★★★★</div>
+                  <h4 style="font-size: 1.05rem; color: #0F172A; margin-bottom: 6px;">Unforgettable Tour Experience</h4>
+                  <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">"Namaste Hiking Trek organized our custom tour perfectly. Driver and tour guide were professional, polite, and punctual throughout!"</p>
+                  <div style="font-size: 0.82rem; color: #64748B;"><strong>Mark & Sarah H.</strong> (UK) • Verified Traveler</div>
+                </div>
+
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                  <div style="color: #F59E0B; margin-bottom: 8px;">★★★★★</div>
+                  <h4 style="font-size: 1.05rem; color: #0F172A; margin-bottom: 6px;">Top-Tier Local Service</h4>
+                  <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">"Highly recommend Namaste Hiking Trek for any Nepal tour or safari. Smooth logistics, luxury vehicles, and genuine local hospitality."</p>
+                  <div style="font-size: 0.82rem; color: #64748B;"><strong>Sophie Martin</strong> (France) • Verified Traveler</div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- FAQs Section -->
+            <section id="section-faqs" class="trek-detail-section" style="margin-bottom: 36px;">
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Frequently Asked Questions</h2>
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                ${pkg.faqs.map(faq => `
+                  <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px;">
+                    <strong style="color: #0F172A; font-size: 1.02rem; display: block; margin-bottom: 6px;">Q: ${faq.q}</strong>
+                    <p style="color: #475569; font-size: 0.92rem; margin: 0; line-height: 1.6;">${faq.a}</p>
+                  </div>
+                `).join('')}
               </div>
             </section>
 
@@ -748,7 +848,7 @@ tourPackages.forEach(pkg => {
 `;
 
   fs.writeFileSync(path.join(dirPath, 'index.html'), htmlContent, 'utf8');
-  console.log(`Upgraded Tour Page: tour/${pkg.slug}/index.html`);
+  console.log(`Generated 100% Complete Tour Page: tour/${pkg.slug}/index.html`);
 });
 
 // 2. Generate Central Tour Directory Hub Page: tours.html

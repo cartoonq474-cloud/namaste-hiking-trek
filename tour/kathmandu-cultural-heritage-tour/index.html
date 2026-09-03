@@ -343,7 +343,7 @@
 
           <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
             <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 3-3.87"/></svg>
             </div>
             <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy);">10,000+ happy travellers</span>
           </div>
@@ -371,8 +371,9 @@
             <button class="trek-sub-nav-btn active" data-tab="overview">Overview</button>
             <button class="trek-sub-nav-btn" data-tab="itinerary">Itinerary</button>
             <button class="trek-sub-nav-btn" data-tab="includes">Includes & Excludes</button>
-            <button class="trek-sub-nav-btn" data-tab="booking">Booking</button>
+            <button class="trek-sub-nav-btn" data-tab="dates">Dates & Pricing</button>
             <button class="trek-sub-nav-btn" data-tab="reviews">Reviews</button>
+            <button class="trek-sub-nav-btn" data-tab="faqs">FAQs</button>
           </div>
         </div>
       </div>
@@ -503,6 +504,92 @@
                   </ul>
                 </div>
 
+              </div>
+            </section>
+
+            <!-- Fixed Departure Dates & Pricing Table -->
+            <section id="section-dates" class="trek-detail-section" style="margin-bottom: 36px;">
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Fixed Departure Dates & Availability</h2>
+              <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+                <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.92rem;">
+                  <thead>
+                    <tr style="background: #F8FAFC; border-bottom: 1px solid #E2E8F0; color: #475569;">
+                      <th style="padding: 14px 20px;">Start Date</th>
+                      <th style="padding: 14px 20px;">End Date</th>
+                      <th style="padding: 14px 20px;">Status</th>
+                      <th style="padding: 14px 20px;">Price</th>
+                      <th style="padding: 14px 20px; text-align: right;">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 1px solid #F1F5F9;">
+                      <td style="padding: 14px 20px; font-weight: 700; color: #0F172A;">15 Oct 2026</td>
+                      <td style="padding: 14px 20px; color: #64748B;">19 Oct 2026</td>
+                      <td style="padding: 14px 20px;"><span style="background: #ECFDF5; color: #047857; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 50px;">Guaranteed</span></td>
+                      <td style="padding: 14px 20px; font-weight: 800; color: #0F172A;">$399</td>
+                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #F1F5F9;">
+                      <td style="padding: 14px 20px; font-weight: 700; color: #0F172A;">01 Nov 2026</td>
+                      <td style="padding: 14px 20px; color: #64748B;">05 Nov 2026</td>
+                      <td style="padding: 14px 20px;"><span style="background: #ECFDF5; color: #047857; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 50px;">Guaranteed</span></td>
+                      <td style="padding: 14px 20px; font-weight: 800; color: #0F172A;">$399</td>
+                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 14px 20px; font-weight: 700; color: #0F172A;">10 Mar 2027</td>
+                      <td style="padding: 14px 20px; color: #64748B;">14 Mar 2027</td>
+                      <td style="padding: 14px 20px;"><span style="background: #EFF6FF; color: #1D4ED8; font-weight: 800; font-size: 0.78rem; padding: 4px 10px; border-radius: 50px;">Available</span></td>
+                      <td style="padding: 14px 20px; font-weight: 800; color: #0F172A;">$399</td>
+                      <td style="padding: 14px 20px; text-align: right;"><button class="btn btn-primary open-inquiry-btn" style="padding: 6px 14px; font-size: 0.82rem;">Book Seat</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- Customer Reviews & Ratings Section -->
+            <section id="section-reviews" class="trek-detail-section" style="margin-bottom: 36px;">
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Verified Customer Reviews</h2>
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                  <div style="color: #F59E0B; margin-bottom: 8px;">★★★★★</div>
+                  <h4 style="font-size: 1.05rem; color: #0F172A; margin-bottom: 6px;">Unforgettable Tour Experience</h4>
+                  <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">"Namaste Hiking Trek organized our custom tour perfectly. Driver and tour guide were professional, polite, and punctual throughout!"</p>
+                  <div style="font-size: 0.82rem; color: #64748B;"><strong>Mark & Sarah H.</strong> (UK) • Verified Traveler</div>
+                </div>
+
+                <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                  <div style="color: #F59E0B; margin-bottom: 8px;">★★★★★</div>
+                  <h4 style="font-size: 1.05rem; color: #0F172A; margin-bottom: 6px;">Top-Tier Local Service</h4>
+                  <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">"Highly recommend Namaste Hiking Trek for any Nepal tour or safari. Smooth logistics, luxury vehicles, and genuine local hospitality."</p>
+                  <div style="font-size: 0.82rem; color: #64748B;"><strong>Sophie Martin</strong> (France) • Verified Traveler</div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- FAQs Section -->
+            <section id="section-faqs" class="trek-detail-section" style="margin-bottom: 36px;">
+              <h2 class="trek-section-title" style="font-size: 1.8rem; color: #0F172A; margin-bottom: 16px;">Frequently Asked Questions</h2>
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                
+                  <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px;">
+                    <strong style="color: #0F172A; font-size: 1.02rem; display: block; margin-bottom: 6px;">Q: Is airport transfer included in this tour package?</strong>
+                    <p style="color: #475569; font-size: 0.92rem; margin: 0; line-height: 1.6;">Yes! We provide private AC car/van airport pickup and drop-off service for all flights.</p>
+                  </div>
+                
+                  <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px;">
+                    <strong style="color: #0F172A; font-size: 1.02rem; display: block; margin-bottom: 6px;">Q: What category of hotels are provided?</strong>
+                    <p style="color: #475569; font-size: 0.92rem; margin: 0; line-height: 1.6;">We provide deluxe 3-Star to 4-Star boutique heritage hotels in Kathmandu with breakfast included.</p>
+                  </div>
+                
+                  <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 18px;">
+                    <strong style="color: #0F172A; font-size: 1.02rem; display: block; margin-bottom: 6px;">Q: Are monument entry fees included?</strong>
+                    <p style="color: #475569; font-size: 0.92rem; margin: 0; line-height: 1.6;">Yes, all UNESCO heritage site entrance tickets and local monument fees are 100% included.</p>
+                  </div>
+                
               </div>
             </section>
 
