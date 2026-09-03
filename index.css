@@ -10293,9 +10293,26 @@ textarea {
   margin-left: 2px;
 }
 
+/* =======================================================
+   STICKY BOOKING SIDEBAR CARD — TREK & TOUR DETAIL PAGES
+   ======================================================= */
+.sidebar-booking-card {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 125px !important;
+  z-index: 50 !important;
+  display: block !important;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
 
-
-
-
-
+@media (max-width: 768px) {
+  .sidebar-booking-card {
+    position: static !important;
+    top: auto !important;
+  }
+}
 

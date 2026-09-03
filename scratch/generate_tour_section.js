@@ -1010,7 +1010,7 @@ function getNewSidebarMarkup(pkg) {
   const isTour = pkg.category.toLowerCase().includes('tour') || pkg.category.toLowerCase().includes('scenic') || pkg.category.toLowerCase().includes('safari') || pkg.category.toLowerCase().includes('heritage');
   const leadingText = isTour ? 'Tour Leading by well trained Team' : 'Trek Leading by well trained Team';
 
-  return `<div class="sidebar-booking-card" style="position: sticky; top: 150px; z-index: 80; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 24px; box-shadow: 0 10px 35px rgba(0,0,0,0.07); position: relative;">
+  return `<div class="sidebar-booking-card">
               
               <!-- Top Right Best Seller Ribbon Badge -->
               <div style="position: absolute; top: 18px; right: 0; background: #F59E0B; color: #FFFFFF; font-size: 0.72rem; font-weight: 800; padding: 5px 14px; border-radius: 4px 0 0 4px; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);">
