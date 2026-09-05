@@ -415,6 +415,13 @@
 
     <!-- Light Mint Hero Section Container (SMM Panel Aesthetic) -->
     <section class="hero-container-light">
+      <!-- Background Video Dual-Layer for Seamless Crossfade Transitions -->
+      <div class="hero-video-bg-wrap" aria-hidden="true">
+        <video id="hero-bg-video-1" class="hero-bg-video active" autoplay muted playsinline preload="auto" poster="images/hero-himalayas.jpg"></video>
+        <video id="hero-bg-video-2" class="hero-bg-video" muted playsinline preload="auto"></video>
+        <div class="hero-video-overlay"></div>
+      </div>
+
       <div class="container">
 
         <!-- Google Review Rating Badge (Screenshot Style Design) -->
@@ -5251,6 +5258,7 @@
   <script type="module" src="js/reviews-tabs.js?v=11"></script>
   <script type="module" src="js/schema-generator.js"></script>
   <script type="module" src="js/hero-expand.js"></script>
+  <script type="module" src="js/hero-video.js"></script>
   <script type="module" src="js/activity-packages.js"></script>
   <script type="module" src="js/peak-climbing-carousel.js"></script>
   <script type="module" src="js/tour-packages-carousel.js"></script>

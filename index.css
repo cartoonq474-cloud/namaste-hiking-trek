@@ -1162,7 +1162,55 @@ textarea {
   padding: 85px 0 110px 0;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
+
+/* Hero Background Multi-Video Layer (Seamless Crossfade) */
+.hero-video-bg-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-bg-video.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Semi-transparent dark overlay for high contrast text readability */
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 29, 54, 0.55) 0%, rgba(7, 29, 54, 0.78) 100%);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.hero-container-light .container {
+  position: relative;
+  z-index: 5;
+}
+
 
 .google-review-badge-light {
   display: inline-flex;
