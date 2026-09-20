@@ -1809,7 +1809,7 @@ tourPackages.forEach(pkg => {
         <div class="footer-nav-col">
           <h4>Essential Info</h4>
           <ul class="footer-nav-links">
-            <li><a href="../../travel-info.html">Travel Guide & AMS</a></li>
+            <li><a href="../../nepal-travel-guide/">Nepal Travel Guide</a></li>
             <li><a href="../../about.html">About Us</a></li>
             <li><a href="../../team.html">Meet Our Team</a></li>
             <li><a href="../../reviews.html">Reviews & Testimonials</a></li>
@@ -1939,7 +1939,7 @@ const toursHubHtml = `<!DOCTYPE html>
         <div class="footer-nav-col">
           <h4>Essential Info</h4>
           <ul class="footer-nav-links">
-            <li><a href="travel-info.html">Travel Guide & AMS</a></li>
+            <li><a href="nepal-travel-guide/">Nepal Travel Guide</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="team.html">Meet Our Team</a></li>
             <li><a href="reviews.html">Reviews & Testimonials</a></li>
@@ -2070,7 +2070,7 @@ const toursNepalHtml = `<!DOCTYPE html>
         <div class="footer-nav-col">
           <h4>Essential Info</h4>
           <ul class="footer-nav-links">
-            <li><a href="../travel-info.html">Travel Guide & AMS</a></li>
+            <li><a href="../nepal-travel-guide/">Nepal Travel Guide</a></li>
             <li><a href="../about.html">About Us</a></li>
             <li><a href="../team.html">Meet Our Team</a></li>
             <li><a href="../reviews.html">Reviews & Testimonials</a></li>
