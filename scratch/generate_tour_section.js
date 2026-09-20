@@ -917,9 +917,9 @@ function getHeaderMarkup(relPrefix) {
 
           <!-- Tour Packages Dropdown -->
           <li class="nav-item-dropdown">
-            <a href="${relPrefix}tours.html" class="nav-link active">Nepal Tours ▾</a>
+            <a href="${relPrefix}nepal-tour-packages/" class="nav-link active">Nepal Tours ▾</a>
             <div class="nav-dropdown-menu">
-              <a href="${relPrefix}tours.html" class="nav-dropdown-link">All Tour Packages</a>
+              <a href="${relPrefix}nepal-tour-packages/" class="nav-dropdown-link">All Tour Packages</a>
               <a href="${relPrefix}tour/kathmandu-pokhara-chitwan-tour/" class="nav-dropdown-link">Best of Nepal (8 Days)</a>
               <a href="${relPrefix}tour/kathmandu-cultural-heritage-tour/" class="nav-dropdown-link">Kathmandu Heritage (4 Days)</a>
               <a href="${relPrefix}tour/pokhara-valley-nature-tour/" class="nav-dropdown-link">Pokhara Scenic (4 Days)</a>
@@ -1147,7 +1147,7 @@ tourPackages.forEach(pkg => {
         "@id": "https://namastehikingtrek.com/tour/${pkg.slug}/#breadcrumb",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://namastehikingtrek.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Nepal Tours", "item": "https://namastehikingtrek.com/tours.html" },
+          { "@type": "ListItem", "position": 2, "name": "Nepal Tours", "item": "https://namastehikingtrek.com/nepal-tour-packages/" },
           { "@type": "ListItem", "position": 3, "name": "${pkg.title}", "item": "https://namastehikingtrek.com/tour/${pkg.slug}/" }
         ]
       }
@@ -1863,7 +1863,7 @@ const toursHubHtml = `<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nepal Tour Packages & Sightseeing — Namaste Hiking Trek</title>
   <meta name="description" content="Explore 6 official Nepal tour packages with Namaste Hiking Trek. Kathmandu cultural heritage, Pokhara lake views, Chitwan jungle safari, Nagarkot sunrise & luxury helicopter tours.">
-  <link rel="canonical" href="https://namastehikingtrek.com/tours.html" />
+  <link rel="canonical" href="https://namastehikingtrek.com/nepal-tour-packages/" />
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="index.css?v=29">
 </head>
@@ -1983,8 +1983,8 @@ const toursHubHtml = `<!DOCTYPE html>
 fs.writeFileSync(path.join(projectRoot, 'tours.html'), toursHubHtml, 'utf8');
 console.log('Generated: tours.html');
 
-// Create canonical directory tours-nepal/index.html
-const toursNepalDir = path.join(projectRoot, 'tours-nepal');
+// Create canonical directory nepal-tour-packages/index.html
+const toursNepalDir = path.join(projectRoot, 'nepal-tour-packages');
 fs.mkdirSync(toursNepalDir, { recursive: true });
 
 const toursNepalHtml = `<!DOCTYPE html>
@@ -1994,7 +1994,7 @@ const toursNepalHtml = `<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nepal Tour Packages & Sightseeing — Namaste Hiking Trek</title>
   <meta name="description" content="Explore 6 official Nepal tour packages with Namaste Hiking Trek. Kathmandu cultural heritage, Pokhara lake views, Chitwan jungle safari, Nagarkot sunrise & luxury helicopter tours.">
-  <link rel="canonical" href="https://namastehikingtrek.com/tours-nepal/" />
+  <link rel="canonical" href="https://namastehikingtrek.com/nepal-tour-packages/" />
   <link rel="icon" type="image/png" href="../images/logo.png">
   <link rel="stylesheet" href="../index.css?v=29">
 </head>
@@ -2112,4 +2112,4 @@ const toursNepalHtml = `<!DOCTYPE html>
 `;
 
 fs.writeFileSync(path.join(toursNepalDir, 'index.html'), toursNepalHtml, 'utf8');
-console.log('Generated: tours-nepal/index.html');
+console.log('Generated: nepal-tour-packages/index.html');

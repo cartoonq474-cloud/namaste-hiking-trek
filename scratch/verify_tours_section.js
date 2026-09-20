@@ -31,11 +31,11 @@ requiredTourDirs.forEach(dir => {
 });
 
 // 2. Verify Central Hub Pages
-if (!fs.existsSync(path.join(rootDir, 'tours.html'))) {
-  errors.push('Missing tours.html hub page');
+if (!fs.existsSync(path.join(rootDir, 'nepal-tour-packages/index.html'))) {
+  errors.push('Missing nepal-tour-packages/index.html hub page');
 }
-if (!fs.existsSync(path.join(rootDir, 'tours-nepal/index.html'))) {
-  errors.push('Missing tours-nepal/index.html hub page');
+if (!fs.existsSync(path.join(rootDir, 'nepal-tour-packages/index.html'))) {
+  errors.push('Missing nepal-tour-packages/index.html hub page');
 }
 
 // 3. Count total HTML files
@@ -61,6 +61,6 @@ if (errors.length > 0) {
   process.exit(1);
 } else {
   console.log(`SUCCESS: All ${requiredTourDirs.length} active Tour Packages verified cleanly!`);
-  console.log(`Central Tour Hub live at tours.html and tours-nepal/index.html.`);
+  console.log(`Central Tour Hub live at nepal-tour-packages/index.html and nepal-tour-packages/index.html.`);
   console.log(`Total HTML files verified across workspace: ${totalHtmlCount}`);
 }
