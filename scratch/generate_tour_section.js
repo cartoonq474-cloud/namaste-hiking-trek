@@ -919,7 +919,6 @@ function getHeaderMarkup(relPrefix) {
           <li class="nav-item-dropdown">
             <a href="${relPrefix}nepal-tour-packages/" class="nav-link active">Nepal Tours ▾</a>
             <div class="nav-dropdown-menu">
-              <a href="${relPrefix}nepal-tour-packages/" class="nav-dropdown-link">All Tour Packages</a>
               <a href="${relPrefix}tour/kathmandu-pokhara-chitwan-tour/" class="nav-dropdown-link">Best of Nepal (8 Days)</a>
               <a href="${relPrefix}tour/kathmandu-cultural-heritage-tour/" class="nav-dropdown-link">Kathmandu Heritage (4 Days)</a>
               <a href="${relPrefix}tour/pokhara-valley-nature-tour/" class="nav-dropdown-link">Pokhara Scenic (4 Days)</a>
