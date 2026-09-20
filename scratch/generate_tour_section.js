@@ -721,7 +721,7 @@ function getHeaderMarkup(relPrefix) {
         <ul class="nav-menu">
           <!-- Mega Menu Dropdown for All Treks -->
           <li class="nav-item-dropdown mega-nav-item">
-            <a href="${relPrefix}treks.html" class="nav-link">All Treks ▾</a>
+            <a href="${relPrefix}nepal-trekking-packages/" class="nav-link">All Treks ▾</a>
             <div class="mega-menu-dropdown">
               <div class="mega-menu-container">
                 <!-- Left Sidebar Navigation -->

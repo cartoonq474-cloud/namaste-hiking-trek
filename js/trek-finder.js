@@ -105,7 +105,8 @@ export function initTrekFinder(containerId, treks = sampleTreks) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  const isTreksPage = window.location.pathname.includes('treks');
+  const isTreksPage = window.location.pathname.includes('treks') || window.location.pathname.includes('nepal-trekking-packages');
+  const linkPrefix = window.location.pathname.includes('/nepal-trekking-packages/') ? '../' : '';
 
   const renderCards = (filtered) => {
     if (filtered.length === 0) {
@@ -161,7 +162,7 @@ export function initTrekFinder(containerId, treks = sampleTreks) {
             <button class="btn-inquire-orange open-inquiry-btn" data-trek-title="${t.title}" onclick="document.getElementById('inquiry-modal').classList.add('active'); document.body.style.overflow='hidden';">
               Inquire Now
             </button>
-            ${isTreksPage && t.slug ? `<a href="trek/${t.slug}/" class="btn-inquire-orange" style="text-decoration:none; text-align:center;">View Itinerary</a>` : ''}
+            ${isTreksPage && t.slug ? `<a href="${linkPrefix}trek/${t.slug}/" class="btn-inquire-orange" style="text-decoration:none; text-align:center;">View Itinerary</a>` : ''}
           </div>
 
         </div>
