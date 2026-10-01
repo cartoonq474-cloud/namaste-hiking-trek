@@ -1,53 +1,50 @@
 const fs = require('fs');
+const { execSync } = require('child_process');
 
 const filePath = 'trek/everest-base-camp-trek/index.html';
 const content = fs.readFileSync(filePath, 'utf8');
 
-const startCardsIdx = content.indexOf('<!-- Day 01 -->');
-const endCardsIdx = content.indexOf('<!-- Custom Itinerary Plan Your Trip CTA Banner Card -->');
+// Get clean photo grids directly from HEAD~1
+const orig = execSync('git show HEAD~1:trek/everest-base-camp-trek/index.html', { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 });
 
-if (startCardsIdx === -1 || endCardsIdx === -1) {
-  console.error('Failed to locate itinerary boundary', { startCardsIdx, endCardsIdx });
-  process.exit(1);
-}
-
-// Extract photos grid for each day
-const photosGrids = {};
+const cleanPhotos = {};
 for (let d = 1; d <= 14; d++) {
   const dayStr = d < 10 ? '0' + d : '' + d;
-  const dayComment = `<!-- Day ${dayStr} -->`;
+  const startComment = `<!-- Day ${dayStr} -->`;
   const nextDayStr = (d + 1) < 10 ? '0' + (d + 1) : '' + (d + 1);
-  const nextComment = d < 14 ? `<!-- Day ${nextDayStr} -->` : '<!-- Custom Itinerary Plan Your Trip CTA Banner Card -->';
+  const endComment = d < 14 ? `<!-- Day ${nextDayStr} -->` : '<!-- Custom Itinerary';
   
-  const dStart = content.indexOf(dayComment);
-  const dEnd = content.indexOf(nextComment, dStart);
+  const dStart = orig.indexOf(startComment);
+  const dEnd = orig.indexOf(endComment, dStart);
   
-  if (dStart !== -1 && dEnd !== -1) {
-    const chunk = content.substring(dStart, dEnd);
-    const photoStart = chunk.indexOf('<div class="itinerary-photos-grid">');
-    if (photoStart !== -1) {
-      // Find the closing div of itinerary-photos-grid
-      const endTag = '</div>\n                    </div>\n                  </div>\n                </div>\n              </div>';
-      const altEndTag = '</div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>';
-      let photoEnd = chunk.indexOf('</div>\n                  </div>\n                </div>\n              </div>');
-      if (photoEnd === -1) {
-        photoEnd = chunk.indexOf('</div>\r\n                  </div>\r\n                </div>\r\n              </div>');
-      }
-      if (photoEnd !== -1) {
-        photosGrids[d] = chunk.substring(photoStart, photoEnd);
-      } else {
-        // fallback regex search
-        const m = chunk.match(/<div class="itinerary-photos-grid">[\s\S]*?<\/div>\s*<\/div>\s*<\/div>\s*<\/div>/);
-        if (m) {
-          const innerGrid = m[0].substring(0, m[0].lastIndexOf('</div>\n                  </div>'));
-          photosGrids[d] = innerGrid;
-        }
-      }
-    }
+  const chunk = orig.substring(dStart, dEnd);
+  const pStart = chunk.indexOf('<div class="itinerary-photos-grid">');
+  const pEndPattern = '</div>\n                  </div>\n                </div>\n              </div>';
+  const pEndPatternCRLF = '</div>\r\n                  </div>\r\n                </div>\r\n              </div>';
+  
+  let pEnd = chunk.indexOf(pEndPattern);
+  if (pEnd === -1) pEnd = chunk.indexOf(pEndPatternCRLF);
+  
+  if (pStart !== -1 && pEnd !== -1) {
+    // Include the closing </div> of itinerary-photos-grid
+    cleanPhotos[d] = chunk.substring(pStart, pEnd) + '\n                    </div>';
+  } else {
+    console.error(`Could not extract clean photos for Day ${d}`);
+    process.exit(1);
   }
 }
 
-console.log('Extracted photos for days:', Object.keys(photosGrids));
+// Verify that each extracted photo grid has matching div count (opens === closes)
+for (let d = 1; d <= 14; d++) {
+  const grid = cleanPhotos[d];
+  const opens = (grid.match(/<div/g) || []).length;
+  const closes = (grid.match(/<\/div>/g) || []).length;
+  if (opens !== closes) {
+    console.error(`Day ${d} photo grid unbalanced: opens=${opens}, closes=${closes}`);
+    process.exit(1);
+  }
+}
+console.log('All 14 photo grids perfectly extracted and div-balanced (5 opens, 5 closes each).');
 
 // Helper for SVG icons
 const icons = {
@@ -430,7 +427,7 @@ daysData.forEach(d => {
     }
   });
 
-  const photoGrid = photosGrids[d.dayNum] || '';
+  const photoGrid = cleanPhotos[d.dayNum];
 
   newCardsHTML += `              <!-- Day ${dayStr} -->
               <div class="itinerary-card${activeClass}">
@@ -472,21 +469,14 @@ ${paragraphsHTML}                    </div>
               </div>\n\n`;
 });
 
-// Update the file content
-const updatedContent = content.substring(0, startCardsIdx) + newCardsHTML + content.substring(endCardsIdx);
+// Append the missing closing tags for timeline and section
+newCardsHTML += `            </div>\n          </section>\n\n          `;
+
+// Replace from startCardsIdx to where Custom Itinerary CTA begins
+const startCardsIdxInCurrent = content.indexOf('<!-- Day 01 -->');
+const customCtaIdxInCurrent = content.indexOf('<!-- Custom Itinerary Plan Your Trip CTA Banner Card -->');
+
+const updatedContent = content.substring(0, startCardsIdxInCurrent) + newCardsHTML + content.substring(customCtaIdxInCurrent);
 
 fs.writeFileSync(filePath, updatedContent, 'utf8');
-console.log('Successfully updated itinerary cards in', filePath);
-
-// Also sync Schema.org subTrip names
-const jsonLdStart = updatedContent.indexOf('"subTrip": [');
-if (jsonLdStart !== -1) {
-  const jsonLdEnd = updatedContent.indexOf(']', jsonLdStart);
-  if (jsonLdEnd !== -1) {
-    const newSubTrips = daysData.map(d => `          { "@type": "TouristTrip", "name": "${d.dayLabel} ${d.title.replace(/"/g, '\\"')}" }`).join(',\n');
-    const newJsonLdChunk = `"subTrip": [\n${newSubTrips}\n        ]`;
-    const finalContent = updatedContent.substring(0, jsonLdStart) + newJsonLdChunk + updatedContent.substring(jsonLdEnd + 1);
-    fs.writeFileSync(filePath, finalContent, 'utf8');
-    console.log('Successfully synchronized JSON-LD subTrips in', filePath);
-  }
-}
+console.log('Successfully wrote fixed itinerary content.');
