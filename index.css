@@ -230,10 +230,21 @@ textarea {
 }
 
 .logo-brand img {
-  height: 54px;
+  height: 70px;
   width: auto;
   object-fit: contain;
   display: block;
+  transition: transform 0.2s ease;
+}
+
+.logo-brand:hover img {
+  transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+  .logo-brand img {
+    height: 62px;
+  }
 }
 
 .logo-text-group {
