@@ -8721,6 +8721,18 @@ textarea {
   background-color: #fbfdfe;
 }
 
+.faq-item-question h3,
+.faq-question-title {
+  margin: 0;
+  padding: 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-primary-navy);
+  line-height: 1.45;
+  font-family: inherit;
+  flex: 1;
+}
+
 .faq-toggle-circle {
   width: 26px;
   height: 26px;
