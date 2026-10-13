@@ -26,6 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Platform Sub-Tabs Switcher (.platform-subtab-btn)
   const subtabBtns = document.querySelectorAll('.platform-subtab-btn');
   const platformContents = document.querySelectorAll('.platform-reviews-content');
+  const scoreText = document.getElementById('platform-score-text');
+  const countText = document.getElementById('platform-count-text');
+
+  const platformMeta = {
+    google: { score: '4.9', count: '(1,240+ Verified Google Reviews)' },
+    tripadvisor: { score: '5.0', count: '(890+ Verified TripAdvisor Reviews • Certificate of Excellence)' },
+    trustpilot: { score: '4.9', count: '(650+ Verified Trustpilot Reviews • Rated \'Excellent\')' },
+    sourceforge: { score: '4.9', count: '(480+ Verified Client Reviews)' }
+  };
 
   subtabBtns.forEach(subBtn => {
     subBtn.addEventListener('click', () => {
@@ -38,6 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetContent = document.querySelector(`.platform-reviews-content[data-platform="${platformKey}"]`);
       if (targetContent) {
         targetContent.classList.add('active');
+      }
+
+      if (platformMeta[platformKey]) {
+        if (scoreText) scoreText.textContent = platformMeta[platformKey].score;
+        if (countText) countText.textContent = platformMeta[platformKey].count;
       }
     });
   });
