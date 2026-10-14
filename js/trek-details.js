@@ -872,7 +872,7 @@ function setupFaqSection() {
   });
 
   // Accordion Item Toggle
-  document.querySelectorAll('.faq-item-question').forEach(q => {
+  document.querySelectorAll('.faq-item-question, .faq-question').forEach(q => {
     q.addEventListener('click', () => {
       const item = q.closest('.faq-item');
       if (item) {

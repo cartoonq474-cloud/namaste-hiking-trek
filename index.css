@@ -8755,7 +8755,8 @@ textarea {
   color: #ffffff;
 }
 
-.faq-item-answer {
+.faq-item-answer,
+.faq-answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s ease;
@@ -8765,8 +8766,9 @@ textarea {
   color: var(--color-neutral-700);
 }
 
-.faq-item.active .faq-item-answer {
-  max-height: 500px;
+.faq-item.active .faq-item-answer,
+.faq-item.active .faq-answer {
+  max-height: 1200px;
   padding: 0 24px 20px 24px;
 }
 
