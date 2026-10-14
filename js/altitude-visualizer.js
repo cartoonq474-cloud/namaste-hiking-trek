@@ -17,6 +17,30 @@ const trekAltitudeProfiles = {
       { day: "Day 13", spot: "Kathmandu", altitudeM: 1300, altitudeFt: 4265 }
     ]
   },
+  "ebc_cho_la": {
+    name: "Everest Base Camp with Cho La Pass Trek",
+    points: [
+      { day: "Day 1", spot: "Kathmandu", altitudeM: 1355, altitudeFt: 4445 },
+      { day: "Day 2", spot: "Kathmandu", altitudeM: 1355, altitudeFt: 4445 },
+      { day: "Day 3", spot: "Phakding", altitudeM: 2650, altitudeFt: 8694 },
+      { day: "Day 4", spot: "Namche Bazaar", altitudeM: 3443, altitudeFt: 11296 },
+      { day: "Day 5", spot: "Everest View Hotel", altitudeM: 3880, altitudeFt: 12730 },
+      { day: "Day 6", spot: "Tengboche", altitudeM: 3860, altitudeFt: 12664 },
+      { day: "Day 7", spot: "Dingboche", altitudeM: 4450, altitudeFt: 14600 },
+      { day: "Day 8", spot: "Nangkartshang Hill", altitudeM: 5100, altitudeFt: 16732 },
+      { day: "Day 9", spot: "Lobuche", altitudeM: 4910, altitudeFt: 16109 },
+      { day: "Day 10", spot: "Everest Base Camp", altitudeM: 5364, altitudeFt: 17598 },
+      { day: "Day 11", spot: "Kala Patthar / Dzongla", altitudeM: 5545, altitudeFt: 18192 },
+      { day: "Day 12", spot: "Cho La Pass / Thangna", altitudeM: 5420, altitudeFt: 17782 },
+      { day: "Day 13", spot: "Gokyo", altitudeM: 4750, altitudeFt: 15584 },
+      { day: "Day 14", spot: "Gokyo Ri", altitudeM: 5357, altitudeFt: 17575 },
+      { day: "Day 15", spot: "Dole", altitudeM: 4038, altitudeFt: 13248 },
+      { day: "Day 16", spot: "Namche Bazaar", altitudeM: 3443, altitudeFt: 11296 },
+      { day: "Day 17", spot: "Lukla", altitudeM: 2850, altitudeFt: 9350 },
+      { day: "Day 18", spot: "Kathmandu", altitudeM: 1355, altitudeFt: 4445 },
+      { day: "Day 19", spot: "Kathmandu (Departure)", altitudeM: 1355, altitudeFt: 4445 }
+    ]
+  },
   "abc": {
     name: "Annapurna Base Camp Trek",
     points: [
