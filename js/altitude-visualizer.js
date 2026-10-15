@@ -41,6 +41,23 @@ const trekAltitudeProfiles = {
       { day: "Day 19", spot: "Kathmandu (Departure)", altitudeM: 1355, altitudeFt: 4445 }
     ]
   },
+  "ebc_luxury": {
+    name: "Everest Base Camp Luxury Trek",
+    points: [
+      { day: "Day 1", spot: "Kathmandu", altitudeM: 1400, altitudeFt: 4593 },
+      { day: "Day 2", spot: "Phakding (via Heli to Lukla)", altitudeM: 2610, altitudeFt: 8563 },
+      { day: "Day 3", spot: "Namche Bazaar", altitudeM: 3440, altitudeFt: 11286 },
+      { day: "Day 4", spot: "Namche (Everest View Hike)", altitudeM: 3880, altitudeFt: 12730 },
+      { day: "Day 5", spot: "Tengboche", altitudeM: 3860, altitudeFt: 12664 },
+      { day: "Day 6", spot: "Dingboche", altitudeM: 4410, altitudeFt: 14468 },
+      { day: "Day 7", spot: "Dingboche (Nangkartshang Hike)", altitudeM: 4700, altitudeFt: 15420 },
+      { day: "Day 8", spot: "Lobuche", altitudeM: 4910, altitudeFt: 16109 },
+      { day: "Day 9", spot: "Everest Base Camp", altitudeM: 5364, altitudeFt: 17598 },
+      { day: "Day 10", spot: "Kala Patthar / Pheriche", altitudeM: 5545, altitudeFt: 18192 },
+      { day: "Day 11", spot: "Kathmandu (Heli from Pheriche)", altitudeM: 1400, altitudeFt: 4593 },
+      { day: "Day 12", spot: "Kathmandu (Departure)", altitudeM: 1400, altitudeFt: 4593 }
+    ]
+  },
   "abc": {
     name: "Annapurna Base Camp Trek",
     points: [
