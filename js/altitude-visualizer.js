@@ -58,6 +58,26 @@ const trekAltitudeProfiles = {
       { day: "Day 12", spot: "Kathmandu (Departure)", altitudeM: 1400, altitudeFt: 4593 }
     ]
   },
+  "gokyo": {
+    name: "Gokyo Lake Trek",
+    points: [
+      { day: "Day 1", spot: "Kathmandu", altitudeM: 1400, altitudeFt: 4593 },
+      { day: "Day 2", spot: "Kathmandu (Briefing)", altitudeM: 1400, altitudeFt: 4593 },
+      { day: "Day 3", spot: "Phakding (via Lukla)", altitudeM: 2610, altitudeFt: 8563 },
+      { day: "Day 4", spot: "Namche Bazaar", altitudeM: 3440, altitudeFt: 11286 },
+      { day: "Day 5", spot: "Namche (Acclimatization)", altitudeM: 3900, altitudeFt: 12795 },
+      { day: "Day 6", spot: "Dole (via Mong La)", altitudeM: 4000, altitudeFt: 13123 },
+      { day: "Day 7", spot: "Machhermo", altitudeM: 4470, altitudeFt: 14665 },
+      { day: "Day 8", spot: "Machhermo (Acclimatization)", altitudeM: 4470, altitudeFt: 14665 },
+      { day: "Day 9", spot: "Gokyo (Dudh Pokhari)", altitudeM: 4790, altitudeFt: 15715 },
+      { day: "Day 10", spot: "Gokyo Ri & Lakes", altitudeM: 5357, altitudeFt: 17575 },
+      { day: "Day 11", spot: "Dole", altitudeM: 4000, altitudeFt: 13123 },
+      { day: "Day 12", spot: "Namche Bazaar", altitudeM: 3440, altitudeFt: 11286 },
+      { day: "Day 13", spot: "Lukla", altitudeM: 2850, altitudeFt: 9350 },
+      { day: "Day 14", spot: "Kathmandu", altitudeM: 1400, altitudeFt: 4593 },
+      { day: "Day 15", spot: "Kathmandu (Departure)", altitudeM: 1400, altitudeFt: 4593 }
+    ]
+  },
   "abc": {
     name: "Annapurna Base Camp Trek",
     points: [
