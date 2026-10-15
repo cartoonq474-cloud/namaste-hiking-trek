@@ -5128,8 +5128,7 @@
                   <button type="button" class="faq-category-btn active" data-category="general">
                     <span class="faq-cat-icon">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
                       </svg>
                     </span>
                     General Information
@@ -5139,8 +5138,7 @@
                   <button type="button" class="faq-category-btn" data-category="permits">
                     <span class="faq-cat-icon">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line>
                       </svg>
                     </span>
                     Permits and Logistics
@@ -5150,8 +5148,7 @@
                   <button type="button" class="faq-category-btn" data-category="accommodation">
                     <span class="faq-cat-icon">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>
                       </svg>
                     </span>
                     Accommodation & Meals
@@ -5161,8 +5158,7 @@
                   <button type="button" class="faq-category-btn" data-category="health">
                     <span class="faq-cat-icon">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line>
                       </svg>
                     </span>
                     Health and Safety
@@ -5172,8 +5168,7 @@
                   <button type="button" class="faq-category-btn" data-category="helicopter">
                     <span class="faq-cat-icon">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
+                        <circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
                       </svg>
                     </span>
                     Helicopter & Transportation
@@ -5183,8 +5178,7 @@
                   <button type="button" class="faq-category-btn" data-category="payment">
                     <span class="faq-cat-icon">
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
+                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line>
                       </svg>
                     </span>
                     Booking, Payments & Packing
@@ -5195,506 +5189,370 @@
 
               <!-- Right Content Area Accordion -->
               <div class="faq-main-panel">
+                <!-- Header Bar -->
                 <div class="faq-panel-header">
-                  <h3 class="faq-active-category-title" id="faq-current-cat-title">General Information</h3>
-                  <button type="button" class="faq-expand-all-btn" id="faq-expand-all-btn">
-                    <span>Expand All</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                  </button>
+                  <div class="faq-active-category-title" id="faq-current-category-title">General Information</div>
+                  <button type="button" class="faq-expand-all-btn" id="faq-expand-all-btn">Expand All</button>
                 </div>
 
 
                 <!-- Category Panel: general -->
-                <div class="faq-category-content" id="faq-cat-general">
-                  <div class="faq-accordion-group">
+                <div class="faq-category-content active" id="faq-cat-general">
 
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">How many days is the Everest Base Camp Luxury Trek?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>A typical Everest Base Camp Luxury Trek itinerary is arranged over 12 calendar days from Kathmandu arrival to departure. It features 9 mountain walking days (including two dedicated acclimatization days in Namche Bazaar and Dingboche), a scenic helicopter flight to Lukla on Day 2, and a helicopter flyback from Pheriche to Kathmandu on Day 11.</p>
-                      </div>
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">How many days is the Everest Base Camp Luxury Trek?</h3>
+                      <span class="faq-toggle-circle">∨</span>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">What is the maximum altitude reached on the Everest Base Camp Luxury Trek?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>The highest viewpoint reached on the trek is the summit of Kala Patthar at approximately 5,545 meters (18,192 ft). Everest Base Camp itself is situated at approximately 5,364 meters (17,598 ft), while Gorak Shep (5,164 m) is the highest overnight stay.</p>
-                      </div>
+                    <div class="faq-item-answer">
+                      <p>A typical Everest Base Camp Luxury Trek itinerary is arranged over 12 calendar days from Kathmandu arrival to departure. It features 9 mountain walking days (including two dedicated acclimatization days in Namche Bazaar and Dingboche), a scenic helicopter flight to Lukla on Day 2, and a helicopter flyback from Pheriche to Kathmandu on Day 11.</p>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Is the Everest Base Camp Luxury Trek suitable for beginners?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>The trek can be undertaken by first-time trekkers who possess good baseline cardiovascular fitness and have trained diligently for uphill hiking. While the luxury lodges and helicopter return eliminate return trail fatigue, the high altitude, steep climbs, and cold temperatures still demand genuine physical endurance.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Do I need travel insurance for the Everest Base Camp Luxury Trek?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Yes, comprehensive travel insurance is mandatory. Your policy must cover high-altitude trekking up to 6,000 meters, emergency helicopter rescue, medical hospitalization, and trip cancellation.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Is drinking water included?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Boiled or filtered drinking water is provided at lodges according to your package specification. We advise bringing two 1-liter reusable insulated bottles to avoid single-use plastic waste.</p>
-                      </div>
-                    </div>
-    
                   </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">What is the maximum altitude reached on the Everest Base Camp Luxury Trek?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>The highest viewpoint reached on the trek is the summit of Kala Patthar at approximately 5,545 meters (18,192 ft). Everest Base Camp itself is situated at approximately 5,364 meters (17,598 ft), while Gorak Shep (5,164 m) is the highest overnight stay.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Is the Everest Base Camp Luxury Trek suitable for beginners?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>The trek can be undertaken by first-time trekkers who possess good baseline cardiovascular fitness and have trained diligently for uphill hiking. While the luxury lodges and helicopter return eliminate return trail fatigue, the high altitude, steep climbs, and cold temperatures still demand genuine physical endurance.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Do I need travel insurance for the Everest Base Camp Luxury Trek?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Yes, comprehensive travel insurance is mandatory. Your policy must cover high-altitude trekking up to 6,000 meters, emergency helicopter rescue, medical hospitalization, and trip cancellation.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Is drinking water included?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Boiled or filtered drinking water is provided at lodges according to your package specification. We advise bringing two 1-liter reusable insulated bottles to avoid single-use plastic waste.</p>
+                    </div>
+                  </div>
+    
                 </div>
     
 
                 <!-- Category Panel: permits -->
-                <div class="faq-category-content" id="faq-cat-permits" style="display: none;">
-                  <div class="faq-accordion-group">
+                <div class="faq-category-content" id="faq-cat-permits">
 
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">What should I do if altitude symptoms develop?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Inform your lead Sherpa guide immediately. Our protocol is: stop ascent, rest, hydrate, perform oximeter screening, and descend if symptoms persist. Never attempt to push through altitude illness. Helicopter evacuation is dispatched if acute symptoms (HAPE/HACE) develop.</p>
-                      </div>
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">What should I do if altitude symptoms develop?</h3>
+                      <span class="faq-toggle-circle">∨</span>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">What meals are included?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Full-board meals are included throughout the trekking days: daily breakfast, lunch, and dinner at lodges, featuring a blend of hearty traditional Dal Bhat, soups, noodles, pasta, and continental dishes.</p>
-                      </div>
+                    <div class="faq-item-answer">
+                      <p>Inform your lead Sherpa guide immediately. Our protocol is: stop ascent, rest, hydrate, perform oximeter screening, and descend if symptoms persist. Never attempt to push through altitude illness. Helicopter evacuation is dispatched if acute symptoms (HAPE/HACE) develop.</p>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Are helicopter transfers included in this 12-day plan?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Yes. The standard 12-day luxury package includes two planned helicopter sectors: Kathmandu to Lukla on Day 2 and Pheriche to Kathmandu on Day 11, subject to confirmed quotation terms and weather clearance.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Is the Everest Base Camp Luxury Trek physically difficult?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Yes, it is classified as a demanding high-altitude trek. Even with premium lodges and private support, walking for 5 to 8 hours daily at elevations above 4,000 and 5,000 meters requires strong leg endurance, cardiovascular stamina, and disciplined pacing.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">What happens if the helicopter is delayed?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Safety always comes first. If adverse mountain weather temporarily delays your flight, our operations team coordinates revised departure slots and arranges extra lodge accommodations until safe flying conditions resume.</p>
-                      </div>
-                    </div>
-    
                   </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">What meals are included?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Full-board meals are included throughout the trekking days: daily breakfast, lunch, and dinner at lodges, featuring a blend of hearty traditional Dal Bhat, soups, noodles, pasta, and continental dishes.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Are helicopter transfers included in this 12-day plan?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Yes. The standard 12-day luxury package includes two planned helicopter sectors: Kathmandu to Lukla on Day 2 and Pheriche to Kathmandu on Day 11, subject to confirmed quotation terms and weather clearance.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Is the Everest Base Camp Luxury Trek physically difficult?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Yes, it is classified as a demanding high-altitude trek. Even with premium lodges and private support, walking for 5 to 8 hours daily at elevations above 4,000 and 5,000 meters requires strong leg endurance, cardiovascular stamina, and disciplined pacing.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">What happens if the helicopter is delayed?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Safety always comes first. If adverse mountain weather temporarily delays your flight, our operations team coordinates revised departure slots and arranges extra lodge accommodations until safe flying conditions resume.</p>
+                    </div>
+                  </div>
+    
                 </div>
     
 
                 <!-- Category Panel: accommodation -->
-                <div class="faq-category-content" id="faq-cat-accommodation" style="display: none;">
-                  <div class="faq-accordion-group">
+                <div class="faq-category-content" id="faq-cat-accommodation">
 
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Can I do the Everest Base Camp Luxury Trek privately?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Yes. Private luxury departures are our specialty and can be customized for solo travelers, couples, families, and private groups of friends. A private trek provides a dedicated guide and porter team, custom walking pace, flexible rest stops, and private helicopter options.</p>
-                      </div>
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Can I do the Everest Base Camp Luxury Trek privately?</h3>
+                      <span class="faq-toggle-circle">∨</span>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Can solo travelers book the luxury Everest Base Camp trek?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Yes, solo travelers can book a private luxury itinerary with a dedicated 1-on-1 licensed Sherpa guide and porter. A single supplement covers private single-occupancy hotel rooms in Kathmandu and private lodge rooms on the mountain.</p>
-                      </div>
+                    <div class="faq-item-answer">
+                      <p>Yes. Private luxury departures are our specialty and can be customized for solo travelers, couples, families, and private groups of friends. A private trek provides a dedicated guide and porter team, custom walking pace, flexible rest stops, and private helicopter options.</p>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">How many acclimatization days are included?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Two full acclimatization days are included: Day 4 in Namche Bazaar (3,440 m) and Day 7 in Dingboche (4,410 m), incorporating guided 'climb high, sleep low' day hikes to optimize physiological adaptation.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">What is the best season for the Everest Base Camp Luxury Trek?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>The premier seasons are Autumn (late September to November) for crystal-clear skies and magnificent panoramas, and Spring (March to May) for warmer temperatures, blossoming rhododendrons, and active expedition Base Camp life.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Which permits and registrations are required?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>The trek requires the Sagarmatha National Park Entry Permit, Khumbu Pasang Lhamu Rural Municipality Permit, and TIMS/Trek-Card registration. All permits are fully arranged and paid for by Namaste Hiking Trek.</p>
-                      </div>
-                    </div>
-    
                   </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Can solo travelers book the luxury Everest Base Camp trek?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Yes, solo travelers can book a private luxury itinerary with a dedicated 1-on-1 licensed Sherpa guide and porter. A single supplement covers private single-occupancy hotel rooms in Kathmandu and private lodge rooms on the mountain.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">How many acclimatization days are included?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Two full acclimatization days are included: Day 4 in Namche Bazaar (3,440 m) and Day 7 in Dingboche (4,410 m), incorporating guided 'climb high, sleep low' day hikes to optimize physiological adaptation.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">What is the best season for the Everest Base Camp Luxury Trek?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>The premier seasons are Autumn (late September to November) for crystal-clear skies and magnificent panoramas, and Spring (March to May) for warmer temperatures, blossoming rhododendrons, and active expedition Base Camp life.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Which permits and registrations are required?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>The trek requires the Sagarmatha National Park Entry Permit, Khumbu Pasang Lhamu Rural Municipality Permit, and TIMS/Trek-Card registration. All permits are fully arranged and paid for by Namaste Hiking Trek.</p>
+                    </div>
+                  </div>
+    
                 </div>
     
 
                 <!-- Category Panel: health -->
-                <div class="faq-category-content" id="faq-cat-health" style="display: none;">
-                  <div class="faq-accordion-group">
+                <div class="faq-category-content" id="faq-cat-health">
 
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Is the Everest Base Camp Luxury Trek suitable for families?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Families with active teenagers (aged 12 and above) who are physically fit and enjoy outdoor hiking can undertake this trek successfully. The private format allows the family to set its own daily schedule, take regular rest breaks, and manage acclimatization smoothly.</p>
-                      </div>
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Is the Everest Base Camp Luxury Trek suitable for families?</h3>
+                      <span class="faq-toggle-circle">∨</span>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Can the helicopter fly in all weather conditions?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>No. Mountain aviation operates strictly under Visual Flight Rules (VFR). Flights cannot operate during dense fog, heavy blizzards, or dangerously high wind turbulence. If a flight is delayed, our team coordinates departure as soon as conditions improve.</p>
-                      </div>
+                    <div class="faq-item-answer">
+                      <p>Families with active teenagers (aged 12 and above) who are physically fit and enjoy outdoor hiking can undertake this trek successfully. The private format allows the family to set its own daily schedule, take regular rest breaks, and manage acclimatization smoothly.</p>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Is the helicopter private or shared?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Depending on your quotation and group preference, flights can be arranged as a shared charter (sharing aircraft seats with other trekkers) or an exclusive private VIP charter. Your booking agreement will clearly state the flight arrangement.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Are hot showers included?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Hot gas or solar showers are available at lodges along the trail. In luxury lodges at lower elevations, hot showers are generally included in the room tier. At higher elevations (Lobuche and Gorak Shep), hot bucket showers may be subject to a nominal lodge fee (NPR 500–800) due to fuel transport costs.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Is the Everest Base Camp Luxury Trek suitable for couples?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Absolutely. It is one of the premier trekking choices for couples and honeymooners seeking an authentic Himalayan adventure without sacrificing privacy. We prioritize private rooms, double beds, and en-suite bathrooms wherever available.</p>
-                      </div>
-                    </div>
-    
                   </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Can the helicopter fly in all weather conditions?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>No. Mountain aviation operates strictly under Visual Flight Rules (VFR). Flights cannot operate during dense fog, heavy blizzards, or dangerously high wind turbulence. If a flight is delayed, our team coordinates departure as soon as conditions improve.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Is the helicopter private or shared?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Depending on your quotation and group preference, flights can be arranged as a shared charter (sharing aircraft seats with other trekkers) or an exclusive private VIP charter. Your booking agreement will clearly state the flight arrangement.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Are hot showers included?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Hot gas or solar showers are available at lodges along the trail. In luxury lodges at lower elevations, hot showers are generally included in the room tier. At higher elevations (Lobuche and Gorak Shep), hot bucket showers may be subject to a nominal lodge fee (NPR 500–800) due to fuel transport costs.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Is the Everest Base Camp Luxury Trek suitable for couples?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Absolutely. It is one of the premier trekking choices for couples and honeymooners seeking an authentic Himalayan adventure without sacrificing privacy. We prioritize private rooms, double beds, and en-suite bathrooms wherever available.</p>
+                    </div>
+                  </div>
+    
                 </div>
     
 
                 <!-- Category Panel: helicopter -->
-                <div class="faq-category-content" id="faq-cat-helicopter" style="display: none;">
-                  <div class="faq-accordion-group">
+                <div class="faq-category-content" id="faq-cat-helicopter">
 
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">What makes the Everest Base Camp trek a luxury trek?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Luxury is created through a holistic upgrade across five pillars: premium 4/5-star Kathmandu hotels, the best available mountain lodges with private rooms and attached bathrooms where available, two helicopter flight sectors (Kathmandu-Lukla and Pheriche-Kathmandu), dedicated Sherpa guide and porter support, and full-board meal arrangements.</p>
-                      </div>
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">What makes the Everest Base Camp trek a luxury trek?</h3>
+                      <span class="faq-toggle-circle">∨</span>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Is there five-star accommodation at Everest Base Camp?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>No conventional five-star hotels exist at Everest Base Camp or Gorak Shep. At extreme elevations above 5,000 meters, infrastructure is inherently rustic due to the remote, glaciated environment. Luxury here means clean, warm private rooms, dedicated service, warm meals, and organized logistics rather than luxury resort amenities.</p>
-                      </div>
+                    <div class="faq-item-answer">
+                      <p>Luxury is created through a holistic upgrade across five pillars: premium 4/5-star Kathmandu hotels, the best available mountain lodges with private rooms and attached bathrooms where available, two helicopter flight sectors (Kathmandu-Lukla and Pheriche-Kathmandu), dedicated Sherpa guide and porter support, and full-board meal arrangements.</p>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Do luxury lodges have private bathrooms?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Private en-suite bathrooms with western flush toilets and hot running water are available in Kathmandu, Phakding, and Namche Bazaar, and at select lodges in Dingboche. In Lobuche and Gorak Shep, extreme sub-zero freezing restricts plumbing, making clean shared facilities standard.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Are tips included in the package?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Tips for guides and porters are not included and are left to your personal discretion. In Nepal trekking culture, tipping is customary to show appreciation for the hard work and care of your mountain crew.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Can I customize the Everest Base Camp Luxury Trek?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Yes! As a private luxury trip, we can customize your schedule by adding extra acclimatization nights, upgrading to 5-star Kathmandu suites, adding private helicopter tours to Gokyo Lakes, or combining wildlife safaris.</p>
-                      </div>
-                    </div>
-    
                   </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Is there five-star accommodation at Everest Base Camp?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>No conventional five-star hotels exist at Everest Base Camp or Gorak Shep. At extreme elevations above 5,000 meters, infrastructure is inherently rustic due to the remote, glaciated environment. Luxury here means clean, warm private rooms, dedicated service, warm meals, and organized logistics rather than luxury resort amenities.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Do luxury lodges have private bathrooms?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Private en-suite bathrooms with western flush toilets and hot running water are available in Kathmandu, Phakding, and Namche Bazaar, and at select lodges in Dingboche. In Lobuche and Gorak Shep, extreme sub-zero freezing restricts plumbing, making clean shared facilities standard.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Are tips included in the package?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Tips for guides and porters are not included and are left to your personal discretion. In Nepal trekking culture, tipping is customary to show appreciation for the hard work and care of your mountain crew.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Can I customize the Everest Base Camp Luxury Trek?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Yes! As a private luxury trip, we can customize your schedule by adding extra acclimatization nights, upgrading to 5-star Kathmandu suites, adding private helicopter tours to Gokyo Lakes, or combining wildlife safaris.</p>
+                    </div>
+                  </div>
+    
                 </div>
     
 
                 <!-- Category Panel: payment -->
-                <div class="faq-category-content" id="faq-cat-payment" style="display: none;">
-                  <div class="faq-accordion-group">
+                <div class="faq-category-content" id="faq-cat-payment">
 
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Can I add extra acclimatization days?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Yes, additional acclimatization days can easily be scheduled in Namche Bazaar, Dingboche, or Pheriche upon request during your initial booking consultation.</p>
-                      </div>
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Can I add extra acclimatization days?</h3>
+                      <span class="faq-toggle-circle">∨</span>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">What should I confirm before paying for the trek?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Confirm your travel dates, exact hotel and lodge categories, private vs. shared helicopter status, baggage allowances, included meals, permit fees, deposit/balance payment deadlines, and comprehensive travel insurance coverage.</p>
-                      </div>
+                    <div class="faq-item-answer">
+                      <p>Yes, additional acclimatization days can easily be scheduled in Namche Bazaar, Dingboche, or Pheriche upon request during your initial booking consultation.</p>
                     </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Can I get vegetarian or vegan meals?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Yes. Teahouses along the Everest route offer an extensive range of vegetarian and vegan dishes including vegetable curries, lentil soups, rice, momos, noodles, and potato dishes. Inform us in advance of any dietary restrictions.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">Is Wi-Fi available during the luxury Everest Base Camp trek?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>Yes. Wi-Fi is available across most lodges. In lower settlements, lodges provide local Wi-Fi, while higher settlements use prepaid Everest Link satellite cards. Mobile 4G data (Ncell / NTC) is also accessible through Dingboche.</p>
-                      </div>
-                    </div>
-    
-
-                    <div class="faq-item">
-                      <button type="button" class="faq-item-question">
-                        <span class="faq-question-title">How much luggage can I take?</span>
-                        <span class="faq-toggle-circle">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="faq-item-answer">
-                        <p>The luggage limit is 15 kg (33 lbs) per person total, which covers your main duffle bag (carried by porters) and your daily daypack (carried by yourself). This weight aligns with helicopter aviation safety payload limits.</p>
-                      </div>
-                    </div>
-    
                   </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">What should I confirm before paying for the trek?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Confirm your travel dates, exact hotel and lodge categories, private vs. shared helicopter status, baggage allowances, included meals, permit fees, deposit/balance payment deadlines, and comprehensive travel insurance coverage.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Can I get vegetarian or vegan meals?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Yes. Teahouses along the Everest route offer an extensive range of vegetarian and vegan dishes including vegetable curries, lentil soups, rice, momos, noodles, and potato dishes. Inform us in advance of any dietary restrictions.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">Is Wi-Fi available during the luxury Everest Base Camp trek?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>Yes. Wi-Fi is available across most lodges. In lower settlements, lodges provide local Wi-Fi, while higher settlements use prepaid Everest Link satellite cards. Mobile 4G data (Ncell / NTC) is also accessible through Dingboche.</p>
+                    </div>
+                  </div>
+    
+
+                  <div class="faq-item">
+                    <div class="faq-item-question">
+                      <h3 class="faq-question-title">How much luggage can I take?</h3>
+                      <span class="faq-toggle-circle">∨</span>
+                    </div>
+                    <div class="faq-item-answer">
+                      <p>The luggage limit is 15 kg (33 lbs) per person total, which covers your main duffle bag (carried by porters) and your daily daypack (carried by yourself). This weight aligns with helicopter aviation safety payload limits.</p>
+                    </div>
+                  </div>
+    
                 </div>
     
               </div>
