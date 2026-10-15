@@ -217,6 +217,22 @@ function getSplinePath(points, includeM = true) {
   return d;
 }
 
+let localUnitState = 'm';
+
+function getActiveUnit() {
+  if (typeof window.getCurrentUnit === 'function') return window.getCurrentUnit();
+  return localUnitState;
+}
+
+function setActiveUnit(unit) {
+  localUnitState = unit;
+  if (typeof window.setUnit === 'function') {
+    window.setUnit(unit);
+  } else {
+    window.dispatchEvent(new Event('unitchange'));
+  }
+}
+
 export function renderAltitudeChart(containerId, trekKey = "ebc") {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -224,7 +240,7 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
   const data = trekAltitudeProfiles[trekKey] || trekAltitudeProfiles["ebc"];
   const points = data.points;
   
-  const unit = typeof getCurrentUnit === 'function' ? getCurrentUnit() : 'm';
+  const unit = getActiveUnit();
   const isFeet = unit === 'ft';
   const unitLabel = isFeet ? 'ft' : 'm';
 
@@ -352,14 +368,12 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
   unitButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       const selectedUnit = e.target.getAttribute('data-unit');
-      if (typeof setUnit === 'function') {
-        setUnit(selectedUnit);
-        
-        // Also update unit selector value in header to match
-        const globalUnitSelect = document.getElementById('unit-select');
-        if (globalUnitSelect) {
-          globalUnitSelect.value = selectedUnit;
-        }
+      setActiveUnit(selectedUnit);
+      
+      // Also update unit selector value in header to match
+      const globalUnitSelect = document.getElementById('unit-select');
+      if (globalUnitSelect) {
+        globalUnitSelect.value = selectedUnit;
       }
     });
   });
@@ -405,13 +419,19 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function initAltitudeChart() {
   const wrapper = document.getElementById('altitude-chart-wrapper');
   if (wrapper) {
     const key = wrapper.getAttribute('data-trek-key') || 'ebc';
     renderAltitudeChart('altitude-chart-wrapper', key);
   }
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAltitudeChart);
+} else {
+  initAltitudeChart();
+}
 
 window.addEventListener('unitchange', () => {
   const wrapper = document.getElementById('altitude-chart-wrapper');
@@ -420,3 +440,4 @@ window.addEventListener('unitchange', () => {
     renderAltitudeChart('altitude-chart-wrapper', key);
   }
 });
+

@@ -11269,4 +11269,54 @@ textarea {
   }
 }
 
+/* ==========================================================================
+   Interactive Gokyo Details & Packing Polish
+   ========================================================================== */
+.gear-tab-btn {
+  padding: 8px 18px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.gear-tab-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.gear-tab-btn.active {
+  background: #008060 !important;
+  color: #ffffff !important;
+  border-color: #008060 !important;
+  box-shadow: 0 2px 8px rgba(0, 128, 96, 0.25);
+}
+
+.gear-checklist-item.packed span {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.itinerary-toggle-circle svg,
+.detail-toggle-icon svg {
+  transition: transform 0.25s ease;
+}
+
+.itinerary-accordion-card.active .itinerary-toggle-circle svg,
+.detail-accordion-card.active .detail-toggle-icon svg {
+  transform: rotate(180deg);
+}
+
+.itinerary-accordion-card.active .itinerary-toggle-circle,
+.detail-accordion-card.active .detail-toggle-icon {
+  background: #e6f7f0;
+  color: #008060;
+}
+
+
 

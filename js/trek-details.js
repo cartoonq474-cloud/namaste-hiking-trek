@@ -84,7 +84,7 @@ function setupAccordions() {
   const accordionHeaders = document.querySelectorAll('.itinerary-header');
   accordionHeaders.forEach(header => {
     header.addEventListener('click', () => {
-      const card = header.closest('.itinerary-card');
+      const card = header.closest('.itinerary-card, .itinerary-accordion-card');
       if (!card) return;
       const content = card.querySelector('.itinerary-content');
       if (!content) return;
@@ -95,7 +95,7 @@ function setupAccordions() {
         content.style.maxHeight = '';
       } else {
         // Collapse other cards first to make it a clean accordion
-        const otherCards = document.querySelectorAll('.itinerary-card.active');
+        const otherCards = document.querySelectorAll('.itinerary-card.active, .itinerary-accordion-card.active');
         otherCards.forEach(c => {
           if (c !== card) {
             c.classList.remove('active');
@@ -112,11 +112,36 @@ function setupAccordions() {
 
   // Automatically compute and set initial heights for active items on page load
   setTimeout(() => {
-    const activeContents = document.querySelectorAll('.itinerary-card.active .itinerary-content');
+    const activeContents = document.querySelectorAll('.itinerary-card.active .itinerary-content, .itinerary-accordion-card.active .itinerary-content');
     activeContents.forEach(content => {
       content.style.maxHeight = content.scrollHeight + 'px';
     });
   }, 300);
+
+  // Global Expand All / Collapse All for Itinerary
+  const toggleAllBtn = document.getElementById('toggle-all-itinerary') || document.getElementById('itin-expand-all-btn');
+  if (toggleAllBtn) {
+    toggleAllBtn.addEventListener('click', () => {
+      const allCards = document.querySelectorAll('.itinerary-card, .itinerary-accordion-card');
+      const allActive = Array.from(allCards).every(c => c.classList.contains('active'));
+      allCards.forEach(c => {
+        const content = c.querySelector('.itinerary-content');
+        if (allActive) {
+          c.classList.remove('active');
+          if (content) content.style.maxHeight = '';
+        } else {
+          c.classList.add('active');
+          if (content) content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+      const span = toggleAllBtn.querySelector('span');
+      if (span) {
+        span.textContent = allActive ? 'Expand All' : 'Collapse All';
+      } else {
+        toggleAllBtn.textContent = allActive ? 'Expand All' : 'Collapse All';
+      }
+    });
+  }
 }
 
 // Setup Interactive Gear Checklist
@@ -124,8 +149,6 @@ function setupGearChecklist(trekKey) {
   const checkboxes = document.querySelectorAll('#section-packing .gear-item-checkbox');
   const countDisplay = document.querySelector('.gear-checked-count');
   const totalDisplay = document.querySelector('.gear-total-count');
-
-  if (!checkboxes.length) return;
 
   const storageKey = `namaste-gear-${trekKey || 'default'}`;
   
@@ -138,45 +161,69 @@ function setupGearChecklist(trekKey) {
     console.error("Error reading gear states:", e);
   }
 
-  // Initialize checks
-  checkboxes.forEach(cb => {
-    const id = cb.getAttribute('id');
-    if (savedStates[id]) {
-      cb.checked = true;
-      const row = cb.closest('.gear-item-row');
-      if (row) row.classList.add('packed');
-    }
-
-    cb.addEventListener('change', () => {
-      const parentRow = cb.closest('.gear-item-row');
-      if (parentRow) {
-        if (cb.checked) {
-          parentRow.classList.add('packed');
-          savedStates[id] = true;
-        } else {
-          parentRow.classList.remove('packed');
-          delete savedStates[id];
-        }
-      }
-      
-      // Save to localStorage
-      try {
-        localStorage.setItem(storageKey, JSON.stringify(savedStates));
-      } catch (e) {
-        console.error("Error saving gear states:", e);
-      }
-      
-      updatePackedCount();
+  // Gear category tab switching (for tabbed layouts like Gokyo)
+  const gearTabs = document.querySelectorAll('.gear-tab-btn');
+  const gearPanels = document.querySelectorAll('.gear-tab-panel');
+  if (gearTabs.length && gearPanels.length) {
+    gearTabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        gearTabs.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const targetTab = btn.getAttribute('data-gear-tab');
+        gearPanels.forEach(p => {
+          if (p.id === `gear-panel-${targetTab}`) {
+            p.style.display = 'block';
+            p.classList.add('active');
+          } else {
+            p.style.display = 'none';
+            p.classList.remove('active');
+          }
+        });
+      });
     });
-  });
-
-  function updatePackedCount() {
-    const packedCount = document.querySelectorAll('#section-packing .gear-item-checkbox:checked').length;
-    if (countDisplay) countDisplay.textContent = packedCount;
-    if (totalDisplay) totalDisplay.textContent = checkboxes.length;
   }
 
-  updatePackedCount();
+  // Initialize checks
+  if (checkboxes.length) {
+    checkboxes.forEach((cb, index) => {
+      const id = cb.getAttribute('id') || cb.getAttribute('data-gear-id') || `gear-item-${index}`;
+      if (savedStates[id]) {
+        cb.checked = true;
+        const row = cb.closest('.gear-item-row, .gear-checklist-item');
+        if (row) row.classList.add('packed');
+      }
+
+      cb.addEventListener('change', () => {
+        const parentRow = cb.closest('.gear-item-row, .gear-checklist-item');
+        if (parentRow) {
+          if (cb.checked) {
+            parentRow.classList.add('packed');
+            savedStates[id] = true;
+          } else {
+            parentRow.classList.remove('packed');
+            delete savedStates[id];
+          }
+        }
+        
+        // Save to localStorage
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(savedStates));
+        } catch (e) {
+          console.error("Error saving gear states:", e);
+        }
+        
+        updatePackedCount();
+      });
+    });
+
+    function updatePackedCount() {
+      const packedCount = document.querySelectorAll('#section-packing .gear-item-checkbox:checked').length;
+      if (countDisplay) countDisplay.textContent = packedCount;
+      if (totalDisplay) totalDisplay.textContent = checkboxes.length;
+    }
+
+    updatePackedCount();
+  }
 }
 
 // Setup Sticky Booking Live Calculator
@@ -323,7 +370,7 @@ function setupReadTracker(trekKey) {
 
   // Initial setup of classes
   cards.forEach(card => {
-    const id = card.getAttribute('data-detail-id');
+    const id = card.getAttribute('data-detail-id') || card.id;
     if (readStates[id]) {
       card.classList.add('read');
     }
@@ -365,7 +412,7 @@ function setupReadTracker(trekKey) {
   cards.forEach(card => {
     const header = card.querySelector('.detail-accordion-header');
     const content = card.querySelector('.detail-accordion-content');
-    const id = card.getAttribute('data-detail-id');
+    const id = card.getAttribute('data-detail-id') || card.id;
 
     if (!header || !content) return;
 
@@ -837,7 +884,7 @@ function setupHimalayanReviews() {
 // 6. Categorized FAQ Section Handler
 function setupFaqSection() {
   const categoryBtns = document.querySelectorAll('.faq-category-btn');
-  const categoryPanels = document.querySelectorAll('.faq-category-content');
+  const categoryPanels = document.querySelectorAll('.faq-category-content, .faq-category-panel');
   const currentCategoryTitle = document.getElementById('faq-current-category-title');
   const expandAllBtn = document.getElementById('faq-expand-all-btn');
 
@@ -849,7 +896,7 @@ function setupFaqSection() {
       categoryBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
-      const targetCat = btn.getAttribute('data-category');
+      const targetCat = btn.getAttribute('data-category') || btn.getAttribute('data-faq-cat');
       const catText = btn.innerText.trim();
 
       if (currentCategoryTitle) {
@@ -857,10 +904,13 @@ function setupFaqSection() {
       }
 
       categoryPanels.forEach(panel => {
-        if (panel.id === `faq-cat-${targetCat}`) {
+        const matches = (panel.id === `faq-cat-${targetCat}` || panel.id === `faq-panel-${targetCat}`);
+        if (matches) {
           panel.classList.add('active');
+          panel.style.display = 'block';
         } else {
           panel.classList.remove('active');
+          panel.style.display = 'none';
         }
       });
 
@@ -884,7 +934,8 @@ function setupFaqSection() {
   // Expand All / Collapse All Button
   if (expandAllBtn) {
     expandAllBtn.addEventListener('click', () => {
-      const activePanel = document.querySelector('.faq-category-content.active');
+      const activePanel = document.querySelector('.faq-category-content.active, .faq-category-panel.active') ||
+                          Array.from(categoryPanels).find(p => getComputedStyle(p).display !== 'none');
       if (!activePanel) return;
 
       const items = activePanel.querySelectorAll('.faq-item');
