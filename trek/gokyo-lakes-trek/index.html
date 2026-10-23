@@ -3872,309 +3872,1029 @@
   
           </section>
 
-          <!-- Section 6: Important Details & Read Before You Book Guides -->
+          
+          <!-- Section 6: Read Before You Book: 16 In-Depth Gokyo Guides -->
           <section id="section-details" class="trek-detail-section">
-            <h2 class="trek-section-title">Read Before You Book: 16 In-Depth Gokyo Guides</h2>
-            <p style="color: var(--color-neutral-700); font-size: 1.05rem; margin-top: 14px; margin-bottom: 24px; line-height: 1.7;">
-              Essential pre-trip intelligence on mountain teahouse standards, nutrition, Ramsar wetland sanctity, Gokyo Ri sunrise ascent, Ngozumpa Glacier moraines, physical preparation, acclimatization safety, flight operations, and permits.
+            <div class="details-title-wrapper" style="margin-bottom: 20px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+                <h2 class="details-main-title" style="margin: 0;">Read Before You Book: 16 In-Depth Gokyo Guides</h2>
+                <div class="details-bulk-actions">
+                  <button type="button" id="guidesToggleAllBtn" class="guides-bulk-toggle-btn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    <span>Expand All</span>
+                  </button>
+                </div>
+              </div>
+              <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 10px;"></div>
+            </div>
+
+            <p style="color: var(--color-neutral-700); font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
+              Prepare thoroughly for your high-altitude journey. We have documented every operational, physiological, and logistical nuance of trekking into the Gokyo Valley—from teahouse heating realities and water purification to sunrise climbs of Gokyo Ri and helicopter rescue protocols.
             </p>
 
-            <!-- Interactive Progress Tracker Badge -->
-            <div class="details-progress-wrapper">
-              <div class="details-progress-badge">
-                <div class="details-progress-ring-box">
-                  <svg width="44" height="44">
-                    <circle class="details-progress-ring-bg" r="18" cx="22" cy="22"></circle>
-                    <circle class="details-progress-ring-bar" r="18" cx="22" cy="22"></circle>
-                  </svg>
+            <!-- Guide Controls: Category Tabs & Real-Time Filter -->
+            <div class="guide-controls-wrapper">
+              <!-- Category Filter Tabs -->
+              <div class="guide-category-pills" id="guideCategoryPills" role="tablist">
+                <button type="button" class="guide-pill-btn active" data-filter="all" role="tab" aria-selected="true">
+                  <span>All Guides</span>
+                  <span class="guide-pill-count">16</span>
+                </button>
+                <button type="button" class="guide-pill-btn" data-filter="route" role="tab" aria-selected="false">
+                  <span>🏔️ Route & Lakes</span>
+                  <span class="guide-pill-count">5</span>
+                </button>
+                <button type="button" class="guide-pill-btn" data-filter="health" role="tab" aria-selected="false">
+                  <span>🩺 Health & Altitude</span>
+                  <span class="guide-pill-count">4</span>
+                </button>
+                <button type="button" class="guide-pill-btn" data-filter="lodge" role="tab" aria-selected="false">
+                  <span>🏡 Food & Stay</span>
+                  <span class="guide-pill-count">3</span>
+                </button>
+                <button type="button" class="guide-pill-btn" data-filter="logistics" role="tab" aria-selected="false">
+                  <span>📋 Logistics & Cost</span>
+                  <span class="guide-pill-count">4</span>
+                </button>
+              </div>
+
+              <!-- Filter Search Bar & Reading Tracker Progress -->
+              <div class="guide-search-and-progress">
+                <div class="guide-search-box">
+                  <svg class="guide-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <input type="text" id="guideSearchInput" class="guide-search-input" placeholder="Search guides (e.g. Wi-Fi, Diamox, Gokyo Ri, showers, permits)..." aria-label="Search Gokyo guides">
+                  <button type="button" id="guideSearchClearBtn" class="guide-search-clear" style="display: none;" aria-label="Clear search">×</button>
                 </div>
-                <div class="details-progress-text-box">
-                  <span class="details-progress-count">0/16 read</span>
-                  <span class="details-progress-status">Nice start — keep going</span>
+
+                <!-- Interactive Progress Tracker Badge -->
+                <div class="details-progress-wrapper" style="margin: 0;">
+                  <div class="details-progress-badge">
+                    <div class="details-progress-ring-box">
+                      <svg width="44" height="44">
+                        <circle class="details-progress-ring-bg" r="18" cx="22" cy="22"></circle>
+                        <circle class="details-progress-ring-bar" r="18" cx="22" cy="22"></circle>
+                      </svg>
+                    </div>
+                    <div class="details-progress-text-box">
+                      <span class="details-progress-count">0/16 read</span>
+                      <span class="details-progress-status">Nice start — keep going</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="details-accordion-wrapper" style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 30px;">
+            <!-- 16 Upgraded Guide Accordion Cards -->
+            <div class="details-accordion-wrapper" id="detailsAccordionWrapper" style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px;">
 
               <!-- Guide 1: Mountain Teahouses & Accommodation Standards -->
-              <div class="detail-accordion-card" id="detail-card-teahouse-life">
+              <div class="detail-accordion-card" id="detail-card-teahouse-life" data-guide-category="lodge">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">LODGE & TEAHOUSE</div>
-                  <h3 class="detail-title">Mountain Teahouses & Accommodation Standards</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path d="M3 13h18"></path><circle cx="8" cy="9" r="1.5"></circle></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">LODGE & TEAHOUSE</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Mountain Teahouses & Accommodation Standards</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>Trekking in the Khumbu follows the traditional Himalayan teahouse system. A teahouse is a family-run mountain lodge offering a communal heated dining hall and basic private bedrooms (typically twin-share with two wooden single beds, foam mattresses, clean sheets, and pillows). In Namche Bazaar, lodges offer modern amenities such as en-suite bathrooms, electric blankets, and bakery cafes. Higher up the Gokyo Valley—in Dole, Machhermo, and Gokyo village—infrastructure becomes progressively simpler. Rooms are unheated; the central dining room stove (fueled by dried yak dung or wood pellets) is lit each evening around 4:30–5:00 p.m., serving as the cozy social hub of the lodge. At Gokyo (4,790 m), facilities are functional and clean, with shared Asian-style squat or Western toilets on each floor. Hot showers (gas or solar-heated) are available for an extra charge of NPR 400–700 ($3–$6). We provide four-season sleeping bags rated to -15°C/-20°C to ensure you stay warm and comfortable through frosty alpine nights.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">The traditional Himalayan teahouse system provides authentic, family-run lodges featuring comfortable private twin bedrooms and a central heated dining hall that serves as the warm social hearth of each village.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Room Standards:</span>
+                        <span class="guide-fact-value">Twin-share wooden single beds with clean foam mattresses, fresh linens, and pillows. Bedrooms are unheated; we provide 4-season sleeping bags rated to -15°C/-20°C.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Dining Hall Stove:</span>
+                        <span class="guide-fact-value">Central stove fueled by dried yak dung or wood pellets is lit every evening at ~4:30 PM, creating a warm, cozy social atmosphere.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Bathroom Facilities:</span>
+                        <span class="guide-fact-value">Modern attached en-suite bathrooms in Namche Bazaar; clean shared Western-style or Asian squat toilets on each floor in Dole, Machhermo, and Gokyo.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Hot Showers:</span>
+                        <span class="guide-fact-value">Solar or gas-heated hot showers are available at teahouses for an additional charge of NPR 400–700 ($3–$6).</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Charging sockets are located only in the communal dining hall and cost NPR 200–500 per device. Carry a 20,000 mAh power bank inside your sleeping bag at night so the freezing cold does not sap your battery charge.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 2: Teahouse Food, Meal Choices & Dietary Options -->
-              <div class="detail-accordion-card" id="detail-card-food-dining">
+              <div class="detail-accordion-card" id="detail-card-food-dining" data-guide-category="lodge">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">FOOD & NUTRITION</div>
-                  <h3 class="detail-title">Teahouse Food, Meal Choices & Dietary Options</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">FOOD & NUTRITION</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Teahouse Food, Meal Choices & Dietary Options</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>Mountain teahouse kitchens serve a satisfying blend of traditional Nepali staples, Tibetan specialties, and familiar international comfort dishes. The undisputed champion of trekking nutrition is Dal Bhat: a steaming plate of steamed white or brown rice, aromatic lentil soup, spiced vegetable curry, sautéed greens (saag), and spicy pickled chutney. Dal Bhat is freshly prepared, nutritious, easily digestible, and comes with free refills ("Dal Bhat Power, 24 Hour!"). Other common menu choices include vegetable and egg fried rice, chow mein noodles, potato rosti, macaroni cheese, momos (steamed dumplings), porridge, pancakes, and Tibetan bread with honey. Vegetarian and vegan diets are exceptionally easy to cater to along the entire Gokyo route. If you have severe food allergies (such as celiac gluten intolerance or nut allergies), inform your guide prior to departure and double-check with the lodge kitchen, as remote mountain kitchens utilize shared preparation spaces.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Teahouse kitchens along the Gokyo route serve high-carb, nutrient-dense meals engineered for sustained mountain walking, expertly blending traditional Nepali recipes with international comfort food.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Dal Bhat Power:</span>
+                        <span class="guide-fact-value">Steamed rice, aromatic lentil soup (dal), seasonal vegetable curry, greens (saag), and spicy pickled chutney with free refills on every plate.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Western & Asian Options:</span>
+                        <span class="guide-fact-value">Vegetable and egg fried rice, chow mein noodles, potato rosti, momos (steamed dumplings), porridge, pancakes, toast, and macaroni pasta.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Dietary Flexibility:</span>
+                        <span class="guide-fact-value">Vegetarian and vegan diets are exceptionally easy to cater to along the entire route. Notify us before departure for gluten-free accommodations.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Meat Advisory:</span>
+                        <span class="guide-fact-value">Meat is portered up without refrigeration above Namche; our guides recommend a vegetarian diet above 3,500 m for optimal digestive health.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Place your dinner order with your guide by 5:30 PM each evening so the kitchen can prepare your meal fresh without extended delays during peak dining hours.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 3: Hydration, Drinking Water & Purification Methods -->
-              <div class="detail-accordion-card" id="detail-card-hydration-water">
+              <div class="detail-accordion-card" id="detail-card-hydration-water" data-guide-category="lodge">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">HYDRATION & WATER</div>
-                  <h3 class="detail-title">Hydration, Drinking Water & Purification Methods</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">HYDRATION & WATER</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Hydration, Drinking Water & Purification Methods</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>Proper hydration is the single most effective physiological aid for high-altitude acclimatization. You should consume between 3.5 and 4.5 liters of clean fluid daily (including water, hot lemon, ginger tea, and garlic soup). At high elevation, the atmosphere is exceptionally dry, and your increased respiration rate causes rapid moisture loss. Do not rely on single-use plastic mineral water bottles, which create severe environmental waste in Sagarmatha National Park and are increasingly prohibited. Instead, carry two 1-liter reusable wide-mouth bottles (such as Nalgene) or an insulated flask. You can fill up tap water at lodges and treat it using a combination of water purification tablets (Aquatabs / chlorine dioxide), a portable UV purifier (SteriPEN), or a hollow-fiber microfilter (Sawyer Squeeze). Alternatively, teahouses sell boiled drinking water (NPR 200–500 per liter depending on elevation), which can also be placed inside your sleeping bag at night as a comforting bed warmer before drinking the next morning.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Proper hydration is your single most potent physiological tool for acclimatizing smoothly; dry, thin mountain air accelerates dehydration and amplifies altitude fatigue.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Daily Fluid Target:</span>
+                        <span class="guide-fact-value">Drink 3.5 to 4.5 liters of clean fluids daily (water, warm lemon-ginger-honey tea, and garlic soup).</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Purification Protocols:</span>
+                        <span class="guide-fact-value">Use chlorine dioxide tablets (Aquatabs / Katadyn Micropur) or portable UV SteriPENs to sanitize lodge tap water.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Boiled Drinking Water:</span>
+                        <span class="guide-fact-value">Lodge kitchens sell thermoses of boiled drinking water (NPR 200–400 per liter) which is safe, sterile, and soothing in sub-zero evenings.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Plastic Bottle Ban:</span>
+                        <span class="guide-fact-value">Single-use plastic bottles are restricted throughout Sagarmatha National Park to eliminate plastic waste in fragile glacial ecosystems.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Fill your Nalgene bottle with boiling water before sleeping and slip it into your sleeping bag—it functions as an effective hot water bottle and gives you warm, ready-to-drink water in the morning.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 4: The Gokyo Lakes System & Sacred Dudh Pokhari -->
-              <div class="detail-accordion-card" id="detail-card-lakes-ramsar">
+              <div class="detail-accordion-card" id="detail-card-lakes-ramsar" data-guide-category="route">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">SACRED WETLANDS</div>
-                  <h3 class="detail-title">The Gokyo Lakes System & Sacred Dudh Pokhari</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c.6 0 1.2-.2 1.7-.6 1-.8 2.6-.8 3.6 0 1 .8 2.6.8 3.6 0 1-.8 2.6-.8 3.6 0 1 .8 2.6.8 3.6 0 .5.4 1.1.6 1.7.6"></path><path d="M2 18c.6 0 1.2-.2 1.7-.6 1-.8 2.6-.8 3.6 0 1 .8 2.6.8 3.6 0 1-.8 2.6-.8 3.6 0 1 .8 2.6.8 3.6 0 .5.4 1.1.6 1.7.6"></path></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">SACRED WETLANDS</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">The Gokyo Lakes System & Sacred Dudh Pokhari</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>The Gokyo Lakes comprise the highest freshwater alpine wetland system in the world, spanning a designated Ramsar site of 7,770 hectares within Sagarmatha National Park. The wetland consists of six principal glacial lakes fed by subterranean seepage from the Ngozumpa Glacier and snow meltwater from surrounding peaks. The third lake, Dudh Pokhari ("Milk Lake" / Gokyo Cho), sits at 4,790 m directly beside Gokyo village and is the most celebrated for its vivid turquoise-emerald hue. Beyond their extraordinary visual splendor, the lakes hold profound spiritual significance: during the sacred Janai Purnima festival in August, hundreds of Hindu and Buddhist pilgrims trek to the lakes to take holy cleansing dips. The basin is also an internationally critical stopover sanctuary for migratory waterfowl, including the Brahminy duck (ruddy shelduck) and bar-headed geese crossing the Himalayan divide. Trekkers are expected to treat the lakes with deep reverence—swimming, washing clothes, and disposing of waste in or near the water is strictly prohibited.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Recognized internationally as a protected Ramsar Wetland of International Importance, the six alpine lakes of Gokyo constitute the highest freshwater lake network on Earth.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">First Lake (Longponga Cho):</span>
+                        <span class="guide-fact-value">Situated at 4,690 m, this is the introductory glacial lake encountered right as you climb past the snout of the Ngozumpa Glacier.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Second Lake (Taujun Cho):</span>
+                        <span class="guide-fact-value">Sitting at 4,740 m, known for its tranquil turquoise waters framed by steep lateral moraines and alpine cliffs.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Third Lake (Dudh Pokhari):</span>
+                        <span class="guide-fact-value">At 4,790 m, this radiant turquoise lake is the centerpiece of Gokyo settlement, directly below the soaring summit ridge of Gokyo Ri.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Sacred Status:</span>
+                        <span class="guide-fact-value">Deeply revered by both Buddhists and Hindus (dedicated to Lord Shiva); bathing, washing, or disturbing the sacred waters is strictly prohibited.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Walk the quiet eastern shoreline trail of Dudh Pokhari during the late afternoon calm—when the valley wind settles, the turquoise water reflects towering mountain faces like a flawless mirror.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 5: Fourth & Fifth Lake Excursions: Exploring the Upper Basin -->
-              <div class="detail-accordion-card" id="detail-card-upper-lakes">
+              <div class="detail-accordion-card" id="detail-card-upper-lakes" data-guide-category="route">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">OPTIONAL EXCURSIONS</div>
-                  <h3 class="detail-title">Fourth & Fifth Lake Excursions: Exploring the Upper Basin</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">OPTIONAL EXCURSIONS</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Fourth & Fifth Lake Excursions: Exploring the Upper Basin</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>While standard itineraries focus on Gokyo Ri and the principal village lake (Dudh Pokhari), ambitious hikers with good stamina can explore the upper Gokyo Valley on Day 10. Heading north along the western lateral moraine of the Ngozumpa Glacier, a 1.5 to 2-hour walk leads to the Fourth Lake, Thonak Cho (4,870 m), an immense, deep-blue water body framed by dramatic granite cliffs. Continuing another hour farther north brings you to the Fifth Lake, Ngozumpa Cho (4,990 m). Near the fifth lake sits the renowned viewpoint known as Scoundrel's Viewpoint, which presents a jaw-dropping, close-up perspective of the colossal southern face of Mount Cho Oyu (8,188 m) and the vast ice field of the Ngozumpa Glacier with Mount Everest towering in the distance. This optional round-trip excursion adds approximately 5 to 6 hours of high-altitude walking, so evaluate your energy reserves, weather conditions, and consult your Sherpa guide before setting out.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Venturing north from Gokyo village into the wild upper glacial basin brings adventurous trekkers into an untouched alpine amphitheater beneath the towering south face of Mount Cho Oyu.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Fourth Lake (Thonak Cho):</span>
+                        <span class="guide-fact-value">Located at 4,870 m (~3 km north of Gokyo village; 1.5–2 hrs walk). The deepest and largest lake in the entire Gokyo basin.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Fifth Lake (Ngozumpa Cho):</span>
+                        <span class="guide-fact-value">Sitting at 4,990 m directly beneath the massive hanging glaciers and sheer 3,000 m south wall of Mount Cho Oyu (8,188 m).</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Scoundrel's Viewpoint:</span>
+                        <span class="guide-fact-value">A high moraine ridge adjacent to the fifth lake providing an unparalleled close-range vantage point of Mount Everest, Lhotse, and the giant glacier.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Time Needed:</span>
+                        <span class="guide-fact-value">4 to 6 hours round-trip from Gokyo village lodges; ideal for the afternoon of Day 10 after climbing Gokyo Ri.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Always consult your lead guide before setting out for the upper lakes; afternoon weather can shift rapidly and wind chills near the Cho Oyu face are intense.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 6: Gokyo Ri Summit Ascent (5,357 m): Effort, Timing & Panoramas -->
-              <div class="detail-accordion-card" id="detail-card-gokyo-ri-climb">
+              <div class="detail-accordion-card" id="detail-card-gokyo-ri-climb" data-guide-category="route">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">SUMMIT VIEWPOINT</div>
-                  <h3 class="detail-title">Gokyo Ri Summit Ascent (5,357 m): Effort, Timing & Panoramas</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3l4 8 5-5 5 15H2L8 3z"></path></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">SUMMIT VIEWPOINT</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Gokyo Ri Summit Ascent (5,357 m): Effort, Timing & Panoramas</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>Rising steeply directly behind Gokyo village, Gokyo Ri (5,357 m / 17,575 ft) is universally regarded as one of the finest mountain panoramic viewpoints in the Himalayas. The climb begins in the pre-dawn darkness (typically 5:00 a.m.) to catch first light illuminating the summits. The trail is non-technical—a well-trodden, zig-zagging dirt and rock path—but the relentless uphill gradient and thin air (approximately 50% sea-level oxygen) make it physically demanding. The ascent normally takes 2 to 3 hours at a slow, rhythmic "Sherpa pace." Upon reaching the prayer-flag-adorned summit, you are greeted by an unforgettable 360-degree amphitheater: Mount Everest (8,848 m), Lhotse (8,516 m), Makalu (8,485 m), and Cho Oyu (8,188 m) stand in stark, glittering relief against the sky, while the turquoise lakes of Gokyo shimmer like dropped jewels thousands of feet below. Carry warm gloves, an expedition down jacket, headlamp, and water inside an insulated sleeve to prevent freezing.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Rising dramatically behind Gokyo village, Gokyo Ri (5,357 m / 17,575 ft) is celebrated by veteran mountaineers as offering the most expansive 360-degree mountain panorama in the Himalayas.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Four 8,000-Meter Giants:</span>
+                        <span class="guide-fact-value">Direct unobstructed views of Mount Everest (8,848 m), Lhotse (8,516 m), Makalu (8,485 m), and Cho Oyu (8,188 m), with sparkling turquoise lakes below.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Climb Difficulty:</span>
+                        <span class="guide-fact-value">A strenuous, steep switchback hiking trail on loose rocky scree; non-technical, requiring no ropes, crampons, or mountaineering equipment.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Start Time & Duration:</span>
+                        <span class="guide-fact-value">Departs around 5:00 AM with headlamps; the ascent requires 2 to 3 hours of steady walking, followed by 1 to 1.5 hours descent for breakfast.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Summit Elevation:</span>
+                        <span class="guide-fact-value">5,357 meters (17,575 ft), marked with fluttering Buddhist prayer flags and stone cairns.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Pre-dawn summit climb temperatures frequently drop to -15°C to -20°C with wind chill. Wear thermal base layers, a heavy down jacket, windproof shell, and keep spare camera batteries in an inside chest pocket.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 7: Ngozumpa Glacier Landscape & Moraine Safety -->
-              <div class="detail-accordion-card" id="detail-card-ngozumpa-glacier">
+              <div class="detail-accordion-card" id="detail-card-ngozumpa-glacier" data-guide-category="route">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">GLACIOLOGY & MORAINE</div>
-                  <h3 class="detail-title">Ngozumpa Glacier Landscape & Moraine Safety</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="21"></line></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">GLACIOLOGY & MORAINE</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Ngozumpa Glacier Landscape & Moraine Safety</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>Stretching roughly 20 kilometers southward from the slopes of Cho Oyu, the Ngozumpa Glacier is the longest glacier in the Himalayas. Unlike pristine white polar ice sheets, Ngozumpa is a classic debris-covered glacier: its dynamic ice core is blanketed beneath millions of tons of shattered rock, sand, gravel, and massive boulders carved out by centuries of glacial movement. The trail into Gokyo climbs up and over the glacier's unstable terminal moraine near Pangkha. From elevated vantage points along the lateral moraine and Gokyo Ri, you can see dramatic meltwater ponds, supraglacial lakes, sheer exposed ice cliffs, and hear the occasional echoing creaks of shifting ice. Trekkers should strictly remain on established, guide-approved paths and never wander onto untracked moraine edges or slippery ice surfaces without professional instruction.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Stretching approximately 20 kilometers southward from Mount Cho Oyu, the Ngozumpa Glacier is the longest glacier in Nepal and the entire Himalayan mountain system.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Glacial Landscape:</span>
+                        <span class="guide-fact-value">Debris-covered moraines, towering ice cliffs, deep turquoise meltwater pools, and vast boulder screes carving through the valley.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Trail Routing:</span>
+                        <span class="guide-fact-value">The standard Gokyo trail skirts along the safe, stable lateral western moraine rather than traversing active glacier ice.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Trail Conditions:</span>
+                        <span class="guide-fact-value">Rocky, dusty, and gravel-strewn surfaces requiring watchful foot placement; stay on established cairn-marked lines.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Acoustic Wonders:</span>
+                        <span class="guide-fact-value">Listen closely in the stillness of dawn or dusk to hear the deep rumble, cracking, and groaning of shifting glacial ice.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Remove the rubber caps from your trekking poles on moraine trails. The exposed tungsten carbide tips provide essential bite into loose shale and rocky steps.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 8: Trek Difficulty, Physical Fitness & Endurance Training -->
-              <div class="detail-accordion-card" id="detail-card-fitness-preparation">
+              <div class="detail-accordion-card" id="detail-card-fitness-preparation" data-guide-category="health">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">FITNESS & TRAINING</div>
-                  <h3 class="detail-title">Trek Difficulty, Physical Fitness & Endurance Training</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">FITNESS & TRAINING</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Trek Difficulty, Physical Fitness & Endurance Training</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>The Gokyo Lake Trek is graded as Challenging High-Altitude. It does not require technical mountaineering skills, ropes, or previous alpine climbing experience, but it does demand sustained cardiovascular endurance, leg strength, and mental resilience. You will be walking for 5 to 7 hours consecutively for 11 days over uneven terrain, stone staircases, and rocky moraines, carrying a 5–7 kg daypack at elevations exceeding 4,000–5,000 meters. To prepare, begin physical training 8 to 12 weeks before departure. Focus on aerobic endurance (brisk uphill walking, stairmaster, cycling, swimming, and trail running 3–4 times weekly) combined with lower-body strength training (squats, lunges, step-ups, and core stability). Most importantly, take practice day hikes wearing your actual trekking boots and weighted daypack. Remember: physical fitness does not prevent Acute Mountain Sickness (AMS); only gradual, disciplined ascent allows the body to acclimatize safely.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Graded as Challenging High-Altitude, the Gokyo Lake Trek does not demand technical climbing skills, but requires robust aerobic endurance and mental grit for 11 consecutive mountain hiking days.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Training Timeline:</span>
+                        <span class="guide-fact-value">Commence structured aerobic and leg-strengthening preparation 8 to 12 weeks before arriving in Nepal.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Cardio Regimen:</span>
+                        <span class="guide-fact-value">3 to 4 weekly sessions of stair climbing, incline treadmill walking, running, swimming, or cycling (45–60 mins per session).</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Loaded Daypack Hikes:</span>
+                        <span class="guide-fact-value">Weekend outdoor hikes carrying a 5 to 8 kg daypack build vital core stability and condition knee joints for sustained descents.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Mental Stamina:</span>
+                        <span class="guide-fact-value">A patient, cheerful mindset and the ability to embrace simple rustic lodge life are just as crucial as physical fitness.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Train specifically on stair descents to condition your quadriceps eccentrically. This prevents knee fatigue when walking 1,500 meters downhill from Gokyo back toward Lukla.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 9: Two-Stage Acclimatization Strategy (Namche & Machhermo) -->
-              <div class="detail-accordion-card" id="detail-card-acclimatization-strategy">
+              <div class="detail-accordion-card" id="detail-card-acclimatization-strategy" data-guide-category="health">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">ALTITUDE & HEALTH</div>
-                  <h3 class="detail-title">Two-Stage Acclimatization Strategy (Namche & Machhermo)</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">ALTITUDE & HEALTH</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Two-Stage Acclimatization Strategy (Namche & Machhermo)</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>Our 15-day itinerary incorporates two vital, deliberate acclimatization stops: Day 5 at Namche Bazaar (3,440 m) and Day 8 at Machhermo (4,470 m). Rapid ascent into the Gokyo Valley without adequate staging is a frequent cause of altitude sickness on rushed 11-day programs. In Namche, we hike up to the Everest View Hotel (~3,900 m) before returning to sleep at 3,440 m, stimulating natural erythropoietin (EPO) production and hemoglobin synthesis. At Machhermo, spending two consecutive nights allows your body to adjust to 4,470 m before crossing the terminal moraine to sleep at 4,790 m in Gokyo. Your guide monitors your health twice daily using a digital pulse oximeter. If you experience mild symptoms of AMS (headache, nausea, loss of appetite, or sleeplessness), notify your guide immediately. Rest, hydration, and taking Diamox (Acetazolamide) usually resolve mild symptoms; severe symptoms require immediate descent.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Acclimatization cannot be rushed; our 15-day itinerary incorporates two dedicated acclimatization rest stages to give your cardiovascular system ample time to manufacture oxygen-carrying red blood cells.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Stage 1 (Day 5 - Namche 3,440 m):</span>
+                        <span class="guide-fact-value">Active acclimatization day hike up to the Everest View Hotel (~3,900 m) following the physiological rule: 'Climb High, Sleep Low'.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Stage 2 (Day 8 - Machhermo 4,470 m):</span>
+                        <span class="guide-fact-value">Active afternoon ridge climb to ~4,800 m above Machhermo to prepare your lungs for sleeping at Gokyo village (4,790 m).</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">HRA Rescue Clinic:</span>
+                        <span class="guide-fact-value">Machhermo is home to the Himalayan Rescue Association (HRA) volunteer medical clinic providing daily altitude safety lectures.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Safe Elevation Gradient:</span>
+                        <span class="guide-fact-value">Our daily sleeping elevation gain above 3,000 meters strictly adheres to the international 300–500 m daily safety threshold.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Attend the free 3:00 PM altitude briefing at the Machhermo HRA clinic on Day 7 or 8. The volunteer doctors share invaluable medical advice on altitude acclimation.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 10: Walking Hours, Distances & Daily Trail Pacing -->
-              <div class="detail-accordion-card" id="detail-card-walking-hours-pacing">
+              <div class="detail-accordion-card" id="detail-card-walking-hours-pacing" data-guide-category="health">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">TRAIL REALITIES</div>
-                  <h3 class="detail-title">Walking Hours, Distances & Daily Trail Pacing</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">TRAIL REALITIES</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Walking Hours, Distances & Daily Trail Pacing</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>Daily walking times on the Gokyo Lake Trek average between 4 and 7 hours, covering distances from 6 km on high-altitude approach days to 18 km on the lower river return. It is crucial to understand that trail distance does not equal effort in the Himalayas: walking 6 km between Dole and Machhermo above 4,000 m requires more physical output than walking 12 km at lower elevations because each breath yields approximately 40% less oxygen. The secret to completing the Gokyo trek successfully is maintaining a steady, rhythmic "Sherpa pace" (bistari, bistari — slow and steady). Keep your strides compact, synchronize your breathing with your footsteps, avoid sudden sprints, and take regular 5-minute hydration rests. Trekking poles reduce knee impact by up to 25% on long downhill descents and assist balance across loose rocky moraines.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">The universal golden rule of high-altitude trekking in Nepal is 'Bistari, Bistari' (slowly, slowly)—steady rhythmic breathing preserves oxygen efficiency and prevents premature exhaustion.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Daily Distance:</span>
+                        <span class="guide-fact-value">8 to 14 km on lower valley days; high-altitude stages are shorter (5–8 km) due to steeper gradient and reduced atmospheric oxygen.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Daily Walking Time:</span>
+                        <span class="guide-fact-value">4 to 6 hours on average walking days, with leisurely teahouse lunch breaks and viewpoint photography stops.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Daily Schedule:</span>
+                        <span class="guide-fact-value">Breakfast at 7:00 AM, trail departure at 7:45–8:00 AM, arriving at your afternoon lodge by 1:30–3:00 PM before afternoon mist gathers.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Breathing Synchronization:</span>
+                        <span class="guide-fact-value">Match each step to a measured breath; never allow yourself to hyperventilate by rushing uphill.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">If you feel winded on uphill stone staircases, shorten your step length rather than halting completely. A slow, unbroken cadence conserves tremendous energy over 15 days.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 11: Best Trekking Seasons, Weather Realities & Frozen Lakes -->
-              <div class="detail-accordion-card" id="detail-card-seasons-weather">
+              <div class="detail-accordion-card" id="detail-card-seasons-weather" data-guide-category="logistics">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">SEASONS & WEATHER</div>
-                  <h3 class="detail-title">Best Trekking Seasons, Weather Realities & Frozen Lakes</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">SEASONS & WEATHER</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Best Trekking Seasons, Weather Realities & Frozen Lakes</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>The optimal trekking windows for Gokyo are Autumn (late September to late November) and Spring (March to May). Autumn offers crystal-clear post-monsoon atmospheric clarity, stable sunny days, mild daytime temperatures (10°C to 15°C at lower elevations; 0°C to 5°C in Gokyo), and crisp, starry nights (dropping to -10°C to -15°C). Spring brings warmer weather, lengthening daylight, and spectacular blooms of wild red, pink, and white rhododendrons across the forests between Phortse and Dole. In winter (December to February), temperatures plummet below -20°C in Gokyo, and the lakes frequently freeze over into vast sheets of shimmering turquoise ice—an ethereal spectacle, but requiring heavy winter insulation and microspikes. Summer/Monsoon (June to August) brings heavy rainfall, leeches, obscured mountain views, and frequent Lukla flight cancellations, making it unadvisable for standard trekking.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Crisp alpine skies, panoramic visibility, and comfortable walking temperatures make Autumn (October–November) and Spring (March–May) the premier trekking windows for the Gokyo Valley.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Autumn (Oct–Nov):</span>
+                        <span class="guide-fact-value">Statistically the clearest skies, crispest mountain visibility, and radiant unfrozen turquoise lakes. Daytime highs: 10°C–14°C; night lows: -5°C to -15°C.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Spring (Mar–May):</span>
+                        <span class="guide-fact-value">Vibrant rhododendron and magnolia forest blooms in the lower valley, warming daytime conditions, and unfrozen turquoise waters.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Winter (Dec–Feb):</span>
+                        <span class="guide-fact-value">Sub-zero conditions (-20°C at night) and thick ice sheets across all six lakes; peaceful, solitary trails for cold-tolerant trekkers.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Monsoon (Jun–Aug):</span>
+                        <span class="guide-fact-value">Heavy cloud cover, muddy trails with leeches in lower sections, and frequent Lukla flight delays; trekking is not recommended.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Late October through mid-November provides the absolute highest probability of crystal-clear sunrise views of Mount Everest and Cho Oyu from Gokyo Ri.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 12: Route Comparisons & High Pass Extensions (Renjo La & Cho La) -->
-              <div class="detail-accordion-card" id="detail-card-route-comparisons">
+              <div class="detail-accordion-card" id="detail-card-route-comparisons" data-guide-category="route">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">ROUTES & CIRCUITS</div>
-                  <h3 class="detail-title">Route Comparisons & High Pass Extensions (Renjo La & Cho La)</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">ROUTES & CIRCUITS</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Route Comparisons & High Pass Extensions (Renjo La & Cho La)</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>While our standard 15-day itinerary returns via Dole and Namche Bazaar, the Gokyo Valley is a central junction for several famous high-altitude pass crossings: 
-1. **Gokyo & Cho La Pass to Everest Base Camp (18–19 Days):** Crosses the glaciated Cho La Pass (5,420 m) eastward from Gokyo to Dzongla and Gorak Shep, combining Gokyo Ri with Everest Base Camp and Kala Patthar. 
-2. **Gokyo & Renjo La Pass Circuit (16–17 Days):** Crosses the rugged Renjo La Pass (5,360 m) westward from Gokyo into the remote Bhote Koshi valley, descending through Thame to Namche Bazaar. 
-3. **Everest Three Passes Trek (20–22 Days):** The ultimate circuit tackling Kongma La (5,535 m), Cho La (5,420 m), and Renjo La (5,360 m). 
-These pass extensions require additional days, crampons/microspikes, and strong high-altitude stamina. Contact our team if you wish to upgrade to one of these extended circuits.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">The Gokyo Valley acts as the central wilderness hub of the Khumbu, offering both a standalone peaceful lake route and high glaciated circuit crossings.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Classic Gokyo Lake Trek (15 Days):</span>
+                        <span class="guide-fact-value">Our standard in-and-out route via Dole and Namche. Safe, manageable, and features the lowest objective hazard and crowd density.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Gokyo & Cho La Pass (18–19 Days):</span>
+                        <span class="guide-fact-value">Traverses Cho La Pass (5,420 m) eastward to Dzongla and Lobuche, linking Gokyo with Everest Base Camp and Kala Patthar.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Gokyo & Renjo La Pass (16–17 Days):</span>
+                        <span class="guide-fact-value">Crosses Renjo La Pass (5,360 m) westward, descending through remote Bhote Koshi valley pastures and Thame village back to Namche.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Custom Extensions:</span>
+                        <span class="guide-fact-value">Both pass extensions can be seamlessly arranged with our Kathmandu operations team if you have extra travel days and alpine experience.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">If you want to add Cho La Pass or Renjo La Pass to your journey, let us know prior to booking so we can equip you with microspikes and adjust your national park permit route filing.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 13: Flights, Airports & Ramechhap / Manthali Operations -->
-              <div class="detail-accordion-card" id="detail-card-flight-logistics">
+              <div class="detail-accordion-card" id="detail-card-flight-logistics" data-guide-category="logistics">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">AVIATION LOGISTICS</div>
-                  <h3 class="detail-title">Flights, Airports & Ramechhap / Manthali Operations</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"></path></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">AVIATION LOGISTICS</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Flights, Airports & Ramechhap / Manthali Operations</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>Flights between Kathmandu and Lukla (Tenzing-Hillary Airport) operate aboard STOL (Short Take-Off and Landing) aircraft such as Twin Otters and Dorniers. The flight takes approximately 25–35 minutes. During peak trekking seasons (October–November and April–May), the Civil Aviation Authority of Nepal (CAAN) redirects all Lukla fixed-wing flights to Ramechhap/Manthali Airport to alleviate air traffic congestion at Kathmandu's international airport. When Ramechhap operations are in effect, our team coordinates private tourist vehicle transport between Kathmandu and Manthali (approx. 4–5 hours drive, typically departing Kathmandu around 1:00–2:00 a.m. for morning flights). Strict baggage limits apply: 15 kg (33 lbs) total per passenger (10 kg duffel + 5 kg hand carry). Lukla weather can change abruptly; flight delays are a standard reality of Himalayan travel, which is why Day 15 is built into our package as a contingency buffer.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Flying into Lukla's Tenzing-Hillary Airport (2,850 m) is one of the world's most scenic mountain flight experiences, requiring informed understanding of flight routing.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Kathmandu Flights (Off-Peak):</span>
+                        <span class="guide-fact-value">During off-peak months, flights operate directly between Tribhuvan International Airport (TIA) and Lukla (~30 minutes flight).</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Ramechhap Operations (Peak Season):</span>
+                        <span class="guide-fact-value">In busy spring (Apr–May) and autumn (Oct–Nov) seasons, CAAN redirects all Lukla traffic to Ramechhap Airport to bypass Kathmandu air traffic.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Private Ground Transfers:</span>
+                        <span class="guide-fact-value">We provide private, comfortable shared transfer vans from Kathmandu to Ramechhap (approx. 4 to 5 hours drive) included in your booking.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">VFR Flight Rules:</span>
+                        <span class="guide-fact-value">Lukla flights operate strictly under Visual Flight Rules; flights only depart when mountain visibility is 100% clear.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Day 15 in our 15-day itinerary serves as an essential flight contingency buffer, ensuring that temporary weather holds in Lukla never jeopardize your international flight home.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 14: Permits, Registrations & Mandatory Guide Regulations -->
-              <div class="detail-accordion-card" id="detail-card-permits-regulations">
+              <div class="detail-accordion-card" id="detail-card-permits-regulations" data-guide-category="logistics">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">PERMITS & RULES</div>
-                  <h3 class="detail-title">Permits, Registrations & Mandatory Guide Regulations</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">PERMITS & RULES</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Permits, Registrations & Mandatory Guide Regulations</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>Trekking to Gokyo requires two official government permits: 
-1. **Sagarmatha National Park Entry Permit:** NPR 3,000 (~$25 USD) for foreign nationals; NPR 1,500 for SAARC citizens. 
-2. **Khumbu Pasang Lhamu Rural Municipality Entry Fee:** NPR 2,000 (~$17 USD) per person, collected directly in Lukla. 
-Both permits are fully included and processed by Namaste Hiking Trek on your behalf. Additionally, under official Nepal Tourism Board (NTB) regulations, solo independent trekking without a guide is strictly prohibited in the Everest/Gokyo region. Trekkers must be accompanied by a government-licensed trekking guide and registered through an authorized trekking agency. Unrestricted drone flying is illegal without specialized civil aviation and national park permits; unauthorized drones risk immediate confiscation and hefty fines.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Entering the protected alpine ecosystems of the Khumbu region requires official government documentation and compliance with national park conservation policies.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Sagarmatha National Park Permit:</span>
+                        <span class="guide-fact-value">NPR 3,000 (~$23 USD) + 13% VAT, issued by the Department of National Parks and Wildlife Conservation to fund park conservation.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Khumbu Pasang Lhamu Entry Permit:</span>
+                        <span class="guide-fact-value">NPR 2,000 (~$15 USD), issued directly at Lukla and Monjo by the local municipal government to fund community trails.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Mandatory Guide Regulation:</span>
+                        <span class="guide-fact-value">Under official Nepal Tourism Board regulations, all foreign trekkers must be accompanied by a certified, licensed mountain guide.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">All Permits Included:</span>
+                        <span class="guide-fact-value">Both required permits, municipal registrations, and government taxes are fully included in your Namaste Hiking Trek expedition package.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Carry 4 passport-sized photos and a color copy of your passport to our Kathmandu pre-trek briefing for emergency backup documentation at park checkpoints.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 15: Safety Protocols, Altitude Monitoring & Helicopter Rescue -->
-              <div class="detail-accordion-card" id="detail-card-safety-evacuation">
+              <div class="detail-accordion-card" id="detail-card-safety-evacuation" data-guide-category="health">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">SAFETY & EMERGENCY</div>
-                  <h3 class="detail-title">Safety Protocols, Altitude Monitoring & Helicopter Rescue</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">SAFETY & EMERGENCY</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Safety Protocols, Altitude Monitoring & Helicopter Rescue</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>Your safety is our paramount priority. All Namaste Hiking Trek lead guides are wilderness first aid certified and carry a pulse oximeter to track blood oxygen saturation (SpO2) and heart rate every morning and evening. Our guides follow conservative protocols: if symptoms of Acute Mountain Sickness (AMS), High Altitude Pulmonary Edema (HAPE), or High Altitude Cerebral Edema (HACE) are detected, immediate descent to a lower elevation (Dole or Namche) is initiated. If emergency medical evacuation is necessary, our 24/7 Kathmandu operations base coordinates a private rescue helicopter directly with Nepal's premier aviation services and your international travel insurance assistance desk. Ensure your insurance explicitly covers trekking up to 6,000 meters and emergency helicopter airlift without requiring upfront cash outlays.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">Your safety is our foremost commitment; our lead Sherpa guides are certified wilderness first responders equipped with medical diagnostics and immediate emergency dispatch channels.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Twice-Daily Health Checks:</span>
+                        <span class="guide-fact-value">Lead guides monitor and record your pulse rate and blood oxygen saturation (SpO2) morning and evening using portable pulse oximeters.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">First Aid & Medications:</span>
+                        <span class="guide-fact-value">Comprehensive medical kits carried on trail, including Diamox (Acetazolamide), analgesics, rehydration salts, and broad-spectrum antibiotics.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Descent Protocol:</span>
+                        <span class="guide-fact-value">If acute mountain sickness symptoms worsen or fail to resolve with rest, our guides initiate immediate assisted descent to lower elevation.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Helicopter Rescue:</span>
+                        <span class="guide-fact-value">In serious medical emergencies (e.g., severe AMS, HAPE, or HACE), our Kathmandu team dispatches emergency helicopter airlifts within 45–90 minutes.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Make certain your travel insurance policy explicitly covers high-altitude trekking up to 6,000 meters and emergency medical helicopter evacuation with cashless direct hospital billing.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
 
               <!-- Guide 16: Costs, Budgeting, Cash Currency & Tipping Guidelines -->
-              <div class="detail-accordion-card" id="detail-card-costs-cash-tips">
+              <div class="detail-accordion-card" id="detail-card-costs-cash-tips" data-guide-category="logistics">
                 <div class="detail-accordion-header">
-                  <div class="detail-badge-pill">MONEY & BUDGETING</div>
-                  <h3 class="detail-title">Costs, Budgeting, Cash Currency & Tipping Guidelines</h3>
-                  <div class="detail-toggle-icon">
+                  <div class="detail-accordion-header-left">
+                    <div class="detail-icon-container">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                      <div class="detail-check-bubble">
+                        <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      </div>
+                    </div>
+                    <div class="detail-header-info">
+                      <div class="detail-meta-row">
+                        <span class="detail-badge-pill">MONEY & BUDGETING</span>
+                        <span class="detail-read-time">2 min read</span>
+                      </div>
+                      <h3 class="detail-accordion-title">Costs, Budgeting, Cash Currency & Tipping Guidelines</h3>
+                    </div>
+                  </div>
+                  <div class="detail-accordion-chevron">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                   </div>
                 </div>
                 <div class="detail-accordion-content">
-                  <div class="detail-text-body">
-                    <p>While your package covers all accommodation, internal transport, flights, permits, and meals on the trek, you should carry sufficient cash in Nepalese Rupees (NPR) for personal expenses. There are no reliable ATMs above Namche Bazaar, and card payment facilities in remote lodges are virtually nonexistent or incur heavy surcharges. We recommend budgeting NPR 2,500 to 3,500 ($20–$30 USD) per day for personal expenses such as hot showers (NPR 400–700), device charging (NPR 200–500 per device), Wi-Fi cards (NPR 500–800), hot herbal teas, chocolate bars, and cold drinks. For tipping your field crew, it is customary in Nepal to tip around 10%–12% of the total trek package cost at the conclusion of the trip in Lukla (approx. $120–$150 USD for your lead guide and $80–$100 USD for your porter from each trekker). Exchange cash in Kathmandu before flying to Lukla.</p>
+                  <div class="detail-accordion-content-inner">
+                    <p class="guide-lead-text">While your comprehensive package covers domestic flights, permits, guide, porters, accommodation, and all three daily meals, carrying sufficient cash for personal teahouse expenses is essential.</p>
+                    
+                    <div class="guide-quick-facts-grid">
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Recommended Cash:</span>
+                        <span class="guide-fact-value">Carry NPR 30,000 to NPR 45,000 (~$230–$350 USD) per person in cash (Nepali Rupees) withdrawn in advance in Kathmandu.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Daily Out-of-Pocket Expenses:</span>
+                        <span class="guide-fact-value">Hot showers (NPR 400–700), device battery charging (NPR 200–500), Wi-Fi cards (NPR 500–800), bakery snacks, and sodas.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">No High-Altitude ATMs:</span>
+                        <span class="guide-fact-value">There are no functioning ATMs above Namche Bazaar; teahouses operate strictly on a cash-only basis.</span>
+                      </div>
+                      
+                      <div class="guide-fact-item">
+                        <span class="guide-fact-label">Crew Tipping Guidelines:</span>
+                        <span class="guide-fact-value">Tipping your guide and porter is a deeply respected tradition in Nepal; typical tipping is 10%–15% of your trek cost pooled by your group on the final night in Lukla.</span>
+                      </div>
+                      
+                    </div>
+
+                    <div class="guide-pro-tip-box">
+                      <div class="guide-pro-tip-badge">💡 Sherpa Guide Tip</div>
+                      <p class="guide-pro-tip-text">Withdraw all necessary cash in Kathmandu before flying to Lukla. ATMs in Namche Bazaar frequently run out of cash during busy trekking seasons.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-  
+
+            </div>
+
+            <!-- Closing Contextual Conversion micro-CTA -->
+            <div class="guide-cta-card">
+              <div class="guide-cta-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <div class="guide-cta-content">
+                <h4 class="guide-cta-title">Have Questions About High-Altitude Conditions in Gokyo?</h4>
+                <p class="guide-cta-desc">Our veteran Sherpa expedition leaders have guided over 100+ Gokyo & Cho Oyu ascents. Ask us anything about cold-weather layering, current lake conditions, or custom pass extensions.</p>
+              </div>
+              <div class="guide-cta-buttons">
+                <a href="https://wa.me/9779851000000?text=Hello%20Namaste%20Hiking%20Trek,%20I'm%20reading%20the%20Gokyo%20Guides%20and%20have%20questions%20about%20the%20trek" class="btn-guide-wa" target="_blank" rel="noopener">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  Chat on WhatsApp
+                </a>
+                <a href="#section-booking" class="btn-guide-book">
+                  Check Dates & Book
+                </a>
+              </div>
             </div>
           </section>
 

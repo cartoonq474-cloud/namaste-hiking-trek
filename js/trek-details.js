@@ -457,6 +457,125 @@ function setupReadTracker(trekKey) {
     }
   });
 
+  // Setup Guide Category Filters, Live Search & Expand/Collapse Toggle
+  const categoryBtns = document.querySelectorAll('.guide-pill-btn');
+  const searchInput = document.getElementById('guideSearchInput');
+  const clearBtn = document.getElementById('guideSearchClearBtn');
+  const toggleAllBtn = document.getElementById('guidesToggleAllBtn');
+  const accordionWrapper = document.getElementById('detailsAccordionWrapper');
+
+  let noResultsMsg = document.getElementById('guideSearchNoResults');
+  if (!noResultsMsg && accordionWrapper) {
+    noResultsMsg = document.createElement('div');
+    noResultsMsg.id = 'guideSearchNoResults';
+    noResultsMsg.style.cssText = 'display: none; text-align: center; padding: 36px 20px; background: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 14px; margin-bottom: 24px;';
+    noResultsMsg.innerHTML = '<p style="font-size: 1.05rem; font-weight: 700; color: var(--color-primary-navy); margin-bottom: 6px;">No guides found</p><p style="font-size: 0.9rem; color: var(--color-neutral-500); margin: 0;">Try searching for a different keyword or switch to the "All Guides" tab.</p>';
+    accordionWrapper.parentNode.insertBefore(noResultsMsg, accordionWrapper.nextSibling);
+  }
+
+  function applyGuideFilters() {
+    const activeBtn = document.querySelector('.guide-pill-btn.active');
+    const activeCat = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
+    const query = searchInput ? searchInput.value.trim().toLowerCase() : '';
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardCat = card.getAttribute('data-guide-category');
+      const matchesCat = (activeCat === 'all' || !activeCat || cardCat === activeCat);
+      
+      let matchesSearch = true;
+      if (query) {
+        const titleEl = card.querySelector('.detail-accordion-title');
+        const textEl = card.querySelector('.detail-accordion-content');
+        const titleText = titleEl ? titleEl.textContent.toLowerCase() : '';
+        const bodyText = textEl ? textEl.textContent.toLowerCase() : '';
+        matchesSearch = titleText.includes(query) || bodyText.includes(query);
+      }
+
+      if (matchesCat && matchesSearch) {
+        card.style.display = 'block';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+        if (card.classList.contains('active')) {
+          card.classList.remove('active');
+          const content = card.querySelector('.detail-accordion-content');
+          if (content) content.style.maxHeight = '';
+        }
+      }
+    });
+
+    if (noResultsMsg) {
+      noResultsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+  }
+
+  if (categoryBtns.length) {
+    categoryBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        applyGuideFilters();
+      });
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      if (clearBtn) {
+        clearBtn.style.display = searchInput.value.length > 0 ? 'flex' : 'none';
+      }
+      applyGuideFilters();
+    });
+  }
+
+  if (clearBtn && searchInput) {
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      clearBtn.style.display = 'none';
+      applyGuideFilters();
+      searchInput.focus();
+    });
+  }
+
+  if (toggleAllBtn) {
+    toggleAllBtn.addEventListener('click', () => {
+      const isExpanded = toggleAllBtn.classList.toggle('expanded');
+      const textSpan = toggleAllBtn.querySelector('span');
+      if (textSpan) textSpan.textContent = isExpanded ? 'Collapse All' : 'Expand All';
+
+      cards.forEach(card => {
+        if (card.style.display === 'none') return;
+        const content = card.querySelector('.detail-accordion-content');
+        if (!content) return;
+
+        if (isExpanded) {
+          card.classList.add('active');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          if (!card.classList.contains('read')) {
+            card.classList.add('read');
+            const id = card.getAttribute('data-detail-id') || card.id;
+            readStates[id] = true;
+          }
+        } else {
+          card.classList.remove('active');
+          content.style.maxHeight = '';
+        }
+      });
+
+      if (isExpanded) {
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(readStates));
+        } catch (e) {}
+        updateProgress();
+      }
+    });
+  }
+
   // Run progress calculation on load
   updateProgress();
 }
