@@ -94,6 +94,26 @@ const trekAltitudeProfiles = {
       { day: "Day 11", spot: "Pokhara", altitudeM: 822 }
     ]
   },
+  "abc_luxury": {
+    name: "Annapurna Base Camp Luxury Trek",
+    points: [
+      { day: "Day 1", spot: "Kathmandu", altitudeM: 1400, altitudeFt: 4593 },
+      { day: "Day 2", spot: "Pokhara (Flight)", altitudeM: 820, altitudeFt: 2690 },
+      { day: "Day 3", spot: "Ghandruk (Lodge)", altitudeM: 2000, altitudeFt: 6561 },
+      { day: "Day 4", spot: "Chhomrong", altitudeM: 2150, altitudeFt: 7053 },
+      { day: "Day 5", spot: "Bamboo (via Sinuwa)", altitudeM: 2300, altitudeFt: 7545 },
+      { day: "Day 6", spot: "Dovan", altitudeM: 2600, altitudeFt: 8530 },
+      { day: "Day 7", spot: "Himalaya", altitudeM: 2870, altitudeFt: 9416 },
+      { day: "Day 8", spot: "Deurali", altitudeM: 3200, altitudeFt: 10498 },
+      { day: "Day 9", spot: "MBC (Machhapuchhre)", altitudeM: 3700, altitudeFt: 12139 },
+      { day: "Day 10", spot: "ABC (Base Camp)", altitudeM: 4130, altitudeFt: 13549 },
+      { day: "Day 11", spot: "Bamboo (Descent)", altitudeM: 2300, altitudeFt: 7545 },
+      { day: "Day 12", spot: "Pokhara (via Jhinu Exit)", altitudeM: 820, altitudeFt: 2690 },
+      { day: "Day 13", spot: "Kathmandu (Flight)", altitudeM: 1400, altitudeFt: 4593 },
+      { day: "Day 14", spot: "Kathmandu (Flexible Day)", altitudeM: 1400, altitudeFt: 4593 },
+      { day: "Day 15", spot: "Kathmandu (Departure)", altitudeM: 1400, altitudeFt: 4593 }
+    ]
+  },
   "annapurna_circuit": {
     name: "Annapurna Circuit Trek",
     points: [

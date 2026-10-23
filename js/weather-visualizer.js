@@ -49,6 +49,23 @@ const trekDailyWeather = {
     { label: "Day 13 (Lukla 2850 m)", min: -10, max: 11 },
     { label: "Day 14 (Kathmandu 1400 m)", min: 5, max: 19 },
     { label: "Day 15 (Departure 1400 m)", min: 5, max: 19 }
+  ],
+  "abc_luxury": [
+    { label: "Day 1 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 2 (Pokhara 820 m)", min: 8, max: 22 },
+    { label: "Day 3 (Ghandruk 2000 m)", min: 4, max: 17 },
+    { label: "Day 4 (Chhomrong 2150 m)", min: 3, max: 16 },
+    { label: "Day 5 (Bamboo 2300 m)", min: 2, max: 15 },
+    { label: "Day 6 (Dovan 2600 m)", min: 0, max: 13 },
+    { label: "Day 7 (Himalaya 2870 m)", min: -2, max: 11 },
+    { label: "Day 8 (Deurali 3200 m)", min: -6, max: 8 },
+    { label: "Day 9 (MBC 3700 m)", min: -10, max: 5 },
+    { label: "Day 10 (ABC 4130 m)", min: -14, max: 2 },
+    { label: "Day 11 (Bamboo 2300 m)", min: 2, max: 15 },
+    { label: "Day 12 (Pokhara 820 m)", min: 8, max: 22 },
+    { label: "Day 13 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 14 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 15 (Departure 1400 m)", min: 5, max: 19 }
   ]
 };
 
