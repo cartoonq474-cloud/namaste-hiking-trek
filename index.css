@@ -6991,6 +6991,11 @@ textarea {
   transition: all var(--transition-fast);
 }
 
+.guide-pill-btn svg {
+  flex-shrink: 0;
+  stroke: currentColor;
+}
+
 .guide-pill-btn:hover {
   border-color: #cbd5e1;
   background: #f1f5f9;
@@ -7166,13 +7171,20 @@ textarea {
 }
 
 .guide-pro-tip-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 0.76rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: #b45309;
   margin-bottom: 6px;
+}
+
+.guide-pro-tip-badge svg {
+  flex-shrink: 0;
+  stroke: #b45309;
 }
 
 .guide-pro-tip-text {
