@@ -154,7 +154,7 @@ const trekAltitudeProfiles = {
       { day: "Day 7", spot: "Pokhara", altitudeM: 822 }
     ]
   },
-  "gokyo": {
+  "gokyo_chola": {
     name: "Gokyo Lakes & Cho La Pass Trek",
     points: [
       { day: "Day 1", spot: "Kathmandu", altitudeM: 1400 },
@@ -285,7 +285,8 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
           <option value="manaslu" ${trekKey === 'manaslu' ? 'selected' : ''}>Manaslu Circuit</option>
           <option value="langtang" ${trekKey === 'langtang' ? 'selected' : ''}>Langtang Valley</option>
           <option value="poonhill" ${trekKey === 'poonhill' ? 'selected' : ''}>Ghorepani Poon Hill</option>
-          <option value="gokyo" ${trekKey === 'gokyo' ? 'selected' : ''}>Gokyo Lakes & Cho La</option>
+          <option value="gokyo" ${trekKey === 'gokyo' ? 'selected' : ''}>Gokyo Lakes Trek (15 Days)</option>
+          <option value="gokyo_chola" ${trekKey === 'gokyo_chola' ? 'selected' : ''}>Gokyo Lakes & Cho La</option>
           <option value="mustang" ${trekKey === 'mustang' ? 'selected' : ''}>Upper Mustang</option>
         </select>
 

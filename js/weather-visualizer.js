@@ -31,6 +31,27 @@ const baseDailyData = [
   { label: "Day 13 (1300 m / 4265 ft)", min: 5, max: 19 }
 ];
 
+const trekDailyWeather = {
+  "ebc": baseDailyData,
+  "gokyo": [
+    { label: "Day 1 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 2 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 3 (Phakding 2610 m)", min: -10, max: 11 },
+    { label: "Day 4 (Namche Bazaar 3440 m)", min: -15, max: 6 },
+    { label: "Day 5 (Namche Acclim 3900 m)", min: -16, max: 5 },
+    { label: "Day 6 (Dole 4000 m)", min: -18, max: 4 },
+    { label: "Day 7 (Machhermo 4470 m)", min: -22, max: 0 },
+    { label: "Day 8 (Machhermo Acclim 4470 m)", min: -22, max: 0 },
+    { label: "Day 9 (Gokyo Lakes 4790 m)", min: -25, max: -3 },
+    { label: "Day 10 (Gokyo Ri Summit 5357 m)", min: -28, max: -6 },
+    { label: "Day 11 (Dole 4000 m)", min: -18, max: 4 },
+    { label: "Day 12 (Namche Bazaar 3440 m)", min: -15, max: 6 },
+    { label: "Day 13 (Lukla 2850 m)", min: -10, max: 11 },
+    { label: "Day 14 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 15 (Departure 1400 m)", min: 5, max: 19 }
+  ]
+};
+
 const monthOffsets = {
   "January": 0,
   "February": 2,
@@ -92,7 +113,9 @@ export function renderWeatherChart(containerId) {
   let points = [];
   if (isDaily) {
     const offset = monthOffsets[currentMonth] || 0;
-    points = baseDailyData.map(d => ({
+    const trekKey = container.getAttribute('data-trek-key') || 'ebc';
+    const dailyData = trekDailyWeather[trekKey] || baseDailyData;
+    points = dailyData.map(d => ({
       label: d.label,
       min: d.min + offset,
       max: d.max + offset
