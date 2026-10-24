@@ -66,6 +66,22 @@ const trekDailyWeather = {
     { label: "Day 13 (Kathmandu 1400 m)", min: 5, max: 19 },
     { label: "Day 14 (Kathmandu 1400 m)", min: 5, max: 19 },
     { label: "Day 15 (Departure 1400 m)", min: 5, max: 19 }
+  ],
+  "annapurna_circuit": [
+    { label: "Day 1 (Kathmandu 1300 m)", min: 5, max: 19 },
+    { label: "Day 2 (Chame 2710 m)", min: -4, max: 12 },
+    { label: "Day 3 (Lower Pisang 3185 m)", min: -8, max: 8 },
+    { label: "Day 4 (Manang 3500 m)", min: -12, max: 6 },
+    { label: "Day 5 (Manang Acclim 3500 m)", min: -12, max: 6 },
+    { label: "Day 6 (Yak Kharka 4018 m)", min: -16, max: 2 },
+    { label: "Day 7 (Thorong Phedi 4450 m)", min: -20, max: -2 },
+    { label: "Day 8 (Thorong La 5416 m / Muktinath)", min: -24, max: -4 },
+    { label: "Day 9 (Jomsom 2720 m)", min: -2, max: 14 },
+    { label: "Day 10 (Tatopani 1190 m)", min: 8, max: 23 },
+    { label: "Day 11 (Ghorepani 2860 m)", min: -4, max: 12 },
+    { label: "Day 12 (Poon Hill 3210 m / Pokhara)", min: 10, max: 24 },
+    { label: "Day 13 (Kathmandu 1300 m)", min: 5, max: 19 },
+    { label: "Day 14 (Departure 1300 m)", min: 5, max: 19 }
   ]
 };
 

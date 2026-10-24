@@ -115,20 +115,22 @@ const trekAltitudeProfiles = {
     ]
   },
   "annapurna_circuit": {
-    name: "Annapurna Circuit Trek",
+    name: "Annapurna Circuit Trek (14 Days)",
     points: [
-      { day: "Day 1", spot: "Kathmandu", altitudeM: 1400 },
-      { day: "Day 2", spot: "Besisahar", altitudeM: 760 },
-      { day: "Day 3", spot: "Chame", altitudeM: 2670 },
-      { day: "Day 4", spot: "Pisang", altitudeM: 3200 },
-      { day: "Day 5", spot: "Manang", altitudeM: 3540 },
-      { day: "Day 6", spot: "Manang (Acclimatization)", altitudeM: 3540 },
-      { day: "Day 7", spot: "Yak Kharka", altitudeM: 4050 },
-      { day: "Day 8", spot: "Thorong Phedi", altitudeM: 4450 },
-      { day: "Day 9", spot: "Thorong La Pass", altitudeM: 5416 },
-      { day: "Day 10", spot: "Muktinath", altitudeM: 3760 },
-      { day: "Day 11", spot: "Jomsom", altitudeM: 2720 },
-      { day: "Day 12", spot: "Pokhara", altitudeM: 822 }
+      { day: "Day 1", spot: "Kathmandu", altitudeM: 1300 },
+      { day: "Day 2", spot: "Chame", altitudeM: 2710 },
+      { day: "Day 3", spot: "Lower Pisang", altitudeM: 3185 },
+      { day: "Day 4", spot: "Manang (High Route)", altitudeM: 3500 },
+      { day: "Day 5", spot: "Manang (Acclimatization)", altitudeM: 3500 },
+      { day: "Day 6", spot: "Yak Kharka", altitudeM: 4018 },
+      { day: "Day 7", spot: "Thorong Phedi", altitudeM: 4450 },
+      { day: "Day 8", spot: "Thorong La (5,416m) to Muktinath", altitudeM: 5416 },
+      { day: "Day 9", spot: "Jomsom (via Kagbeni)", altitudeM: 2720 },
+      { day: "Day 10", spot: "Tatopani Hot Springs", altitudeM: 1190 },
+      { day: "Day 11", spot: "Ghorepani", altitudeM: 2860 },
+      { day: "Day 12", spot: "Poon Hill (3,210m) / Pokhara", altitudeM: 900 },
+      { day: "Day 13", spot: "Kathmandu", altitudeM: 1300 },
+      { day: "Day 14", spot: "Kathmandu (Departure)", altitudeM: 1300 }
     ]
   },
   "manaslu": {
