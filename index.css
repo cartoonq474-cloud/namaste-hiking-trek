@@ -6621,7 +6621,12 @@ textarea {
   font-weight: 500;
 }
 
-.itinerary-metric-item svg {
+.itinerary-metric-item svg,
+.itinerary-metric-icon {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
   color: var(--color-neutral-400);
   flex-shrink: 0;
 }
@@ -6647,6 +6652,10 @@ textarea {
 }
 
 .itinerary-meta-box-item svg {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
   color: #10B981;
   flex-shrink: 0;
 }
