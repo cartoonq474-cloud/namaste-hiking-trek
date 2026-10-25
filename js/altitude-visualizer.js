@@ -114,6 +114,69 @@ const trekAltitudeProfiles = {
       { day: "Day 15", spot: "Kathmandu (Departure)", altitudeM: 1400, altitudeFt: 4593 }
     ]
   },
+  "annapurna_circuit_tilicho": {
+    name: "Annapurna Circuit Trek with Tilicho Lake (16 Days)",
+    points: [
+      { day: "Day 1", spot: "Kathmandu", altitudeM: 1355, altitudeFt: 4445 },
+      { day: "Day 2", spot: "Jagat (via Besisahar)", altitudeM: 1300, altitudeFt: 4265 },
+      { day: "Day 3", spot: "Dharapani", altitudeM: 1960, altitudeFt: 6430 },
+      { day: "Day 4", spot: "Chame", altitudeM: 2630, altitudeFt: 8628 },
+      { day: "Day 5", spot: "Upper Pisang", altitudeM: 3300, altitudeFt: 10826 },
+      { day: "Day 6", spot: "Manang", altitudeM: 3500, altitudeFt: 11482 },
+      { day: "Day 7", spot: "Manang (Acclimatization)", altitudeM: 3500, altitudeFt: 11482 },
+      { day: "Day 8", spot: "Tilicho Base Camp (via Khangsar)", altitudeM: 4150, altitudeFt: 13615 },
+      { day: "Day 9", spot: "Tilicho Lake (4,919m) to Siri Kharka", altitudeM: 4919, altitudeFt: 16138 },
+      { day: "Day 10", spot: "Yak Kharka", altitudeM: 4050, altitudeFt: 13287 },
+      { day: "Day 11", spot: "Thorong Phedi", altitudeM: 4450, altitudeFt: 14599 },
+      { day: "Day 12", spot: "Thorong La (5,416m) to Muktinath", altitudeM: 5416, altitudeFt: 17769 },
+      { day: "Day 13", spot: "Jomsom", altitudeM: 2720, altitudeFt: 8923 },
+      { day: "Day 14", spot: "Pokhara (Flight from Jomsom)", altitudeM: 822, altitudeFt: 2696 },
+      { day: "Day 15", spot: "Kathmandu (Flight from Pokhara)", altitudeM: 1355, altitudeFt: 4445 },
+      { day: "Day 16", spot: "Kathmandu (Departure)", altitudeM: 1355, altitudeFt: 4445 }
+    ]
+  },
+  "tilicho_circuit": {
+    name: "Annapurna Circuit Trek with Tilicho Lake (16 Days)",
+    points: [
+      { day: "Day 1", spot: "Kathmandu", altitudeM: 1355, altitudeFt: 4445 },
+      { day: "Day 2", spot: "Jagat (via Besisahar)", altitudeM: 1300, altitudeFt: 4265 },
+      { day: "Day 3", spot: "Dharapani", altitudeM: 1960, altitudeFt: 6430 },
+      { day: "Day 4", spot: "Chame", altitudeM: 2630, altitudeFt: 8628 },
+      { day: "Day 5", spot: "Upper Pisang", altitudeM: 3300, altitudeFt: 10826 },
+      { day: "Day 6", spot: "Manang", altitudeM: 3500, altitudeFt: 11482 },
+      { day: "Day 7", spot: "Manang (Acclimatization)", altitudeM: 3500, altitudeFt: 11482 },
+      { day: "Day 8", spot: "Tilicho Base Camp (via Khangsar)", altitudeM: 4150, altitudeFt: 13615 },
+      { day: "Day 9", spot: "Tilicho Lake (4,919m) to Siri Kharka", altitudeM: 4919, altitudeFt: 16138 },
+      { day: "Day 10", spot: "Yak Kharka", altitudeM: 4050, altitudeFt: 13287 },
+      { day: "Day 11", spot: "Thorong Phedi", altitudeM: 4450, altitudeFt: 14599 },
+      { day: "Day 12", spot: "Thorong La (5,416m) to Muktinath", altitudeM: 5416, altitudeFt: 17769 },
+      { day: "Day 13", spot: "Jomsom", altitudeM: 2720, altitudeFt: 8923 },
+      { day: "Day 14", spot: "Pokhara (Flight from Jomsom)", altitudeM: 822, altitudeFt: 2696 },
+      { day: "Day 15", spot: "Kathmandu (Flight from Pokhara)", altitudeM: 1355, altitudeFt: 4445 },
+      { day: "Day 16", spot: "Kathmandu (Departure)", altitudeM: 1355, altitudeFt: 4445 }
+    ]
+  },
+  "tilicho": {
+    name: "Annapurna Circuit Trek with Tilicho Lake (16 Days)",
+    points: [
+      { day: "Day 1", spot: "Kathmandu", altitudeM: 1355, altitudeFt: 4445 },
+      { day: "Day 2", spot: "Jagat (via Besisahar)", altitudeM: 1300, altitudeFt: 4265 },
+      { day: "Day 3", spot: "Dharapani", altitudeM: 1960, altitudeFt: 6430 },
+      { day: "Day 4", spot: "Chame", altitudeM: 2630, altitudeFt: 8628 },
+      { day: "Day 5", spot: "Upper Pisang", altitudeM: 3300, altitudeFt: 10826 },
+      { day: "Day 6", spot: "Manang", altitudeM: 3500, altitudeFt: 11482 },
+      { day: "Day 7", spot: "Manang (Acclimatization)", altitudeM: 3500, altitudeFt: 11482 },
+      { day: "Day 8", spot: "Tilicho Base Camp (via Khangsar)", altitudeM: 4150, altitudeFt: 13615 },
+      { day: "Day 9", spot: "Tilicho Lake (4,919m) to Siri Kharka", altitudeM: 4919, altitudeFt: 16138 },
+      { day: "Day 10", spot: "Yak Kharka", altitudeM: 4050, altitudeFt: 13287 },
+      { day: "Day 11", spot: "Thorong Phedi", altitudeM: 4450, altitudeFt: 14599 },
+      { day: "Day 12", spot: "Thorong La (5,416m) to Muktinath", altitudeM: 5416, altitudeFt: 17769 },
+      { day: "Day 13", spot: "Jomsom", altitudeM: 2720, altitudeFt: 8923 },
+      { day: "Day 14", spot: "Pokhara (Flight from Jomsom)", altitudeM: 822, altitudeFt: 2696 },
+      { day: "Day 15", spot: "Kathmandu (Flight from Pokhara)", altitudeM: 1355, altitudeFt: 4445 },
+      { day: "Day 16", spot: "Kathmandu (Departure)", altitudeM: 1355, altitudeFt: 4445 }
+    ]
+  },
   "annapurna_circuit": {
     name: "Annapurna Circuit Trek (14 Days)",
     points: [
