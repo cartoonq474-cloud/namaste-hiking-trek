@@ -67,6 +67,8 @@ const trekDailyWeather = {
     { label: "Day 14 (Kathmandu 1400 m)", min: 5, max: 19 },
     { label: "Day 15 (Departure 1400 m)", min: 5, max: 19 }
   ],
+  "tilicho_circuit": trekDailyWeather["annapurna_circuit"] || baseDailyData,
+  "tilicho": trekDailyWeather["annapurna_circuit"] || baseDailyData,
   "annapurna_circuit": [
     { label: "Day 1 (Kathmandu 1300 m)", min: 5, max: 19 },
     { label: "Day 2 (Chame 2710 m)", min: -4, max: 12 },
