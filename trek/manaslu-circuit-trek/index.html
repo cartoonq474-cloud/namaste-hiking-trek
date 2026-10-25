@@ -27,70 +27,148 @@
 
   <!-- Static JSON-LD Structured Data (Centerpiece Annotation — No JS Required) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "TouristTrip",
-        "@id": "https://namastehikingtrek.com/trek/manaslu-circuit-trek/#trip",
-        "name": "Manaslu Circuit Trek",
-        "description": "Circumnavigate Mount Manaslu (8,163m), crossing high Larke La Pass (5,106m) through untouched Tibetan Buddhist villages and pristine river gorges.",
-        "touristType": ["Hikers", "Trekking Enthusiasts"],
-        "subTrip": [
-          { "@type": "TouristTrip", "name": "Flight Kathmandu/Ramechhap to Lukla & Trek to Phakding" },
-          { "@type": "TouristTrip", "name": "Trek to Namche Bazaar (3,440m)" },
-          { "@type": "TouristTrip", "name": "Acclimatization Day in Namche Bazaar" },
-          { "@type": "TouristTrip", "name": "Trek to Tengboche Monastery (3,860m)" },
-          { "@type": "TouristTrip", "name": "Trek to Dingboche (4,410m)" },
-          { "@type": "TouristTrip", "name": "Acclimatization Day in Dingboche" },
-          { "@type": "TouristTrip", "name": "Trek to Lobuche (4,940m)" },
-          { "@type": "TouristTrip", "name": "Trek to Gorak Shep & Everest Base Camp (5,364m)" },
-          { "@type": "TouristTrip", "name": "Hike to Kala Patthar (5,545m) & Trek to Pheriche (4,370m)" },
-          { "@type": "TouristTrip", "name": "Trek back to Namche Bazaar" },
-          { "@type": "TouristTrip", "name": "Trek back to Lukla" },
-          { "@type": "TouristTrip", "name": "Fly back to Kathmandu" }
-        ],
-        "offers": {
-          "@type": "Offer",
-          "price": "1290",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://namastehikingtrek.com/trek/manaslu-circuit-trek/"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TouristTrip",
+      "@id": "https://namastehikingtrek.com/trek/manaslu-circuit-trek/#trip",
+      "name": "Manaslu Circuit Trek (14 Days)",
+      "description": "Complete 14-day Manaslu Circuit Trek: circumnavigate Mount Manaslu (8,163m), cross Larkya La Pass (5,106m), explore remote Nubri monasteries, and trek Budhi Gandaki Valley.",
+      "touristType": [
+        "Hikers",
+        "Trekking Enthusiasts"
+      ],
+      "subTrip": [
+        {
+          "@type": "TouristTrip",
+          "name": "Day 1: Drive from Kathmandu to Machha Khola via Dhading Besi & Arughat"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 2: Trek from Machha Khola to Jagat via Khorlabesi & Tatopani"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 3: Trek from Jagat to Deng via Philim & Pewa"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 4: Trek from Deng to Namrung via Ghap"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 5: Trek from Namrung to Lho via Lihi & Sho"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 6: Trek from Lho to Samagaon via Shyala"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 7: Acclimatization & Exploration Day at Samagaon"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 8: Trek from Samagaon to Samdo via Kani Gateway"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 9: Second Acclimatization & High Altitude Prep in Samdo"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 10: Trek from Samdo to Dharamsala (Larkya Phedi)"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 11: Cross Larkya La Pass (5,106 m) & Descend to Bimthang"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 12: Trek from Bimthang to Tilije via Gho"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 13: Trek from Tilije to Dharapani & Drive to Besisahar"
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Day 14: Drive from Besisahar back to Kathmandu"
         }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://namastehikingtrek.com/trek/manaslu-circuit-trek/#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://namastehikingtrek.com/" },
-          { "@type": "ListItem", "position": 2, "name": "All Treks", "item": "https://namastehikingtrek.com/nepal-trekking-packages/" },
-          { "@type": "ListItem", "position": 3, "name": "Manaslu Circuit Trek", "item": "https://namastehikingtrek.com/trek/manaslu-circuit-trek/" }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://namastehikingtrek.com/trek/manaslu-circuit-trek/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How difficult is the Manaslu Circuit Trek?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Manaslu Circuit Trek is rated as challenging due to high altitude (up to 5,545m at Kala Patthar) and daily walking hours (5-7 hours). Technical climbing skills are not required, but good physical fitness and endurance are essential."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What permits are required for the Manaslu Circuit Trek?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Two permits are required: the Sagarmatha National Park Entry Permit and the Khumbu Pasang Lhamu Rural Municipality Permit. Both are included in our package."
-            }
-          }
-        ]
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "1299",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://namastehikingtrek.com/trek/manaslu-circuit-trek/"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://namastehikingtrek.com/trek/manaslu-circuit-trek/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://namastehikingtrek.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "All Treks",
+          "item": "https://namastehikingtrek.com/nepal-trekking-packages/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Manaslu Circuit Trek",
+          "item": "https://namastehikingtrek.com/trek/manaslu-circuit-trek/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://namastehikingtrek.com/trek/manaslu-circuit-trek/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How difficult is the Manaslu Circuit Trek?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Manaslu Circuit Trek is rated as a challenging high-altitude trek due to sustained walking (5–8 hours daily), high elevation reaching 5,106 m (16,752 ft) at Larkya La Pass, and remote Himalayan terrain. Technical climbing skills are not required, but good cardiovascular endurance and leg conditioning are essential."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What permits are required for the Manaslu Circuit Trek?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Four official permits are required: the Manaslu Restricted Area Permit (RAP), the Manaslu Conservation Area Permit (MCAP), the Annapurna Conservation Area Permit (ACAP), and an agency-issued TIMS Card. A government-licensed trekking guide is mandatory under Nepal Tourism Board and immigration regulations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I trek the Manaslu Circuit without a guide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Under current Nepal Tourism Board and Department of Immigration regulations, solo or independent trekking without a licensed guide is strictly prohibited in the Manaslu restricted area. Trekkers must travel with a registered Nepalese agency and a licensed guide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is acclimatization managed on this 14-day trek?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our 14-day itinerary includes two dedicated acclimatization stays: Samagaon at 3,530 m and Samdo at 3,860 m, both featuring active day hikes to higher elevation before crossing the 5,106 m Larkya La Pass."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <link rel="stylesheet" href="../../index.css?v=7">
