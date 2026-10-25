@@ -84,6 +84,38 @@ const trekDailyWeather = {
     { label: "Day 12 (Poon Hill 3210 m / Pokhara)", min: 10, max: 24 },
     { label: "Day 13 (Kathmandu 1300 m)", min: 5, max: 19 },
     { label: "Day 14 (Departure 1300 m)", min: 5, max: 19 }
+  ],
+  "manaslu": [
+    { label: "Day 1 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 2 (Machha Khola 900 m)", min: 10, max: 24 },
+    { label: "Day 3 (Jagat 1340 m)", min: 8, max: 22 },
+    { label: "Day 4 (Deng 1860 m)", min: 5, max: 19 },
+    { label: "Day 5 (Namrung 2630 m)", min: 0, max: 14 },
+    { label: "Day 6 (Lho 3180 m)", min: -4, max: 10 },
+    { label: "Day 7 (Samagaon 3530 m)", min: -8, max: 7 },
+    { label: "Day 8 (Samagaon Acclim 3530 m)", min: -8, max: 7 },
+    { label: "Day 9 (Samdo 3860 m)", min: -12, max: 4 },
+    { label: "Day 10 (Samdo Acclim 3860 m)", min: -12, max: 4 },
+    { label: "Day 11 (Dharamsala 4460 m)", min: -18, max: -2 },
+    { label: "Day 12 (Larkya La 5106 m / Bimthang)", min: -22, max: -4 },
+    { label: "Day 13 (Tilije 2300 m)", min: 2, max: 16 },
+    { label: "Day 14 (Kathmandu 1400 m)", min: 5, max: 19 }
+  ],
+  "manaslu-circuit": [
+    { label: "Day 1 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 2 (Machha Khola 900 m)", min: 10, max: 24 },
+    { label: "Day 3 (Jagat 1340 m)", min: 8, max: 22 },
+    { label: "Day 4 (Deng 1860 m)", min: 5, max: 19 },
+    { label: "Day 5 (Namrung 2630 m)", min: 0, max: 14 },
+    { label: "Day 6 (Lho 3180 m)", min: -4, max: 10 },
+    { label: "Day 7 (Samagaon 3530 m)", min: -8, max: 7 },
+    { label: "Day 8 (Samagaon Acclim 3530 m)", min: -8, max: 7 },
+    { label: "Day 9 (Samdo 3860 m)", min: -12, max: 4 },
+    { label: "Day 10 (Samdo Acclim 3860 m)", min: -12, max: 4 },
+    { label: "Day 11 (Dharamsala 4460 m)", min: -18, max: -2 },
+    { label: "Day 12 (Larkya La 5106 m / Bimthang)", min: -22, max: -4 },
+    { label: "Day 13 (Tilije 2300 m)", min: 2, max: 16 },
+    { label: "Day 14 (Kathmandu 1400 m)", min: 5, max: 19 }
   ]
 };
 
