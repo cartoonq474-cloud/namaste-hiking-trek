@@ -707,14 +707,13 @@ const headerEndStr = '</header>\n\n  <main>\n    <article itemscope itemtype="ht
 const headerEndIdx = currentTilicho.indexOf('</header>');
 const headAndNav = currentTilicho.substring(0, headerEndIdx) + '</header>\n\n  <main>\n    <article itemscope itemtype="https://schema.org/TouristTrip">\n';
 
-// 15. Merged Executive Split Hero Header
+// 15. Everest Base Camp Style Hero Header
 const heroSectionHtml = `
-    <!-- Page Title Section (Executive Split-Grid: Narrative + Trip Snapshot) -->
-    <section style="padding: 30px 0 16px 0; background: var(--color-neutral-50);">
+    <!-- Page Title Section -->
+    <section style="padding: 30px 0 10px 0; background: var(--color-neutral-50);">
       <div class="container">
-        
-        <!-- Top Row: Region Pill & Authentic Review Badges -->
-        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px;">
+        <!-- Top Row: Region Pill & Review Badges -->
+        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px;">
           <span class="pill pill-copper" style="margin-bottom: 0;">Annapurna Region • Tilicho Lake & Circuit</span>
           
           <!-- TripAdvisor Review Badge (Authentic EBC Green Dots & Emblem) -->
@@ -743,13 +742,13 @@ const heroSectionHtml = `
               <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
               <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
             </svg>
-            <span style="font-weight: 700; color: #0f172a;">4.9</span>
+            <span style="font-weight: 700; color: #0f172a;">5.0</span>
             <span style="color: #FBBF24; display: inline-flex; gap: 1px; font-size: 0.9rem;">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </span>
             <span><strong style="font-weight: 600; color: #0f172a;">240+</strong> reviews on Google</span>
           </div>
@@ -761,76 +760,17 @@ const heroSectionHtml = `
           </span>
         </div>
 
-        <!-- Hero Main Grid: Left Narrative + Right Expedition Highlights Card -->
-        <div class="hero-split-grid" style="display: grid; grid-template-columns: 1fr 340px; gap: 36px; align-items: start; margin-bottom: 24px;">
-          
-          <!-- Left Column: Title & Unified Narrative -->
-          <div>
-            <h1 class="trek-hero-title" style="font-size: clamp(2.1rem, 3.2vw, 2.75rem); line-height: 1.15; margin-top: 0; margin-bottom: 14px; color: var(--color-primary-navy); font-weight: 800;">
-              Annapurna Circuit Trek with Tilicho Lake (16 Days)
-            </h1>
-
-            <p style="font-size: 1.12rem; color: var(--color-neutral-600); line-height: 1.75; margin-top: 0; margin-bottom: 0;">
-              Embark on a legendary 16-day Himalayan odyssey combining the complete Annapurna Circuit with an extraordinary excursion to turquoise <strong>Tilicho Lake (4,919m)</strong>—one of the highest accessible alpine lakes on Earth. Trek from lush subtropical valleys through ancient Gurung and Tibetan-heritage settlements, ascend into the dramatic Khangsar sanctuary beneath the Annapurna Great Barrier, and conquer the crowning <strong>Thorong La Pass at 5,416m</strong> before descending into sacred Muktinath and enjoying two scenic domestic flights.
-              <span id="ebc-more-text" style="display: none;">
-                Unlike standard itineraries with grueling 10-hour overland bus returns on bumpy roads, this 16-day program includes panoramic domestic flights from Jomsom to Pokhara through the Kali Gandaki gorge, plus Pokhara to Kathmandu. This ensures maximum trail exploration, superior altitude acclimatization with two nights above 4,000m, and smooth air returns.
-              </span>
-              <button id="ebc-toggle-btn" style="background: none; border: none; color: #10b981; font-weight: 700; font-size: 1.05rem; cursor: pointer; padding: 0; margin-left: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; transition: opacity 0.2s ease;">
-                Learn more <span style="font-size: 1.1rem; margin-left: 2px;">→</span>
-              </button>
-            </p>
-          </div>
-
-          <!-- Right Column: Expedition At A Glance Card -->
-          <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px 22px; box-shadow: 0 4px 16px rgba(15,23,42,0.04);">
-            <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 12px; margin-bottom: 14px;">
-              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-copper-orange); font-weight: 800; display: flex; align-items: center; gap: 6px;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                Trip Snapshot
-              </span>
-              <span style="font-size: 0.78rem; background: #e0f2fe; color: #0284c7; padding: 2px 8px; border-radius: 6px; font-weight: 700;">16 Days</span>
-            </div>
-
-            <div style="display: flex; flex-direction: column; gap: 11px;">
-              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.9rem;">
-                <span style="color: #64748b; display: flex; align-items: center; gap: 8px;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><path d="m8 3 4 8 5-5 5 11H2L8 3z"/></svg>
-                  Max Altitude
-                </span>
-                <strong style="color: #0f172a;">5,416 m (Thorong La)</strong>
-              </div>
-
-              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.9rem;">
-                <span style="color: #64748b; display: flex; align-items: center; gap: 8px;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-                  Tilicho Lake
-                </span>
-                <strong style="color: #0f172a;">4,919 m (Glacial Lake)</strong>
-              </div>
-
-              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.9rem;">
-                <span style="color: #64748b; display: flex; align-items: center; gap: 8px;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/></svg>
-                  Scenic Flights
-                </span>
-                <strong style="color: #0f172a;">2 Mountain Flights</strong>
-              </div>
-
-              <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.9rem;">
-                <span style="color: #64748b; display: flex; align-items: center; gap: 8px;">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                  Difficulty
-                </span>
-                <strong style="color: #0f172a;">Challenging / Strenuous</strong>
-              </div>
-            </div>
-
-            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px dashed #e2e8f0; font-size: 0.78rem; color: #008060; font-weight: 700; display: flex; align-items: center; gap: 6px;">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              All Permits & Guided Transfers Included
-            </div>
-          </div>
-        </div>
+        <h1 class="trek-hero-title" style="font-size: 2.8rem; margin-top: 6px; margin-bottom: 8px; color: var(--color-primary-navy);">Annapurna Circuit Trek with Tilicho Lake (16 Days)</h1>
+        
+        <p style="font-size: 1.15rem; color: var(--color-neutral-600); line-height: 1.7; margin-top: 12px; margin-bottom: 0;">
+          Embark on a legendary 16-day Himalayan odyssey combining the complete Annapurna Circuit with an extraordinary excursion to turquoise Tilicho Lake (<span data-altitude-m="4919">4,919m</span>)—one of the highest accessible alpine lakes on Earth. Trek from lush subtropical valleys through ancient Gurung and Tibetan-heritage settlements, ascend into the dramatic Khangsar sanctuary beneath the Annapurna Great Barrier, and conquer the crowning Thorong La Pass at <span data-altitude-m="5416">5,416m</span> before descending into sacred Muktinath and enjoying two scenic domestic flights.
+          <span id="ebc-more-text" style="display: none;">
+            Unlike standard itineraries with grueling 10-hour overland bus returns on bumpy roads, this 16-day program includes panoramic domestic flights from Jomsom to Pokhara through the Kali Gandaki gorge, plus Pokhara to Kathmandu. This ensures maximum trail exploration, superior altitude acclimatization with two nights above 4,000m, and smooth air returns. Guided by our government-licensed wilderness first responder team, you will safely navigate the high-altitude terrain beneath soaring 8,000-meter giants like Annapurna I and Dhaulagiri.
+          </span>
+          <button id="ebc-toggle-btn" style="background: none; border: none; color: #10b981; font-weight: 700; font-size: 1.05rem; cursor: pointer; padding: 0; margin-left: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; transition: opacity 0.2s ease;">
+            Learn more <span style="font-size: 1.1rem; margin-left: 2px;">→</span>
+          </button>
+        </p>
 
         <script>
           document.addEventListener('DOMContentLoaded', () => {
@@ -848,15 +788,6 @@ const heroSectionHtml = `
             }
           });
         </script>
-        
-        <style>
-          @media (max-width: 991px) {
-            .hero-split-grid {
-              grid-template-columns: 1fr !important;
-              gap: 20px !important;
-            }
-          }
-        </style>
       </div>
     </section>
 
@@ -1070,6 +1001,45 @@ const heroSectionHtml = `
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Trust Badges Section (Matching EBC Flagship Standard) -->
+    <div class="container" style="margin-bottom: 30px;">
+      <div class="trek-trust-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+        
+        <!-- Badge 1: Govt-registered local Nepal agency -->
+        <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy); line-height: 1.3;">Govt-registered local Nepal agency</span>
+        </div>
+
+        <!-- Badge 2: 10,000+ happy travellers -->
+        <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy); line-height: 1.3;">10,000+ happy travellers</span>
+        </div>
+
+        <!-- Badge 3: Secure payment · No hidden fees -->
+        <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy); line-height: 1.3;">Secure payment · No hidden fees</span>
+        </div>
+
+        <!-- Badge 4: Instant confirmation -->
+        <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy); line-height: 1.3;">Instant confirmation</span>
+        </div>
+
       </div>
     </div>
 
