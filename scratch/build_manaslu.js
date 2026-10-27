@@ -1,5 +1,6 @@
 const fs = require('fs');
 const data = require('./manaslu_data.js');
+const getReviewsHtml = require('./generate_manaslu_reviews.js');
 
 console.log('Building Manaslu Circuit Trek HTML...');
 
@@ -1141,87 +1142,7 @@ function renderSectionBooking() {
 
 // 16. Section 11: Reviews
 function renderSectionReviews() {
-  return `
-          <!-- Section 11: Reviews -->
-          <section id="section-reviews" class="trek-detail-section">
-            <h2 class="trek-section-title" style="font-size: 2.2rem; margin-bottom: 8px; text-align: left;">What Our Manaslu Trekkers Say</h2>
-            <p style="color: var(--color-neutral-600); font-size: 1.05rem; margin-bottom: 28px; text-align: left; max-width: 100%;">
-              Authentic feedback and verified stories from travelers who have circumnavigated Mount Manaslu with our expert team.
-            </p>
-
-            <!-- 3-Pill Tab Switcher Navigation -->
-            <div class="review-tabs-container" style="display: flex; gap: 10px; margin-bottom: 30px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">
-              <button type="button" class="review-tab-btn" data-target="review-panel-video" style="padding: 8px 18px; border-radius: 20px; border: 1px solid #cbd5e1; background: #ffffff; font-weight: 600; font-size: 0.9rem; cursor: pointer;">Video Reviews</button>
-              <button type="button" class="review-tab-btn active" data-target="review-panel-customer" style="padding: 8px 18px; border-radius: 20px; border: 1px solid #10b981; background: #e6f7f0; color: #008060; font-weight: 700; font-size: 0.9rem; cursor: pointer;">Customer Reviews</button>
-              <button type="button" class="review-tab-btn" data-target="review-panel-platform" style="padding: 8px 18px; border-radius: 20px; border: 1px solid #cbd5e1; background: #ffffff; font-weight: 600; font-size: 0.9rem; cursor: pointer;">Platform Ratings</button>
-            </div>
-
-            <!-- Panel 2: Customer Reviews (Active) -->
-            <div id="review-panel-customer" class="review-tab-panel active">
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                <!-- Review 1 -->
-                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-                  <div style="display: flex; align-items: center; gap: 2px; margin-bottom: 12px; color: #10b981;">
-                    ${svgs.star}${svgs.star}${svgs.star}${svgs.star}${svgs.star}
-                  </div>
-                  <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0 0 8px 0; font-weight: 700;">Unforgettable Larkya La Crossing at Sunrise!</h4>
-                  <p style="font-size: 0.95rem; color: var(--color-neutral-700); line-height: 1.6; margin-bottom: 16px;">
-                    "The Manaslu Circuit exceeded all our expectations. Having two acclimatization days in Samagaon and Samdo made a huge difference—we reached the 5,106 m pass feeling strong and completely clearheaded. Our guide Pasang was extraordinarily attentive, checking our oxygen levels twice daily and sharing the rich Buddhist culture of Nubri. Truly a life-changing adventure."
-                  </p>
-                  <div style="display: flex; align-items: center; gap: 12px;">
-                    <div style="width: 40px; height: 40px; border-radius: 50%; background: #008060; color: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: 700;">MK</div>
-                    <div>
-                      <span style="font-weight: 700; color: var(--color-primary-navy); font-size: 0.95rem; display: block;">Markus Keller</span>
-                      <span style="font-size: 0.8rem; color: var(--color-neutral-500);">Zurich, Switzerland • Trek completed October 2025</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Review 2 -->
-                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-                  <div style="display: flex; align-items: center; gap: 2px; margin-bottom: 12px; color: #10b981;">
-                    ${svgs.star}${svgs.star}${svgs.star}${svgs.star}${svgs.star}
-                  </div>
-                  <h4 style="font-size: 1.1rem; color: var(--color-primary-navy); margin: 0 0 8px 0; font-weight: 700;">Way More Authentic Than Annapurna or EBC</h4>
-                  <p style="font-size: 0.95rem; color: var(--color-neutral-700); line-height: 1.6; margin-bottom: 16px;">
-                    "We were looking for a remote, uncrowded Himalayan circuit, and Manaslu was the perfect choice. The dramatic suspension bridges over the Budhi Gandaki gorge are breathtaking, and walking through ancient stone villages surrounded by mani walls felt like stepping back in time. Namaste Hiking Trek handled the restricted permits seamlessly."
-                  </p>
-                  <div style="display: flex; align-items: center; gap: 12px;">
-                    <div style="width: 40px; height: 40px; border-radius: 50%; background: #0C2B4E; color: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: 700;">EL</div>
-                    <div>
-                      <span style="font-weight: 700; color: var(--color-primary-navy); font-size: 0.95rem; display: block;">Elena Rostova</span>
-                      <span style="font-size: 0.8rem; color: var(--color-neutral-500);">Toronto, Canada • Trek completed April 2025</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Panel 1: Video Reviews -->
-            <div id="review-panel-video" class="review-tab-panel" style="display: none;">
-              <div style="text-align: center; padding: 30px; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 14px;">
-                <h4 style="color: var(--color-primary-navy); margin-bottom: 8px;">Manaslu Circuit Video Diaries</h4>
-                <p style="color: var(--color-neutral-600); font-size: 0.95rem; margin-bottom: 16px;">Watch recent summit day footage across Larkya La Pass and Nubri village explorations.</p>
-                <a href="https://youtube.com" target="_blank" class="btn btn-outline" style="padding: 8px 20px;">Watch on YouTube ↗</a>
-              </div>
-            </div>
-
-            <!-- Panel 3: Platform Ratings -->
-            <div id="review-panel-platform" class="review-tab-panel" style="display: none;">
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
-                <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; text-align: center;">
-                  <h4 style="margin: 0 0 6px 0; color: var(--color-primary-navy);">TripAdvisor</h4>
-                  <div style="font-size: 1.8rem; font-weight: 800; color: #00af87; margin-bottom: 4px;">5.0 / 5.0</div>
-                  <span style="font-size: 0.85rem; color: #64748B;">Based on 240+ verified trekker reviews</span>
-                </div>
-                <div style="background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; text-align: center;">
-                  <h4 style="margin: 0 0 6px 0; color: var(--color-primary-navy);">Google Reviews</h4>
-                  <div style="font-size: 1.8rem; font-weight: 800; color: #10B981; margin-bottom: 4px;">5.0 / 5.0</div>
-                  <span style="font-size: 0.85rem; color: #64748B;">Based on 169+ direct agency reviews</span>
-                </div>
-              </div>
-            </div>
-          </section>`;
+  return getReviewsHtml();
 }
 
 // 17. Section 12: FAQs
