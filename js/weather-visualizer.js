@@ -32,6 +32,45 @@ const baseDailyData = [
 ];
 
 const trekDailyWeather = {
+  "mustang": [
+    { label: "Day 1 (Kathmandu 1355 m)", min: 5, max: 19 },
+    { label: "Day 2 (Kathmandu Prep 1355 m)", min: 5, max: 19 },
+    { label: "Day 3 (Pokhara 822 m)", min: 10, max: 24 },
+    { label: "Day 4 (Kagbeni 2743 m)", min: 2, max: 16 },
+    { label: "Day 5 (Chele 3050 m)", min: 0, max: 14 },
+    { label: "Day 6 (Gheling 3570 m)", min: -4, max: 12 },
+    { label: "Day 7 (Charang 3630 m)", min: -6, max: 11 },
+    { label: "Day 8 (Lo Manthang 3840 m)", min: -8, max: 10 },
+    { label: "Day 9 (Namgyal & Tingkhar 3920 m)", min: -8, max: 10 },
+    { label: "Day 10 (Drakmar 3810 m)", min: -7, max: 11 },
+    { label: "Day 11 (Sangboche 3800 m)", min: -7, max: 11 },
+    { label: "Day 12 (Chhusang 2980 m)", min: 1, max: 15 },
+    { label: "Day 13 (Muktinath 3710 m)", min: -5, max: 11 },
+    { label: "Day 14 (Jomsom 2720 m)", min: 2, max: 16 },
+    { label: "Day 15 (Pokhara 822 m)", min: 10, max: 24 },
+    { label: "Day 16 (Kathmandu 1355 m)", min: 5, max: 19 },
+    { label: "Day 17 (Departure 1355 m)", min: 5, max: 19 }
+  ],
+  "upper-mustang": [
+    { label: "Day 1 (Kathmandu 1355 m)", min: 5, max: 19 },
+    { label: "Day 2 (Kathmandu Prep 1355 m)", min: 5, max: 19 },
+    { label: "Day 3 (Pokhara 822 m)", min: 10, max: 24 },
+    { label: "Day 4 (Kagbeni 2743 m)", min: 2, max: 16 },
+    { label: "Day 5 (Chele 3050 m)", min: 0, max: 14 },
+    { label: "Day 6 (Gheling 3570 m)", min: -4, max: 12 },
+    { label: "Day 7 (Charang 3630 m)", min: -6, max: 11 },
+    { label: "Day 8 (Lo Manthang 3840 m)", min: -8, max: 10 },
+    { label: "Day 9 (Namgyal & Tingkhar 3920 m)", min: -8, max: 10 },
+    { label: "Day 10 (Drakmar 3810 m)", min: -7, max: 11 },
+    { label: "Day 11 (Sangboche 3800 m)", min: -7, max: 11 },
+    { label: "Day 12 (Chhusang 2980 m)", min: 1, max: 15 },
+    { label: "Day 13 (Muktinath 3710 m)", min: -5, max: 11 },
+    { label: "Day 14 (Jomsom 2720 m)", min: 2, max: 16 },
+    { label: "Day 15 (Pokhara 822 m)", min: 10, max: 24 },
+    { label: "Day 16 (Kathmandu 1355 m)", min: 5, max: 19 },
+    { label: "Day 17 (Departure 1355 m)", min: 5, max: 19 }
+  ],
+
   "ebc": baseDailyData,
   "gokyo": [
     { label: "Day 1 (Kathmandu 1400 m)", min: 5, max: 19 },
