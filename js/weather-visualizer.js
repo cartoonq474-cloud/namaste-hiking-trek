@@ -116,6 +116,22 @@ const trekDailyWeather = {
     { label: "Day 12 (Larkya La 5106 m / Bimthang)", min: -22, max: -4 },
     { label: "Day 13 (Tilije 2300 m)", min: 2, max: 16 },
     { label: "Day 14 (Kathmandu 1400 m)", min: 5, max: 19 }
+  ],
+  "langtang": [
+    { label: "Day 1 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 2 (Kathmandu Prep 1400 m)", min: 5, max: 19 },
+    { label: "Day 3 (Syabrubesi 1450 m)", min: 6, max: 20 },
+    { label: "Day 4 (Lama Hotel 2480 m)", min: 1, max: 15 },
+    { label: "Day 5 (Langtang Village 3430 m)", min: -4, max: 10 },
+    { label: "Day 6 (Kyanjin Gompa 3870 m)", min: -8, max: 7 },
+    { label: "Day 7 (Kyanjin Acclim 3870 m)", min: -8, max: 7 },
+    { label: "Day 8 (Kyanjin Ri 4773 m)", min: -15, max: 2 },
+    { label: "Day 9 (Lama Hotel 2480 m)", min: 1, max: 15 },
+    { label: "Day 10 (Syabrubesi 1450 m)", min: 6, max: 20 },
+    { label: "Day 11 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 12 (Kathmandu Rest 1400 m)", min: 5, max: 19 },
+    { label: "Day 13 (Kathmandu Culture 1400 m)", min: 5, max: 19 },
+    { label: "Day 14 (Departure 1400 m)", min: 5, max: 19 }
   ]
 };
 

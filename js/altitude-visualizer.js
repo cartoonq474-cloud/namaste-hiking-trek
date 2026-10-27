@@ -217,14 +217,19 @@ const trekAltitudeProfiles = {
     name: "Langtang Valley Trek",
     points: [
       { day: "Day 1", spot: "Kathmandu", altitudeM: 1400 },
-      { day: "Day 2", spot: "Syabrubesi", altitudeM: 1550 },
-      { day: "Day 3", spot: "Lama Hotel", altitudeM: 2480 },
-      { day: "Day 4", spot: "Langtang Village", altitudeM: 3430 },
-      { day: "Day 5", spot: "Kyanjin Gompa", altitudeM: 3870 },
-      { day: "Day 6", spot: "Kyanjin Ri", altitudeM: 4773 },
-      { day: "Day 7", spot: "Lama Hotel", altitudeM: 2480 },
-      { day: "Day 8", spot: "Syabrubesi", altitudeM: 1550 },
-      { day: "Day 9", spot: "Kathmandu", altitudeM: 1400 }
+      { day: "Day 2", spot: "Kathmandu Prep", altitudeM: 1400 },
+      { day: "Day 3", spot: "Syabrubesi", altitudeM: 1450 },
+      { day: "Day 4", spot: "Lama Hotel", altitudeM: 2480 },
+      { day: "Day 5", spot: "Langtang Village", altitudeM: 3430 },
+      { day: "Day 6", spot: "Kyanjin Gompa", altitudeM: 3870 },
+      { day: "Day 7", spot: "Kyanjin Acclim", altitudeM: 3870 },
+      { day: "Day 8", spot: "Kyanjin Ri / Tserko Ri", altitudeM: 4773 },
+      { day: "Day 9", spot: "Lama Hotel", altitudeM: 2480 },
+      { day: "Day 10", spot: "Syabrubesi", altitudeM: 1450 },
+      { day: "Day 11", spot: "Kathmandu", altitudeM: 1400 },
+      { day: "Day 12", spot: "Kathmandu Rest", altitudeM: 1400 },
+      { day: "Day 13", spot: "Kathmandu Culture", altitudeM: 1400 },
+      { day: "Day 14", spot: "Departure", altitudeM: 1400 }
     ]
   },
   "poonhill": {
