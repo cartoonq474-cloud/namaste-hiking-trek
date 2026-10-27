@@ -805,7 +805,8 @@ function setupDatesAndAvailability() {
 
         if (selectBtn) {
           selectBtn.removeAttribute('disabled');
-          selectBtn.setAttribute('data-trek-title', `Everest Base Camp Private Trek (${rangeString})`);
+          const baseTitle = selectBtn.getAttribute('data-base-title') || 'Everest Base Camp Private Trek';
+          selectBtn.setAttribute('data-trek-title', `${baseTitle} (${rangeString})`);
         }
 
         renderCalendar();

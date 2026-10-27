@@ -203,6 +203,7 @@
 
 
 
+
 </head>
 <body class="trek-template-page">
 <header class="main-header">
@@ -484,6 +485,8 @@
       </div>
     </div>
   </header>
+
+  
 
   
 
@@ -2425,140 +2428,793 @@
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>
-                  Private Trek
+                  Private Date
                 </button>
               </div>
             </div>
 
-            <!-- Group View Panel -->
-            <div id="dates-group-view" class="dates-panel active">
-              <div class="dates-filter-bar">
-                <div class="dates-filter-group">
-                  <label for="dates-year-select">Year</label>
-                  <select id="dates-year-select" class="dates-select">
-                    <option value="2026" selected>2026</option>
-                    <option value="2027">2027</option>
-                  </select>
+            <!-- Card Container -->
+            <div class="dates-card-container">
+              <!-- View 1: Group Joining -->
+              <div id="dates-group-view" class="dates-view-pane active">
+                <div class="dates-group-topbar">
+                  <span class="dates-year-badge">2026 / 2027</span>
+                  <div class="dates-month-tabs">
+                    <button type="button" class="dates-month-tab active" data-month="AUG">AUG</button>
+                    <button type="button" class="dates-month-tab" data-month="SEP">SEP</button>
+                    <button type="button" class="dates-month-tab" data-month="OCT">OCT</button>
+                    <button type="button" class="dates-month-tab" data-month="NOV">NOV</button>
+                    <button type="button" class="dates-month-tab" data-month="DEC">DEC</button>
+                    <button type="button" class="dates-month-tab" data-month="MAR">MAR</button>
+                    <button type="button" class="dates-month-tab" data-month="APR">APR</button>
+                    <button type="button" class="dates-month-tab" data-month="MAY">MAY</button>
+                  </div>
                 </div>
-                <div class="dates-filter-group">
-                  <label for="dates-month-select">Month</label>
-                  <select id="dates-month-select" class="dates-select">
-                    <option value="all">All Months</option>
-                    <option value="3">March</option>
-                    <option value="4">April</option>
-                    <option value="5">May</option>
-                    <option value="9">September</option>
-                    <option value="10">October</option>
-                    <option value="11">November</option>
-                  </select>
+
+                <div class="dates-departure-list">
+                  <!-- Departure AUG 05 -->
+                  <div class="departure-item-row" data-month="AUG">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">05</div>
+                      <div class="calendar-month-txt">AUG</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Aug 5 – Aug 18, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Aug 5 – Aug 18, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure AUG 12 -->
+                  <div class="departure-item-row" data-month="AUG">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">12</div>
+                      <div class="calendar-month-txt">AUG</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Aug 12 – Aug 25, 2026</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Aug 12 – Aug 25, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure AUG 17 -->
+                  <div class="departure-item-row" data-month="AUG">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">17</div>
+                      <div class="calendar-month-txt">AUG</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Aug 17 – Aug 30, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Aug 17 – Aug 30, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure AUG 22 -->
+                  <div class="departure-item-row" data-month="AUG">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">22</div>
+                      <div class="calendar-month-txt">AUG</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Aug 22 – Sep 4, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Aug 22 – Sep 4, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure AUG 27 -->
+                  <div class="departure-item-row" data-month="AUG">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">27</div>
+                      <div class="calendar-month-txt">AUG</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Aug 27 – Sep 9, 2026</div>
+                      <span class="departure-status-pill">LIMITED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Aug 27 – Sep 9, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure AUG 30 -->
+                  <div class="departure-item-row extra-date" data-month="AUG" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">30</div>
+                      <div class="calendar-month-txt">AUG</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Aug 30 – Sep 12, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Aug 30 – Sep 12, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure SEP 04 -->
+                  <div class="departure-item-row" data-month="SEP" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">04</div>
+                      <div class="calendar-month-txt">SEP</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Sep 4 – Sep 17, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Sep 4 – Sep 17, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure SEP 10 -->
+                  <div class="departure-item-row" data-month="SEP" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">10</div>
+                      <div class="calendar-month-txt">SEP</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Sep 10 – Sep 23, 2026</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Sep 10 – Sep 23, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure SEP 16 -->
+                  <div class="departure-item-row" data-month="SEP" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">16</div>
+                      <div class="calendar-month-txt">SEP</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Sep 16 – Sep 29, 2026</div>
+                      <span class="departure-status-pill">LIMITED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Sep 16 – Sep 29, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure SEP 22 -->
+                  <div class="departure-item-row" data-month="SEP" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">22</div>
+                      <div class="calendar-month-txt">SEP</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Sep 22 – Oct 5, 2026</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Sep 22 – Oct 5, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure SEP 27 -->
+                  <div class="departure-item-row" data-month="SEP" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">27</div>
+                      <div class="calendar-month-txt">SEP</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Sep 27 – Oct 10, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Sep 27 – Oct 10, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure SEP 30 -->
+                  <div class="departure-item-row extra-date" data-month="SEP" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">30</div>
+                      <div class="calendar-month-txt">SEP</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Sep 30 – Oct 13, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Sep 30 – Oct 13, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure OCT 03 -->
+                  <div class="departure-item-row" data-month="OCT" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">03</div>
+                      <div class="calendar-month-txt">OCT</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Oct 3 – Oct 16, 2026</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Oct 3 – Oct 16, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure OCT 08 -->
+                  <div class="departure-item-row" data-month="OCT" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">08</div>
+                      <div class="calendar-month-txt">OCT</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Oct 8 – Oct 21, 2026</div>
+                      <span class="departure-status-pill">LIMITED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Oct 8 – Oct 21, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure OCT 14 -->
+                  <div class="departure-item-row" data-month="OCT" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">14</div>
+                      <div class="calendar-month-txt">OCT</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Oct 14 – Oct 27, 2026</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Oct 14 – Oct 27, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure OCT 19 -->
+                  <div class="departure-item-row" data-month="OCT" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">19</div>
+                      <div class="calendar-month-txt">OCT</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Oct 19 – Nov 1, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Oct 19 – Nov 1, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure OCT 25 -->
+                  <div class="departure-item-row" data-month="OCT" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">25</div>
+                      <div class="calendar-month-txt">OCT</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Oct 25 – Nov 7, 2026</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Oct 25 – Nov 7, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure OCT 30 -->
+                  <div class="departure-item-row extra-date" data-month="OCT" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">30</div>
+                      <div class="calendar-month-txt">OCT</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Oct 30 – Nov 12, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Oct 30 – Nov 12, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure NOV 04 -->
+                  <div class="departure-item-row" data-month="NOV" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">04</div>
+                      <div class="calendar-month-txt">NOV</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Nov 4 – Nov 17, 2026</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Nov 4 – Nov 17, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure NOV 10 -->
+                  <div class="departure-item-row" data-month="NOV" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">10</div>
+                      <div class="calendar-month-txt">NOV</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Nov 10 – Nov 23, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Nov 10 – Nov 23, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure NOV 16 -->
+                  <div class="departure-item-row" data-month="NOV" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">16</div>
+                      <div class="calendar-month-txt">NOV</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Nov 16 – Nov 29, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Nov 16 – Nov 29, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure NOV 22 -->
+                  <div class="departure-item-row" data-month="NOV" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">22</div>
+                      <div class="calendar-month-txt">NOV</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Nov 22 – Dec 5, 2026</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Nov 22 – Dec 5, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure NOV 27 -->
+                  <div class="departure-item-row" data-month="NOV" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">27</div>
+                      <div class="calendar-month-txt">NOV</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Nov 27 – Dec 10, 2026</div>
+                      <span class="departure-status-pill">LIMITED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Nov 27 – Dec 10, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure NOV 30 -->
+                  <div class="departure-item-row extra-date" data-month="NOV" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">30</div>
+                      <div class="calendar-month-txt">NOV</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Nov 30 – Dec 13, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Nov 30 – Dec 13, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure DEC 03 -->
+                  <div class="departure-item-row" data-month="DEC" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">03</div>
+                      <div class="calendar-month-txt">DEC</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Dec 3 – Dec 16, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Dec 3 – Dec 16, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure DEC 09 -->
+                  <div class="departure-item-row" data-month="DEC" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">09</div>
+                      <div class="calendar-month-txt">DEC</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Dec 9 – Dec 22, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Dec 9 – Dec 22, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure DEC 15 -->
+                  <div class="departure-item-row" data-month="DEC" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">15</div>
+                      <div class="calendar-month-txt">DEC</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Dec 15 – Dec 28, 2026</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Dec 15 – Dec 28, 2026)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure DEC 21 -->
+                  <div class="departure-item-row" data-month="DEC" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">21</div>
+                      <div class="calendar-month-txt">DEC</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Dec 21 – Jan 3, 2027</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Dec 21 – Jan 3, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAR 06 -->
+                  <div class="departure-item-row" data-month="MAR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">06</div>
+                      <div class="calendar-month-txt">MAR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Mar 6 – Mar 19, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Mar 6 – Mar 19, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAR 12 -->
+                  <div class="departure-item-row" data-month="MAR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">12</div>
+                      <div class="calendar-month-txt">MAR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Mar 12 – Mar 25, 2027</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Mar 12 – Mar 25, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAR 18 -->
+                  <div class="departure-item-row" data-month="MAR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">18</div>
+                      <div class="calendar-month-txt">MAR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Mar 18 – Mar 31, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Mar 18 – Mar 31, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAR 24 -->
+                  <div class="departure-item-row" data-month="MAR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">24</div>
+                      <div class="calendar-month-txt">MAR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Mar 24 – Apr 6, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Mar 24 – Apr 6, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAR 30 -->
+                  <div class="departure-item-row" data-month="MAR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">30</div>
+                      <div class="calendar-month-txt">MAR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Mar 30 – Apr 12, 2027</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Mar 30 – Apr 12, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAR 31 -->
+                  <div class="departure-item-row extra-date" data-month="MAR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">31</div>
+                      <div class="calendar-month-txt">MAR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Mar 31 – Apr 13, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Mar 31 – Apr 13, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure APR 04 -->
+                  <div class="departure-item-row" data-month="APR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">04</div>
+                      <div class="calendar-month-txt">APR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Apr 4 – Apr 17, 2027</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Apr 4 – Apr 17, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure APR 10 -->
+                  <div class="departure-item-row" data-month="APR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">10</div>
+                      <div class="calendar-month-txt">APR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Apr 10 – Apr 23, 2027</div>
+                      <span class="departure-status-pill">LIMITED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Apr 10 – Apr 23, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure APR 16 -->
+                  <div class="departure-item-row" data-month="APR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">16</div>
+                      <div class="calendar-month-txt">APR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Apr 16 – Apr 29, 2027</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Apr 16 – Apr 29, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure APR 22 -->
+                  <div class="departure-item-row" data-month="APR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">22</div>
+                      <div class="calendar-month-txt">APR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Apr 22 – May 5, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Apr 22 – May 5, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure APR 28 -->
+                  <div class="departure-item-row" data-month="APR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">28</div>
+                      <div class="calendar-month-txt">APR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Apr 28 – May 11, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Apr 28 – May 11, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure APR 30 -->
+                  <div class="departure-item-row extra-date" data-month="APR" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">30</div>
+                      <div class="calendar-month-txt">APR</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">Apr 30 – May 13, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Apr 30 – May 13, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAY 05 -->
+                  <div class="departure-item-row" data-month="MAY" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">05</div>
+                      <div class="calendar-month-txt">MAY</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">May 5 – May 18, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (May 5 – May 18, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAY 11 -->
+                  <div class="departure-item-row" data-month="MAY" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">11</div>
+                      <div class="calendar-month-txt">MAY</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">May 11 – May 24, 2027</div>
+                      <span class="departure-status-pill">GUARANTEED</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (May 11 – May 24, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAY 17 -->
+                  <div class="departure-item-row" data-month="MAY" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">17</div>
+                      <div class="calendar-month-txt">MAY</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">May 17 – May 30, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (May 17 – May 30, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAY 23 -->
+                  <div class="departure-item-row" data-month="MAY" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">23</div>
+                      <div class="calendar-month-txt">MAY</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">May 23 – Jun 5, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (May 23 – Jun 5, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                  <!-- Departure MAY 28 -->
+                  <div class="departure-item-row extra-date" data-month="MAY" style="display: none;">
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">28</div>
+                      <div class="calendar-month-txt">MAY</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">May 28 – Jun 10, 2027</div>
+                      <span class="departure-status-pill">AVAILABLE</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">$1,299</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (May 28 – Jun 10, 2027)">Book Now</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dates-load-more-wrapper">
+                  <button type="button" id="btn-load-more-dates" class="btn-load-more-dates">Load more dates</button>
                 </div>
               </div>
 
-              <!-- Dates Table -->
-              <div class="dates-table-container">
-                <table class="dates-table">
-                  <thead>
-                    <tr>
-                      <th>Dates</th>
-                      <th>Days</th>
-                      <th>Status</th>
-                      <th>Price / person</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr data-year="2026" data-month="9">
-                      <td>
-                        <div class="dates-cell-primary">Sep 12 - Sep 25, 2026</div>
-                        <div class="dates-cell-secondary">Autumn Prime Season</div>
-                      </td>
-                      <td>14 Days</td>
-                      <td><span class="dates-status-badge guaranteed">Guaranteed</span></td>
-                      <td><span class="dates-price-val" data-price-usd="1299">$1,299</span></td>
-                      <td><button type="button" class="dates-book-btn open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Sep 12 - Sep 25, 2026)">Book Now</button></td>
-                    </tr>
-                    <tr data-year="2026" data-month="9">
-                      <td>
-                        <div class="dates-cell-primary">Sep 26 - Oct 09, 2026</div>
-                        <div class="dates-cell-secondary">Peak Autumn Clarity</div>
-                      </td>
-                      <td>14 Days</td>
-                      <td><span class="dates-status-badge fast">Filling Fast</span></td>
-                      <td><span class="dates-price-val" data-price-usd="1299">$1,299</span></td>
-                      <td><button type="button" class="dates-book-btn open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Sep 26 - Oct 09, 2026)">Book Now</button></td>
-                    </tr>
-                    <tr data-year="2026" data-month="10">
-                      <td>
-                        <div class="dates-cell-primary">Oct 05 - Oct 18, 2026</div>
-                        <div class="dates-cell-secondary">Optimal Mountain Views</div>
-                      </td>
-                      <td>14 Days</td>
-                      <td><span class="dates-status-badge limited">Only 3 Seats</span></td>
-                      <td><span class="dates-price-val" data-price-usd="1299">$1,299</span></td>
-                      <td><button type="button" class="dates-book-btn open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Oct 05 - Oct 18, 2026)">Book Now</button></td>
-                    </tr>
-                    <tr data-year="2026" data-month="10">
-                      <td>
-                        <div class="dates-cell-primary">Oct 19 - Nov 01, 2026</div>
-                        <div class="dates-cell-secondary">Clear Blue Skies</div>
-                      </td>
-                      <td>14 Days</td>
-                      <td><span class="dates-status-badge guaranteed">Guaranteed</span></td>
-                      <td><span class="dates-price-val" data-price-usd="1299">$1,299</span></td>
-                      <td><button type="button" class="dates-book-btn open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Oct 19 - Nov 01, 2026)">Book Now</button></td>
-                    </tr>
-                    <tr data-year="2026" data-month="11">
-                      <td>
-                        <div class="dates-cell-primary">Nov 03 - Nov 16, 2026</div>
-                        <div class="dates-cell-secondary">Late Autumn Crisp Trails</div>
-                      </td>
-                      <td>14 Days</td>
-                      <td><span class="dates-status-badge guaranteed">Guaranteed</span></td>
-                      <td><span class="dates-price-val" data-price-usd="1249">$1,249</span></td>
-                      <td><button type="button" class="dates-book-btn open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Nov 03 - Nov 16, 2026)">Book Now</button></td>
-                    </tr>
-                    <tr data-year="2027" data-month="3">
-                      <td>
-                        <div class="dates-cell-primary">Mar 15 - Mar 28, 2027</div>
-                        <div class="dates-cell-secondary">Spring Awakening</div>
-                      </td>
-                      <td>14 Days</td>
-                      <td><span class="dates-status-badge guaranteed">Open</span></td>
-                      <td><span class="dates-price-val" data-price-usd="1249">$1,249</span></td>
-                      <td><button type="button" class="dates-book-btn open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Mar 15 - Mar 28, 2027)">Book Now</button></td>
-                    </tr>
-                    <tr data-year="2027" data-month="4">
-                      <td>
-                        <div class="dates-cell-primary">Apr 06 - Apr 19, 2027</div>
-                        <div class="dates-cell-secondary">Rhododendron Bloom</div>
-                      </td>
-                      <td>14 Days</td>
-                      <td><span class="dates-status-badge guaranteed">Guaranteed</span></td>
-                      <td><span class="dates-price-val" data-price-usd="1299">$1,299</span></td>
-                      <td><button type="button" class="dates-book-btn open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Apr 06 - Apr 19, 2027)">Book Now</button></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+              <!-- View 2: Private Date -->
+              <div id="dates-private-view" class="dates-view-pane" style="display: none;">
+                <div class="private-dates-header">
+                  <div class="private-dates-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="private-dates-title">Choose Your Departure Date</h3>
+                    <p class="private-dates-desc">
+                      Plan your Manaslu Circuit Trek: Circumnavigate the World's 8th Highest Peak at your convenience. Select your preferred departure date for this 14 days journey, and we'll take care of the rest.
+                    </p>
+                  </div>
+                </div>
 
-            <!-- Private Trek View Panel -->
-            <div id="dates-private-view" class="dates-panel" style="display: none;">
-              <div class="dates-private-card">
-                <div class="dates-private-content">
-                  <h3 class="dates-private-title">Customize Your Private Manaslu Circuit Trek</h3>
-                  <p class="dates-private-desc">
-                    Choose your own departure dates, customize walking pacing, include side extensions like Tsum Valley, and enjoy a dedicated guide and porter crew exclusively for your private party.
-                  </p>
-                  <ul class="dates-private-perks">
-                    <li>✓ 100% Flexible Departure Dates Year-Round</li>
-                    <li>✓ Personalized Daily Walking Pace & Acclimatization</li>
-                    <li>✓ Private 4WD Jeep Overland Transportation</li>
-                    <li>✓ Solo, Couple, Family, and Group Discounts</li>
-                  </ul>
-                  <button type="button" class="btn btn-primary open-inquiry-btn" data-trek-title="Manaslu Circuit Trek (Private Departure Request)">
-                    Request a Custom Private Quote
-                  </button>
+                <!-- Dual Month Interactive Calendar Widget Container -->
+                <div class="dual-calendar-card">
+                  <div id="dual-calendar-mount" class="dual-calendar-mount"></div>
+                  <div class="calendar-footer-meta">
+                    <div class="legend-item">
+                      <span class="sold-out-dot"></span> Sold out dates
+                    </div>
+                    <div class="discount-note">
+                      Group-size discounts will be applied in the next step.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Action Row -->
+                <div class="private-dates-action-bar">
+                  <span id="private-selected-date-text" class="private-selected-prompt">Select a start date from the calendar.</span>
+                  <button type="button" id="btn-select-private-date" class="btn-select-dates open-inquiry-btn" data-base-title="Manaslu Circuit Private Trek" data-trek-title="Manaslu Circuit Private Trek" disabled>Select dates ↗</button>
                 </div>
               </div>
             </div>
@@ -4614,6 +5270,7 @@
   <script src="../../js/mega-menu.js"></script>
 </body>
 </html>
+
 
 
 
