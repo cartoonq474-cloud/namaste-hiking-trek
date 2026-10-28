@@ -19,7 +19,10 @@ function setupSubNavScrollSpy() {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const tabId = btn.getAttribute('data-tab');
-      const targetSection = document.getElementById(`section-${tabId}`);
+      let targetSection = document.getElementById(`section-${tabId}`);
+      if (!targetSection && tabId === 'altitude') {
+        targetSection = document.getElementById('section-altitude-profile');
+      }
       
       if (targetSection) {
         // Temporarily detach scroll spy during manual scroll to prevent stutter
@@ -56,8 +59,12 @@ function setupSubNavScrollSpy() {
       const secHeight = sec.offsetHeight;
       if (scrollPos >= secTop - 10 && scrollPos < secTop + secHeight) {
         activeTabId = idAttr.replace('section-', '');
+        if (activeTabId === 'altitude-profile') {
+          activeTabId = 'altitude';
+        }
       }
     });
+
 
     // Fallback: if we are at the bottom of the page, activate the last tab (FAQs)
     if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 60) {

@@ -426,6 +426,7 @@ export function renderAltitudeChart(containerId, trekKey = "ebc") {
       <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
         <!-- Trek Selector -->
         <select id="altitude-trek-selector" class="control-select" style="background: #ffffff; color: var(--color-primary-navy); border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px 12px; font-size: 0.9rem; font-weight: 600; cursor: pointer; outline: none; transition: border-color var(--transition-fast);">
+          <option value="everest-view" ${trekKey === 'everest-view' ? 'selected' : ''}>Everest View Trek (7 Days)</option>
           <option value="ebc" ${trekKey === 'ebc' ? 'selected' : ''}>Everest Base Camp</option>
           <option value="abc" ${trekKey === 'abc' ? 'selected' : ''}>Annapurna Base Camp</option>
           <option value="annapurna_circuit" ${trekKey === 'annapurna_circuit' ? 'selected' : ''}>Annapurna Circuit</option>
