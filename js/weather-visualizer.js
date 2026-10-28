@@ -32,6 +32,16 @@ const baseDailyData = [
 ];
 
 const trekDailyWeather = {
+  "everest-view": [
+    { label: "Day 1 (Phakding 2610 m)", min: -2, max: 14 },
+    { label: "Day 2 (Namche Bazaar 3440 m)", min: -6, max: 10 },
+    { label: "Day 3 (Namche Acclimatization 3440 m)", min: -6, max: 10 },
+    { label: "Day 4 (Everest View Hotel 3880 m)", min: -8, max: 8 },
+    { label: "Day 5 (Phakding 2610 m)", min: -2, max: 14 },
+    { label: "Day 6 (Lukla 2860 m)", min: -3, max: 13 },
+    { label: "Day 7 (Kathmandu 1400 m)", min: 5, max: 20 }
+  ],
+
   "mustang": [
     { label: "Day 1 (Kathmandu 1355 m)", min: 5, max: 19 },
     { label: "Day 2 (Kathmandu Prep 1355 m)", min: 5, max: 19 },
