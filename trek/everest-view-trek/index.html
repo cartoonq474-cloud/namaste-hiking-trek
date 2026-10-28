@@ -1489,21 +1489,21 @@
                     <td><strong>Day 3</strong></td>
                     <td>Acclimatization and exploration around Namche Bazaar</td>
                     <td>3,440 m sleeping altitude</td>
-                    <td>2–4 hours optional</td>
+                    <td>2–4 hours scenic day hikes</td>
                     <td>Namche Bazaar</td>
                   </tr>
                   <tr>
                     <td><strong>Day 4</strong></td>
-                    <td>Everest View Hotel, Khumjung & Khunde excursion</td>
-                    <td>Up to approximately 3,880 m</td>
-                    <td>5–7 hours</td>
+                    <td>Excursion to Everest View Hotel, Khumjung & Khunde</td>
+                    <td>Everest View Hotel ~3,880 m</td>
+                    <td>5–7 hours return loop</td>
                     <td>Namche Bazaar</td>
                   </tr>
                   <tr>
                     <td><strong>Day 5</strong></td>
                     <td>Namche Bazaar to Phakding</td>
-                    <td>2,610 m</td>
-                    <td>5–6 hours</td>
+                    <td>3,440 m descending to 2,610 m</td>
+                    <td>4–5 hours</td>
                     <td>Phakding</td>
                   </tr>
                   <tr>
@@ -1528,367 +1528,268 @@
             </p>
           </div>
 
-          <!-- DETAILED DAY-BY-DAY CARDS -->
-          <div class="space-y-8">
+          <!-- Interactive Action Bar: Route Summary & Expand/Collapse All -->
+          <div style="display: flex; justify-content: space-between; align-items: center; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px 18px; margin-bottom: 24px; flex-wrap: wrap; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: #0C2B4E; font-size: 0.95rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" style="vertical-align: middle;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>7 Route Days • Complete Day-by-Day Route Guidance</span>
+            </div>
+            <button type="button" id="toggle-all-itinerary" style="background: #ffffff; color: #008060; border: 1.5px solid #008060; padding: 6px 16px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>
+              <span>Collapse All</span>
+            </button>
+          </div>
+
+          <!-- DETAILED DAY-BY-DAY CARDS (Collapsible Accordion) -->
+          <div class="itinerary-timeline" style="position: relative;">
             
             <!-- DAY 1 CARD -->
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div class="bg-primary-navy px-6 py-4 flex flex-wrap items-center justify-between gap-3 text-white">
-                <div class="flex items-center gap-3">
-                  <span class="w-8 h-8 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-sm">1</span>
-                  <h3 class="font-heading font-bold text-lg sm:text-xl text-white">
+            <div class="itinerary-card active" style="margin-bottom: 24px; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 6px rgba(12, 43, 78, 0.05); transition: box-shadow 0.2s;">
+              <div class="itinerary-header" style="background: #0C2B4E; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; user-select: none;">
+                <div style="display: flex; align-items: center; gap: 14px;">
+                  <span style="width: 34px; height: 34px; border-radius: 50%; background: #008060; color: #ffffff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0;">1</span>
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 0; font-family: inherit;">
                     Day 1: Fly from Kathmandu to Lukla and Trek to Phakding (2,610 m)
                   </h3>
                 </div>
-                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Max: ~2,860 m</span>
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Walk: 3–4 hrs</span>
-                  <span class="bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded">Overnight: Phakding</span>
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Max: ~2,860 m</span>
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Walk: 3–4 hrs</span>
+                  <span style="background: rgba(0, 128, 96, 0.35); color: #A7F3D0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Overnight: Phakding (2,610 m)</span>
+                  <div class="itinerary-toggle-circle" style="width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.25s ease;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </div>
                 </div>
               </div>
-              <div class="p-6 sm:p-8 space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                  <div class="md:col-span-8 space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed">
-                    <p>
-                      Your Everest View Trek begins with a scenic mountain flight from Kathmandu to Lukla, the main gateway to the Khumbu trekking region. Depending on seasonal flight operations, the departure may be arranged from Kathmandu or through Ramechhap following a road transfer. Flight arrangements will be confirmed according to the operating schedule.
-                    </p>
-                    <p>
-                      The flight offers an exciting introduction to Nepal's mountain landscape. As the aircraft approaches Lukla, the terrain changes from rolling hills and deep valleys to steep mountain slopes and settlements scattered across the hillsides. Weather conditions determine visibility, so panoramic views during the flight cannot be guaranteed.
-                    </p>
-                    <p>
-                      After arriving in Lukla, you meet your trekking guide and organize your daypack before beginning the walk toward Phakding. The trail initially follows a gradual descent through the settlement and continues along sections of the Dudh Koshi River Valley. Small villages, cultivated land, stone paths, traditional homes, and forested hills introduce you to the everyday environment of the lower Khumbu.
-                    </p>
-                    <p>
-                      Although this is generally one of the shorter walking days, it provides important time to become familiar with the trail, footwear, daypack, and walking rhythm. You will encounter other trekkers, local residents, porters, and pack animals using the same network of mountain paths.
-                    </p>
-                    <p>
-                      After reaching Phakding, check into your teahouse and enjoy time to rest. Phakding is situated at a lower elevation than Lukla, so this first stage also offers a gradual introduction to the route before the more substantial ascent ahead. Overnight accommodation is in a local mountain lodge, where you can enjoy dinner and prepare for the next trekking day.
-                    </p>
+              <div class="itinerary-content">
+                <div class="itinerary-content-inner" style="padding: 24px; border-top: 1px solid #E2E8F0;">
+                  <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                    <div style="color: #334155; font-size: 0.95rem; line-height: 1.7;">
+                      <p style="margin-bottom: 14px;">Your Everest View Trek begins with a scenic mountain flight from Kathmandu to Lukla, the main gateway to the Khumbu trekking region. Depending on seasonal flight operations, the departure may be arranged from Kathmandu or through Ramechhap following a road transfer. Flight arrangements will be confirmed according to the operating schedule.</p><p style="margin-bottom: 14px;">The flight offers an exciting introduction to Nepal's mountain landscape. As the aircraft approaches Lukla, the terrain changes from rolling hills and deep valleys to steep mountain slopes and settlements scattered across the hillsides. Weather conditions determine visibility, so panoramic views during the flight cannot be guaranteed.</p><p style="margin-bottom: 14px;">After arriving in Lukla, you meet your trekking guide and organize your daypack before beginning the walk toward Phakding. The trail initially follows a gradual descent through the settlement and continues along sections of the Dudh Koshi River Valley. Small villages, cultivated land, stone paths, traditional homes, and forested hills introduce you to the everyday environment of the lower Khumbu.</p><p style="margin-bottom: 14px;">Although this is generally one of the shorter walking days, it provides important time to become familiar with the trail, footwear, daypack, and walking rhythm. You will encounter other trekkers, local residents, porters, and pack animals using the same network of mountain paths.</p><p style="margin-bottom: 14px;">After reaching Phakding, check into your teahouse and enjoy time to rest. Phakding is situated at a lower elevation than Lukla, so this first stage also offers a gradual introduction to the route before the more substantial ascent ahead. Overnight accommodation is in a local mountain lodge, where you can enjoy dinner and prepare for the next trekking day.</p>
+                    </div>
+                    
+                    <div style="margin-top: 8px;">
+                      <img src="../../images/treks/everest-base-camp/everest-base-camp-mountain-valley-landscape-06.jpg" alt="Lukla to Phakding Valley Trail" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
+                      <div style="margin-top: 6px; font-size: 0.78rem; color: #64748B; font-style: italic; text-align: center;">Lower Dudh Koshi River Valley trail</div>
+                    </div>
+                    
                   </div>
-                  <div class="md:col-span-4">
-                    <img src="../../images/treks/everest-base-camp/everest-base-camp-mountain-valley-landscape-06.jpg" alt="Lukla to Phakding Valley Trail" class="w-full h-56 object-cover rounded-lg shadow-sm" loading="lazy">
-                    <div class="mt-2 text-xs text-gray-500 italic text-center">Lower Dudh Koshi River Valley trail</div>
-                  </div>
-                </div>
-
-                <!-- Logistics Callout -->
-                <div class="mt-4 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg text-xs sm:text-sm text-amber-900 space-y-1">
-                  <strong>Elevation & Safety Guidance:</strong> Phakding around 2,610 m to Namche around 3,440 m gains approximately 830 m of sleeping altitude. The later Namche acclimatization day does not eliminate risk from the ascent. Adjust staging to the traveler’s health and acclimatization; do not ascend while altitude symptoms are present.
                 </div>
               </div>
             </div>
-
             <!-- DAY 2 CARD -->
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div class="bg-primary-navy px-6 py-4 flex flex-wrap items-center justify-between gap-3 text-white">
-                <div class="flex items-center gap-3">
-                  <span class="w-8 h-8 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-sm">2</span>
-                  <h3 class="font-heading font-bold text-lg sm:text-xl text-white">
+            <div class="itinerary-card active" style="margin-bottom: 24px; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 6px rgba(12, 43, 78, 0.05); transition: box-shadow 0.2s;">
+              <div class="itinerary-header" style="background: #0C2B4E; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; user-select: none;">
+                <div style="display: flex; align-items: center; gap: 14px;">
+                  <span style="width: 34px; height: 34px; border-radius: 50%; background: #008060; color: #ffffff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0;">2</span>
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 0; font-family: inherit;">
                     Day 2: Trek from Phakding to Namche Bazaar (3,440 m)
                   </h3>
                 </div>
-                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Max: ~3,440 m</span>
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Walk: 5–6 hrs</span>
-                  <span class="bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded">Overnight: Namche Bazaar</span>
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Max: ~3,440 m</span>
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Walk: 5–6 hrs</span>
+                  <span style="background: rgba(0, 128, 96, 0.35); color: #A7F3D0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Overnight: Namche Bazaar (3,440 m)</span>
+                  <div class="itinerary-toggle-circle" style="width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.25s ease;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </div>
                 </div>
               </div>
-              <div class="p-6 sm:p-8 space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                  <div class="md:col-span-8 space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed">
-                    <p>
-                      After breakfast in Phakding, begin the trek toward Namche Bazaar, one of the most important settlements in the Everest region. This is a more demanding day than the previous stage because the trail combines riverside walking, suspension bridges, gradual climbing, and a sustained uphill ascent toward Namche.
-                    </p>
-                    <p>
-                      The route follows the Dudh Koshi River through several Sherpa settlements. Along the way, you pass traditional houses, small lodges, cultivated plots, and forested sections where the surrounding hills rise above the valley. One of the memorable features of this stage is the collection of suspension bridges decorated with colorful prayer flags connecting settlements across the gorges.
-                    </p>
-                    <p>
-                      The route continues toward Monjo, where trekking permits are checked at the entrance area of Sagarmatha National Park. After completing the required entry procedures, descend toward the river before continuing through the national park toward the main ascent to Namche Bazaar.
-                    </p>
-                    <p>
-                      The final climb is often the most physically demanding part of the day. The trail rises steadily through a series of bends and uphill sections, requiring patience and consistent energy. The thinner air may make walking feel more strenuous than it would at lower elevations. Your guide will encourage a controlled pace, regular short breaks, and adequate water intake.
-                    </p>
-                    <p>
-                      Namche Bazaar sits at approximately 3,440 meters and serves as a major hub for trekkers, mountaineers, local traders, and residents. After arrival, check into your lodge and take time to recover from the climb. Overnight accommodation is in Namche Bazaar.
-                    </p>
+              <div class="itinerary-content">
+                <div class="itinerary-content-inner" style="padding: 24px; border-top: 1px solid #E2E8F0;">
+                  <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                    <div style="color: #334155; font-size: 0.95rem; line-height: 1.7;">
+                      <p style="margin-bottom: 14px;">The second day involves a steady climb into the upper valley, crossing several suspension bridges along the Dudh Koshi River. The trail passes through small settlements, pine and rhododendron forests, and terraced slopes while offering views of surrounding peaks as the valley opens up.</p><p style="margin-bottom: 14px;">After passing Monjo, you reach the official entrance checkpoint for Sagarmatha National Park, where permits are registered. From here, the route continues across the river and approaches the confluence below the famous Hillary Suspension Bridge, one of the most recognizable structures along the Everest trekking route.</p><p style="margin-bottom: 14px;">Crossing the high bridge marks the start of the sustained uphill walk to Namche Bazaar. The path climbs steadily through pine forest, requiring a comfortable and even pace. On clear days, a gap in the trees along the trail offers the first distant glimpse of Mount Everest, providing an encouraging milestone during the climb.</p><p style="margin-bottom: 14px;">Continuing the ascent, the trail brings you into Namche Bazaar, the primary hub and trading center of the Khumbu region. Built into a curved natural amphitheater on the mountain slope, Namche offers lodges, bakeries, cafes, equipment shops, and vibrant Sherpa culture. You will check into your teahouse, rest, and spend the evening enjoying dinner in the comfortable dining hall.</p>
+                    </div>
+                    
+                    <div style="margin-top: 8px;">
+                      <img src="../../images/treks/everest-base-camp/everest-base-camp-hillary-suspension-bridge-07.jpg" alt="Hillary Suspension Bridge to Namche" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
+                      <div style="margin-top: 6px; font-size: 0.78rem; color: #64748B; font-style: italic; text-align: center;">Hillary Suspension Bridge spanning Dudh Koshi gorge</div>
+                    </div>
+                    
                   </div>
-                  <div class="md:col-span-4">
-                    <img src="../../images/treks/everest-base-camp/everest-base-camp-trekking-group-suspension-bridge-03.jpg" alt="Hillary Bridge ascent to Namche" class="w-full h-56 object-cover rounded-lg shadow-sm" loading="lazy">
-                    <div class="mt-2 text-xs text-gray-500 italic text-center">Suspension bridge crossing near Monjo</div>
-                  </div>
-                </div>
-
-                <div class="mt-4 bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-lg text-xs sm:text-sm text-emerald-900 space-y-1">
-                  <strong>Pacing Recommendation:</strong> Rushing during the Namche ascent is unnecessary and increases altitude strain. Maintain a slow, rhythmic cadence with short breaths, hydrate regularly, and dress in breathable layers.
                 </div>
               </div>
             </div>
-
             <!-- DAY 3 CARD -->
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div class="bg-primary-navy px-6 py-4 flex flex-wrap items-center justify-between gap-3 text-white">
-                <div class="flex items-center gap-3">
-                  <span class="w-8 h-8 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-sm">3</span>
-                  <h3 class="font-heading font-bold text-lg sm:text-xl text-white">
-                    Day 3: Acclimatization Day and Exploration Around Namche Bazaar (3,440 m)
+            <div class="itinerary-card active" style="margin-bottom: 24px; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 6px rgba(12, 43, 78, 0.05); transition: box-shadow 0.2s;">
+              <div class="itinerary-header" style="background: #0C2B4E; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; user-select: none;">
+                <div style="display: flex; align-items: center; gap: 14px;">
+                  <span style="width: 34px; height: 34px; border-radius: 50%; background: #008060; color: #ffffff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0;">3</span>
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 0; font-family: inherit;">
+                    Day 3: Acclimatization & Exploration around Namche Bazaar (3,440 m)
                   </h3>
                 </div>
-                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Sleep: ~3,440 m</span>
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Walk: 2–4 hrs</span>
-                  <span class="bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded">Overnight: Namche Bazaar</span>
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Max: ~3,550 m</span>
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Walk: 2–4 hrs</span>
+                  <span style="background: rgba(0, 128, 96, 0.35); color: #A7F3D0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Overnight: Namche Bazaar (3,440 m)</span>
+                  <div class="itinerary-toggle-circle" style="width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.25s ease;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </div>
                 </div>
               </div>
-              <div class="p-6 sm:p-8 space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                  <div class="md:col-span-8 space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed">
-                    <p>
-                      The third day is dedicated to acclimatization and exploration around Namche Bazaar. After gaining considerable elevation between Phakding and Namche, spending another night at approximately the same altitude gives your body additional time to adjust before the excursion toward the Everest View Hotel and nearby Sherpa villages.
-                    </p>
-                    <p>
-                      Acclimatization does not mean remaining inactive throughout the day. A short, comfortable walk to an appropriate viewpoint or nearby local attraction can be included, depending on your condition and the advice of your guide. The aim is to maintain gentle activity without turning the day into another strenuous trekking stage.
-                    </p>
-                    <p>
-                      You may explore areas around Namche Bazaar, visit local shops, or walk toward suitable viewpoints above the settlement. Depending on opening arrangements and your interests, local cultural interpretation facilities and the Sagarmatha National Park Visitor Centre may also be visited.
-                    </p>
-                    <p>
-                      You can use the afternoon to prepare for the following day's excursion. Check your daypack, camera, warm clothing, water supply, and footwear. Adequate food, fluids, rest, and a comfortable pace are important throughout the day.
-                    </p>
-                    <p>
-                      The evening can be spent relaxing in the lodge dining area and enjoying a warm meal. You will remain in Namche Bazaar overnight, providing a more gradual progression before the main mountain-view excursion.
-                    </p>
-                  </div>
-                  <div class="md:col-span-4">
-                    <img src="../../images/treks/everest-base-camp/everest-base-camp-trekking-group-village-14.jpg" alt="Namche Bazaar Acclimatization" class="w-full h-56 object-cover rounded-lg shadow-sm" loading="lazy">
-                    <div class="mt-2 text-xs text-gray-500 italic text-center">Namche Bazaar amphitheater view</div>
-                  </div>
+              <div class="itinerary-content">
+                <div class="itinerary-content-inner" style="padding: 24px; border-top: 1px solid #E2E8F0;">
+                  <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                    <div style="color: #334155; font-size: 0.95rem; line-height: 1.7;">
+                      <p style="margin-bottom: 14px;">Acclimatization is essential for safe and comfortable high-altitude travel. Because Namche Bazaar sits at approximately 3,440 meters, this dedicated day allows your body to adjust to lower oxygen levels before undertaking higher excursions.</p><p style="margin-bottom: 14px;">The day is designed as an active rest day: rather than resting entirely, you undertake short walks to higher points above the town before returning to Namche to sleep. This follows the proven high-altitude rule of 'climb high, sleep low'.</p><p style="margin-bottom: 14px;">Options for the day include a morning walk up to the Sagarmatha National Park Visitor Centre, situated on a ridge above Namche. The viewpoint offers panoramic views of Ama Dablam, Thamserku, Kongde Ri, and Everest on clear mornings. The visitor centre also houses informative displays regarding Himalayan geography, flora, fauna, and Sherpa history.</p><p style="margin-bottom: 14px;">You may also explore the streets, artisan shops, and bakeries of Namche Bazaar, or visit local cultural landmarks. In the afternoon, return to your lodge to rest, rehydrate, and discuss the plan for the upcoming excursion toward the Everest View Hotel.</p>
+                    </div>
+                    
+                    <div style="margin-top: 8px;">
+                      <img src="../../images/treks/everest-base-camp/everest-base-camp-namche-bazaar-sherpa-capital-02.jpg" alt="Namche Bazaar Sherpa Capital" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
+                      <div style="margin-top: 6px; font-size: 0.78rem; color: #64748B; font-style: italic; text-align: center;">Namche Bazaar horseshoe amphitheater</div>
+                    </div>
+                    
+              <div style="background: #E6F7F0; border-left: 4px solid #008060; padding: 16px 20px; border-radius: 6px; margin: 20px 0;">
+                <div style="font-weight: 700; color: #0C2B4E; font-size: 0.95rem; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  <span>Safety & Adaptation: Acclimatization in Namche Bazaar</span>
                 </div>
-
-                <div class="mt-4 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg text-xs sm:text-sm text-amber-900 space-y-1">
-                  <strong>Important Route Notice:</strong> The hotel visit and Khumjung/Khunde circuit are daytime objectives. An overnight at Hotel Everest View, a Khunde Peak outing, or a Tengboche extension would change the itinerary, altitude exposure, services, and price. Views depend on visibility.
+                <p style="margin: 0; color: #334155; font-size: 0.9rem; line-height: 1.6;">A dedicated rest and adjustment day allows your body to adapt naturally to 3,440 m, supported by gentle scenic walks, hydration, and guidance from our certified staff.</p>
+              </div>
+                  </div>
                 </div>
               </div>
             </div>
-
             <!-- DAY 4 CARD -->
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div class="bg-primary-navy px-6 py-4 flex flex-wrap items-center justify-between gap-3 text-white">
-                <div class="flex items-center gap-3">
-                  <span class="w-8 h-8 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-sm">4</span>
-                  <h3 class="font-heading font-bold text-lg sm:text-xl text-white">
-                    Day 4: Hike to Everest View Hotel, Explore Khumjung and Khunde, Return to Namche
+            <div class="itinerary-card active" style="margin-bottom: 24px; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 6px rgba(12, 43, 78, 0.05); transition: box-shadow 0.2s;">
+              <div class="itinerary-header" style="background: #0C2B4E; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; user-select: none;">
+                <div style="display: flex; align-items: center; gap: 14px;">
+                  <span style="width: 34px; height: 34px; border-radius: 50%; background: #008060; color: #ffffff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0;">4</span>
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 0; font-family: inherit;">
+                    Day 4: Excursion to Everest View Hotel, Khumjung & Khunde, Return to Namche
                   </h3>
                 </div>
-                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
-                  <span class="bg-amber-500/20 text-amber-300 px-2.5 py-1 rounded">High Point: ~3,880 m</span>
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Walk: 5–7 hrs</span>
-                  <span class="bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded">Overnight: Namche Bazaar</span>
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Max: ~3,880 m</span>
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Walk: 5–7 hrs</span>
+                  <span style="background: rgba(0, 128, 96, 0.35); color: #A7F3D0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Overnight: Namche Bazaar (3,440 m)</span>
+                  <div class="itinerary-toggle-circle" style="width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.25s ease;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </div>
                 </div>
               </div>
-              <div class="p-6 sm:p-8 space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                  <div class="md:col-span-8 space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed">
-                    <p>
-                      Day four is the principal sightseeing day of the Everest View Trek. The route takes you above Namche Bazaar toward the Everest View Hotel and continues through the traditional Sherpa settlements of Khumjung and Khunde before returning to Namche.
-                    </p>
-                    <p>
-                      Begin after breakfast, carrying a daypack with water, warm layers, sun protection, snacks, and essential personal items. An early start is often useful because mountain visibility can change throughout the day. The trail gradually climbs from Namche toward the higher ground around Syangboche. As you gain elevation, the surrounding hills open into broader views across the Khumbu.
-                    </p>
-                    <p>
-                      The Everest View Hotel, situated at approximately 3,880 meters, is the principal viewpoint of the trek. On clear days, the surrounding panorama may include Mount Everest, Lhotse, Nuptse, Ama Dablam, Thamserku, and other prominent Himalayan peaks. The open setting offers a memorable opportunity to appreciate the scale of the Everest region without continuing to Everest Base Camp.
-                    </p>
-                    <p>
-                      From the viewpoint area, the route continues toward Khumjung and Khunde, subject to the selected trail and conditions. These villages provide an opportunity to experience a quieter side of the Khumbu, away from the busier streets of Namche Bazaar. Khumjung is known for its traditional Sherpa settlement, community landmarks, Hillary School, and monastery.
-                    </p>
-                    <p>
-                      After exploring the selected villages, return to Namche Bazaar along the planned trail. The total walking duration varies according to the route, weather, and time spent at viewpoints. Upon returning to Namche, rest at the lodge and enjoy dinner. Overnight accommodation is in Namche Bazaar.
-                    </p>
+              <div class="itinerary-content">
+                <div class="itinerary-content-inner" style="padding: 24px; border-top: 1px solid #E2E8F0;">
+                  <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                    <div style="color: #334155; font-size: 0.95rem; line-height: 1.7;">
+                      <p style="margin-bottom: 14px;">Today is the highlight of the trip, taking you to some of the finest panoramic viewpoints in the Everest region. Leaving Namche after breakfast, the trail ascends toward Syangboche airstrip before continuing up an open ridge to the famous Hotel Everest View at approximately 3,880 meters.</p><p style="margin-bottom: 14px;">From the hotel's terrace, on a clear morning, you can enjoy unobstructed views of Mount Everest, Lhotse, Nuptse, Ama Dablam, Thamserku, and surrounding peaks. The vista provides an exceptional mountain panorama without having to undertake the multi-day trek to Base Camp.</p><p style="margin-bottom: 14px;">From the hotel, the excursion continues toward Khumjung (3,790 m), the largest traditional village in the area. Set beneath the sacred peak of Khumbila, Khumjung features stone-walled houses, green-roofed buildings, and cultivated potato fields. You can visit the local monastery, known for housing a revered relic, as well as the Hillary School established by Sir Edmund Hillary.</p><p style="margin-bottom: 14px;">A short walk leads to neighboring Khunde, home to the local hospital founded by the Himalayan Trust. After exploring the villages, you begin the return walk toward Namche Bazaar. Because your overnight stay is once again in Namche (3,440 m), you benefit from having visited a higher altitude during the day while sleeping lower at night.</p>
+                    </div>
+                    
+                    <div style="margin-top: 8px;">
+                      <img src="../../images/treks/everest-base-camp/everest-base-camp-viewpoint-ama-dablam-panorama-01.jpg" alt="Panoramic view of Ama Dablam and Everest" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
+                      <div style="margin-top: 6px; font-size: 0.78rem; color: #64748B; font-style: italic; text-align: center;">Panoramic vistas from Hotel Everest View ridge (3,880 m)</div>
+                    </div>
+                    
                   </div>
-                  <div class="md:col-span-4">
-                    <img src="../../images/treks/everest-base-camp/everest-base-camp-trekking-group-mountain-view-10.jpg" alt="Everest View Hotel Terrace Panorama" class="w-full h-56 object-cover rounded-lg shadow-sm" loading="lazy">
-                    <div class="mt-2 text-xs text-gray-500 italic text-center">Panoramic peak views from Hotel Everest View</div>
-                  </div>
-                </div>
-
-                <div class="mt-4 bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-lg text-xs sm:text-sm text-emerald-900 space-y-1">
-                  <strong>Viewpoint Privilege:</strong> Reaching 3,880 m and returning to sleep at 3,440 m follows the golden mountaineering principle of "climb high, sleep low", providing maximum mountain exposure with optimal physiological safety.
                 </div>
               </div>
             </div>
-
             <!-- DAY 5 CARD -->
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div class="bg-primary-navy px-6 py-4 flex flex-wrap items-center justify-between gap-3 text-white">
-                <div class="flex items-center gap-3">
-                  <span class="w-8 h-8 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-sm">5</span>
-                  <h3 class="font-heading font-bold text-lg sm:text-xl text-white">
+            <div class="itinerary-card active" style="margin-bottom: 24px; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 6px rgba(12, 43, 78, 0.05); transition: box-shadow 0.2s;">
+              <div class="itinerary-header" style="background: #0C2B4E; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; user-select: none;">
+                <div style="display: flex; align-items: center; gap: 14px;">
+                  <span style="width: 34px; height: 34px; border-radius: 50%; background: #008060; color: #ffffff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0;">5</span>
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 0; font-family: inherit;">
                     Day 5: Trek from Namche Bazaar to Phakding (2,610 m)
                   </h3>
                 </div>
-                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Elevation: 2,610 m</span>
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Walk: 5–6 hrs</span>
-                  <span class="bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded">Overnight: Phakding</span>
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Max: Descend from 3,440 m to 2,610 m</span>
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Walk: 4–5 hrs</span>
+                  <span style="background: rgba(0, 128, 96, 0.35); color: #A7F3D0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Overnight: Phakding (2,610 m)</span>
+                  <div class="itinerary-toggle-circle" style="width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.25s ease;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </div>
                 </div>
               </div>
-              <div class="p-6 sm:p-8 space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                  <div class="md:col-span-8 space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed">
-                    <p>
-                      After breakfast, begin the return trek from Namche Bazaar toward Phakding. Having completed the main viewpoint excursion, the journey now retraces the familiar route through the Khumbu's hillside settlements, forested areas, suspension bridges, and river valley.
-                    </p>
-                    <p>
-                      The trail descends from Namche toward the lower sections of Sagarmatha National Park. Although the net elevation change is downward, this should not be treated as an effortless day. The route includes steep steps, uneven surfaces, and several sections where careful foot placement is important.
-                    </p>
-                    <p>
-                      Descending places different demands on the knees and ankles than walking uphill. Trekking poles can help maintain balance and reduce some of the strain, particularly on stone steps and irregular terrain.
-                    </p>
-                    <p>
-                      After passing the relevant checkpoint areas and continuing through the trail network, you return toward the Dudh Koshi River. Suspension bridges and village paths form familiar landmarks along the way, but the downhill direction offers a different perspective on the landscape.
-                    </p>
-                    <p>
-                      After reaching Phakding, check into your teahouse and relax. The evening is a useful time to prepare for the final trekking day to Lukla. Overnight accommodation is in Phakding.
-                    </p>
+              <div class="itinerary-content">
+                <div class="itinerary-content-inner" style="padding: 24px; border-top: 1px solid #E2E8F0;">
+                  <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                    <div style="color: #334155; font-size: 0.95rem; line-height: 1.7;">
+                      <p style="margin-bottom: 14px;">After breakfast in Namche Bazaar, you begin your return trek. The route retraces the trail down the steep hill to the confluence of the Dudh Koshi and Bhote Koshi rivers, crossing the high suspension bridge once more.</p><p style="margin-bottom: 14px;">Descending requires careful footing on the rocky, stepped terrain, but lower elevations bring noticeably richer oxygen levels and warmer air temperatures. Passing through Sagarmatha National Park exit gate at Monjo, you continue through Benkar and Toktok.</p><p style="margin-bottom: 14px;">The trail follows the gentle contours of the Dudh Koshi valley back to Phakding. Returning along familiar paths provides a different perspective on the scenery, passing prayer wheels, mani walls, and pine forests at a relaxed pace.</p><p style="margin-bottom: 14px;">Arriving in Phakding in the afternoon, you check into your teahouse for your penultimate night on the trail, enjoying a warm dinner and reflecting on the mountain viewpoints visited above Namche.</p>
+                    </div>
+                    
+                    <div style="margin-top: 8px;">
+                      <img src="../../images/treks/everest-base-camp/everest-base-camp-suspension-bridge-crossing-08.jpg" alt="Trekker crossing suspension bridge" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
+                      <div style="margin-top: 6px; font-size: 0.78rem; color: #64748B; font-style: italic; text-align: center;">Descending towards Dudh Koshi River Valley</div>
+                    </div>
+                    
                   </div>
-                  <div class="md:col-span-4">
-                    <img src="../../images/treks/everest-base-camp/everest-base-camp-mountain-trail-view-12.jpg" alt="Descent trail to Phakding" class="w-full h-56 object-cover rounded-lg shadow-sm" loading="lazy">
-                    <div class="mt-2 text-xs text-gray-500 italic text-center">Forested trail descent towards the river</div>
-                  </div>
-                </div>
-
-                <div class="mt-4 bg-slate-50 border-l-4 border-slate-500 p-4 rounded-r-lg text-xs sm:text-sm text-slate-800 space-y-1">
-                  <strong>Trekking Tip:</strong> Shorten your stride on downhill stone steps, avoid locking your knees, and use trekking poles to absorb impact.
                 </div>
               </div>
             </div>
-
             <!-- DAY 6 CARD -->
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div class="bg-primary-navy px-6 py-4 flex flex-wrap items-center justify-between gap-3 text-white">
-                <div class="flex items-center gap-3">
-                  <span class="w-8 h-8 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-sm">6</span>
-                  <h3 class="font-heading font-bold text-lg sm:text-xl text-white">
-                    Day 6: Trek from Phakding to Lukla (2,840–2,860 m)
+            <div class="itinerary-card active" style="margin-bottom: 24px; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 6px rgba(12, 43, 78, 0.05); transition: box-shadow 0.2s;">
+              <div class="itinerary-header" style="background: #0C2B4E; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; user-select: none;">
+                <div style="display: flex; align-items: center; gap: 14px;">
+                  <span style="width: 34px; height: 34px; border-radius: 50%; background: #008060; color: #ffffff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0;">6</span>
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 0; font-family: inherit;">
+                    Day 6: Trek from Phakding to Lukla (2,860 m)
                   </h3>
                 </div>
-                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Dest: ~2,860 m</span>
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Walk: 3–4 hrs</span>
-                  <span class="bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded">Overnight: Lukla</span>
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Max: Ascend from 2,610 m to 2,860 m</span>
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Walk: 3–4 hrs</span>
+                  <span style="background: rgba(0, 128, 96, 0.35); color: #A7F3D0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Overnight: Lukla (2,860 m)</span>
+                  <div class="itinerary-toggle-circle" style="width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.25s ease;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </div>
                 </div>
               </div>
-              <div class="p-6 sm:p-8 space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                  <div class="md:col-span-8 space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed">
-                    <p>
-                      The sixth day completes the main walking portion of the Everest View Trek with a return journey from Phakding to Lukla. After breakfast, follow the trail through the lower Dudh Koshi Valley, passing settlements, riverside sections, and familiar parts of the route used during the first day.
-                    </p>
-                    <p>
-                      Although the walking distance is relatively short compared with the previous stages, the trail includes gradual ascents and descents rather than a continuous downhill path. Taking time to walk comfortably is important, especially after several consecutive days of trekking.
-                    </p>
-                    <p>
-                      As you approach Lukla, the trail gradually returns you to the settlement where the adventure began. The town serves as a key transportation and supply center for the surrounding mountain communities, and its airport connects the trekking region with Nepal's larger transport network.
-                    </p>
-                    <p>
-                      After arriving, check into your lodge and take time to recover. Depending on the walking schedule and local conditions, there may be time to explore parts of Lukla, enjoy a meal, or relax with your trekking team. Your guide will help confirm arrangements for the following day's flight. Overnight accommodation is in Lukla.
-                    </p>
+              <div class="itinerary-content">
+                <div class="itinerary-content-inner" style="padding: 24px; border-top: 1px solid #E2E8F0;">
+                  <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                    <div style="color: #334155; font-size: 0.95rem; line-height: 1.7;">
+                      <p style="margin-bottom: 14px;">The final walking day of the trek leads from Phakding back up to Lukla. The trail winds along the river valley before beginning a gradual, steady ascent through small farming hamlets, prayer-flagged chortens, and forested slopes.</p><p style="margin-bottom: 14px;">Although the distance is modest, the gradual uphill climb toward Lukla provides a satisfying conclusion to your journey on foot. You will cross several small streams and suspension bridges, observing local daily life and passing fellow trekkers just starting their journeys.</p><p style="margin-bottom: 14px;">Reaching Lukla by early afternoon, you check into your mountain lodge and confirm arrangements for the following morning's flight. The afternoon is free to explore Lukla's cafes, souvenir shops, and view the runway activity at Tenzing-Hillary Airport.</p><p style="margin-bottom: 14px;">In the evening, enjoy a celebratory dinner with your guide and porter team, celebrating the successful completion of your 7-day Khumbu journey and showing appreciation for their dedicated support.</p>
+                    </div>
+                    
+                    <div style="margin-top: 8px;">
+                      <img src="../../images/treks/everest-base-camp/everest-base-camp-lukla-airport-himalayan-landing-05.jpg" alt="Lukla Village and Airport" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
+                      <div style="margin-top: 6px; font-size: 0.78rem; color: #64748B; font-style: italic; text-align: center;">Final trail approach into Lukla</div>
+                    </div>
+                    
                   </div>
-                  <div class="md:col-span-4">
-                    <img src="../../images/treks/everest-base-camp/everest-base-camp-yak-mountain-view-15.jpg" alt="Returning to Lukla" class="w-full h-56 object-cover rounded-lg shadow-sm" loading="lazy">
-                    <div class="mt-2 text-xs text-gray-500 italic text-center">Trail caravan returning to Lukla gateway</div>
-                  </div>
-                </div>
-
-                <div class="mt-4 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg text-xs sm:text-sm text-amber-900 space-y-1">
-                  <strong>Operational Transfer Note:</strong> Use the actual booked arrival airport for the return plan. A Ramechhap arrival requires an additional road transfer before Kathmandu. Confirm delay handling and extra-night costs, and keep suitable time before international onward travel.
                 </div>
               </div>
             </div>
-
             <!-- DAY 7 CARD -->
-            <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div class="bg-primary-navy px-6 py-4 flex flex-wrap items-center justify-between gap-3 text-white">
-                <div class="flex items-center gap-3">
-                  <span class="w-8 h-8 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-sm">7</span>
-                  <h3 class="font-heading font-bold text-lg sm:text-xl text-white">
-                    Day 7: Fly from Lukla to Kathmandu
+            <div class="itinerary-card active" style="margin-bottom: 24px; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 6px rgba(12, 43, 78, 0.05); transition: box-shadow 0.2s;">
+              <div class="itinerary-header" style="background: #0C2B4E; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; user-select: none;">
+                <div style="display: flex; align-items: center; gap: 14px;">
+                  <span style="width: 34px; height: 34px; border-radius: 50%; background: #008060; color: #ffffff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0;">7</span>
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 0; font-family: inherit;">
+                    Day 7: Fly from Lukla to Kathmandu (or Ramechhap/Manthali)
                   </h3>
                 </div>
-                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Flight: 25–35 min</span>
-                  <span class="bg-white/10 px-2.5 py-1 rounded">Kathmandu: ~1,400 m</span>
-                  <span class="bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded">Overnight: Kathmandu</span>
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Max: Lukla 2,860 m to Kathmandu ~1,400 m</span>
+                  <span style="background: rgba(255,255,255,0.12); color: #E2E8F0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Walk: Flight: 25–35 min (+ road transfer if Ramechhap)</span>
+                  <span style="background: rgba(0, 128, 96, 0.35); color: #A7F3D0; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 4px;">Overnight: Kathmandu (Own / Arranged)</span>
+                  <div class="itinerary-toggle-circle" style="width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.25s ease;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </div>
                 </div>
               </div>
-              <div class="p-6 sm:p-8 space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                  <div class="md:col-span-8 space-y-3 text-gray-700 text-sm sm:text-base leading-relaxed">
-                    <p>
-                      After breakfast in Lukla, prepare for the return flight to Kathmandu. The final morning usually involves checking out of the lodge, confirming flight arrangements, and traveling to the airport at the time advised by the trekking team.
-                    </p>
-                    <p>
-                      When weather and operational conditions permit, the flight offers a final aerial view of Nepal's hills, valleys, and mountain landscapes. It marks the transition from the quieter trekking environment of the Khumbu to the busier urban setting of Kathmandu.
-                    </p>
-                    <p>
-                      The flight duration is generally short, but actual departure times can change. Mountain aviation is particularly sensitive to weather and visibility, and delays or cancellations can occur even during the main trekking seasons. A scheduled flight should therefore not be treated as a guarantee of arrival at a specific time.
-                    </p>
-                    <p>
-                      After landing in Kathmandu, continue with the prearranged transfer or onward travel plans. If you have an international flight to catch, it is strongly advisable to allow a buffer day in your overall Nepal travel schedule. An additional night provides greater flexibility if weather or operational conditions affect the return journey.
-                    </p>
-                    <p>
-                      The arrival in Kathmandu concludes the standard seven-day Everest View Trek itinerary. You return with memories of the Dudh Koshi Valley, Namche Bazaar, the elevated Everest viewpoints, traditional Sherpa villages, and the natural and cultural landscapes of the Khumbu region.
-                    </p>
+              <div class="itinerary-content">
+                <div class="itinerary-content-inner" style="padding: 24px; border-top: 1px solid #E2E8F0;">
+                  <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                    <div style="color: #334155; font-size: 0.95rem; line-height: 1.7;">
+                      <p style="margin-bottom: 14px;">Your trek concludes with an early morning flight from Lukla back to Kathmandu (or Ramechhap/Manthali during peak congestion season, followed by private road transfer to Kathmandu).</p><p style="margin-bottom: 14px;">Lukla flights operate in the early morning when mountain weather is calmest. The takeoff from Lukla's sloped runway offers a dramatic final perspective of the Khumbu valley before you fly west over terraced hills and valleys toward the Kathmandu Valley.</p><p style="margin-bottom: 14px;">Upon arrival in Kathmandu, our representative transfers you to your hotel. The remainder of the day is free for resting, hot baths, laundry, and exploring Thamel's restaurants and shops.</p><p style="margin-bottom: 14px;">Please note: Mountain flights in Nepal are subject to weather conditions. We strongly recommend scheduling at least one or two buffer days in Kathmandu before your international flight departure.</p>
+                    </div>
+                    
+                    <div style="margin-top: 8px;">
+                      <img src="../../images/treks/everest-base-camp/everest-base-camp-mountain-valley-landscape-06.jpg" alt="Himalayan flight view" style="width: 100%; max-height: 380px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" loading="lazy">
+                      <div style="margin-top: 6px; font-size: 0.78rem; color: #64748B; font-style: italic; text-align: center;">Scenic flight departing Lukla Airport</div>
+                    </div>
+                    
                   </div>
-                  <div class="md:col-span-4">
-                    <img src="../../images/treks/everest-base-camp/everest-base-camp-high-mountain-sunrise-13.jpg" alt="Kathmandu return mountain flight" class="w-full h-56 object-cover rounded-lg shadow-sm" loading="lazy">
-                    <div class="mt-2 text-xs text-gray-500 italic text-center">Aerial Himalayan view on return flight</div>
-                  </div>
-                </div>
-
-                <div class="mt-4 bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-lg text-xs sm:text-sm text-emerald-900 space-y-1">
-                  <strong>Buffer Day Recommendation:</strong> Due to mountain flight variability at Lukla, always keep at least 1 contingency day in Kathmandu before connecting to your international flight home.
                 </div>
               </div>
             </div>
-
           </div>
 
-          <!-- Important Information About the Itinerary Callout Box -->
-          <div class="mt-12 bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm">
-            <h3 class="text-xl font-heading font-bold text-primary-navy mb-4 flex items-center gap-2">
-              <svg width="20" height="20" class="icon-svg" style="color: #F59E0B; stroke: #F59E0B; vertical-align: middle; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <span>Important Information About the Everest View Trek Itinerary</span>
-            </h3>
-            <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
-              The seven-day program is planned to combine the main mountain-view excursion with a dedicated acclimatization day and a gradual return to Lukla. Nevertheless, the itinerary may need to change because of weather, flight availability, trail conditions, or the health and safety of travelers.
-            </p>
-            <ul class="space-y-3 text-sm sm:text-base text-gray-700">
-              <li class="flex items-start gap-3">
-                <span class="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></span>
-                <span><strong>Lukla flights and buffer time:</strong> Flights can be delayed or canceled. An additional buffer day after the trek is recommended, particularly before international departures.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></span>
-                <span><strong>Altitude and walking pace:</strong> The highest planned point is approximately 3,880 meters. Although this is lower than Everest Base Camp, altitude-related illness remains possible. The acclimatization schedule should be respected, and symptoms should be reported promptly.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></span>
-                <span><strong>Walking times:</strong> Daily durations are estimates rather than fixed guarantees. Breaks, trail congestion, weather, and individual fitness can affect how long each stage takes.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></span>
-                <span><strong>Accommodation and meals:</strong> Mountain teahouse facilities vary by location. The confirmed package specifies the accommodation category and meals included.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></span>
-                <span><strong>Route flexibility:</strong> The excursion around Everest View Hotel, Khumjung, and Khunde can be adjusted according to local conditions and the group's progress.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></span>
-                <span><strong>Arrival planning:</strong> The first day begins with the flight to Lukla, so travelers should plan to reach Kathmandu beforehand and complete any necessary preparation before departure.</span>
-              </li>
-            </ul>
-          </div>
         </section>
         <!-- SECTION 3: INCLUDES & EXCLUDES -->
         <section id="section-includes" class="trek-detail-section scroll-mt-36">
@@ -2146,105 +2047,151 @@
             We operate small group and private 7-day departures throughout the prime trekking seasons of Spring (March to May) and Autumn (September to November), as well as customized winter departures. Every confirmed departure is 100% guaranteed to run.
           </p>
 
-          <!-- Season Tabs -->
-          <div class="flex items-center gap-2 border-b border-gray-200 mb-6 overflow-x-auto pb-2">
-            <button class="px-5 py-2.5 rounded-lg text-sm font-bold bg-emerald-700 text-white shadow-sm">
-              Spring 2026/2027 (Mar–May)
+          <!-- Season Tabs (Interactive Filter) -->
+          <div class="dates-filter-tabs" style="display: flex; gap: 8px; border-bottom: 1px solid #E2E8F0; margin-bottom: 24px; overflow-x: auto; padding-bottom: 8px;">
+            <button type="button" class="dates-filter-btn active" data-season-filter="all" style="padding: 10px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; background: #008060; color: #ffffff; border: none; cursor: pointer; transition: all 0.2s;">
+              All Departures (12)
             </button>
-            <button class="px-5 py-2.5 rounded-lg text-sm font-bold text-gray-600 hover:text-emerald-700 hover:bg-gray-100 transition-colors">
-              Autumn 2026/2027 (Sep–Nov)
+            <button type="button" class="dates-filter-btn" data-season-filter="spring" style="padding: 10px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; background: #F1F5F9; color: #475569; border: 1px solid #E2E8F0; cursor: pointer; transition: all 0.2s;">
+              Spring Season (Mar–May)
             </button>
-            <button class="px-5 py-2.5 rounded-lg text-sm font-bold text-gray-600 hover:text-emerald-700 hover:bg-gray-100 transition-colors">
-              Custom Dates (Private Trek)
+            <button type="button" class="dates-filter-btn" data-season-filter="autumn" style="padding: 10px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; background: #F1F5F9; color: #475569; border: 1px solid #E2E8F0; cursor: pointer; transition: all 0.2s;">
+              Autumn Season (Sep–Nov)
+            </button>
+            <button type="button" class="open-inquiry-btn" data-trek-title="Custom Private Dates - Everest View Trek" style="padding: 10px 18px; border-radius: 8px; font-size: 0.88rem; font-weight: 700; background: #E6F7F0; color: #008060; border: 1px solid #008060; cursor: pointer; transition: all 0.2s;">
+              Custom Private Dates
             </button>
           </div>
 
           <!-- Dates Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="dates-departure-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
             
-            <div class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-600 transition-all shadow-sm">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Guaranteed</span>
-                <span class="text-xs text-gray-500">7 Days</span>
+            <!-- Spring 1 -->
+            <div class="departure-card" data-season="spring" style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #E6F7F0; color: #008060;">Guaranteed</span>
+                <span style="font-size: 0.78rem; color: #64748B;">7 Days</span>
               </div>
-              <h4 class="font-heading font-bold text-primary-navy text-base mb-1">Mar 5 – Mar 11, 2026</h4>
-              <p class="text-xs text-gray-600 mb-4">Spring Early Bloom • Lukla Flights Direct</p>
-              <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                <span class="text-base font-bold text-emerald-800">$899 <span class="text-xs font-normal text-gray-500">/ pax</span></span>
-                <a href="#section-booking" class="text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 px-3 py-1.5 rounded-md transition-colors">Book Now</a>
-              </div>
-            </div>
-
-            <div class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-600 transition-all shadow-sm">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Guaranteed</span>
-                <span class="text-xs text-gray-500">7 Days</span>
-              </div>
-              <h4 class="font-heading font-bold text-primary-navy text-base mb-1">Mar 19 – Mar 25, 2026</h4>
-              <p class="text-xs text-gray-600 mb-4">Rhododendron Bloom • Mild Temperatures</p>
-              <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                <span class="text-base font-bold text-emerald-800">$899 <span class="text-xs font-normal text-gray-500">/ pax</span></span>
-                <a href="#section-booking" class="text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 px-3 py-1.5 rounded-md transition-colors">Book Now</a>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: #0C2B4E; margin: 0 0 6px 0;">Mar 5 – Mar 11, 2026</h4>
+              <p style="font-size: 0.82rem; color: #64748B; margin-bottom: 16px;">Spring Early Bloom • Lukla Flights Direct</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <span style="font-size: 1.15rem; font-weight: 800; color: #0C2B4E;">$899 <span style="font-size: 0.75rem; font-weight: 500; color: #64748B;">/ pax</span></span>
+                <button type="button" class="open-inquiry-btn btn-date-book" data-departure-date="Mar 5 – Mar 11, 2026" data-trek-title="Everest View Trek (7 Days)" style="background: #008060; color: white; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; transition: background 0.2s;">Book Now</button>
               </div>
             </div>
 
-            <div class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-600 transition-all shadow-sm">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">Filling Fast</span>
-                <span class="text-xs text-gray-500">7 Days</span>
+            <!-- Spring 2 -->
+            <div class="departure-card" data-season="spring" style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #E6F7F0; color: #008060;">Guaranteed</span>
+                <span style="font-size: 0.78rem; color: #64748B;">7 Days</span>
               </div>
-              <h4 class="font-heading font-bold text-primary-navy text-base mb-1">Apr 2 – Apr 8, 2026</h4>
-              <p class="text-xs text-gray-600 mb-4">Prime Spring Season • High Visibility</p>
-              <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                <span class="text-base font-bold text-emerald-800">$899 <span class="text-xs font-normal text-gray-500">/ pax</span></span>
-                <a href="#section-booking" class="text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 px-3 py-1.5 rounded-md transition-colors">Book Now</a>
-              </div>
-            </div>
-
-            <div class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-600 transition-all shadow-sm">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Guaranteed</span>
-                <span class="text-xs text-gray-500">7 Days</span>
-              </div>
-              <h4 class="font-heading font-bold text-primary-navy text-base mb-1">Apr 16 – Apr 22, 2026</h4>
-              <p class="text-xs text-gray-600 mb-4">Optimal Everest Views • Vibrant Namche</p>
-              <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                <span class="text-base font-bold text-emerald-800">$899 <span class="text-xs font-normal text-gray-500">/ pax</span></span>
-                <a href="#section-booking" class="text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 px-3 py-1.5 rounded-md transition-colors">Book Now</a>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: #0C2B4E; margin: 0 0 6px 0;">Mar 19 – Mar 25, 2026</h4>
+              <p style="font-size: 0.82rem; color: #64748B; margin-bottom: 16px;">Rhododendron Bloom • Mild Temperatures</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <span style="font-size: 1.15rem; font-weight: 800; color: #0C2B4E;">$899 <span style="font-size: 0.75rem; font-weight: 500; color: #64748B;">/ pax</span></span>
+                <button type="button" class="open-inquiry-btn btn-date-book" data-departure-date="Mar 19 – Mar 25, 2026" data-trek-title="Everest View Trek (7 Days)" style="background: #008060; color: white; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; transition: background 0.2s;">Book Now</button>
               </div>
             </div>
 
-            <div class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-600 transition-all shadow-sm">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Available</span>
-                <span class="text-xs text-gray-500">7 Days</span>
+            <!-- Spring 3 -->
+            <div class="departure-card" data-season="spring" style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #FEF3C7; color: #92400E;">Filling Fast</span>
+                <span style="font-size: 0.78rem; color: #64748B;">7 Days</span>
               </div>
-              <h4 class="font-heading font-bold text-primary-navy text-base mb-1">May 7 – May 13, 2026</h4>
-              <p class="text-xs text-gray-600 mb-4">Late Spring Warmth • High Mountain Flora</p>
-              <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                <span class="text-base font-bold text-emerald-800">$899 <span class="text-xs font-normal text-gray-500">/ pax</span></span>
-                <a href="#section-booking" class="text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 px-3 py-1.5 rounded-md transition-colors">Book Now</a>
-              </div>
-            </div>
-
-            <div class="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-600 transition-all shadow-sm">
-              <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Available</span>
-                <span class="text-xs text-gray-500">7 Days</span>
-              </div>
-              <h4 class="font-heading font-bold text-primary-navy text-base mb-1">Oct 4 – Oct 10, 2026</h4>
-              <p class="text-xs text-gray-600 mb-4">Peak Autumn Panorama • Crystal Skies</p>
-              <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                <span class="text-base font-bold text-emerald-800">$899 <span class="text-xs font-normal text-gray-500">/ pax</span></span>
-                <a href="#section-booking" class="text-xs font-bold text-white bg-emerald-700 hover:bg-emerald-800 px-3 py-1.5 rounded-md transition-colors">Book Now</a>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: #0C2B4E; margin: 0 0 6px 0;">Apr 2 – Apr 8, 2026</h4>
+              <p style="font-size: 0.82rem; color: #64748B; margin-bottom: 16px;">Prime Spring Season • High Visibility</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <span style="font-size: 1.15rem; font-weight: 800; color: #0C2B4E;">$899 <span style="font-size: 0.75rem; font-weight: 500; color: #64748B;">/ pax</span></span>
+                <button type="button" class="open-inquiry-btn btn-date-book" data-departure-date="Apr 2 – Apr 8, 2026" data-trek-title="Everest View Trek (7 Days)" style="background: #008060; color: white; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; transition: background 0.2s;">Book Now</button>
               </div>
             </div>
 
-          </div>
+            <!-- Spring 4 -->
+            <div class="departure-card" data-season="spring" style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #E6F7F0; color: #008060;">Guaranteed</span>
+                <span style="font-size: 0.78rem; color: #64748B;">7 Days</span>
+              </div>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: #0C2B4E; margin: 0 0 6px 0;">Apr 16 – Apr 22, 2026</h4>
+              <p style="font-size: 0.82rem; color: #64748B; margin-bottom: 16px;">Optimal Everest Views • Vibrant Namche</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <span style="font-size: 1.15rem; font-weight: 800; color: #0C2B4E;">$899 <span style="font-size: 0.75rem; font-weight: 500; color: #64748B;">/ pax</span></span>
+                <button type="button" class="open-inquiry-btn btn-date-book" data-departure-date="Apr 16 – Apr 22, 2026" data-trek-title="Everest View Trek (7 Days)" style="background: #008060; color: white; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; transition: background 0.2s;">Book Now</button>
+              </div>
+            </div>
 
-          <div class="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-200 text-xs sm:text-sm text-gray-600 flex items-center justify-between flex-wrap gap-3">
-            <span>Looking for custom dates or a private family/couple departure?</span>
-            <a href="#section-booking" class="text-emerald-700 font-bold hover:underline">Request Custom Dates →</a>
+            <!-- Spring 5 -->
+            <div class="departure-card" data-season="spring" style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #E6F7F0; color: #008060;">Guaranteed</span>
+                <span style="font-size: 0.78rem; color: #64748B;">7 Days</span>
+              </div>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: #0C2B4E; margin: 0 0 6px 0;">May 7 – May 13, 2026</h4>
+              <p style="font-size: 0.82rem; color: #64748B; margin-bottom: 16px;">Late Spring Flowers • Warmer Evenings</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <span style="font-size: 1.15rem; font-weight: 800; color: #0C2B4E;">$899 <span style="font-size: 0.75rem; font-weight: 500; color: #64748B;">/ pax</span></span>
+                <button type="button" class="open-inquiry-btn btn-date-book" data-departure-date="May 7 – May 13, 2026" data-trek-title="Everest View Trek (7 Days)" style="background: #008060; color: white; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; transition: background 0.2s;">Book Now</button>
+              </div>
+            </div>
+
+            <!-- Autumn 1 -->
+            <div class="departure-card" data-season="autumn" style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #E6F7F0; color: #008060;">Guaranteed</span>
+                <span style="font-size: 0.78rem; color: #64748B;">7 Days</span>
+              </div>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: #0C2B4E; margin: 0 0 6px 0;">Sep 17 – Sep 23, 2026</h4>
+              <p style="font-size: 0.82rem; color: #64748B; margin-bottom: 16px;">Early Autumn Season • Fresh Landscapes</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <span style="font-size: 1.15rem; font-weight: 800; color: #0C2B4E;">$899 <span style="font-size: 0.75rem; font-weight: 500; color: #64748B;">/ pax</span></span>
+                <button type="button" class="open-inquiry-btn btn-date-book" data-departure-date="Sep 17 – Sep 23, 2026" data-trek-title="Everest View Trek (7 Days)" style="background: #008060; color: white; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; transition: background 0.2s;">Book Now</button>
+              </div>
+            </div>
+
+            <!-- Autumn 2 -->
+            <div class="departure-card" data-season="autumn" style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #FEF3C7; color: #92400E;">Filling Fast</span>
+                <span style="font-size: 0.78rem; color: #64748B;">7 Days</span>
+              </div>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: #0C2B4E; margin: 0 0 6px 0;">Oct 1 – Oct 7, 2026</h4>
+              <p style="font-size: 0.82rem; color: #64748B; margin-bottom: 16px;">Peak Autumn Trekking • Crystal Clear Skies</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <span style="font-size: 1.15rem; font-weight: 800; color: #0C2B4E;">$899 <span style="font-size: 0.75rem; font-weight: 500; color: #64748B;">/ pax</span></span>
+                <button type="button" class="open-inquiry-btn btn-date-book" data-departure-date="Oct 1 – Oct 7, 2026" data-trek-title="Everest View Trek (7 Days)" style="background: #008060; color: white; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; transition: background 0.2s;">Book Now</button>
+              </div>
+            </div>
+
+            <!-- Autumn 3 -->
+            <div class="departure-card" data-season="autumn" style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #E6F7F0; color: #008060;">Guaranteed</span>
+                <span style="font-size: 0.78rem; color: #64748B;">7 Days</span>
+              </div>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: #0C2B4E; margin: 0 0 6px 0;">Oct 15 – Oct 21, 2026</h4>
+              <p style="font-size: 0.82rem; color: #64748B; margin-bottom: 16px;">Dashain Festival Season • Peak Mountain Views</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <span style="font-size: 1.15rem; font-weight: 800; color: #0C2B4E;">$899 <span style="font-size: 0.75rem; font-weight: 500; color: #64748B;">/ pax</span></span>
+                <button type="button" class="open-inquiry-btn btn-date-book" data-departure-date="Oct 15 – Oct 21, 2026" data-trek-title="Everest View Trek (7 Days)" style="background: #008060; color: white; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; transition: background 0.2s;">Book Now</button>
+              </div>
+            </div>
+
+            <!-- Autumn 4 -->
+            <div class="departure-card" data-season="autumn" style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span style="font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; background: #E6F7F0; color: #008060;">Guaranteed</span>
+                <span style="font-size: 0.78rem; color: #64748B;">7 Days</span>
+              </div>
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: #0C2B4E; margin: 0 0 6px 0;">Nov 5 – Nov 11, 2026</h4>
+              <p style="font-size: 0.82rem; color: #64748B; margin-bottom: 16px;">Mani Rimdu Festival Timing • Golden Sunlight</p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <span style="font-size: 1.15rem; font-weight: 800; color: #0C2B4E;">$899 <span style="font-size: 0.75rem; font-weight: 500; color: #64748B;">/ pax</span></span>
+                <button type="button" class="open-inquiry-btn btn-date-book" data-departure-date="Nov 5 – Nov 11, 2026" data-trek-title="Everest View Trek (7 Days)" style="background: #008060; color: white; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.82rem; cursor: pointer; transition: background 0.2s;">Book Now</button>
+              </div>
+            </div>
+
           </div>
         </section>
 
@@ -2262,6 +2209,25 @@
             Because the maximum altitude is 3,880 m and overnight stays are at 3,440 m in Namche Bazaar, you do not need extreme 8,000 m expedition gear. However, high-altitude temperatures fluctuate sharply between sunny trail ascents and frosty mornings. Follow this verified 6-part checklist:
           </p>
 
+          <!-- Checklist Progress & Action Bar -->
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 0.92rem; font-weight: 700; color: #0C2B4E;">Packing Progress:</span>
+              <span style="background: #E6F7F0; color: #008060; font-weight: 800; font-size: 0.85rem; padding: 3px 10px; border-radius: 20px;">
+                <span class="gear-checked-count">0</span> of <span class="gear-total-count">34</span> items packed
+              </span>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <button type="button" id="btn-print-packing" onclick="window.print()" style="background: #ffffff; color: #0C2B4E; border: 1px solid #CBD5E1; padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                <span>Print Checklist</span>
+              </button>
+              <button type="button" id="btn-reset-packing" style="background: #ffffff; color: #DC2626; border: 1px solid #FECACA; padding: 6px 12px; border-radius: 6px; font-weight: 600; font-size: 0.82rem; cursor: pointer;">
+                Reset
+              </button>
+            </div>
+          </div>
+
           <div class="space-y-6">
             
             <!-- Category 1: Hiking Gear & Bags -->
@@ -2272,27 +2238,27 @@
               </h3>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-1">
                   <span>30L–35L Daypack with rain cover</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-2">
                   <span>80L Duffle Bag (provided complimentary)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-3">
                   <span>4-Season Sleeping Bag (-10°C to -15°C rated)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-4">
                   <span>Trekking Poles (adjustable, twist-lock or lever)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-5">
                   <span>Polarized Sunglasses (UV400 high-altitude protection)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-6">
                   <span>LED Headlamp (200+ lumens with spare batteries)</span>
                 </label>
               </div>
@@ -2306,35 +2272,35 @@
               </h3>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-7">
                   <span>Thermal base layers (merino wool or synthetic, 2 sets)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-8">
                   <span>Breathable hiking shirts (quick-drying, 3–4 items)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-9">
                   <span>Fleece mid-layer jacket or sweater</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-10">
                   <span>Down jacket with hood (700+ fill power)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-11">
                   <span>Waterproof & windproof breathable shell jacket</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-12">
                   <span>Comfortable trekking pants (convertible or stretch, 2 pairs)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-13">
                   <span>Warm fleece beanie & wide-brim sun hat</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-14">
                   <span>Buff/neck gaiter & windproof insulated gloves</span>
                 </label>
               </div>
@@ -2348,19 +2314,19 @@
               </h3>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-15">
                   <span>Sturdy, broken-in waterproof hiking boots</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-16">
                   <span>Merino wool trekking socks (3–4 pairs)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-17">
                   <span>Thin liner socks (to prevent blister friction)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-18">
                   <span>Lodge camp shoes or lightweight sandals</span>
                 </label>
               </div>
@@ -2374,27 +2340,27 @@
               </h3>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-19">
                   <span>2 x 1L Reusable Wide-Mouth Water Bottles (Nalgene)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-20">
                   <span>Water purification tablets or UV sterilizer</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-21">
                   <span>Personal first aid kit with blister plaster/moleskin</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-22">
                   <span>High-SPF sunscreen (SPF 50+) & protective lip balm</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-23">
                   <span>Altitude medication (Diamox/Acetazolamide upon doctor advice)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-24">
                   <span>Electrolyte rehydration salts & throat lozenges</span>
                 </label>
               </div>
@@ -2408,19 +2374,19 @@
               </h3>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-25">
                   <span>High-capacity Power Bank (10,000–20,000 mAh)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-26">
                   <span>Spare camera batteries (cold drains lithium cells quickly)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-27">
                   <span>Biodegradable wet wipes & alcohol hand sanitizer</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-28">
                   <span>Quick-drying microfiber towel & eco-friendly soap</span>
                 </label>
               </div>
@@ -2434,19 +2400,19 @@
               </h3>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-29">
                   <span>Passport (valid 6+ months with photocopies)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-30">
                   <span>4 Passport-sized photos (for permits & local SIM card)</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-31">
                   <span>Printed travel insurance certificate with heli evacuation policy</span>
                 </label>
                 <label class="flex items-center gap-2.5 p-2 rounded hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-emerald-700 rounded border-gray-300">
+                  <input type="checkbox" class="gear-item-checkbox w-4 h-4 text-emerald-700 rounded border-gray-300" data-gear-id="ev-gear-32">
                   <span>Cash in Nepali Rupees (NPR 15,000–25,000 for personal spending/tips)</span>
                 </label>
               </div>
@@ -2474,10 +2440,27 @@
           </div>
 
           <!-- 21 Accordion Items -->
+                    <!-- Guidance Search and Category Filter -->
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px 20px; margin-bottom: 24px;">
+            <div style="position: relative; margin-bottom: 12px;">
+              <input type="text" id="guidance-search-input" placeholder="Type to search all 21 guide topics (e.g. luggage, altitude, wifi, shower, charging, permits, tips)..." style="width: 100%; padding: 11px 16px 11px 40px; border: 1.5px solid #CBD5E1; border-radius: 8px; font-size: 0.92rem; outline: none; transition: border-color 0.2s; background: #ffffff;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2" style="position: absolute; left: 13px; top: 50%; transform: translateY(-50%);"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <button type="button" class="guide-filter-btn active" data-guide-filter="all" style="padding: 5px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; background: #008060; color: #ffffff; border: none; cursor: pointer;">All Guides (21)</button>
+                <button type="button" class="guide-filter-btn" data-guide-filter="logistics" style="padding: 5px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; background: #ffffff; color: #475569; border: 1px solid #CBD5E1; cursor: pointer;">Logistics &amp; Flights</button>
+                <button type="button" class="guide-filter-btn" data-guide-filter="health" style="padding: 5px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; background: #ffffff; color: #475569; border: 1px solid #CBD5E1; cursor: pointer;">Health &amp; Altitude</button>
+                <button type="button" class="guide-filter-btn" data-guide-filter="teahouse" style="padding: 5px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; background: #ffffff; color: #475569; border: 1px solid #CBD5E1; cursor: pointer;">Teahouse Living</button>
+                <button type="button" class="guide-filter-btn" data-guide-filter="permits" style="padding: 5px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; background: #ffffff; color: #475569; border: 1px solid #CBD5E1; cursor: pointer;">Permits &amp; Money</button>
+              </div>
+              <button type="button" id="toggle-all-guidance" style="background: none; border: 1px solid #CBD5E1; color: #0C2B4E; padding: 5px 12px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; cursor: pointer;">Expand All</button>
+            </div>
+          </div>
           <div class="space-y-4" id="details-accordion-group">
             
             <!-- Accordion 1 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="teahouse" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">1</span>
@@ -2499,7 +2482,7 @@
             </div>
 
             <!-- Accordion 2 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="teahouse" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">2</span>
@@ -2521,7 +2504,7 @@
             </div>
 
             <!-- Accordion 3 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="teahouse" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">3</span>
@@ -2543,7 +2526,7 @@
             </div>
 
             <!-- Accordion 4 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="teahouse" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">4</span>
@@ -2574,7 +2557,7 @@
             </div>
 
             <!-- Accordion 5 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="teahouse" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">5</span>
@@ -2597,7 +2580,7 @@
             </div>
 
             <!-- Accordion 6 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="teahouse" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">6</span>
@@ -2619,7 +2602,7 @@
             </div>
 
             <!-- Accordion 7 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="teahouse" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">7</span>
@@ -2681,7 +2664,7 @@
             </div>
 
             <!-- Accordion 8 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="health" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">8</span>
@@ -2703,7 +2686,7 @@
             </div>
 
             <!-- Accordion 9 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="health" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">9</span>
@@ -2725,7 +2708,7 @@
             </div>
 
             <!-- Accordion 10 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="health" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">10</span>
@@ -2747,7 +2730,7 @@
             </div>
 
             <!-- Accordion 11 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="logistics" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">11</span>
@@ -2799,7 +2782,7 @@
             </div>
 
             <!-- Accordion 12 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="logistics" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">12</span>
@@ -2821,7 +2804,7 @@
             </div>
 
             <!-- Accordion 13 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="logistics" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">13</span>
@@ -2843,7 +2826,7 @@
             </div>
 
             <!-- Accordion 14 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="logistics" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">14</span>
@@ -2865,7 +2848,7 @@
             </div>
 
             <!-- Accordion 15 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="logistics" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">15</span>
@@ -2884,7 +2867,7 @@
             </div>
 
             <!-- Accordion 16 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="permits" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">16</span>
@@ -2903,7 +2886,7 @@
             </div>
 
             <!-- Accordion 17 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="permits" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">17</span>
@@ -2922,7 +2905,7 @@
             </div>
 
             <!-- Accordion 18 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="permits" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">18</span>
@@ -2941,7 +2924,7 @@
             </div>
 
             <!-- Accordion 19 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="logistics" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">19</span>
@@ -2963,7 +2946,7 @@
             </div>
 
             <!-- Accordion 20 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="logistics" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">20</span>
@@ -2986,7 +2969,7 @@
             </div>
 
             <!-- Accordion 21 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
+            <div class="guidance-card border border-gray-200" data-guide-category="logistics" rounded-xl overflow-hidden bg-white shadow-sm">
               <button class="w-full px-6 py-5 text-left font-heading font-bold text-base sm:text-lg text-primary-navy flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors" onclick="this.parentElement.classList.toggle('active')">
                 <span class="flex items-center gap-3">
                   <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center justify-center flex-shrink-0">21</span>
@@ -3983,6 +3966,26 @@
                 </div>
               </div>
 
+              
+              <!-- Interactive Group Size / Passenger Stepper -->
+              <div class="sidebar-pax-stepper" style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px 14px; margin-bottom: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                  <span style="font-size: 0.85rem; font-weight: 700; color: #0C2B4E;">Select Travelers:</span>
+                  <span id="sidebar-tier-badge" style="font-size: 0.75rem; font-weight: 700; color: #008060; background: #E6F7F0; padding: 2px 8px; border-radius: 4px;">Standard Rate</span>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div style="display: flex; align-items: center; border: 1.5px solid #CBD5E1; border-radius: 6px; background: white; overflow: hidden;">
+                    <button type="button" id="pax-minus-btn" aria-label="Decrease passenger count" style="width: 34px; height: 34px; background: none; border: none; font-size: 1.2rem; font-weight: bold; cursor: pointer; color: #0C2B4E; display: flex; align-items: center; justify-content: center;">-</button>
+                    <span id="pax-count-display" style="width: 36px; text-align: center; font-weight: 800; font-size: 0.95rem; color: #0C2B4E;">1</span>
+                    <button type="button" id="pax-plus-btn" aria-label="Increase passenger count" style="width: 34px; height: 34px; background: none; border: none; font-size: 1.2rem; font-weight: bold; cursor: pointer; color: #0C2B4E; display: flex; align-items: center; justify-content: center;">+</button>
+                  </div>
+                  <div style="text-align: right;">
+                    <div style="font-size: 0.72rem; color: #64748B; text-transform: uppercase; font-weight: 600;">Total Estimate:</div>
+                    <div id="pax-total-price" style="font-size: 1.25rem; font-weight: 800; color: #0C2B4E; line-height: 1;">$899</div>
+                  </div>
+                </div>
+              </div>
+
               <!-- Action Buttons -->
               <button class="btn open-inquiry-btn" data-trek-title="Everest View Trek (Aug 5 - Aug 18, 2026)" style="width: 100%; padding: 14px; background: #008060; color: #FFFFFF; border: none; border-radius: 50px; font-size: 1.05rem; font-weight: 800; cursor: pointer; margin-bottom: 12px; box-shadow: 0 4px 14px rgba(0, 128, 96, 0.25); transition: background 0.2s;">
                 Book Now
@@ -4241,5 +4244,298 @@
   <script src="../../js/trek-details.js?v=11"></script>
   <script src="../../js/header-scroll.js"></script>
   <script src="../../js/mega-menu.js"></script>
+
+  <!-- Photo Gallery Lightbox Modal -->
+  <div id="gallery-lightbox-modal" style="display: none; position: fixed; inset: 0; z-index: 999999; background: rgba(12, 43, 78, 0.96); backdrop-filter: blur(8px); align-items: center; justify-content: center; flex-direction: column;">
+    <div style="position: absolute; top: 20px; right: 24px; display: flex; align-items: center; gap: 16px; z-index: 10;">
+      <span id="gallery-counter" style="color: #ffffff; font-weight: 700; font-size: 0.95rem; background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: 20px;">1 / 5</span>
+      <button id="gallery-close-btn" aria-label="Close Gallery" style="background: rgba(255,255,255,0.2); border: none; color: #ffffff; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.6rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">&times;</button>
+    </div>
+    <button id="gallery-prev-btn" aria-label="Previous Photo" style="position: absolute; left: 24px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); border: none; color: #ffffff; width: 48px; height: 48px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index: 10;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button id="gallery-next-btn" aria-label="Next Photo" style="position: absolute; right: 24px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); border: none; color: #ffffff; width: 48px; height: 48px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index: 10;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div style="max-width: 90vw; max-height: 82vh; display: flex; flex-direction: column; align-items: center;">
+      <img id="gallery-modal-img" src="" alt="Everest View Trek Photo" style="max-width: 100%; max-height: 75vh; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); object-fit: contain;">
+      <div id="gallery-caption" style="color: #ffffff; margin-top: 14px; font-weight: 600; font-size: 1.05rem; text-align: center;"></div>
+    </div>
+  </div>
+
+  <style>
+    /* Clean CSS for interactive components */
+    .guidance-card.active > div:not(button) { display: block !important; }
+    .guidance-card.active .accordion-chevron { transform: rotate(180deg); }
+    .departure-card { transition: all 0.25s ease; }
+    .dates-filter-btn.active { background: #008060 !important; color: #ffffff !important; border-color: #008060 !important; }
+    .guide-filter-btn.active { background: #008060 !important; color: #ffffff !important; border-color: #008060 !important; }
+    .itinerary-card.active .itinerary-toggle-circle svg { transform: rotate(180deg); }
+    .itinerary-toggle-circle svg { transition: transform 0.25s ease; }
+    .trek-detail-section { scroll-margin-top: 130px; }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Photo Gallery Lightbox Implementation
+      const galleryPhotos = [
+        { url: "https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=1600&q=85", caption: "Everest View Trek: Iconic panoramic morning view of the Himalayan amphitheater" },
+        { url: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=85", caption: "Lower Khumbu: Dudh Koshi River Valley trails through pine and rhododendron forests" },
+        { url: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1400&q=85", caption: "Ascending the high mountain trail approaching the vibrant Sherpa town of Namche Bazaar" },
+        { url: "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1400&q=85", caption: "Majestic Ama Dablam rising prominently above the Khumbu alpine valleys" },
+        { url: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=85", caption: "Panoramic vista of Mount Everest, Lhotse, and Nuptse from Hotel Everest View terrace (3,880 m)" }
+      ];
+
+      const lightboxModal = document.getElementById('gallery-lightbox-modal');
+      const modalImg = document.getElementById('gallery-modal-img');
+      const captionText = document.getElementById('gallery-caption');
+      const counterText = document.getElementById('gallery-counter');
+      const closeBtn = document.getElementById('gallery-close-btn');
+      const prevBtn = document.getElementById('gallery-prev-btn');
+      const nextBtn = document.getElementById('gallery-next-btn');
+      let currentPhotoIndex = 0;
+
+      function updatePhoto(index) {
+        currentPhotoIndex = (index + galleryPhotos.length) % galleryPhotos.length;
+        modalImg.src = galleryPhotos[currentPhotoIndex].url;
+        captionText.textContent = galleryPhotos[currentPhotoIndex].caption;
+        counterText.textContent = (currentPhotoIndex + 1) + ' / ' + galleryPhotos.length;
+      }
+
+      function openLightbox(index = 0) {
+        updatePhoto(index);
+        lightboxModal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightboxModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+
+      // Wire 'See all photos' and hero gallery images
+      const seeAllBtn = document.querySelector('.trek-gallery-see-all-btn');
+      if (seeAllBtn) {
+        seeAllBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          openLightbox(0);
+        });
+      }
+
+      const heroImgs = document.querySelectorAll('.trek-gallery-main img, .trek-gallery-sub img');
+      heroImgs.forEach((img, idx) => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => openLightbox(idx));
+      });
+
+      if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+      if (prevBtn) prevBtn.addEventListener('click', () => updatePhoto(currentPhotoIndex - 1));
+      if (nextBtn) nextBtn.addEventListener('click', () => updatePhoto(currentPhotoIndex + 1));
+
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) closeLightbox();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (lightboxModal.style.display === 'flex') {
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowLeft') updatePhoto(currentPhotoIndex - 1);
+          if (e.key === 'ArrowRight') updatePhoto(currentPhotoIndex + 1);
+        }
+      });
+
+      // 2. Interactive Passenger Stepper & Live Pricing in Sticky Sidebar
+      let currentPax = 1;
+      const paxCountDisplay = document.getElementById('pax-count-display');
+      const paxTotalPrice = document.getElementById('pax-total-price');
+      const sidebarTierBadge = document.getElementById('sidebar-tier-badge');
+      const minusBtn = document.getElementById('pax-minus-btn');
+      const plusBtn = document.getElementById('pax-plus-btn');
+
+      function calculatePrice(pax) {
+        let ratePerPax = 899;
+        let badge = "Standard Rate";
+        if (pax >= 2 && pax <= 4) {
+          ratePerPax = 869;
+          badge = "$869 / pax (Save $30)";
+        } else if (pax >= 5 && pax <= 8) {
+          ratePerPax = 829;
+          badge = "$829 / pax (Save $70)";
+        } else if (pax >= 9) {
+          ratePerPax = 799;
+          badge = "$799 / pax (Best Deal)";
+        }
+        return { rate: ratePerPax, total: ratePerPax * pax, badge: badge };
+      }
+
+      function updatePaxUI() {
+        if (!paxCountDisplay) return;
+        paxCountDisplay.textContent = currentPax;
+        const res = calculatePrice(currentPax);
+        paxTotalPrice.textContent = '
+</html>
+ + res.total.toLocaleString();
+        sidebarTierBadge.textContent = res.badge;
+
+        // Sync pax to inquiry buttons
+        document.querySelectorAll('.open-inquiry-btn').forEach(btn => {
+          btn.setAttribute('data-travelers', currentPax);
+        });
+      }
+
+      if (minusBtn) {
+        minusBtn.addEventListener('click', () => {
+          if (currentPax > 1) {
+            currentPax--;
+            updatePaxUI();
+          }
+        });
+      }
+
+      if (plusBtn) {
+        plusBtn.addEventListener('click', () => {
+          if (currentPax < 25) {
+            currentPax++;
+            updatePaxUI();
+          }
+        });
+      }
+
+      // 3. Dates & Availability Filter & Booking Prefill
+      const filterBtns = document.querySelectorAll('.dates-filter-btn');
+      const departureCards = document.querySelectorAll('.departure-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.getAttribute('data-season-filter');
+
+          departureCards.forEach(card => {
+            const cardSeason = card.getAttribute('data-season');
+            if (filter === 'all' || cardSeason === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Pass selected departure date into inquiry modal
+      document.querySelectorAll('.btn-date-book').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const date = btn.getAttribute('data-departure-date');
+          setTimeout(() => {
+            const notesField = document.getElementById('inq-notes');
+            if (notesField) {
+              notesField.value = 'Interested in scheduled departure: ' + date + '\n' + notesField.value;
+            }
+          }, 100);
+        });
+      });
+
+      // 4. Section 6 Guidance Search & Filtering
+      const searchInput = document.getElementById('guidance-search-input');
+      const guideCards = document.querySelectorAll('.guidance-card');
+      const guideFilterBtns = document.querySelectorAll('.guide-filter-btn');
+      const toggleAllGuidanceBtn = document.getElementById('toggle-all-guidance');
+
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          guideCards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = 'block';
+              if (query.length > 2) {
+                card.classList.add('active');
+              }
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      guideFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          guideFilterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.getAttribute('data-guide-filter');
+
+          guideCards.forEach(card => {
+            const cat = card.getAttribute('data-guide-category');
+            if (filter === 'all' || cat === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      if (toggleAllGuidanceBtn) {
+        toggleAllGuidanceBtn.addEventListener('click', () => {
+          const anyInactive = Array.from(guideCards).some(c => !c.classList.contains('active'));
+          guideCards.forEach(card => {
+            if (anyInactive) {
+              card.classList.add('active');
+            } else {
+              card.classList.remove('active');
+            }
+          });
+          toggleAllGuidanceBtn.textContent = anyInactive ? 'Collapse All' : 'Expand All';
+        });
+      }
+
+      // 5. Gear & Packing List Persistence
+      const gearCheckboxes = document.querySelectorAll('.gear-item-checkbox');
+      const countDisplay = document.querySelector('.gear-checked-count');
+      const totalDisplay = document.querySelector('.gear-total-count');
+      const resetPackingBtn = document.getElementById('btn-reset-packing');
+      const storageKey = 'namaste-gear-everest-view';
+
+      let savedGear = {};
+      try {
+        const raw = localStorage.getItem(storageKey);
+        if (raw) savedGear = JSON.parse(raw);
+      } catch (err) {}
+
+      function updateGearCount() {
+        const checkedCount = document.querySelectorAll('.gear-item-checkbox:checked').length;
+        if (countDisplay) countDisplay.textContent = checkedCount;
+        if (totalDisplay) totalDisplay.textContent = gearCheckboxes.length;
+      }
+
+      gearCheckboxes.forEach(cb => {
+        const id = cb.getAttribute('data-gear-id');
+        if (id && savedGear[id]) {
+          cb.checked = true;
+        }
+        cb.addEventListener('change', () => {
+          savedGear[id] = cb.checked;
+          try {
+            localStorage.setItem(storageKey, JSON.stringify(savedGear));
+          } catch (err) {}
+          updateGearCount();
+        });
+      });
+
+      if (resetPackingBtn) {
+        resetPackingBtn.addEventListener('click', () => {
+          gearCheckboxes.forEach(cb => cb.checked = false);
+          savedGear = {};
+          try {
+            localStorage.removeItem(storageKey);
+          } catch (err) {}
+          updateGearCount();
+        });
+      }
+
+      updateGearCount();
+    });
+  </script>
+
 </body>
 </html>
