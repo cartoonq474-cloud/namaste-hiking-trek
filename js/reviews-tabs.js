@@ -164,21 +164,30 @@ document.addEventListener('DOMContentLoaded', () => {
       resTabBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
-      const items = resourceData[catKey] || resourceData.webinars;
       const grid = document.querySelector('.resources-grid');
-      if (grid) {
-        grid.innerHTML = items.map(item => `
-          <div class="resource-card open-inquiry-btn">
-            <div class="resource-thumb-wrapper" style="background-image: url('${item.img}');">
-              <div class="yt-play-button">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF"><polygon points="9.5,7.5 16.5,12 9.5,16.5"/></svg>
+      const blogsShowcase = document.getElementById('res-blogs-showcase');
+
+      if (catKey === 'blogs') {
+        if (grid) grid.style.display = 'none';
+        if (blogsShowcase) blogsShowcase.style.display = 'block';
+      } else {
+        if (blogsShowcase) blogsShowcase.style.display = 'none';
+        if (grid) {
+          grid.style.display = 'grid';
+          const items = resourceData[catKey] || resourceData.webinars;
+          grid.innerHTML = items.map(item => `
+            <div class="resource-card open-inquiry-btn">
+              <div class="resource-thumb-wrapper" style="background-image: url('${item.img}');">
+                <div class="yt-play-button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF"><polygon points="9.5,7.5 16.5,12 9.5,16.5"/></svg>
+                </div>
+              </div>
+              <div class="resource-card-content">
+                <h3 class="resource-card-title">${item.title}</h3>
               </div>
             </div>
-            <div class="resource-card-content">
-              <h3 class="resource-card-title">${item.title}</h3>
-            </div>
-          </div>
-        `).join('');
+          `).join('');
+        }
       }
     });
   });
