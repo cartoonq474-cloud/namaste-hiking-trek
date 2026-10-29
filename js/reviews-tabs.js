@@ -141,20 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
         title: "Kathmandu Rental Guide: What Sleeping Bags & Down Jackets to Rent in Thamel",
         img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80"
       }
-    ],
-    ebooks: [
-      {
-        title: "Complete Himalayan Travel Guide E-Book: Permits, TIMS, Insurance & Helicopter Safety",
-        img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80"
-      },
-      {
-        title: "Sherpa Cultural Heritage & Monasteries Guide: Understanding Solukhumbu Traditions",
-        img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80"
-      },
-      {
-        title: "Tailor-Made Himalayan Itinerary Handbook: Designing Private & Group Trips to Nepal",
-        img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
-      }
     ]
   };
 
