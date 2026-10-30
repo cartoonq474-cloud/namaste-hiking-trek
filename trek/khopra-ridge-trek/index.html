@@ -726,7 +726,7 @@
     </div>
 
     <!-- Main Content Layout with Sticky Booking Sidebar -->
-    <section class="section-padding" style="padding-top: 10px;" data-trek-details-wrapper data-trek-key="ebc">
+    <section class="section-padding" style="padding-top: 10px;" data-trek-details-wrapper data-trek-key="khopra">
       <div class="container" style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 40px;">
         
         <!-- Main Details Column (Sequential Sections) -->
@@ -3572,7 +3572,7 @@
             </p>
           </section>
 
-          <!-- Section 5: Trip Details -->
+          <!-- Section 5: Trip Details / "Read Before You Book" -->
           <section id="section-details" class="trek-detail-section">
             <div class="details-section-container">
               <!-- Heading -->
@@ -3583,43 +3583,27 @@
 
               <!-- Subtitle Paragraphs -->
               <p class="details-subtitle-text">To help you prepare for the 15-day Khopra Ridge Trek, we have compiled an essential operational guide covering community lodge accommodations, trail nutrition, acclimatization protocols, 10-week conditioning, ACAP permits, and high-altitude safety for Khayer Lake (<span data-altitude-m="4700">4,700 m</span>).</p>
-              <p class="details-subtitle-subtext">Click on any category below to expand details. As you review each topic, check off items to keep track of your expedition preparations.</p>
+              <p class="details-subtitle-text" style="margin-bottom: 24px;">If you are still unsure if this trek is for you, then email or <a href="https://wa.me/9779800000000" target="_blank">WhatsApp us</a>. We will get back to you within 24 hours to answer any more questions.</p>
 
-              <!-- Progress Tracker Card -->
-              <div class="details-tracker-card">
-                <div class="details-tracker-left">
-                  <div class="progress-ring-container">
-                    <svg class="progress-ring" width="56" height="56">
-                      <circle class="progress-ring-circle-bg" stroke="#E2E8F0" stroke-width="4.5" fill="transparent" r="23" cx="28" cy="28" />
-                      <circle class="progress-ring-circle" stroke="#10B981" stroke-width="4.5" stroke-dasharray="144.51" stroke-dashoffset="144.51" stroke-linecap="round" fill="transparent" r="23" cx="28" cy="28" />
+              <!-- Interactive Progress Tracker Badge -->
+              <div class="details-progress-wrapper">
+                <div class="details-progress-badge">
+                  <div class="details-progress-ring-box">
+                    <svg width="44" height="44">
+                      <circle class="details-progress-ring-bg" r="18" cx="22" cy="22"></circle>
+                      <circle class="details-progress-ring-bar" r="18" cx="22" cy="22"></circle>
                     </svg>
-                    <span class="progress-ring-text" id="read-progress-percent">0%</span>
                   </div>
-                  <div>
-                    <h3 class="tracker-status-title" id="read-status-title">Essential Reading Incomplete</h3>
-                    <p class="tracker-status-desc" id="read-status-desc">0 of 21 sections reviewed</p>
+                  <div class="details-progress-text-box">
+                    <span class="details-progress-count">0/21 read</span>
+                    <span class="details-progress-status">Nice start — keep going</span>
                   </div>
-                </div>
-                <div class="details-tracker-right">
-                  <button class="tracker-action-btn" id="mark-all-read-btn">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    Mark All as Read
-                  </button>
-                  <button class="tracker-action-btn" id="expand-all-details-btn">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="7 13 12 18 17 13"></polyline>
-                      <polyline points="7 6 12 11 17 6"></polyline>
-                    </svg>
-                    Expand All
-                  </button>
                 </div>
               </div>
 
-              <!-- 21 Accordion Cards -->
+              <!-- Accordion List (21 Items) -->
               <div class="detail-accordion-list">
-                <!-- 1: accommodation -->
+                <!-- Item 1: accommodation -->
                 <div class="detail-accordion-card" data-detail-id="accommodation">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -3633,31 +3617,40 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Accommodation: Community Lodges & Mountain Teahouses</h3>
-                        <span class="detail-item-badge">10 Nights Lodges + 4 Nights Hotels</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Accommodation for the Khopra Ridge Trek</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Accommodation on the Khopra Ridge Trek offers a diverse and authentic experience, evolving as you journey from modern city hotels into traditional mountain villages and high-altitude community lodges.</p>
-    <p><strong>Hotels in Kathmandu & Pokhara (4 Nights):</strong> In Kathmandu (Days 1 & 14) and Pokhara (Days 2 & 13), you will stay in handpicked 3-star standard tourist hotels. Rooms feature private en-suite bathrooms, 24/7 hot showers, complimentary high-speed Wi-Fi, air conditioning, and daily breakfast.</p>
-    <p><strong>Traditional Teahouses in Ghandruk, Tadapani, Swanta & Ghorepani:</strong> In established trekking villages, you will stay in charming family-run teahouses. Rooms are generally twin-share with wooden twin beds, clean mattresses, pillows, and blankets. Shared or private western-style and Asian squat toilets are available depending on the village.</p>
-    <p><strong>Community Lodges at Bayeli Kharka, Upper Chistibung & Khopra Ridge:</strong> Along the off-the-beaten-path section, accommodation is provided by community-owned lodges. These rustic stone lodges were built to channel tourism benefits directly to local schools and healthcare. While facilities are simple—featuring shared squat or seated toilets, solar lighting, and unheated bedrooms—the communal dining rooms are warmly heated by central wood-burning stoves, offering a welcoming atmosphere where trekkers gather for dinner and conversation.</p>
-    <p><strong>Important Note on Khayer Lake:</strong> There are no overnight lodges at Khayer Lake (<span data-altitude-m="4700">4,700 m</span>). The lake is visited exclusively as a day excursion from Khopra Ridge, returning to sleep at the ridge community lodge.</p>
+                      <p>Accommodation on the 15-day Khopra Ridge Trek offers a rich and authentic cross-section of Nepal's mountain hospitality, transitioning from comfortable 3-star city hotels in Kathmandu and Pokhara to traditional Gurung stone lodges and remote community-owned eco-lodges along the alpine ridgeline.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">What to Expect in Kathmandu and Pokhara (4 Nights)</h4>
+      <p>Before and after the trek—in Kathmandu (Days 1 & 14) and Pokhara (Days 2 & 13)—you will stay in handpicked 3-star tourist-standard hotels located near vibrant dining and shopping hubs (Thamel in Kathmandu and Lakeside in Pokhara). Rooms are private twin or double rooms featuring en-suite modern bathrooms, 24-hour hot showers, complimentary high-speed Wi-Fi, air conditioning, and daily breakfast.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Traditional Mountain Teahouses (Ghandruk, Tadapani, Swanta, Ghorepani, Tikhedhunga)</h4>
+      <p>In the inhabited lower and middle elevation villages, accommodation is in family-operated mountain teahouses constructed from local slate and timber. Key features include:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li>Twin-sharing bedrooms with two wooden single beds, clean mattresses, pillows, and freshly laundered bedsheets.</li>
+        <li>Warm communal dining halls heated by central wood- or sawdust-burning stoves in the evening—the social heart of the lodge where meals are enjoyed, route maps reviewed, and stories shared.</li>
+        <li>Common bathroom facilities (western sit-down toilets or traditional squat toilets) located on each floor or in detached outbuildings. Attached bathrooms are available in select lodges at Ghandruk and Ghorepani.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">High-Altitude Community Eco-Lodges (Bayeli Kharka, Upper Chistibung, Khopra Ridge, Mohare Hill)</h4>
+      <p>Above <span data-altitude-m="3000">3,000 metres</span>, the trail leaves private commercial lodges behind and enters community-managed territory. Built under the visionary rural development initiative led by Ramon Magsaysay Award-winner Mahabir Pun, these community lodges are non-profit social enterprises:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Direct Community Impact:</strong> 100% of accommodation profits directly fund local community schools, healthcare clinics, micro-hydro power, and community wireless internet in remote Magar and Gurung villages.</li>
+        <li><strong>Simple & Functional Comfort:</strong> Rooms are cozy, timber-paneled twin bedrooms offering essential shelter, warm blankets, and awe-inspiring panoramas of Mount Dhaulagiri (<span data-altitude-m="8167">8,167 m</span>) and Annapurna South (<span data-altitude-m="7219">7,219 m</span>) directly from your window.</li>
+        <li><strong>Resource Mindfulness:</strong> Solar-powered electricity provides lighting in rooms and dining halls. Water is piped from pristine alpine springs and heated using solar systems or fuel-efficient wood boilers.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Hot Showers, Device Charging & Connectivity</h4>
+      <p>Solar or gas hot showers are available at most lodges for a modest local fee (approx. NPR 300 to 500 / $2–$4 USD). Electronic device charging (phones, camera batteries, power banks) is available in common dining areas for a small fee (NPR 200 to 400). Wi-Fi is available in Ghandruk, Ghorepani, and Mohare Danda, but connectivity is intermittent or unavailable at Khopra Ridge and Bayeli Kharka. We strongly recommend carrying a 10,000–20,000 mAh portable power bank.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 2: food -->
+                <!-- Item 2: food -->
                 <div class="detail-accordion-card" data-detail-id="food">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -3671,31 +3664,39 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Dining, Food & Water on the Annapurna Trail</h3>
-                        <span class="detail-item-badge">Full Board on Trek (B.L.D.)</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Dining, Food & Drinking Water on the Khopra Ridge Trek</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Proper nutrition and hydration are essential for maintaining energy across 11 consecutive walking days and conquering the strenuous ascent to Khayer Lake.</p>
-    <p><strong>Breakfast Options:</strong> Enjoy energizing hot breakfasts including hearty porridge with honey, muesli with warm milk, Tibetan or Gurung fried bread, pancakes, hash browns, and eggs prepared to your choice (boiled, fried, poached, or scrambled), served with hot tea or coffee.</p>
-    <p><strong>Lunch & Dinner:</strong> The ultimate mountain fuel is <em>Dal Bhat Tarkari</em>—a traditional Nepali feast of steamed rice, rich lentil soup, seasonal vegetable curry, spinach, and spicy pickles. Dal Bhat is freshly prepared, highly nutritious, and comes with free refills! Other menu favorites include vegetable fried noodles (chowmein), momo dumplings, potato rosti, vegetable noodle soup (thukpa), macaroni, and pasta dishes.</p>
-    <p><strong>Khayer Lake Day Pack:</strong> On Day 8 (Khayer Lake excursion), we arrange an early 5:00 AM breakfast and carry packed lunches, boiled eggs, bread, and energy bars, as there are no food stalls or teahouses along the high-alpine trail.</p>
-    <p><strong>Drinking Water:</strong> Safe drinking water is readily available. We encourage bringing two 1-litre reusable bottles and water purification tablets (Aquatabs) or a filter (LifeStraw / Sawyer Squeeze). Boiled water can also be purchased at lodges for a small fee (NPR 150–250 per litre), helping eliminate single-use plastic waste in the Annapurna Conservation Area.</p>
+                      <p>Proper nutrition and consistent hydration are fundamental to enjoying a safe and energetic trek in the Annapurna mountains. Your package includes full-board meals (breakfast, lunch, and dinner) during all trekking days, prepared fresh daily by trained lodge kitchen teams.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">The Power of Authentic Dal Bhat</h4>
+      <p>The staple fuel of the Himalayas is traditional Nepalese <em>Dal Bhat Tarkari</em>—a balanced, nourishing platter comprising steamed white or brown rice, hearty spiced lentil soup (dal), seasonal vegetable curry (tarkari), fresh mountain spinach (saag), and spicy pickled chutney (achar). Dal Bhat is freshly prepared, easily digestible at high elevation, and comes with customary complimentary refills of rice, dal, and vegetables until you are completely satisfied ("Dal Bhat Power, 24 Hour!").</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Varied Mountain Menus</h4>
+      <p>Teahouses across the Annapurna range offer remarkably diverse menus accommodating international palates:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Breakfast:</strong> Oatmeal porridge with honey, muesli with warm milk, Tibetan flatbread with jam, eggs cooked to order (poached, scrambled, fried, omelets), hash brown potatoes, pancakes, and hot Himalayan spiced milk tea or black coffee.</li>
+        <li><strong>Lunch & Dinner:</strong> Steamed and fried vegetable momos (dumplings), stir-fried noodles (chowmein), vegetable fried rice, pasta arrabbiata, sherpa potato stew, macaroni cheese, thukpa (hearty Tibetan noodle soup), and garlic soup (traditionally consumed by highlanders to assist acclimatization).</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Vegetarian Advisory & Dietary Needs</h4>
+      <p>We strongly recommend adopting a predominantly vegetarian or lacto-ovo vegetarian diet once ascending above Ghandruk and Tadapani. Because meat must be portered uphill from lower valley roadheads without continuous refrigeration, vegetarian meals are significantly fresher, healthier, and minimize any risk of gastrointestinal upset. Our guides gladly accommodate vegan, gluten-free, dairy-free, and nut-allergy requirements when notified in advance.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Safe Drinking Water Protocol</h4>
+      <p>To preserve the pristine environment of the Annapurna Conservation Area, single-use disposable plastic water bottles are discouraged. Trekkers should carry two 1-litre wide-mouth reusable bottles (e.g., Nalgene). Safe drinking water options include:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li>Purchasing boiled drinking water from lodges (approx. NPR 150 to 300 per litre), which can double as a hot water bottle inside your sleeping bag at night.</li>
+        <li>Treating tap or spring water using chlorine dioxide water purification tablets (Aquatabs) or a portable UV purifier (SteriPEN).</li>
+        <li>Drinking a minimum of 3 to 4 litres of fluids daily to support optimal oxygen transport and prevent altitude dehydration.</li>
+      </ul>
                     </div>
                   </div>
                 </div>
 
-                <!-- 3: best-time -->
+                <!-- Item 3: best-time -->
                 <div class="detail-accordion-card" data-detail-id="best-time">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -3709,31 +3710,39 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Best Time & Seasons for Khopra Ridge Trek</h3>
-                        <span class="detail-item-badge">Spring (Mar–May) & Autumn (Sep–Nov)</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Best Time & Seasons to Trek Khopra Ridge</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>The Khopra Ridge Trek is best undertaken during Nepal's two prime trekking windows: Spring and Autumn.</p>
-    <p><strong>Autumn (Late September to November) — Best for Mountain Clarity:</strong> Autumn is the most popular season for Khopra Ridge. Following the monsoon, the air is crisp, dust-free, and crystal clear. Daytime temperatures range from 12°C to 18°C in the valleys, dropping to -2°C to 5°C at Khopra Ridge at night. October offers the highest probability of unobstructed panoramic views of Dhaulagiri and Annapurna South, with dry trails and optimal conditions for the Khayer Lake excursion.</p>
-    <p><strong>Spring (March to May) — Best for Blooming Rhododendrons:</strong> Spring brings warming temperatures and spectacular blooms. The forests between Ghandruk, Tadapani, and Bayeli Kharka explode in brilliant scarlet, pink, and white rhododendrons. Daytime temperatures average 14°C to 20°C in the foothills and 2°C to 8°C on the ridge. Residual winter snow may linger on the high trail to Khayer Lake in early March, requiring microspikes.</p>
-    <p><strong>Winter (December to February):</strong> Clear skies and fewer trekkers, but temperatures at Khopra Ridge can drop to -10°C to -15°C. Heavy snow may block the trail to Khayer Lake, making the excursion optional or unreachable.</p>
-    <p><strong>Monsoon (June to August):</strong> Heavy rainfall, obscured views, slippery mud, leeches, and landslide hazards on roads make the full circuit generally unadvisable during mid-summer.</p>
+                      <p>The Khopra Ridge Trek can be undertaken during multiple seasons of the year, each offering unique climatic conditions, flora, and mountain vistas. The two primary trekking windows in Nepal are Spring (March to May) and Autumn (September to November).</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Spring Season (March, April & May) — Rhododendrons & Mild Weather</h4>
+      <p>Spring is one of the most magnificent times to explore the Annapurna foothills:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Flowering Canopies:</strong> In March and April, the ancient oak and rhododendron woodlands between Ghandruk, Tadapani, and Bayeli Kharka explode into brilliant displays of crimson, pink, and white blooms (Nepal's national flower, <em>Lali Gurans</em>).</li>
+        <li><strong>Pleasant Temperatures:</strong> Daytime temperatures in the valleys range from 16°C to 22°C (61°F–72°F), while high elevations like Khopra Ridge (<span data-altitude-m="3660">3,660 m</span>) reach 8°C to 14°C (46°F–57°F) during sunny afternoons, dropping to around -2°C to 4°C at night.</li>
+        <li><strong>Atmosphere:</strong> Crystal-clear mornings generally yield to afternoon haze or occasional light mountain showers, with clear star-studded nights.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Autumn Season (September, October & November) — Crystal Mountain Clarity</h4>
+      <p>Autumn is widely considered the peak trekking season in the Himalayas:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Unrivaled Visibility:</strong> The summer monsoon clears all atmospheric dust, leaving the air exceptionally sharp and transparent. Vistas of Dhaulagiri I (<span data-altitude-m="8167">8,167 m</span>) and Annapurna South from Khopra Ridge are at their most breathtaking.</li>
+        <li><strong>Stable Meteorology:</strong> October and November offer the most consistent weather with minimal rain, deep blue skies, and dry trail footing.</li>
+        <li><strong>Ideal Khayer Lake Window:</strong> High-altitude trail conditions to sacred Khayer Lake (<span data-altitude-m="4700">4,700 m</span>) are optimal, with minimal fresh snow and firm moraine paths.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Winter (December to February) & Monsoon (June to August)</h4>
+      <p><strong>Winter:</strong> Offers crisp, crystal-clear skies and peaceful trails with virtually no crowds. However, temperatures at Khopra Ridge drop below -10°C (14°F) at night, and snow can occasionally block the high pass to Khayer Lake. Heavy thermal gear and microspikes are mandatory.<br>
+      <strong>Monsoon:</strong> Heavy rainfall in lower valleys creates muddy trails and leeches in sub-tropical forests, while clouds obscure mountain peaks. However, high alpine meadows around Khayer Lake are carpeted with wildflowers, and pilgrims hike to the lake for the sacred Janai Purnima festival in August.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 4: typical-day -->
+                <!-- Item 4: typical-day -->
                 <div class="detail-accordion-card" data-detail-id="typical-day">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -3747,32 +3756,30 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">A Typical Day on the Khopra Ridge Trail</h3>
-                        <span class="detail-item-badge">Daily Mountain Routine</span>
-                      </div>
+                      <h3 class="detail-accordion-title">A Typical Day on the Khopra Ridge Trail</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>A typical trekking day follows a healthy, natural mountain rhythm aligned with daylight and weather patterns:</p>
-    <p><strong>6:30 AM – Morning Wake-Up & Breakfast:</strong> Wake up to morning mountain views and hot tea. Pack your main duffle bag for your porter, eat breakfast in the dining hall, refill water bottles, and prepare your daypack.</p>
-    <p><strong>7:30 AM – On the Trail:</strong> Begin trekking in the cool morning air. Hiking hours average 4 to 6 hours daily, broken up by short scenic breathers, photography stops, and cultural interactions.</p>
-    <p><strong>12:00 PM – Trailside Lunch:</strong> Stop at a scenic village or teahouse for an hour of rest and a freshly cooked hot lunch.</p>
-    <p><strong>1:00 PM to 3:30 PM – Afternoon Hike & Lodge Arrival:</strong> Complete the afternoon stage to reach your overnight lodge. Settle into your room, change into dry warm clothes, and enjoy hot drinks in the dining hall.</p>
-    <p><strong>6:30 PM – Communal Dinner & Daily Briefing:</strong> Gather around the wood-burning stove for dinner, share stories, play cards, and participate in your guide’s evening briefing and pulse oximeter health check before turning in by 9:00 PM.</p>
+                      <p>A typical trekking day in the Annapurna mountains follows a healthy, rhythmic routine synchronized with daylight hours, designed to optimize physical stamina, mountain photography, and recovery.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Morning Routine (6:30 AM – 7:30 AM)</h4>
+      <p>Wake up around 6:30 AM to crisp mountain air and golden morning sunlight striking the snowy ramparts of Dhaulagiri and Machapuchare. Pack your main duffle bag and place it in the designated staging area for your porter. Gather in the warm dining room for a hearty hot breakfast (porridge, eggs, toast, tea, or coffee). Refill your water bottles with treated water, apply sunscreen, and lace up your boots.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">The Morning Hike (7:30 AM – 11:30 AM)</h4>
+      <p>We hit the trail around 7:30 AM when temperatures are cool and visibility is at its peak. Walking is conducted at an unhurried, rhythmic pace ("Bistari, Bistari" — slow and steady), which allows your cardiovascular system to adapt smoothly to rising elevation. We take brief 5-to-10 minute breaks every hour for hydration, trail snacks (nuts, dried fruits, energy bars), and photography.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Lunch & Afternoon Trek (11:30 AM – 3:30 PM)</h4>
+      <p>Around 11:30 AM or noon, we stop at a scenic teahouse for an hour-long freshly cooked lunch. After relaxing in the midday sun, we continue for an additional 1.5 to 3 hours of walking, arriving at our overnight community lodge or teahouse by 2:30 PM to 3:30 PM. Early arrivals ensure you have ample daylight to wash up, change into dry lodge clothing, and explore the surrounding village or ridge viewpoints.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Evening Hearth & Rest (5:00 PM – 9:00 PM)</h4>
+      <p>As evening chill sets in, gather in the communal dining hall around the heated stove. Your guide conducts a brief pulse oximeter check to monitor your heart rate and blood oxygen levels (SpO2). Enjoy a hot, nourishing dinner around 6:30 PM or 7:00 PM, followed by a briefing from your guide outlining tomorrow's route, distance, elevation profile, and clothing recommendations. Most trekkers retire to bed by 9:00 PM for deep, restorative sleep.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 5: permits -->
+                <!-- Item 5: permits -->
                 <div class="detail-accordion-card" data-detail-id="permits">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -3786,30 +3793,28 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Permits & Official Regulations (ACAP & TIMS)</h3>
-                        <span class="detail-item-badge">All Permits Included</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Permits & Regulations for the Annapurna Region (ACAP & TIMS)</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>The Khopra Ridge Trek lies entirely within the Annapurna Conservation Area. Namaste Hiking Trek handles all permit paperwork, fees, and government approvals prior to your departure:</p>
-    <p><strong>1. Annapurna Conservation Area Permit (ACAP):</strong> Mandatory entry authorization managed by the National Trust for Nature Conservation (NTNC). Cost is NPR 3,000 (~$25 USD) for foreign nationals and NPR 1,000 for SAARC citizens.</p>
-    <p><strong>2. Trekkers' Information Management System (TIMS) / Local Registration:</strong> Mandatory trekker safety tracking permit administered by the Nepal Tourism Board and TAAN.</p>
-    <p><strong>Mandatory Guide Regulation:</strong> As of April 1, 2023, the Nepal Tourism Board requires all international trekkers in the Annapurna region to be accompanied by a licensed mountain guide. Solo, independent trekking without a guide is no longer permitted by law. All our guides are fully government-certified.</p>
+                      <p>Trekking through the Khopra Ridge circuit requires official government permits managed under the authority of the Annapurna Conservation Area Project (ACAP) and the Nepal Tourism Board (NTB).</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">1. Annapurna Conservation Area Project (ACAP) Entry Permit</h4>
+      <p>The entire Khopra Ridge route lies within the Annapurna Conservation Area, Nepal's largest protected biodiversity sanctuary. The ACAP permit fee is NPR 3,000 per person (approx. $25 USD) for international travelers (NPR 1,000 for SAARC citizens). Revenues collected directly fund biodiversity conservation, wildlife anti-poaching patrols, forest preservation, and infrastructure maintenance across the conservation area.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">2. Trekkers' Information Management System (TIMS) Card</h4>
+      <p>A registered green TIMS card issued through an authorized trekking agency is mandatory for all foreign hikers in the Annapurna region (cost approx. NPR 2,000 / $17 USD). The TIMS database records your personal information, emergency contacts, guide details, and intended route, providing critical tracking in the event of regional emergencies or extreme weather events.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">All Permit Logistics Handled by Namaste Hiking Trek</h4>
+      <p>All permit fees, official application forms, passport registrations, and passport photos are completely arranged by our administrative team in Kathmandu and Pokhara prior to your departure. Your lead guide carries and presents the original permits at official ACAP checkpoints along the trail (Birethanti, Nayapul, and Ghorepani).</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 6: acclimatization -->
+                <!-- Item 6: acclimatization -->
                 <div class="detail-accordion-card" data-detail-id="acclimatization">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -3823,31 +3828,33 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Acclimatization Strategy & Altitude Safety (AMS)</h3>
-                        <span class="detail-item-badge">Safety-First Protocol</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Acclimatization Strategy & Altitude Safety for Khayer Lake (4,700m)</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Although lower than Khopra Ridge, the Khopra Ridge Trek reaches <span data-altitude-m="3660">3,660 metres</span> at Khopra Ridge and climbs to approximately <span data-altitude-m="4700">4,700 metres</span> at Khayer Lake. Acute Mountain Sickness (AMS) is a real consideration that requires respect and disciplined staging.</p>
-    <p><strong>Staged Ascent:</strong> Our 15-day itinerary builds elevation progressively: Ghandruk (<span data-altitude-m="1940">1,940 m</span>) → Tadapani (<span data-altitude-m="2630">2,630 m</span>) → Bayeli Kharka (<span data-altitude-m="3460">3,460 m</span>) → Upper Chistibung (<span data-altitude-m="2950">2,950 m</span>) → Khopra Ridge (<span data-altitude-m="3660">3,660 m</span>). The night in Chistibung allows the body to recover before climbing to the ridge.</p>
-    <p><strong>Recognizing AMS Symptoms:</strong> Mild symptoms include headache, mild nausea, dizziness, fatigue, and poor appetite. If symptoms occur, the Golden Rule applies: <em>Never ascend with altitude symptoms</em>. Inform your guide immediately.</p>
-    <p><strong>Twice-Daily Oximeter Checks:</strong> Your guide carries medical fingertip pulse oximeters to record blood oxygen saturation (SpO2) and resting heart rate every morning and evening.</p>
-    <p><strong>Khayer Lake Excursion Safety:</strong> The hike to Khayer Lake (<span data-altitude-m="4700">4,700 m</span>) is an active day hike. If any trekker experiences worsening headache or breathlessness on the approach, our assistant guide will immediately accompany them back down to Khopra Ridge while the rest of the group proceeds safely.</p>
+                      <p>Ascending safely to high Himalayan altitudes requires deliberate pacing, staged elevation gains, and strict adherence to proven physiological principles. Our 15-day Khopra Ridge itinerary has been meticulously formulated by experienced high-altitude guides.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">The Staged Ascent Profile ("Climb High, Sleep Low")</h4>
+      <p>Rather than rushing straight to high altitude, our route incorporates intelligent staging:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Days 3–4:</strong> Moderate elevations at Ghandruk (<span data-altitude-m="1940">1,940 m</span>) and Tadapani (<span data-altitude-m="2630">2,630 m</span>) allow initial physiological adaptation.</li>
+        <li><strong>Days 5–6 (The Acclimatization Pivot):</strong> We climb to Bayeli Kharka (<span data-altitude-m="3460">3,460 m</span>), but then sleep lower at Upper Chistibung (<span data-altitude-m="2950">2,950 m</span>). This follows the golden mountaineering rule of <em>"climb high, sleep low"</em>, prompting the body to produce extra red blood cells while resting in denser oxygen.</li>
+        <li><strong>Days 7–8:</strong> By the time you sleep at Khopra Ridge (<span data-altitude-m="3660">3,660 m</span>), your body is primed. The strenuous push to sacred Khayer Lake (<span data-altitude-m="4700">4,700 m</span>) is an active out-and-back day excursion—you spend only 1 to 2 hours at peak altitude before descending safely back to sleep at <span data-altitude-m="3660">3,660 metres</span>.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Recognizing Acute Mountain Sickness (AMS)</h4>
+      <p>Mild symptoms of AMS can occasionally occur above 3,000 metres and include light frontal headache, mild nausea, loss of appetite, dizziness, or fatigue. Your guide conducts daily pulse oximeter readings and Lake Louise AMS scoring. Never conceal symptoms: mild AMS resolves with rest, extra hydration (4 litres daily), and mild analgesics (ibuprofen/paracetamol).</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Severe Altitude Illness & Emergency Protocols (HAPE & HACE)</h4>
+      <p>High Altitude Pulmonary Edema (HAPE) and High Altitude Cerebral Edema (HACE) are serious, life-threatening conditions characterized by severe breathlessness at rest, persistent coughing with pink sputum, loss of coordination (ataxia), or confusion. In the event of worsening AMS or severe symptoms, the rule is absolute: <strong>immediate descent to lower altitude</strong>. Our guides carry first aid supplies, emergency altitude medications (Diamox / Dexamethasone), and maintain direct radio/mobile links for rapid helicopter evacuation if required.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 7: difficulty -->
+                <!-- Item 7: difficulty -->
                 <div class="detail-accordion-card" data-detail-id="difficulty">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -3861,35 +3868,35 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Difficulty, Fitness & 10-Week Training Regimen</h3>
-                        <span class="detail-item-badge">Moderate to Challenging Grade</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Difficulty & Physical Fitness Required for Khopra Ridge Trek</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>The Khopra Ridge Trek is graded <strong>Moderate to Challenging</strong> overall, with the Day 8 Khayer Lake excursion being <strong>Strenuous</strong>.</p>
-    <p><strong>Physical Demands:</strong> The standard trekking days average 4 to 6 hours on stone staircases, dirt paths, and forest roots. The Khayer Lake day requires 7 to 9 hours of steep moraine hiking at high altitude (<span data-altitude-m="4700">4,700 m</span>). Additionally, the descent from Khopra to Swanta (loss of 1,400m) and Mohare to Tikhedhunga (loss of 1,820m) requires strong knee and quad endurance.</p>
-    <p><strong>Suggested 10-Week Training Plan:</strong></p>
-    <ul>
-      <li><strong>Weeks 1–3:</strong> 30–45 mins of brisk walking, jogging, cycling, or swimming 3 times per week to build cardiovascular baseline.</li>
-      <li><strong>Weeks 4–6:</strong> Add stair climbing or stairmaster workouts (15–30 floors) twice weekly. Incorporate bodyweight squats, lunges, step-ups, and core planks.</li>
-      <li><strong>Weeks 7–8:</strong> Weekend hill hikes of 3 to 5 hours carrying a 5–7 kg daypack. Practice walking downhill with trekking poles.</li>
-      <li><strong>Weeks 9–10:</strong> Consolidate fitness with one long back-to-back weekend hike, then taper down to light walks and stretching in the final week before departure.</li>
-    </ul>
+                      <p>The Khopra Ridge Trek is graded as <strong>Moderate to Challenging</strong>. While the main circuit along ridge trails and villages is within the capabilities of fit hikers, Day 8's high-altitude excursion to Khayer Lake (<span data-altitude-m="4700">4,700 m</span>) is physically demanding and considered strenuous.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Trail Demands & Terrain Characteristics</h4>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Daily Distance & Duration:</strong> Walking averages 4 to 6 hours per day over 8 to 12 km. The Khayer Lake day requires 7 to 9 hours of sustained mountain hiking covering approx. 15 km roundtrip with over 1,000 metres of elevation gain and loss.</li>
+        <li><strong>Stone Staircases:</strong> Like many classic Annapurna routes, sections feature thousands of stone steps, notably the descent from Ulleri to Tikhedhunga (3,280 stone steps). Strong knee stabilizers and trekking poles are essential.</li>
+        <li><strong>Alpine Ridges & Moraines:</strong> Above Upper Chistibung, trails follow narrow grassy mountain ridges and loose rocky scree moraines approaching Khayer Lake. No technical climbing or ropes are required.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Recommended 10-Week Training Regimen</h4>
+      <p>To fully enjoy the trek without extreme muscular fatigue, begin training 8 to 10 weeks prior to departure:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Cardiovascular Endurance (3x weekly, 45–60 mins):</strong> Running, brisk uphill walking, stairmaster, rowing, or cycling to build aerobic capacity.</li>
+        <li><strong>Leg & Core Strength (2x weekly):</strong> Bodyweight squats, walking lunges, calf raises, step-ups on an elevated bench, and planks to strengthen quadriceps, calves, and stabilizing core muscles.</li>
+        <li><strong>Weekend Practice Hikes:</strong> Long outdoor walks (3–5 hours) on hilly trails wearing your broken-in trekking boots and carrying a daypack loaded with 5 to 8 kg of weight.</li>
+      </ul>
                     </div>
                   </div>
                 </div>
 
-                <!-- 8: culture -->
+                <!-- Item 8: culture -->
                 <div class="detail-accordion-card" data-detail-id="culture">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -3903,30 +3910,33 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Cultural Heritage: Gurung & Magar Traditions</h3>
-                        <span class="detail-item-badge">Indigenous Mountain Culture</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Cultural Heritage of Annapurna: Gurung & Magar Traditions</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>The southern Annapurna region is the ancestral homeland of two of Nepal's most celebrated ethnic groups: the Gurung and Magar peoples, renowned worldwide for their bravery as British and Indian Army Gurkha soldiers.</p>
-    <p><strong>Gurung Culture in Ghandruk:</strong> Ghandruk is a living museum of Gurung architectural heritage. Slate-roofed stone homes, carved wooden windows, and stone-paved courtyards reflect centuries of indigenous craftsmanship. In the village museum, you can see traditional weaving looms, brass kitchenware, Gurkha military medals, and authentic ceremonial dresses.</p>
-    <p><strong>Magar Heritage in Swanta & Ulleri:</strong> Magar communities practice a syncretic blend of Hinduism, Buddhism, and ancient shamanic Bon animism. Traditional farming methods, terraced crop rotation, watermills, and pastoral livestock breeding shape daily life.</p>
-    <p><strong>Sacred Khayer Lake Pilgrimage:</strong> Khayer Lake is consecrated to Khayer Barahi. During the annual Janai Purnima festival (August full moon), hundreds of Hindu and Buddhist pilgrims make the arduous trek to the lake to bathe in its holy waters and pray for fertility, health, and family prosperity.</p>
+                      <p>Beyond its sublime alpine vistas, the Khopra Ridge Trek offers an intimate journey into the living heritage, spiritual traditions, and mountain culture of two of Nepal's most celebrated ethnic peoples: the Gurung and Magar communities.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Gurung Heritage in Ghandruk & Landruk</h4>
+      <p>Ghandruk (<span data-altitude-m="1940">1,940 m</span>) is the cultural capital of the Annapurna Gurung people (known natively as <em>Tamu</em>). Renowned worldwide for their valor in the British and Indian Gurkha regiments, the Gurung are hospitable agrarians with rich traditions:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Architecture & Village Life:</strong> Impeccably paved flagstone streets, whitewashed stone homes with slate shingle roofs, and meticulously cultivated terraces of millet, maize, and mustard.</li>
+        <li><strong>Spiritual Practices:</strong> A harmonious blend of Tibetan Buddhism and ancient Shamanistic (Bon) traditions. Village gompas (monasteries) fly colorful prayer flags sending blessings on mountain breezes.</li>
+        <li><strong>Gurung Cultural Museum:</strong> We visit the historic museum in Ghandruk displaying traditional sheep-wool textiles, antique farming implements, brass water vessels, and authentic Gurung ceremonial attire.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Magar Traditions in Swanta & Tikhedhunga</h4>
+      <p>In Swanta, Ulleri, and Tikhedhunga, you are welcomed by the Magar community, one of Nepal's oldest indigenous ethnic groups. Magar culture is celebrated for its warm community spirit, folklore dancing (<em>Maruni</em> and <em>Kauda</em>), traditional watermills, and terraced agricultural mastery.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Spiritual Sanctity of Sacred Khayer Lake</h4>
+      <p>Perched high in an alpine glacial amphitheater at <span data-altitude-m="4700">4,700 metres</span>, Khayer Lake is revered as a sacred high-altitude sanctuary dedicated to Goddess Khayer Barahi. During the sacred full moon of Janai Purnima (August), hundreds of Hindu and Buddhist pilgrims make the arduous barefoot climb to bathe in its icy waters, believing the goddess bestows blessings of health, prosperity, and fertility.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 9: route-alternatives -->
+                <!-- Item 9: route-alternatives -->
                 <div class="detail-accordion-card" data-detail-id="route-alternatives">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -3940,30 +3950,32 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Route Profile & Trail Architecture (Circuit Loop)</h3>
-                        <span class="detail-item-badge">Complete 15-Day Sequence</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Route Architecture & Trail Alternatives for Khopra Ridge</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Our 15-day itinerary is structured as a non-repetitive circuit loop that maximizes landscape variety and minimizes crowds:</p>
-    <p><strong>The Ascent Phase (Days 3–7):</strong> Pokhara → Nayapul → Ghandruk (<span data-altitude-m="1940">1,940 m</span>) → Tadapani (<span data-altitude-m="2630">2,630 m</span>) → Bayeli Kharka (<span data-altitude-m="3460">3,460 m</span>) → Upper Chistibung (<span data-altitude-m="2950">2,950 m</span>) → Khopra Ridge (<span data-altitude-m="3660">3,660 m</span>). This gradual progression allows optimal physiological adaptation.</p>
-    <p><strong>The Alpine Excursion (Day 8):</strong> Khopra Ridge → Sacred Khayer Lake (<span data-altitude-m="4700">4,700 m</span>) → Khopra Ridge. A strenuous 15–16 km roundtrip climb along high mountain moraines.</p>
-    <p><strong>The Descent & Viewpoint Loop (Days 9–13):</strong> Khopra Ridge → Swanta (<span data-altitude-m="2260">2,260 m</span>) → Ghorepani (<span data-altitude-m="2880">2,880 m</span>) → Poon Hill sunrise (<span data-altitude-m="3210">3,210 m</span>) → Mohare Hill (<span data-altitude-m="3300">3,300 m</span>) → Tikhedhunga (<span data-altitude-m="1480">1,480 m</span>) → Nayapul → Pokhara.</p>
+                      <p>Our 15-day itinerary is engineered as a non-repetitive circuit loop that captures the optimal combination of secluded wilderness, cultural immersion, and world-class viewpoints.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">The Circuit Loop Advantage</h4>
+      <p>Unlike standard out-and-back treks that retrace the same trails, our route moves in a dynamic loop:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>The Ascent Arc:</strong> Nayapul → Ghandruk → Tadapani → wilderness branch to Bayeli Kharka → Upper Chistibung → Khopra Ridge.</li>
+        <li><strong>The Apex:</strong> Khopra Ridge (<span data-altitude-m="3660">3,660 m</span>) with day excursion to sacred Khayer Lake (<span data-altitude-m="4700">4,700 m</span>).</li>
+        <li><strong>The Descent & Viewpoint Arc:</strong> Swanta Magar village → Ghorepani → dawn sunrise at Poon Hill (<span data-altitude-m="3210">3,210 m</span>) → ridge traverse to Mohare Hill eco-lodge (<span data-altitude-m="3300">3,300 m</span>) → Ulleri stone staircases → Tikhedhunga → Nayapul.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Popular Variations & Extensions</h4>
+      <p><strong>1. Annapurna Base Camp (ABC) Connection:</strong> From Tadapani or Ghorepani, you can link directly eastward via Chomrong into the Annapurna Sanctuary, combining Khopra Ridge with ABC in an extended 18-to-20 day mega-circuit.<br>
+      <strong>2. Descent to Tatopani Hot Springs:</strong> For trekkers wishing to bypass Poon Hill, an alternative trail descends steeply west from Khopra Ridge into the Kali Gandaki Valley at Tatopani (<span data-altitude-m="1190">1,190 m</span>), where natural geothermal hot springs provide muscle-soothing baths beside the river.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 10: flight-lukla -->
+                <!-- Item 10: flight-lukla -->
                 <div class="detail-accordion-card" data-detail-id="flight-lukla">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -3977,30 +3989,28 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Transportation: Kathmandu to Pokhara & Trailhead Access</h3>
-                        <span class="detail-item-badge">Highway & 4WD Transport</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Transportation: Kathmandu to Pokhara & Trailhead Access</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Unlike the weather-dependent flights to Pokhara, the Khopra Ridge Trek utilizes reliable overland transportation between Kathmandu, Pokhara, and the Annapurna trailheads:</p>
-    <p><strong>Kathmandu – Pokhara Overland:</strong> We utilize modern tourist coaches or private vehicles along the Prithvi Highway (approx. 200 km, 6–7 hours). The drive traverses scenic river valleys, providing a relaxed introduction to rural Nepal.</p>
-    <p><strong>Domestic Flight Upgrade Option:</strong> If you prefer to bypass the road journey, we can easily upgrade your Kathmandu–Pokhara transfers to a 25-minute scenic domestic flight for an additional USD $120–$140 per sector.</p>
-    <p><strong>Trailhead 4WD Jeep Transfers:</strong> On Day 3, we drive from Pokhara to Nayapul and onwards toward the Ghandruk trailhead by private vehicle. On Day 13, our private vehicle picks you up at Nayapul for a comfortable return drive back to Pokhara.</p>
+                      <p>Unlike the Everest region which relies heavily on weather-sensitive mountain flights into Lukla Airport, the Khopra Ridge Trek benefits from dependable overland highway connections and optional domestic flights between Kathmandu and Pokhara.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Overland Scenic Drive (Kathmandu – Pokhara)</h4>
+      <p>Our standard package includes travel between Kathmandu and Pokhara (Days 2 & 14) aboard comfortable tourist coaches or private vehicles along the 200 km Prithvi Highway. The journey takes approximately 6 to 7 hours, winding along the scenic Trishuli and Marsyangdi river gorges past terraced farms, roadside bazaars, and suspension bridges, with regular stops for tea and buffet lunch.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Domestic Flight Upgrade Option</h4>
+      <p>If you prefer to save travel time, you can easily upgrade to a 25-minute domestic flight between Tribhuvan International Airport (Kathmandu) and the new Pokhara International Airport aboard scheduled ATR-72 aircraft (operated by Buddha Air or Yeti Airlines). The flight offers panoramic views of the Langtang, Manaslu, and Annapurna massifs on clear days.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Trailhead Transfers (Pokhara – Nayapul & Return)</h4>
+      <p>Private vehicle road transfers are provided from your Pokhara Lakeside hotel to the trek starting point at Nayapul / Birethanti (approx. 42 km, 1.5 hours drive). At the conclusion of your trek on Day 13, our private vehicle meets your group at Nayapul for the comfortable transfer back to Pokhara.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 11: age-groups -->
+                <!-- Item 11: age-groups -->
                 <div class="detail-accordion-card" data-detail-id="age-groups">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4014,29 +4024,28 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Suitability for Different Age Groups & Fitness Levels</h3>
-                        <span class="detail-item-badge">Flexible Family & Senior Friendly</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Khopra Ridge Trek for Different Age Groups & Fitness Levels</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>The Khopra Ridge Trek is adaptable to a wide range of travelers, from fit solo backpackers to active couples, families with teenagers (ages 12+), and active seniors (up to 70+ with good mobility).</p>
-    <p><strong>Active Seniors:</strong> The route does not involve technical climbing. Seniors with good knees and consistent walking endurance thrive on this trek. Trekking poles and a dedicated personal porter are highly recommended.</p>
-    <p><strong>Khayer Lake as an Optional Excursion:</strong> If any group member feels tired or prefers to rest on Day 8, they can simply spend a relaxing day at Khopra Ridge taking photographs, reading, and enjoying panoramic views of Dhaulagiri without doing the strenuous 4,700m hike.</p>
+                      <p>Because of its moderate trail grades, flexible pacing, and well-managed elevation profile, the Khopra Ridge Trek is adaptable to a wide range of adventurous travelers.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Active Seniors & Mature Trekkers (55 to 70+)</h4>
+      <p>Mature hikers with sound knees, good cardiovascular health, and regular walking habits thrive on this trek. Trekking poles are strongly recommended to cushion knee joints on descents. Our private departures allow complete flexibility to adjust daily hiking speeds to match your natural cadence.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Families with Teenagers (Ages 12+)</h4>
+      <p>The cultural diversity, wildlife spotting (Danphe pheasants, langur monkeys), and manageable walking days make Khopra Ridge an exceptional bonding adventure for families with teenagers. The trek exposes young adults to mountain ecology, sustainable community living, and authentic Himalayan culture.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Flexibility on Day 8 (Khayer Lake Optional)</h4>
+      <p>A major operational advantage of our itinerary is that Day 8's hike to Khayer Lake (<span data-altitude-m="4700">4,700 m</span>) is an optional out-and-back day trip. Any group member feeling fatigued or wishing to avoid the strenuous 7-to-9 hour climb can comfortably remain at the Khopra Ridge community lodge (<span data-altitude-m="3660">3,660 m</span>), soaking in 360-degree panoramas of Dhaulagiri and Annapurna South in complete relaxation.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 12: extend-trip -->
+                <!-- Item 12: extend-trip -->
                 <div class="detail-accordion-card" data-detail-id="extend-trip">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4050,30 +4059,28 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Trip Extension Opportunities (ABC, Chitwan & Pokhara)</h3>
-                        <span class="detail-item-badge">Customizable Add-Ons</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Extend Your Trip After Khopra Ridge (ABC, Poon Hill, Chitwan)</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Because the Khopra Ridge Trek is located in the heart of central Nepal, it links seamlessly with several popular extensions:</p>
-    <p><strong>1. Annapurna Base Camp (ABC) Extension (+4–5 Days):</strong> From Tadapani or Ghorepani, branch east into the Annapurna Sanctuary to stand inside the 4,130m glacial amphitheater facing Annapurna I (<span data-altitude-m="8091">8,091 m</span>).</p>
-    <p><strong>2. Chitwan National Park Wildlife Safari (+3 Days):</strong> Travel from Pokhara to the subtropical lowlands of Chitwan for jungle safaris, spotting one-horned rhinos, Bengal tigers, and gharial crocodiles.</p>
-    <p><strong>3. Pokhara Leisure & Adventure (+1–2 Days):</strong> Extend your stay in Pokhara to enjoy paragliding from Sarangkot, ultra-light flights, zip-lining, yoga retreats, or peaceful boating on Phewa Lake.</p>
+                      <p>Because Pokhara serves as Nepal's outdoor adventure capital, your Khopra Ridge Trek can be effortlessly paired with unforgettable regional extensions before flying home.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">1. Chitwan National Park Wildlife Safari (+3 Days / 2 Nights)</h4>
+      <p>Travel by private tourist vehicle from Pokhara down to the subtropical lowlands of Chitwan National Park. Stay in an eco-safari resort and enjoy jeep safaris, dugout canoe rides along the Rapti River, guided jungle walks, and opportunities to spot endangered greater one-horned rhinoceroses, gharial crocodiles, wild elephants, and Royal Bengal tigers.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">2. Relaxation & Adventure in Pokhara (+1 to 2 Days)</h4>
+      <p>Extend your stay in picturesque Pokhara to enjoy paragliding from Sarangkot, an early morning sunrise boat ride on Phewa Lake, visiting the Peace Pagoda (Shanti Stupa), touring Davis Falls and Gupteshwor Cave, or indulging in post-trek massage and spa treatments in Lakeside.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">3. Kathmandu UNESCO Heritage Exploration (+1 Day)</h4>
+      <p>Spend an extra day in the capital exploring ancient UNESCO World Heritage sites: the great Buddhist stupas of Boudhanath and Swayambhunath (Monkey Temple), the sacred Hindu temple complex of Pashupatinath, and the medieval palace courtyards of Patan Durbar Square.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 13: porter-limit -->
+                <!-- Item 13: porter-limit -->
                 <div class="detail-accordion-card" data-detail-id="porter-limit">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4087,30 +4094,31 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Ethical Porter Welfare & Weight Guidelines</h3>
-                        <span class="detail-item-badge">Strict IPPG Compliance</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Porter Welfare, Weight Limits & Ethical Trekking Standards</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Namaste Hiking Trek is deeply committed to ethical treatment and fair working conditions for our mountain porters:</p>
-    <p><strong>Strict Weight Limit (20–22 kg Max):</strong> We assign 1 porter for every 2 trekkers. Each trekker is allocated a maximum of 10 to 11 kg of luggage in the main duffle bag, ensuring porters never carry excessive loads.</p>
-    <p><strong>Fair Wages & Medical Insurance:</strong> All our porters receive industry-leading wages, comprehensive medical and evacuation insurance, high-altitude winter clothing, boots, and warm lodging allowances.</p>
-    <p><strong>What You Carry:</strong> You carry only a light daypack (5–7 kg) containing your water bottles, rain shell, fleece layer, camera, sun protection, and personal snacks.</p>
+                      <p>At Namaste Hiking Trek, ethical porter care and fair labor standards are non-negotiable core values. Porters are the true foundation of Himalayan trekking, and we ensure their safety, health, and dignity on every expedition.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Strict Weight Limits (20–22 kg Maximum per Porter)</h4>
+      <p>In accordance with guidelines established by the International Porter Protection Group (IPPG) and the Trekking Agencies' Association of Nepal (TAAN):</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li>One porter carries luggage for two trekkers.</li>
+        <li>Each trekker is allocated a maximum of <strong>10 to 11 kg (22–24 lbs)</strong> of personal luggage packed into our complimentary water-resistant expedition duffle bag.</li>
+        <li>Your daypack (containing water, warm layers, camera, sunscreen, rain jacket, and valuables) is carried by you and typically weighs 4 to 6 kg.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Fair Wages, Proper Gear & Emergency Insurance</h4>
+      <p>All our porters receive industry-leading daily wages, nutritious meals matching client standards, warm sleeping accommodations in teahouses, proper cold-weather clothing (boots, thermal layers, warm jackets, gloves, sunglasses), and comprehensive medical and emergency evacuation insurance covering high-altitude illness and injury.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 14: upgrade-heli -->
+                <!-- Item 14: upgrade-heli -->
                 <div class="detail-accordion-card" data-detail-id="upgrade-heli">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4124,29 +4132,32 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Emergency Evacuation & Helicopter Logistics</h3>
-                        <span class="detail-item-badge">Rapid Pokhara Dispatch</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Emergency Evacuation & Helicopter Logistics in Annapurna</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>In the unlikely event of acute altitude illness, serious injury, or medical emergency, the Annapurna region is supported by modern helicopter rescue services based directly at Pokhara Airport.</p>
-    <p><strong>Rapid Response:</strong> Because Pokhara is situated just 15 to 20 minutes flight time from Khopra Ridge and Ghorepani, emergency medical helicopters can be dispatched rapidly during daylight hours.</p>
-    <p><strong>Insurance Requirement:</strong> All clients must possess comprehensive travel insurance that explicitly covers emergency helicopter evacuation up to 5,000 metres. Our 24/7 Kathmandu operations desk coordinates directly with your insurance provider to ensure seamless medical clearance.</p>
+                      <p>Safety is our paramount priority throughout the 15-day Khopra Ridge Trek. While serious emergencies are rare due to our gradual acclimatization schedule, the Annapurna region features an exceptional emergency response infrastructure.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Rapid Helicopter Response from Pokhara Airport</h4>
+      <p>Pokhara International Airport serves as the regional hub for modern high-altitude rescue helicopters (Airbus H125 / AS350 B3e series). In clear weather during daylight hours, emergency rescue helicopters can reach helipads at Khopra Ridge (<span data-altitude-m="3660">3,660 m</span>), Bayeli Kharka, Ghorepani, or Ghandruk in just <strong>15 to 20 minutes</strong> from initial dispatch.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Mandatory Travel Insurance Requirements</h4>
+      <p>All participants on the Khopra Ridge Trek are required to maintain travel insurance that explicitly covers:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li>Emergency medical treatment and hospitalization in Nepal.</li>
+        <li>Helicopter search, rescue, and evacuation up to <strong><span data-altitude-m="5000">5,000 metres (16,400 ft)</span></strong> without altitude restrictions.</li>
+        <li>Repatriation of remains.</li>
+      </ul>
+      <p>Always verify with your insurance provider that "hiking up to 5,000m" is explicitly included in your policy coverage terms without hidden deductibles or pre-authorization delays.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 15: responsible-trekking -->
+                <!-- Item 15: responsible-trekking -->
                 <div class="detail-accordion-card" data-detail-id="responsible-trekking">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4160,30 +4171,34 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Responsible Trekking & Direct Community Support</h3>
-                        <span class="detail-item-badge">Leave No Trace & Eco-Tourism</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Responsible Eco-Trekking & Community Support</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>The Khopra Ridge route was developed under sustainable eco-tourism principles to empower rural communities. Here is how we travel responsibly:</p>
-    <p><strong>Direct Community Revenue:</strong> By staying at community lodges in Bayeli Kharka, Upper Chistibung, Khopra Ridge, and Mohare Hill, your accommodation fees directly fund local schools, health clinics, and renewable energy projects.</p>
-    <p><strong>Zero Single-Use Plastic:</strong> We encourage refilling reusable bottles with filtered or boiled water rather than purchasing plastic mineral water bottles.</p>
-    <p><strong>Leave No Trace:</strong> All non-biodegradable waste is carried out. We stay on established trails to prevent soil erosion and respect local cultural shrines by always walking to the left (clockwise) of chortens and mani stones.</p>
+                      <p>The Khopra Ridge and Mohare Danda trails were pioneered as sustainable eco-trekking corridors designed to distribute tourism revenues directly into underprivileged hill villages.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Supporting Community-Owned Tourism Enterprises</h4>
+      <p>By booking this trek, your travel expenditure directly supports rural grassroots development:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li>Community lodge revenues in Bayeli Kharka, Upper Chistibung, Khopra Danda, and Mohare Hill provide sustainable funding for local secondary schools, computers for digital education, and village health clinics.</li>
+        <li>We purchase locally produced organic vegetables, free-range eggs, potatoes, and goat cheese from family farms along the trail.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Leave No Trace Principles</h4>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Zero Single-Use Plastic:</strong> Bring refillable water bottles and water purification methods. Never discard plastic bottles, snack wrappers, or wet wipes on mountain paths.</li>
+        <li><strong>Pack It In, Pack It Out:</strong> All non-biodegradable waste generated during the high alpine push to Khayer Lake is packed down to lower settlements for responsible disposal.</li>
+        <li><strong>Trail Integrity:</strong> Stay on established stone footpaths to prevent topsoil erosion on fragile alpine slopes. Respect wildlife and refrain from picking alpine wildflowers.</li>
+      </ul>
                     </div>
                   </div>
                 </div>
 
-                <!-- 16: guided-vs-independent -->
+                <!-- Item 16: guided-vs-independent -->
                 <div class="detail-accordion-card" data-detail-id="guided-vs-independent">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4197,29 +4212,30 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Mandatory Guide Regulations & Safety Advantages</h3>
-                        <span class="detail-item-badge">Government-Certified Leaders</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Independent vs. Guided Trekking for Khopra Ridge</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Under Nepal government regulations implemented in 2023, independent trekking without a licensed guide is prohibited across the Annapurna Conservation Area.</p>
-    <p><strong>Safety on Remote Ridgelines:</strong> The trail between Tadapani, Bayeli Kharka, and Khopra Ridge is narrow, remote, and frequently covered in mist. Having an experienced local guide ensures accurate navigation and peace of mind.</p>
-    <p><strong>Khayer Lake Expertise:</strong> Navigating the moraines to Khayer Lake (<span data-altitude-m="4700">4,700 m</span>) requires intimate trail knowledge, weather assessment, and pacing. Your guide carries first aid kits and monitors oxygen saturation twice daily.</p>
+                      <p>Understanding current Nepal government trekking regulations and the practical benefits of professional guidance ensures a seamless mountain journey.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Official Nepal Government Regulations (Mandatory Guides)</h4>
+      <p>Effective April 2023, the Nepal Tourism Board and Ministry of Culture, Tourism and Civil Aviation enacted mandatory regulations prohibiting independent foreign trekking in all national parks and conservation areas, including the Annapurna Conservation Area. Foreign trekkers must be accompanied by a government-licensed guide registered through a legally recognized trekking company.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Why Guided Trekking is Essential on Khopra Ridge</h4>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Navigation on Remote Trails:</strong> Unlike the heavily signposted Poon Hill highway, the trails between Tadapani, Bayeli Kharka, Upper Chistibung, and Khopra Ridge feature narrow forested tracks and unmarked ridgeline junctions. Frequent afternoon mists can severely impair visibility. An experienced guide ensures flawless route finding.</li>
+        <li><strong>Securing Community Lodge Beds:</strong> High community lodges (Bayeli Kharka, Upper Chistibung, Khopra Danda) have limited room capacities (15 to 25 beds). Our team reserves your rooms and meals in advance, preventing situations where independent walkers are turned away due to lack of space.</li>
+        <li><strong>Khayer Lake Mountain Leadership:</strong> The out-and-back trail to Khayer Lake (<span data-altitude-m="4700">4,700 m</span>) traverses rugged lateral moraines and scree. A seasoned guide assesses daily weather, snow conditions, and client stamina, making authoritative turnaround decisions if mountain conditions deteriorate.</li>
+      </ul>
                     </div>
                   </div>
                 </div>
 
-                <!-- 17: emergency-evacuation -->
+                <!-- Item 17: emergency-evacuation -->
                 <div class="detail-accordion-card" data-detail-id="emergency-evacuation">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4233,30 +4249,34 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Emergency Medical Readiness & First Aid Protocols</h3>
-                        <span class="detail-item-badge">Certified Wilderness First Responders</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Wilderness Medical Safety & First Aid Protocols</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Your safety is our top operational priority on the Khopra Ridge Trek:</p>
-    <p><strong>Comprehensive First Aid Kit:</strong> Your guide carries a full wilderness medical kit containing broad-spectrum antibiotics, blister treatments, rehydration salts, anti-inflammatories, and altitude medications (Diamox / Acetazolamide).</p>
-    <p><strong>Twice-Daily Pulse Oximeter Monitoring:</strong> We check your blood oxygen level and pulse rate every morning and evening at the lodge to track acclimatization progression.</p>
-    <p><strong>24/7 Satellite & Mobile Communication:</strong> Our team maintains direct daily contact with our Kathmandu base to track weather forecasts and trail advisories.</p>
+                      <p>Every Namaste Hiking Trek departure operates under rigorous safety, risk-management, and high-altitude emergency protocols developed over decades of Himalayan leadership.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Certified Wilderness First Responders</h4>
+      <p>Your lead trekking guide is certified in Wilderness First Aid (WFA) and high-altitude emergency management by certified Himalayan medical institutions. They possess extensive training in recognizing early indicators of acute mountain sickness (AMS), hypothermia, heat exhaustion, and trauma management.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Expedition Medical Kit & Diagnostic Tools</h4>
+      <p>Our guiding team carries a comprehensive wilderness medical kit containing:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li>Digital pulse oximeters to measure blood oxygen saturation (SpO2) and heart rate twice daily.</li>
+        <li>Prescription altitude medications (Acetazolamide / Diamox) and antiemetics.</li>
+        <li>Broad-spectrum antibiotics, rehydration salts (ORS), and gastrointestinal treatments.</li>
+        <li>Sterile dressings, antiseptic wound washes, blister care (moleskin, second skin), elastic bandages, and emergency splints.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">24/7 Operations Desk Coordination</h4>
+      <p>Our Kathmandu operations headquarters maintains daily communications with your guide via mobile and satellite networks. If emergency descent, clinical evaluation, or helicopter extraction is required, our ground team immediately coordinates logistics with your travel insurance and regional medical providers in Pokhara.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 18: money-exchange -->
+                <!-- Item 18: money-exchange -->
                 <div class="detail-accordion-card" data-detail-id="money-exchange">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4270,30 +4290,35 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Cash Needs, ATMs & Personal Expenses on Trail</h3>
-                        <span class="detail-item-badge">Carry Sufficient NPR Cash</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Cash Needs, ATMs & Personal Expenses on Trail</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>While all major expenses (permits, hotels, lodges, 3 meals per day, transport, and guide/porter fees) are included in your package, you will need cash for personal extras:</p>
-    <p><strong>No ATMs on the Mountain Trail:</strong> The last reliable ATMs are in Pokhara and Nayapul. There are no ATMs in Ghandruk, Tadapani, Khopra Ridge, or Ghorepani. Mountain lodges accept cash only (Nepalese Rupees - NPR). Credit cards are not accepted.</p>
-    <p><strong>Recommended Daily Cash Allowance:</strong> We recommend budgeting approximately NPR 2,000 to 3,000 (~$15–$25 USD) per day to cover personal items such as hot bucket showers (NPR 300–500), device charging (NPR 200–400), Wi-Fi cards, snacks, soft drinks, and beer.</p>
-    <p><strong>Currency Exchange:</strong> Exchange currency into Nepalese Rupees at authorized banks or exchange booths in Kathmandu or Pokhara before departure.</p>
+                      <p>While all essential expedition costs (permits, accommodation, 3 meals per day, ground transport, guide, and porter fees) are fully covered in your booking package, you will need personal local cash for incidental trail expenses.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">No ATMs in High Mountain Settlements</h4>
+      <p>The last reliable ATM facilities before the trek are located in Pokhara (Lakeside) and Nayapul. <strong>There are zero ATMs or banking facilities in Ghandruk, Tadapani, Bayeli Kharka, Khopra Ridge, Swanta, or Ghorepani.</strong> Mountain lodges and local shops accept cash only in Nepalese Rupees (NPR). Credit cards and foreign currencies cannot be used on the trail.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Recommended Daily Cash Budget</h4>
+      <p>We recommend budgeting approximately <strong>NPR 2,500 to 3,500 per person per day ($20 to $30 USD)</strong> in cash for optional personal items:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li>Hot showers at mountain teahouses (NPR 300 to 500 per shower).</li>
+        <li>Electronic device charging (NPR 200 to 400 per device/power bank).</li>
+        <li>Wi-Fi connection access cards (NPR 300 to 500 per 24 hours in select villages).</li>
+        <li>Specialty coffees, soft drinks, beer, snacks, candy bars, or fresh bakery treats in Ghorepani.</li>
+        <li>Handmade souvenirs, wool shawls, or local donations in traditional Gurung/Magar villages.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Currency Exchange Guidance</h4>
+      <p>Exchange major foreign currencies (USD, EUR, GBP, AUD, CAD) into Nepalese Rupees at authorized exchange counters or ATMs in Kathmandu (Thamel) or Pokhara (Lakeside) prior to Day 3. Request smaller denominations (NPR 100, 500, and 1,000 notes), as teahouses in remote high camps often lack change for large sums.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 19: booking-process -->
+                <!-- Item 19: booking-process -->
                 <div class="detail-accordion-card" data-detail-id="booking-process">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4307,30 +4332,31 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Booking Process, Deposit & ACAP Documentation</h3>
-                        <span class="detail-item-badge">Simple 3-Step Booking</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Cost, Deposit & Booking Process for Khopra Ridge Trek</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Booking your 15-day Khopra Ridge Trek with Namaste Hiking Trek is straightforward, transparent, and secure:</p>
-    <p><strong>Step 1: Inquire & Date Selection:</strong> Submit an inquiry through our booking modal, email, or WhatsApp. Our adventure specialist will confirm availability and send a detailed itinerary and quotation.</p>
-    <p><strong>Step 2: Deposit & Documentation:</strong> Secure your booking with a 20% advance deposit via credit card or international bank transfer. Provide a clear copy of your passport (valid for at least 6 months) and a passport-size digital photo for your ACAP permit.</p>
-    <p><strong>Step 3: Final Balance:</strong> The remaining 80% balance is payable upon arrival in Kathmandu during your pre-trek briefing (cash in USD, EUR, GBP, or credit card with 3.5% processing fee).</p>
+                      <p>Booking your 15-day Khopra Ridge Trek with Namaste Hiking Trek is straightforward, transparent, and completely secure.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Simple Step-by-Step Booking Procedure</h4>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Step 1: Inquire & Date Selection:</strong> Reach out via our online inquiry form, direct email, or WhatsApp (+977 980 000 0000). Our trekking specialist will verify departure availability and provide a tailored proposal.</li>
+        <li><strong>Step 2: Confirm with 20% Deposit:</strong> Secure your booking by paying a 20% advance deposit via credit card (Visa, MasterCard, American Express) through our secure payment gateway or international bank wire transfer.</li>
+        <li><strong>Step 3: Documentation:</strong> Provide a scanned copy of your passport (valid for at least 6 months), passport-size photographs (for ACAP/TIMS permits), and international flight arrival details.</li>
+        <li><strong>Step 4: Balance Payment in Nepal:</strong> The remaining 80% balance is payable upon your arrival in Kathmandu during our pre-trek briefing, payable in cash (USD, EUR, GBP, NPR) or by credit card (subject to standard bank processing fees).</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Transparent Pricing Guarantee</h4>
+      <p>We pride ourselves on 100% transparent pricing. There are no hidden fees, local booking surcharges, or surprise equipment charges. All permits, accommodation, domestic overland transfers, licensed guide services, porter luggage transport, and full board meals are included as specified.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 20: tipping-culture -->
+                <!-- Item 20: tipping-culture -->
                 <div class="detail-accordion-card" data-detail-id="tipping-culture">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4344,33 +4370,30 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Tipping Etiquette for Mountain Guides & Porters</h3>
-                        <span class="detail-item-badge">Customary Mountain Gratitude</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Tipping Etiquette for Guides & Porters in Nepal</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Tipping is customary in the Nepalese trekking industry. While tipping is voluntary and reflects your satisfaction with the service provided, it forms an important supplement to your crew’s seasonal income:</p>
-    <p><strong>Customary Tipping Guidelines:</strong> As a general rule of thumb, budget approximately 10% to 15% of your total trek cost for support crew tips.</p>
-    <ul>
-      <li><strong>Trekking Guide:</strong> $10 to $15 USD per day from the group.</li>
-      <li><strong>Porter:</strong> $8 to $10 USD per day from the group.</li>
-    </ul>
-    <p>Tips are customarily pooled and presented in envelopes to your guide and porters on the final evening of the trek in Tikhedhunga or Pokhara.</p>
+                      <p>Tipping is a deeply ingrained and meaningful tradition within Nepal's trekking and mountaineering culture. While tipping is voluntary and reflects your satisfaction with the crew's hard work, care, and hospitality, it forms an important supplement to their seasonal livelihood.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Industry-Standard Tipping Benchmarks</h4>
+      <p>As a practical general benchmark, budget approximately <strong>10% to 15% of your total trek cost</strong> for overall support crew tips. A customary distribution guideline per group is:</p>
+      <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
+        <li><strong>Lead Trekking Guide:</strong> $10 to $15 USD per day from the entire group.</li>
+        <li><strong>Porters & Assistant Crew:</strong> $6 to $10 USD per day per porter from the group.</li>
+      </ul>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">The Tipping Ceremony</h4>
+      <p>Tipping is traditionally presented on the final evening of the trek (Day 13 in Pokhara or Day 12 in Tikhedhunga). Trekkers pool their contributions and place tips into individual cash envelopes for each guide and porter. This evening celebration is a cherished moment of mutual gratitude, singing, and heartfelt farewells before returning to Kathmandu.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- 21: important-notes -->
+                <!-- Item 21: important-notes -->
                 <div class="detail-accordion-card" data-detail-id="important-notes">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
@@ -4384,49 +4407,30 @@
                           </svg>
                         </div>
                       </div>
-                      <div class="detail-header-text">
-                        <h3 class="detail-item-title">Essential Expedition Notes & Weather Contingencies</h3>
-                        <span class="detail-item-badge">Important Travel Notice</span>
-                      </div>
+                      <h3 class="detail-accordion-title">Essential Expedition Notes & Weather Contingencies for Khopra Ridge</h3>
                     </div>
-                    <div class="detail-header-right">
-                      <button class="detail-toggle-btn" aria-label="Toggle section">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </button>
+                    <div class="detail-accordion-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-content-inner">
-                      <p>Please review these essential operational notes for a smooth expedition:</p>
-    <p><strong>Khayer Lake Weather Flexibility:</strong> Reaching sacred Khayer Lake (<span data-altitude-m="4700">4,700 m</span>) requires favorable weather and safe trail conditions. If severe snowfall, thick fog, or freezing rain makes the high ridge hazardous, our guide will make the authoritative safety call to turn back to Khopra Ridge. Client safety is always paramount.</p>
-    <p><strong>Highway Travel Buffer:</strong> The drive between Kathmandu and Pokhara takes 6 to 8 hours depending on highway road conditions and traffic. We recommend booking international departure flights with ample buffer time on Day 15.</p>
-    <p><strong>Electricity & Internet:</strong> Solar electricity and charging are available at community lodges for a modest fee. Mobile cellular connectivity (Ncell and Nepal Telecom) is available in lower villages but can be intermittent at Bayeli Kharka and Khopra Ridge. Embrace the opportunity to disconnect and immerse yourself in the Himalayas!</p>
+                      <p>To ensure your journey through the Annapurna wilderness is smooth, safe, and memorable, please keep these practical operational considerations in mind.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Weather & Safety Decisions on Day 8 (Khayer Lake)</h4>
+      <p>The excursion to sacred Khayer Lake (<span data-altitude-m="4700">4,700 m</span>) is an alpine wilderness ascent across remote terrain. In the event of heavy snowfall, dense whiteout fog, high winds, or signs of altitude illness among group members, your lead guide holds the authoritative professional authority to modify the route or turn back to Khopra Ridge. Client and crew safety will never be compromised.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Free Luggage Storage in Kathmandu & Pokhara</h4>
+      <p>You do not need to carry all your international travel luggage into the mountains. Excess city clothing, formal attire, and non-trekking gear can be stored securely and free of charge in the locked luggage storage rooms of our partner hotels in Kathmandu or Pokhara until your return.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Nepal Tourist Visa Information</h4>
+      <p>Most foreign travelers can easily obtain a Nepal Tourist Visa on arrival at Tribhuvan International Airport (TIA) in Kathmandu. Visa fees (payable in USD cash or credit card) are: 15-day visa ($30 USD), 30-day visa ($50 USD), or 90-day visa ($125 USD). We recommend selecting the 30-day visa to provide ample buffer for your 15-day itinerary and city exploration.</p>
+                      <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Passport Validity & Emergency Contact</h4>
+      <p>Ensure your passport has at least six months of validity beyond your planned departure date from Nepal and contains at least two blank visa pages. Provide Namaste Hiking Trek with emergency contact details (next of kin) and full insurance policy documentation before departure.</p>
                     </div>
                   </div>
                 </div>
 
               </div>
-
-              <!-- Bottom Help Banner -->
-              <div class="details-help-card" style="margin-top: 35px; background: #ffffff; border: 1px solid var(--color-neutral-100); border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-sm); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
-                <div style="display: flex; align-items: center; gap: 16px;">
-                  <div style="width: 44px; height: 44px; border-radius: 50%; background: #e6f7f0; color: #008060; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                      <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-primary-navy); margin-bottom: 2px;">Still have questions about Khopra Ridge & Khayer Lake?</h4>
-                    <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin: 0;">Our local Annapurna trekking specialists are on hand to assist with custom itineraries and gear advice.</p>
-                  </div>
-                </div>
-                <button class="btn btn-primary open-inquiry-btn" style="padding: 10px 22px; font-size: 0.95rem;">Ask a Specialist</button>
-              </div>
-
             </div>
           </section>
 
