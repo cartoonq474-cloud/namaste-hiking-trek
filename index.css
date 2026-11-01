@@ -7188,6 +7188,10 @@ textarea {
   transition: max-height var(--transition-normal) ease-out;
 }
 
+.detail-accordion-card.active .detail-accordion-content {
+  display: block !important;
+}
+
 .detail-accordion-content-inner,
 .detail-content-inner {
   padding: 0 24px 24px 84px; /* offset to align content under title instead of icon */

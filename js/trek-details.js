@@ -436,6 +436,10 @@ function setupReadTracker(trekKey) {
     if (!header || !content) return;
 
     header.addEventListener('click', () => {
+      if (content.style.display === 'none') {
+        content.style.display = '';
+      }
+
       const isExpanded = card.classList.contains('active');
 
       if (isExpanded) {
@@ -454,7 +458,8 @@ function setupReadTracker(trekKey) {
 
         // Expand this card
         card.classList.add('active');
-        content.style.maxHeight = content.scrollHeight + 'px';
+        const height = content.scrollHeight > 0 ? content.scrollHeight : 3000;
+        content.style.maxHeight = height + 'px';
 
         // Mark as read if not already read
         if (!card.classList.contains('read')) {
@@ -472,7 +477,9 @@ function setupReadTracker(trekKey) {
 
     // Make sure initial active content is sized properly (if any starts expanded)
     if (card.classList.contains('active')) {
-      content.style.maxHeight = content.scrollHeight + 'px';
+      if (content.style.display === 'none') content.style.display = '';
+      const height = content.scrollHeight > 0 ? content.scrollHeight : 3000;
+      content.style.maxHeight = height + 'px';
     }
   });
 
@@ -572,9 +579,12 @@ function setupReadTracker(trekKey) {
         const content = card.querySelector('.detail-accordion-content');
         if (!content) return;
 
+        if (content.style.display === 'none') content.style.display = '';
+
         if (isExpanded) {
           card.classList.add('active');
-          content.style.maxHeight = content.scrollHeight + 'px';
+          const height = content.scrollHeight > 0 ? content.scrollHeight : 3000;
+          content.style.maxHeight = height + 'px';
           if (!card.classList.contains('read')) {
             card.classList.add('read');
             const id = card.getAttribute('data-detail-id') || card.id;
