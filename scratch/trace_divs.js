@@ -28,3 +28,4 @@ console.log('Final unclosed opening divs count:', stack.length);
 if (stack.length > 0) {
   stack.forEach(pos => console.log('Unclosed div at pos:', pos, html.slice(pos, pos + 80)));
 }
+

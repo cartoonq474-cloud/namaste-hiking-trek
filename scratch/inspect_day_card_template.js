@@ -7,3 +7,4 @@ const day2Idx = html.indexOf('class="itinerary-card', day1Idx + 50);
 
 console.log('day1Idx:', day1Idx, 'day2Idx:', day2Idx);
 console.log(html.slice(day1Idx - 50, day2Idx));
+

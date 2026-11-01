@@ -1,12 +1,15 @@
 const fs = require('fs');
-
 const ebc = fs.readFileSync('trek/everest-base-camp-trek/index.html', 'utf8');
-const revStart = ebc.indexOf('id="section-reviews"');
-const revEnd = ebc.indexOf('id="section-faqs"');
-const revHtml = ebc.substring(revStart, revEnd);
 
-const ids = [...revHtml.matchAll(/id="([^"]+)"/g)].map(m => m[1]);
-console.log('IDs in Reviews:', ids);
+function printSnippet(startStr, endStr) {
+  const s = ebc.indexOf(startStr);
+  if (s === -1) return "NOT FOUND";
+  const e = ebc.indexOf(endStr, s);
+  return ebc.substring(s, e > -1 ? e : s + 1000);
+}
 
-const btnTargets = [...revHtml.matchAll(/data-target="([^"]+)"/g)].map(m => m[1]);
-console.log('Button data-targets:', btnTargets);
+console.log("=== Dates Mode Toggle Snippet ===");
+console.log(printSnippet('class="dates-mode-toggle"', '</div>'));
+
+console.log("\n=== Packing Counter Snippet ===");
+console.log(printSnippet('gear-checked-count', '</div>'));

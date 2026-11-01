@@ -15,3 +15,4 @@ for (let i = 0; i < lines.length; i++) {
 
 console.log(`Found ${headings.length} headings in costsText:`);
 headings.forEach(h => console.log(h.text));
+

@@ -1,8 +1,11 @@
 const fs = require('fs');
-const html = fs.readFileSync('trek/everest-three-passes-trek/index.html', 'utf8');
+const ebc = fs.readFileSync('trek/everest-base-camp-trek/index.html', 'utf8');
+const abc = fs.readFileSync('trek/annapurna-base-camp-trek/index.html', 'utf8');
 
-const sidebarIdx = html.indexOf('<aside');
-console.log('Sidebar index:', sidebarIdx);
-if (sidebarIdx !== -1) {
-  console.log(html.slice(sidebarIdx, sidebarIdx + 1500));
+function findSidebarContainer(html) {
+  const m = html.match(/class="[^"]*sidebar[^"]*"/g);
+  return m ? [...new Set(m)] : [];
 }
+
+console.log('EBC sidebar classes:', findSidebarContainer(ebc));
+console.log('ABC sidebar classes:', findSidebarContainer(abc));

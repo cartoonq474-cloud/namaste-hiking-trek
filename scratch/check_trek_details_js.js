@@ -1,8 +1,8 @@
 const fs = require('fs');
 const js = fs.readFileSync('js/trek-details.js', 'utf8');
-
-console.log('trek-details.js length:', js.length);
-console.log('Includes itinerary:', js.includes('itinerary'));
-console.log('Includes faq:', js.includes('faq'));
-console.log('Includes detail-accordion:', js.includes('detail-accordion'));
-console.log('Includes itin-expand-all:', js.includes('itin-expand-all'));
+console.log("trek-details.js length:", js.length);
+if (js.includes('detail-accordion') || js.includes('read-progress') || js.includes('detail-card')) {
+  console.log("Found detail accordion code in js/trek-details.js!");
+} else {
+  console.log("Not in trek-details.js. Let us check where detail-accordion is defined across files.");
+}

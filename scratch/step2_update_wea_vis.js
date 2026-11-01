@@ -41,3 +41,4 @@ if (regexMeraPeakHyphen.test(weaJs)) {
 
 fs.writeFileSync('js/weather-visualizer.js', weaJs, 'utf8');
 console.log('Updated js/weather-visualizer.js successfully.');
+

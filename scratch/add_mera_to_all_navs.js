@@ -71,3 +71,4 @@ for (const file of htmlFiles) {
 }
 
 console.log(`Finished: updated header navigation in ${updatedCount} files.`);
+

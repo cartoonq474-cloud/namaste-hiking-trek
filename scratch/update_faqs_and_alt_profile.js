@@ -68,3 +68,4 @@ if (q6AnsStart !== -1) {
 
 fs.writeFileSync('trek/mera-peak-climbing/index.html', html, 'utf8');
 console.log('Successfully updated FAQs and Altitude Profile section');
+

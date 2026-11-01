@@ -1,9 +1,5 @@
 const fs = require('fs');
-const js = fs.readFileSync('js/trek-details.js', 'utf8');
 
-const lines = js.split('\n');
-lines.forEach((l, i) => {
-  if (l.includes('detail-accordion')) {
-    console.log(`Line ${i + 1}: ${l}`);
-  }
-});
+const trekDetailsJs = fs.readFileSync('js/trek-details.js', 'utf8');
+const accIdx = trekDetailsJs.indexOf('card.querySelector(\'.d');
+console.log(trekDetailsJs.slice(accIdx, accIdx + 1200));

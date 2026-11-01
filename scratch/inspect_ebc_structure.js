@@ -1,11 +1,6 @@
 const fs = require('fs');
+const abc = fs.readFileSync('trek/annapurna-base-camp-trek/index.html', 'utf8');
 
-const content = fs.readFileSync('trek/everest-base-camp-trek/index.html', 'utf8');
-console.log('Total characters:', content.length);
-console.log('Lines:', content.split('\n').length);
-
-const sections = [...content.matchAll(/<section[^>]*id=["']([^"']+)["']/g)].map(m => m[1]);
-console.log('Sections with id:', sections);
-
-const articleHeadings = [...content.matchAll(/<h[23][^>]*>(.*?)<\/h[23]>/g)].map(m => m[1].replace(/<[^>]+>/g, '').trim()).slice(0, 30);
-console.log('Sample Headings:', articleHeadings);
+const start = abc.indexOf('id="section-dates"');
+const end = abc.indexOf('</section>', start);
+console.log(abc.substring(start, end));

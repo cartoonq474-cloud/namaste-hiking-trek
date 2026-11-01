@@ -286,7 +286,7 @@ module.exports = {
                       <div class="mega-col">
                         <div class="mega-col-title">Sanctuary & Base Camp</div>
                         <a href="../../trek/annapurna-base-camp-luxury-trek/" class="mega-trek-link" style="font-weight: 700; color: var(--color-copper-orange);"><span>Annapurna Base Camp Luxury Trek</span> <span class="days-badge" style="background: var(--color-copper-orange); color: white;">15 DAYS</span></a>
-                        <a href="../../trek/annapurna-base-camp/" class="mega-trek-link"><span>Annapurna Base Camp Classic</span> <span class="days-badge">9 DAYS</span></a>
+                        <a href="../../trek/annapurna-base-camp-trek/" class="mega-trek-link"><span>Annapurna Base Camp Classic</span> <span class="days-badge">9 DAYS</span></a>
                         <a href="../../trek/annapurna-circuit-trek/" class="mega-trek-link"><span>Annapurna Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
                         <a href="../../trek/tilicho-lake-trek/" class="mega-trek-link"><span>Tilicho Lake & Annapurna Circuit</span> <span class="days-badge">14 DAYS</span></a>
                       </div>

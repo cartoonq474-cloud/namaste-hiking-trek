@@ -4,7 +4,7 @@ const glob = require('path');
 // Check annapurna-circuit-trek, etc.
 const sampleFiles = [
   'trek/annapurna-circuit-trek/index.html',
-  'trek/annapurna-base-camp/index.html',
+  'trek/annapurna-base-camp-trek/index.html',
   'trek/langtang-valley-trek/index.html',
   'trek/manaslu-circuit-trek/index.html'
 ];

@@ -29,5 +29,5 @@ function inspectPageImages(pagePath) {
 }
 
 inspectPageImages('trek/everest-base-camp-trek/index.html');
-inspectPageImages('trek/annapurna-base-camp/index.html');
+inspectPageImages('trek/annapurna-base-camp-trek/index.html');
 inspectPageImages('trek/mardi-himal-trek/index.html');

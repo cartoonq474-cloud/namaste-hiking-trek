@@ -368,3 +368,4 @@ html = html.slice(0, incStart) + newIncludesHtml + html.slice(datesStart);
 
 fs.writeFileSync('trek/mera-peak-climbing/index.html', html, 'utf8');
 console.log('Successfully updated Section 3 (Includes & Exclusions)!');
+

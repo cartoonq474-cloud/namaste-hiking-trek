@@ -1,11 +1,15 @@
 const fs = require('fs');
 
 const ebcHtml = fs.readFileSync('trek/everest-base-camp-trek/index.html', 'utf8');
-const start = ebcHtml.indexOf('id="section-details"');
-const end = ebcHtml.indexOf('id="section-altitude-profile"');
+const detStart = ebcHtml.indexOf('<section id="section-details"');
+const detEnd = ebcHtml.indexOf('</section>', detStart);
 
-const sectionDetails = ebcHtml.substring(start, end);
+console.log('EBC detStart:', detStart, 'detEnd:', detEnd);
+console.log('Length of EBC section-details:', detEnd - detStart);
 
-console.log('EBC section-details length:', sectionDetails.length);
-console.log('First 2500 characters of EBC section-details:\n');
-console.log(sectionDetails.substring(0, 2500));
+// Check sample card from EBC
+const firstCardIdx = ebcHtml.indexOf('class="detail-accordion-card"', detStart);
+const secondCardIdx = ebcHtml.indexOf('class="detail-accordion-card"', firstCardIdx + 50);
+
+console.log('--- Sample EBC Accordion Card ---');
+console.log(ebcHtml.slice(firstCardIdx, secondCardIdx));

@@ -12,3 +12,4 @@ console.log('Dates start snippet:');
 console.log(html.slice(datesStart, datesStart + 400));
 console.log('Packing start snippet:');
 console.log(html.slice(packStart - 100, packStart + 200));
+

@@ -103,7 +103,7 @@ const trekData = [
 
   // 5. Annapurna Base Camp
   {
-    file: 'trek/annapurna-base-camp/index.html',
+    file: 'trek/annapurna-base-camp-trek/index.html',
     main: {
       src: '../../images/treks/annapurna-base-camp/annapurna-base-camp-annapurna-range-sunrise-03.jpg',
       alt: 'Golden Sunrise illuminating the Annapurna Mountain Range at Base Camp'

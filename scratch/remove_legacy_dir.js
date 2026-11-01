@@ -8,3 +8,4 @@ if (fs.existsSync(legacyDir)) {
 } else {
   console.log('Legacy directory already removed');
 }
+

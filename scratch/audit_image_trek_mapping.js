@@ -23,7 +23,7 @@ const imageMap = [
   {
     folder: 'Annapurna Base Camp',
     count: 11,
-    primaryPage: 'trek/annapurna-base-camp/index.html',
+    primaryPage: 'trek/annapurna-base-camp-trek/index.html',
     relatedPages: ['trek/annapurna-sanctuary-trek/index.html', 'trek/poon-hill-abc-trek/index.html']
   },
   {

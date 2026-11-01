@@ -7,3 +7,4 @@ const detStart = html.indexOf('<section id="section-details"');
 console.log('packStart:', packStart, 'detStart:', detStart);
 console.log('Packing snippet:');
 console.log(html.slice(packStart, packStart + 1200));
+

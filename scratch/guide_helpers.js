@@ -61,7 +61,7 @@ function getHeaderNav(relPrefix, activeTab = '') {
                         <a href="${relPrefix}trek/everest-base-camp-trek/" class="mega-trek-link"><span>Everest Base Camp Trek</span> <span class="days-badge">14 DAYS</span></a>
                         <a href="${relPrefix}trek/manaslu-circuit-trek/" class="mega-trek-link"><span>Manaslu Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
                         <a href="${relPrefix}trek/annapurna-circuit-trek/" class="mega-trek-link"><span>Annapurna Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
-                        <a href="${relPrefix}trek/annapurna-base-camp/" class="mega-trek-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">9 DAYS</span></a>
+                        <a href="${relPrefix}trek/annapurna-base-camp-trek/" class="mega-trek-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">9 DAYS</span></a>
                       </div>
                       <div class="mega-col">
                         <div class="mega-col-title">One week Treks</div>
@@ -90,7 +90,7 @@ function getHeaderNav(relPrefix, activeTab = '') {
                     <div class="mega-content-grid">
                       <div class="mega-col">
                         <div class="mega-col-title">Classic Treks</div>
-                        <a href="${relPrefix}trek/annapurna-base-camp/" class="mega-trek-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">9 DAYS</span></a>
+                        <a href="${relPrefix}trek/annapurna-base-camp-trek/" class="mega-trek-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">9 DAYS</span></a>
                         <a href="${relPrefix}trek/annapurna-circuit-trek/" class="mega-trek-link"><span>Annapurna Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
                         <a href="${relPrefix}trek/tilicho-lake-trek/" class="mega-trek-link"><span>Tilicho Lake & Annapurna Circuit</span> <span class="days-badge">14 DAYS</span></a>
                       </div>

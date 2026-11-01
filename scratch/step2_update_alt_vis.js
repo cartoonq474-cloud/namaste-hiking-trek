@@ -44,3 +44,4 @@ if (regexMeraPeakHyphen.test(altJs)) {
 
 fs.writeFileSync('js/altitude-visualizer.js', altJs, 'utf8');
 console.log('Updated js/altitude-visualizer.js successfully.');
+

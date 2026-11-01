@@ -457,3 +457,4 @@ html = html.slice(0, detStart) + newDetailsHtml + html.slice(altProfStart);
 
 fs.writeFileSync('trek/mera-peak-climbing/index.html', html, 'utf8');
 console.log('Successfully updated Section 6 (Trip Details / 21 Accordions)!');
+

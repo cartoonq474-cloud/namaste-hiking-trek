@@ -1,11 +1,13 @@
 const fs = require('fs');
 
-const khopra = fs.readFileSync('trek/khopra-ridge-trek/index.html', 'utf8');
-const s5Khopra = khopra.indexOf('<!-- Section 5: Read Before You Book');
-console.log('--- KHOPRA SECTION 5 START ---');
-console.log(khopra.substring(s5Khopra, s5Khopra + 2000));
+const abc = fs.readFileSync('trek/annapurna-base-camp-trek/index.html', 'utf8');
 
-const ebc = fs.readFileSync('trek/everest-base-camp-trek/index.html', 'utf8');
-const s5Ebc = ebc.indexOf('Read Before You Book') !== -1 ? ebc.indexOf('Read Before You Book') : ebc.indexOf('details-section-container');
-console.log('--- EBC SECTION 5 / DETAILS ---');
-console.log(ebc.substring(s5Ebc - 100, s5Ebc + 2000));
+const faqSec = abc.substring(abc.indexOf('id="section-faqs"'), abc.indexOf('</section>', abc.indexOf('id="section-faqs"')));
+
+const faqAnswers = [...faqSec.matchAll(/class="[^"]*faq-[^"]*answer[^"]*"([^>]*)>/g)].map(m => m[0]);
+console.log('Total FAQ answer tags:', faqAnswers.length);
+console.log('Sample FAQ answer tags:', faqAnswers.slice(0, 5));
+
+const faqInlineStyles = [...faqSec.matchAll(/class="faq-[^"]*"[^>]*style="([^"]*)"/g)].map(m => m[0]);
+console.log('Inline styles in FAQ items:', faqInlineStyles.length);
+if (faqInlineStyles.length) console.log(faqInlineStyles.slice(0, 5));

@@ -21,3 +21,4 @@ content = content.replace(/trek\/mera-peak-climbing-trek\//g, 'trek/mera-peak-cl
 fs.writeFileSync(dstFile, content, 'utf8');
 console.log('Copied and updated index.html to:', dstFile);
 console.log('New file size:', fs.statSync(dstFile).size);
+

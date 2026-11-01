@@ -4,7 +4,7 @@ const files = [
   'trek/mardi-himal-trek/index.html',
   'trek/annapurna-circuit-trek/index.html',
   'trek/tilicho-lake-trek/index.html',
-  'trek/annapurna-base-camp/index.html',
+  'trek/annapurna-base-camp-trek/index.html',
   'trek/gokyo-lakes-trek/index.html',
   'trek/gokyo-lakes-and-cho-la-pass/index.html',
   'trek/manaslu-circuit-trek/index.html',

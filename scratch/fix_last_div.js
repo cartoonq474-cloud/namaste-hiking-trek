@@ -10,3 +10,4 @@ if (regex.test(html)) {
 } else {
   console.error('Regex target not found!');
 }
+

@@ -58,3 +58,4 @@ console.log(`Parsed ${dayObjects.length} days successfully.`);
 dayObjects.forEach(d => {
   console.log(`Day ${d.dayNum}: "${d.rawTitle}" | Elev: "${d.maxElevation || d.overnightElevation}" | Dur: "${d.walkingDuration}" | Paras: ${d.narrative.length}`);
 });
+

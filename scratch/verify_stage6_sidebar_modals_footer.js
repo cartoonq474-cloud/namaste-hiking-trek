@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const abc = fs.readFileSync('trek/annapurna-base-camp/index.html', 'utf8');
+const abc = fs.readFileSync('trek/annapurna-base-camp-trek/index.html', 'utf8');
 
 console.log("=== VERIFYING STAGE 6: SIDEBAR, MODALS, RELATED TREKS & FOOTER ===");
 

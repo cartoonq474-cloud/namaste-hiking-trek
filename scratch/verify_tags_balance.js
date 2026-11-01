@@ -27,3 +27,4 @@ if (allBalanced) {
 } else {
   console.error('\nFAILURE: Found unbalanced tags!');
 }
+

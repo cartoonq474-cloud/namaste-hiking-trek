@@ -267,3 +267,4 @@ if (itinStart !== -1 && incStart !== -1) {
 } else {
   console.error('Could not find markers for Section 2');
 }
+

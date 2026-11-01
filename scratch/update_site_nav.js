@@ -41,3 +41,4 @@ if (fs.existsSync('peak-climbing-nepal/index.html')) {
   fs.writeFileSync('peak-climbing-nepal/index.html', pcHtml, 'utf8');
   console.log(`Updated peak-climbing-nepal/index.html: replaced ${countBefore} occurrences of mera-peak-climbing-trek with mera-peak-climbing.`);
 }
+

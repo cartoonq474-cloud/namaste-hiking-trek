@@ -9,3 +9,4 @@ if (fs.existsSync(dir)) {
 } else {
   console.log('Dir does not exist:', dir);
 }
+

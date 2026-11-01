@@ -13,3 +13,4 @@ for (const p of pages) {
     console.log(`Page "${p}" has tab-everest: ${hasMega}`);
   }
 }
+

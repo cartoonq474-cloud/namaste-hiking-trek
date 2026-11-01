@@ -39,7 +39,7 @@ const pageMapping = [
   },
   // 8. Annapurna Base Camp
   {
-    file: 'trek/annapurna-base-camp/index.html',
+    file: 'trek/annapurna-base-camp-trek/index.html',
     imgDir: 'images/treks/annapurna-base-camp'
   },
   // 9. Gosaikunda Lake Trek

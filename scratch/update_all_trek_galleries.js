@@ -84,7 +84,7 @@ const trekUpdates = [
 
   // 4. Annapurna Base Camp
   {
-    file: 'trek/annapurna-base-camp/index.html',
+    file: 'trek/annapurna-base-camp-trek/index.html',
     title: 'Annapurna Base Camp Trek',
     ogImage: 'https://namastehikingtrek.com/images/treks/annapurna-base-camp/annapurna-base-camp-annapurna-range-sunrise-03.jpg',
     mainImg: {
