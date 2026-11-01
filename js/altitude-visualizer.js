@@ -758,6 +758,25 @@ const trekAltitudeProfiles = {
       { day: "Day 12", spot: "Dharapani", altitudeM: 1860 }
     ]
   },
+  "langtang_gosaikunda": {
+    name: "Langtang Gosaikunda Trek",
+    points: [
+      { day: "Day 1", spot: "Kathmandu", altitudeM: 1400 },
+      { day: "Day 2", spot: "Syabrubesi", altitudeM: 1450 },
+      { day: "Day 3", spot: "Lama Hotel", altitudeM: 2480 },
+      { day: "Day 4", spot: "Langtang Village", altitudeM: 3430 },
+      { day: "Day 5", spot: "Kyanjin Gompa", altitudeM: 3800 },
+      { day: "Day 6", spot: "Tserko Ri / Kyanjin Ri", altitudeM: 4984 },
+      { day: "Day 7", spot: "Lama Hotel", altitudeM: 2480 },
+      { day: "Day 8", spot: "Thulo Syabru", altitudeM: 2210 },
+      { day: "Day 9", spot: "Sing Gompa", altitudeM: 3330 },
+      { day: "Day 10", spot: "Gosaikunda", altitudeM: 4380 },
+      { day: "Day 11", spot: "Laurebina La Pass", altitudeM: 4610 },
+      { day: "Day 12", spot: "Kutumsang", altitudeM: 2470 },
+      { day: "Day 13", spot: "Chisapani", altitudeM: 2165 },
+      { day: "Day 14", spot: "Sundarijal / KTM", altitudeM: 1400 }
+    ]
+  },
   "langtang": {
     name: "Langtang Valley Trek",
     points: [

@@ -84,6 +84,22 @@ export const sampleTreks = [
     reviews: 76
   },
   {
+    id: "langtang-gosaikunda",
+    slug: "langtang-gosaikunda-trek",
+    title: "Langtang Gosaikunda Trek",
+    region: "langtang",
+    subregion: "Rasuwa, Langtang Region",
+    durationDays: 15,
+    difficulty: "moderate-strenuous",
+    maxAltitudeM: 4610,
+    basePriceUSD: 890,
+    summary: "Combines the glacial valley of Langtang, sacred alpine lakes at Gosaikunda (4,380m), and scenic Laurebina Pass (4,610m).",
+    bestSeason: ["spring", "autumn"],
+    image: "../../images/treks/langtang-valley/langtang-trek-trekkers-mountain-view-01.jpg",
+    tags: ["HOLY LAKES", "HIGH PASS", "TAMANG CULTURE"],
+    reviews: 142
+  },
+  {
     id: "langtang-valley",
     slug: "langtang-valley-trek",
     title: "Langtang Valley Trek",
