@@ -301,6 +301,20 @@ const trekDailyWeather = {
     { label: "Day 14 (Kathmandu 1400 m)", min: 5, max: 19 },
     { label: "Day 15 (Departure 1400 m)", min: 5, max: 19 }
   ],
+  "abc": [
+    { label: "Day 1 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 2 (Pokhara 910 m)", min: 8, max: 22 },
+    { label: "Day 3 (Ulleri 1960 m)", min: 4, max: 17 },
+    { label: "Day 4 (Ghorepani 2850 m)", min: 0, max: 13 },
+    { label: "Day 5 (Tadapani 2500 m)", min: 2, max: 15 },
+    { label: "Day 6 (Sinuwa 2360 m)", min: 2, max: 15 },
+    { label: "Day 7 (Deurali 3230 m)", min: -6, max: 8 },
+    { label: "Day 8 (ABC 4130 m)", min: -14, max: 2 },
+    { label: "Day 9 (Bamboo 2310 m)", min: 2, max: 15 },
+    { label: "Day 10 (Pokhara 910 m)", min: 8, max: 22 },
+    { label: "Day 11 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 12 (Departure 1400 m)", min: 5, max: 19 }
+  ],
   "abc_luxury": [
     { label: "Day 1 (Kathmandu 1400 m)", min: 5, max: 19 },
     { label: "Day 2 (Pokhara 820 m)", min: 8, max: 22 },

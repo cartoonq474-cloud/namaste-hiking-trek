@@ -1,0 +1,29 @@
+<!-- Inquiry Modal -->
+  <div id="inquiry-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Inquire About Annapurna Base Camp Trek</h3>
+      <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 20px;">
+        Fill out this quick form and our lead Himalayan guide will respond within 4 hours.
+      </p>
+      <form id="inquiry-form">
+        <div class="filter-grid" style="grid-template-columns: repeat(2, 1fr); margin-bottom: 14px;">
+          <div class="form-group">
+            <label class="form-label" for="inq-name">Full Name *</label>
+            <input type="text" id="inq-name" class="form-input" required placeholder="e.g. Sarah Jenkins">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="inq-email">Email Address *</label>
+            <input type="email" id="inq-email" class="form-input" required placeholder="e.g. sarah@example.com">
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label class="form-label" for="inq-notes">Preferred Start Date & Questions</label>
+          <textarea id="inq-notes" class="form-textarea" rows="3" placeholder="Tell us your target travel month, group size, or helicopter upgrade request..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit Booking Inquiry</button>
+      </form>
+    </div>
+  </div>
+
+  

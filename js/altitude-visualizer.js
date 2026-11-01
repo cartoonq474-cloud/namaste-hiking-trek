@@ -623,19 +623,20 @@ const trekAltitudeProfiles = {
     ]
   },
   "abc": {
-    name: "Annapurna Base Camp Trek",
+    name: "Annapurna Base Camp Trek (12 Days)",
     points: [
-      { day: "Day 1", spot: "Pokhara", altitudeM: 822 },
-      { day: "Day 2", spot: "Ulleri", altitudeM: 2050 },
-      { day: "Day 3", spot: "Ghorepani", altitudeM: 2874 },
-      { day: "Day 4", spot: "Poon Hill / Tadapani", altitudeM: 3210 },
-      { day: "Day 5", spot: "Chhomrong", altitudeM: 2170 },
-      { day: "Day 6", spot: "Himalaya", altitudeM: 2920 },
-      { day: "Day 7", spot: "MBC (Machhapuchhre)", altitudeM: 3700 },
-      { day: "Day 8", spot: "ABC (Annapurna Base Camp)", altitudeM: 4130 },
-      { day: "Day 9", spot: "Bamboo", altitudeM: 2310 },
-      { day: "Day 10", spot: "Jhinu Danda (Hot Springs)", altitudeM: 1780 },
-      { day: "Day 11", spot: "Pokhara", altitudeM: 822 }
+      { day: "Day 1", spot: "Kathmandu (Arrival)", altitudeM: 1400, altitudeFt: 4593 },
+      { day: "Day 2", spot: "Pokhara (Drive)", altitudeM: 910, altitudeFt: 2985 },
+      { day: "Day 3", spot: "Ulleri (via Nayapul)", altitudeM: 1960, altitudeFt: 6430 },
+      { day: "Day 4", spot: "Ghorepani", altitudeM: 2850, altitudeFt: 9350 },
+      { day: "Day 5", spot: "Poon Hill (3,210 m) / Tadapani", altitudeM: 2500, altitudeFt: 8202 },
+      { day: "Day 6", spot: "Sinuwa (via Chhomrong)", altitudeM: 2360, altitudeFt: 7743 },
+      { day: "Day 7", spot: "Deurali", altitudeM: 3230, altitudeFt: 10597 },
+      { day: "Day 8", spot: "Annapurna Base Camp (ABC)", altitudeM: 4130, altitudeFt: 13550 },
+      { day: "Day 9", spot: "Bamboo", altitudeM: 2310, altitudeFt: 7579 },
+      { day: "Day 10", spot: "Jhinu Danda / Pokhara", altitudeM: 910, altitudeFt: 2985 },
+      { day: "Day 11", spot: "Kathmandu (Return)", altitudeM: 1400, altitudeFt: 4593 },
+      { day: "Day 12", spot: "Kathmandu (Departure)", altitudeM: 1400, altitudeFt: 4593 }
     ]
   },
   "abc_luxury": {
