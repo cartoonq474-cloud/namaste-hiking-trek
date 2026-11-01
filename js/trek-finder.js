@@ -4,6 +4,22 @@
 
 export const sampleTreks = [
   {
+    id: "pikey-peak-trek",
+    slug: "pikey-peak-trek",
+    title: "Pikey Peak Trek",
+    region: "everest",
+    subregion: "Lower Everest / Solukhumbu",
+    durationDays: 9,
+    difficulty: "moderate",
+    maxAltitudeM: 4065,
+    basePriceUSD: 890,
+    summary: "Overland Himalayan trek via Dhap to Pikey Peak (4,065m) for sunrise views of Everest, Kanchenjunga & Makalu, visiting ancient Sherpa villages & monasteries.",
+    bestSeason: ["spring", "autumn"],
+    image: "../../images/hero-himalayas.jpg",
+    tags: ["PANORAMA", "SHERPA CULTURE", "OVERLAND", "EASY-MODERATE"],
+    reviews: 68
+  },
+  {
     id: "ebc-trek",
     slug: "everest-base-camp-trek",
     title: "Everest Base Camp Trek",

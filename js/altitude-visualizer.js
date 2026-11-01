@@ -1,4 +1,240 @@
 const trekAltitudeProfiles = {
+  "pikey_peak": {
+    "name": "Pikey Peak Trek (9 Days)",
+    "points": [
+        {
+            "day": "Day 1",
+            "spot": "Kathmandu",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        },
+        {
+            "day": "Day 2",
+            "spot": "Dhap Bazaar",
+            "altitudeM": 2850,
+            "altitudeFt": 9350
+        },
+        {
+            "day": "Day 3",
+            "spot": "Jhapre",
+            "altitudeM": 2920,
+            "altitudeFt": 9580
+        },
+        {
+            "day": "Day 4",
+            "spot": "Pikey Base Camp",
+            "altitudeM": 3640,
+            "altitudeFt": 11942
+        },
+        {
+            "day": "Day 5",
+            "spot": "Pikey Peak (4065m) / Jasmane",
+            "altitudeM": 4065,
+            "altitudeFt": 13337
+        },
+        {
+            "day": "Day 6",
+            "spot": "Junbesi",
+            "altitudeM": 2700,
+            "altitudeFt": 8858
+        },
+        {
+            "day": "Day 7",
+            "spot": "Phaplu",
+            "altitudeM": 2469,
+            "altitudeFt": 8100
+        },
+        {
+            "day": "Day 8",
+            "spot": "Kathmandu",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        },
+        {
+            "day": "Day 9",
+            "spot": "Kathmandu Departure",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        }
+    ]
+},
+  "pikey-peak": {
+    "name": "Pikey Peak Trek (9 Days)",
+    "points": [
+        {
+            "day": "Day 1",
+            "spot": "Kathmandu",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        },
+        {
+            "day": "Day 2",
+            "spot": "Dhap Bazaar",
+            "altitudeM": 2850,
+            "altitudeFt": 9350
+        },
+        {
+            "day": "Day 3",
+            "spot": "Jhapre",
+            "altitudeM": 2920,
+            "altitudeFt": 9580
+        },
+        {
+            "day": "Day 4",
+            "spot": "Pikey Base Camp",
+            "altitudeM": 3640,
+            "altitudeFt": 11942
+        },
+        {
+            "day": "Day 5",
+            "spot": "Pikey Peak (4065m) / Jasmane",
+            "altitudeM": 4065,
+            "altitudeFt": 13337
+        },
+        {
+            "day": "Day 6",
+            "spot": "Junbesi",
+            "altitudeM": 2700,
+            "altitudeFt": 8858
+        },
+        {
+            "day": "Day 7",
+            "spot": "Phaplu",
+            "altitudeM": 2469,
+            "altitudeFt": 8100
+        },
+        {
+            "day": "Day 8",
+            "spot": "Kathmandu",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        },
+        {
+            "day": "Day 9",
+            "spot": "Kathmandu Departure",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        }
+    ]
+},
+  "pikey-peak-trek": {
+    "name": "Pikey Peak Trek (9 Days)",
+    "points": [
+        {
+            "day": "Day 1",
+            "spot": "Kathmandu",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        },
+        {
+            "day": "Day 2",
+            "spot": "Dhap Bazaar",
+            "altitudeM": 2850,
+            "altitudeFt": 9350
+        },
+        {
+            "day": "Day 3",
+            "spot": "Jhapre",
+            "altitudeM": 2920,
+            "altitudeFt": 9580
+        },
+        {
+            "day": "Day 4",
+            "spot": "Pikey Base Camp",
+            "altitudeM": 3640,
+            "altitudeFt": 11942
+        },
+        {
+            "day": "Day 5",
+            "spot": "Pikey Peak (4065m) / Jasmane",
+            "altitudeM": 4065,
+            "altitudeFt": 13337
+        },
+        {
+            "day": "Day 6",
+            "spot": "Junbesi",
+            "altitudeM": 2700,
+            "altitudeFt": 8858
+        },
+        {
+            "day": "Day 7",
+            "spot": "Phaplu",
+            "altitudeM": 2469,
+            "altitudeFt": 8100
+        },
+        {
+            "day": "Day 8",
+            "spot": "Kathmandu",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        },
+        {
+            "day": "Day 9",
+            "spot": "Kathmandu Departure",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        }
+    ]
+},
+  "pikey": {
+    "name": "Pikey Peak Trek (9 Days)",
+    "points": [
+        {
+            "day": "Day 1",
+            "spot": "Kathmandu",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        },
+        {
+            "day": "Day 2",
+            "spot": "Dhap Bazaar",
+            "altitudeM": 2850,
+            "altitudeFt": 9350
+        },
+        {
+            "day": "Day 3",
+            "spot": "Jhapre",
+            "altitudeM": 2920,
+            "altitudeFt": 9580
+        },
+        {
+            "day": "Day 4",
+            "spot": "Pikey Base Camp",
+            "altitudeM": 3640,
+            "altitudeFt": 11942
+        },
+        {
+            "day": "Day 5",
+            "spot": "Pikey Peak (4065m) / Jasmane",
+            "altitudeM": 4065,
+            "altitudeFt": 13337
+        },
+        {
+            "day": "Day 6",
+            "spot": "Junbesi",
+            "altitudeM": 2700,
+            "altitudeFt": 8858
+        },
+        {
+            "day": "Day 7",
+            "spot": "Phaplu",
+            "altitudeM": 2469,
+            "altitudeFt": 8100
+        },
+        {
+            "day": "Day 8",
+            "spot": "Kathmandu",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        },
+        {
+            "day": "Day 9",
+            "spot": "Kathmandu Departure",
+            "altitudeM": 1400,
+            "altitudeFt": 4593
+        }
+    ]
+},
   "mera_peak": {
     "name": "Mera Peak Climbing (18 Days)",
     "points": [

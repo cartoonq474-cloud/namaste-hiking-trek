@@ -49,6 +49,194 @@ const annapurnaDailyData = [
 ];
 
 const trekDailyWeather = {
+  "pikey_peak": [
+    {
+        "label": "Day 1 (Kathmandu 1400m)",
+        "min": 5,
+        "max": 20
+    },
+    {
+        "label": "Day 2 (Dhap Bazaar 2850m)",
+        "min": -2,
+        "max": 14
+    },
+    {
+        "label": "Day 3 (Jhapre 2920m)",
+        "min": -3,
+        "max": 13
+    },
+    {
+        "label": "Day 4 (Pikey Base Camp 3640m)",
+        "min": -8,
+        "max": 8
+    },
+    {
+        "label": "Day 5 (Pikey Peak 4065m / Jasmane)",
+        "min": -12,
+        "max": 5
+    },
+    {
+        "label": "Day 6 (Junbesi 2700m)",
+        "min": -1,
+        "max": 15
+    },
+    {
+        "label": "Day 7 (Phaplu 2469m)",
+        "min": 1,
+        "max": 16
+    },
+    {
+        "label": "Day 8 (Kathmandu 1400m)",
+        "min": 5,
+        "max": 20
+    },
+    {
+        "label": "Day 9 (Departure 1400m)",
+        "min": 5,
+        "max": 20
+    }
+],
+  "pikey-peak": [
+    {
+        "label": "Day 1 (Kathmandu 1400m)",
+        "min": 5,
+        "max": 20
+    },
+    {
+        "label": "Day 2 (Dhap Bazaar 2850m)",
+        "min": -2,
+        "max": 14
+    },
+    {
+        "label": "Day 3 (Jhapre 2920m)",
+        "min": -3,
+        "max": 13
+    },
+    {
+        "label": "Day 4 (Pikey Base Camp 3640m)",
+        "min": -8,
+        "max": 8
+    },
+    {
+        "label": "Day 5 (Pikey Peak 4065m / Jasmane)",
+        "min": -12,
+        "max": 5
+    },
+    {
+        "label": "Day 6 (Junbesi 2700m)",
+        "min": -1,
+        "max": 15
+    },
+    {
+        "label": "Day 7 (Phaplu 2469m)",
+        "min": 1,
+        "max": 16
+    },
+    {
+        "label": "Day 8 (Kathmandu 1400m)",
+        "min": 5,
+        "max": 20
+    },
+    {
+        "label": "Day 9 (Departure 1400m)",
+        "min": 5,
+        "max": 20
+    }
+],
+  "pikey-peak-trek": [
+    {
+        "label": "Day 1 (Kathmandu 1400m)",
+        "min": 5,
+        "max": 20
+    },
+    {
+        "label": "Day 2 (Dhap Bazaar 2850m)",
+        "min": -2,
+        "max": 14
+    },
+    {
+        "label": "Day 3 (Jhapre 2920m)",
+        "min": -3,
+        "max": 13
+    },
+    {
+        "label": "Day 4 (Pikey Base Camp 3640m)",
+        "min": -8,
+        "max": 8
+    },
+    {
+        "label": "Day 5 (Pikey Peak 4065m / Jasmane)",
+        "min": -12,
+        "max": 5
+    },
+    {
+        "label": "Day 6 (Junbesi 2700m)",
+        "min": -1,
+        "max": 15
+    },
+    {
+        "label": "Day 7 (Phaplu 2469m)",
+        "min": 1,
+        "max": 16
+    },
+    {
+        "label": "Day 8 (Kathmandu 1400m)",
+        "min": 5,
+        "max": 20
+    },
+    {
+        "label": "Day 9 (Departure 1400m)",
+        "min": 5,
+        "max": 20
+    }
+],
+  "pikey": [
+    {
+        "label": "Day 1 (Kathmandu 1400m)",
+        "min": 5,
+        "max": 20
+    },
+    {
+        "label": "Day 2 (Dhap Bazaar 2850m)",
+        "min": -2,
+        "max": 14
+    },
+    {
+        "label": "Day 3 (Jhapre 2920m)",
+        "min": -3,
+        "max": 13
+    },
+    {
+        "label": "Day 4 (Pikey Base Camp 3640m)",
+        "min": -8,
+        "max": 8
+    },
+    {
+        "label": "Day 5 (Pikey Peak 4065m / Jasmane)",
+        "min": -12,
+        "max": 5
+    },
+    {
+        "label": "Day 6 (Junbesi 2700m)",
+        "min": -1,
+        "max": 15
+    },
+    {
+        "label": "Day 7 (Phaplu 2469m)",
+        "min": 1,
+        "max": 16
+    },
+    {
+        "label": "Day 8 (Kathmandu 1400m)",
+        "min": 5,
+        "max": 20
+    },
+    {
+        "label": "Day 9 (Departure 1400m)",
+        "min": 5,
+        "max": 20
+    }
+],
   "mera_peak": [
     {
         "label": "Day 1 (Kathmandu 1350m)",
