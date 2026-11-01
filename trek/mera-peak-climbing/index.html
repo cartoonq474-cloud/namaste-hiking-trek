@@ -3689,61 +3689,252 @@
           </section>
 
           <!-- Section 5: Trip Details -->
+                    <!-- Section 5: Trip Details -->
           <section id="section-details" class="trek-detail-section">
+            <style>
+              /* Scoped Mera Peak Guide Hub & Accordion Styles */
+              #section-details .detail-accordion-card {
+                background: #ffffff;
+                border: 1px solid #e2e8f0;
+                border-radius: 16px;
+                overflow: hidden;
+                transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+              }
+              #section-details .detail-accordion-card:hover {
+                border-color: #cbd5e1;
+                box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+                transform: translateY(-2px);
+              }
+              #section-details .detail-accordion-card.active {
+                border-color: #cbd5e1;
+                border-left: 5px solid var(--color-copper-orange, #c05621) !important;
+                box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+                transform: none;
+              }
+              #section-details .detail-accordion-header {
+                padding: 20px 24px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                user-select: none;
+                transition: background 0.2s ease;
+              }
+              #section-details .detail-accordion-card.active .detail-accordion-header {
+                background: #f8fafc;
+                border-bottom: 1px solid #e2e8f0;
+              }
+              #section-details .detail-accordion-header-left {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+              }
+              #section-details .detail-icon-container {
+                position: relative;
+                width: 46px;
+                height: 46px;
+                border-radius: 12px;
+                background: #ecfdf5;
+                color: #059669;
+                border: 1px solid #d1fae5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                transition: all 0.2s ease;
+              }
+              #section-details .detail-accordion-card.active .detail-icon-container {
+                background: #008060;
+                color: #ffffff;
+                border-color: #008060;
+                box-shadow: 0 4px 12px rgba(0, 128, 96, 0.25);
+              }
+              #section-details .detail-accordion-title {
+                font-size: 1.08rem;
+                font-weight: 700;
+                color: var(--color-primary-navy);
+                margin: 0;
+                line-height: 1.35;
+              }
+              #section-details .detail-accordion-chevron {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                border: 1px solid #e2e8f0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-neutral-400);
+                background: #ffffff;
+                transition: all 0.25s ease;
+                flex-shrink: 0;
+              }
+              #section-details .detail-accordion-card.active .detail-accordion-chevron {
+                background: #008060;
+                color: #ffffff;
+                border-color: #008060;
+                transform: rotate(180deg);
+                box-shadow: 0 2px 8px rgba(0, 128, 96, 0.25);
+              }
+              #section-details .detail-accordion-content-inner {
+                padding: 24px 28px 28px 28px;
+                font-size: 0.98rem;
+                line-height: 1.7;
+                color: var(--color-neutral-700);
+              }
+              #section-details .detail-accordion-content-inner p {
+                margin-bottom: 14px;
+                line-height: 1.7;
+              }
+              #section-details .detail-accordion-content-inner ul {
+                margin: 12px 0 18px 0;
+                padding-left: 0;
+                list-style: none;
+              }
+              #section-details .detail-accordion-content-inner ul li {
+                position: relative;
+                padding-left: 24px;
+                margin-bottom: 10px;
+                line-height: 1.6;
+              }
+              #section-details .detail-accordion-content-inner ul li::before {
+                content: "";
+                position: absolute;
+                left: 4px;
+                top: 10px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: var(--color-copper-orange, #c05621);
+              }
+              #section-details .detail-accordion-content-inner h4 {
+                font-size: 1.05rem;
+                color: var(--color-primary-navy);
+                margin: 24px 0 12px 0;
+                font-weight: 700;
+                border-left: 3px solid var(--color-copper-orange);
+                padding-left: 10px;
+              }
+              @media (max-width: 640px) {
+                #section-details .detail-accordion-header {
+                  padding: 16px;
+                }
+                #section-details .detail-accordion-content-inner {
+                  padding: 18px;
+                }
+              }
+            </style>
+
             <div class="details-section-container">
-              <!-- Heading -->
-              <div class="details-title-wrapper">
-                <h2 class="details-main-title">Read Before You Book: Mera Peak Climbing Expedition</h2>
-                <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
+              <!-- Heading with Bulk Action -->
+              <div class="details-title-wrapper" style="margin-bottom: 20px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+                  <h2 class="details-main-title" style="margin: 0;">Read Before You Book: Mera Peak Expedition (21 Detailed Guides)</h2>
+                  <div class="details-bulk-actions">
+                    <button type="button" id="guidesToggleAllBtn" class="guides-bulk-toggle-btn">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                      <span>Expand All</span>
+                    </button>
+                  </div>
+                </div>
+                <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 10px;"></div>
               </div>
 
               <!-- Subtitle Paragraphs -->
               <p class="details-subtitle-text">To help you prepare with absolute confidence for climbing Nepal's premier 6,000-metre trekking peak, we have compiled comprehensive, transparent guidance covering mountaineering difficulty, high camp life, glacier training, gear rental, and safety protocols.</p>
               <p class="details-subtitle-text" style="margin-bottom: 24px;">Have questions about technical preparation, high-altitude gear, or group fitness? Email our alpine specialists or message us directly on <a href="https://wa.me/9779800000000" target="_blank" style="color: #008060; font-weight: 600; text-decoration: underline;">WhatsApp</a> — our certified climbing directors will reply within 24 hours.</p>
 
-              <!-- Interactive Progress Tracker Badge -->
-              <div class="details-progress-wrapper">
-                <div class="details-progress-badge">
-                  <div class="details-progress-ring-box">
-                    <svg width="44" height="44">
-                      <circle class="details-progress-ring-bg" r="18" cx="22" cy="22"></circle>
-                      <circle class="details-progress-ring-bar" r="18" cx="22" cy="22"></circle>
-                    </svg>
+              <!-- Guide Controls: Category Tabs & Real-Time Filter -->
+              <div class="guide-controls-wrapper">
+                <!-- Category Filter Tabs -->
+                <div class="guide-category-pills" id="guideCategoryPills" role="tablist">
+                  <button type="button" class="guide-pill-btn active" data-filter="all" role="tab" aria-selected="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    <span>All Guides</span>
+                    <span class="guide-pill-count">21</span>
+                  </button>
+                  <button type="button" class="guide-pill-btn" data-filter="route" role="tab" aria-selected="false">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"></path></svg>
+                    <span>Route & Mountain</span>
+                    <span class="guide-pill-count">6</span>
+                  </button>
+                  <button type="button" class="guide-pill-btn" data-filter="logistics" role="tab" aria-selected="false">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path d="M3 13h18"></path><circle cx="8" cy="9" r="1.5"></circle></svg>
+                    <span>Logistics & Stay</span>
+                    <span class="guide-pill-count">7</span>
+                  </button>
+                  <button type="button" class="guide-pill-btn" data-filter="health" role="tab" aria-selected="false">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    <span>Health & Safety</span>
+                    <span class="guide-pill-count">4</span>
+                  </button>
+                  <button type="button" class="guide-pill-btn" data-filter="permits" role="tab" aria-selected="false">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                    <span>Permits & Ethics</span>
+                    <span class="guide-pill-count">4</span>
+                  </button>
+                </div>
+
+                <!-- Filter Search Bar & Reading Tracker Progress -->
+                <div class="guide-search-and-progress">
+                  <div class="guide-search-box">
+                    <svg class="guide-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="guideSearchInput" class="guide-search-input" placeholder="Search guides (e.g. crampons, High Camp, DoT permit, Diamox, Wi-Fi, helicopter)..." aria-label="Search Mera Peak expedition guides">
+                    <button type="button" id="guideSearchClearBtn" class="guide-search-clear" style="display: none;" aria-label="Clear search">×</button>
                   </div>
-                  <div class="details-progress-text-box">
-                    <span class="details-progress-count">0/21 read</span>
-                    <span class="details-progress-status">Nice start — keep going</span>
+
+                  <!-- Interactive Progress Tracker Badge -->
+                  <div class="details-progress-wrapper" style="margin: 0;">
+                    <div class="details-progress-badge">
+                      <div class="details-progress-ring-box">
+                        <svg width="44" height="44">
+                          <circle class="details-progress-ring-bg" r="18" cx="22" cy="22"></circle>
+                          <circle class="details-progress-ring-bar" r="18" cx="22" cy="22"></circle>
+                        </svg>
+                      </div>
+                      <div class="details-progress-text-box">
+                        <span class="details-progress-count">0/21 read</span>
+                        <span class="details-progress-status">Nice start — keep going</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <!-- 21 Accordion Cards Grid -->
-              <div class="detail-accordion-list">
-                <!-- 1. Topic: accommodation -->
-                <div class="detail-accordion-card" data-detail-id="accommodation">
+              <!-- 21 Upgraded Guide Accordion Cards -->
+              <div class="details-accordion-wrapper" id="detailsAccordionWrapper" style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px;">
+                <!-- Guide: accommodation -->
+                <div class="detail-accordion-card" id="detail-card-accommodation" data-detail-id="accommodation" data-guide-category="logistics">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <path d="M3 17V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path d="M3 13h18"></path><circle cx="8" cy="9" r="1.5"></circle>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Accommodation: Teahouses vs Mera High Camp</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">EXPEDITION LODGING</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Accommodation: Teahouses vs Mera High Camp</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Accommodation along the Mera Peak expedition transitions through three distinct environments: tourist-standard hotels in Kathmandu, rustic mountain teahouses in the remote Hinku Valley, and rugged alpine camping at Mera High Camp (<span data-altitude-m="5780"><span data-altitude-m="5780">5,780 m</span></span>).</p>
+                      <p class="guide-lead-text">Accommodation along the Mera Peak expedition transitions through three distinct environments: tourist-standard hotels in Kathmandu, rustic mountain teahouses in the remote Hinku Valley, and rugged alpine camping at Mera High Camp (<span data-altitude-m="5780"><span data-altitude-m="5780">5,780 m</span></span>).</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">What to Expect in Kathmandu Hotel Accommodation</h4>
       <p>In Kathmandu, your stay is arranged at a 3-star deluxe hotel in the tourist district of Thamel. You will have a private twin-sharing room with an en-suite bathroom, 24/7 hot shower, free high-speed Wi-Fi, television, air conditioning, and complimentary daily breakfast. Luggage storage is provided free of charge while you are away in the mountains, allowing you to leave city clothes and non-expedition items safely behind.</p>
@@ -3800,36 +3991,48 @@
             </tr>
           </tbody>
         </table>
-      </div>
+                      </div>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">At Mera High Camp (5,780 m), slip your mountaineering boot liners, water bottles, and electronics inside your sleeping bag at night. Sub-zero temperatures on the rocky ridge will freeze them solid by dawn.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 2. Topic: food -->
-                <div class="detail-accordion-card" data-detail-id="food">
+                <!-- Guide: food -->
+                <div class="detail-accordion-card" id="detail-card-food" data-detail-id="food" data-guide-category="logistics">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Expedition Meals & High-Altitude Nutrition</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">EXPEDITION NUTRITION</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Expedition Meals & High-Altitude Nutrition</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>High-altitude mountaineering requires immense physical output, burning between 4,000 and 5,500 calories per day. Our meal package provides nutritious, freshly prepared, high-carbohydrate meals designed to sustain your stamina and support physiological acclimatization.</p>
+                      <p class="guide-lead-text">High-altitude mountaineering requires immense physical output, burning between 4,000 and 5,500 calories per day. Our meal package provides nutritious, freshly prepared, high-carbohydrate meals designed to sustain your stamina and support physiological acclimatization.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">What You Eat on Trek: Breakfast, Lunch & Dinner</h4>
       <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
@@ -3843,35 +4046,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">High Camp & Summit Day Rations</h4>
       <p>At Mera High Camp (<span data-altitude-m="5780"><span data-altitude-m="5780">5,780 m</span></span>), our high-altitude kitchen crew prepares hot, calorie-dense dinners (steamed rice, pasta, mashed potatoes with cheese, hot soups, and warm herbal teas) inside the kitchen tent. At 1:30 AM before summit departure, climbers receive warm porridge, boiled eggs, and hot tea. Each climber is also provided with a summit pocket snack pack containing energy bars, snickers, trail mix, dried fruit, and electrolytes.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">High altitude suppresses appetite while caloric expenditure doubles. Even if you don't feel hungry at Khare and High Camp, prioritize garlic soup, ginger lemon tea, and easily digestible carbs (potatoes, porridge, rice).</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 3. Topic: water -->
-                <div class="detail-accordion-card" data-detail-id="water">
+                <!-- Guide: water -->
+                <div class="detail-accordion-card" id="detail-card-water" data-detail-id="water" data-guide-category="health">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Drinking Water & Hydration Strategy</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">HYDRATION PROTOCOL</span>
+                          <span class="detail-read-time">2 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Drinking Water & Hydration Strategy</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Hydration is your first line of defense against Acute Mountain Sickness (AMS). In the dry, thin air above <span data-altitude-m="4000"><span data-altitude-m="4000">4,000 m</span></span>, rapid respiration causes significant moisture loss. Climbers must consume <strong>4 to 5 litres of fluids every day</strong>.</p>
+                      <p class="guide-lead-text">Hydration is your first line of defense against Acute Mountain Sickness (AMS). In the dry, thin air above <span data-altitude-m="4000"><span data-altitude-m="4000">4,000 m</span></span>, rapid respiration causes significant moisture loss. Climbers must consume <strong>4 to 5 litres of fluids every day</strong>.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Safe Water Protocol: Boiled vs Purified</h4>
       <p>Do not drink untreated tap or stream water anywhere in Nepal. While disposable bottled water is available in lower teahouses, it becomes prohibitively expensive at Khare ($4–$6 per litre) and creates massive plastic trash in the wilderness. We recommend:</p>
@@ -3884,36 +4099,48 @@
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Preventing Water from Freezing on Summit Day</h4>
       <div style="background: #f8fafc; border-left: 4px solid #008060; padding: 14px 18px; border-radius: 4px; margin: 16px 0; font-size: 0.95rem; color: var(--color-neutral-700);">
         <strong>Summit Day Water Rule:</strong> Hydration bladders (CamelBak / Platypus) with flexible plastic tubes WILL freeze solid within 45 minutes above <span data-altitude-m="5800">5,800 m</span>, rendering them completely useless. You MUST carry two 1-litre wide-mouth Nalgene bottles encased in insulated neoprene/foam parkas, plus a 1-litre stainless steel vacuum thermos filled with hot ginger-honey tea. Store bottles upside down in your pack so ice forms at the bottom rather than freezing the lid.
-      </div>
+                      </div>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Carry two wide-mouth 1L Nalgene bottles insulated in thermal jackets. Boiled water is available at teahouses every evening. Never use camelback bladder hoses on summit night—water in the exposed hose freezes instantly.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 4. Topic: difficulty -->
-                <div class="detail-accordion-card" data-detail-id="difficulty">
+                <!-- Guide: difficulty -->
+                <div class="detail-accordion-card" id="detail-card-difficulty" data-detail-id="difficulty" data-guide-category="route">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Expedition Difficulty & Technical Mountaineering Grade</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">MOUNTAINEERING GRADE</span>
+                          <span class="detail-read-time">4 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Expedition Difficulty & Technical Mountaineering Grade</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Mera Peak is officially categorized as an <strong>Alpine Grade PD (Peu Difficile / Slightly Difficult)</strong> mountain. It is often described as the highest officially classified trekking peak in Nepal, yet it requires serious mountaineering discipline, physical grit, and high-altitude endurance.</p>
+                      <p class="guide-lead-text">Mera Peak is officially categorized as an <strong>Alpine Grade PD (Peu Difficile / Slightly Difficult)</strong> mountain. It is often described as the highest officially classified trekking peak in Nepal, yet it requires serious mountaineering discipline, physical grit, and high-altitude endurance.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Non-Technical Glaciated Terrain vs Technical Peaks</h4>
       <p>The standard climbing route follows the northern glacier slopes of Mera Central (<span data-altitude-m="6476"><span data-altitude-m="6476">6,476 m</span></span>). The glacier ascent is primarily a progressive snow walk on moderate 25° to 35° inclines. There are no technical rock climbing pitches, knife-edge corniced ridges, or vertical ice walls like those found on Ama Dablam.</p>
@@ -3955,35 +4182,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Physical Fitness & Cardio Preparation</h4>
       <p>Do not underestimate the physical stamina required. Summit day requires an 8 to 12-hour continuous push at altitudes where every breath yields less than half the oxygen at sea level. We recommend beginning training 12 to 16 weeks in advance, emphasizing stair-climbing with a 10–15 kg weighted backpack, long trail running, cycling, and leg-strengthening exercises (squats, lunges, core stability).</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">While Mera Peak is technically non-vertical (alpine grade PD / French F+), climbing 700 vertical meters at 6,000+ meters on 30–35° ice slopes demands immense mental grit and leg stamina. Train with stairs and a weighted pack for 12 weeks.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 5. Topic: best-time -->
-                <div class="detail-accordion-card" data-detail-id="best-time">
+                <!-- Guide: best-time -->
+                <div class="detail-accordion-card" id="detail-card-best-time" data-detail-id="best-time" data-guide-category="route">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Best Climbing Seasons: Spring vs Autumn</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">CLIMBING SEASONS</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Best Climbing Seasons: Spring vs Autumn</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Climbing Mera Peak is optimal during two defined weather windows: <strong>Spring (March to May)</strong> and <strong>Autumn (September to November)</strong>. Each season provides distinct atmospheric conditions, visual panoramas, and temperature profiles.</p>
+                      <p class="guide-lead-text">Climbing Mera Peak is optimal during two defined weather windows: <strong>Spring (March to May)</strong> and <strong>Autumn (September to November)</strong>. Each season provides distinct atmospheric conditions, visual panoramas, and temperature profiles.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Season Comparison Table</h4>
       <div style="overflow-x: auto; margin: 14px 0;">
@@ -4027,35 +4266,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Which Month Should You Choose?</h4>
       <p>If you prefer warmer temperatures and colorful forested valleys, <strong>April and early May</strong> are exceptional. If your priority is razor-sharp photographic visibility of Mount Everest, Lhotse, Makalu, and Kanchenjunga with the lowest chance of precipitation, <strong>October and early November</strong> offer the highest historical summit success rates.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Autumn (Oct–Nov) features crisp blue skies and stable snow crusts, making it the highest summit success window. Spring (Apr–May) offers warmer days and rhododendron blooms in the lower Hinku, but afternoon clouds build faster.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 6. Topic: permits -->
-                <div class="detail-accordion-card" data-detail-id="permits">
+                <!-- Guide: permits -->
+                <div class="detail-accordion-card" id="detail-card-permits" data-detail-id="permits" data-guide-category="permits">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Climbing Permits & Department of Tourism Royalties</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">PERMITS & ROYALTIES</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Climbing Permits & Department of Tourism Royalties</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Mountaineering in Nepal is strictly regulated by the Ministry of Culture, Tourism and Civil Aviation and the Nepal Mountaineering Association (NMA). <strong>All mandatory government permit fees, liaison fees, and park entry taxes are 100% included in our published package price.</strong></p>
+                      <p class="guide-lead-text">Mountaineering in Nepal is strictly regulated by the Ministry of Culture, Tourism and Civil Aviation and the Nepal Mountaineering Association (NMA). <strong>All mandatory government permit fees, liaison fees, and park entry taxes are 100% included in our published package price.</strong></p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Official Department of Tourism (DoT) Royalty Schedule (Effective September 1, 2025)</h4>
       <p>Under the revised government gazette, climbing peak royalty fees for Mera Peak (<span data-altitude-m="6476"><span data-altitude-m="6476">6,476 m</span></span>) are categorized by season:</p>
@@ -4101,35 +4352,47 @@
         <li><strong>Expedition Garbage Deposit:</strong> A mandatory refundable environmental deposit of USD $500 per team placed with the NMA to ensure all non-biodegradable waste is carried off the mountain.</li>
       </ul>
       <p>Namaste Hiking Trek manages the entire permit issuance process prior to your arrival in Kathmandu. You only need to send us a scanned copy of your passport (valid for at least 6 months), 2 digital passport-style photographs, and your travel insurance certificate.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">The Department of Tourism has updated climbing royalties effective September 1, 2025. Autumn peak royalty is $125 USD per climber (Spring $250 USD). Our all-inclusive package covers all climbing permits, rubbish deposits, and national park entries.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 7. Topic: acclimatization -->
-                <div class="detail-accordion-card" data-detail-id="acclimatization">
+                <!-- Guide: acclimatization -->
+                <div class="detail-accordion-card" id="detail-card-acclimatization" data-detail-id="acclimatization" data-guide-category="health">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Acclimatization Schedule & Altitude Safety Protocol</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">ALTITUDE PHYSIOLOGY</span>
+                          <span class="detail-read-time">4 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Acclimatization Schedule & Altitude Safety Protocol</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Ascending safely past <span data-altitude-m="6000">6,000 m</span> requires disciplined, progressive acclimatization. At the summit of Mera Peak (<span data-altitude-m="6476"><span data-altitude-m="6476">6,476 m</span></span>), the atmospheric pressure drops to approximately 330 mmHg, meaning every breath draws less than 45% of the effective oxygen molecules available at sea level.</p>
+                      <p class="guide-lead-text">Ascending safely past <span data-altitude-m="6000">6,000 m</span> requires disciplined, progressive acclimatization. At the summit of Mera Peak (<span data-altitude-m="6476"><span data-altitude-m="6476">6,476 m</span></span>), the atmospheric pressure drops to approximately 330 mmHg, meaning every breath draws less than 45% of the effective oxygen molecules available at sea level.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Two Dedicated Acclimatization Stays Built into the Route</h4>
       <p>Our 18-day itinerary incorporates two mandatory rest and staging stops designed around the proven physiological principle of "climb high, sleep low":</p>
@@ -4143,35 +4406,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Diamox (Acetazolamide) Guidelines</h4>
       <p>Diamox is a carbonic anhydrase inhibitor that speeds up acclimatization by acidifying the blood and stimulating deeper breathing, especially during sleep. Many climbers begin taking Diamox (125mg to 250mg twice daily) upon crossing Zatrwa La or departing Kothe. Consult your travel doctor prior to departure. Note: Diamox is a sulfonamide; climbers allergic to sulfa drugs must not take it.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">The classic Zatrwa La pass (4,610 m) on Day 4 requires a steady, slow pace ('Bistari, Bistari'). We maintain two full acclimatization days—at Thangnak (4,350 m) and Khare (5,045 m)—ensuring optimal physiological readiness.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 8. Topic: training-skills -->
-                <div class="detail-accordion-card" data-detail-id="training-skills">
+                <!-- Guide: training-skills -->
+                <div class="detail-accordion-card" id="detail-card-training-skills" data-detail-id="training-skills" data-guide-category="route">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Glacier Training School at Khare Base Camp</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">GLACIER TRAINING</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Glacier Training School at Khare Base Camp</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>You do NOT need prior mountaineering or technical ice-climbing experience to join our Mera Peak expedition. <strong>Day 9 at Khare (<span data-altitude-m="5045"><span data-altitude-m="5045">5,045 m</span></span>) is an immersive glacier training day</strong> led by our certified UIAGM/NMA Climbing Sherpas.</p>
+                      <p class="guide-lead-text">You do NOT need prior mountaineering or technical ice-climbing experience to join our Mera Peak expedition. <strong>Day 9 at Khare (<span data-altitude-m="5045"><span data-altitude-m="5045">5,045 m</span></span>) is an immersive glacier training day</strong> led by our certified UIAGM/NMA Climbing Sherpas.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Hands-On Mountaineering Curriculum on Day 9</h4>
       <p>The team walks 45 minutes from Khare to the snout of the Mera Glacier to conduct practice on actual snow and ice slopes:</p>
@@ -4183,35 +4458,47 @@
         <li><strong>Roped-Team Pacing:</strong> Tying into the main climbing line with figure-eight knots, managing rope slack, and walking in rhythm across glaciated crevassed zones.</li>
       </ul>
       <p>Our guides will not depart for High Camp until every climber demonstrates confident, safe handling of their technical gear.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Day 9 at Khare is our dedicated glacier training day. Your IFMGA / NMA guide reviews crampon walking (French and German technique), jumar ascending on fixed rope, figure-of-eight knot tying, and self-arrest with an ice axe.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 9. Topic: summit-day -->
-                <div class="detail-accordion-card" data-detail-id="summit-day">
+                <!-- Guide: summit-day -->
+                <div class="detail-accordion-card" id="detail-card-summit-day" data-detail-id="summit-day" data-guide-category="route">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Summit Day Timeline: Step-by-Step Breakdown</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">SUMMIT TIMELINE</span>
+                          <span class="detail-read-time">4 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Summit Day Timeline: Step-by-Step Breakdown</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Summit day on Mera Peak is the crowning highlight of the expedition. It is a long, physically demanding, yet utterly majestic alpine endeavor requiring approximately <strong>8 to 12 hours roundtrip</strong> between High Camp and the summit.</p>
+                      <p class="guide-lead-text">Summit day on Mera Peak is the crowning highlight of the expedition. It is a long, physically demanding, yet utterly majestic alpine endeavor requiring approximately <strong>8 to 12 hours roundtrip</strong> between High Camp and the summit.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Hour-by-Hour Summit Day Schedule</h4>
       <div style="overflow-x: auto; margin: 14px 0;">
@@ -4265,35 +4552,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Turnaround Times & Safety Decisiveness</h4>
       <p>Our lead Climbing Sherpas enforce a strict <strong>turnaround time of 10:00 AM</strong>. If any team member has not reached the summit by 10:00 AM, they must turn around regardless of proximity to the top. This non-negotiable rule ensures the entire team descends safely through the glacier before afternoon winds, cloud buildup, and softened snow create hazards.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Summit day starts at 2:00 AM in the freezing dark. Layer with merino thermal base, fleece mid-layer, windproof shell, and heavy 800-fill down suit/parka. Keep your summit headlamp battery warm inside your jacket.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 10. Topic: high-camp -->
-                <div class="detail-accordion-card" data-detail-id="high-camp">
+                <!-- Guide: high-camp -->
+                <div class="detail-accordion-card" id="detail-card-high-camp" data-detail-id="high-camp" data-guide-category="route">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M3 21h18M3 7l9-4 9 4v14H3V7z"></path>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2z"></path><path d="m9 10 3-3 3 3"></path><path d="m9 14 3-3 3 3"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Mera High Camp Experience (5,780m)</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">HIGH CAMP 5,780M</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Mera High Camp Experience (5,780m)</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Perched high on a rocky cliffband protruding above the sea of clouds, <strong>Mera High Camp (<span data-altitude-m="5780"><span data-altitude-m="5780">5,780 m</span> / 18,963 ft</span>)</strong> offers one of the most sublime and dramatic camping locations in the world.</p>
+                      <p class="guide-lead-text">Perched high on a rocky cliffband protruding above the sea of clouds, <strong>Mera High Camp (<span data-altitude-m="5780"><span data-altitude-m="5780">5,780 m</span> / 18,963 ft</span>)</strong> offers one of the most sublime and dramatic camping locations in the world.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">The Breathtaking 360-Degree Sunset Vista</h4>
       <p>From your tent door at High Camp, the sunset view across the Khumbu and Barun ranges is unforgettable: the sheer South Face of Lhotse, the soaring pyramid of Mount Everest, the massive granite bulk of Makalu, and the jagged spires of Chamlang and Baruntse glowing in brilliant shades of pink and crimson.</p>
@@ -4306,35 +4605,47 @@
         <li><strong>Food & Drink:</strong> Our high-camp kitchen staff prepares warm noodle and rice dishes, garlic soup, and continuous hot ginger tea inside a protected kitchen mess tent.</li>
         <li><strong>Toilet:</strong> Basic toilet tent or designated rocky shelf behind camp. Practice rigorous hygiene with sanitizing gel.</li>
       </ul>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Mera High Camp sits perched at 5,780 m beneath an impressive rocky buttress. The sunset and sunrise panoramas of Everest, Lhotse, Makalu, and Cho Oyu from here are among the finest in the entire Himalaya.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 11. Topic: weather-conditions -->
-                <div class="detail-accordion-card" data-detail-id="weather-conditions">
+                <!-- Guide: weather-conditions -->
+                <div class="detail-accordion-card" id="detail-card-weather-conditions" data-detail-id="weather-conditions" data-guide-category="route">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path><line x1="8" y1="19" x2="8" y2="21"></line><line x1="8" y1="13" x2="8" y2="15"></line><line x1="16" y1="19" x2="16" y2="21"></line><line x1="16" y1="13" x2="16" y2="15"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="12" y1="15" x2="12" y2="17"></line>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Mountain Weather, Temperatures & Wind Management</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">WEATHER DYNAMICS</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Mountain Weather, Temperatures & Wind Management</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>High Himalayan weather follows a classic daily cycle: clear, cold, calm mornings followed by midday convective cloud buildup, occasional afternoon snow flurries, and freezing clear nights. Understanding and respecting this rhythm is essential for summit success.</p>
+                      <p class="guide-lead-text">High Himalayan weather follows a classic daily cycle: clear, cold, calm mornings followed by midday convective cloud buildup, occasional afternoon snow flurries, and freezing clear nights. Understanding and respecting this rhythm is essential for summit success.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Altitude vs Temperature Reference Table</h4>
       <div style="overflow-x: auto; margin: 14px 0;">
@@ -4384,35 +4695,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Wind Chill & The Crucial Day 12 Contingency Buffer</h4>
       <p>On the upper glacier, wind is the single most critical environmental hazard. A 30 km/h wind at -15°C produces an effective wind chill temperature of -28°C, which rapidly increases frostbite risk on exposed cheeks, fingers, and toes. If summit winds exceed 40 km/h or a whiteout occurs, the expedition leader will defer the climb to <strong>Day 12 (Field Contingency Day)</strong>.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Wind is the defining factor on Mera Peak. While temperatures hover between -15°C and -25°C at the summit, 40 km/h wind gusts can drive wind-chill down to -35°C. Day 12 is kept as an essential weather contingency day.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 12. Topic: flights -->
-                <div class="detail-accordion-card" data-detail-id="flights">
+                <!-- Guide: flights -->
+                <div class="detail-accordion-card" id="detail-card-flights" data-detail-id="flights" data-guide-category="logistics">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Lukla Flight Operations: Kathmandu vs Ramechhap</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">LUKLA FLIGHTS</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Lukla Flight Operations: Kathmandu vs Ramechhap</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>The flight into Tenzing-Hillary Airport in Lukla (<span data-altitude-m="2850"><span data-altitude-m="2850">2,850 m</span></span>) is one of the most thrilling mountain aviation experiences in the world. Operating short-takeoff-and-landing (STOL) aircraft (Twin Otter / Dornier), pilots navigate mountain valleys under strict Visual Flight Rules (VFR).</p>
+                      <p class="guide-lead-text">The flight into Tenzing-Hillary Airport in Lukla (<span data-altitude-m="2850"><span data-altitude-m="2850">2,850 m</span></span>) is one of the most thrilling mountain aviation experiences in the world. Operating short-takeoff-and-landing (STOL) aircraft (Twin Otter / Dornier), pilots navigate mountain valleys under strict Visual Flight Rules (VFR).</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">The Seasonal Manthali / Ramechhap Airport Shift</h4>
       <p>During peak trekking seasons (March–May and October–November), the Civil Aviation Authority of Nepal (CAAN) routes all commercial passenger flights to Lukla through <strong>Manthali Airport in Ramechhap</strong> instead of Kathmandu Tribhuvan International Airport (TIA). This minimizes airspace holding delays over the capital.</p>
@@ -4422,35 +4745,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Baggage Weight Allowance</h4>
       <p>The standard domestic airline baggage allowance for Lukla flights is strictly <strong>15 kg (33 lbs) per person</strong> total (typically 10 kg in the main duffel bag and 5 kg in your carry-on daypack). Excess baggage is charged at approximately NPR 200–300 ($2–$3 USD) per kilogram, subject to strict aircraft weight balancing. Extra non-trekking items can be stored at our Kathmandu hotel for free.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">During peak seasons (Oct–Nov & Apr–May), the Civil Aviation Authority of Nepal reroutes Lukla flights through Ramechhap (Manthali Airport). We provide private vehicle transfers between Kathmandu and Ramechhap.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 13. Topic: insurance -->
-                <div class="detail-accordion-card" data-detail-id="insurance">
+                <!-- Guide: insurance -->
+                <div class="detail-accordion-card" id="detail-card-insurance" data-detail-id="insurance" data-guide-category="health">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Mandatory Mountaineering & Rescue Insurance</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">MANDATORY INSURANCE</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Mandatory Mountaineering & Rescue Insurance</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Because Mera Peak involves technical climbing equipment (crampons, ice axes, fixed ropes) and reaches an altitude of <span data-altitude-m="6476"><span data-altitude-m="6476">6,476 m</span></span>, <strong>standard travel insurance policies will NOT cover this expedition</strong>. Standard holiday policies almost universally exclude activities above <span data-altitude-m="3000">3,000 m</span> or any activity using mountaineering equipment.</p>
+                      <p class="guide-lead-text">Because Mera Peak involves technical climbing equipment (crampons, ice axes, fixed ropes) and reaches an altitude of <span data-altitude-m="6476"><span data-altitude-m="6476">6,476 m</span></span>, <strong>standard travel insurance policies will NOT cover this expedition</strong>. Standard holiday policies almost universally exclude activities above <span data-altitude-m="3000">3,000 m</span> or any activity using mountaineering equipment.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Mandatory Policy Coverage Checklist</h4>
       <p>Your travel insurance policy must explicitly state coverage for:</p>
@@ -4463,35 +4798,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Recommended International Insurers</h4>
       <p>Trusted international insurance providers offering reliable <span data-altitude-m="6500">6,500 m</span> mountaineering riders include: <strong>Global Rescue</strong> (industry benchmark for medical extraction), <strong>Ripcord Rescue Travel Insurance</strong>, <strong>World Nomads</strong> (Explorer Plan with technical mountaineering upgrade), <strong>Allianz Global Assistance</strong> (with adventure sports endorsement), and the <strong>British Mountaineering Council (BMC)</strong> for UK residents.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Standard travel insurance will NOT cover climbing above 6,000 m. Ensure your policy explicitly mentions mountaineering with ropes/crampons up to 6,500 m and emergency helicopter evacuation with cashless billing (e.g., Global Rescue, Ripcord).</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 14. Topic: emergency-safety -->
-                <div class="detail-accordion-card" data-detail-id="emergency-safety">
+                <!-- Guide: emergency-safety -->
+                <div class="detail-accordion-card" id="detail-card-emergency-safety" data-detail-id="emergency-safety" data-guide-category="health">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path><circle cx="12" cy="12" r="4"></circle>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Emergency Medical Equipment & Rescue Protocols</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">MEDICAL & RESCUE</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Emergency Medical Equipment & Rescue Protocols</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>At Namaste Hiking Trek, client and crew safety is our paramount priority. We maintain exhaustive medical and emergency response infrastructure to manage any alpine crisis swiftly and decisively.</p>
+                      <p class="guide-lead-text">At Namaste Hiking Trek, client and crew safety is our paramount priority. We maintain exhaustive medical and emergency response infrastructure to manage any alpine crisis swiftly and decisively.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Comprehensive Group Medical Safety Kit</h4>
       <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
@@ -4503,35 +4850,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Satellite Communications & Emergency Evacuation Protocol</h4>
       <p>Our climbing Sherpas carry satellite messengers (Garmin inReach / Iridium satellite phones) providing real-time text and SOS tracking directly to our 24/7 Kathmandu operations room. If helicopter evacuation is required, our office coordinates directly with your insurance emergency desk to dispatch a rescue helicopter immediately to helipads at Khare (<span data-altitude-m="5045"><span data-altitude-m="5045">5,045 m</span></span>), Thangnak, or Kothe.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Our lead climbing guides carry comprehensive medical kits, high-altitude Diamox, pulse oximeters, and satellite communication devices. In the rare event of severe AMS, HAPE, or HACE, immediate descent to Kothe and helicopter dispatch are initiated.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 15. Topic: gear-rental -->
-                <div class="detail-accordion-card" data-detail-id="gear-rental">
+                <!-- Guide: gear-rental -->
+                <div class="detail-accordion-card" id="detail-card-gear-rental" data-detail-id="gear-rental" data-guide-category="logistics">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Technical Gear Rental Guide: Kathmandu & Khare</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">EQUIPMENT RENTAL</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Technical Gear Rental Guide: Kathmandu & Khare</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Purchasing full <span data-altitude-m="6000">6,000 m</span> mountaineering equipment can cost upwards of $2,500 USD. If you are climbing Mera Peak as your first Himalayan summit, renting gear in Kathmandu or at Khare Base Camp is a practical, cost-effective alternative.</p>
+                      <p class="guide-lead-text">Purchasing full <span data-altitude-m="6000">6,000 m</span> mountaineering equipment can cost upwards of $2,500 USD. If you are climbing Mera Peak as your first Himalayan summit, renting gear in Kathmandu or at Khare Base Camp is a practical, cost-effective alternative.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Itemized Rental Price Guide</h4>
       <div style="overflow-x: auto; margin: 14px 0;">
@@ -4593,35 +4952,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Where to Rent: Kathmandu vs Khare Base Camp</h4>
       <p>We strongly recommend renting your core technical equipment in Kathmandu on <strong>Day 2</strong>. Your climbing guide will accompany you to trusted gear shops in Thamel to physically try on double boots with your thick summit socks, test crampon bindings, and ensure everything fits securely. Khare has several gear rental shops with climbing hardware, but sizes can be limited during peak climbing weeks.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Khare has well-stocked gear rental shops where you can hire double plastic/synthetic mountaineering boots (La Sportiva Olympus Mons / Scarpa Phantom 6000), crampons, harnesses, and ice axes if you prefer not to carry them from Kathmandu.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 16. Topic: packing-tips -->
-                <div class="detail-accordion-card" data-detail-id="packing-tips">
+                <!-- Guide: packing-tips -->
+                <div class="detail-accordion-card" id="detail-card-packing-tips" data-detail-id="packing-tips" data-guide-category="logistics">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" x2="16" y1="6" y2="6"></line><line x1="16" x2="16" y1="14" y2="14"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Packing & Layering Masterclass for High Altitude</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">GEAR & LAYERING</span>
+                          <span class="detail-read-time">4 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Packing & Layering Masterclass for High Altitude</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Surviving and thriving in sub-zero alpine conditions is entirely about intelligent moisture and thermal management. The secret is wearing multiple thin, high-performance layers rather than one heavy, inflexible coat.</p>
+                      <p class="guide-lead-text">Surviving and thriving in sub-zero alpine conditions is entirely about intelligent moisture and thermal management. The secret is wearing multiple thin, high-performance layers rather than one heavy, inflexible coat.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">The Four-Layer Mountaineering System</h4>
       <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
@@ -4633,35 +5004,47 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Protecting Extremities: Hands, Feet & Eyes</h4>
       <p>Frostbite occurs fastest in peripheral extremities. Bring three glove layers: thin liner gloves, windproof mid-weight mountaineering gloves, and heavy waterproof down summit mittens. For footwear, pack 4 pairs of merino trekking socks, 2 pairs of thick cushioned summit socks, and neoprene over-gaiters. For eye protection, <strong>Category 4 UV glacier glasses with side shields</strong> are mandatory to avoid snow blindness; pack a pair of anti-fog ski goggles for windy summit ridges.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Strictly adhere to the 15 kg flight baggage allowance. Pack heavy mountaineering boots in your carry-on or wear them on the Lukla flight if you are close to the limit.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 17. Topic: cultural-etiquette -->
-                <div class="detail-accordion-card" data-detail-id="cultural-etiquette">
+                <!-- Guide: cultural-etiquette -->
+                <div class="detail-accordion-card" id="detail-card-cultural-etiquette" data-detail-id="cultural-etiquette" data-guide-category="permits">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Sherpa Culture, Buddhist Customs & Trail Etiquette</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">SHERPA CULTURE</span>
+                          <span class="detail-read-time">2 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Sherpa Culture, Buddhist Customs & Trail Etiquette</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>The high valleys of eastern Nepal are not merely a playground for mountaineers; they are the sacred ancestral homeland of the Sherpa and Rai communities, steeped in centuries of Tibetan Buddhist spiritual traditions.</p>
+                      <p class="guide-lead-text">The high valleys of eastern Nepal are not merely a playground for mountaineers; they are the sacred ancestral homeland of the Sherpa and Rai communities, steeped in centuries of Tibetan Buddhist spiritual traditions.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">The Mountain as a Sacred Deity & The Puja Ceremony</h4>
       <p>To the Sherpa people, mountains are living deities (Mera Peak is revered as an abode of mountain spirits). Before any team sets foot on the upper glacier to climb, our Sherpa guides hold a traditional <strong>Puja ceremony</strong> at Khare or High Camp. Juniper incense is burned, Buddhist prayer flags (lungta) are strung out in five auspicious colors (blue, white, red, green, yellow), and prayers are chanted to ask the mountain for permission, safe passage, and good fortune. Participating respectfully in this ceremony is an unforgettable spiritual milestone.</p>
@@ -4672,35 +5055,47 @@
         <li><strong>Photography:</strong> Always ask politely with a warm "Namaste" before photographing local villagers, monks, or elders.</li>
         <li><strong>Luggage & Pack Animals:</strong> When yaks, dzo, or mule trains pass on the trail, always step to the mountain (cliff) side of the trail, never to the precipice side, to avoid being knocked off by wide loads.</li>
       </ul>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Always pass Buddhist chortens, mani stone walls, and prayer flag shrines clockwise (keeping them to your right). At Khare, our Sherpa team conducts a traditional Puja ceremony to seek blessings from the mountain deities for a safe passage.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 18. Topic: connectivity -->
-                <div class="detail-accordion-card" data-detail-id="connectivity">
+                <!-- Guide: connectivity -->
+                <div class="detail-accordion-card" id="detail-card-connectivity" data-detail-id="connectivity" data-guide-category="logistics">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Mobile Connectivity, Wi-Fi & Device Charging</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">WI-FI & POWER</span>
+                          <span class="detail-read-time">2 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Mobile Connectivity, Wi-Fi & Device Charging</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>The Hinku Valley is significantly more isolated than the popular Khumbu highway. Staying connected requires realistic expectations and proper battery management.</p>
+                      <p class="guide-lead-text">The Hinku Valley is significantly more isolated than the popular Khumbu highway. Staying connected requires realistic expectations and proper battery management.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Mobile SIM Cards & Cellular Signals</h4>
       <p>You can purchase an <strong>Ncell</strong> or <strong>Nepal Telecom (NTC)</strong> prepaid SIM card with a 4G data bundle in Kathmandu ($10–$15 USD for 20–30 GB). 4G signal is reliable in Lukla and Chutanga, and intermittent at Kothe. Cellular reception drops off completely between Thangnak and Khare.</p>
@@ -4708,35 +5103,47 @@
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Teahouse Satellite Wi-Fi & Solar Charging Fees</h4>
       <p>At Khare (<span data-altitude-m="5045"><span data-altitude-m="5045">5,045 m</span></span>), select lodges offer satellite Wi-Fi scratch cards (Everest Link / AirJaldi) costing NPR 700 to 1,200 ($6–$10 USD) for 24-hour access. Note that heavy cloud cover, high winds, or solar battery limitations can cause outages.</p>
       <p>Because lodges rely entirely on rooftop solar arrays, electrical outlets are only available in the central dining room. Teahouse owners charge a fee to recharge devices: approximately $3 to $5 USD per smartphone or camera battery, and $5 to $8 USD for large power banks. Bring a high-capacity 20,000 to 30,000 mAh cold-resistant power bank to minimize charging costs.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Nepal Telecom (NTC) has cellular coverage in Lukla, Thuli Kharka, and parts of Kothe, but signal drops in Thangnak and Khare. Some lodges in Khare offer satellite Wi-Fi scratch cards (Everest Link / Air网) for purchase.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 19. Topic: money-budget -->
-                <div class="detail-accordion-card" data-detail-id="money-budget">
+                <!-- Guide: money-budget -->
+                <div class="detail-accordion-card" id="detail-card-money-budget" data-detail-id="money-budget" data-guide-category="logistics">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Currency, Cash Requirements & Personal Budgeting</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">BUDGET & CASH</span>
+                          <span class="detail-read-time">3 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Currency, Cash Requirements & Personal Budgeting</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>The mountain economy of the Hinku Valley operates strictly on physical cash. Credit cards, digital payment apps, and foreign traveler's cheques are NOT accepted anywhere beyond Lukla.</p>
+                      <p class="guide-lead-text">The mountain economy of the Hinku Valley operates strictly on physical cash. Credit cards, digital payment apps, and foreign traveler's cheques are NOT accepted anywhere beyond Lukla.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">No ATMs Beyond Lukla</h4>
       <p>While Lukla has two ATM machines, they are notoriously unreliable, frequently running out of bank notes or suffering power outages during storms. <strong>You MUST withdraw all personal cash in Kathmandu in Nepali Rupees (NPR) before departure.</strong></p>
@@ -4780,36 +5187,48 @@
             </tr>
           </tbody>
         </table>
-      </div>
+                      </div>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">There are NO ATMs in the Hinku Valley past Lukla. Withdraw NPR 35,000 to NPR 50,000 in Kathmandu to cover personal hot showers, battery charging, snacks, and customary tips for our hardworking climbing Sherpa and porters.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 20. Topic: porter-welfare -->
-                <div class="detail-accordion-card" data-detail-id="porter-welfare">
+                <!-- Guide: porter-welfare -->
+                <div class="detail-accordion-card" id="detail-card-porter-welfare" data-detail-id="porter-welfare" data-guide-category="permits">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                           <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Porter Welfare & Ethical Fair-Trade Standards</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">PORTER WELFARE</span>
+                          <span class="detail-read-time">2 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Porter Welfare & Ethical Fair-Trade Standards</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Mountain porters and kitchen crews carry the physical weight of every Himalayan expedition. Namaste Hiking Trek is an ethical expedition operator strictly committed to the guidelines established by the <strong>International Porter Protection Group (IPPG)</strong> and the <strong>Trekking Agencies' Association of Nepal (TAAN)</strong>.</p>
+                      <p class="guide-lead-text">Mountain porters and kitchen crews carry the physical weight of every Himalayan expedition. Namaste Hiking Trek is an ethical expedition operator strictly committed to the guidelines established by the <strong>International Porter Protection Group (IPPG)</strong> and the <strong>Trekking Agencies' Association of Nepal (TAAN)</strong>.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Our Five Ethical Porter Commitments</h4>
       <ul style="margin: 8px 0 14px 20px; line-height: 1.6; color: var(--color-neutral-700);">
@@ -4822,43 +5241,86 @@
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Tipping Guidelines for the Mountain Crew</h4>
       <p>Tipping is customary in Nepal and represents a heartfelt expression of gratitude for the tireless dedication of your climbing Sherpas, trekking guide, and porters. We recommend budgeting approximately <strong>USD $180 to $250 total per client</strong>, presented at the celebratory farewell dinner in Lukla on Day 15.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">We strictly adhere to the International Porter Protection Group (IPPG) guidelines: maximum load of 20–25 kg per porter, proper high-altitude clothing, insulated sleeping gear, hot meals, and medical evacuation insurance.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- 21. Topic: post-climb -->
-                <div class="detail-accordion-card" data-detail-id="post-climb">
+                <!-- Guide: post-climb -->
+                <div class="detail-accordion-card" id="detail-card-post-climb" data-detail-id="post-climb" data-guide-category="permits">
                   <div class="detail-accordion-header">
                     <div class="detail-accordion-header-left">
                       <div class="detail-icon-container">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
                         </svg>
                         <div class="detail-check-bubble">
-                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                             <polyline points="20 6 9 17 4 12"></polyline>
                           </svg>
                         </div>
                       </div>
-                      <h3 class="detail-accordion-title">Summit Certificates & Kathmandu Celebration</h3>
+                      <div class="detail-header-info">
+                        <div class="detail-meta-row">
+                          <span class="detail-badge-pill">SUMMIT CERTIFICATES</span>
+                          <span class="detail-read-time">2 min read</span>
+                        </div>
+                        <h3 class="detail-accordion-title">Summit Certificates & Kathmandu Celebration</h3>
+                      </div>
                     </div>
                     <div class="detail-accordion-chevron">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <polyline points="6 9 12 15 18 9"></polyline>
                       </svg>
                     </div>
                   </div>
                   <div class="detail-accordion-content">
                     <div class="detail-accordion-content-inner">
-                      <p>Standing on the summit of Mera Peak at <span data-altitude-m="6476"><span data-altitude-m="6476">6,476 m</span></span> is a lifetime mountaineering milestone. Our team ensures your achievement is formally verified, documented, and celebrated.</p>
+                      <p class="guide-lead-text">Standing on the summit of Mera Peak at <span data-altitude-m="6476"><span data-altitude-m="6476">6,476 m</span></span> is a lifetime mountaineering milestone. Our team ensures your achievement is formally verified, documented, and celebrated.</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Official NMA Climbing Certificate Issuance</h4>
       <p>Upon returning to Kathmandu, your lead Climbing Sherpa submits the official expedition summit logbook and photographic verification to the <strong>Nepal Mountaineering Association (NMA)</strong> and the <strong>Department of Tourism (DoT)</strong>. Successful climbers receive an official, embossed <strong>Mera Peak Summit Certificate</strong> detailing your name, summit date, and mapped elevation (<span data-altitude-m="6476"><span data-altitude-m="6476">6,476 m</span></span>).</p>
 
       <h4 style="font-size: 1.05rem; color: var(--color-primary-navy); margin: 20px 0 10px 0; font-weight: 700;">Expedition Debrief & Farewell Celebration Dinner</h4>
       <p>On Day 17, our executive management team hosts a complimentary farewell dinner at an authentic traditional Nepali restaurant in Kathmandu. Enjoy live folk music, cultural dances, delicious multi-course cuisine, and a formal presentation of your summit certificates, wrapping up an unforgettable 18-day Himalayan odyssey.</p>
+                      <div class="guide-pro-tip-box" style="margin-top: 20px;">
+                        <div class="guide-pro-tip-badge">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+                          <span>Sherpa Expedition Tip</span>
+                        </div>
+                        <p class="guide-pro-tip-text">Upon return to Kathmandu, we process your formal Nepal Mountaineering Association (NMA) Mera Peak Summit Certificate and celebrate with an authentic Nepali cultural dinner with your Sherpa team.</p>
+                      </div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <!-- Expedition Expert CTA Card -->
+              <div class="guide-cta-card">
+                <div class="guide-cta-icon-box">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+                <div class="guide-cta-content">
+                  <h4 class="guide-cta-title">Have Questions About Mera Peak Expedition Logistics?</h4>
+                  <p class="guide-cta-desc">Our certified IFMGA / NMA climbing directors have led over 120+ successful Mera Peak ascents. Ask us about crampon boots, current glacier conditions, or custom high-camp staging.</p>
+                </div>
+                <div class="guide-cta-buttons">
+                  <a href="https://wa.me/9779800000000?text=Hello%20Namaste%20Hiking%20Trek,%20I'm%20planning%20the%20Mera%20Peak%20Climbing%20expedition%20and%20have%20questions%20about%20the%20climb." class="btn-guide-wa" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    Chat on WhatsApp
+                  </a>
+                  <a href="#booking-calculator" class="btn-guide-book">
+                    Check Dates & Book
+                  </a>
                 </div>
               </div>
             </div>
