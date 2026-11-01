@@ -1,0 +1,136 @@
+const fs = require('fs');
+
+const departures = [
+  // March
+  { day: '12', month: 'MAR', title: 'Mar 12 – Mar 18, 2026', status: 'AVAILABLE', price: '$899', isHidden: false },
+  { day: '26', month: 'MAR', title: 'Mar 26 – Apr 1, 2026', status: 'AVAILABLE', price: '$899', isHidden: false },
+  // April
+  { day: '09', month: 'APR', title: 'Apr 9 – Apr 15, 2026', status: 'AVAILABLE', price: '$899', isHidden: true },
+  { day: '23', month: 'APR', title: 'Apr 23 – Apr 29, 2026', status: 'FILLING FAST', price: '$899', isHidden: true },
+  // May
+  { day: '07', month: 'MAY', title: 'May 7 – May 13, 2026', status: 'AVAILABLE', price: '$899', isHidden: true },
+  { day: '21', month: 'MAY', title: 'May 21 – May 27, 2026', status: 'AVAILABLE', price: '$899', isHidden: true },
+  // September
+  { day: '10', month: 'SEP', title: 'Sep 10 – Sep 16, 2026', status: 'AVAILABLE', price: '$899', isHidden: true },
+  { day: '24', month: 'SEP', title: 'Sep 24 – Sep 30, 2026', status: 'AVAILABLE', price: '$899', isHidden: true },
+  // October
+  { day: '01', month: 'OCT', title: 'Oct 1 – Oct 7, 2026', status: 'FILLING FAST', price: '$899', isHidden: true },
+  { day: '15', month: 'OCT', title: 'Oct 15 – Oct 21, 2026', status: 'AVAILABLE', price: '$899', isHidden: true },
+  { day: '29', month: 'OCT', title: 'Oct 29 – Nov 4, 2026', status: 'AVAILABLE', price: '$899', isHidden: true },
+  // November
+  { day: '05', month: 'NOV', title: 'Nov 5 – Nov 11, 2026', status: 'AVAILABLE', price: '$899', isHidden: true },
+  { day: '19', month: 'NOV', title: 'Nov 19 – Nov 25, 2026', status: 'AVAILABLE', price: '$899', isHidden: true }
+];
+
+let rowsHtml = '';
+departures.forEach(d => {
+  const hideStyle = d.isHidden ? ' style="display: none;"' : '';
+  const statusClass = d.status === 'FILLING FAST' ? 'departure-status-pill filling-fast' : 'departure-status-pill';
+  rowsHtml += `                  <!-- Row -->
+                  <div class="departure-item-row" data-month="${d.month}"${hideStyle}>
+                    <div class="departure-date-badge">
+                      <div class="calendar-ring-dots"><span></span><span></span><span></span></div>
+                      <div class="calendar-day-num">${d.day}</div>
+                      <div class="calendar-month-txt">${d.month}</div>
+                    </div>
+                    <div class="departure-info">
+                      <div class="departure-title">${d.title}</div>
+                      <span class="${statusClass}">${d.status}</span>
+                    </div>
+                    <div class="departure-action">
+                      <div class="departure-price"><span class="price-val">${d.price}</span> <span class="price-unit">pp</span></div>
+                      <button type="button" class="btn-book-now open-inquiry-btn" data-trek-title="Everest View Trek (${d.title})">Book Now</button>
+                    </div>
+                  </div>\n`;
+});
+
+const sec4Html = `<section id="section-dates" class="trek-detail-section">
+            <div class="dates-section-header">
+              <h2 class="trek-section-title" style="margin-bottom: 0;">Booking Dates & Availability for Everest View Trek</h2>
+              <div class="dates-mode-toggle">
+                <button type="button" class="dates-mode-btn active" data-mode="group">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  Group Joining
+                </button>
+                <button type="button" class="dates-mode-btn" data-mode="private">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  Private Date
+                </button>
+              </div>
+            </div>
+
+            <!-- Card Container -->
+            <div class="dates-card-container">
+              <!-- View 1: Group Joining -->
+              <div id="dates-group-view" class="dates-view-pane active">
+                <div class="dates-group-topbar">
+                  <span class="dates-year-badge">2026</span>
+                  <div class="dates-month-tabs">
+                    <button type="button" class="dates-month-tab active" data-month="MAR">MAR</button>
+                    <button type="button" class="dates-month-tab" data-month="APR">APR</button>
+                    <button type="button" class="dates-month-tab" data-month="MAY">MAY</button>
+                    <button type="button" class="dates-month-tab" data-month="SEP">SEP</button>
+                    <button type="button" class="dates-month-tab" data-month="OCT">OCT</button>
+                    <button type="button" class="dates-month-tab" data-month="NOV">NOV</button>
+                  </div>
+                </div>
+
+                <div class="dates-departure-list">
+${rowsHtml}                </div>
+
+                <div class="dates-load-more-wrapper">
+                  <button type="button" id="btn-load-more-dates" class="btn-load-more-dates">Load more dates</button>
+                </div>
+              </div>
+
+              <!-- View 2: Private Date -->
+              <div id="dates-private-view" class="dates-view-pane" style="display: none;">
+                <div class="private-dates-header">
+                  <div class="private-dates-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="private-dates-title">Choose Your Departure Date</h3>
+                    <p class="private-dates-desc">
+                      Plan your Everest View Trek at your convenience. Select your preferred departure date for this 7-day journey, and we will take care of the rest.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Dual Month Interactive Calendar Widget Container -->
+                <div class="dual-calendar-card">
+                  <div id="dual-calendar-mount" class="dual-calendar-mount"></div>
+                  <div class="calendar-footer-meta">
+                    <div class="legend-item">
+                      <span class="sold-out-dot"></span> Sold out dates
+                    </div>
+                    <div class="discount-note">
+                      Group-size discounts will be applied in the next step.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Action Row -->
+                <div class="private-dates-action-bar">
+                  <span id="private-selected-date-text" class="private-selected-prompt">Select a start date from the calendar.</span>
+                  <button type="button" id="btn-select-private-date" class="btn-select-dates open-inquiry-btn" data-trek-title="Everest View Private Trek" disabled>Select dates ↗</button>
+                </div>
+              </div>
+            </div>
+          </section>`;
+
+fs.writeFileSync('scratch/sec4_full.html', sec4Html, 'utf8');
+console.log('Saved scratch/sec4_full.html, length:', sec4Html.length);

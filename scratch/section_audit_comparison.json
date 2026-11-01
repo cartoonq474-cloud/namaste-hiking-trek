@@ -1,0 +1,407 @@
+{
+  "section-overview": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 68354,
+    "evtLength": 57057,
+    "ebcTag": "<section id=\"section-overview\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-overview\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "trek-section-title",
+      "trek-overview-subtitle",
+      "ebc-highlights-section",
+      "ebc-highlights-header",
+      "ebc-highlights-title",
+      "ebc-highlights-intro-p",
+      "ebc-highlights-grid"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "border-b border-gray-200 pb-4 mb-8",
+      "text-emerald-700 text-xs font-bold uppercase tracking-wider",
+      "text-2xl sm:text-3xl font-heading font-bold text-primary-navy mt-1",
+      "w-16 h-1 bg-amber-500 rounded-full mt-3",
+      "prose max-w-none text-gray-700 space-y-4 text-base sm:text-lg leading-relaxed",
+      "mt-10",
+      "text-xl font-heading font-bold text-primary-navy mb-4 flex items-center gap-2"
+    ],
+    "ebcHeadings": [
+      "Trek Overview",
+      "What the Everest Base Camp Trek is really like?",
+      "From Lukla to Everest Base Camp",
+      "More than a mountain trek"
+    ],
+    "evtHeadings": [
+      "Trek Overview: The Essential Khumbu Experience",
+      "Everest View Trek at a Glance",
+      "What Makes the Everest View Trek Special?",
+      "Everest Views Without the Everest Base Camp Trek"
+    ]
+  },
+  "section-itinerary": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 98983,
+    "evtLength": 40771,
+    "ebcTag": "<section id=\"section-itinerary\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-itinerary\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "trek-section-title",
+      "itinerary-timeline",
+      "itinerary-card active",
+      "itinerary-header",
+      "itinerary-header-left",
+      "itinerary-day-title-new",
+      "day-label"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "border-b border-gray-200 pb-4 mb-8",
+      "text-emerald-700 text-xs font-bold uppercase tracking-wider",
+      "text-2xl sm:text-3xl font-heading font-bold text-primary-navy mt-1",
+      "w-16 h-1 bg-amber-500 rounded-full mt-3",
+      "prose max-w-none text-gray-700 space-y-4 text-base leading-relaxed mb-8",
+      "mb-10",
+      "text-lg font-heading font-bold text-primary-navy mb-3 flex items-center gap-2"
+    ],
+    "ebcHeadings": [
+      "Everest Base Camp Trek Itinerary: Day by Day Details",
+      "Before Your Everest Base Camp Trek Starts",
+      "Day 1: Arrival at Tribhuvan International Airport in Kathmandu and transfer to hotel",
+      "Day 2: Kathmandu to Lukla and Trek to Phakding"
+    ],
+    "evtHeadings": [
+      "Everest View Trek Itinerary: Day by Day Details",
+      "Everest View Trek Itinerary at a Glance",
+      "Day 1: Fly from Kathmandu to Lukla and Trek to Phakding (2,610 m)",
+      "Day 2: Trek from Phakding to Namche Bazaar (3,440 m)"
+    ]
+  },
+  "section-includes": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 19287,
+    "evtLength": 16763,
+    "ebcTag": "<section id=\"section-includes\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-includes\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "inc-exc-container",
+      "inc-exc-section-title-wrapper",
+      "inc-exc-section-title",
+      "inc-exc-lead-text",
+      "inc-exc-grid",
+      "inc-exc-card",
+      "inc-exc-icon-box"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "border-b border-gray-200 pb-4 mb-8",
+      "text-emerald-700 text-xs font-bold uppercase tracking-wider",
+      "text-2xl sm:text-3xl font-heading font-bold text-primary-navy mt-1",
+      "w-16 h-1 bg-amber-500 rounded-full mt-3",
+      "text-gray-700 text-base leading-relaxed mb-8",
+      "inc-exc-container space-y-10",
+      "inc-exc-section-title-wrapper flex items-center justify-between"
+    ],
+    "ebcHeadings": [
+      "What includes in this Everest Base Camp trek?",
+      "What Excludes in this Everest Base Camp trek?"
+    ],
+    "evtHeadings": [
+      "What is Included & Excluded in the Everest View Trek",
+      "What's Included in the 7-Day Package",
+      "Domestic Flights to/from Lukla",
+      "15 kg Flight Baggage Allowance"
+    ]
+  },
+  "section-dates": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 17699,
+    "evtLength": 17299,
+    "ebcTag": "<section id=\"section-dates\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-dates\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "dates-section-header",
+      "trek-section-title",
+      "dates-mode-toggle",
+      "dates-mode-btn active",
+      "dates-mode-btn",
+      "dates-card-container",
+      "dates-view-pane active"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "border-b border-gray-200 pb-4 mb-8",
+      "text-emerald-700 text-xs font-bold uppercase tracking-wider",
+      "text-2xl sm:text-3xl font-heading font-bold text-primary-navy mt-1",
+      "w-16 h-1 bg-amber-500 rounded-full mt-3",
+      "text-gray-700 text-base leading-relaxed mb-6",
+      "dates-filter-tabs",
+      "dates-filter-btn active"
+    ],
+    "ebcHeadings": [
+      "Booking Dates & Availability for EBC trek",
+      "Choose Your Departure Date"
+    ],
+    "evtHeadings": [
+      "Booking Dates & Availability for Everest View Trek",
+      "Mar 5 – Mar 11, 2026",
+      "Mar 19 – Mar 25, 2026",
+      "Apr 2 – Apr 8, 2026"
+    ]
+  },
+  "section-packing": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 36687,
+    "evtLength": 19217,
+    "ebcTag": "<section id=\"section-packing\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-packing\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "trek-section-title",
+      "itinerary-meta-pill",
+      "gear-checked-count",
+      "gear-total-count",
+      "gear-section",
+      "gear-section-title",
+      "gear-grid"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "border-b border-gray-200 pb-4 mb-8",
+      "text-emerald-700 text-xs font-bold uppercase tracking-wider",
+      "text-2xl sm:text-3xl font-heading font-bold text-primary-navy mt-1",
+      "w-16 h-1 bg-amber-500 rounded-full mt-3",
+      "text-gray-700 text-base leading-relaxed mb-6",
+      "gear-checked-count",
+      "gear-total-count"
+    ],
+    "ebcHeadings": [
+      "Packing List for Everest Base Camp Trek",
+      "Hiking Gear (11 items)",
+      "Garments (19 items)",
+      "Sleeping (5 items)"
+    ],
+    "evtHeadings": [
+      "Packing List for Everest View Trek",
+      "1. Hiking Gear & Packs",
+      "2. Garments & Layering System",
+      "3. Footwear & Socks"
+    ]
+  },
+  "section-details": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 299917,
+    "evtLength": 189449,
+    "ebcTag": "<section id=\"section-details\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-details\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "details-section-container",
+      "details-title-wrapper",
+      "details-main-title",
+      "details-subtitle-text",
+      "details-progress-wrapper",
+      "details-progress-badge",
+      "details-progress-ring-box"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "border-b border-gray-200 pb-4 mb-6",
+      "text-emerald-700 text-xs font-bold uppercase tracking-wider",
+      "text-2xl sm:text-3xl font-heading font-bold text-primary-navy mt-1",
+      "w-16 h-1 bg-amber-500 rounded-full mt-3",
+      "text-gray-700 text-base leading-relaxed mb-6",
+      "guide-filter-btn active",
+      "guide-filter-btn"
+    ],
+    "ebcHeadings": [
+      "Read before you book, Everest Base Camp Trek",
+      "Accommodation for the Everest Base Camp Trek",
+      "What to expect in Kathmandu for Accommodation?",
+      "What to expect in a teahouse in the EBC Trek"
+    ],
+    "evtHeadings": [
+      "Read Before You Book: Everest View Trek Practical Guide",
+      "No Matching Topics Found",
+      "Altitude Profile of Everest View Trek",
+      "Expedition Route Information"
+    ]
+  },
+  "section-altitude-profile": {
+    "ebcPresent": true,
+    "evtPresent": false,
+    "ebcLength": 1537,
+    "evtLength": 0,
+    "ebcTag": "<section id=\"section-altitude-profile\" class=\"trek-detail-section\">",
+    "evtTag": null,
+    "ebcClasses": [
+      "trek-detail-section",
+      "details-title-wrapper",
+      "details-main-title"
+    ],
+    "evtClasses": [],
+    "ebcHeadings": [
+      "Altitude Profile of Everest Base Camp Trek",
+      "Expedition Route Information"
+    ],
+    "evtHeadings": []
+  },
+  "section-weather": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 1110,
+    "evtLength": 1122,
+    "ebcTag": "<section id=\"section-weather\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-weather\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "details-title-wrapper",
+      "details-main-title"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "details-title-wrapper",
+      "details-main-title"
+    ],
+    "ebcHeadings": [
+      "Weather on the Everest Base Camp Trek"
+    ],
+    "evtHeadings": [
+      "Weather on the Everest View Trek"
+    ]
+  },
+  "section-map": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 1845,
+    "evtLength": 1848,
+    "ebcTag": "<section id=\"section-map\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-map\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "details-title-wrapper",
+      "details-main-title"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "details-title-wrapper",
+      "details-main-title"
+    ],
+    "ebcHeadings": [
+      "Everest Base Camp Trek Map"
+    ],
+    "evtHeadings": [
+      "Everest View Trek Map"
+    ]
+  },
+  "section-booking": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 984,
+    "evtLength": 997,
+    "ebcTag": "<section id=\"section-booking\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-booking\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "trek-section-title"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "trek-section-title"
+    ],
+    "ebcHeadings": [
+      "Book This Trek"
+    ],
+    "evtHeadings": [
+      "Book This Trek"
+    ]
+  },
+  "section-reviews": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 49642,
+    "evtLength": 49604,
+    "ebcTag": "<section id=\"section-reviews\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-reviews\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "trek-section-title",
+      "review-tabs-container",
+      "review-tab-btn active",
+      "review-tab-btn",
+      "review-pane-content active",
+      "video-reviews-grid",
+      "video-review-card"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "trek-section-title",
+      "review-tabs-container",
+      "review-tab-btn active",
+      "review-tab-btn",
+      "review-pane-content active",
+      "video-reviews-grid",
+      "video-review-card"
+    ],
+    "ebcHeadings": [
+      "Best Himalayan Trekking Reviews",
+      "the BEST EBC trek experience ever",
+      "5+++ stars for Namaste Hiking Trek",
+      "the BEST EBC trek experience ever"
+    ],
+    "evtHeadings": [
+      "Best Himalayan Trekking Reviews",
+      "the BEST EBC trek experience ever",
+      "5+++ stars for Namaste Hiking Trek",
+      "the BEST EBC trek experience ever"
+    ]
+  },
+  "section-faqs": {
+    "ebcPresent": true,
+    "evtPresent": true,
+    "ebcLength": 36226,
+    "evtLength": 38192,
+    "ebcTag": "<section id=\"section-faqs\" class=\"trek-detail-section\">",
+    "evtTag": "<section id=\"section-faqs\" class=\"trek-detail-section scroll-mt-36\">",
+    "ebcClasses": [
+      "trek-detail-section",
+      "faq-section-accent-title",
+      "faq-accent-bar",
+      "faq-layout-container",
+      "faq-sidebar-card",
+      "faq-category-nav",
+      "faq-category-btn active",
+      "faq-cat-icon"
+    ],
+    "evtClasses": [
+      "trek-detail-section scroll-mt-36",
+      "faq-section-accent-title",
+      "faq-accent-bar",
+      "faq-layout-container",
+      "faq-sidebar-card",
+      "faq-category-nav",
+      "faq-category-btn active",
+      "faq-cat-icon"
+    ],
+    "ebcHeadings": [
+      "Frequently Asked Questions for Everest Base Camp Trek",
+      "How long is this Everest Base Camp Trek?",
+      "How high are Everest Base Camp and Kala Patthar?",
+      "Can I see Everest from Base Camp?"
+    ],
+    "evtHeadings": [
+      "Frequently Asked Questions for Everest View Trek",
+      "General Information",
+      "Inquire About Everest View Trek",
+      "You might also like"
+    ]
+  }
+}

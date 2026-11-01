@@ -1,0 +1,83 @@
+const fs = require('fs');
+
+const sec10Html = `<section id="section-booking" class="trek-detail-section">
+            <h2 class="trek-section-title">Book This Trek</h2>
+            <p style="color: var(--color-neutral-700); font-size: 1.05rem; line-height: 1.7; margin-bottom: 24px;">
+              We offer standard small-group departures as well as custom private itineraries. Follow our simple 4-step booking process or use the interactive <strong>Booking Calculator</strong> widget located in the sticky sidebar on the right side of this page to choose your group size and toggle options like the Helicopter return upgrade.
+            </p>
+
+            <!-- 4-Step Booking Workflow Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-bottom: 28px;">
+              <!-- Step 1 -->
+              <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; position: relative;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                  <span style="font-size: 0.75rem; font-weight: 800; color: #008060; background: #E6F7F0; padding: 4px 10px; border-radius: 20px;">STEP 1</span>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <h3 style="font-size: 1.05rem; font-weight: 700; color: #0F172A; margin: 0 0 8px 0;">Select Your Dates</h3>
+                <p style="font-size: 0.88rem; color: #64748B; line-height: 1.6; margin: 0;">
+                  Choose from our guaranteed 2026 group dates or select custom private departure dates that suit your travel schedule.
+                </p>
+              </div>
+
+              <!-- Step 2 -->
+              <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; position: relative;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                  <span style="font-size: 0.75rem; font-weight: 800; color: #008060; background: #E6F7F0; padding: 4px 10px; border-radius: 20px;">STEP 2</span>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <h3 style="font-size: 1.05rem; font-weight: 700; color: #0F172A; margin: 0 0 8px 0;">Submit Details</h3>
+                <p style="font-size: 0.88rem; color: #64748B; line-height: 1.6; margin: 0;">
+                  Fill out our quick booking inquiry with your group size, dietary needs, and flight preference. Our team replies within 4 hours.
+                </p>
+              </div>
+
+              <!-- Step 3 -->
+              <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; position: relative;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                  <span style="font-size: 0.75rem; font-weight: 800; color: #008060; background: #E6F7F0; padding: 4px 10px; border-radius: 20px;">STEP 3</span>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                  </svg>
+                </div>
+                <h3 style="font-size: 1.05rem; font-weight: 700; color: #0F172A; margin: 0 0 8px 0;">Secure 20% Deposit</h3>
+                <p style="font-size: 0.88rem; color: #64748B; line-height: 1.6; margin: 0;">
+                  Confirm your reservation with an encrypted 20% deposit via credit card or wire transfer. The remaining balance is payable upon arrival in Kathmandu.
+                </p>
+              </div>
+
+              <!-- Step 4 -->
+              <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; position: relative;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                  <span style="font-size: 0.75rem; font-weight: 800; color: #008060; background: #E6F7F0; padding: 4px 10px; border-radius: 20px;">STEP 4</span>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+                <h3 style="font-size: 1.05rem; font-weight: 700; color: #0F172A; margin: 0 0 8px 0;">Preparation Pack</h3>
+                <p style="font-size: 0.88rem; color: #64748B; line-height: 1.6; margin: 0;">
+                  Receive your comprehensive pre-departure pack, training guide, packing checklist, permit vouchers, and direct line to your mountain coordinator.
+                </p>
+              </div>
+            </div>
+
+            <p style="color: var(--color-neutral-700); font-size: 1.05rem; line-height: 1.7;">
+              Once you have calculated your estimated pricing, click the <strong>Book / Inquire Now</strong> button to submit an inquiry. Our lead Himalayan coordinators will get back to you within 4 hours with availability and booking steps!
+            </p>
+          </section>`;
+
+fs.writeFileSync('scratch/sec10_full.html', sec10Html, 'utf8');
+console.log('Saved scratch/sec10_full.html, length:', sec10Html.length);

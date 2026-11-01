@@ -1,0 +1,499 @@
+[
+  {
+    "id": 4636,
+    "itinerary_stop": 1,
+    "itinerary_day": 1,
+    "itinerary_title": "Arrive at Tribhuwan International Airport in Kathmandu (Namaste and A very warm Welcome in Nepal)",
+    "itinerary_description": "<p>Nepal Intrepid Treks will be your dedicated travel companion until you return to your home country. Once you arrive at Kathmandu airport, we will pick you up and take you to your hotel. Accommodation for our valued customers includes room and breakfast in a three-star hotel in Kathmandu.</p><p>Take in the impressions of Nepal as we drive you from the airport to your hotel. We will assist you with the check-in and provide further information regarding your Annapurna Cicuit Trek. You may then rest or stroll through Kathmandu’s bustling, colourful streets and alleys.</p>",
+    "accommodation": "Hotel",
+    "duration": "20-25 minutes",
+    "origin": "Kathmandu",
+    "destination": "Kathmandu",
+    "meals": "Breakfast Included",
+    "gallery": []
+  },
+  {
+    "id": 4637,
+    "itinerary_stop": 1,
+    "itinerary_day": 2,
+    "itinerary_title": "Sightseeing in Kathmandu Valley and Preparation Day",
+    "itinerary_description": "<p>Prepare for a day of immersion into the Nepalese culture, while visiting the most important landmarks of this fascinating city and its outskirts. Our experienced guide will take you to Kathmandu Durbar Square, a UNESCO heritage site which represents the political and historical values of Nepalese civilization.</p><p><br />We then proceed to Swayambhu Nath Temple, also known as ‘Monkey Temple’ thanks to its adorable colony of monkeys that run free. This temple is the symbol of harmony between Buddhists and Hindus.  At the top of the stupa, you will have a splendid birds-eye view of Kathmandu Valley and its surroundings.</p><p>We continue to the sacred Pashupatinath Temple, a holy place for Hindu devotees. Especially interesting is the holy cremation area where preparations and daily cremation ceremonies take place. From here we return to the hotel.<br />(Breakfast included)</p><p><br /><br /></p>",
+    "accommodation": "Hotel",
+    "duration": "",
+    "origin": "Kathmandu",
+    "destination": "Kathmandu",
+    "meals": "Breakfast Included",
+    "gallery": []
+  },
+  {
+    "id": 4638,
+    "itinerary_stop": 1,
+    "itinerary_day": 3,
+    "itinerary_title": "Drive from Kathmandu to Jagat by jeep",
+    "itinerary_description": "<p>Today, we drive towards Besisahar. After around 6 hours’ drive along Trishuli river, we reach Besisahar. We take lunch on the way and take a local jeep or bus from Besisahar to Syange. We enter into Annapurna Conservation where your guide will take our permits and entry tickets. Then we head towards Jagat. Overnight at a guesthouse in Jagat.<br />(Breakfast, lunch and dinner included)</p>",
+    "accommodation": "Guesthouse (Shared Bathroom)",
+    "duration": "7-8 hours",
+    "origin": "Kathmandu",
+    "destination": "Jagat",
+    "meals": "Breakfast, Lunch, and Dinner Included",
+    "gallery": [
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/jagat-village.webp",
+          "alt_text": "Drive from Kathmandu to Jagat by jeep",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/jagat-village.webp",
+          "alt": "Drive from Kathmandu to Jagat by jeep"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4639,
+    "itinerary_stop": 1,
+    "itinerary_day": 4,
+    "itinerary_title": "Jagat to Dharapani",
+    "itinerary_description": "<p>We descend down through a rocky trail and climb up through forest to Chamje. We cross Marsyangdi Khola and continue walking along the valley. We then climb up steadily until we reach Tal. Tal is the first village in Manang district. We take lunch and continue walking through the valley. We continue ascending up in a stone paved stairway up to some point and continue descending until we cross Marsyandiriver. We pass Karte and walk until we reach Dharapani. We stay at a guesthouse in Dharapani for the night. <br />(Breakfast, lunch and dinner included)</p>",
+    "accommodation": "Guesthouse (Shared Bathroom)",
+    "duration": "5 hours",
+    "origin": "Jagat",
+    "destination": "Dharapani",
+    "meals": "Breakfast, Lunch, and Dinner Included",
+    "gallery": [
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/beetween-taal-village-and-chyamche-village.webp",
+          "alt_text": "Jagat to Dharapani",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/beetween-taal-village-and-chyamche-village.webp",
+          "alt": "Jagat to Dharapani"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/taal-village.webp",
+          "alt_text": "Jagat to Dharapani",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/taal-village.webp",
+          "alt": "Jagat to Dharapani"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/suspension-bridge-near-taal-village.webp",
+          "alt_text": "Jagat to Dharapani",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/suspension-bridge-near-taal-village.webp",
+          "alt": "Jagat to Dharapani"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/dharapani-village.webp",
+          "alt_text": "Jagat to Dharapani",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/dharapani-village.webp",
+          "alt": "Jagat to Dharapani"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4640,
+    "itinerary_stop": 1,
+    "itinerary_day": 5,
+    "itinerary_title": "Dharapani to Chame",
+    "itinerary_description": "<p>Leaving Dharapani, we steeply climb up for around three hours to reach Timang village. We then have our lunch on the way and start walking on a flat terrain along pine, fir and rhododendron forests to Chame. It takes another three hours to reach Chame. As you approach near Chame, you will be rewarded with the spectacular view of Annapurna II. Chame is the headquarter of the Manang district therefore you will find this place more populated that rest of the region. You can see many guesthouse and lodges ready to cater their customers. You can also find internet cafes, banks and shops that provides trekking gears. We stay at a guesthouse in Chame for the night. <br />(Breakfast, lunch and dinner included)</p>",
+    "accommodation": "Guesthouse (Shared Bathroom)",
+    "duration": "6 hours",
+    "origin": "Dharapani",
+    "destination": "Chame",
+    "meals": "Breakfast, Lunch, and Dinner Included",
+    "gallery": [
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/way-to-chame-from-dharapani.webp",
+          "alt_text": "Dharapani to Chame",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/way-to-chame-from-dharapani.webp",
+          "alt": "Dharapani to Chame"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/bagarchhap-village.webp",
+          "alt_text": "Dharapani to Chame",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/bagarchhap-village.webp",
+          "alt": "Dharapani to Chame"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/timang-village.webp",
+          "alt_text": "Dharapani to Chame",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/timang-village.webp",
+          "alt": "Dharapani to Chame"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/chame-village.webp",
+          "alt_text": "Dharapani to Chame",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/chame-village.webp",
+          "alt": "Dharapani to Chame"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4641,
+    "itinerary_stop": 1,
+    "itinerary_day": 6,
+    "itinerary_title": "Chame to Pisang",
+    "itinerary_description": "<p>Our walk for the day is comparatively easy as we walk through flat trail that winds up through dense forest in the valley. We re-cross the southern bank of Marsyangdiriver and walk to Dhikur Pokhari. We take lunch on the way and continue ahead. We will get a glimpse of rock face of Paungda Danda at Dhikur Pokhari. From here, we climb up steadily and gradually until we reach Pisang. The views of mountains like Pisang Peak, Chulu West, Chlu east, LamjungHimal, Annapurna II and Annapurna IV from Pisang is magnificent. We stay at a guesthouse in Pisang for the night. <br />(Breakfast, lunch and dinner included</p>",
+    "accommodation": "Guesthouse (Shared Bathroom)",
+    "duration": "6 hours",
+    "origin": "Chame",
+    "destination": "Pisang",
+    "meals": "Breakfast, Lunch, and Dinner Included",
+    "gallery": [
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/way-to-bhraka-village-from-chame.webp",
+          "alt_text": "Chame to Pisang",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/way-to-bhraka-village-from-chame.webp",
+          "alt": "Chame to Pisang"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/dhikur-pokhari.webp",
+          "alt_text": "Chame to Pisang",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/dhikur-pokhari.webp",
+          "alt": "Chame to Pisang"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/swarga-dwar.webp",
+          "alt_text": "Chame to Pisang",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/swarga-dwar.webp",
+          "alt": "Chame to Pisang"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/upper-pisang-and-lower-pisang.webp",
+          "alt_text": "Chame to Pisang",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/upper-pisang-and-lower-pisang.webp",
+          "alt": "Chame to Pisang"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4642,
+    "itinerary_stop": 1,
+    "itinerary_day": 7,
+    "itinerary_title": "Pisang to Manang",
+    "itinerary_description": "<p>We continue our journey and walk towards the upper drier part of Manang district. On the way, we pass through the pine forests. The walk for the day winds up to the dry upper part of the Manang district through pine forests. There are actually two routes that take us to Manang. We take the upper route to Manang i.e. Ghyaru to Ngawal to Mungji. We pass a village of Bragha Gompa where we visit the gompa and move ahead to Manang. As you arrive in Manang, you will be blessed with the fascinating views of Gangapurna and other peaks in Annapurna region. We stay at a guesthouse in Manang for the night. <br />(Breakfast, lunch and dinner included)</p>",
+    "accommodation": "Guesthouse (Private Bathroom)",
+    "duration": "6.5 hours",
+    "origin": "Pisang",
+    "destination": "Manang",
+    "meals": "Breakfast, Lunch, and Dinner Included",
+    "gallery": [
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/green-lake.webp",
+          "alt_text": "Pisang to Manang",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/green-lake.webp",
+          "alt": "Pisang to Manang"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/mt-annapurna-ii.webp",
+          "alt_text": "Pisang to Manang",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/mt-annapurna-ii.webp",
+          "alt": "Pisang to Manang"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/tilicho-peak-and-other-mountains.webp",
+          "alt_text": "Pisang to Manang",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/tilicho-peak-and-other-mountains.webp",
+          "alt": "Pisang to Manang"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/nawal-village.webp",
+          "alt_text": "Pisang to Manang",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/nawal-village.webp",
+          "alt": "Pisang to Manang"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4643,
+    "itinerary_stop": 1,
+    "itinerary_day": 8,
+    "itinerary_title": "Acclimatization Day in Manang",
+    "itinerary_description": "<p>We spend the day in Manang exploring the beauty of wild and secluded landscape. This day is important to acclimatize ourselves with the gaining altitude. Today, we hike up to Gangapurna Lake and explore the local villages. We also visit the Himalayan Rescue Association Clinic. In the evening, we come back to the guesthouse in Manang. <br />(Breakfast, lunch and dinner included)</p>",
+    "accommodation": "Guesthouse (Private Bathroom)",
+    "duration": "",
+    "origin": "Manang",
+    "destination": "Manang",
+    "meals": "Breakfast, Lunch, and Dinner Included",
+    "gallery": []
+  },
+  {
+    "id": 4644,
+    "itinerary_stop": 1,
+    "itinerary_day": 9,
+    "itinerary_title": "Trek From Manang to Yak Kharka",
+    "itinerary_description": "<p>Today, we start ascending up to Yak Kharka. We climb up steadily to Tenki village and continue our climb up until we leave Marsyandi valley. As we ascend up, we can notice the change in vegetation that gets sparser. Leaving the valley, we turn northwest to the valley to JarsangKhola. We walk ahead until we reach the meadows where the yaks and other herds can gaze. We then cross a wooden bridge over a stream and pass mani walls to reach Yak Kharka.We stay at a guesthouse in Yak Kharka for the night. <br />(Breakfast, lunch and dinner included)</p>",
+    "accommodation": "Guesthouse (Shared Bathroom)",
+    "duration": "5 hours",
+    "origin": "Manang",
+    "destination": "Yak kharka",
+    "meals": "Breakfast, Lunch, and Dinner Included",
+    "gallery": [
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/way-towards-yak-kharka-from-manang-village.webp",
+          "alt_text": "Trek From Manang to Yak Kharka",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/way-towards-yak-kharka-from-manang-village.webp",
+          "alt": "Trek From Manang to Yak Kharka"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/before-yak-kharka.webp",
+          "alt_text": "Trek From Manang to Yak Kharka",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/before-yak-kharka.webp",
+          "alt": "Trek From Manang to Yak Kharka"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/way-to-yak-kharka.webp",
+          "alt_text": "Trek From Manang to Yak Kharka",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/way-to-yak-kharka.webp",
+          "alt": "Trek From Manang to Yak Kharka"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/yak-kharka.webp",
+          "alt_text": "Trek From Manang to Yak Kharka",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/yak-kharka.webp",
+          "alt": "Trek From Manang to Yak Kharka"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4645,
+    "itinerary_stop": 1,
+    "itinerary_day": 10,
+    "itinerary_title": "Yak Kharka to Thorong Phedi",
+    "itinerary_description": "<p>Our walking hours for the day is comparatively short. We continue walking along the trail until we reach Thorong Phedi. You can find Thorong Phedi as a busy settlement because it offers the service of accommodation and food to the trekkers and climbers. It is a climbing point for the climbers who would like to summit the peaks in Annapurna region. Today, we relax and sit back to get rid of all the tiredness and recover our energy back. The rest can also be helpful to adapt ourselves with the gaining altitude and wild atmosphere. We stay at a guesthouse in Thorong Phedi for the night. <br />(Breakfast, lunch and dinner included)</p>",
+    "accommodation": "Guesthouse (Shared Bathroom)",
+    "duration": "4.5 hours",
+    "origin": "Yak kharka",
+    "destination": "Thorong Base Camp Lodge",
+    "meals": "Breakfast, Lunch, and Dinner Included",
+    "gallery": [
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/mountain-yaks.webp",
+          "alt_text": "Yak Kharka to Thorong Phedi",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/mountain-yaks.webp",
+          "alt": "Yak Kharka to Thorong Phedi"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/near-ledar-village.webp",
+          "alt_text": "Yak Kharka to Thorong Phedi",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/near-ledar-village.webp",
+          "alt": "Yak Kharka to Thorong Phedi"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/way-to-thorong-phedi-from-ledar.webp",
+          "alt_text": "Yak Kharka to Thorong Phedi",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/way-to-thorong-phedi-from-ledar.webp",
+          "alt": "Yak Kharka to Thorong Phedi"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/thorong-phedi.webp",
+          "alt_text": "Yak Kharka to Thorong Phedi",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/thorong-phedi.webp",
+          "alt": "Yak Kharka to Thorong Phedi"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4646,
+    "itinerary_stop": 1,
+    "itinerary_day": 11,
+    "itinerary_title": "Thorong Phedi to Muktinath",
+    "itinerary_description": "<p>Today is a long but rewarding day of our entire journey. We cross the Thorong La pass today which is quite challenging. Therefore, we start our climb early in the morning to avoid the bad weather in the afternoon. At around 3 a.m. in the morning, we take our breakfast and climb up steep to reach the Thorong La pass. The pass is marked by the chortens and prayer flags and we can find few tea houses on the way. As we climb up, we will be rewarded with astounding views of towering peaks in Annapurna region. Not to forget, the deepest gorge of Kali gandaki valley will add up to the awesomeness. As we cross the pass, we descend down a slippery path to Muktinath. Overnight at a guesthouse in Muktinath.<br />(Breakfast, lunch and dinner included)</p>",
+    "accommodation": "Guesthouse (Shared Bathroom)",
+    "duration": "8 hours",
+    "origin": "Thorong Base Camp Lodge",
+    "destination": "Thorong La",
+    "meals": "Breakfast, Lunch, and Dinner Included",
+    "gallery": [
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/sunrise-view-from-thorong-high-camp.webp",
+          "alt_text": "Thorong Phedi to Muktinath",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/sunrise-view-from-thorong-high-camp.webp",
+          "alt": "Thorong Phedi to Muktinath"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/way-to-thorong-la-pass.webp",
+          "alt_text": "Thorong Phedi to Muktinath",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/way-to-thorong-la-pass.webp",
+          "alt": "Thorong Phedi to Muktinath"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/thorong-la-pass-5416-m.webp",
+          "alt_text": "Thorong Phedi to Muktinath",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/thorong-la-pass-5416-m.webp",
+          "alt": "Thorong Phedi to Muktinath"
+        }
+      },
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/muktinath.webp",
+          "alt_text": "Thorong Phedi to Muktinath",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/muktinath.webp",
+          "alt": "Thorong Phedi to Muktinath"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4647,
+    "itinerary_stop": 1,
+    "itinerary_day": 12,
+    "itinerary_title": "Muktinath to Jomsom",
+    "itinerary_description": "<p>In the morning, we pay our visit to the famous religious hub – Muktinath temple. Muktinath is a popular religious destination amongst Hindu and Buddhist pilgrims. A Buddhist gompa, a Vishnu temple and the Jwalamai (Goddess of Fire) Temple are the major attractions of this place. This temple has a spring and natural gas that provides Muktinath with a famous eternal flame. Muktinath is also famous for its fascinating views of the Annapurna ranges. After beholding the beauty of the mountains, we descend to the isolated and wild landscape of Jomsom. Overnight at a guesthouse in Jomsom.<br />(Breakfast, lunch and dinner included)</p>",
+    "accommodation": "Guesthouse (Private Bathroom)",
+    "duration": "6 hours",
+    "origin": "Muktinath",
+    "destination": "Jomsom",
+    "meals": "Breakfast, Lunch, and Dinner Included",
+    "gallery": [
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/near-kagbeni.webp",
+          "alt_text": "Muktinath to Jomsom",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/near-kagbeni.webp",
+          "alt": "Muktinath to Jomsom"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4648,
+    "itinerary_stop": 1,
+    "itinerary_day": 13,
+    "itinerary_title": "Fly from Jomsom to Pokhara",
+    "itinerary_description": "<p>Leaving Jomson, we take a flight back to Pokhara. Upon our arrival, we check in to the hotel and wander around the city for utilizing the remaining time. We visit the lakeside, opt for boating and pay our visit to Barahi temple, a temple in between the Fewa Lake. The views of the mountains from the lake are awesome. What is more fascinating is the reflection of mountains in the undisturbed water of the lake. After enjoying the boating in Fewa Lake, we visit other touristic destination in Pokhara like David’s fall, Bindabasini Temple, Gupteshwor Mahadev and International mountaineering museum. <br />Spend your night at a hotel in Pokhara. <br />(Breakfast included)</p>",
+    "accommodation": "Hotel",
+    "duration": "25 minutes flight and 20 minutes drive",
+    "origin": "Jomsom",
+    "destination": "Pokhara",
+    "meals": "Breakfast Included",
+    "gallery": [
+      {
+        "media": {
+          "full_path": "https://media.nepalintrepidtreks.com/jomsom-airport.webp",
+          "alt_text": "Fly from Jomsom to Pokhara",
+          "caption": null,
+          "url": "https://media.nepalintrepidtreks.com/jomsom-airport.webp",
+          "alt": "Fly from Jomsom to Pokhara"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4649,
+    "itinerary_stop": 1,
+    "itinerary_day": 14,
+    "itinerary_title": "Drive back to Kathmandu",
+    "itinerary_description": "<p>After exploring the glory of Pokhara and Annapurna region of Nepal, we drive back to Kathmandu with the scenery of country side landscape all along which is a beautiful experience in itself.</p><p>(Breakfast included)</p><p><br /><br /></p>",
+    "accommodation": "Hotel",
+    "duration": "5-6 hours",
+    "origin": "Pokhara",
+    "destination": "Kathmandu",
+    "meals": "Breakfast Included",
+    "gallery": []
+  },
+  {
+    "id": 4650,
+    "itinerary_stop": 1,
+    "itinerary_day": 15,
+    "itinerary_title": "Leisure Day in Kathmandu",
+    "itinerary_description": "<p>Spend this day at your leisure in or around Kathmandu. You can take one of our optional day trips, relax or roam around Kathmandu city. Perhaps go for a massage – you deserve it – or do some last-minute shopping. Take a leisurely lunch in one of the many tea gardens or dine on one of the rooftop terraces. Overnight stay at the hotel.<br />(Breakfast included).</p>",
+    "accommodation": "Hotel",
+    "duration": "",
+    "origin": "Kathmandu",
+    "destination": "Kathmandu",
+    "meals": "Breakfast Included",
+    "gallery": []
+  },
+  {
+    "id": 4651,
+    "itinerary_stop": 1,
+    "itinerary_day": 16,
+    "itinerary_title": "Farewell",
+    "itinerary_description": "<p>After this wonderful adventure, it’s finally time to bid you a farewell. We will pick you up from the hotel and escort you to the airport for your journey home! We hope with all our hearts that we served you well and look forward to seeing you or your friends again someday.<br />(Breakfast included)</p>",
+    "accommodation": "Hotel",
+    "duration": "20-25 minutes",
+    "origin": "Kathmandu",
+    "destination": "Kathmandu",
+    "meals": "Breakfast Included",
+    "gallery": []
+  }
+]

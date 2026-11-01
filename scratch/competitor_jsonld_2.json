@@ -1,0 +1,483 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "@id": "https://www.nepalintrepidtreks.com/packages/annapurna-circuit-trek-with-tilicho-lake/",
+  "name": "Annapurna Circuit Trek with Tilicho Lake",
+  "description": "The best-known and most rewarding high-altitude trek, the Annapurna Circuit with Tilicho Lake Trek takes one on a 16-day journey from green, misty valleys and terraced fields to the barren, windswept lands of Manang and Mustang. Here, atypical detours such as trekking to Lake Tilicho, which is located at an altitude of 4,919 m, the highest lake in the world, before confronting the daunting Thorong La Pass at 5,416 m. Trekking is much more than altitude; it is cultural interaction, magnificent…",
+  "url": "https://www.nepalintrepidtreks.com/packages/annapurna-circuit-trek-with-tilicho-lake/",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://media.nepalintrepidtreks.com/media/annapurna-circuit-trek-with-tilicho-lake-1746614378.avif"
+  },
+  "duration": "P16D",
+  "itinerary": [
+    {
+      "@type": "TouristAttraction",
+      "name": "Arrival in Kathmandu",
+      "description": "Your Annapurna Circuit with Tilicho Lake Trek begins with your arrival at Tribhuvan International Airport in Kathmandu, located at approximately 1,355 m. A Nepal Intrepid Treks representative receives you at the airport and coordinates your transfer to the hotel. After an international flight, this…",
+      "position": 1,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "20-25 minutes"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Hotel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "car"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Drive from Kathmandu to Jagat via Besisahar",
+      "description": "The second day begins the journey toward the Annapurna region with a long overland drive from Kathmandu to Jagat via Besisahar. The route covers approximately 286 km and normally takes around 7 to 8 hours, although actual travel time can vary because of traffic, road conditions, weather, and local…",
+      "position": 2,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "7-8 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Shared Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "car"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Trek From Jagat to Dharapani",
+      "description": "The actual trekking journey begins on Day 3 as the route follows the Marsyangdi River valley from Jagat toward Dharapani. The day's walking distance is approximately 12 km and takes around 5 hours under normal conditions. The landscape during this section remains relatively green compared with the…",
+      "position": 3,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "5 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Shared Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Trek From Dharapani to Chame",
+      "description": "Day 4 continues the gradual ascent from Dharapani to Chame. The route covers approximately 15 km and generally takes around 6 hours. The landscape changes noticeably as the altitude increases. The lower valley environment gradually gives way to cooler mountain forests and more open terrain. The…",
+      "position": 4,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "6 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Shared Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Trek From Chame to Pissang",
+      "description": "The trek from Chame to Pisang is another major stage in the gradual progression toward higher elevation. The route covers approximately 13.9 km and takes around 6 hours. As the trail climbs, the surrounding landscape becomes cooler and more distinctly Himalayan. Forested sections give way to more…",
+      "position": 5,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "6 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Shared Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Trek From Upper Pissang to Manang",
+      "description": "Day 6 takes the route deeper into the Annapurna Circuit toward Manang. The day's distance is approximately 16 km, with a walking time of around 6.5 hours. The route provides some of the most impressive scenery of the middle section of the circuit. The mountain environment becomes increasingly open,…",
+      "position": 6,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "6.5 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Private Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Manang Exploration and Acclimatization Day",
+      "description": "Day 7 is intentionally different from the surrounding trekking days. Instead of continuing immediately toward greater elevation, the itinerary includes an exploration and acclimatization day in Manang. At approximately 3,500 m, Manang provides a suitable environment for spending additional time at…",
+      "position": 7,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "2-3 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Private Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Trek From Manang to Tilicho Base Camp through Khangsar Village",
+      "description": "Day 8 begins the dedicated Tilicho Lake section. The route leaves the main Annapurna Circuit around Manang and continues toward Khangsar Village before ascending toward Tilicho Base Camp. The total distance is approximately 19.1 km, making this one of the longer and more demanding days of the…",
+      "position": 8,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "5-6 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Private Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Hike to Tilicho Lake and Return to Tilicho Base Camp, then Trek to Shree Kharka",
+      "description": "Day 9 is one of the major highlights of the entire Annapurna Circuit with Tilicho Lake Trek. The day's objective is to reach Tilicho Lake at approximately 4,919 m before returning toward the lower section of the route and continuing to Siri Kharka. The complete day covers approximately 15 km and…",
+      "position": 9,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "6-7 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Shared Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Trek from Siri Kharka to Yak Kharka",
+      "description": "After completing the Tilicho excursion, Day 10 reconnects the journey with the main Annapurna Circuit. The route from Siri Kharka to Yak Kharka covers approximately 11.1 km and generally takes around 5 hours. The landscape remains strongly alpine, with sparse vegetation, rocky slopes, broad…",
+      "position": 10,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "5 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Shared Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Trek from Yak Kharka to Thorong Phedi",
+      "description": "Day 11 brings the trek closer to the highest point of the entire itinerary. The route from Yak Kharka to Thorong Phedi at approximately 4,600 m covers around 8.5 km and takes approximately 4.5 hours. Although this is shorter in distance than several earlier trekking days, the high elevation makes…",
+      "position": 11,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "4.5 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Shared Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Trek From Thorong Phedi to Muktinath via Thorong-La Pass",
+      "description": "Day 12 is the defining trekking day of the Annapurna Circuit with Tilicho Lake itinerary. The route climbs from Thorong Phedi to Thorong La Pass at approximately 5,416 m before descending all the way toward Muktinath at approximately 3,710 m. The day's total distance is around 16.4 km, with…",
+      "position": 12,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "8 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Shared Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Trek From Muktinath to Jomsom",
+      "description": "After the demanding Thorong La crossing, Day 13 continues the descent from Muktinath toward Jomsom. The route covers approximately 20.2 km and takes around 6 hours. The landscape is now very different from the forested lower portions of the Annapurna Circuit. The route enters the dry environment of…",
+      "position": 13,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "6 hours"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Guesthouse (Private Bathroom)"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast, Lunch, and Dinner Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "foot"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "From Jomsom, fly to Pokhara",
+      "description": "Day 14 marks the transition from trekking to air travel. After the long trekking journey, travelers leave Jomsom by domestic flight for Pokhara at approximately 822 m. The flight itself is approximately 25 minutes, followed by the transfer to the hotel. The aerial journey provides a different…",
+      "position": 14,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "25 minutes flight and 20 minutes drive"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Hotel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "air"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Fly from Pokhara to Kathmandu",
+      "description": "Day 15 begins the final return journey. The package includes a domestic flight from Pokhara to Kathmandu, with a flight duration of approximately 25 minutes, followed by the transfer to the Kathmandu hotel. The flight creates another rapid transition between environments. The traveler has moved…",
+      "position": 15,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "25 minutes flight and 20-25 minutes drive"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Hotel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "air"
+        }
+      ]
+    },
+    {
+      "@type": "TouristAttraction",
+      "name": "Farewell",
+      "description": "The final day marks the completion of the Annapurna Circuit with Tilicho Lake Trek. A Nepal Intrepid Treks representative coordinates your airport transfer according to your international flight schedule. Before leaving the hotel, check that you have: Passport Flight documents Personal valuables…",
+      "position": 16,
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "walking_hours",
+          "value": "20-25 minutes drive"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "accommodation",
+          "value": "Hotel"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "meals",
+          "value": "Breakfast Included"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "transportation",
+          "value": "air"
+        }
+      ]
+    }
+  ],
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": 1175,
+    "highPrice": 1175,
+    "offerCount": 25,
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.nepalintrepidtreks.com/packages/annapurna-circuit-trek-with-tilicho-lake/"
+  },
+  "about": [
+    {
+      "@type": "Place",
+      "name": "Annapurna Region",
+      "url": "https://www.nepalintrepidtreks.com/annapurna-region/"
+    }
+  ],
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://www.nepalintrepidtreks.com/#organization"
+  }
+}

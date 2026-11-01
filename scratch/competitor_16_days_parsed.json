@@ -1,0 +1,435 @@
+[
+  {
+    "@type": "TouristAttraction",
+    "name": "Arrive at Tribhuwan International Airport in Kathmandu (Namaste and A very warm Welcome in Nepal)",
+    "description": "Nepal Intrepid Treks will be your dedicated travel companion until you return to your home country. Once you arrive at Kathmandu airport, we will pick you up and take you to your hotel. Accommodation for our valued customers includes room and breakfast in a three-star hotel in Kathmandu. Take in…",
+    "position": 1,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "20-25 minutes"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Hotel"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "car"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Sightseeing in Kathmandu Valley and Preparation Day",
+    "description": "Prepare for a day of immersion into the Nepalese culture, while visiting the most important landmarks of this fascinating city and its outskirts. Our experienced guide will take you to Kathmandu Durbar Square, a UNESCO heritage site which represents the political and historical values of Nepalese…",
+    "position": 2,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Hotel"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "car"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Drive from Kathmandu to Jagat by jeep",
+    "description": "Today, we drive towards Besisahar. After around 6 hours’ drive along Trishuli river, we reach Besisahar. We take lunch on the way and take a local jeep or bus from Besisahar to Syange. We enter into Annapurna Conservation where your guide will take our permits and entry tickets. Then we head…",
+    "position": 3,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "7-8 hours"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Guesthouse (Shared Bathroom)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast, Lunch, and Dinner Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "car"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Jagat to Dharapani",
+    "description": "We descend down through a rocky trail and climb up through forest to Chamje. We cross Marsyangdi Khola and continue walking along the valley. We then climb up steadily until we reach Tal. Tal is the first village in Manang district. We take lunch and continue walking through the valley. We continue…",
+    "position": 4,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "5 hours"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Guesthouse (Shared Bathroom)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast, Lunch, and Dinner Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "foot"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Dharapani to Chame",
+    "description": "Leaving Dharapani, we steeply climb up for around three hours to reach Timang village. We then have our lunch on the way and start walking on a flat terrain along pine, fir and rhododendron forests to Chame. It takes another three hours to reach Chame. As you approach near Chame, you will be…",
+    "position": 5,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "6 hours"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Guesthouse (Shared Bathroom)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast, Lunch, and Dinner Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "foot"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Chame to Pisang",
+    "description": "Our walk for the day is comparatively easy as we walk through flat trail that winds up through dense forest in the valley. We re-cross the southern bank of Marsyangdiriver and walk to Dhikur Pokhari. We take lunch on the way and continue ahead. We will get a glimpse of rock face of Paungda Danda at…",
+    "position": 6,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "6 hours"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Guesthouse (Shared Bathroom)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast, Lunch, and Dinner Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "foot"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Pisang to Manang",
+    "description": "We continue our journey and walk towards the upper drier part of Manang district. On the way, we pass through the pine forests. The walk for the day winds up to the dry upper part of the Manang district through pine forests. There are actually two routes that take us to Manang. We take the upper…",
+    "position": 7,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "6.5 hours"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Guesthouse (Private Bathroom)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast, Lunch, and Dinner Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "foot"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Acclimatization Day in Manang",
+    "description": "We spend the day in Manang exploring the beauty of wild and secluded landscape. This day is important to acclimatize ourselves with the gaining altitude. Today, we hike up to Gangapurna Lake and explore the local villages. We also visit the Himalayan Rescue Association Clinic. In the evening, we…",
+    "position": 8,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Guesthouse (Private Bathroom)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast, Lunch, and Dinner Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "foot"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Trek From Manang to Yak Kharka",
+    "description": "Today, we start ascending up to Yak Kharka. We climb up steadily to Tenki village and continue our climb up until we leave Marsyandi valley. As we ascend up, we can notice the change in vegetation that gets sparser. Leaving the valley, we turn northwest to the valley to JarsangKhola. We walk ahead…",
+    "position": 9,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "5 hours"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Guesthouse (Shared Bathroom)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast, Lunch, and Dinner Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "foot"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Yak Kharka to Thorong Phedi",
+    "description": "Our walking hours for the day is comparatively short. We continue walking along the trail until we reach Thorong Phedi. You can find Thorong Phedi as a busy settlement because it offers the service of accommodation and food to the trekkers and climbers. It is a climbing point for the climbers who…",
+    "position": 10,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "4.5 hours"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Guesthouse (Shared Bathroom)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast, Lunch, and Dinner Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "foot"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Thorong Phedi to Muktinath",
+    "description": "Today is a long but rewarding day of our entire journey. We cross the Thorong La pass today which is quite challenging. Therefore, we start our climb early in the morning to avoid the bad weather in the afternoon. At around 3 a.m. in the morning, we take our breakfast and climb up steep to reach…",
+    "position": 11,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "8 hours"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Guesthouse (Shared Bathroom)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast, Lunch, and Dinner Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "foot"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Muktinath to Jomsom",
+    "description": "In the morning, we pay our visit to the famous religious hub – Muktinath temple. Muktinath is a popular religious destination amongst Hindu and Buddhist pilgrims. A Buddhist gompa, a Vishnu temple and the Jwalamai (Goddess of Fire) Temple are the major attractions of this place. This temple has a…",
+    "position": 12,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "6 hours"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Guesthouse (Private Bathroom)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast, Lunch, and Dinner Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "foot"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Fly from Jomsom to Pokhara",
+    "description": "Leaving Jomson, we take a flight back to Pokhara. Upon our arrival, we check in to the hotel and wander around the city for utilizing the remaining time. We visit the lakeside, opt for boating and pay our visit to Barahi temple, a temple in between the Fewa Lake. The views of the mountains from the…",
+    "position": 13,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "25 minutes flight and 20 minutes drive"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Hotel"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "air"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Drive back to Kathmandu",
+    "description": "After exploring the glory of Pokhara and Annapurna region of Nepal, we drive back to Kathmandu with the scenery of country side landscape all along which is a beautiful experience in itself. (Breakfast included)",
+    "position": 14,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "5-6 hours"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Hotel"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "car"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Leisure Day in Kathmandu",
+    "description": "Spend this day at your leisure in or around Kathmandu. You can take one of our optional day trips, relax or roam around Kathmandu city. Perhaps go for a massage – you deserve it – or do some last-minute shopping. Take a leisurely lunch in one of the many tea gardens or dine on one of the rooftop…",
+    "position": 15,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Hotel"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "foot"
+      }
+    ]
+  },
+  {
+    "@type": "TouristAttraction",
+    "name": "Farewell",
+    "description": "After this wonderful adventure, it’s finally time to bid you a farewell. We will pick you up from the hotel and escort you to the airport for your journey home! We hope with all our hearts that we served you well and look forward to seeing you or your friends again someday. (Breakfast included)",
+    "position": 16,
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "walking_hours",
+        "value": "20-25 minutes"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "accommodation",
+        "value": "Hotel"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "meals",
+        "value": "Breakfast Included"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "transportation",
+        "value": "car"
+      }
+    ]
+  }
+]

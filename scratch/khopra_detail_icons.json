@@ -1,0 +1,107 @@
+[
+  {
+    "id": "accommodation",
+    "title": "Accommodation: Community Lodges & Mountain Teahouses",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M3 17V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path><path d=\"M3 13h18\"></path><circle cx=\"8\" cy=\"9\" r=\"1.5\"></circle>\n                        </svg>"
+  },
+  {
+    "id": "food",
+    "title": "Dining, Food & Water on the Annapurna Trail",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3\"/>\n                        </svg>"
+  },
+  {
+    "id": "best-time",
+    "title": "Best Time & Seasons for Khopra Ridge Trek",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <circle cx=\"12\" cy=\"12\" r=\"5\"/><line x1=\"12\" y1=\"1\" x2=\"12\" y2=\"3\"/><line x1=\"12\" y1=\"21\" x2=\"12\" y2=\"23\"/><line x1=\"4.22\" y1=\"4.22\" x2=\"5.64\" y2=\"5.64\"/><line x1=\"18.36\" y1=\"18.36\" x2=\"19.78\" y2=\"19.78\"/><line x1=\"1\" y1=\"12\" x2=\"3\" y2=\"12\"/><line x1=\"21\" y1=\"12\" x2=\"23\" y2=\"12\"/><line x1=\"4.22\" y1=\"19.78\" x2=\"5.64\" y2=\"18.36\"/><line x1=\"18.36\" y1=\"5.64\" x2=\"19.78\" y2=\"4.22\"/>\n                        </svg>"
+  },
+  {
+    "id": "typical-day",
+    "title": "A Typical Day on the Khopra Ridge Trail",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <circle cx=\"12\" cy=\"12\" r=\"10\"/><polyline points=\"12 6 12 12 16 14\"/>\n                        </svg>"
+  },
+  {
+    "id": "permits",
+    "title": "Permits & Official Regulations (ACAP & TIMS)",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/>\n                        </svg>"
+  },
+  {
+    "id": "acclimatization",
+    "title": "Acclimatization Strategy & Altitude Safety (AMS)",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/>\n                        </svg>"
+  },
+  {
+    "id": "difficulty",
+    "title": "Difficulty, Fitness & 10-Week Training Regimen",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M13 2L3 14h9l-1 8 10-12h-9l1-8z\"/>\n                        </svg>"
+  },
+  {
+    "id": "culture",
+    "title": "Cultural Heritage: Gurung & Magar Traditions",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/>\n                        </svg>"
+  },
+  {
+    "id": "route-alternatives",
+    "title": "Route Profile & Trail Architecture (Circuit Loop)",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <polygon points=\"3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21\"/>\n                        </svg>"
+  },
+  {
+    "id": "flight-lukla",
+    "title": "Transportation: Kathmandu to Pokhara & Trailhead Access",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M21 16V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zM3 10h18M7 15h.01M11 15h.01\"/>\n                        </svg>"
+  },
+  {
+    "id": "age-groups",
+    "title": "Suitability for Different Age Groups & Fitness Levels",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M23 21v-2a4 4 0 0 0-3-3.87\"/>\n                        </svg>"
+  },
+  {
+    "id": "extend-trip",
+    "title": "Trip Extension Opportunities (ABC, Chitwan & Pokhara)",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/>\n                        </svg>"
+  },
+  {
+    "id": "porter-limit",
+    "title": "Ethical Porter Welfare & Weight Guidelines",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"/><polygon points=\"16 8 20 8 23 11 23 16 16 16 16 8\"/><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"/><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"/>\n                        </svg>"
+  },
+  {
+    "id": "upgrade-heli",
+    "title": "Emergency Evacuation & Helicopter Logistics",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <polygon points=\"13 2 3 14 12 14 11 22 21 10 12 10 13 2\"/>\n                        </svg>"
+  },
+  {
+    "id": "responsible-trekking",
+    "title": "Responsible Trekking & Direct Community Support",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/>\n                        </svg>"
+  },
+  {
+    "id": "guided-vs-independent",
+    "title": "Mandatory Guide Regulations & Safety Advantages",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-6h2zm0-8h-2V7h2z\"/>\n                        </svg>"
+  },
+  {
+    "id": "emergency-evacuation",
+    "title": "Emergency Medical Readiness & First Aid Protocols",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/>\n                        </svg>"
+  },
+  {
+    "id": "money-exchange",
+    "title": "Cash Needs, ATMs & Personal Expenses on Trail",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <rect x=\"2\" y=\"6\" width=\"20\" height=\"12\" rx=\"2\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/><path d=\"M6 12h.01M18 12h.01\"/>\n                        </svg>"
+  },
+  {
+    "id": "booking-process",
+    "title": "Booking Process, Deposit & ACAP Documentation",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M9 11l3 3L22 4\"/><path d=\"M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11\"/>\n                        </svg>"
+  },
+  {
+    "id": "tipping-culture",
+    "title": "Tipping Etiquette for Mountain Guides & Porters",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"/>\n                        </svg>"
+  },
+  {
+    "id": "important-notes",
+    "title": "Essential Expedition Notes & Weather Contingencies",
+    "iconSvg": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                          <circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"/><line x1=\"12\" y1=\"16\" x2=\"12.01\" y2=\"16\"/>\n                        </svg>"
+  }
+]
