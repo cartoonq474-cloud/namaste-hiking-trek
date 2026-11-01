@@ -126,7 +126,7 @@ function setupAccordions() {
   }, 300);
 
   // Global Expand All / Collapse All for Itinerary
-  const toggleAllBtn = document.getElementById('toggle-all-itinerary') || document.getElementById('itin-expand-all-btn');
+  const toggleAllBtn = document.getElementById('toggle-all-itinerary') || document.getElementById('itin-expand-all-btn') || document.getElementById('itineraryExpandAllBtn');
   if (toggleAllBtn) {
     toggleAllBtn.addEventListener('click', () => {
       const allCards = document.querySelectorAll('.itinerary-card, .itinerary-accordion-card');
@@ -746,9 +746,12 @@ function setupDatesAndAvailability() {
           cellClasses.push('disabled');
         }
 
+        const durationDays = parseInt(calendarMount.getAttribute('data-duration') || '14', 10);
+        const offsetDays = durationDays - 1;
+
         if (selectedStartDate) {
           const startTime = selectedStartDate.getTime();
-          const endTime = startTime + 13 * 86400000;
+          const endTime = startTime + offsetDays * 86400000;
           const thisTime = thisDate.getTime();
 
           if (thisTime === startTime) {
@@ -799,15 +802,18 @@ function setupDatesAndAvailability() {
         const [y, m, d] = dateVal.split('-').map(Number);
         selectedStartDate = new Date(y, m - 1, d);
 
+        const durationDays = parseInt(calendarMount.getAttribute('data-duration') || '14', 10);
+        const offsetDays = durationDays - 1;
+
         const endDate = new Date(selectedStartDate);
-        endDate.setDate(endDate.getDate() + 13);
+        endDate.setDate(endDate.getDate() + offsetDays);
 
         const startTxt = `${monthNames[selectedStartDate.getMonth()].slice(0, 3)} ${selectedStartDate.getDate()}`;
         const endTxt = `${monthNames[endDate.getMonth()].slice(0, 3)} ${endDate.getDate()}, ${endDate.getFullYear()}`;
         const rangeString = `${startTxt} – ${endTxt}`;
 
         if (selectedText) {
-          selectedText.innerHTML = `<strong>Selected Date:</strong> ${rangeString} (14 Days)`;
+          selectedText.innerHTML = `<strong>Selected Date:</strong> ${rangeString} (${durationDays} Days)`;
         }
 
         if (selectBtn) {
@@ -1011,7 +1017,7 @@ function setupHimalayanReviews() {
 // 6. Categorized FAQ Section Handler
 function setupFaqSection() {
   const categoryBtns = document.querySelectorAll('.faq-category-btn');
-  const categoryPanels = document.querySelectorAll('.faq-category-content, .faq-category-panel');
+  const categoryPanels = document.querySelectorAll('.faq-category-content, .faq-category-panel, .faq-pane');
   const currentCategoryTitle = document.getElementById('faq-current-category-title');
   const expandAllBtn = document.getElementById('faq-expand-all-btn');
 
@@ -1031,7 +1037,7 @@ function setupFaqSection() {
       }
 
       categoryPanels.forEach(panel => {
-        const matches = (panel.id === `faq-cat-${targetCat}` || panel.id === `faq-panel-${targetCat}`);
+        const matches = (panel.id === `faq-cat-${targetCat}` || panel.id === `faq-panel-${targetCat}` || panel.id === `faq-pane-${targetCat}`);
         if (matches) {
           panel.classList.add('active');
           panel.style.display = 'block';
@@ -1061,7 +1067,7 @@ function setupFaqSection() {
   // Expand All / Collapse All Button
   if (expandAllBtn) {
     expandAllBtn.addEventListener('click', () => {
-      const activePanel = document.querySelector('.faq-category-content.active, .faq-category-panel.active') ||
+      const activePanel = document.querySelector('.faq-category-content.active, .faq-category-panel.active, .faq-pane.active') ||
                           Array.from(categoryPanels).find(p => getComputedStyle(p).display !== 'none');
       if (!activePanel) return;
 
