@@ -95,6 +95,11 @@ function setupAccordions() {
       if (!card) return;
       const content = card.querySelector('.itinerary-content');
       if (!content) return;
+
+      if (content.style.display === 'none') {
+        content.style.display = '';
+      }
+
       const isExpanded = card.classList.contains('active');
 
       if (isExpanded) {
@@ -112,7 +117,8 @@ function setupAccordions() {
         });
 
         card.classList.add('active');
-        content.style.maxHeight = content.scrollHeight + 'px';
+        const height = content.scrollHeight > 0 ? content.scrollHeight : 2000;
+        content.style.maxHeight = height + 'px';
       }
     });
   });
@@ -121,7 +127,9 @@ function setupAccordions() {
   setTimeout(() => {
     const activeContents = document.querySelectorAll('.itinerary-card.active .itinerary-content, .itinerary-accordion-card.active .itinerary-content');
     activeContents.forEach(content => {
-      content.style.maxHeight = content.scrollHeight + 'px';
+      if (content.style.display === 'none') content.style.display = '';
+      const height = content.scrollHeight > 0 ? content.scrollHeight : 2000;
+      content.style.maxHeight = height + 'px';
     });
   }, 300);
 
@@ -133,12 +141,16 @@ function setupAccordions() {
       const allActive = Array.from(allCards).every(c => c.classList.contains('active'));
       allCards.forEach(c => {
         const content = c.querySelector('.itinerary-content');
+        if (content && content.style.display === 'none') {
+          content.style.display = '';
+        }
         if (allActive) {
           c.classList.remove('active');
           if (content) content.style.maxHeight = '';
         } else {
           c.classList.add('active');
-          if (content) content.style.maxHeight = content.scrollHeight + 'px';
+          const height = content ? (content.scrollHeight > 0 ? content.scrollHeight : 2000) : 2000;
+          if (content) content.style.maxHeight = height + 'px';
         }
       });
       const span = toggleAllBtn.querySelector('span');
