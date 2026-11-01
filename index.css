@@ -7183,23 +7183,27 @@ textarea {
   transition: max-height var(--transition-normal) ease-out;
 }
 
-.detail-accordion-content-inner {
+.detail-accordion-content-inner,
+.detail-content-inner {
   padding: 0 24px 24px 84px; /* offset to align content under title instead of icon */
   font-size: 0.98rem;
   line-height: 1.65;
   color: var(--color-neutral-700);
 }
 
-.detail-accordion-content-inner p {
+.detail-accordion-content-inner p,
+.detail-content-inner p {
   margin-bottom: 12px;
 }
 
-.detail-accordion-content-inner p:last-child {
+.detail-accordion-content-inner p:last-child,
+.detail-content-inner p:last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 640px) {
-  .detail-accordion-content-inner {
+  .detail-accordion-content-inner,
+  .detail-content-inner {
     padding: 0 20px 20px 20px; /* remove left indent on small screens to fit text */
   }
   .detail-accordion-header {
