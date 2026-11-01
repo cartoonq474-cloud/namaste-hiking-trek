@@ -4332,136 +4332,571 @@
 
 <!-- Section 10: Reviews & Ratings -->
           <section id="section-booking" class="trek-detail-section" style="padding-bottom: 0; margin-bottom: 0;"></section>
-          <section id="section-reviews" class="trek-detail-section">
-            <h2 class="trek-section-title" style="font-size: 2.2rem; margin-bottom: 8px; text-align: left;">Annapurna Base Camp Trek Reviews</h2>
+                    <section id="section-reviews" class="trek-detail-section">
+            <h2 class="trek-section-title" style="font-size: 2.2rem; margin-bottom: 8px; text-align: left;">Best Himalayan Trekking Reviews</h2>
             <p style="color: var(--color-neutral-600); font-size: 1.05rem; margin-bottom: 28px; text-align: left; max-width: 100%; margin-left: 0; margin-right: 0;">
-              Over 15,000 adventure seekers have explored the Himalayas with Namaste Hiking Trek. Read authentic reviews from travelers who walked into the Annapurna Sanctuary with our team:
+              Over 15,000 adventure seekers have explored Annapurna, Everest, and Manaslu with Namaste Hiking Trek.
             </p>
 
             <!-- 3-Pill Tab Switcher Navigation -->
             <div class="review-tabs-container">
               <button type="button" class="review-tab-btn active" data-target="reviews-video-pane">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M23 7l-7 5 7-5v14l7-5V7z"></path>
+                  <path d="M23 7l-7 5 7 5V7z"></path>
                   <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
                 </svg>
-                <span>Video Stories</span>
+                Video Reviews
               </button>
-              <button type="button" class="review-tab-btn" data-target="reviews-written-pane">
+              <button type="button" class="review-tab-btn" data-target="reviews-customer-pane">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                 </svg>
-                <span>Trekker Reviews</span>
+                Customer Reviews
               </button>
-              <button type="button" class="review-tab-btn" data-target="reviews-stats-pane">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 20V10"></path>
-                  <path d="M18 20V4"></path>
-                  <path d="M6 20v-4"></path>
+              <button type="button" class="review-tab-btn" data-target="reviews-platform-pane">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#EAB308" stroke="#EAB308" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                 </svg>
-                <span>Rating Breakdown</span>
+                Platform Reviews
               </button>
             </div>
 
-            <!-- Tab 1: Video Stories Pane -->
-            <div class="review-pane active" id="reviews-video-pane">
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
-                  <div style="position: relative; height: 180px;">
-                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-trekkers-sunrise-viewpoint-08.jpg" alt="Trekkers at Poon Hill" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;">
-                      <div style="width: 48px; height: 48px; border-radius: 50%; background: #ffffff; color: #008060; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <!-- Tab 1: Video Reviews Grid/Carousel -->
+            <div id="reviews-video-pane" class="review-pane-content active">
+              <div class="video-reviews-grid">
+                <!-- Card 1: David -->
+                <div class="video-review-card" data-video-url="https://www.w3schools.com/html/mov_bbb.mp4" data-trekker="David" data-trek="Annapurna Sanctuary Group">
+                  <img src="../../images/video-thumb-david.png" alt="David Video Review" class="video-card-bg">
+                  <div class="video-card-badge-top">
+                    <span class="video-rating-pill"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.9</span>
+                    <span class="video-date-pill">9 May</span>
+                  </div>
+                  <button type="button" class="video-play-btn" aria-label="Play video review">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#0C2B4E" stroke="none">
+                      <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                    </svg>
+                  </button>
+                  <div class="video-card-user-info">
+                    <div class="video-user-avatar">
+                      <img src="../../images/video-thumb-david.png" alt="David Avatar">
+                      <span class="verified-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    </div>
+                    <div class="video-user-meta">
+                      <div class="video-user-name">David <span class="blue-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+                      <div class="video-user-trek">Annapurna Sanctuary Group</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2: Emma -->
+                <div class="video-review-card" data-video-url="https://www.w3schools.com/html/mov_bbb.mp4" data-trekker="Emma" data-trek="Annapurna Base Camp Trekker">
+                  <img src="../../images/video-thumb-emma.png" alt="Emma Video Review" class="video-card-bg">
+                  <div class="video-card-badge-top">
+                    <span class="video-rating-pill"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 5.0</span>
+                    <span class="video-date-pill">28 February</span>
+                  </div>
+                  <button type="button" class="video-play-btn" aria-label="Play video review">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#0C2B4E" stroke="none">
+                      <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                    </svg>
+                  </button>
+                  <div class="video-card-user-info">
+                    <div class="video-user-avatar">
+                      <img src="../../images/video-thumb-emma.png" alt="Emma Avatar">
+                      <span class="verified-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    </div>
+                    <div class="video-user-meta">
+                      <div class="video-user-name">Emma <span class="blue-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+                      <div class="video-user-trek">Annapurna Base Camp Trekker</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3: Chad -->
+                <div class="video-review-card" data-video-url="https://www.w3schools.com/html/mov_bbb.mp4" data-trekker="Chad" data-trek="Poon Hill &amp; Sanctuary Expedition">
+                  <img src="../../images/video-thumb-chad.png" alt="Chad Video Review" class="video-card-bg">
+                  <div class="video-card-badge-top">
+                    <span class="video-rating-pill"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.9</span>
+                    <span class="video-date-pill">11 January</span>
+                  </div>
+                  <button type="button" class="video-play-btn" aria-label="Play video review">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#0C2B4E" stroke="none">
+                      <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                    </svg>
+                  </button>
+                  <div class="video-card-user-info">
+                    <div class="video-user-avatar">
+                      <img src="../../images/video-thumb-chad.png" alt="Chad Avatar">
+                      <span class="verified-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    </div>
+                    <div class="video-user-meta">
+                      <div class="video-user-name">Chad <span class="blue-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+                      <div class="video-user-trek">Poon Hill &amp; Sanctuary Expedition</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 4: Angelina -->
+                <div class="video-review-card" data-video-url="https://www.w3schools.com/html/mov_bbb.mp4" data-trekker="Angelina" data-trek="Annapurna Base Camp 12 Days">
+                  <img src="../../images/video-thumb-angelina.png" alt="Angelina Video Review" class="video-card-bg">
+                  <div class="video-card-badge-top">
+                    <span class="video-rating-pill"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 5.0</span>
+                    <span class="video-date-pill">14 March</span>
+                  </div>
+                  <button type="button" class="video-play-btn" aria-label="Play video review">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#0C2B4E" stroke="none">
+                      <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                    </svg>
+                  </button>
+                  <div class="video-card-user-info">
+                    <div class="video-user-avatar">
+                      <img src="../../images/video-thumb-angelina.png" alt="Angelina Avatar">
+                      <span class="verified-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    </div>
+                    <div class="video-user-meta">
+                      <div class="video-user-name">Angelina <span class="blue-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+                      <div class="video-user-trek">Annapurna Base Camp 12 Days</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Customer Written Reviews -->
+            <div id="reviews-customer-pane" class="review-pane-content" style="display: none;">
+              <div class="customer-reviews-stack">
+                <!-- Review Card 1: Madeline Thomson -->
+                <div class="customer-review-card">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-madeline.png" alt="Madeline Thomson" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Madeline Thomson</span>
+                          <span class="reviewer-country">· AUSTRALIA</span>
+                        </div>
+                        <div class="review-date-txt">16th October 2026</div>
                       </div>
                     </div>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Purchase
+                    </div>
                   </div>
-                  <div style="padding: 16px;">
-                    <strong style="color: var(--color-primary-navy); font-size: 1rem; display: block; margin-bottom: 4px;">"The amphitheater blew my mind"</strong>
-                    <p style="font-size: 0.88rem; color: var(--color-neutral-600); margin: 0;">Sarah &amp; Mark (UK) describe waking up at Annapurna Base Camp surrounded by 360-degree snow walls.</p>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                    <h3 class="review-heading-title">the BEST Annapurna Sanctuary trek experience ever</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Annapurna Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      Our 12-day Annapurna Base Camp trek with Namaste Hiking Trek went beyond every expectation we had. Waking up on Day 8 in the middle of the Annapurna Sanctuary amphitheater at 4,130 m surrounded by Annapurna I (8,091 m), Machhapuchhre, and Hiunchuli was completely life-changing. From the sunrise over Poon Hill to the relaxing soak at Jhinu Danda hot springs on the descent, Sagar and our mountain crew took exceptional care of every detail, checking our pulse oximeter readings daily and pacing our walking days perfectly!
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <!-- 3 Photo Thumbnails -->
+                  <div class="review-photos-grid">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-trekkers-sunrise-viewpoint-08.jpg" alt="Trekkers at Sunrise Viewpoint" class="review-photo-thumb">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-trekking-group-nepal-flag-snow-01.jpg" alt="Trekker Group with Nepal Flag at Base Camp" class="review-photo-thumb">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-suspension-bridge-crossing-river-04.jpg" alt="Suspension Bridge Crossing over Modi Khola" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="19">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">19</span>)
+                    </button>
                   </div>
                 </div>
 
-                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
-                  <div style="position: relative; height: 180px;">
-                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-trekking-group-nepal-flag-snow-01.jpg" alt="Trekking Group with Nepal Flag" style="width: 100%; height: 100%; object-fit: cover;">
-                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;">
-                      <div style="width: 48px; height: 48px; border-radius: 50%; background: #ffffff; color: #008060; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <!-- Review Card 2: Brenna Shaw -->
+                <div class="customer-review-card">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-brenna.png" alt="Brenna Shaw" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Brenna Shaw</span>
+                          <span class="reviewer-country">· UNITED STATES</span>
+                        </div>
+                        <div class="review-date-txt">24th April 2026</div>
                       </div>
                     </div>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Purchase
+                    </div>
                   </div>
-                  <div style="padding: 16px;">
-                    <strong style="color: var(--color-primary-navy); font-size: 1rem; display: block; margin-bottom: 4px;">"The guide made all the difference"</strong>
-                    <p style="font-size: 0.88rem; color: var(--color-neutral-600); margin: 0;">David K. (Australia) on how our guide's daily pulse oximeter checks and steady pacing made the climb effortless.</p>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                    <h3 class="review-heading-title">5+++ stars for Namaste Hiking Trek in Annapurna</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Annapurna Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      Absolute 5-star experience from start to finish! Our lead guide Sagar and porter team ensured our teahouse rooms in Ghorepani, Chhomrong, and ABC were booked in advance, warm, and comfortable. The hot dal bhat, apple pies, and garlic soups were delicious. As a solo female traveler joining a small group, I felt completely safe, respected, and empowered. I cannot wait to return for Manaslu!
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <!-- 3 Photo Thumbnails -->
+                  <div class="review-photos-grid">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-teahouse-dining-hall-hot-tea-06.jpg" alt="Teahouse Dining Hall Warm Meal" class="review-photo-thumb">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-jhinu-danda-natural-hot-springs-10.jpg" alt="Jhinu Danda Natural Hot Springs" class="review-photo-thumb">
+                    <img src="../../images/gallery-peak.jpg" alt="Mountain Panoramas" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="27">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">27</span>)
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Tab 2: Written Reviews Pane -->
-            <div class="review-pane" id="reviews-written-pane" style="display: none;">
-              <div style="display: flex; flex-direction: column; gap: 16px;">
-                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                    <div>
-                      <strong style="color: var(--color-primary-navy); font-size: 1.05rem;">Elena Rostova</strong>
-                      <span style="font-size: 0.8rem; color: #008060; font-weight: 700; margin-left: 8px;">✓ Verified Trekker</span>
+            <!-- Tab 3: Platform Reviews -->
+            <div id="reviews-platform-pane" class="review-pane-content" style="display: none;">
+              <!-- Secondary Platform Sub-Navigation Bar -->
+              <div class="platform-sub-tabs-wrapper">
+                <div class="platform-sub-tabs">
+                  <button type="button" class="platform-sub-tab active" data-platform="google">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/></svg>
+                    Google Reviews
+                  </button>
+                  <button type="button" class="platform-sub-tab" data-platform="tripadvisor">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#00AA6C"><circle cx="12" cy="12" r="10"/></svg>
+                    TripAdvisor
+                  </button>
+                  <button type="button" class="platform-sub-tab" data-platform="trustpilot">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#00B67A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Trustpilot
+                  </button>
+                  <button type="button" class="platform-sub-tab" data-platform="sourceforge">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#EE5A24"><polygon points="12 2 7 12 12 22 7 12 2"/><polygon points="2 17 12 22 22 17 12 12 2 17"/></svg>
+                    SourceForge
+                  </button>
+                </div>
+              </div>
+
+              <!-- Rating Summary Header Card -->
+              <div class="platform-summary-card">
+                <div class="summary-left">
+                  <span class="stars-gold" style="font-size: 1.25rem;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                  <span class="summary-score">4.9</span>
+                  <span class="summary-count" id="platform-summary-count">(1,549 Verified Reviews)</span>
+                </div>
+                <button type="button" class="btn-leave-review open-inquiry-btn" data-trek-title="Leave a Review for Annapurna Base Camp Trek">Leave a Review</button>
+              </div>
+
+              <!-- Platform Rich Review Cards Stack -->
+              <div class="customer-reviews-stack" id="platform-cards-container">
+                <!-- Google Review Card 1: Madeline Thomson -->
+                <div class="customer-review-card platform-review-item" data-platform="google">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-madeline.png" alt="Madeline Thomson" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Madeline Thomson</span>
+                          <span class="reviewer-country">· AUSTRALIA</span>
+                        </div>
+                        <div class="review-date-txt">16th October 2026</div>
+                      </div>
                     </div>
-                    <span style="color: #f59e0b; font-size: 1rem;">★★★★★</span>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Google Review
+                    </div>
                   </div>
-                  <p style="font-size: 0.92rem; color: var(--color-neutral-700); line-height: 1.6; margin: 0 0 8px 0;">"Walking up the Ulleri stairs was challenging, but doing Poon Hill first made our bodies completely ready for ABC. Reaching the Sanctuary under bright blue skies on Day 8 was the highlight of my travel life. Thank you Namaste Hiking Trek!"</p>
-                  <span style="font-size: 0.78rem; color: var(--color-neutral-400);">Trek date: October 2026 • Traveled as a couple</span>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                    <h3 class="review-heading-title">Best ABC Trek Experience!</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Annapurna Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      Everything from our welcome in Kathmandu, scenic drive to Pokhara, and the trek through Ulleri, Ghorepani, and into the Sanctuary was impeccably executed. Sagar and our porter team were stars!
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <!-- 3 Photo Thumbnails -->
+                  <div class="review-photos-grid">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-trekkers-sunrise-viewpoint-08.jpg" alt="Trek photo 1" class="review-photo-thumb">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-trekking-group-nepal-flag-snow-01.jpg" alt="Trek photo 2" class="review-photo-thumb">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-suspension-bridge-crossing-river-04.jpg" alt="Trek photo 3" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="19">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">19</span>)
+                    </button>
+                  </div>
                 </div>
 
-                <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                    <div>
-                      <strong style="color: var(--color-primary-navy); font-size: 1.05rem;">Thomas Lindqvist</strong>
-                      <span style="font-size: 0.8rem; color: #008060; font-weight: 700; margin-left: 8px;">✓ Verified Trekker</span>
+                <!-- Google Review Card 2: Brenna Shaw -->
+                <div class="customer-review-card platform-review-item" data-platform="google">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-brenna.png" alt="Brenna Shaw" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Brenna Shaw</span>
+                          <span class="reviewer-country">· UNITED STATES</span>
+                        </div>
+                        <div class="review-date-txt">24th April 2026</div>
+                      </div>
                     </div>
-                    <span style="color: #f59e0b; font-size: 1rem;">★★★★★</span>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Google Review
+                    </div>
                   </div>
-                  <p style="font-size: 0.92rem; color: var(--color-neutral-700); line-height: 1.6; margin: 0 0 8px 0;">"Superbly organized from the airport pickup in Kathmandu to the relaxing soak at Jhinu Danda hot springs on the way back. Our porter was treated like family and our guide knew every peak and flower along the trail. 10/10."</p>
-                  <span style="font-size: 0.78rem; color: var(--color-neutral-400);">Trek date: April 2026 • Solo Traveler</span>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                    <h3 class="review-heading-title">Unbeatable Guides &amp; Porters</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Annapurna Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      Highest standard of care! Pulse oximeters every evening, clear briefings on the next day's elevation change, and delicious hot meals.
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <!-- 3 Photo Thumbnails -->
+                  <div class="review-photos-grid">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-teahouse-dining-hall-hot-tea-06.jpg" alt="Trek photo 1" class="review-photo-thumb">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-jhinu-danda-natural-hot-springs-10.jpg" alt="Trek photo 2" class="review-photo-thumb">
+                    <img src="../../images/gallery-peak.jpg" alt="Trek photo 3" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="27">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">27</span>)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- TripAdvisor Review Card -->
+                <div class="customer-review-card platform-review-item" data-platform="tripadvisor" style="display: none;">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-madeline.png" alt="Sarah Jenkins" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Sarah Jenkins</span>
+                          <span class="reviewer-country">· UNITED KINGDOM</span>
+                        </div>
+                        <div class="review-date-txt">12th November 2025</div>
+                      </div>
+                    </div>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified TripAdvisor Review
+                    </div>
+                  </div>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                    <h3 class="review-heading-title">Majestic Annapurna Sanctuary with Namaste Hiking Trek</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Annapurna Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      We booked the 12-day ABC trek and were blown away by the organization. Sagar met us at our hotel in Kathmandu, provided clean duffle bags and down jackets, and our guide on the trail was patient, knowledgeable, and always had a smile. Reaching Base Camp at 4,130 m with clear skies was magical. 10/10 recommendation!
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <!-- 3 Photo Thumbnails -->
+                  <div class="review-photos-grid">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-trekkers-sunrise-viewpoint-08.jpg" alt="Trek photo 1" class="review-photo-thumb">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-trekking-group-nepal-flag-snow-01.jpg" alt="Trek photo 2" class="review-photo-thumb">
+                    <img src="../../images/hero-himalayas.jpg" alt="Trek photo 3" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="31">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">31</span>)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Trustpilot Review Card -->
+                <div class="customer-review-card platform-review-item" data-platform="trustpilot" style="display: none;">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-brenna.png" alt="Marcus & Chloe Weber" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Marcus &amp; Chloe Weber</span>
+                          <span class="reviewer-country">· GERMANY</span>
+                        </div>
+                        <div class="review-date-txt">3rd October 2025</div>
+                      </div>
+                    </div>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Trustpilot Review
+                    </div>
+                  </div>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                    <h3 class="review-heading-title">Flawless logistics from Pokhara to Base Camp</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Annapurna Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      Transparent pricing with zero hidden fees. The tea lodges were hand-picked for warmth and cleanliness, and the mountain food kept our energy high every day. Namaste Hiking Trek is the real deal in Nepal!
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <!-- 3 Photo Thumbnails -->
+                  <div class="review-photos-grid">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-teahouse-dining-hall-hot-tea-06.jpg" alt="Trek photo 1" class="review-photo-thumb">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-jhinu-danda-natural-hot-springs-10.jpg" alt="Trek photo 2" class="review-photo-thumb">
+                    <img src="../../images/gallery-pass.jpg" alt="Trek photo 3" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="18">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">18</span>)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- SourceForge Review Card -->
+                <div class="customer-review-card platform-review-item" data-platform="sourceforge" style="display: none;">
+                  <div class="customer-review-header">
+                    <div class="reviewer-profile">
+                      <img src="../../images/avatar-madeline.png" alt="Liam O'Connor" class="reviewer-avatar">
+                      <div class="reviewer-info">
+                        <div class="reviewer-name-row">
+                          <span class="reviewer-name">Liam O'Connor</span>
+                          <span class="reviewer-country">· IRELAND</span>
+                        </div>
+                        <div class="review-date-txt">15th September 2025</div>
+                      </div>
+                    </div>
+                    <div class="verified-badge">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Verified Outdoor Review
+                    </div>
+                  </div>
+
+                  <div class="review-rating-row">
+                    <span class="stars-gold"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                    <h3 class="review-heading-title">Unrivaled Safety and Local Gurung/Sherpa Expertise</h3>
+                  </div>
+
+                  <div class="review-meta-subline">
+                    Review for Annapurna Base Camp Trek · <a href="#section-dates" class="book-trek-link">Book this trek</a>
+                  </div>
+
+                  <div class="review-body-text">
+                    <p class="review-text-content">
+                      Professional 12-day itinerary, thorough safety briefings, and responsive 24/7 WhatsApp support from their Kathmandu operations desk. Highly recommended for any trekker heading into the Annapurna Sanctuary!
+                    </p>
+                    <button type="button" class="review-see-more-btn">See more</button>
+                  </div>
+
+                  <!-- 3 Photo Thumbnails -->
+                  <div class="review-photos-grid">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-trekkers-sunrise-viewpoint-08.jpg" alt="Trek photo 1" class="review-photo-thumb">
+                    <img src="../../images/treks/annapurna-base-camp/annapurna-base-camp-suspension-bridge-crossing-river-04.jpg" alt="Trek photo 2" class="review-photo-thumb">
+                    <img src="../../images/gallery-peak.jpg" alt="Trek photo 3" class="review-photo-thumb">
+                  </div>
+
+                  <div class="customer-review-footer">
+                    <div class="guided-by-tag">
+                      <img src="../../images/avatar-sagar.png" alt="Sagar Gurung" class="guide-avatar-sm">
+                      Guided by <strong>Sagar Gurung</strong>
+                    </div>
+                    <button type="button" class="helpful-vote-btn" data-votes="14">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                      </svg>
+                      Helpful (<span class="vote-count">14</span>)
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- Tab 3: Rating Breakdown Stats Pane -->
-            <div class="review-pane" id="reviews-stats-pane" style="display: none;">
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
-                <div style="text-align: center; min-width: 140px;">
-                  <span style="font-size: 3.5rem; font-weight: 800; color: var(--color-primary-navy); line-height: 1;">5.0</span>
-                  <div style="color: #f59e0b; font-size: 1.2rem; margin: 6px 0;">★★★★★</div>
-                  <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Overall Trip Rating</span>
-                </div>
-                <div style="flex: 1; min-width: 240px;">
-                  <div style="margin-bottom: 8px;">
-                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 3px;">
-                      <span>Guide &amp; Porter Service</span>
-                      <strong style="color: #008060;">99.4%</strong>
-                    </div>
-                    <div style="height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden;"><div style="width: 99.4%; height: 100%; background: #008060;"></div></div>
-                  </div>
-                  <div style="margin-bottom: 8px;">
-                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 3px;">
-                      <span>Itinerary &amp; Acclimatization</span>
-                      <strong style="color: #008060;">98.8%</strong>
-                    </div>
-                    <div style="height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden;"><div style="width: 98.8%; height: 100%; background: #008060;"></div></div>
-                  </div>
-                  <div>
-                    <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 3px;">
-                      <span>Safety &amp; Support Standards</span>
-                      <strong style="color: #008060;">100%</strong>
-                    </div>
-                    <div style="height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden;"><div style="width: 100%; height: 100%; background: #008060;"></div></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          
             <!-- Video Review Player Lightbox Modal -->
             <div id="video-review-modal" class="video-modal-overlay">
               <div class="video-modal-card">
@@ -4478,7 +4913,6 @@
                 </div>
               </div>
             </div>
-
           </section>
 
 <!-- Section 11: FAQs -->
