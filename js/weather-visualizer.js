@@ -367,6 +367,22 @@ const trekDailyWeather = {
     { label: "Day 13 (Tilije 2300 m)", min: 2, max: 16 },
     { label: "Day 14 (Kathmandu 1400 m)", min: 5, max: 19 }
   ],
+  "langtang-gosaikunda": [
+    { label: "Day 1 (Kathmandu 1400 m)", min: 5, max: 19 },
+    { label: "Day 2 (Syabrubesi 1450 m)", min: 6, max: 20 },
+    { label: "Day 3 (Lama Hotel 2480 m)", min: 1, max: 15 },
+    { label: "Day 4 (Langtang Village 3430 m)", min: -4, max: 10 },
+    { label: "Day 5 (Kyanjin Gompa 3800 m)", min: -8, max: 7 },
+    { label: "Day 6 (Tserko Ri 4984 m)", min: -16, max: 0 },
+    { label: "Day 7 (Lama Hotel 2480 m)", min: 1, max: 15 },
+    { label: "Day 8 (Thulo Syabru 2210 m)", min: 3, max: 17 },
+    { label: "Day 9 (Sing Gompa 3330 m)", min: -4, max: 11 },
+    { label: "Day 10 (Gosaikunda 4380 m)", min: -12, max: 4 },
+    { label: "Day 11 (Laurebina La 4610 m / Ghopte)", min: -15, max: 2 },
+    { label: "Day 12 (Kutumsang 2470 m)", min: 2, max: 16 },
+    { label: "Day 13 (Chisapani 2165 m)", min: 3, max: 17 },
+    { label: "Day 14 (Sundarijal / KTM 1400 m)", min: 5, max: 19 }
+  ],
   "langtang_gosaikunda": [
     { label: "Day 1 (Kathmandu 1400 m)", min: 5, max: 19 },
     { label: "Day 2 (Syabrubesi 1450 m)", min: 6, max: 20 },

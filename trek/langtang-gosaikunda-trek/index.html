@@ -4166,222 +4166,441 @@
           </section>
 
 <!-- Section 7: Altitude Profile -->
-          <section id="section-altitude-profile" class="trek-detail-section">
-            <h2 class="trek-section-title">Altitude Profile &amp; Acclimatization</h2>
-            <div class="copper-accent-bar" style="width: 60px; height: 3px; background: var(--color-copper-orange, #d97706); margin: -10px 0 20px 0; border-radius: 2px;"></div>
-            
-            <p style="color: var(--color-neutral-600); font-size: 1.02rem; margin-bottom: 24px;">
-              Visual elevation curve and stage-by-stage elevation gain/loss log across the 15-day Langtang Gosaikunda traverse.
+                    <section id="section-altitude-profile" class="trek-detail-section">
+            <div class="details-title-wrapper" style="margin-bottom: 24px;">
+              <h2 class="details-main-title">Langtang Gosaikunda Trek Altitude Profile &amp; Acclimatization Strategy</h2>
+              <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
+            </div>
+
+            <p style="font-size: 1.02rem; color: var(--color-neutral-700); line-height: 1.6; margin-bottom: 24px;">
+              The Langtang Gosaikunda Trek features an ingenious "two-stage" Himalayan topography that allows for exceptional physiological acclimatization. The route first ascends the Langtang Valley to Kyanjin Gompa (3,800 m / 12,467 ft) with an active acclimatization day climbing Kyanjin Ri (4,773 m) or Tserko Ri (4,984 m). Trekkers then descend to Lama Hotel (2,480 m / 8,136 ft) to saturate their bloodstream with dense oxygen before ascending a second time toward the sacred lakes of Gosaikunda (4,380 m / 14,370 ft) and the high traverse pass of Laurebina La (4,610 m / 15,125 ft).
             </p>
 
-            <!-- Altitude Visualizer Canvas Hook -->
-            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; margin-bottom: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
-                <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Interactive Elevation Graph</h3>
-                <span style="font-size: 0.82rem; color: #008060; font-weight: 700; background: #e6f7f0; padding: 4px 10px; border-radius: 20px;">Max Elevation: 4,610 m (Pass) / 4,984 m (Peak)</span>
+            <!-- Interactive Altitude Visualizer Card -->
+            <div style="background: white; padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-100); box-shadow: var(--shadow-sm); margin-bottom: 30px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+                <div>
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0 0 4px 0;">Interactive 15-Day Elevation Profile</h3>
+                  <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin: 0;">
+                    Interactive elevation progression showing daily altitude gain, sleep points, and acclimatization peaks. Toggle units between meters (m) and feet (ft).
+                  </p>
+                </div>
+                <div>
+                  <span style="font-size: 0.82rem; font-weight: 700; color: #008060; background: #e6f7f0; padding: 4px 12px; border-radius: 20px;">
+                    Pass: 4,610 m (15,125 ft) • Peak: 4,984 m (16,352 ft)
+                  </span>
+                </div>
               </div>
-              <div style="position: relative; width: 100%; height: 300px;">
-                <canvas id="altitudeChart" data-altitude-chart data-trek="langtang_gosaikunda" style="width: 100%; height: 100%;"></canvas>
+              <div id="altitude-chart-wrapper" data-trek-key="langtang_gosaikunda"></div>
+            </div>
+
+            <!-- 4 Acclimatization Pillars Bento Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-bottom: 30px;">
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                  <span style="background: #e6f7f0; color: #008060; width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.95rem;">1</span>
+                  <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Staged Valley Ascent</h4>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">
+                  Ascending gradually from Syabrubesi (1,450 m) to Lama Hotel (2,480 m) and Langtang Village (3,430 m) keeps daily sleeping gains under 1,000 m, allowing gentle adaptation through river woodlands.
+                </p>
+              </div>
+
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                  <span style="background: #e6f7f0; color: #008060; width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.95rem;">2</span>
+                  <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Climb High, Sleep Low</h4>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">
+                  Day 6 features an excursion up Kyanjin Ri (4,773 m) or Tserko Ri (4,984 m) to stimulate red blood cell production before returning to sleep at 3,800 m, boosting natural acclimatization.
+                </p>
+              </div>
+
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                  <span style="background: #e6f7f0; color: #008060; width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.95rem;">3</span>
+                  <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Oxygen Resaturation</h4>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">
+                  Descending back to Lama Hotel (2,480 m) on Day 7 provides a vital "oxygen holiday" where thick valley air replenishes muscle glycogen and resets physical stamina for stage two.
+                </p>
+              </div>
+
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                  <span style="background: #e6f7f0; color: #008060; width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.95rem;">4</span>
+                  <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Safe High Pass Traverse</h4>
+                </div>
+                <p style="font-size: 0.88rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">
+                  Staging at Sing Gompa (3,330 m) and Gosaikunda (4,380 m) prepares you for crossing Laurebina La (4,610 m), followed by an immediate descent to Ghopte (3,530 m) for safer sleep.
+                </p>
               </div>
             </div>
 
-            <!-- Elevation Gain/Loss Table -->
-            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-navy); margin-bottom: 12px;">Daily Elevation Log</h3>
-            <div style="overflow-x: auto; border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 26px;">
-              <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.92rem;">
-                <thead>
-                  <tr style="background: #f8fafc; color: var(--color-primary-navy); border-bottom: 2px solid #cbd5e1;">
-                    <th style="padding: 10px 14px; font-weight: 700;">Day</th>
-                    <th style="padding: 10px 14px; font-weight: 700;">Location / Overnight</th>
-                    <th style="padding: 10px 14px; font-weight: 700;">Altitude</th>
-                    <th style="padding: 10px 14px; font-weight: 700;">Net Gain/Loss</th>
-                    <th style="padding: 10px 14px; font-weight: 700;">Stage Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 1</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Kathmandu Arrival</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="1400">1,400 m</td>
-                  <td style="padding: 10px 14px; color: #64748b; font-weight: 600;">0 m</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Base Arrival</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 2</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Syabrubesi</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="1450">1,450 m</td>
-                  <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+50 m</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Trailhead Gateway</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 3</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Lama Hotel</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="2480">2,480 m</td>
-                  <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+1,030 m</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Forest Gorge</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 4</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Langtang Village</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="3430">3,430 m</td>
-                  <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+950 m</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Valley Basin</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 5</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Kyanjin Gompa</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="3800">3,800 m</td>
-                  <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+370 m</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Alpine Monastery</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 6</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Tserko Ri / Kyanjin Ri</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="4984">4,984 m</td>
-                  <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+1,184 m (Sleep 3,800m)</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Acclimatization Peak</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 7</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Lama Hotel</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="2480">2,480 m</td>
-                  <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">-1,320 m</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Oxygen Recovery</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 8</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Thulo Syabru</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="2210">2,210 m</td>
-                  <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">-270 m net</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Ridge Settlement</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 9</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Sing Gompa (Chandanbari)</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="3330">3,330 m</td>
-                  <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+1,120 m</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Second Ascent</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 10</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Gosaikunda Holy Lakes</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="4380">4,380 m</td>
-                  <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+1,050 m</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">High Lake Basin</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 11</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Laurebina La & Ghopte</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="4610">4,610 m</td>
-                  <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+230 m / -1,080 m to Ghopte (3,530m)</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">High Pass Crossing</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 12</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Kutumsang</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="2470">2,470 m</td>
-                  <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">-1,060 m net</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Helambu Ridges</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 13</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Chisapani</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="2165">2,165 m</td>
-                  <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">-305 m net</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Kathmandu Valley Viewpoint</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e2e8f0;">
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 14</td>
-                  <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Sundarijal & Kathmandu</td>
-                  <td style="padding: 10px 14px; font-weight: 700; color: #008060;" data-altitude-m="1400">1,400 m</td>
-                  <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">-765 m walk & transfer</td>
-                  <td style="padding: 10px 14px; font-size: 0.88rem; color: #64748b;">Trek Completion</td>
-                </tr>
-                </tbody>
-              </table>
+            <!-- Day-by-Day Elevation & Acclimatization Staging Log Table -->
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); margin-bottom: 30px;">
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin-bottom: 6px;">Day-by-Day Elevation &amp; Acclimatization Staging Log</h3>
+              <p style="font-size: 0.88rem; color: var(--color-neutral-600); margin-bottom: 16px;">
+                Detailed breakdown of daily overnight halts, altitude metrics in meters and feet, net elevation differences, and physiological acclimatization objectives:
+              </p>
+
+              <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left;">
+                  <thead>
+                    <tr style="background: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Day</th>
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Night Location</th>
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Altitude (m / ft)</th>
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Net Elevation</th>
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Physiological Staging Objective</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 1</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Kathmandu</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">1,400 m (4,593 ft)</td>
+                      <td style="padding: 10px 14px; color: #64748b; font-weight: 600;">Baseline</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Arrival, team meet &amp; equipment gear check</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 2</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Syabrubesi</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">1,450 m (4,757 ft)</td>
+                      <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+50 m</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Scenic Trishuli highway overland drive to trail gateway</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 3</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Lama Hotel</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">2,480 m (8,136 ft)</td>
+                      <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+1,030 m</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Gentle gorge ascent through oak and rhododendron forests</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 4</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Langtang Village</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">3,430 m (11,253 ft)</td>
+                      <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+950 m</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Cross into alpine valley; pass Ghodatabela checkpoint</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 5</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Kyanjin Gompa</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">3,800 m (12,467 ft)</td>
+                      <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+370 m</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Short morning hike allowing afternoon rest and hydration</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 6</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Kyanjin Gompa (Acclimatization)</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">Sleep 3,800 m (Hike 4,984 m)</td>
+                      <td style="padding: 10px 14px; color: #008060; font-weight: 600;">Peak Day Excursion</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Climb Kyanjin Ri (4,773 m) or Tserko Ri (4,984 m); sleep low</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 7</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Lama Hotel</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">2,480 m (8,136 ft)</td>
+                      <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">-1,320 m</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Valley descent into rich oxygen; restful sleep and recovery</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 8</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Thulo Syabru</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">2,210 m (7,251 ft)</td>
+                      <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">-270 m net</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Cross Bamboo ridge toward Gosaikunda pilgrimage trail</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 9</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Sing Gompa (Chandanbari)</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">3,330 m (10,925 ft)</td>
+                      <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+1,120 m</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Steady climb through pine forests to cheese factory &amp; gompa</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 10</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Gosaikunda Holy Lakes</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">4,380 m (14,370 ft)</td>
+                      <td style="padding: 10px 14px; color: #d97706; font-weight: 600;">+1,050 m</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Ascend via Laurebina ridge (3,910 m) to sacred high lakes</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 11</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Ghopte (via Laurebina La)</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">Pass 4,610 m / Sleep 3,530 m</td>
+                      <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">+230 m / -1,080 m</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Traverse high pass early; descend rapidly to Helambu forest</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 12</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Kutumsang</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">2,470 m (8,104 ft)</td>
+                      <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">-1,060 m net</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Traverse undulating ridges through rhododendron groves</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 13</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Chisapani</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">2,165 m (7,103 ft)</td>
+                      <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">-305 m net</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Trek through Shivapuri hills with Kathmandu panorama</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 14</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Sundarijal &amp; Kathmandu</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">1,400 m (4,593 ft)</td>
+                      <td style="padding: 10px 14px; color: #10b981; font-weight: 600;">-765 m walk &amp; drive</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Descend water reservoir stairs; private drive to Thamel hotel</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: #008060;">Day 15</td>
+                      <td style="padding: 10px 14px; font-weight: 600; color: var(--color-primary-navy);">Kathmandu Departure</td>
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-neutral-800);">1,400 m (4,593 ft)</td>
+                      <td style="padding: 10px 14px; color: #64748b; font-weight: 600;">Depart</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600); font-size: 0.88rem;">Buffer / rest day, souvenir shopping &amp; airport transfer</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
 
-            <!-- Golden Rules Callout -->
-            <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 10px; padding: 20px 24px;">
-              <h4 style="font-size: 1.05rem; font-weight: 700; color: #065f46; margin: 0 0 8px 0; display: flex; align-items: center; gap: 8px;">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                Golden Rules for Langtang Acclimatization
+            <!-- High Altitude Medical Safety Callout -->
+            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 22px 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.02);">
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: #166534; margin: 0 0 10px 0; display: flex; align-items: center; gap: 8px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Namaste Hiking Trek High-Altitude Medical Safety Protocols
               </h4>
-              <ul style="margin: 0; padding-left: 20px; font-size: 0.93rem; color: #047857; line-height: 1.6;">
-                <li><strong>Climb High, Sleep Low:</strong> Use the Kyanjin Ri / Tserko Ri hike on Day 6 to stimulate natural red blood cell production before sleeping back down at 3,800 m.</li>
-                <li><strong>Hydrate Continuously:</strong> Drink 3.5 to 4 liters of purified water and warm soups daily to assist oxygen transfer.</li>
-                <li><strong>Pace Yourself Rhythmically:</strong> Walk at a conversational pace (Bistari Bistari), never racing up steep switchbacks.</li>
-                <li><strong>Report Symptoms Immediately:</strong> Mild headaches respond well to rest and hydration; persistent symptoms require immediate descent.</li>
+              <p style="font-size: 0.92rem; color: #14532d; line-height: 1.6; margin: 0 0 14px 0;">
+                Safety is our highest non-negotiable priority across every Himalayan departure. Our licensed wilderness guides are equipped with medical-grade pulse oximeters and comprehensive first-aid kits:
+              </p>
+              <ul style="margin: 0; padding-left: 20px; font-size: 0.92rem; color: #14532d; line-height: 1.65;">
+                <li><strong>Twice-Daily Pulse Oximeter Monitoring:</strong> Blood oxygen saturation (SpO2) and resting heart rates are recorded every morning and evening at tea lodges to identify acute mountain sickness (AMS) trends before symptoms escalate.</li>
+                <li><strong>Rhythmic "Bistari Bistari" Pacing:</strong> Maintaining an easy, conversational pace without cardiovascular spikes allows your body to sustain aerobic respiration at high elevations.</li>
+                <li><strong>Hydration Benchmark:</strong> Drink at least 3.5 to 4 liters of boiled water, hot lemon, and garlic broth daily. Dehydration mimics and accelerates altitude sickness symptoms.</li>
+                <li><strong>Rapid Descent &amp; Helicopter Evacuation:</strong> Should severe symptoms arise, our 24/7 Kathmandu operations desk coordinates immediate ground descent and emergency helicopter evacuation.</li>
               </ul>
             </div>
           </section>
 
 <!-- Section 8: Weather -->
-          <section id="section-weather" class="trek-detail-section">
-            <h2 class="trek-section-title">Weather &amp; Best Seasons</h2>
-            <div class="copper-accent-bar" style="width: 60px; height: 3px; background: var(--color-copper-orange, #d97706); margin: -10px 0 20px 0; border-radius: 2px;"></div>
-            
-            <p style="color: var(--color-neutral-600); font-size: 1.02rem; margin-bottom: 24px;">
-              Seasonal temperature breakdown and climate guidelines for the Langtang Valley, high passes, and holy lakes.
+                    <section id="section-weather" class="trek-detail-section">
+            <div class="details-title-wrapper" style="margin-bottom: 24px;">
+              <h2 class="details-main-title">Weather &amp; Best Seasons for Langtang Gosaikunda Trek</h2>
+              <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
+            </div>
+
+            <p style="font-size: 1.02rem; color: var(--color-neutral-700); line-height: 1.6; margin-bottom: 24px;">
+              The climate of the Langtang and Gosaikunda region varies dramatically with altitude, transitioning from sub-tropical river gorges at Syabrubesi (1,450 m) to sub-alpine forests around Sing Gompa (3,330 m) and alpine tundra at Laurebina La (4,610 m). Autumn and Spring provide ideal conditions with crystal-clear skies, dry footpaths, and comfortable daytime walking temperatures.
             </p>
 
-            <!-- Weather Visualizer Canvas Hook -->
-            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; margin-bottom: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
-                <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Interactive Temperature Graph</h3>
-                <span style="font-size: 0.82rem; color: #475569;">Monthly averages at high stops</span>
+            <!-- Interactive Weather Visualizer Card -->
+            <div style="background: white; padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--color-neutral-100); box-shadow: var(--shadow-sm); margin-bottom: 30px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+                <div>
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0 0 4px 0;">Interactive Temperature &amp; Climate Graph</h3>
+                  <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin: 0;">
+                    Toggle between daily variations and monthly averages along the Langtang and Gosaikunda trail. Switch units between Celsius (°C) and Fahrenheit (°F).
+                  </p>
+                </div>
               </div>
-              <div style="position: relative; width: 100%; height: 280px;">
-                <canvas id="weatherChart" data-weather-chart data-trek="langtang_gosaikunda" style="width: 100%; height: 100%;"></canvas>
+              <div id="weather-chart-wrapper" data-trek-key="langtang_gosaikunda"></div>
+            </div>
+
+            <!-- 4 In-Depth Seasonal Breakdown Cards -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-bottom: 30px;">
+              <!-- Spring -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 6px;">
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Spring (March to May)</h3>
+                  <span style="font-size: 0.75rem; font-weight: 800; background: #e6f7f0; color: #008060; padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">Peak Season • Rhododendrons</span>
+                </div>
+                <div style="display: flex; gap: 16px; margin-bottom: 12px; font-size: 0.88rem; background: #f8fafc; padding: 8px 12px; border-radius: 6px;">
+                  <div><span style="color: #64748b;">Day:</span> <strong style="color: #0f172a;">10°C to 18°C (50°F to 64°F)</strong></div>
+                  <div><span style="color: #64748b;">Night:</span> <strong style="color: #008060;">-3°C to 5°C (27°F to 41°F)</strong></div>
+                </div>
+                <p style="font-size: 0.92rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">
+                  Spring is a premier trekking window in the Langtang region. Forests from Syabrubesi to Sing Gompa erupt in spectacular red, pink, and white rhododendron blossoms. Days are pleasantly warm with long daylight hours and crystal-clear mornings offering magnificent mountain panoramas. Snow on Laurebina La begins to melt steadily, opening trails for comfortable high-pass crossing.
+                </p>
+              </div>
+
+              <!-- Autumn -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 6px;">
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Autumn (September to November)</h3>
+                  <span style="font-size: 0.75rem; font-weight: 800; background: #e6f7f0; color: #008060; padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">Peak Season • Crystal Skies</span>
+                </div>
+                <div style="display: flex; gap: 16px; margin-bottom: 12px; font-size: 0.88rem; background: #f8fafc; padding: 8px 12px; border-radius: 6px;">
+                  <div><span style="color: #64748b;">Day:</span> <strong style="color: #0f172a;">12°C to 18°C (54°F to 64°F)</strong></div>
+                  <div><span style="color: #64748b;">Night:</span> <strong style="color: #008060;">-5°C to 2°C (23°F to 36°F)</strong></div>
+                </div>
+                <p style="font-size: 0.92rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">
+                  Autumn is the most popular and reliable season for the Langtang Gosaikunda traverse. Following the monsoon rains, the atmosphere is washed completely clean, providing sharp, high-definition vistas of Langtang Lirung, Ganesh Himal, and the central Himalayan crest. Stable high-pressure systems bring dry trail conditions, crisp invigorating air, and calm winds across Laurebina La.
+                </p>
+              </div>
+
+              <!-- Winter -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 6px;">
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Winter (December to February)</h3>
+                  <span style="font-size: 0.75rem; font-weight: 800; background: #f1f5f9; color: var(--color-neutral-700); padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">Crisp &amp; Quiet • Snow Landscapes</span>
+                </div>
+                <div style="display: flex; gap: 16px; margin-bottom: 12px; font-size: 0.88rem; background: #f8fafc; padding: 8px 12px; border-radius: 6px;">
+                  <div><span style="color: #64748b;">Day:</span> <strong style="color: #0f172a;">4°C to 10°C (39°F to 50°F)</strong></div>
+                  <div><span style="color: #64748b;">Night:</span> <strong style="color: #008060;">-10°C to -15°C (14°F to 5°F)</strong></div>
+                </div>
+                <p style="font-size: 0.92rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">
+                  Winter brings peaceful, uncrowded trails, deep cobalt skies, and dramatic snowbound peaks. Lower valleys remain clear and comfortable for hiking during sunny midday hours. Upper elevations around Kyanjin Gompa and Gosaikunda experience severe sub-zero nighttime chills, and Laurebina La frequently collects deep snow requiring gaiters and microspikes.
+                </p>
+              </div>
+
+              <!-- Monsoon -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 6px;">
+                  <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Monsoon (June to August)</h3>
+                  <span style="font-size: 0.75rem; font-weight: 800; background: #fff1f2; color: #e11d48; padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">Lush Greenery • Pilgrimage Season</span>
+                </div>
+                <div style="display: flex; gap: 16px; margin-bottom: 12px; font-size: 0.88rem; background: #f8fafc; padding: 8px 12px; border-radius: 6px;">
+                  <div><span style="color: #64748b;">Day:</span> <strong style="color: #0f172a;">15°C to 22°C (59°F to 72°F)</strong></div>
+                  <div><span style="color: #64748b;">Night:</span> <strong style="color: #008060;">8°C to 14°C (46°F to 57°F)</strong></div>
+                </div>
+                <p style="font-size: 0.92rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">
+                  Monsoon transforms the hills into vibrant emerald landscapes with rushing waterfalls and blooming alpine wildflowers. Gosaikunda draws thousands of Hindu and Buddhist pilgrims during August's full-moon Janai Purnima festival. Heavy rains bring leeches to forested zones, cloud-obscured vistas, and road landslide risks along the Trishuli highway.
+                </p>
               </div>
             </div>
 
-            <!-- 4 Seasonal Cards -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
-            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 6px;">
-                <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Spring (March to May)</h3>
-                <span style="font-size: 0.75rem; font-weight: 800; background: #e6f7f0; color: #008060; padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">Peak Season • Rhododendrons</span>
+            <!-- Month-by-Month Climate Matrix Table -->
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); margin-bottom: 30px;">
+              <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin-bottom: 6px;">Month-by-Month Weather &amp; Trail Conditions Matrix</h3>
+              <p style="font-size: 0.88rem; color: var(--color-neutral-600); margin-bottom: 16px;">
+                Monthly climate parameters for upper elevations in Langtang (Kyanjin 3,800m) and Gosaikunda (4,380m):
+              </p>
+
+              <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left;">
+                  <thead>
+                    <tr style="background: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Month</th>
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Season</th>
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Avg High (°C / °F)</th>
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Avg Low (°C / °F)</th>
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Mountain Visibility</th>
+                      <th style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">Trek Suitability</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">January</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Winter</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">4°C / 39°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">-14°C / 7°F</td>
+                      <td style="padding: 10px 14px; color: #059669;">Excellent (Clear &amp; Cold)</td>
+                      <td style="padding: 10px 14px;"><span style="color: #eab308;">★★★☆☆</span> (Challenging)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">February</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Winter / Early Spring</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">6°C / 43°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">-11°C / 12°F</td>
+                      <td style="padding: 10px 14px; color: #059669;">Very Good</td>
+                      <td style="padding: 10px 14px;"><span style="color: #eab308;">★★★★☆</span> (Good)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">March</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Spring</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">11°C / 52°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">-5°C / 23°F</td>
+                      <td style="padding: 10px 14px; color: #059669;">Excellent (Rhododendrons)</td>
+                      <td style="padding: 10px 14px;"><span style="color: #10b981;">★★★★★</span> (Prime)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">April</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Spring</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">15°C / 59°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">-1°C / 30°F</td>
+                      <td style="padding: 10px 14px; color: #059669;">Superb</td>
+                      <td style="padding: 10px 14px;"><span style="color: #10b981;">★★★★★</span> (Prime)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">May</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Late Spring</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">18°C / 64°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">3°C / 37°F</td>
+                      <td style="padding: 10px 14px; color: #059669;">Good (Afternoon haze)</td>
+                      <td style="padding: 10px 14px;"><span style="color: #10b981;">★★★★☆</span> (Very Good)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">June</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Monsoon Arrival</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">20°C / 68°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">7°C / 45°F</td>
+                      <td style="padding: 10px 14px; color: #e11d48;">Moderate / Clouds</td>
+                      <td style="padding: 10px 14px;"><span style="color: #94a3b8;">★★☆☆☆</span> (Wet)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">July</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Monsoon</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">21°C / 70°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">9°C / 48°F</td>
+                      <td style="padding: 10px 14px; color: #e11d48;">Low (Heavy Rain)</td>
+                      <td style="padding: 10px 14px;"><span style="color: #94a3b8;">★★☆☆☆</span> (Wet / Leeches)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">August</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Monsoon / Pilgrimage</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">21°C / 70°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">9°C / 48°F</td>
+                      <td style="padding: 10px 14px; color: #e11d48;">Low / Mist</td>
+                      <td style="padding: 10px 14px;"><span style="color: #eab308;">★★★☆☆</span> (Janai Purnima)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">September</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Early Autumn</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">19°C / 66°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">5°C / 41°F</td>
+                      <td style="padding: 10px 14px; color: #059669;">Clearing &amp; Fresh</td>
+                      <td style="padding: 10px 14px;"><span style="color: #10b981;">★★★★☆</span> (Very Good)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">October</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Peak Autumn</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">16°C / 61°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">0°C / 32°F</td>
+                      <td style="padding: 10px 14px; color: #059669;">Crystal Clear (Flawless)</td>
+                      <td style="padding: 10px 14px;"><span style="color: #10b981;">★★★★★</span> (Best)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">November</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Late Autumn</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">11°C / 52°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">-5°C / 23°F</td>
+                      <td style="padding: 10px 14px; color: #059669;">Crystal Clear</td>
+                      <td style="padding: 10px 14px;"><span style="color: #10b981;">★★★★★</span> (Best)</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e2e8f0;">
+                      <td style="padding: 10px 14px; font-weight: 700; color: var(--color-primary-navy);">December</td>
+                      <td style="padding: 10px 14px; color: var(--color-neutral-600);">Early Winter</td>
+                      <td style="padding: 10px 14px; font-weight: 600;">6°C / 43°F</td>
+                      <td style="padding: 10px 14px; color: #0284c7; font-weight: 600;">-10°C / 14°F</td>
+                      <td style="padding: 10px 14px; color: #059669;">Sharp &amp; Sunny</td>
+                      <td style="padding: 10px 14px;"><span style="color: #eab308;">★★★★☆</span> (Crisp)</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div style="display: flex; gap: 16px; margin-bottom: 12px; font-size: 0.88rem; background: #f8fafc; padding: 8px 12px; border-radius: 6px;">
-                <div><span style="color: #64748b;">Day:</span> <strong style="color: #0f172a;">10°C to 18°C (50°F to 64°F)</strong></div>
-                <div><span style="color: #64748b;">Night:</span> <strong style="color: #008060;">-3°C to 5°C (27°F to 41°F)</strong></div>
-              </div>
-              <p style="font-size: 0.92rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">Spring is a premier trekking window in the Langtang region. Forests from Syabrubesi to Sing Gompa erupt in spectacular red, pink, and white rhododendron blossoms. Days are pleasantly warm with long daylight hours and crystal-clear mornings offering magnificent mountain panoramas. Snow on Laurebina La begins to melt steadily, opening trails for comfortable high-pass crossing.</p>
             </div>
-            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 6px;">
-                <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Autumn (September to November)</h3>
-                <span style="font-size: 0.75rem; font-weight: 800; background: #e6f7f0; color: #008060; padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">Peak Season • Crystal Skies</span>
-              </div>
-              <div style="display: flex; gap: 16px; margin-bottom: 12px; font-size: 0.88rem; background: #f8fafc; padding: 8px 12px; border-radius: 6px;">
-                <div><span style="color: #64748b;">Day:</span> <strong style="color: #0f172a;">12°C to 18°C (54°F to 64°F)</strong></div>
-                <div><span style="color: #64748b;">Night:</span> <strong style="color: #008060;">-5°C to 2°C (23°F to 36°F)</strong></div>
-              </div>
-              <p style="font-size: 0.92rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">Autumn is the most popular and reliable season for the Langtang Gosaikunda traverse. Following the monsoon rains, the atmosphere is washed completely clean, providing sharp, high-definition vistas of Langtang Lirung, Ganesh Himal, and the central Himalayan crest. Stable high-pressure systems bring dry trail conditions, crisp invigorating air, and calm winds across Laurebina La.</p>
-            </div>
-            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 6px;">
-                <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Winter (December to February)</h3>
-                <span style="font-size: 0.75rem; font-weight: 800; background: #e6f7f0; color: #008060; padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">Crisp & Quiet • Snow Scenery</span>
-              </div>
-              <div style="display: flex; gap: 16px; margin-bottom: 12px; font-size: 0.88rem; background: #f8fafc; padding: 8px 12px; border-radius: 6px;">
-                <div><span style="color: #64748b;">Day:</span> <strong style="color: #0f172a;">4°C to 10°C (39°F to 50°F)</strong></div>
-                <div><span style="color: #64748b;">Night:</span> <strong style="color: #008060;">-10°C to -15°C (14°F to 5°F)</strong></div>
-              </div>
-              <p style="font-size: 0.92rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">Winter brings peaceful, uncrowded trails, deep cobalt skies, and dramatic snowbound peaks. Lower valleys remain clear and comfortable for hiking during sunny midday hours. Upper elevations around Kyanjin Gompa and Gosaikunda experience severe sub-zero nighttime chills, and Laurebina La frequently collects deep snow requiring gaiters and microspikes.</p>
-            </div>
-            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 6px;">
-                <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Monsoon (June to August)</h3>
-                <span style="font-size: 0.75rem; font-weight: 800; background: #e6f7f0; color: #008060; padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">Lush Greenery • Pilgrimage Season</span>
-              </div>
-              <div style="display: flex; gap: 16px; margin-bottom: 12px; font-size: 0.88rem; background: #f8fafc; padding: 8px 12px; border-radius: 6px;">
-                <div><span style="color: #64748b;">Day:</span> <strong style="color: #0f172a;">15°C to 22°C (59°F to 72°F)</strong></div>
-                <div><span style="color: #64748b;">Night:</span> <strong style="color: #008060;">8°C to 14°C (46°F to 57°F)</strong></div>
-              </div>
-              <p style="font-size: 0.92rem; color: var(--color-neutral-600); margin: 0; line-height: 1.55;">Monsoon transforms the hills into vibrant emerald landscapes with rushing waterfalls and blooming alpine wildflowers. Gosaikunda draws thousands of Hindu and Buddhist pilgrims during August's full-moon Janai Purnima festival. Heavy rains bring leeches to forested zones, cloud-obscured vistas, and road landslide risks along the Trishuli highway.</p>
-            </div>
+
+            <!-- Essential Layering Advisory Box -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px 24px;">
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-primary-navy); margin: 0 0 8px 0; display: flex; align-items: center; gap: 8px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-copper-orange)" stroke-width="2.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                Himalayan Layering Strategy for Temperature Variations
+              </h4>
+              <p style="font-size: 0.92rem; color: var(--color-neutral-600); line-height: 1.6; margin: 0;">
+                Because you will experience a 25°C+ difference between midday valley walking and sub-zero nights at Gosaikunda, a 3-layer modular clothing system is essential: a moisture-wicking merino base layer, a breathable insulating mid-layer (fleece or lightweight down jacket), and a windproof/waterproof Gore-Tex outer shell. Namaste Hiking Trek supplies all trekkers with a complimentary -15°C rated expedition down jacket and 4-season sleeping bag for warm, restful nights throughout the trip.
+              </p>
             </div>
           </section>
 
