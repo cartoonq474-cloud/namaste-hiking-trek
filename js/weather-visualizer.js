@@ -49,6 +49,191 @@ const annapurnaDailyData = [
 ];
 
 const trekDailyWeather = {
+  "mera_peak": [
+    {
+        "label": "Day 1 (Kathmandu 1355 m)",
+        "min": 5,
+        "max": 19
+    },
+    {
+        "label": "Day 2 (Kathmandu 1355 m)",
+        "min": 5,
+        "max": 19
+    },
+    {
+        "label": "Day 3 (Paiya 2730 m)",
+        "min": -4,
+        "max": 12
+    },
+    {
+        "label": "Day 4 (Pangkongma 2846 m)",
+        "min": -5,
+        "max": 11
+    },
+    {
+        "label": "Day 5 (Nashing Dingma 2360 m)",
+        "min": -2,
+        "max": 14
+    },
+    {
+        "label": "Day 6 (Chalem Kharka 3600 m)",
+        "min": -8,
+        "max": 8
+    },
+    {
+        "label": "Day 7 (Chunbu Kharka 4200 m)",
+        "min": -12,
+        "max": 5
+    },
+    {
+        "label": "Day 8 (Kothe 3600 m)",
+        "min": -7,
+        "max": 9
+    },
+    {
+        "label": "Day 9 (Thangnak 4356 m)",
+        "min": -14,
+        "max": 4
+    },
+    {
+        "label": "Day 10 (Charpate 5000 m)",
+        "min": -18,
+        "max": 1
+    },
+    {
+        "label": "Day 11 (Khare 5045 m)",
+        "min": -18,
+        "max": 2
+    },
+    {
+        "label": "Day 12 (Khare Clinic 5045 m)",
+        "min": -18,
+        "max": 2
+    },
+    {
+        "label": "Day 13 (High Camp 5780 m)",
+        "min": -24,
+        "max": -4
+    },
+    {
+        "label": "Day 14 (Summit 6476 m)",
+        "min": -28,
+        "max": -8
+    },
+    {
+        "label": "Day 15 (Khare Reserve 5045 m)",
+        "min": -18,
+        "max": 2
+    },
+    {
+        "label": "Day 16 (Kothe 3600 m)",
+        "min": -7,
+        "max": 9
+    },
+    {
+        "label": "Day 17 (Lukla 2850 m)",
+        "min": -6,
+        "max": 11
+    },
+    {
+        "label": "Day 18 (Kathmandu 1355 m)",
+        "min": 5,
+        "max": 19
+    }
+],
+  "mera-peak": [
+    {
+        "label": "Day 1 (Kathmandu 1355 m)",
+        "min": 5,
+        "max": 19
+    },
+    {
+        "label": "Day 2 (Kathmandu 1355 m)",
+        "min": 5,
+        "max": 19
+    },
+    {
+        "label": "Day 3 (Paiya 2730 m)",
+        "min": -4,
+        "max": 12
+    },
+    {
+        "label": "Day 4 (Pangkongma 2846 m)",
+        "min": -5,
+        "max": 11
+    },
+    {
+        "label": "Day 5 (Nashing Dingma 2360 m)",
+        "min": -2,
+        "max": 14
+    },
+    {
+        "label": "Day 6 (Chalem Kharka 3600 m)",
+        "min": -8,
+        "max": 8
+    },
+    {
+        "label": "Day 7 (Chunbu Kharka 4200 m)",
+        "min": -12,
+        "max": 5
+    },
+    {
+        "label": "Day 8 (Kothe 3600 m)",
+        "min": -7,
+        "max": 9
+    },
+    {
+        "label": "Day 9 (Thangnak 4356 m)",
+        "min": -14,
+        "max": 4
+    },
+    {
+        "label": "Day 10 (Charpate 5000 m)",
+        "min": -18,
+        "max": 1
+    },
+    {
+        "label": "Day 11 (Khare 5045 m)",
+        "min": -18,
+        "max": 2
+    },
+    {
+        "label": "Day 12 (Khare Clinic 5045 m)",
+        "min": -18,
+        "max": 2
+    },
+    {
+        "label": "Day 13 (High Camp 5780 m)",
+        "min": -24,
+        "max": -4
+    },
+    {
+        "label": "Day 14 (Summit 6476 m)",
+        "min": -28,
+        "max": -8
+    },
+    {
+        "label": "Day 15 (Khare Reserve 5045 m)",
+        "min": -18,
+        "max": 2
+    },
+    {
+        "label": "Day 16 (Kothe 3600 m)",
+        "min": -7,
+        "max": 9
+    },
+    {
+        "label": "Day 17 (Lukla 2850 m)",
+        "min": -6,
+        "max": 11
+    },
+    {
+        "label": "Day 18 (Kathmandu 1355 m)",
+        "min": 5,
+        "max": 19
+    }
+],
+
   "everest-view": [
     { label: "Day 1 (Phakding 2610 m)", min: -2, max: 14 },
     { label: "Day 2 (Namche Bazaar 3440 m)", min: -6, max: 10 },
