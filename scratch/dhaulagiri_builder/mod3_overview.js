@@ -168,186 +168,402 @@ function getOverviewSection() {
             </div>
           </div>
 
-          <!-- Section 1.3: Deep-Dive Key Highlights (8 Themed Highlight Cards) -->
-          <div style="margin-bottom: 36px;">
-            <div style="margin-bottom: 14px;">
-              <span class="pill pill-copper" style="margin-bottom: 8px; font-size: 0.75rem; text-transform: uppercase; font-weight: 800;">Experience Gallery</span>
-              <h3 style="font-size: 1.45rem; font-weight: 800; color: var(--color-primary-navy); margin: 0;">Dhaulagiri Circuit Trek Key Highlights</h3>
+          <!-- Section 1.3: Canonical Trek Highlights (Official Template matching EBC) -->
+          <style>
+            .dhaulagiri-highlights-section {
+              margin-top: 36px;
+              padding-top: 30px;
+              border-top: 1px solid var(--color-neutral-100);
+            }
+            .dhaulagiri-highlights-header {
+              border-left: 4px solid var(--color-copper-orange);
+              padding-left: 16px;
+              margin-bottom: 16px;
+            }
+            .dhaulagiri-highlights-title {
+              font-size: 1.85rem;
+              margin: 0;
+              color: var(--color-primary-navy);
+              font-weight: 700;
+              line-height: 1.3;
+            }
+            .dhaulagiri-highlights-intro-p {
+              color: var(--color-neutral-700);
+              font-size: 1.05rem;
+              margin-bottom: 16px;
+              line-height: 1.7;
+            }
+            .dhaulagiri-highlights-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 24px;
+              margin-top: 26px;
+              margin-bottom: 35px;
+            }
+            .dhaulagiri-highlight-card {
+              background: #ffffff;
+              border: 1px solid #e2e8f0;
+              border-radius: 16px;
+              padding: 24px 26px;
+              display: flex;
+              flex-direction: column;
+              transition: all var(--transition-fast, 0.25s ease);
+              box-shadow: 0 2px 8px rgba(12, 43, 78, 0.03);
+            }
+            .dhaulagiri-highlight-card:hover {
+              border-color: var(--color-copper-orange);
+              box-shadow: 0 10px 28px rgba(16, 185, 129, 0.12);
+              transform: translateY(-2px);
+            }
+            .dhaulagiri-highlight-top {
+              display: flex;
+              align-items: center;
+              gap: 14px;
+              margin-bottom: 14px;
+            }
+            .dhaulagiri-highlight-icon-box {
+              width: 44px;
+              height: 44px;
+              flex-shrink: 0;
+              background: rgba(16, 185, 129, 0.08);
+              color: var(--color-copper-orange);
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .dhaulagiri-highlight-card-title {
+              font-size: 1.15rem;
+              margin: 0;
+              color: var(--color-primary-navy);
+              font-weight: 700;
+              line-height: 1.35;
+            }
+            .dhaulagiri-highlight-body {
+              font-size: 0.98rem;
+              line-height: 1.68;
+              color: var(--color-neutral-700);
+              margin: 0;
+            }
+            .dhaulagiri-peak-tags {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 8px;
+              margin: 14px 0 14px 0;
+            }
+            .dhaulagiri-peak-tag {
+              background: #f8fafc;
+              border: 1px solid #e2e8f0;
+              border-radius: 8px;
+              padding: 5px 11px;
+              font-size: 0.86rem;
+              font-weight: 600;
+              color: var(--color-primary-navy);
+              display: inline-flex;
+              align-items: center;
+              gap: 4px;
+            }
+            .dhaulagiri-peak-tag span {
+              color: var(--color-copper-orange);
+              font-weight: 500;
+            }
+
+            /* Summary Box: At a Glance */
+            .dhaulagiri-glance-box {
+              background: #f8fafc;
+              border: 1px solid #e2e8f0;
+              border-left: 5px solid var(--color-copper-orange);
+              border-radius: 14px;
+              padding: 28px 30px;
+              margin-top: 10px;
+              margin-bottom: 35px;
+              box-shadow: 0 4px 14px rgba(12, 43, 78, 0.03);
+            }
+            .dhaulagiri-glance-header {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              margin-bottom: 20px;
+            }
+            .dhaulagiri-glance-header h3 {
+              font-size: 1.25rem;
+              font-weight: 700;
+              color: var(--color-primary-navy);
+              margin: 0;
+            }
+            .dhaulagiri-glance-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 16px 24px;
+            }
+            .dhaulagiri-glance-item {
+              display: flex;
+              align-items: flex-start;
+              gap: 12px;
+              font-size: 0.95rem;
+              line-height: 1.55;
+              color: var(--color-neutral-700);
+            }
+            .dhaulagiri-glance-item svg {
+              flex-shrink: 0;
+              margin-top: 3px;
+              color: var(--color-copper-orange);
+            }
+            .dhaulagiri-glance-item strong {
+              color: var(--color-primary-navy);
+              font-weight: 700;
+            }
+
+            @media (max-width: 900px) {
+              .dhaulagiri-highlights-grid {
+                grid-template-columns: 1fr;
+              }
+              .dhaulagiri-glance-grid {
+                grid-template-columns: 1fr;
+              }
+            }
+            @media (max-width: 600px) {
+              .dhaulagiri-highlight-card {
+                padding: 20px 18px;
+              }
+              .dhaulagiri-glance-box {
+                padding: 20px 18px;
+              }
+            }
+          </style>
+
+          <div class="dhaulagiri-highlights-section">
+            <div class="dhaulagiri-highlights-header">
+              <h2 class="dhaulagiri-highlights-title">Dhaulagiri Circuit Trek Highlights</h2>
             </div>
-            <p style="color: var(--color-neutral-700); font-size: 1.02rem; line-height: 1.7; margin-bottom: 24px;">
-              The Dhaulagiri Circuit Trek brings together western Nepal's most dramatic landscapes and demanding wilderness challenges—transitioning from the terraced fields of the Myagdi Valley into glaciated base camps, two passes above 5,200 meters, and the desolate basin of Hidden Valley. These are the core experiences, natural phenomena, and cultural landmarks that define this authentic 20-day Himalayan expedition:
+            
+            <p class="dhaulagiri-highlights-intro-p">
+              The Dhaulagiri Circuit Trek brings together some of the most dramatic landscapes and demanding trekking experiences in western Nepal. The journey leads from the inhabited valleys of the Myagdi region into remote mountain terrain beneath the Dhaulagiri massif, with several days of expedition camping, a visit to Dhaulagiri Base Camp, a crossing of French Pass, an overnight stay in Hidden Valley, and a second high-pass crossing over Dhampus Pass. The route then descends toward the Kali Gandaki Valley, creating a varied trekking experience that combines natural scenery, cultural landscapes, and the physical challenge of crossing high Himalayan terrain.
             </p>
-
-            <div style="display: flex; flex-direction: column; gap: 20px;">
+            <p class="dhaulagiri-highlights-intro-p">
+              Unlike a trek focused on a single base camp or viewpoint, the Dhaulagiri Circuit develops gradually over multiple stages. The following highlights explain what makes the Dhaulagiri Circuit Trek distinctive and what travelers can expect from its principal destinations, while recognizing that weather, visibility, trail conditions, and the expedition leader's decisions can affect the actual experience.
+            </p>
+            
+            <div class="dhaulagiri-highlights-grid">
               
-              <!-- Highlight Card 1: Mount Dhaulagiri & Himalayan Mountain Panorama -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
-                    <img loading="lazy" src="../../images/hero-himalayas.jpg" alt="Mount Dhaulagiri Massif and Western Himalayan Crest" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- 1. Mount Dhaulagiri and Himalayan Panorama -->
+              <div class="dhaulagiri-highlight-card">
+                <div class="dhaulagiri-highlight-top">
+                  <div class="dhaulagiri-highlight-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+                    </svg>
                   </div>
-                  <div style="padding: 24px;">
-                    <span style="font-size: 0.72rem; font-weight: 800; color: var(--color-copper-orange); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">MASSIF IMMERSION &bull; 8,167 M</span>
-                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Mount Dhaulagiri &amp; Himalayan Mountain Panorama</h4>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
-                      Mount Dhaulagiri (8,167 m) is the world's 7th highest peak and the defining landmark of this expedition. As the trail advances from the deep Myagdi Valley onto the Chhonbardan Glacier, the massif unfolds in staggering vertical scale—dominated by Dhaulagiri I, II, III, IV, V, and Gurja Himal.
-                    </p>
-                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
-                      <li>Close-up vistas of Dhaulagiri I's sheer 4,000-meter south and west rock-and-ice faces</li>
-                      <li>Shifting alpine light from fiery morning alpenglow to evening gold across glacial cirques</li>
-                      <li>Dramatic panoramas across Tukuche Peak, Sita Chuchura, and the Nilgiri range</li>
-                    </ul>
-                  </div>
+                  <h3 class="dhaulagiri-highlight-card-title">Mount Dhaulagiri and its Himalayan mountain panorama</h3>
                 </div>
+                <p class="dhaulagiri-highlight-body">
+                  Mount Dhaulagiri is the defining landmark of this trekking expedition. Dhaulagiri I rises to approximately <span data-altitude-m="8167">8,167 metres</span> above sea level, making it the 7th highest mountain in the world and one of Nepal's most prominent Himalayan peaks. The surrounding massif dominates the landscape across much of the upper route, creating a dramatic setting for the journey toward base camp and the two high passes. As the route enters the higher valleys, the surroundings become more open, and the Dhaulagiri wall becomes increasingly central to the experience. Depending on the section of the route and visibility, you can view:
+                </p>
+                <div class="dhaulagiri-peak-tags">
+                  <div class="dhaulagiri-peak-tag">Dhaulagiri I <span>8,167 m</span></div>
+                  <div class="dhaulagiri-peak-tag">Dhaulagiri II <span>7,751 m</span></div>
+                  <div class="dhaulagiri-peak-tag">Dhaulagiri III <span>7,715 m</span></div>
+                  <div class="dhaulagiri-peak-tag">Dhaulagiri IV <span>7,661 m</span></div>
+                  <div class="dhaulagiri-peak-tag">Dhaulagiri V <span>7,618 m</span></div>
+                  <div class="dhaulagiri-peak-tag">Gurja Himal <span>7,193 m</span></div>
+                  <div class="dhaulagiri-peak-tag">Tukuche Peak <span>6,920 m</span></div>
+                  <div class="dhaulagiri-peak-tag">Sita Chuchura <span>6,611 m</span></div>
+                  <div class="dhaulagiri-peak-tag">Nilgiri <span>7,061 m</span></div>
+                  <div class="dhaulagiri-peak-tag">Annapurna I <span>8,091 m</span></div>
+                </div>
+                <p class="dhaulagiri-highlight-body">
+                  The attraction is not limited to seeing the mountain from one viewpoint. The approach takes trekkers through different elevations and landscapes, allowing the character of the massif to change from dense forest to glaciated cirques as the journey progresses.
+                </p>
               </div>
 
-              <!-- Highlight Card 2: Dhaulagiri Base Camp -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
-                    <img loading="lazy" src="../../images/gallery-peak.jpg" alt="Dhaulagiri Base Camp on the Chhonbardan Glacier" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- 2. Stand at Dhaulagiri Base Camp -->
+              <div class="dhaulagiri-highlight-card">
+                <div class="dhaulagiri-highlight-top">
+                  <div class="dhaulagiri-highlight-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                      <line x1="4" y1="22" x2="4" y2="15"></line>
+                    </svg>
                   </div>
-                  <div style="padding: 24px;">
-                    <span style="font-size: 0.72rem; font-weight: 800; color: #008060; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">EXPEDITION STAGING &bull; 4,750 M</span>
-                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Dhaulagiri Base Camp: World-Class Glacial Milestone</h4>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
-                      Reaching Dhaulagiri Base Camp at approximately 4,740 to 4,750 meters on the lateral moraine of the Chhonbardan Glacier marks a defining milestone after days of rugged wilderness trekking. Enclosed by vertical rock faces, active seracs, and hanging icefalls, base camp serves as our high-altitude staging ground where our scheduled acclimatization rest day prepares trekkers for the two high passes.
-                    </p>
-                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
-                      <li>Tented expedition camp directly on the glacier with a 360-degree amphitheater of ice and stone</li>
-                      <li>Scheduled rest and acclimatization day for physiologic recovery, hydration, and technical gear checks</li>
-                      <li>Front-row views of mountaineering climbing routes and cascading avalanches across distant cirques</li>
-                    </ul>
-                  </div>
+                  <h3 class="dhaulagiri-highlight-card-title">Stand at Dhaulagiri Base Camp at <span data-altitude-m="4750">4,750 m</span></h3>
                 </div>
+                <p class="dhaulagiri-highlight-body">
+                  Dhaulagiri Base Camp, at approximately <span data-altitude-m="4750">4,740 to 4,750 metres</span>, is one of the central highlights of the circuit. Reaching the camp marks a major milestone after several days of trekking through the Myagdi Valley and progressing into higher mountain terrain. The destination is surrounded by an imposing landscape of rock, glacier-related features, snow, and towering Himalayan peaks. The high camp on the active Chhonbardan Glacier offers rare close perspectives on vertical rock faces, hanging seracs, and massive icefalls. The itinerary includes dedicated time for acclimatization and recovery here before the high-pass section, allowing the guide to monitor the group's condition and review the forthcoming route.
+                </p>
               </div>
 
-              <!-- Highlight Card 3: French Pass -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
-                    <img loading="lazy" src="../../images/gallery-pass.jpg" alt="Trekking Group Crossing French Pass Summit at 5,360 m" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- 3. Cross French Pass -->
+              <div class="dhaulagiri-highlight-card">
+                <div class="dhaulagiri-highlight-top">
+                  <div class="dhaulagiri-highlight-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
                   </div>
-                  <div style="padding: 24px;">
-                    <span style="font-size: 0.72rem; font-weight: 800; color: #2563eb; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">THE ALPINE APEX &bull; 5,360 M</span>
-                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">French Pass: The 5,360m High-Altitude Apex</h4>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
-                      At 5,360 m (17,585 ft), French Pass is the geographic and physical summit of the circuit. Following a crisp pre-dawn alpine departure from base camp, trekkers navigate moraine ridges, snowfields, and rocky scree to reach the prayer-flag-strewn saddle. The pass bridges the glaciated Myagdi drainage with the uninhabited northern basin of Hidden Valley.
-                    </p>
-                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
-                      <li>Sweeping 360-degree summit panorama spanning Dhaulagiri I, Tukuche Peak, and Mukut Himal</li>
-                      <li>Demanding alpine crossing requiring stamina, steady footwork, and warm expedition layering</li>
-                      <li>Historic landmark first traversed by the 1950 French Annapurna expedition led by Maurice Herzog</li>
-                    </ul>
-                  </div>
+                  <h3 class="dhaulagiri-highlight-card-title">Cross French Pass, the apex of the circuit at <span data-altitude-m="5360">5,360 m</span></h3>
                 </div>
+                <p class="dhaulagiri-highlight-body">
+                  French Pass is the highest point of the standard itinerary at approximately <span data-altitude-m="5360">5,360 metres (17,585 ft)</span> and one of its most physically demanding sections. The crossing begins from Dhaulagiri Base Camp and involves moving over glacier terrain, rocky moraine, and snowfields. Reaching the pass requires stamina, steady footwork, and favorable weather. From the prayer-flag-draped summit, a magnificent panorama opens across Dhaulagiri I, Tukuche Peak, Sita Chuchura, and into the stark expanse of Hidden Valley. The pass forms the crucial link between the glaciated base-camp area and the remote wilderness beyond.
+                </p>
               </div>
 
-              <!-- Highlight Card 4: Hidden Valley -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
-                    <img loading="lazy" src="../../images/gallery-lake.jpg" alt="Hidden Valley Remote Alpine Basin Camping at 5,200 m" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- 4. Camp in Hidden Valley -->
+              <div class="dhaulagiri-highlight-card">
+                <div class="dhaulagiri-highlight-top">
+                  <div class="dhaulagiri-highlight-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
                   </div>
-                  <div style="padding: 24px;">
-                    <span style="font-size: 0.72rem; font-weight: 800; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">UNINHABITED WILDERNESS &bull; 5,200 M</span>
-                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Hidden Valley: Pristine Alpine Wilderness (5,200 m)</h4>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
-                      Nestled between French Pass and Dhampus Pass at an elevation around 5,000 to 5,200 meters, Hidden Valley is one of Nepal's most remote and starkly beautiful high-altitude basins. Completely uninhabited with zero permanent settlements or teahouses, this windswept alpine sanctuary delivers an unforgettable night of wilderness expedition camping beneath snowbound peaks.
-                    </p>
-                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
-                      <li>True wilderness tented camping in an exposed, wind-carved basin isolated from modern civilization</li>
-                      <li>Crystalline nocturnal skies offering world-class stargazing and astronomical photography</li>
-                      <li>Essential recovery campsite positioned between the two 5,000m+ passes of the circuit</li>
-                    </ul>
-                  </div>
+                  <h3 class="dhaulagiri-highlight-card-title">Camp in Hidden Valley, an isolated alpine basin at <span data-altitude-m="5200">5,200 m</span></h3>
                 </div>
+                <p class="dhaulagiri-highlight-body">
+                  Hidden Valley is one of the most distinctive highlights of the circuit because of its remoteness, high altitude, and position between the two passes. Located around <span data-altitude-m="5200">5,000 to 5,200 metres</span>, the surroundings are stark, wind-carved, and completely uninhabited with zero permanent settlements or teahouses. Camping here under pristine Himalayan starlight provides an authentic expedition experience. The overnight stay requires careful preparation for sub-zero temperatures and wind exposure, offering an unforgettable encounter with true mountain isolation before continuing to Dhampus Pass.
+                </p>
               </div>
 
-              <!-- Highlight Card 5: Dhampus Pass & Descent -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
-                    <img loading="lazy" src="../../images/treks/annapurna-circuit/annapurna-circuit-tilicho-lake-trekkers-high-altitude-trail-08.jpg" alt="Dhampus Pass Ridge Crest and Kali Gandaki Valley Descent" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- 5. Cross Dhampus Pass -->
+              <div class="dhaulagiri-highlight-card">
+                <div class="dhaulagiri-highlight-top">
+                  <div class="dhaulagiri-highlight-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
                   </div>
-                  <div style="padding: 24px;">
-                    <span style="font-size: 0.72rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">SECOND HIGH PASS &bull; 5,250 M</span>
-                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Dhampus Pass (5,250 m) &amp; The Annapurna Panorama</h4>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
-                      Crossing Dhampus Pass (also known as Thapa Pass, approximately 5,200–5,250 m) completes the second major high-altitude crossing of the journey. Standing atop the crest rewards trekkers with breathtaking views across the world's deepest gorge toward the Annapurna massif and Nilgiri peaks before beginning the sustained 1,550-meter descent to the alpine meadows of Yak Kharka (3,680 m).
-                    </p>
-                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
-                      <li>Expansive vistas looking directly across the Kali Gandaki gorge into Annapurna I and Annapurna South</li>
-                      <li>Dramatic transition from frozen snowfields and moraines to alpine tussock and grazing meadows</li>
-                      <li>Final mountain pass signaling safe progression toward the rain-shadow villages of Lower Mustang</li>
-                    </ul>
-                  </div>
+                  <h3 class="dhaulagiri-highlight-card-title">Cross Dhampus Pass and descend toward the Kali Gandaki</h3>
                 </div>
+                <p class="dhaulagiri-highlight-body">
+                  Dhampus Pass (commonly reported around <span data-altitude-m="5250">5,200 to 5,250 metres</span>) completes the second high crossing and marks the transition from the remote expedition section toward the Kali Gandaki Valley. From the crest, the views open dramatically toward the Annapurna massif and Nilgiri peaks across the world's deepest gorge. The descent from Dhampus Pass involves a long drop of over 1,550 vertical metres toward Yak Kharka (<span data-altitude-m="3680">3,680 m</span>), requiring sensible pacing and trekking poles as the terrain shifts from snow and rock into alpine pastures.
+                </p>
               </div>
 
-              <!-- Highlight Card 6: Traditional Villages of Myagdi -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
-                    <img loading="lazy" src="../../images/treks/manaslu-circuit/manaslu-circuit-river-gorge-08.jpg" alt="Terraced Hillsides and River Gorges of the Lower Myagdi Valley" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- 6. Traditional Villages of Myagdi -->
+              <div class="dhaulagiri-highlight-card">
+                <div class="dhaulagiri-highlight-top">
+                  <div class="dhaulagiri-highlight-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
                   </div>
-                  <div style="padding: 24px;">
-                    <span style="font-size: 0.72rem; font-weight: 800; color: #059669; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">CULTURAL IMMERSION &bull; 1,100 M – 2,500 M</span>
-                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Traditional Villages &amp; Terraced Hillsides of Myagdi</h4>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
-                      The lower approach through Babiyachaur, Dharapani, Muri, Boghara, and Dobang provides a rich cultural contrast to the barren glacial realm above. Walking through ancient Magar communities, terraced rice paddies, bamboo groves, and subtropical gorges, trekkers observe authentic agrarian hill life and experience genuine Nepali hospitality before entering the wilderness.
-                    </p>
-                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
-                      <li>Stone-and-slate village architecture nestled amidst stepped terraces of barley, millet, and maize</li>
-                      <li>Subtropical and temperate forest trails adorned with rhododendrons, oaks, and thundering waterfalls</li>
-                      <li>Progressive physical conditioning that allows legs and cardiovascular rhythm to adapt naturally</li>
-                    </ul>
-                  </div>
+                  <h3 class="dhaulagiri-highlight-card-title">Walk through traditional Magar villages and terraced hills</h3>
                 </div>
+                <p class="dhaulagiri-highlight-body">
+                  The lower approach through the Myagdi Valley—passing Babiyachaur, Dharapani, Muri, Boghara, and Dobang—offers a rich cultural and geographical contrast to the remote high camps. Walking through these areas provides an opportunity to observe traditional rural life, terraced crop fields, suspension bridges over roaring rivers, and authentic Magar hill architecture. The gradual progression allows your walking rhythm to build naturally while experiencing warm local hospitality before transitioning into full wilderness camping.
+                </p>
               </div>
 
-              <!-- Highlight Card 7: Marpha & Jomsom Thakali Heritage -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
-                    <img loading="lazy" src="../../images/treks/upper-mustang/upper-mustang-kagbeni-gateway-04.jpg" alt="Historic Stone Architecture and Thakali Heritage in Marpha" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- 7. Marpha & Thakali Culture -->
+              <div class="dhaulagiri-highlight-card">
+                <div class="dhaulagiri-highlight-top">
+                  <div class="dhaulagiri-highlight-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 21h18"></path>
+                      <path d="M5 21V10l7-5 7 5v11"></path>
+                      <path d="M9 21v-4a3 3 0 0 1 6 0v4"></path>
+                      <line x1="12" y1="2" x2="12" y2="5"></line>
+                    </svg>
                   </div>
-                  <div style="padding: 24px;">
-                    <span style="font-size: 0.72rem; font-weight: 800; color: #d97706; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">LOWER MUSTANG CULTURE &bull; 2,670 M – 2,720 M</span>
-                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Marpha &amp; Jomsom: Thakali Heritage &amp; Apple Orchards</h4>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
-                      Descending into the Kali Gandaki Valley reintroduces trekkers to settled village life with a distinct northern character. Marpha is celebrated across Nepal for its whitewashed stone architecture, flagstone-paved alleys, flat earthen rooftops, wood-carved windows, Buddhist chortens, and famous apple cider, while nearby Jomsom provides the airfield for the scenic flight back to Pokhara.
-                    </p>
-                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
-                      <li>Exploring the centuries-old Samtenling Gompa and tranquil stone alleys of historic Marpha</li>
-                      <li>Relishing hearty Thakali cuisine, fresh apple pies, and warm lodge hospitality after 10 days of camping</li>
-                      <li>Thrilling mountain flight from Jomsom to Pokhara cruising between Annapurna and Dhaulagiri</li>
-                    </ul>
-                  </div>
+                  <h3 class="dhaulagiri-highlight-card-title">Experience Marpha, Jomsom, and ancient Thakali culture</h3>
                 </div>
+                <p class="dhaulagiri-highlight-body">
+                  Descending into the Kali Gandaki Valley introduces a completely different cultural landscape. Marpha is one of the most celebrated villages in the Annapurna and Mustang regions, famed for its clean stone-paved alleys, whitewashed buildings, Tibetan Buddhist chortens, and apple orchards. After several days of expedition camping in the high mountains, arriving in settled villages with hot meals, local bakeries, and Thakali hospitality is an immense physical and cultural reward before boarding the flight from Jomsom to Pokhara.
+                </p>
               </div>
 
-              <!-- Highlight Card 8: Supported Expedition Camping & Wilderness Rigor -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
-                    <img loading="lazy" src="../../images/gallery-teahouse.jpg" alt="Expedition Camping Setup and Mountain Support Crew" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- 8. Supported Expedition Camping -->
+              <div class="dhaulagiri-highlight-card">
+                <div class="dhaulagiri-highlight-top">
+                  <div class="dhaulagiri-highlight-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
                   </div>
-                  <div style="padding: 24px;">
-                    <span style="font-size: 0.72rem; font-weight: 800; color: var(--color-primary-navy); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">EXPEDITION RIGOR &bull; WILDERNESS CREW</span>
-                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Supported Wilderness Camping with Dedicated Sherpa Crew</h4>
-                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
-                      What elevates the Dhaulagiri Circuit into a true Himalayan expedition is its full camping format. Because there are no commercial teahouses between Dobang and Yak Kharka, our certified Sherpa guides, cook team, and kitchen porters carry all 4-season alpine tents, warm dining structures, kitchen equipment, fresh food, and emergency safety gear to support the group in extreme conditions.
-                    </p>
-                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
-                      <li>4-season geodesic mountain tents, closed-cell insulation sleeping mats, and heated dining tent</li>
-                      <li>Freshly prepared three-course hot meals cooked three times daily for sustained high-altitude energy</li>
-                      <li>Medical oxygen, pulse oximeters, portable altitude chamber (PAC bag), and satellite comms on every trek</li>
-                    </ul>
-                  </div>
+                  <h3 class="dhaulagiri-highlight-card-title">Experience supported expedition camping with our Sherpa crew</h3>
                 </div>
+                <p class="dhaulagiri-highlight-body">
+                  Expedition camping is a defining feature of the Dhaulagiri Circuit Trek. While the lower approach uses village accommodation, the upper route depends on organized camps because conventional lodges are not available in the high mountain sections. A dedicated support team—including licensed high-altitude Sherpa guides, cooks, kitchen staff, and porters—carries 4-season alpine tents, kitchen equipment, fresh food, and emergency supplies, ensuring hot meals and safe shelter throughout the wild crossing.
+                </p>
               </div>
 
+              <!-- 9. Diverse Eco-Zones -->
+              <div class="dhaulagiri-highlight-card">
+                <div class="dhaulagiri-highlight-top">
+                  <div class="dhaulagiri-highlight-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2L7 10h3l-4 7h12l-4-7h3z"></path>
+                      <path d="M12 17v5"></path>
+                    </svg>
+                  </div>
+                  <h3 class="dhaulagiri-highlight-card-title">Trek through diverse eco-zones from forests to alpine glaciers</h3>
+                </div>
+                <p class="dhaulagiri-highlight-body">
+                  One of the most rewarding aspects of the Dhaulagiri Circuit is its dramatic ecological progression. The route starts in subtropical farmland and deep bamboo river gorges, climbs through temperate oak and blooming rhododendron forests, passes into alpine birch and juniper zones, and ultimately reaches the barren realm of lateral moraines, active glaciers, and high-altitude scree. You watch the living geography of the Himalayas transform with every 500 meters of elevation gained.
+                </p>
+              </div>
+
+              <!-- 10. Complete the Journey Safely as a Team (Full-width) -->
+              <div class="dhaulagiri-highlight-card" style="grid-column: 1 / -1;">
+                <div class="dhaulagiri-highlight-top">
+                  <div class="dhaulagiri-highlight-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                  </div>
+                  <h3 class="dhaulagiri-highlight-card-title">Complete a world-class wilderness circuit safely as a team</h3>
+                </div>
+                <p class="dhaulagiri-highlight-body">
+                  The Dhaulagiri Circuit is an authentic, demanding Himalayan expedition where safety, preparation, and teamwork take priority over rigid schedules. Every trek is led by government-certified high-altitude Sherpa guides equipped with medical oxygen, pulse oximeters, portable altitude chambers (PAC bag), and satellite communications. With well-planned rest days at Italian Base Camp and Dhaulagiri Base Camp, continuous health monitoring, and a professional wilderness crew, our trekkers cross French Pass and Dhampus Pass with confidence, safety, and camaraderie.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Summary Box: Dhaulagiri Circuit Highlights at a Glance -->
+            <div class="dhaulagiri-glance-box">
+              <div class="dhaulagiri-glance-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-copper-orange);"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+                <h3>Dhaulagiri Circuit Highlights at a Glance</h3>
+              </div>
+              <div class="dhaulagiri-glance-grid">
+                <div class="dhaulagiri-glance-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Mount Dhaulagiri Massif (8,167 m):</strong> Complete encirclement of the world's 7th highest peak with panoramic views of Dhaulagiri I–V and Gurja Himal.</div>
+                </div>
+                <div class="dhaulagiri-glance-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Dhaulagiri Base Camp (4,750 m):</strong> High-altitude expedition staging camp set directly on the active Chhonbardan Glacier.</div>
+                </div>
+                <div class="dhaulagiri-glance-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>French Pass Summit (5,360 m):</strong> Demanding alpine crossing between the glaciated Myagdi drainage and Hidden Valley.</div>
+                </div>
+                <div class="dhaulagiri-glance-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Hidden Valley Wilderness (5,200 m):</strong> Remote, uninhabited high-altitude basin delivering pristine expedition camping.</div>
+                </div>
+                <div class="dhaulagiri-glance-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Dhampus Pass (5,250 m):</strong> Second high pass with sweeping panoramas of Annapurna I, Nilgiri, and the Kali Gandaki Valley.</div>
+                </div>
+                <div class="dhaulagiri-glance-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Traditional Magar Villages:</strong> Agrarian cultural approach through Babiyachaur, Dharapani, Muri, Boghara, and Dobang.</div>
+                </div>
+                <div class="dhaulagiri-glance-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Marpha &amp; Thakali Heritage:</strong> Historic whitewashed stone village, apple orchards, and Samtenling Gompa in Lower Mustang.</div>
+                </div>
+                <div class="dhaulagiri-glance-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Supported Wilderness Expedition:</strong> Full alpine camp operations with dedicated Sherpa guides, cooks, tents, and medical oxygen.</div>
+                </div>
+              </div>
             </div>
           </div>
 
