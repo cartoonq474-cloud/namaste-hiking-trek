@@ -168,93 +168,183 @@ function getOverviewSection() {
             </div>
           </div>
 
-          <!-- Section 1.3: Deep-Dive Key Highlights (6 Themed Highlight Cards) -->
+          <!-- Section 1.3: Deep-Dive Key Highlights (8 Themed Highlight Cards) -->
           <div style="margin-bottom: 36px;">
-            <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--color-primary-navy); margin-bottom: 18px;">Dhaulagiri Circuit Trek Key Highlights</h3>
-            
+            <div style="margin-bottom: 14px;">
+              <span class="pill pill-copper" style="margin-bottom: 8px; font-size: 0.75rem; text-transform: uppercase; font-weight: 800;">Experience Gallery</span>
+              <h3 style="font-size: 1.45rem; font-weight: 800; color: var(--color-primary-navy); margin: 0;">Dhaulagiri Circuit Trek Key Highlights</h3>
+            </div>
+            <p style="color: var(--color-neutral-700); font-size: 1.02rem; line-height: 1.7; margin-bottom: 24px;">
+              The Dhaulagiri Circuit Trek brings together western Nepal's most dramatic landscapes and demanding wilderness challenges—transitioning from the terraced fields of the Myagdi Valley into glaciated base camps, two passes above 5,200 meters, and the desolate basin of Hidden Valley. These are the core experiences, natural phenomena, and cultural landmarks that define this authentic 20-day Himalayan expedition:
+            </p>
+
             <div style="display: flex; flex-direction: column; gap: 20px;">
               
-              <!-- Highlight 1: Mount Dhaulagiri -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
-                <div style="height: 100%; min-height: 220px; overflow: hidden;">
-                  <img src="../../images/hero-himalayas.jpg" alt="Mount Dhaulagiri Massif and Glacial Wall" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div style="padding: 24px; display: flex; flex-direction: column; justify-content: center;">
-                  <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-copper-orange); margin-bottom: 6px;">Massif Immersion</span>
-                  <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary-navy); margin-bottom: 10px;">Mount Dhaulagiri &amp; Himalayan Mountain Panorama</h4>
-                  <p style="color: #475569; font-size: 0.93rem; line-height: 1.65; margin: 0;">
-                    Mount Dhaulagiri (8,167 m) dominates the entire western Himalayan horizon. The approach takes trekkers through changing elevations, where early forest paths give way to massive rock faces, seracs, and hanging glaciers. Sunrise brings golden light across Dhaulagiri I, II, III, IV, V, and Gurja Himal.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Highlight 2: Dhaulagiri Base Camp -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
-                <div style="height: 100%; min-height: 220px; overflow: hidden;">
-                  <img src="../../images/gallery-peak.jpg" alt="Dhaulagiri Base Camp Glacial Amphitheater" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div style="padding: 24px; display: flex; flex-direction: column; justify-content: center;">
-                  <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-copper-orange); margin-bottom: 6px;">Expedition Staging (4,750 m)</span>
-                  <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary-navy); margin-bottom: 10px;">Dhaulagiri Base Camp: A Major Expedition Destination</h4>
-                  <p style="color: #475569; font-size: 0.93rem; line-height: 1.65; margin: 0;">
-                    Situated at approximately 4,740 to 4,750 m directly on the Chhonbardan Glacier, Dhaulagiri Base Camp is encircled by towering vertical rock walls and chaotic icefall formations. Our planned acclimatization rest day allows essential physiologic recovery and gear checks before attempting French Pass.
-                  </p>
+              <!-- Highlight Card 1: Mount Dhaulagiri & Himalayan Mountain Panorama -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
+                    <img loading="lazy" src="../../images/hero-himalayas.jpg" alt="Mount Dhaulagiri Massif and Western Himalayan Crest" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 24px;">
+                    <span style="font-size: 0.72rem; font-weight: 800; color: var(--color-copper-orange); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">MASSIF IMMERSION &bull; 8,167 M</span>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Mount Dhaulagiri &amp; Himalayan Mountain Panorama</h4>
+                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
+                      Mount Dhaulagiri (8,167 m) is the world's 7th highest peak and the defining landmark of this expedition. As the trail advances from the deep Myagdi Valley onto the Chhonbardan Glacier, the massif unfolds in staggering vertical scale—dominated by Dhaulagiri I, II, III, IV, V, and Gurja Himal.
+                    </p>
+                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
+                      <li>Close-up vistas of Dhaulagiri I's sheer 4,000-meter south and west rock-and-ice faces</li>
+                      <li>Shifting alpine light from fiery morning alpenglow to evening gold across glacial cirques</li>
+                      <li>Dramatic panoramas across Tukuche Peak, Sita Chuchura, and the Nilgiri range</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-              <!-- Highlight 3: French Pass -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
-                <div style="height: 100%; min-height: 220px; overflow: hidden;">
-                  <img src="../../images/gallery-pass.jpg" alt="French Pass Summit at 5,360 m" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div style="padding: 24px; display: flex; flex-direction: column; justify-content: center;">
-                  <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-copper-orange); margin-bottom: 6px;">Highest Point (5,360 m)</span>
-                  <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary-navy); margin-bottom: 10px;">French Pass: The Alpine Apex of the Circuit</h4>
-                  <p style="color: #475569; font-size: 0.93rem; line-height: 1.65; margin: 0;">
-                    At 5,360 m (17,585 ft), French Pass is the highest daytime crossing. Requiring an alpine pre-dawn departure, the ascent negotiates moraine ridges, snowfields, and rocky scree. From the prayer-flag-strewn crest, a magnificent panorama opens across Tukuche Peak, Sita Chuchura, and into the vastness of Hidden Valley.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Highlight 4: Hidden Valley -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
-                <div style="height: 100%; min-height: 220px; overflow: hidden;">
-                  <img src="../../images/gallery-lake.jpg" alt="Hidden Valley Remote Alpine Basin Camping" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div style="padding: 24px; display: flex; flex-direction: column; justify-content: center;">
-                  <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-copper-orange); margin-bottom: 6px;">Remote High Wilderness</span>
-                  <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary-navy); margin-bottom: 10px;">Hidden Valley: Uninhabited High-Altitude Basin (5,200 m)</h4>
-                  <p style="color: #475569; font-size: 0.93rem; line-height: 1.65; margin: 0;">
-                    Hidden Valley is one of Nepal's most remote high-altitude camping environments. Located beyond French Pass at ~5,000–5,200 m, the basin is stark, wind-carved, and completely uninhabited. Camping here under crystal Himalayan starlight provides an unforgettable expedition experience.
-                  </p>
+              <!-- Highlight Card 2: Dhaulagiri Base Camp -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
+                    <img loading="lazy" src="../../images/gallery-peak.jpg" alt="Dhaulagiri Base Camp on the Chhonbardan Glacier" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 24px;">
+                    <span style="font-size: 0.72rem; font-weight: 800; color: #008060; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">EXPEDITION STAGING &bull; 4,750 M</span>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Dhaulagiri Base Camp: World-Class Glacial Milestone</h4>
+                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
+                      Reaching Dhaulagiri Base Camp at approximately 4,740 to 4,750 meters on the lateral moraine of the Chhonbardan Glacier marks a defining milestone after days of rugged wilderness trekking. Enclosed by vertical rock faces, active seracs, and hanging icefalls, base camp serves as our high-altitude staging ground where our scheduled acclimatization rest day prepares trekkers for the two high passes.
+                    </p>
+                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
+                      <li>Tented expedition camp directly on the glacier with a 360-degree amphitheater of ice and stone</li>
+                      <li>Scheduled rest and acclimatization day for physiologic recovery, hydration, and technical gear checks</li>
+                      <li>Front-row views of mountaineering climbing routes and cascading avalanches across distant cirques</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-              <!-- Highlight 5: Dhampus Pass & Descent -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
-                <div style="height: 100%; min-height: 220px; overflow: hidden;">
-                  <img src="../../images/gallery-pass.jpg" alt="Dhampus Pass and Kali Gandaki Valley Descent" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div style="padding: 24px; display: flex; flex-direction: column; justify-content: center;">
-                  <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-copper-orange); margin-bottom: 6px;">Second High Pass (5,250 m)</span>
-                  <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary-navy); margin-bottom: 10px;">Dhampus Pass &amp; The Sustained Kali Gandaki Descent</h4>
-                  <p style="color: #475569; font-size: 0.93rem; line-height: 1.65; margin: 0;">
-                    Crossing Dhampus Pass (5,250 m) connects Hidden Valley to the Kali Gandaki Valley. The crossing is followed by a dramatic 1,550 m descent to Yak Kharka (3,680 m) with breathtaking vistas of the Annapurna massif and Nilgiri peaks directly across the world's deepest gorge.
-                  </p>
+              <!-- Highlight Card 3: French Pass -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
+                    <img loading="lazy" src="../../images/gallery-pass.jpg" alt="Trekking Group Crossing French Pass Summit at 5,360 m" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 24px;">
+                    <span style="font-size: 0.72rem; font-weight: 800; color: #2563eb; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">THE ALPINE APEX &bull; 5,360 M</span>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">French Pass: The 5,360m High-Altitude Apex</h4>
+                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
+                      At 5,360 m (17,585 ft), French Pass is the geographic and physical summit of the circuit. Following a crisp pre-dawn alpine departure from base camp, trekkers navigate moraine ridges, snowfields, and rocky scree to reach the prayer-flag-strewn saddle. The pass bridges the glaciated Myagdi drainage with the uninhabited northern basin of Hidden Valley.
+                    </p>
+                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
+                      <li>Sweeping 360-degree summit panorama spanning Dhaulagiri I, Tukuche Peak, and Mukut Himal</li>
+                      <li>Demanding alpine crossing requiring stamina, steady footwork, and warm expedition layering</li>
+                      <li>Historic landmark first traversed by the 1950 French Annapurna expedition led by Maurice Herzog</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-              <!-- Highlight 6: Cultural Diversity -->
-              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.03);">
-                <div style="height: 100%; min-height: 220px; overflow: hidden;">
-                  <img src="../../images/gallery-teahouse.jpg" alt="Traditional Villages of Myagdi and Marpha Thakali Heritage" style="width: 100%; height: 100%; object-fit: cover;">
+              <!-- Highlight Card 4: Hidden Valley -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
+                    <img loading="lazy" src="../../images/gallery-lake.jpg" alt="Hidden Valley Remote Alpine Basin Camping at 5,200 m" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 24px;">
+                    <span style="font-size: 0.72rem; font-weight: 800; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">UNINHABITED WILDERNESS &bull; 5,200 M</span>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Hidden Valley: Pristine Alpine Wilderness (5,200 m)</h4>
+                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
+                      Nestled between French Pass and Dhampus Pass at an elevation around 5,000 to 5,200 meters, Hidden Valley is one of Nepal's most remote and starkly beautiful high-altitude basins. Completely uninhabited with zero permanent settlements or teahouses, this windswept alpine sanctuary delivers an unforgettable night of wilderness expedition camping beneath snowbound peaks.
+                    </p>
+                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
+                      <li>True wilderness tented camping in an exposed, wind-carved basin isolated from modern civilization</li>
+                      <li>Crystalline nocturnal skies offering world-class stargazing and astronomical photography</li>
+                      <li>Essential recovery campsite positioned between the two 5,000m+ passes of the circuit</li>
+                    </ul>
+                  </div>
                 </div>
-                <div style="padding: 24px; display: flex; flex-direction: column; justify-content: center;">
-                  <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--color-copper-orange); margin-bottom: 6px;">Living Heritage</span>
-                  <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary-navy); margin-bottom: 10px;">From Myagdi Terraces to Marpha Thakali Heritage</h4>
-                  <p style="color: #475569; font-size: 0.93rem; line-height: 1.65; margin: 0;">
-                    Experience Nepal's rich cultural diversity: beginning among the terraced farms and Magar settlements of the lower Myagdi Valley (Babiyachaur, Dharapani, Muri, Boghara), and concluding in the ancient stone-paved alleys, apple orchards, and Tibetan Buddhist monasteries of Marpha and Jomsom.
-                  </p>
+              </div>
+
+              <!-- Highlight Card 5: Dhampus Pass & Descent -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
+                    <img loading="lazy" src="../../images/treks/annapurna-circuit/annapurna-circuit-tilicho-lake-trekkers-high-altitude-trail-08.jpg" alt="Dhampus Pass Ridge Crest and Kali Gandaki Valley Descent" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 24px;">
+                    <span style="font-size: 0.72rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">SECOND HIGH PASS &bull; 5,250 M</span>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Dhampus Pass (5,250 m) &amp; The Annapurna Panorama</h4>
+                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
+                      Crossing Dhampus Pass (also known as Thapa Pass, approximately 5,200–5,250 m) completes the second major high-altitude crossing of the journey. Standing atop the crest rewards trekkers with breathtaking views across the world's deepest gorge toward the Annapurna massif and Nilgiri peaks before beginning the sustained 1,550-meter descent to the alpine meadows of Yak Kharka (3,680 m).
+                    </p>
+                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
+                      <li>Expansive vistas looking directly across the Kali Gandaki gorge into Annapurna I and Annapurna South</li>
+                      <li>Dramatic transition from frozen snowfields and moraines to alpine tussock and grazing meadows</li>
+                      <li>Final mountain pass signaling safe progression toward the rain-shadow villages of Lower Mustang</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Highlight Card 6: Traditional Villages of Myagdi -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
+                    <img loading="lazy" src="../../images/treks/manaslu-circuit/manaslu-circuit-river-gorge-08.jpg" alt="Terraced Hillsides and River Gorges of the Lower Myagdi Valley" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 24px;">
+                    <span style="font-size: 0.72rem; font-weight: 800; color: #059669; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">CULTURAL IMMERSION &bull; 1,100 M – 2,500 M</span>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Traditional Villages &amp; Terraced Hillsides of Myagdi</h4>
+                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
+                      The lower approach through Babiyachaur, Dharapani, Muri, Boghara, and Dobang provides a rich cultural contrast to the barren glacial realm above. Walking through ancient Magar communities, terraced rice paddies, bamboo groves, and subtropical gorges, trekkers observe authentic agrarian hill life and experience genuine Nepali hospitality before entering the wilderness.
+                    </p>
+                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
+                      <li>Stone-and-slate village architecture nestled amidst stepped terraces of barley, millet, and maize</li>
+                      <li>Subtropical and temperate forest trails adorned with rhododendrons, oaks, and thundering waterfalls</li>
+                      <li>Progressive physical conditioning that allows legs and cardiovascular rhythm to adapt naturally</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Highlight Card 7: Marpha & Jomsom Thakali Heritage -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
+                    <img loading="lazy" src="../../images/treks/upper-mustang/upper-mustang-kagbeni-gateway-04.jpg" alt="Historic Stone Architecture and Thakali Heritage in Marpha" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 24px;">
+                    <span style="font-size: 0.72rem; font-weight: 800; color: #d97706; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">LOWER MUSTANG CULTURE &bull; 2,670 M – 2,720 M</span>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Marpha &amp; Jomsom: Thakali Heritage &amp; Apple Orchards</h4>
+                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
+                      Descending into the Kali Gandaki Valley reintroduces trekkers to settled village life with a distinct northern character. Marpha is celebrated across Nepal for its whitewashed stone architecture, flagstone-paved alleys, flat earthen rooftops, wood-carved windows, Buddhist chortens, and famous apple cider, while nearby Jomsom provides the airfield for the scenic flight back to Pokhara.
+                    </p>
+                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
+                      <li>Exploring the centuries-old Samtenling Gompa and tranquil stone alleys of historic Marpha</li>
+                      <li>Relishing hearty Thakali cuisine, fresh apple pies, and warm lodge hospitality after 10 days of camping</li>
+                      <li>Thrilling mountain flight from Jomsom to Pokhara cruising between Annapurna and Dhaulagiri</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Highlight Card 8: Supported Expedition Camping & Wilderness Rigor -->
+              <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                  <div style="height: 100%; min-height: 240px; max-height: 320px; overflow: hidden;">
+                    <img loading="lazy" src="../../images/gallery-teahouse.jpg" alt="Expedition Camping Setup and Mountain Support Crew" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div style="padding: 24px;">
+                    <span style="font-size: 0.72rem; font-weight: 800; color: var(--color-primary-navy); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">EXPEDITION RIGOR &bull; WILDERNESS CREW</span>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-navy); margin: 0 0 10px 0;">Supported Wilderness Camping with Dedicated Sherpa Crew</h4>
+                    <p style="font-size: 0.94rem; color: #475569; line-height: 1.65; margin-bottom: 12px;">
+                      What elevates the Dhaulagiri Circuit into a true Himalayan expedition is its full camping format. Because there are no commercial teahouses between Dobang and Yak Kharka, our certified Sherpa guides, cook team, and kitchen porters carry all 4-season alpine tents, warm dining structures, kitchen equipment, fresh food, and emergency safety gear to support the group in extreme conditions.
+                    </p>
+                    <ul style="margin: 0; padding-left: 18px; font-size: 0.9rem; color: #334155; line-height: 1.6;">
+                      <li>4-season geodesic mountain tents, closed-cell insulation sleeping mats, and heated dining tent</li>
+                      <li>Freshly prepared three-course hot meals cooked three times daily for sustained high-altitude energy</li>
+                      <li>Medical oxygen, pulse oximeters, portable altitude chamber (PAC bag), and satellite comms on every trek</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 

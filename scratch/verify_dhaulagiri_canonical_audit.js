@@ -34,7 +34,7 @@ const checks = [
   { name: 'Overview section title', pass: html.includes('class="trek-section-title">Trek Overview</h2>') },
   { name: 'Dhaulagiri specifications table (20 points)', pass: html.includes('Dhaulagiri Circuit Trek at a Glance') && html.includes('French Pass') },
   { name: 'What Makes Special (4 feature cards)', pass: html.includes('What Makes the Dhaulagiri Circuit Trek Special?') },
-  { name: 'Key Highlights (6 photo cards)', pass: html.includes('Dhaulagiri Circuit Trek Key Highlights') && html.includes('Mount Dhaulagiri &amp; Himalayan Mountain Panorama') },
+  { name: 'Key Highlights (8 photo cards)', pass: html.includes('Dhaulagiri Circuit Trek Key Highlights') && html.includes('Mount Dhaulagiri &amp; Himalayan Mountain Panorama') && html.includes('Supported Wilderness Camping with Dedicated Sherpa Crew') },
   { name: 'Suitability Matrix (6 profiles)', pass: html.includes('Who is the Dhaulagiri Circuit Trek Designed For?') },
   { name: 'Why Book with Namaste (4 trust pillars)', pass: html.includes('Why Book the Dhaulagiri Circuit Trek with Namaste Hiking Trek?') },
 
