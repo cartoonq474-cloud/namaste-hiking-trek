@@ -107,46 +107,15 @@
   }
   </script>
 
-  <!-- Global Core CSS & Typography -->
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/responsive.css">
-  <link rel="stylesheet" href="../../css/header.css">
-  <link rel="stylesheet" href="../../css/mega-menu.css">
-  <link rel="stylesheet" href="../../css/trek-details.css">
-
+    <!-- Core Design Tokens & Component Styles -->
+  <link rel="stylesheet" href="../../index.css?v=7">
   <style>
-    /* Refined Custom Styling for Flagship Trek Pages */
-    .trek-hero-title {
-      font-size: 2.75rem;
-      font-weight: 800;
-      color: #0f172a;
-      line-height: 1.2;
-      margin-bottom: 0.75rem;
+    .trek-sub-nav-btn.active {
+      border-bottom-color: var(--color-copper-orange) !important;
     }
-    @media (max-width: 768px) {
-      .trek-hero-title { font-size: 2rem; }
+    .gear-section-title {
+      border-left-color: var(--color-copper-orange) !important;
     }
-    .text-copper { color: #c2410c; }
-    .bg-copper-light { background-color: #fff7ed; }
-    .border-copper { border-color: #fdba74; }
-    
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      padding: 4px 12px;
-      border-radius: 9999px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .pill-copper {
-      background: #ffedd5;
-      color: #9a3412;
-      border: 1px solid #fed7aa;
-    }
-    
-    /* Interactive Checkbox List Styling */
     .packing-item-label {
       display: flex;
       align-items: center;
@@ -164,33 +133,11 @@
       width: 18px;
       height: 18px;
       cursor: pointer;
-      accent-color: #059669;
+      accent-color: #008060;
     }
     .packing-item-label.checked {
       text-decoration: line-through;
       color: #94a3b8;
-    }
-
-    /* Bento Stat Card */
-    .bento-stat-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .bento-stat-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    
-    /* Dual Calendar Container */
-    .calendar-container {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 20px;
     }
   </style>
 </head>
@@ -515,13 +462,13 @@
       <div class="container">
         <!-- Top Row: Region Pill & Review Badges -->
         <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px;">
-          <span class="pill pill-copper" style="margin-bottom: 0;">Lower Everest &bull; Solukhumbu Sherpa Heritage &bull; Hillary's Favorite Viewpoint</span>
+          <span class="pill pill-copper" style="margin-bottom: 0;">Lower Everest • Solukhumbu Sherpa Heritage • Hillary's Favorite Viewpoint</span>
           
           <!-- TripAdvisor Review Badge -->
           <div style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 100px; padding: 4px 12px; font-size: 0.85rem; color: #475569; box-shadow: 0 1px 2px rgba(0,0,0,0.05); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
             <span style="display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; background: #00af87; border-radius: 50%;">
               <svg viewBox="0 0 24 24" fill="#000000" width="10" height="10">
-                <path d="M12 3.2c-4.8 0-8.8 4-8.8 8.8 0 4.8 4 8.8 8.8 8.8 0 4.8 4 8.8 8.8 8.8-4.8 0-8.8-4-8.8-8.8zm-3.3 12.1c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3 1.8 0 3.3 1.5 3.3 3.3.1 1.8-1.4 3.3-3.3 3.3zm6.6 0c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3 1.8 0 3.3 1.5 3.3 3.3 0 1.8-1.5 3.3-3.3 3.3zm-6.6-4.9c-.9 0-1.6.7-1.6 1.6 0 .9.7 1.6 1.6 1.6.9 0 1.6-.7 1.6-1.6 0-.9-.7-1.6-1.6-1.6zm6.6 0c-.9 0-1.6.7-1.6 1.6 0 .9.7 1.6 1.6 1.6.9 0 1.6-.7 1.6-1.6 0-.9-.7-1.6-1.6-1.6zM12 11.5c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5z"/>
+                <path d="M12 3.2c-4.8 0-8.8 4-8.8 8.8 0 4.8 4 8.8 8.8 8.8 4.8 0 8.8-4 8.8-8.8 0-4.8-4-8.8-8.8-8.8zm-3.3 12.1c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3 1.8 0 3.3 1.5 3.3 3.3.1 1.8-1.4 3.3-3.3 3.3zm6.6 0c-1.8 0-3.3-1.5-3.3-3.3 0-1.8 1.5-3.3 3.3-3.3 1.8 0 3.3 1.5 3.3 3.3 0 1.8-1.5 3.3-3.3 3.3zm-6.6-4.9c-.9 0-1.6.7-1.6 1.6 0 .9.7 1.6 1.6 1.6.9 0 1.6-.7 1.6-1.6 0-.9-.7-1.6-1.6-1.6zm6.6 0c-.9 0-1.6.7-1.6 1.6 0 .9.7 1.6 1.6 1.6.9 0 1.6-.7 1.6-1.6 0-.9-.7-1.6-1.6-1.6zM12 11.5c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5z"/>
               </svg>
             </span>
             <span style="font-weight: 700; color: #0f172a;">5.0</span>
@@ -537,188 +484,326 @@
 
           <!-- Google Review Badge -->
           <div style="display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 100px; padding: 4px 12px; font-size: 0.85rem; color: #475569; box-shadow: 0 1px 2px rgba(0,0,0,0.05); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-            <svg viewBox="0 0 24 24" width="16" height="16">
-              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
-              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            <svg width="14" height="14" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
             </svg>
-            <span style="font-weight: 700; color: #0f172a;">4.9</span>
-            <span style="color: #f59e0b; font-size: 0.9rem;">★★★★★</span>
-            <span>on <strong style="font-weight: 600; color: #0f172a;">Google</strong></span>
+            <span style="font-weight: 700; color: #0f172a;">5.0</span>
+            <span style="color: #FBBF24; display: inline-flex; gap: 1px; font-size: 0.9rem;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+            <span><strong style="font-weight: 600; color: #0f172a;">169</strong> reviews on Google</span>
           </div>
         </div>
-
-        <h1 class="trek-hero-title">
-          Pikey Peak Trek <span style="font-weight: 300; font-size: 0.8em; color: #64748b;">(9 Days)</span>
-        </h1>
-        <p style="font-size: 1.15rem; color: #475569; max-width: 900px; line-height: 1.6; margin-bottom: 24px;">
-          Experience the ultimate panoramic sunrise view of Mount Everest, Kanchenjunga, Makalu, and Lhotse from 4,065 m without domestic flight delays or acute altitude risks. A scenic Himalayan journey combining quiet trails, centuries-old Buddhist monasteries, and authentic Sherpa culture.
+        <h1 class="trek-hero-title" style="font-size: 2.8rem; margin-top: 6px; margin-bottom: 8px; color: var(--color-primary-navy);">Pikey Peak Trek</h1>
+        <p style="font-size: 1.15rem; color: var(--color-neutral-600); line-height: 1.7; margin-top: 12px; margin-bottom: 0;">
+          The Pikey Peak Trek is a scenic Himalayan trekking adventure in the lower Everest region of Nepal, offering panoramic mountain views, traditional Sherpa villages, Buddhist heritage, and peaceful walking trails away from the busier routes in the Khumbu. Reaching an elevation of approximately <span data-altitude-m="4065">4,065 meters</span> at Pikey Peak, this trek provides an opportunity to enjoy views of Mount Everest and the surrounding Himalayan range without undertaking the longer Everest Base Camp journey or dealing with domestic Lukla flight delays.
+          <span id="pikey-more-text" style="display: none;">
+            Combining an overland road approach from Kathmandu to Dhap Bazaar with five walking days through Jhapre, Pikey Base Camp, Jasmane Bhanjyang, Junbesi, and Phaplu, this 9-day journey showcases centuries-old monasteries like Thupten Chholing, rhododendron forests, authentic Sherpa homestays, and what Sir Edmund Hillary famously declared to be his favorite panoramic view of Mount Everest in all of Nepal.
+          </span>
+          <button id="pikey-toggle-btn" style="background: none; border: none; color: #10b981; font-weight: 700; font-size: 1.05rem; cursor: pointer; padding: 0; margin-left: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; transition: opacity 0.2s ease;">
+            Learn more <span style="font-size: 1.1rem; margin-left: 2px;">→</span>
+          </button>
         </p>
-
-        <!-- Hero Photo Gallery Grid -->
-        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 180px 180px; gap: 12px; border-radius: 16px; overflow: hidden; margin-bottom: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
-          <div style="grid-row: span 2; position: relative; overflow: hidden; cursor: pointer;">
-            <img src="../../images/treks/pikey-peak/pikey-peak-himalayan-sunrise-01.jpg" alt="Sunrise over Mount Everest from Pikey Peak" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-            <span style="position: absolute; bottom: 12px; left: 12px; background: rgba(0,0,0,0.6); color: white; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; backdrop-filter: blur(4px);">Pikey Peak Summit Sunrise (4,065 m)</span>
-          </div>
-          <div style="position: relative; overflow: hidden; cursor: pointer;">
-            <img src="../../images/treks/pikey-peak/pikey-peak-thupten-chholing-monastery-02.jpg" alt="Thupten Chholing Monastery near Junbesi" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-            <span style="position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; backdrop-filter: blur(4px);">Thupten Chholing Monastery</span>
-          </div>
-          <div style="position: relative; overflow: hidden; cursor: pointer;">
-            <img src="../../images/treks/pikey-peak/pikey-peak-jhapre-stupa-village-03.jpg" alt="Buddhist Stupas and Mani Walls in Jhapre" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-            <span style="position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; backdrop-filter: blur(4px);">Jhapre Ridge &amp; Stupas</span>
-          </div>
-          <div style="position: relative; overflow: hidden; cursor: pointer;">
-            <img src="../../images/treks/pikey-peak/pikey-peak-solu-valley-landscape-04.jpg" alt="Solu Valley Terraced Fields and Sherpa Settlements" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-            <span style="position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; backdrop-filter: blur(4px);">Junbesi Valley &amp; Orchards</span>
-          </div>
-          <div style="position: relative; overflow: hidden; cursor: pointer;">
-            <img src="../../images/treks/pikey-peak/pikey-peak-ridge-trail-view-05.jpg" alt="Trekking Ridge Trail toward Pikey Base Camp" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-            <span style="position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.75rem; backdrop-filter: blur(4px);">Alpine Ridge Trails</span>
-          </div>
-        </div>
-
-        <!-- Quick Stats Bar -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); margin-bottom: 25px;">
-          <div>
-            <span style="display: block; font-size: 0.75rem; color: #64748b; font-weight: 600; text-transform: uppercase;">Duration</span>
-            <strong style="font-size: 1.05rem; color: #0f172a;">9 Days / 8 Nights</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.75rem; color: #64748b; font-weight: 600; text-transform: uppercase;">Max Altitude</span>
-            <strong style="font-size: 1.05rem; color: #0f172a;">4,065 m / 13,337 ft</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.75rem; color: #64748b; font-weight: 600; text-transform: uppercase;">Difficulty</span>
-            <strong style="font-size: 1.05rem; color: #059669;">Moderate (Grade 3)</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.75rem; color: #64748b; font-weight: 600; text-transform: uppercase;">Accommodation</span>
-            <strong style="font-size: 1.05rem; color: #0f172a;">Teahouses &amp; Lodges</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.75rem; color: #64748b; font-weight: 600; text-transform: uppercase;">Meals</span>
-            <strong style="font-size: 1.05rem; color: #0f172a;">All Meals on Trek</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.75rem; color: #64748b; font-weight: 600; text-transform: uppercase;">Trailhead &bull; Exit</span>
-            <strong style="font-size: 1.05rem; color: #0f172a;">Dhap &bull; Phaplu</strong>
-          </div>
-          <div>
-            <span style="display: block; font-size: 0.75rem; color: #64748b; font-weight: 600; text-transform: uppercase;">Best Seasons</span>
-            <strong style="font-size: 1.05rem; color: #0f172a;">Mar–May &bull; Sep–Nov</strong>
-          </div>
-        </div>
+        
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.getElementById('pikey-toggle-btn');
+            const moreText = document.getElementById('pikey-more-text');
+            
+            if (toggleBtn && moreText) {
+              toggleBtn.addEventListener('click', () => {
+                const isHidden = moreText.style.display === 'none';
+                moreText.style.display = isHidden ? 'inline' : 'none';
+                toggleBtn.innerHTML = isHidden 
+                  ? 'Learn less <span style="font-size: 1.1rem; margin-left: 2px;">↑</span>' 
+                  : 'Learn more <span style="font-size: 1.1rem; margin-left: 2px;">→</span>';
+              });
+            }
+          });
+        </script>
       </div>
     </section>
 
-    <!-- Sticky Sub-Navigation Bar -->
-    <nav class="trek-nav-sticky" id="trek-sticky-nav" style="position: sticky; top: 0; z-index: 99; background: #ffffff; border-bottom: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0,0,0,0.04);">
-      <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; overflow-x: auto; padding: 8px 16px;">
-        <ul style="display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; white-space: nowrap; font-size: 0.9rem; font-weight: 600;">
-          <li><a href="#section-overview" class="trek-nav-link active" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">Overview</a></li>
-          <li><a href="#section-itinerary" class="trek-nav-link" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">Itinerary</a></li>
-          <li><a href="#section-includes" class="trek-nav-link" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">Includes</a></li>
-          <li><a href="#section-dates" class="trek-nav-link" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">Dates</a></li>
-          <li><a href="#section-packing" class="trek-nav-link" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">Packing</a></li>
-          <li><a href="#section-details" class="trek-nav-link" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">Details</a></li>
-          <li><a href="#section-altitude-profile" class="trek-nav-link" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">Altitude</a></li>
-          <li><a href="#section-weather" class="trek-nav-link" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">Weather</a></li>
-          <li><a href="#section-map" class="trek-nav-link" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">Map</a></li>
-          <li><a href="#section-reviews" class="trek-nav-link" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">Reviews</a></li>
-          <li><a href="#section-faqs" class="trek-nav-link" style="padding: 8px 12px; border-radius: 6px; color: #475569; text-decoration: none;">FAQs</a></li>
-        </ul>
-        <button class="btn btn-sm btn-primary open-inquiry-btn" style="white-space: nowrap; flex-shrink: 0;">Book This Trek</button>
+    <!-- Multi-Image Collage Gallery -->
+    <div class="container" style="margin-bottom: 24px;">
+      <div class="trek-gallery-collage">
+        <!-- Main Large Photo (Left) with Travelers' Choice badge -->
+        <div class="trek-gallery-main">
+          <img src="../../images/treks/pikey-peak/pikey-peak-himalayan-sunrise-01.jpg" alt="Pikey Peak Himalayan Sunrise View of Mount Everest and Mountain Horizon">
+          <!-- TripAdvisor Travelers' Choice Badge -->
+          <div class="trek-gallery-badge">
+            <div class="trek-gallery-badge-icon" style="background: #00af87; display: flex; align-items: center; justify-content: center;">
+              <svg class="icon-svg icon-sm icon-svg-fill" style="stroke: none; fill: white;" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <div class="trek-gallery-badge-text">
+              <span>Travelers' Choice</span>
+              <span>Best of the Best 2026</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Grid Items (Right 2x2 Columns) -->
+        <div class="trek-gallery-sub">
+          <img src="../../images/treks/pikey-peak/pikey-peak-thupten-chholing-monastery-02.jpg" alt="Historic Thupten Chholing Monastery in Junbesi Solu Valley">
+        </div>
+        <div class="trek-gallery-sub trek-gallery-sub-top-right">
+          <img src="../../images/treks/pikey-peak/pikey-peak-jhapre-stupa-village-03.jpg" alt="Jhapre Sherpa Village Buddhist Stupa and Apple Orchards">
+          <!-- See all photos button -->
+          <button class="trek-gallery-see-all-btn">
+            <span><svg class="icon-svg icon-xs icon-margin-right" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>See all photos</span>
+          </button>
+        </div>
+        <div class="trek-gallery-sub">
+          <img src="../../images/treks/pikey-peak/pikey-peak-solu-valley-landscape-04.jpg" alt="Solu Valley Mountain Landscape and Rural Terraced Trails">
+        </div>
+        <div class="trek-gallery-sub trek-gallery-sub-bottom-right">
+          <img src="../../images/treks/pikey-peak/pikey-peak-ridge-trail-view-05.jpg" alt="Trekking Group on Alpine Ridge Path Approaching Pikey Peak">
+        </div>
       </div>
-    </nav>
+    </div>
 
-    <!-- Main Two-Column Layout -->
-    <div class="trek-main-layout container" style="display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 40px; margin-top: 30px; margin-bottom: 60px;">
-      <!-- Content Column -->
-      <div class="trek-content-column">
+    <!-- Key Trip Facts Grid -->
+    <div class="container" style="margin-bottom: 30px;">
+      <style>
+        .trip-fact-item {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          transition: transform 0.2s ease-in-out;
+        }
+        .trip-fact-item:hover {
+          transform: translateY(-2px);
+        }
+      </style>
+      <div style="background: #ffffff; border: 1px solid var(--color-neutral-100); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); padding: 24px 30px;">
+        <h2 style="font-size: 1.3rem; margin-bottom: 24px; color: var(--color-primary-navy); display: flex; align-items: center; gap: 8px; font-weight: 700;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="icon-navy" style="color: var(--color-primary-navy);"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg> Key Trip Facts</h2>
+        
+        <div class="trek-facts-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 24px 20px;">
+          <!-- 1. Duration -->
+          <div class="trip-fact-item">
+            <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-neutral-500); font-weight: 700;">Duration</span>
+              <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">9 days</span>
+            </div>
+          </div>
+
+          <!-- 2. Difficulty -->
+          <div class="trip-fact-item">
+            <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-neutral-500); font-weight: 700;">Difficulty</span>
+              <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">Moderate</span>
+            </div>
+          </div>
+
+          <!-- 3. Max Altitude -->
+          <div class="trip-fact-item">
+            <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22L12 2l8 20H4z"/><path d="M9 22l3-7 3 7H9z" fill="#008060"/></svg>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-neutral-500); font-weight: 700;">Max Altitude</span>
+              <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;" data-altitude-m="4065">4,065 m (13,336 ft)</span>
+            </div>
+          </div>
+
+          <!-- 4. Destination -->
+          <div class="trip-fact-item">
+            <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-neutral-500); font-weight: 700;">Destination</span>
+              <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">Nepal (Lower Everest)</span>
+            </div>
+          </div>
+
+          <!-- 5. Activity -->
+          <div class="trip-fact-item">
+            <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 8v8l-3-2"/><path d="M9 22l3-6 4 2 2-5"/></svg>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-neutral-500); font-weight: 700;">Activity</span>
+              <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">Trekking &amp; Cultural Walk</span>
+            </div>
+          </div>
+
+          <!-- 6. Group Size -->
+          <div class="trip-fact-item">
+            <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-neutral-500); font-weight: 700;">Group Size</span>
+              <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">1–14 Trekkers</span>
+            </div>
+          </div>
+
+          <!-- 7. Best Season -->
+          <div class="trip-fact-item">
+            <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-neutral-500); font-weight: 700;">Best Season</span>
+              <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">Mar–May &bull; Sep–Dec</span>
+            </div>
+          </div>
+
+          <!-- 8. Accommodation -->
+          <div class="trip-fact-item">
+            <div style="width: 42px; height: 42px; background: #e6f7f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-neutral-500); font-weight: 700;">Accommodation</span>
+              <span style="font-size: 1.05rem; color: var(--color-neutral-800); font-weight: 600;">Teahouses &amp; Lodges</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust Pillars Grid -->
+    <div class="container" style="margin-bottom: 30px;">
+      <div class="trek-trust-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+        <!-- Badge 1: Govt-registered local Nepal agency -->
+        <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy); line-height: 1.3;">Govt-registered local Nepal agency</span>
+        </div>
+
+        <!-- Badge 2: 10,000+ happy travellers -->
+        <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy); line-height: 1.3;">10,000+ happy travellers</span>
+        </div>
+
+        <!-- Badge 3: Secure payment · No hidden fees -->
+        <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy); line-height: 1.3;">Secure payment · No hidden fees</span>
+        </div>
+
+        <!-- Badge 4: Instant confirmation -->
+        <div style="display: flex; align-items: center; gap: 12px; background: #ffffff; border: 1px solid var(--color-neutral-100); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <div style="width: 38px; height: 38px; background: #e6f7f0; color: #008060; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <span style="font-size: 0.9rem; font-weight: 700; color: var(--color-primary-navy); line-height: 1.3;">Instant confirmation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Scroll-Spy Sub-Navigation Bar -->
+    <div class="trek-sub-nav">
+      <div class="container">
+        <div class="trek-sub-nav-list">
+          <button class="trek-sub-nav-btn active" data-tab="overview">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Overview
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="itinerary">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Itinerary
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="includes">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Includes &amp; Excludes
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="dates">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Dates
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="packing">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>Packing
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="details">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Logistics
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="altitude-profile">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22L12 2l8 20H4z"/><path d="M9 22l3-7 3 7H9z" fill="currentColor"/></svg>Altitude
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="weather">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>Weather
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="map">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>Map
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="reviews">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Reviews
+          </button>
+          <button class="trek-sub-nav-btn" data-tab="faqs">
+            <svg class="icon-svg icon-sm icon-margin-right" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>FAQs
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Two-Column Layout Section Wrapper -->
+    <section class="section-padding" style="padding-top: 10px;" data-trek-details-wrapper data-trek-key="pikey_peak">
+      <div class="container trek-detail-layout" style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 40px;">
+        
+        <!-- Main Details Column (Sequential Sections) -->
+        <div style="min-width: 0;">
 
 
         <!-- Section 1: Overview -->
-        <section id="section-overview" style="margin-bottom: 50px;">
-          <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">01</span>
-              <span class="pill pill-copper">Trip Overview &amp; Key Facts</span>
-            </div>
-            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">Pikey Peak Trek Overview</h2>
-          </div>
+        <section id="section-overview" class="trek-detail-section">
+          <h2 class="trek-section-title">Trek Overview</h2>
 
           <!-- Package at a Glance Quick Table -->
-          <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; margin-bottom: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
-            <div style="background: #f8fafc; padding: 14px 20px; border-bottom: 1px solid #e2e8f0;">
-              <h3 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin: 0;">Package at a Glance</h3>
+          <div style="background: #ffffff; border: 1px solid var(--color-neutral-100); border-radius: var(--radius-md); overflow: hidden; margin-bottom: 30px; box-shadow: var(--shadow-sm);">
+            <div style="background: var(--color-neutral-50); padding: 14px 20px; border-bottom: 1px solid var(--color-neutral-100);">
+              <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--color-primary-navy); margin: 0;">Package at a Glance</h3>
             </div>
             <div style="overflow-x: auto;">
               <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
-                <thead>
-                  <tr style="background: #f1f5f9; text-align: left; color: #475569;">
-                    <th style="padding: 12px 20px; font-weight: 600; width: 35%;">Trek Feature</th>
-                    <th style="padding: 12px 20px; font-weight: 600;">Package Details</th>
+                <tbody>
+                  <tr style="border-bottom: 1px solid var(--color-neutral-100);">
+                    <td style="padding: 12px 20px; font-weight: 600; color: var(--color-neutral-600); width: 220px; background: var(--color-neutral-50);">Total Duration</td>
+                    <td style="padding: 12px 20px; color: var(--color-neutral-800);">9 Calendar Days (Kathmandu to Kathmandu overland)</td>
                   </tr>
-                </thead>
-                <tbody style="color: #334155;">
-                  <tr style="border-bottom: 1px solid #f1f5f9;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Trek Duration</td>
-                    <td style="padding: 12px 20px;">9 calendar days (5 walking days, 2 overland drive days, 2 Kathmandu days)</td>
+                  <tr style="border-bottom: 1px solid var(--color-neutral-100);">
+                    <td style="padding: 12px 20px; font-weight: 600; color: var(--color-neutral-600); background: var(--color-neutral-50);">Trekking Days</td>
+                    <td style="padding: 12px 20px; color: var(--color-neutral-800);">5 Scheduled Walking Days (Dhap &bull; Jhapre &bull; Base Camp &bull; Jasmane &bull; Junbesi &bull; Phaplu)</td>
                   </tr>
-                  <tr style="border-bottom: 1px solid #f1f5f9; background: #fafafa;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Trek Region</td>
-                    <td style="padding: 12px 20px;">Solukhumbu / Lower Everest Region, Nepal</td>
+                  <tr style="border-bottom: 1px solid var(--color-neutral-100);">
+                    <td style="padding: 12px 20px; font-weight: 600; color: var(--color-neutral-600); background: var(--color-neutral-50);">Highest Viewpoint</td>
+                    <td style="padding: 12px 20px; color: var(--color-neutral-800);"><strong style="color: #008060;">Pikey Peak Summit (4,065 m / 13,336 ft)</strong> on Day 5</td>
                   </tr>
-                  <tr style="border-bottom: 1px solid #f1f5f9;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Starting &amp; Ending Point</td>
-                    <td style="padding: 12px 20px;">Kathmandu, Nepal (TIA Airport transfers included)</td>
+                  <tr style="border-bottom: 1px solid var(--color-neutral-100);">
+                    <td style="padding: 12px 20px; font-weight: 600; color: var(--color-neutral-600); background: var(--color-neutral-50);">Highest Sleeping Altitude</td>
+                    <td style="padding: 12px 20px; color: var(--color-neutral-800);">Pikey Peak Base Camp (~3,640 m / 11,942 ft) on Night 4</td>
                   </tr>
-                  <tr style="border-bottom: 1px solid #f1f5f9; background: #fafafa;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Trek Starting Point (Trailhead)</td>
-                    <td style="padding: 12px 20px;">Dhap Bazaar (approx. 2,850 m / 9,350 ft) via scenic overland road</td>
+                  <tr style="border-bottom: 1px solid var(--color-neutral-100);">
+                    <td style="padding: 12px 20px; font-weight: 600; color: var(--color-neutral-600); background: var(--color-neutral-50);">Overland Trailhead &bull; Exit</td>
+                    <td style="padding: 12px 20px; color: var(--color-neutral-800);">Drive Kathmandu to Dhap Bazaar (~2,850 m) &bull; Drive Phaplu to Kathmandu (~2,469 m)</td>
                   </tr>
-                  <tr style="border-bottom: 1px solid #f1f5f9;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Trek Ending Point (Exit Hub)</td>
-                    <td style="padding: 12px 20px;">Phaplu (approx. 2,469 m / 8,100 ft); Salleri is an alternative variation</td>
+                  <tr style="border-bottom: 1px solid var(--color-neutral-100);">
+                    <td style="padding: 12px 20px; font-weight: 600; color: var(--color-neutral-600); background: var(--color-neutral-50);">Lukla Flight Status</td>
+                    <td style="padding: 12px 20px; color: var(--color-neutral-800);"><strong style="color: #008060;">No domestic flights required</strong> (Avoids Lukla weather cancellations)</td>
                   </tr>
-                  <tr style="border-bottom: 1px solid #f1f5f9; background: #fafafa;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Accommodation</td>
-                    <td style="padding: 12px 20px;">2 nights Kathmandu hotel (Thamel) &amp; 6 nights authentic mountain teahouses/lodges</td>
-                  </tr>
-                  <tr style="border-bottom: 1px solid #f1f5f9;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Highest Point of the Standard Route</td>
-                    <td style="padding: 12px 20px;"><strong>Pikey Peak Summit (approx. 4,065 m / 13,337 ft)</strong></td>
-                  </tr>
-                  <tr style="border-bottom: 1px solid #f1f5f9; background: #fafafa;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Highest Scheduled Overnight</td>
-                    <td style="padding: 12px 20px;">Pikey Peak Base Camp (approx. 3,640 m / 11,942 ft)</td>
-                  </tr>
-                  <tr style="border-bottom: 1px solid #f1f5f9;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Cultural Excursion</td>
-                    <td style="padding: 12px 20px;">Thupten Chholing Monastery near Junbesi &amp; Jhapre Gompa</td>
-                  </tr>
-                  <tr style="border-bottom: 1px solid #f1f5f9; background: #fafafa;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Main Cultural Group</td>
-                    <td style="padding: 12px 20px;">Sherpa communities of Solukhumbu</td>
-                  </tr>
-                  <tr style="border-bottom: 1px solid #f1f5f9;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Transportation</td>
-                    <td style="padding: 12px 20px;">Comfortable private 4WD Scorpio Jeep / overland vehicle (Kathmandu &ndash; Dhap / Phaplu &ndash; Kathmandu)</td>
-                  </tr>
-                  <tr style="background: #fafafa;">
-                    <td style="padding: 12px 20px; font-weight: 600;">Recommended Seasons</td>
-                    <td style="padding: 12px 20px;">Spring (March to May) &amp; Autumn (September to November)</td>
+                  <tr>
+                    <td style="padding: 12px 20px; font-weight: 600; color: var(--color-neutral-600); background: var(--color-neutral-50);">Cultural Highlights</td>
+                    <td style="padding: 12px 20px; color: var(--color-neutral-800);">Jhapre Gompa, Thupten Chholing Monastery, Junbesi Sherpa Village, Mani walls &amp; Chortens</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
 
-          <!-- Comprehensive User Content for Overview -->
-          <div class="user-content-block" style="font-size: 1rem; line-height: 1.7; color: #334155;">
+          <!-- Comprehensive Overview User Content -->
+          <div class="user-content-block" style="font-size: 1.05rem; line-height: 1.7; color: var(--color-neutral-700);">
             <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">Pikey Peak Trek</p>
 <h3 style="font-size: 1.35rem; font-weight: 700; color: #0f172a; margin-top: 28px; margin-bottom: 12px;">Overview and key trip facts</h3>
 <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">This nine-calendar-day itinerary includes arrival in Kathmandu, a road approach to Dhap Bazaar, five scheduled walking days through Jhapre, Pikey Peak Base Camp, Jasmane Bhanjyang and Junbesi to Phaplu, the road return and final departure. Phaplu is the pickup in the detailed plan. Salleri is a separately agreed variation; no Lukla flight is included in the standard route.</p>
@@ -1067,33 +1152,14 @@
 <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">The standard nine-day package provides time to approach the trekking region by road, walk through Jhapre and the higher mountain terrain, visit the summit viewpoint, and continue toward Junbesi and the Salleri area. Travelers interested in cultural exploration can consider additional time for suitable village visits or a monastery extension, provided the revised itinerary remains practical.</p>
 <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">Choosing the right season, preparing for the walking demands, and allowing flexibility for weather and transportation help you make the most of these experiences. With realistic expectations and appropriate preparation, the Pikey Peak Trek offers a rewarding way to explore the lower Everest region, appreciate its mountain landscapes, and learn about the communities that make this part of Nepal distinctive.</p>
           </div>
-
-          <!-- Why Book With Namaste Hiking Trek -->
-          <div style="background: #fff7ed; border: 1px solid #fed7aa; border-radius: 12px; padding: 24px; margin-top: 30px;">
-            <h3 style="font-size: 1.2rem; font-weight: 700; color: #9a3412; margin-top: 0; margin-bottom: 12px;">Why Book the Pikey Peak Trek with Namaste Hiking Trek?</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; font-size: 0.9rem; color: #7c2d12;">
-              <div>✔ <strong>Local Sherpa Expertise:</strong> Native licensed guides with deep cultural ties to the Solukhumbu region.</div>
-              <div>✔ <strong>Comprehensive Safety:</strong> Daily pulse oximeter saturation checks and wilderness first-aid kits on all departures.</div>
-              <div>✔ <strong>Reliable Private 4WD:</strong> Comfortable Scorpio Jeeps for overland transit, ensuring safety and comfort.</div>
-              <div>✔ <strong>Fair Porter Ethics:</strong> 100% compliance with IPPG guidelines, fair wages, warm gear, and full medical insurance.</div>
-            </div>
-          </div>
         </section>
 
 
         <!-- Section 2: Itinerary -->
-        <section id="section-itinerary" style="margin-bottom: 50px;">
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px; gap: 12px;">
-            <div>
-              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-                <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">02</span>
-                <span class="pill pill-copper">Day by Day Plan</span>
-              </div>
-              <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">9-Day Pikey Peak Trek Itinerary</h2>
-            </div>
-            <div>
-              <button id="toggle-all-itinerary" class="btn btn-sm btn-outline" style="border: 1px solid #cbd5e1; background: #ffffff; color: #475569; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-weight: 600;">Expand All Days</button>
-            </div>
+        <section id="section-itinerary" class="trek-detail-section">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 24px; gap: 12px;">
+            <h2 class="trek-section-title" style="margin-bottom: 0;">Pikey Peak Trek Itinerary: Day by Day Details</h2>
+            <button id="toggle-all-itinerary" class="btn btn-sm btn-outline" style="border: 1px solid #cbd5e1; background: #ffffff; color: #475569; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-weight: 600;">Expand All Days</button>
           </div>
 
           <!-- Itinerary Introduction & User Summary -->
@@ -1468,13 +1534,9 @@
 
 
         <!-- Section 3: Includes & Excludes -->
-        <section id="section-includes" style="margin-bottom: 50px;">
-          <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">03</span>
-              <span class="pill pill-copper">Package Costs &amp; Inclusions</span>
-            </div>
-            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">What's Included &amp; Excluded</h2>
+        <section id="section-includes" class="trek-detail-section">
+          <div class="inc-exc-section-title-wrapper" style="border-left: 4px solid var(--color-copper-orange); padding-left: 14px; margin-bottom: 24px;">
+            <h2 class="trek-section-title" style="margin-bottom: 0;">What's Included &amp; Excluded</h2>
           </div>
 
           <!-- Included Grid -->
@@ -1673,13 +1735,27 @@
 
 
         <!-- Section 4: Dates & Availability -->
-        <section id="section-dates" style="margin-bottom: 50px;">
-          <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">04</span>
-              <span class="pill pill-copper">Departures &amp; Real-Time Booking</span>
+        <section id="section-dates" class="trek-detail-section">
+          <div class="dates-section-header">
+            <h2 class="trek-section-title" style="margin-bottom: 0;">Booking Dates &amp; Availability for Pikey Peak Trek</h2>
+            <div class="dates-mode-toggle">
+              <button type="button" class="dates-mode-btn active" data-mode="group">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                Group Departures
+              </button>
+              <button type="button" class="dates-mode-btn" data-mode="private">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                Private Custom Dates
+              </button>
             </div>
-            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">Dates &amp; Availability (2026–2027)</h2>
           </div>
 
           <p style="font-size: 1rem; color: #475569; line-height: 1.6; margin-bottom: 24px;">
@@ -1822,13 +1898,17 @@
 
 
         <!-- Section 5: Packing List -->
-        <section id="section-packing" style="margin-bottom: 50px;">
-          <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">05</span>
-              <span class="pill pill-copper">Gear &amp; Equipment Checklist</span>
+        <section id="section-packing" class="trek-detail-section">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; gap: 16px; flex-wrap: wrap;">
+            <div>
+              <h2 class="trek-section-title" style="margin-bottom: 8px;">Packing List for Pikey Peak Trek</h2>
+              <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                <span style="font-size: 0.95rem; color: var(--color-neutral-600); font-weight: 500;">
+                  Essential Info: Don’t have it? Rent it with us — <strong>USD 1/day per item</strong>
+                </span>
+                <a href="#" onclick="window.print(); return false;" style="font-size: 0.9rem; color: var(--color-copper-orange); text-decoration: underline; font-weight: 600;">Print Checklist</a>
+              </div>
             </div>
-            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">Comprehensive Pikey Peak Packing List</h2>
           </div>
 
           <p style="font-size: 1rem; color: #475569; line-height: 1.6; margin-bottom: 20px;">
@@ -1989,18 +2069,13 @@
 
 
         <!-- Section 6: Trip Details & Essential Logistics -->
-        <section id="section-details" style="margin-bottom: 50px;">
-          <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">06</span>
-              <span class="pill pill-copper">Logistics, Culture &amp; Safety</span>
+        <section id="section-details" class="trek-detail-section">
+          <div class="details-section-container">
+            <div class="details-title-wrapper">
+              <h2 class="details-main-title">Read before you book, Pikey Peak Trek</h2>
+              <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
             </div>
-            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">Essential Pikey Peak Trip Details</h2>
-          </div>
-
-          <p style="font-size: 1rem; color: #475569; line-height: 1.6; margin-bottom: 24px;">
-            Everything you need to know about trekking in the lower Everest and Solukhumbu region. Click on any topic below for detailed logistics, cultural etiquette, accommodation standards, and safety guidelines.
-          </p>
+            <p class="details-subtitle-text">To help you decide if the Pikey Peak Trek is for you, we have provided comprehensive information on accommodation, food, water safety, electricity, permits, and physical preparation.</p>
 
           <div class="details-accordion-group" style="display: flex; flex-direction: column; gap: 12px;">
 
@@ -2348,14 +2423,14 @@
 
           </div>
         
-          <!-- Comprehensive Difficulty, Fitness & Preparation Guide -->
-          <div style="margin-top: 40px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-            <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 20px;">
-              <span class="pill pill-copper" style="margin-bottom: 8px;">Physical Readiness</span>
-              <h3 style="font-size: 1.45rem; font-weight: 800; color: #0f172a; margin: 4px 0 0 0;">Difficulty, Fitness and Preparation Guide</h3>
-            </div>
-            <div class="user-content-block" style="font-size: 0.98rem; line-height: 1.7; color: #334155;">
-              <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">Difficulty, fitness and preparation</p>
+            <!-- Comprehensive Difficulty, Fitness & Preparation Guide -->
+            <div style="margin-top: 40px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+              <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 20px;">
+                <span class="pill pill-copper" style="margin-bottom: 8px;">Physical Readiness</span>
+                <h3 style="font-size: 1.45rem; font-weight: 800; color: #0f172a; margin: 4px 0 0 0;">Difficulty, Fitness and Preparation Guide</h3>
+              </div>
+              <div class="user-content-block" style="font-size: 0.98rem; line-height: 1.7; color: #334155;">
+                <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">Difficulty, fitness and preparation</p>
 <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">The Pikey Peak Trek is generally considered a moderate Himalayan trekking adventure, suitable for travelers with reasonable fitness who want to experience mountain scenery, traditional Sherpa villages, and a panoramic summit without undertaking a longer expedition to Everest Base Camp. The route reaches approximately 4,065 meters at Pikey Peak and combines several days of walking with a long overland journey from Kathmandu.</p>
 <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">Although the trek does not require technical climbing skills under normal conditions, it involves sustained uphill walking, uneven trails, stone steps, forest paths, and substantial descents. The ascent toward Pikey Peak Base Camp is one of the more demanding sections, while the early-morning summit excursion requires additional effort at altitude. The descent toward Jasmane Bhanjyang and Junbesi can also be tiring, particularly after the summit walk.</p>
 <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">The overall difficulty depends on your fitness, previous hiking experience, walking pace, health, weather, and the exact itinerary. Travelers who regularly walk, hike, or participate in other endurance activities may find the route manageable, while those with limited recent exercise should allow sufficient time for preparation.</p>
@@ -2644,6 +2719,7 @@
 <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">Preparing through regular walking and hill training, choosing comfortable footwear, packing appropriately for the season, and following a steady pace can make the trek more manageable. Particular attention should be given to the ascent toward Pikey Peak Base Camp and the early-morning summit walk, followed by the descent toward Jasmane Bhanjyang and Junbesi.</p>
 <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">Beginners with suitable fitness can consider the trek, while travelers with significant mobility limitations or health concerns should assess their suitability carefully. No level of fitness removes the need to monitor symptoms and adapt the itinerary when necessary.</p>
 <p style="font-size: 0.98rem; line-height: 1.7; color: #334155; margin-bottom: 14px;">With realistic preparation, appropriate altitude awareness, and a schedule that allows flexibility, the Pikey Peak Trek offers a rewarding opportunity to experience Himalayan scenery, Sherpa villages, and the panoramic mountain environment around Pikey Peak.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -2651,13 +2727,10 @@
 
 
         <!-- Section 7: Altitude Profile & Acclimatization -->
-        <section id="section-altitude-profile" style="margin-bottom: 50px;">
-          <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">07</span>
-              <span class="pill pill-copper">Elevation Dynamics &amp; Safety</span>
-            </div>
-            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">Altitude Profile &amp; Acclimatization</h2>
+        <section id="section-altitude-profile" class="trek-detail-section">
+          <div class="details-title-wrapper" style="margin-bottom: 24px;">
+            <h2 class="details-main-title">Altitude Profile of Pikey Peak Trek</h2>
+            <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
           </div>
 
           <p style="font-size: 1rem; color: #475569; line-height: 1.6; margin-bottom: 24px;">
@@ -3191,13 +3264,10 @@
 
 
         <!-- Section 8: Weather & Best Seasons -->
-        <section id="section-weather" style="margin-bottom: 50px;">
-          <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">08</span>
-              <span class="pill pill-copper">Climate &amp; Seasonal Timing</span>
-            </div>
-            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">Weather &amp; Best Seasons</h2>
+        <section id="section-weather" class="trek-detail-section">
+          <div class="details-title-wrapper" style="margin-bottom: 24px;">
+            <h2 class="details-main-title">Weather on the Pikey Peak Trek</h2>
+            <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
           </div>
 
           <p style="font-size: 1rem; color: #475569; line-height: 1.6; margin-bottom: 24px;">
@@ -3520,13 +3590,10 @@
 
 
         <!-- Section 9: Route Map -->
-        <section id="section-map" style="margin-bottom: 50px;">
-          <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">09</span>
-              <span class="pill pill-copper">Trail Geography &amp; Waypoints</span>
-            </div>
-            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">Pikey Peak Trek Route Map</h2>
+        <section id="section-map" class="trek-detail-section">
+          <div class="details-title-wrapper" style="margin-bottom: 24px;">
+            <h2 class="details-main-title">Pikey Peak Trek Map</h2>
+            <div style="width: 48px; height: 4px; background: var(--color-copper-orange); border-radius: 2px; margin-top: 8px;"></div>
           </div>
 
           <p style="font-size: 1rem; color: #475569; line-height: 1.6; margin-bottom: 24px;">
@@ -3588,14 +3655,11 @@
 
 
         <!-- Section 10: Reviews -->
-        <section id="section-reviews" style="margin-bottom: 50px;">
-          <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">10</span>
-              <span class="pill pill-copper">Trekker Testimonials</span>
-            </div>
-            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">Pikey Peak Trek Reviews</h2>
-          </div>
+        <section id="section-reviews" class="trek-detail-section">
+          <h2 class="trek-section-title" style="font-size: 2.2rem; margin-bottom: 8px; text-align: left;">Best Himalayan Trekking Reviews</h2>
+          <p style="color: var(--color-neutral-600); font-size: 1.05rem; margin-bottom: 28px; text-align: left; max-width: 100%; margin-left: 0; margin-right: 0;">
+            Over 15,000 adventure seekers have explored Everest, Annapurna, and Solukhumbu with Namaste Hiking Trek.
+          </p>
 
           <!-- Overall Rating Summary Bar -->
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px 24px; margin-bottom: 25px;">
@@ -3774,535 +3838,538 @@
         </section>
 
 
-        <!-- Section 11: Frequently Asked Questions -->
-        <section id="section-faqs" style="margin-bottom: 50px;">
-          <div style="border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
-              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #ffedd5; color: #c2410c; border-radius: 8px; font-weight: 700;">11</span>
-              <span class="pill pill-copper">Common Questions</span>
-            </div>
-            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0;">Frequently Asked Questions</h2>
-          </div>
+        <!-- Section 11: FAQs -->
+        <section id="section-faqs" class="trek-detail-section">
+          <h2 class="faq-section-accent-title">
+            <span class="faq-accent-bar"></span>
+            Frequently Asked Questions for Pikey Peak Trek
+          </h2>
 
-          <p style="font-size: 1rem; color: #475569; line-height: 1.6; margin-bottom: 24px;">
-            Got questions about the 9-day Pikey Peak Trek? Here are comprehensive answers to the 24 most common questions asked by our trekkers, organized into 4 helpful categories.
-          </p>
+          <div class="faq-layout-container">
+            <!-- Left Sidebar Category Navigation -->
+            <div class="faq-sidebar-card">
+              <div class="faq-category-nav">
+                <button type="button" class="faq-category-btn active" data-category="planning">
+                  <span class="faq-cat-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                  </span>
+                  Planning &amp; Logistics
+                </button>
+                <button type="button" class="faq-category-btn" data-category="accommodation">
+                  <span class="faq-cat-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                  </span>
+                  Lodging &amp; Food
+                </button>
+                <button type="button" class="faq-category-btn" data-category="safety">
+                  <span class="faq-cat-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <line x1="12" y1="8" x2="12" y2="16"></line>
+                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                  </span>
+                  Fitness &amp; Safety
+                </button>
+                <button type="button" class="faq-category-btn" data-category="gear">
+                  <span class="faq-cat-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+                  </span>
+                  Gear &amp; Culture
+                </button>
+              </div>
 
-          <div style="display: flex; flex-direction: column; gap: 24px;">
-
-            <!-- CATEGORY 1: PLANNING & LOGISTICS -->
-            <div>
-              <h3 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-                <span style="color: #c2410c;">●</span> Planning &amp; Logistics
-              </h3>
-              <div style="display: flex; flex-direction: column; gap: 10px;">
-                
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">How long is the Pikey Peak Trek?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      The standard comprehensive itinerary is 9 calendar days. This includes Day 1 arrival in Kathmandu, Day 2 overland scenic drive to Dhap Bazaar, 5 walking days through Jhapre, Base Camp, Jasmane Bhanjyang, Junbesi, and Phaplu (Days 3–7), Day 8 return overland drive to Kathmandu, and Day 9 airport departure.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">Why do we drive instead of fly to Lukla?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Pikey Peak is located in the lower Solukhumbu region and is directly accessible by road via Dhap Bazaar and Phaplu. Driving via private 4WD Scorpio Jeep along the scenic BP Highway avoids the notorious weather delays, cancellations, and luggage restrictions of Lukla flights, while significantly reducing overall package costs.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What permits are required and who arranges them?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      You require a Solukhumbu Rural Municipality Local Area Entry Permit and a TIMS (Trekkers' Information Management System) card. Namaste Hiking Trek arranges and pays for all permits in Kathmandu before your trip commences. You simply provide your passport details and photos.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What is the best month to trek Pikey Peak?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      The prime months are April (for vibrant rhododendron blooms and warm spring weather) and October/November (for unrivaled post-monsoon atmospheric clarity, deep blue skies, and crystal-clear mountain panoramas).
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">Can I trek solo or do I need a licensed guide?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Under Nepal Tourism Board regulations, foreign trekkers are required to have a licensed guide in mountain regions. Even for solo travelers, having a dedicated Sherpa guide enhances safety, takes care of lodge arrangements, provides cultural translation in Sherpa villages, and ensures swift assistance if needed.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">How do I confirm my booking and pay the deposit?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      You can confirm your trip by paying a 20% advance deposit via credit card or international bank transfer. The remaining 80% balance is payable upon arrival in Kathmandu via cash or card. We offer free date rescheduling up to 30 days before departure.
-                    </p>
-                  </div>
-                </div>
-
+              <!-- Need Help Box -->
+              <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+                <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 12px; line-height: 1.5;">Have more questions about the trek?</p>
+                <button class="open-inquiry-btn" style="width: 100%; padding: 10px 16px; background: #0f172a; color: #ffffff; border: none; border-radius: 8px; font-weight: 600; font-size: 0.88rem; cursor: pointer; transition: background 0.2s ease;">Ask an Expert ↗</button>
               </div>
             </div>
 
-            <!-- CATEGORY 2: TRAIL EXPERIENCE & ACCOMMODATION -->
-            <div>
-              <h3 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-                <span style="color: #c2410c;">●</span> Trail Experience &amp; Accommodation
-              </h3>
-              <div style="display: flex; flex-direction: column; gap: 10px;">
-                
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What are the mountain teahouses like on this route?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
+            <!-- Right FAQ Content Panel -->
+            <div class="faq-main-panel">
+              <div class="faq-panel-header">
+                <div class="faq-active-category-title" id="faq-current-category-title">Planning &amp; Logistics</div>
+                <button type="button" class="faq-expand-all-btn" id="faq-expand-all-btn">Expand All</button>
+              </div>
+
+              <!-- Category 1: Planning & Logistics -->
+              <div class="faq-category-content active" id="faq-cat-planning">
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">How long is the Pikey Peak Trek?</h3>
+                    <span class="faq-toggle-circle">∨</span>
                   </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Teahouses are clean, simple, and family-operated. Rooms offer twin beds with foam mattresses and blankets. The central dining room is heated in the evenings by a wood or yak-dung stove and serves as the social hub for dining, warming up, and socializing with fellow hikers.
-                    </p>
+                  <div class="faq-item-answer">
+                    The standard itinerary is 9 calendar days from Kathmandu arrival to final departure. This includes 2 travel days by road (Kathmandu to Dhap Bazaar, and Phaplu back to Kathmandu) and 5 full days of walking on the trail through Jhapre, Pikey Base Camp, Jasmane Bhanjyang, Junbesi, and Phaplu.
                   </div>
                 </div>
 
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What food and drinks are available on the trail?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">Why do we drive instead of fly to Lukla?</h3>
+                    <span class="faq-toggle-circle">∨</span>
                   </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      You will enjoy nutritious meals including Dal Bhat, Sherpa stew (Syakpa), Tibetan bread, vegetable momos, fried noodles, porridge, pancakes, and eggs. Hot drinks include black tea, milk tea, lemon ginger honey tea, and hot chocolate.
-                    </p>
+                  <div class="faq-item-answer">
+                    Pikey Peak is located in the Lower Everest (Solukhumbu) region, accessible via the scenic paved BP Highway to Dhap Bazaar. Approaching by road avoids the frequent weather delays and flight cancellations associated with Lukla Airport while offering a gradual road ascent and stunning rural hill views.
                   </div>
                 </div>
 
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">Can I charge my camera, phone, and power bank?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What permits are required and who arranges them?</h3>
+                    <span class="faq-toggle-circle">∨</span>
                   </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Yes. Most lodges have charging stations in the dining room powered by solar panels or local hydro-generators. Teahouses charge a small fee ($2 to $4 USD) per device. We advise carrying a 20,000 mAh power bank to keep your phone and camera charged.
-                    </p>
+                  <div class="faq-item-answer">
+                    The trek requires two permits: the Solukhumbu Rural Municipality Entry Permit and the Trekkers' Information Management System (TIMS) Card. When booking an all-inclusive package with Namaste Hiking Trek, our team handles all paperwork and fees in advance in Kathmandu.
                   </div>
                 </div>
 
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">Is Wi-Fi or mobile cellular reception available?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What is the best month to trek Pikey Peak?</h3>
+                    <span class="faq-toggle-circle">∨</span>
                   </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Some lodges offer Wi-Fi scratch cards for NPR 300 to 500. However, 4G cellular data via Ncell or Nepal Telecom (NTC) SIM cards works surprisingly well along high ridges (Dhap, Jhapre, and Pikey Peak). Signal is limited in narrow forested gorges.
-                    </p>
+                  <div class="faq-item-answer">
+                    October and November in autumn offer crystal-clear mountain visibility, dry trails, and golden fall foliage. March to May in spring features mild temperatures, blooming rhododendron forests, and vibrant Sherpa festivals. Winter (Dec–Feb) is clear but cold, while monsoon (Jun–Aug) brings rain and cloud cover.
                   </div>
                 </div>
 
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">How do I obtain safe drinking water along the route?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">Can I trek solo or do I need a licensed guide?</h3>
+                    <span class="faq-toggle-circle">∨</span>
                   </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      You can purchase boiled drinking water from teahouse kitchens (NPR 150–250 per liter) or fill reusable bottles from tap water and treat it with water purification tablets (Aquatabs) or a UV SteriPEN. We discourage single-use plastic bottles to protect the environment.
-                    </p>
+                  <div class="faq-item-answer">
+                    Under Nepal Tourism Board regulations, solo foreign trekkers must be accompanied by a licensed mountain guide. Beyond legal compliance, our local Sherpa guides provide indispensable navigation, cultural insights, emergency wilderness response, and lodge coordination.
                   </div>
                 </div>
 
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">Are hot showers available in the lodges?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">How do I confirm my booking and pay the deposit?</h3>
+                    <span class="faq-toggle-circle">∨</span>
                   </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Gas-heated showers or hot water buckets are available at lodges in Dhap, Jhapre, Junbesi, and Phaplu for NPR 300–500 ($3–$5). At Pikey Base Camp (3,640 m), hot showers are rarely available due to freezing pipes, so wet wipes are recommended.
-                    </p>
+                  <div class="faq-item-answer">
+                    You can reserve your departure date by paying a 20% refundable deposit via credit card, bank wire transfer, or online payment gateway. The remaining 80% balance is payable upon your arrival in Kathmandu before departing for the trail.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Category 2: Lodging & Food -->
+              <div class="faq-category-content" id="faq-cat-accommodation" style="display: none;">
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What are the mountain teahouses like on this route?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Teahouses on the Pikey Peak route are family-run Sherpa lodges. Rooms are clean, twin-sharing with foam mattresses, pillows, and warm blankets (sleeping bags recommended). Common dining halls are heated in the evening with wood stoves, providing a cozy atmosphere for meals.
                   </div>
                 </div>
 
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What food and drinks are available on the trail?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Menus feature nutritious, freshly prepared mountain staples including Dal Bhat (steamed rice, lentil soup, vegetables), Sherpa stew (Syakpa), Tibetan bread, Tsampa porridge, fried rice, noodle soups, potatoes, eggs, pancakes, and hot herbal teas.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">Can I charge my camera, phone, and power bank?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Yes. Most lower lodges have hydroelectric or solar electricity in the dining hall. At higher camps (Pikey Base Camp), power is solar-dependent. Lodges may charge a small fee ($2–$4 USD) to recharge devices. Carrying a 10,000–20,000 mAh power bank is strongly advised.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">Is Wi-Fi or mobile cellular reception available?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Ncell and Nepal Telecom (NTC) 4G coverage is available in Kathmandu, Dhap, Junbesi, and Phaplu. Along the high ridge and at Pikey Base Camp, signal can be intermittent. Some teahouses offer satellite or cellular Wi-Fi vouchers for a small fee.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">How do I obtain safe drinking water along the route?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Never drink untreated tap or stream water. We encourage using reusable bottles with water purification tablets (Aquatabs / chlorine dioxide) or UV purifiers (SteriPEN). Boiled filtered water can also be purchased from teahouse kitchens for a small charge.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">Are hot showers available in the lodges?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Gas geyser or solar-heated bucket showers are available at lodges in Dhap, Jhapre, Junbesi, and Phaplu (typically NPR 300–500 / $3–$4 USD). At Pikey Base Camp (3,640 m), running water is limited and wet wipes are recommended.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Category 3: Fitness & Safety -->
+              <div class="faq-category-content" id="faq-cat-safety" style="display: none;">
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">How physically difficult is the Pikey Peak Trek?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    The trek is rated Moderate (Grade 3). You walk 5 to 7 hours daily covering 10–16 km with an average elevation gain of 500–800 m. The toughest section is the pre-dawn summit climb from Base Camp (3,640 m) to Pikey Peak (4,065 m), taking 2 to 2.5 hours on an uphill trail.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">Can beginners complete this trek successfully?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Yes. Pikey Peak is an excellent entry-level Himalayan trek for reasonably fit beginners. No technical mountaineering skills, ropes, or crampons are required. Regular cardiovascular training (hiking, stairs, jogging) 4–6 weeks prior ensures comfort and endurance.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What is the risk of altitude sickness at 4,065 meters?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Acute Mountain Sickness (AMS) can occur above 2,500 m, but our itinerary features gradual elevation gains (Dhap 2,850m &bull; Jhapre 2,920m &bull; Base Camp 3,640m). We touch 4,065 m briefly for sunrise before descending to sleep lower at Jasmane Bhanjyang (3,550m), following the 'climb high, sleep low' rule.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What medical facilities exist along the Solukhumbu route?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Small health posts operate in Junbesi, and the Phaplu District Hospital offers physician care, x-rays, and basic emergency treatment. Our guides carry comprehensive first aid kits, pulse oximeters for daily oxygen checks, and are trained in high-altitude medicine.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What happens if I get injured or cannot continue walking?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    For minor illness or fatigue, our guide can arrange a horse or pony in villages like Jhapre or Junbesi, or arrange road vehicle evacuation via jeep from Phaplu or Salleri. In a severe medical emergency, 24/7 helicopter evacuation to Kathmandu is coordinated immediately.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What kind of travel and evacuation insurance do I need?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    You must obtain comprehensive travel medical insurance that explicitly covers high-altitude trekking up to 4,500 meters (15,000 ft) and emergency helicopter search, rescue, and repatriation. Bring a paper copy of your policy and emergency insurer hotline.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Category 4: Gear & Culture -->
+              <div class="faq-category-content" id="faq-cat-gear" style="display: none;">
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What essential clothing and gear should I bring?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Key essentials include a 3-layer clothing system (merino base layers, fleece mid-layer, wind/waterproof hardshell), a warm down jacket (rated to -10°C), broken-in trekking boots, -10°C sleeping bag, trekking poles, polarized sunglasses, and a 300+ lumen headlamp.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">How much cash in Nepali Rupees should I carry?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    There are no ATMs along the trekking trail between Dhap and Phaplu (ATM available in Salleri/Phaplu only). We recommend withdrawing NPR 15,000 to 20,000 ($120–$160 USD) in Kathmandu for personal expenses such as hot showers, device charging, snacks, and tips.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What is the customary tipping amount for guides and porters?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Tipping is customary in Nepal to show appreciation for hard work. We recommend budgeting roughly $10–$15 USD per day for your guide and $7–$10 USD per day for your porter, usually handed in an envelope at the end of the trek in Phaplu or Kathmandu.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">What cultural etiquette should I follow when visiting monasteries?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    Always walk clockwise around Buddhist stupas, chortens, and mani stone walls. Remove your shoes and hat before entering monastery prayer halls (like Thupten Chholing), ask permission before taking photos of monks, and maintain a quiet, respectful demeanor.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">How much luggage can my porter carry for me?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    We adhere strictly to IPPG (International Porter Protection Group) ethical weight limits. Porters carry a maximum of 20–25 kg total, typically shared between 2 trekkers (10–12 kg per trekker in the main duffel bag). You carry only your personal daypack with water and layers.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-question">
+                    <h3 class="faq-question-title">How cold does it get during the summit sunrise?</h3>
+                    <span class="faq-toggle-circle">∨</span>
+                  </div>
+                  <div class="faq-item-answer">
+                    During the 4:00 AM ascent to Pikey Peak (4,065 m), temperatures typically range between -5°C and 0°C (23°F to 32°F) in spring and autumn, and can drop to -12°C (10°F) in winter with windchill. Wearing a warm down jacket, thermal gloves, and windproof pants is essential.
+                  </div>
+                </div>
               </div>
             </div>
-
-            <!-- CATEGORY 3: FITNESS, ALTITUDE & SAFETY -->
-            <div>
-              <h3 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-                <span style="color: #c2410c;">●</span> Fitness, Altitude &amp; Safety
-              </h3>
-              <div style="display: flex; flex-direction: column; gap: 10px;">
-                
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">How physically difficult is the Pikey Peak Trek?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      The trek is graded Moderate (Grade 3/5). It involves 4 to 6 hours of walking per day on stone steps and dirt trails. It is significantly gentler than Everest Base Camp or Circuit treks, making it an excellent introduction to Himalayan trekking.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">Can beginners complete this trek successfully?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Yes, beginners with reasonable cardiovascular fitness can complete this trek. Doing regular walking, jogging, or stair-climbing for 4 to 6 weeks before your trip is sufficient preparation.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What is the risk of altitude sickness at 4,065 meters?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      The risk of severe Acute Mountain Sickness (AMS) is low. You only sleep at base camp (3,640 m) for one night and visit the 4,065 m peak for sunrise, followed by an immediate descent to 3,550 m and 2,700 m. Your guide monitors oxygen levels with a pulse oximeter twice daily.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What medical facilities exist along the Solukhumbu route?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Guides carry comprehensive wilderness first aid kits. For medical needs, Phaplu houses a full district hospital founded by Sir Edmund Hillary with trained medical doctors and emergency facilities.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What happens if I get injured or cannot continue walking?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Your guide will assess your condition. If necessary, you will be escorted down to lower elevation or to the nearest road-accessible junction (Dhap or Phaplu). In severe emergencies, emergency helicopter evacuation is dispatched directly from Kathmandu.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What kind of travel and evacuation insurance do I need?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      You must hold insurance that specifically covers high-altitude hiking up to 4,500 meters, emergency medical expenses, and helicopter evacuation. Providers like World Nomads and Ripcord are commonly used.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- CATEGORY 4: PACKING, CURRENCY & CULTURE -->
-            <div>
-              <h3 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
-                <span style="color: #c2410c;">●</span> Packing, Currency &amp; Culture
-              </h3>
-              <div style="display: flex; flex-direction: column; gap: 10px;">
-                
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What essential clothing and gear should I bring?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Key items include a warm down jacket (-10°C rated), 3-season sleeping bag, broken-in hiking boots, thermal base layers, a 300+ lumen headlamp, trekking poles, sunglasses, and a 30–38L daypack. (See our interactive packing checklist above).
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">How much cash in Nepali Rupees should I carry?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      We recommend carrying NPR 25,000 to 35,000 ($200–$270 USD) in cash per person. There are no reliable ATMs along the trekking route, and teahouses do not accept credit cards.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What is the customary tipping amount for guides and porters?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      In Nepal, tipping is customary for trekking staff. Standard guidance is $10–$15 per day for the lead guide and $8–$10 per day for porters, pooled from the group. Overall, budget around $100–$140 USD total per trekker.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">What cultural etiquette should I follow when visiting monasteries?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      Always walk clockwise around monasteries, stupas, and mani walls. Remove your shoes and hats before entering prayer halls, avoid taking photos during meditation ceremonies without asking, and modest dress is appreciated.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">How much luggage can my porter carry for me?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      In accordance with ethical porter standards, our porters carry up to 20 kg total (10 kg per trekker) in our complimentary duffel bags. You carry your own daypack (approx. 4–6 kg) with daily water, snacks, camera, and rain gear.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff;">
-                  <div class="faq-header" style="padding: 14px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #f8fafc;" onclick="this.parentElement.classList.toggle('active');">
-                    <strong style="color: #0f172a; font-size: 0.95rem;">How cold does it get during the summit sunrise?</strong>
-                    <span class="accordion-arrow" style="color: #64748b;">▾</span>
-                  </div>
-                  <div class="faq-content" style="padding: 0 18px 14px 18px; font-size: 0.9rem; color: #334155; line-height: 1.6; border-top: 1px solid #f1f5f9;">
-                    <p style="margin-top: 10px; margin-bottom: 0;">
-                      At 4,065 meters at dawn, temperatures frequently drop to between -5°C and -12°C (23°F to 10°F), often accompanied by cold mountain wind. Wearing thermal base layers, a fleece, your heavy down jacket, warm gloves, and a beanie will keep you cozy.
-                    </p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
           </div>
         </section>
-      </div><!-- End trek-content-column -->
 
-
-      <!-- Sidebar Column -->
-      <div class="trek-sidebar-column" style="position: relative;">
-        <div class="sidebar-booking-card" style="position: sticky; top: 80px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
-          
-          <!-- Top Right Ribbon Badge -->
-          <div style="position: absolute; top: 16px; right: 0; background: #c2410c; color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 4px 12px; border-radius: 4px 0 0 4px; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 2px 6px rgba(194, 65, 12, 0.3);">
-            BEST EVEREST PANORAMA
-          </div>
-
-          <!-- Pricing Header -->
-          <span style="font-size: 0.75rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">ALL-INCLUSIVE FROM</span>
-          <div style="display: flex; align-items: baseline; gap: 6px; margin-bottom: 16px; flex-wrap: wrap;">
-            <span id="sidebar-display-price" style="font-size: 2.5rem; font-weight: 800; color: #0f172a; line-height: 1;">$890</span>
-            <span style="font-size: 0.92rem; color: #64748b; font-weight: 500;">/ person</span>
-            <a href="#section-itinerary" style="font-size: 0.88rem; color: #c2410c; font-weight: 600; text-decoration: underline; margin-left: 4px;">9 days expedition</a>
-          </div>
-
-          <!-- Tiered Group Discount Toggle -->
-          <div class="group-discount-toggle" onclick="const table = document.getElementById('sidebar-gd-table'); const arrow = document.getElementById('sidebar-gd-arrow'); if (table.style.display === 'none') { table.style.display = 'block'; arrow.style.transform = 'rotate(180deg)'; } else { table.style.display = 'none'; arrow.style.transform = 'rotate(0deg)'; }" style="border-top: 1px dashed #cbd5e1; border-bottom: 1px dashed #cbd5e1; padding: 10px 0; margin-bottom: 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none;">
-            <span style="font-size: 0.78rem; font-weight: 800; color: #0f172a; text-transform: uppercase; letter-spacing: 0.04em;">TIERED GROUP DISCOUNT</span>
-            <span id="sidebar-gd-arrow" style="font-size: 0.85rem; color: #0f172a; transition: transform 0.2s ease;">▼</span>
-          </div>
-
-          <!-- Tiered Group Discount Table -->
-          <div id="sidebar-gd-table" style="display: none; margin-bottom: 18px; background: #f8fafc; border-radius: 10px; padding: 12px; font-size: 0.85rem; border: 1px solid #e2e8f0;">
-            <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #e2e8f0;">
-              <span style="color: #64748b;">1 Person (Solo)</span>
-              <span style="font-weight: 700; color: #0f172a;">$1,150 / person</span>
-            </div>
-            <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #e2e8f0; background: #fff7ed; border-radius: 4px; padding-left: 4px; padding-right: 4px;">
-              <span style="color: #9a3412; font-weight: 700;">2 &ndash; 5 Persons (Best Value)</span>
-              <span style="font-weight: 800; color: #c2410c;">$890 / person</span>
-            </div>
-            <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #e2e8f0;">
-              <span style="color: #64748b;">6 &ndash; 10 Persons</span>
-              <span style="font-weight: 700; color: #0f172a;">$820 / person</span>
-            </div>
-            <div style="display: flex; justify-content: space-between; padding: 4px 0;">
-              <span style="color: #64748b;">11+ Persons (Group Lead Free)</span>
-              <span style="font-weight: 700; color: #0f172a;">$750 / person</span>
-            </div>
-          </div>
-
-          <!-- Travelers Selector -->
-          <div style="margin-bottom: 18px;">
-            <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; margin-bottom: 6px;">Number of Trekkers</label>
-            <div style="display: flex; align-items: center; justify-content: space-between; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 12px;">
-              <button type="button" onclick="updateSidebarTravelers(-1)" style="width: 32px; height: 32px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; font-weight: 700; font-size: 1.1rem; cursor: pointer; color: #0f172a;">&minus;</button>
-              <span id="sidebar-travelers-count" style="font-size: 1.1rem; font-weight: 700; color: #0f172a;">2 Trekkers</span>
-              <button type="button" onclick="updateSidebarTravelers(1)" style="width: 32px; height: 32px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; font-weight: 700; font-size: 1.1rem; cursor: pointer; color: #0f172a;">&#43;</button>
-            </div>
-          </div>
-
-          <!-- Departure Date Selector -->
-          <div style="margin-bottom: 20px;">
-            <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; margin-bottom: 6px;">Preferred Departure Date</label>
-            <input type="date" id="sidebar-date-input" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; color: #0f172a; background: #ffffff; font-family: inherit;">
-          </div>
-
-          <!-- Total Price Display -->
-          <div style="display: flex; justify-content: space-between; align-items: center; background: #f1f5f9; padding: 12px 16px; border-radius: 8px; margin-bottom: 20px;">
-            <span style="font-size: 0.9rem; font-weight: 600; color: #475569;">Total Estimated Cost:</span>
-            <strong id="sidebar-total-price" style="font-size: 1.35rem; color: #0f172a;">$1,780 USD</strong>
-          </div>
-
-          <!-- Action Buttons -->
-          <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px;">
-            <button class="btn btn-primary open-inquiry-btn" style="width: 100%; padding: 14px; font-size: 1.05rem; font-weight: 700; text-align: center; border-radius: 8px;">
-              Book This Trek Now &rarr;
-            </button>
-            <a href="https://wa.me/9779851079852?text=Hello%20Namaste%20Hiking%20Trek,%20I%20am%20interested%20in%20the%209-Day%20Pikey%20Peak%20Trek." target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px; background: #25d366; color: #ffffff; font-size: 0.95rem; font-weight: 700; text-decoration: none; border-radius: 8px; box-shadow: 0 2px 6px rgba(37, 211, 102, 0.3);">
-              <span>💬</span> Chat on WhatsApp (Instant)
-            </a>
-            <a href="tel:+9779851079852" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 10px; background: #ffffff; border: 1px solid #cbd5e1; color: #334155; font-size: 0.9rem; font-weight: 600; text-decoration: none; border-radius: 8px;">
-              <span>📞</span> Call +977 9851079852
-            </a>
-          </div>
-
-          <!-- Quick Inclusions Bullet List -->
-          <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; font-size: 0.82rem; color: #64748b; line-height: 1.5;">
-            <div style="margin-bottom: 6px;">✔ <strong>100% Guaranteed Departure:</strong> No minimum group size.</div>
-            <div style="margin-bottom: 6px;">✔ <strong>Zero Flight Anxiety:</strong> Private 4WD Jeep overland logistics.</div>
-            <div style="margin-bottom: 6px;">✔ <strong>All Permits &amp; Fees:</strong> Solukhumbu entry &amp; TIMS card included.</div>
-            <div style="margin-bottom: 6px;">✔ <strong>Full Board Meals:</strong> 3 hot meals daily on the mountain.</div>
-            <div>✔ <strong>Free Rescheduling:</strong> Change dates anytime up to 30 days prior.</div>
-          </div>
 
         </div>
 
-        <!-- Speak to a Himalayan Expert Card -->
-        <div style="margin-top: 20px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; text-align: center;">
-          <strong style="display: block; font-size: 0.95rem; color: #0f172a; margin-bottom: 4px;">Customizing Your Journey?</strong>
-          <p style="margin: 0 0 12px 0; font-size: 0.85rem; color: #64748b;">
-            Want extra rest days in Junbesi, Thupten Chholing monastic homestays, or photography staging?
-          </p>
-          <button class="open-inquiry-btn" style="background: transparent; border: 1px solid #0f172a; color: #0f172a; padding: 6px 14px; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer;">
-            Request Custom Itinerary
-          </button>
+        <!-- Sticky Booking Sidebar Column -->
+        <div>
+          <div class="sidebar-booking-card" style="position: sticky; top: 90px; background: #ffffff; border: 1px solid var(--color-neutral-100); border-radius: var(--radius-md); padding: 24px; box-shadow: var(--shadow-md);">
+              
+              <!-- Top Right Best Seller Ribbon Badge -->
+              <div style="position: absolute; top: 18px; right: 0; background: #F59E0B; color: #FFFFFF; font-size: 0.72rem; font-weight: 800; padding: 5px 14px; border-radius: 4px 0 0 4px; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);">
+                BEST SELLER
+              </div>
+
+              <!-- Pricing Header -->
+              <span style="font-size: 0.75rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">FROM</span>
+              <div style="display: flex; align-items: baseline; gap: 6px; margin-bottom: 16px; flex-wrap: wrap;">
+                <span id="sidebar-display-price" style="font-size: 2.5rem; font-weight: 800; color: #0F172A; line-height: 1;">$799</span>
+                <span style="font-size: 0.92rem; color: #64748B; font-weight: 500;">/ person</span>
+                <a href="#section-itinerary" style="font-size: 0.92rem; color: #475569; font-weight: 600; text-decoration: underline; margin-left: 4px;">9 days trip</a>
+              </div>
+
+              <!-- Group Discount Accordion Toggle -->
+              <div class="group-discount-toggle" onclick="const table = document.getElementById('sidebar-gd-table'); const arrow = document.getElementById('sidebar-gd-arrow'); if (table.style.display === 'none') { table.style.display = 'block'; arrow.style.transform = 'rotate(180deg)'; } else { table.style.display = 'none'; arrow.style.transform = 'rotate(0deg)'; }" style="border-top: 1px dashed #CBD5E1; border-bottom: 1px dashed #CBD5E1; padding: 10px 0; margin-bottom: 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: #0F172A; text-transform: uppercase; letter-spacing: 0.04em;">WE OFFER GROUP DISCOUNT</span>
+                <span id="sidebar-gd-arrow" class="gd-arrow" style="font-size: 0.75rem; color: #64748B; transition: transform 0.2s ease;">▼</span>
+              </div>
+              <div id="sidebar-gd-table" class="group-discount-table" style="display: none; margin-bottom: 18px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; font-size: 0.82rem;">
+                <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E2E8F0; color: #64748B;">
+                  <span>1 Person</span>
+                  <strong style="color: #0F172A;">$890</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E2E8F0; color: #64748B;">
+                  <span>2 - 4 Persons</span>
+                  <strong style="color: #0F172A;">$799 / person</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E2E8F0; color: #64748B;">
+                  <span>5 - 8 Persons</span>
+                  <strong style="color: #0F172A;">$749 / person</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E2E8F0; color: #64748B;">
+                  <span>9 - 12 Persons</span>
+                  <strong style="color: #0F172A;">$699 / person</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 4px 0; color: #64748B;">
+                  <span>13+ Persons</span>
+                  <strong style="color: #008060;">$649 / person</strong>
+                </div>
+              </div>
+
+              <!-- Booking Form Inputs -->
+              <div style="margin-bottom: 16px;">
+                <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em;">Departure Date</label>
+                <input type="date" id="sidebar-departure-date" style="width: 100%; padding: 10px 12px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 0.9rem; color: #0F172A; background: #FFFFFF; font-family: inherit;">
+              </div>
+
+              <div style="margin-bottom: 20px;">
+                <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #0F172A; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.04em;">Number of Trekkers</label>
+                <div style="display: flex; align-items: center; justify-content: space-between; background: #F8FAFC; border: 1px solid #CBD5E1; border-radius: 8px; padding: 6px 12px;">
+                  <button type="button" onclick="changeSidebarGuests(-1)" style="width: 32px; height: 32px; border-radius: 6px; border: 1px solid #CBD5E1; background: #FFFFFF; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #0F172A;">-</button>
+                  <span id="sidebar-guests-count" style="font-weight: 700; font-size: 1.05rem; color: #0F172A;">2 Travelers</span>
+                  <button type="button" onclick="changeSidebarGuests(1)" style="width: 32px; height: 32px; border-radius: 6px; border: 1px solid #CBD5E1; background: #FFFFFF; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #0F172A;">+</button>
+                </div>
+              </div>
+
+              <!-- Action CTAs -->
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px;">
+                <button type="button" class="btn btn-primary open-inquiry-btn" style="width: 100%; padding: 14px; font-size: 1rem; font-weight: 700; border-radius: 8px; border: none; background: #008060; color: #FFFFFF; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 128, 96, 0.25); transition: background 0.2s ease;">
+                  Book This Trek
+                </button>
+                <button type="button" class="btn btn-outline open-inquiry-btn" style="width: 100%; padding: 12px; font-size: 0.92rem; font-weight: 600; border-radius: 8px; border: 1px solid #CBD5E1; background: #FFFFFF; color: #0F172A; cursor: pointer; transition: background 0.2s ease;">
+                  Inquire / Custom Plan
+                </button>
+              </div>
+
+              <!-- Trust Guarantee Bullets -->
+              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.82rem; color: #64748B; padding-top: 14px; border-top: 1px solid #E2E8F0;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Free date change up to 30 days before</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>100% Refundable deposit guarantee</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#008060" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Pay 20% now, balance on arrival in Kathmandu</span>
+                </div>
+              </div>
+          </div>
         </div>
 
-      </div><!-- End trek-sidebar-column -->
+      </div>
+    </section>
 
-    </div><!-- End trek-main-layout container -->
+    <!-- You Might Also Like — Full-Width Recommendation Section -->
+    <section class="you-might-like-section">
+      <div class="container">
+        <div class="yml-header">
+          <span class="yml-pill-tag">MORE ADVENTURES</span>
+          <div class="yml-title-row">
+            <span class="yml-accent-bar"></span>
+            <h2 class="yml-title">You might also like</h2>
+          </div>
+          <p class="yml-subtitle">Handpicked trips in the same region and style — a natural next step from this one.</p>
+        </div>
+
+        <div class="yml-cards-grid">
+          <!-- Card 1: Everest Base Camp Trek -->
+          <a href="../everest-base-camp-trek/" class="yml-card">
+            <div class="yml-card-image">
+              <img src="../../images/treks/everest-base-camp/everest-base-camp-trekking-group-mountain-panorama-11.jpg" alt="Everest Base Camp Trek" loading="lazy">
+              <div class="yml-card-overlay"></div>
+              <span class="yml-card-badge">Everest Region</span>
+            </div>
+            <div class="yml-card-body">
+              <h3 class="yml-card-title">Everest Base Camp Trek</h3>
+              <div class="yml-card-rating">
+                <span class="yml-stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <span class="yml-rating-text">5.0 · 169 reviews</span>
+              </div>
+              <div class="yml-card-footer">
+                <div class="yml-card-price">
+                  <span class="yml-price-label">Starting from</span>
+                  <span class="yml-price-value">USD <strong>1299</strong></span>
+                </div>
+                <span class="yml-view-trip-btn">View Trip →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 2: Langtang Gosaikunda Trek -->
+          <a href="../langtang-gosaikunda-trek/" class="yml-card">
+            <div class="yml-card-image">
+              <img src="../../images/treks/langtang-gosaikunda/langtang-gosaikunda-sacred-alpine-lake-panoramic-view-01.jpg" alt="Langtang Gosaikunda Trek" loading="lazy">
+              <div class="yml-card-overlay"></div>
+              <span class="yml-card-badge">Langtang Region</span>
+            </div>
+            <div class="yml-card-body">
+              <h3 class="yml-card-title">Langtang Gosaikunda Trek</h3>
+              <div class="yml-card-rating">
+                <span class="yml-stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <span class="yml-rating-text">5.0 · 84 reviews</span>
+              </div>
+              <div class="yml-card-footer">
+                <div class="yml-card-price">
+                  <span class="yml-price-label">Starting from</span>
+                  <span class="yml-price-value">USD <strong>899</strong></span>
+                </div>
+                <span class="yml-view-trip-btn">View Trip →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 3: Annapurna Base Camp Trek -->
+          <a href="../annapurna-base-camp-trek/" class="yml-card">
+            <div class="yml-card-image">
+              <img src="../../images/similar-trek-tengboche.png" alt="Annapurna Base Camp Trek" loading="lazy">
+              <div class="yml-card-overlay"></div>
+              <span class="yml-card-badge">Annapurna Region</span>
+            </div>
+            <div class="yml-card-body">
+              <h3 class="yml-card-title">Annapurna Base Camp Trek</h3>
+              <div class="yml-card-rating">
+                <span class="yml-stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <span class="yml-rating-text">5.0 · 112 reviews</span>
+              </div>
+              <div class="yml-card-footer">
+                <div class="yml-card-price">
+                  <span class="yml-price-label">Starting from</span>
+                  <span class="yml-price-value">USD <strong>849</strong></span>
+                </div>
+                <span class="yml-view-trip-btn">View Trip →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
     </article>
   </main>
 
-  <!-- Video Review Modal -->
-  <div id="video-review-modal" class="video-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; align-items: center; justify-content: center; backdrop-filter: blur(4px);">
-    <div class="video-modal-card" style="position: relative; width: 90%; max-width: 720px; background: #0f172a; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
-      <button type="button" id="video-modal-close" onclick="closeVideoReviewModal()" style="position: absolute; top: 12px; right: 12px; z-index: 10; width: 36px; height: 36px; background: rgba(0,0,0,0.6); color: #ffffff; border: none; border-radius: 50%; font-size: 1.4rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">&times;</button>
-      <div style="padding: 16px 20px; background: #1e293b;">
-        <h3 id="video-modal-title" style="color: #ffffff; font-size: 1.15rem; margin: 0 0 4px 0;">Video Review</h3>
-        <span id="video-modal-sub" style="color: #fdba74; font-size: 0.85rem; font-weight: 600;">Namaste Hiking Trek Experience</span>
-      </div>
-      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <iframe id="video-modal-iframe" src="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
-  <!-- Inquiry / Booking Modal -->
-  <div id="inquiry-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 10000; align-items: center; justify-content: center; backdrop-filter: blur(4px);">
-    <div style="position: relative; width: 92%; max-width: 540px; background: #ffffff; border-radius: 16px; padding: 30px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); max-height: 90vh; overflow-y: auto;">
-      <button type="button" id="modal-close-btn" onclick="document.getElementById('inquiry-modal').style.display='none'" style="position: absolute; top: 16px; right: 16px; width: 32px; height: 32px; background: #f1f5f9; border: none; border-radius: 50%; font-size: 1.2rem; cursor: pointer; color: #475569;">&times;</button>
-      <div style="margin-bottom: 20px;">
-        <span class="pill pill-copper" style="margin-bottom: 8px;">Direct Reservation</span>
-        <h3 style="font-size: 1.4rem; font-weight: 800; color: #0f172a; margin: 4px 0 6px 0;">Inquire About Pikey Peak Trek</h3>
-        <p style="margin: 0; font-size: 0.88rem; color: #64748b;">
-          Fill out this form and our local Sherpa team will confirm availability, custom dates, and provide a formal quotation within 4 hours.
-        </p>
-      </div>
-
-      <form id="inquiry-form" onsubmit="event.preventDefault(); alert('Thank you! Your inquiry for the Pikey Peak Trek has been submitted. A team member will contact you shortly via email and WhatsApp.'); document.getElementById('inquiry-modal').style.display='none';">
-        <div style="margin-bottom: 14px;">
-          <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; margin-bottom: 4px;">Full Name *</label>
-          <input type="text" required placeholder="e.g. John Doe" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; font-family: inherit;">
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
-          <div>
-            <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; margin-bottom: 4px;">Email Address *</label>
-            <input type="email" required placeholder="john@example.com" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; font-family: inherit;">
+  <!-- Inquiry Modal -->
+  <div id="inquiry-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Inquire About Pikey Peak Trek</h3>
+      <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 20px;">
+        Fill out this quick form and our lead Himalayan guide will respond within 4 hours.
+      </p>
+      <form id="inquiry-form">
+        <div class="filter-grid" style="grid-template-columns: repeat(2, 1fr); margin-bottom: 14px;">
+          <div class="form-group">
+            <label class="form-label" for="inq-name">Full Name *</label>
+            <input type="text" id="inq-name" class="form-input" required placeholder="e.g. Sarah Jenkins">
           </div>
-          <div>
-            <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; margin-bottom: 4px;">WhatsApp / Phone *</label>
-            <input type="tel" required placeholder="+1 555-0199" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; font-family: inherit;">
+          <div class="form-group">
+            <label class="form-label" for="inq-email">Email Address *</label>
+            <input type="email" id="inq-email" class="form-input" required placeholder="e.g. sarah@example.com">
           </div>
         </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
-          <div>
-            <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; margin-bottom: 4px;">Preferred Date</label>
-            <input type="date" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; font-family: inherit;">
-          </div>
-          <div>
-            <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; margin-bottom: 4px;">Number of Trekkers</label>
-            <select style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; font-family: inherit;">
-              <option value="1">1 Person (Solo)</option>
-              <option value="2" selected>2 Persons</option>
-              <option value="3-5">3–5 Persons</option>
-              <option value="6-10">6–10 Persons</option>
-              <option value="10+">10+ Persons</option>
-            </select>
-          </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label class="form-label" for="inq-notes">Preferred Start Date &amp; Questions</label>
+          <textarea id="inq-notes" class="form-textarea" rows="3" placeholder="Tell us your target travel month, group size, or custom route request..."></textarea>
         </div>
-
-        <div style="margin-bottom: 20px;">
-          <label style="display: block; font-size: 0.8rem; font-weight: 700; color: #475569; text-transform: uppercase; margin-bottom: 4px;">Special Requests / Questions</label>
-          <textarea rows="3" placeholder="Tell us about your fitness level, dietary restrictions, or custom schedule preferences..." style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; font-family: inherit; resize: vertical;"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 1rem; font-weight: 700; border-radius: 8px;">
-          Submit Booking Inquiry &rarr;
-        </button>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit Booking Inquiry</button>
       </form>
     </div>
   </div>
 
-  <!-- Global Footer -->
+  <!-- Luxury Cinematic Footer (Tourvia Inspired with All Pages) -->
   <footer class="site-footer">
     <div class="container">
 
@@ -4338,7 +4405,7 @@
 
         <!-- Column 3: Center Expedition Title & Pill CTA -->
         <div class="footer-cta-center">
-          <h2 class="footer-cta-title">Expedition Expertise<br>at Your Service</h2>
+          <div class="footer-cta-title">Expedition Expertise<br>at Your Service</div>
           <button class="btn-journey-pill open-inquiry-btn">
             <span>Begin Your Journey</span>
             <span class="arrow-circle-green">↗</span>
@@ -4352,7 +4419,7 @@
             <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
             <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
             <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-            <li><a href="https://wa.me/9779851079852" target="_blank">WhatsApp</a></li>
+            <li><a href="https://wa.me/9779800000000" target="_blank">WhatsApp</a></li>
           </ul>
         </div>
 
@@ -4375,7 +4442,24 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- Mobile Floating Book CTA — hidden on desktop via CSS -->
+  <a href="#sidebar-display-price" class="mobile-book-cta" aria-label="Book Pikey Peak Trek">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+    </svg>
+    Book This Trek — From $799
+  </a>
+
+  <!-- Video Review Modal -->
+  <div id="video-review-modal" class="video-modal-overlay" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; padding: 20px;">
+    <div style="position: relative; width: 100%; max-width: 800px; background: #000000; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
+      <button onclick="closeVideoReviewModal()" style="position: absolute; top: 12px; right: 12px; z-index: 10; background: rgba(0,0,0,0.6); color: #ffffff; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.2rem; cursor: pointer;">✕</button>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+        <iframe id="video-modal-iframe" src="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen allow="autoplay"></iframe>
+      </div>
+    </div>
+  </div>
+
   <script type="module" src="../../js/altitude-visualizer.js"></script>
   <script type="module" src="../../js/weather-visualizer.js"></script>
   <script type="module" src="../../js/inquiry-modal.js"></script>
@@ -4383,139 +4467,43 @@
   <script src="../../js/header-scroll.js"></script>
   <script src="../../js/mega-menu.js"></script>
 
-  <!-- Interactive Client-side Script for Pikey Peak Page -->
   <script>
-    // 1. Sidebar Travelers & Dynamic Pricing Logic
-    let sidebarTrekkers = 2;
-    const priceTiers = {
-      1: 1150,
-      2: 890,
-      3: 890,
-      4: 890,
-      5: 890,
-      6: 820,
-      7: 820,
-      8: 820,
-      9: 820,
-      10: 820,
-      11: 750
+    // Sidebar Guest Counter & Price Recalculator
+    let currentGuests = 2;
+    const tieredPrices = {
+      1: 890,
+      2: 799,
+      3: 799,
+      4: 799,
+      5: 749,
+      6: 749,
+      7: 749,
+      8: 749,
+      9: 699,
+      10: 699,
+      11: 699,
+      12: 699
     };
 
-    function updateSidebarTravelers(delta) {
-      sidebarTrekkers = Math.max(1, Math.min(20, sidebarTrekkers + delta));
-      const tierKey = Math.min(11, sidebarTrekkers);
-      const perPerson = priceTiers[tierKey] || 750;
-      const total = perPerson * sidebarTrekkers;
-
-      document.getElementById('sidebar-travelers-count').textContent = sidebarTrekkers + (sidebarTrekkers === 1 ? ' Trekker' : ' Trekkers');
-      document.getElementById('sidebar-display-price').textContent = '$' + perPerson;
-      document.getElementById('sidebar-total-price').textContent = '$' + total.toLocaleString() + ' USD';
-    }
-
-    // 2. Interactive Packing List & localStorage
-    function initPackingChecklist() {
-      const checkboxes = document.querySelectorAll('.packing-checkbox');
-      const counterEl = document.getElementById('packing-counter');
-      const storageKey = 'namaste-pikey-packing';
-      let saved = {};
-      try {
-        saved = JSON.parse(localStorage.getItem(storageKey)) || {};
-      } catch(e) {}
-
-      function updateCounter() {
-        let checkedCount = 0;
-        checkboxes.forEach(cb => {
-          const id = cb.getAttribute('data-pack-id');
-          if (cb.checked) {
-            checkedCount++;
-            cb.parentElement.classList.add('checked');
-            saved[id] = true;
-          } else {
-            cb.parentElement.classList.remove('checked');
-            delete saved[id];
-          }
-        });
-        const total = checkboxes.length;
-        const pct = Math.round((checkedCount / total) * 100);
-        if (counterEl) {
-          counterEl.textContent = 'Packed: ' + checkedCount + ' / ' + total + ' items (' + pct + '%)';
-        }
-        try {
-          localStorage.setItem(storageKey, JSON.stringify(saved));
-        } catch(e) {}
+    function changeSidebarGuests(delta) {
+      currentGuests = Math.max(1, Math.min(20, currentGuests + delta));
+      const countEl = document.getElementById('sidebar-guests-count');
+      const priceEl = document.getElementById('sidebar-display-price');
+      if (countEl) {
+        countEl.textContent = currentGuests + (currentGuests === 1 ? ' Traveler' : ' Travelers');
       }
-
-      checkboxes.forEach(cb => {
-        const id = cb.getAttribute('data-pack-id');
-        if (saved[id]) {
-          cb.checked = true;
-          cb.parentElement.classList.add('checked');
-        }
-        cb.addEventListener('change', updateCounter);
-      });
-
-      const resetBtn = document.getElementById('btn-reset-packing');
-      if (resetBtn) {
-        resetBtn.addEventListener('click', () => {
-          if (confirm('Are you sure you want to clear your packing progress?')) {
-            checkboxes.forEach(cb => {
-              cb.checked = false;
-              cb.parentElement.classList.remove('checked');
-            });
-            saved = {};
-            localStorage.removeItem(storageKey);
-            updateCounter();
-          }
-        });
+      if (priceEl) {
+        let perPerson = 649;
+        if (currentGuests <= 12) perPerson = tieredPrices[currentGuests] || 799;
+        priceEl.textContent = '$' + perPerson;
       }
-
-      updateCounter();
     }
 
-    // 3. Itinerary Expand / Collapse All
-    function initItineraryToggle() {
-      const toggleBtn = document.getElementById('toggle-all-itinerary');
-      if (!toggleBtn) return;
-      let allExpanded = false;
-      toggleBtn.addEventListener('click', () => {
-        allExpanded = !allExpanded;
-        const cards = document.querySelectorAll('.itinerary-day-card');
-        cards.forEach(card => {
-          if (allExpanded) {
-            card.classList.add('active');
-          } else {
-            card.classList.remove('active');
-          }
-        });
-        toggleBtn.textContent = allExpanded ? 'Collapse All Days' : 'Expand All Days';
-      });
-    }
-
-    // 4. Review Tabs Switcher
-    function switchReviewTab(tabType, btn) {
-      document.querySelectorAll('.review-tab-btn').forEach(b => {
-        b.classList.remove('active');
-        b.style.color = '#64748b';
-        b.style.borderBottom = '3px solid transparent';
-      });
-      btn.classList.add('active');
-      btn.style.color = '#c2410c';
-      btn.style.borderBottom = '3px solid #c2410c';
-
-      document.querySelectorAll('.review-tab-pane').forEach(p => p.style.display = 'none');
-      const target = document.getElementById('review-tab-content-' + tabType);
-      if (target) target.style.display = 'block';
-    }
-
-    // 5. Video Review Modal
+    // Video Modal Functions
     function openVideoReviewModal(name, country, videoUrl) {
       const modal = document.getElementById('video-review-modal');
-      const title = document.getElementById('video-modal-title');
-      const sub = document.getElementById('video-modal-sub');
       const iframe = document.getElementById('video-modal-iframe');
       if (modal && iframe) {
-        if (title) title.textContent = name + ' (' + country + ')';
-        if (sub) sub.textContent = 'Pikey Peak Trek Experience Review';
         iframe.src = videoUrl + (videoUrl.includes('?') ? '&' : '?') + 'autoplay=1';
         modal.style.display = 'flex';
       }
@@ -4528,27 +4516,25 @@
       if (iframe) iframe.src = '';
     }
 
-    // 6. Generic Modal Hooks
-    document.addEventListener('DOMContentLoaded', () => {
-      initPackingChecklist();
-      initItineraryToggle();
-
-      // Hook all open-inquiry-btn
-      document.querySelectorAll('.open-inquiry-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-          e.preventDefault();
-          const modal = document.getElementById('inquiry-modal');
-          if (modal) modal.style.display = 'flex';
-        });
+    // Review Tab Switching
+    function switchReviewTab(tabType, btn) {
+      document.querySelectorAll('.review-tab-btn').forEach(b => {
+        b.classList.remove('active');
+        b.style.color = '#64748b';
+        b.style.borderBottom = '3px solid transparent';
       });
-
-      // Close modal on background click
-      const inqModal = document.getElementById('inquiry-modal');
-      if (inqModal) {
-        inqModal.addEventListener('click', (e) => {
-          if (e.target === inqModal) inqModal.style.display = 'none';
-        });
+      if (btn) {
+        btn.classList.add('active');
+        btn.style.color = '#c2410c';
+        btn.style.borderBottom = '3px solid #c2410c';
       }
+      document.querySelectorAll('.review-tab-pane').forEach(p => p.style.display = 'none');
+      const target = document.getElementById('review-tab-content-' + tabType);
+      if (target) target.style.display = 'block';
+    }
+
+    // Modal background close
+    document.addEventListener('DOMContentLoaded', () => {
       const vidModal = document.getElementById('video-review-modal');
       if (vidModal) {
         vidModal.addEventListener('click', (e) => {
