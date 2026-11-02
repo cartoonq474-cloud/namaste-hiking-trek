@@ -84,8 +84,8 @@ const checks = [
 
   // 11. Sidebar, Modals & Footer
   { name: 'Sidebar booking card ($1,999 & 20 days)', pass: html.includes('class="sidebar-booking-card"') && html.includes('$1,999') && html.includes('20 days trip') },
-  { name: 'Group discount accordion table', pass: html.includes('group-discount-toggle') && html.includes('group-discount-table') },
-  { name: 'Guest counter with +/- controls', pass: html.includes('changeSidebarGuests') },
+  { name: 'Group discount accordion table', pass: html.includes('group-discount-toggle') && html.includes('group-discount-content') },
+  { name: 'Canonical 5 emerald sparkle trust bullets & instant help buttons', pass: html.includes('Trek Leading by well trained Team') && html.includes('INSTANT HELP') && html.includes('Call or WhatsApp') },
   { name: 'Video review modal #video-review-modal', pass: html.includes('id="video-review-modal"') },
   { name: 'Inquiry modal #inquiry-modal', pass: html.includes('id="inquiry-modal"') },
   { name: 'Mobile floating CTA bar .mobile-book-cta', pass: html.includes('class="mobile-book-cta"') },

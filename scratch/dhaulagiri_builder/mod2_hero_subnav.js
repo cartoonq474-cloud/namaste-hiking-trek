@@ -263,7 +263,7 @@ function getHeroAndSubnav() {
 
     <!-- Main Two-Column Layout Wrapper -->
     <section class="section-padding" style="padding-top: 10px; padding-bottom: 60px;" data-trek-details-wrapper data-trek-key="dhaulagiri_circuit">
-      <div class="container trek-detail-layout" style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 40px; align-items: start;">
+      <div class="container trek-detail-layout" style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 40px;">
         <div style="min-width: 0;">
   `;
 }
