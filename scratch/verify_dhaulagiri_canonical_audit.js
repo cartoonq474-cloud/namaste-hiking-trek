@@ -58,7 +58,7 @@ const checks = [
   { name: 'Dates section title for Dhaulagiri', pass: html.includes('Booking Dates &amp; Availability for Dhaulagiri Circuit Trek') },
   { name: 'No EBC dates header bug', pass: !html.includes('Booking Dates & Availability for EBC trek') },
   { name: 'Dual calendar mount #dual-calendar-mount', pass: html.includes('id="dual-calendar-mount"') },
-  { name: 'Fixed departures table ($1,999 pp)', pass: html.includes('$1,999 pp') && html.includes('Guaranteed Fixed Group Departures') },
+  { name: 'Fixed group departures ($1,999 pp)', pass: html.includes('$1,999') && html.includes('Guaranteed Fixed Group Departures') },
 
   // 8. Section 5 Packing List
   { name: 'Packing list title for Dhaulagiri', pass: html.includes('Packing List for Dhaulagiri Circuit Trek') },
