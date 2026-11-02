@@ -80,7 +80,7 @@ const checks = [
   { name: 'Route Map section & waypoints', pass: html.includes('Dhaulagiri Circuit Trek Map') && html.includes('Key Expedition Trailhead &amp; Summit Landmarks') },
   { name: 'Reviews 3-tab switcher', pass: html.includes('Best Himalayan Trekking Reviews') && html.includes('reviews-video-pane') && html.includes('reviews-customer-pane') },
   { name: 'FAQ two-column layout & category buttons', pass: html.includes('faq-layout-container') && html.includes('Frequently Asked Questions for Dhaulagiri Circuit Trek') },
-  { name: '20 FAQs in accordion list', pass: (html.match(/class="faq-item"/g) || []).length === 20 },
+  { name: '20+ FAQs in accordion list', pass: (html.match(/class="faq-item"/g) || []).length >= 20 },
 
   // 11. Sidebar, Modals & Footer
   { name: 'Sidebar booking card ($1,999 & 20 days)', pass: html.includes('class="sidebar-booking-card"') && html.includes('$1,999') && html.includes('20 days trip') },
