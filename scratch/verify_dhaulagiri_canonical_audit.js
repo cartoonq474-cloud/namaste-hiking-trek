@@ -42,7 +42,7 @@ const checks = [
   { name: 'Itinerary section title', pass: html.includes('Dhaulagiri Circuit Trek Itinerary: Day by Day Details') },
   { name: '4 Trip Stat Badges', pass: html.includes('Total Days') && html.includes('Walking Stages') && html.includes('Acclimatization') },
   { name: 'Itinerary at a Glance 20-day table', pass: html.includes('Itinerary at a Glance') && html.includes('Days 1 to 20') },
-  { name: '20 Interactive Day Cards', pass: (html.match(/class="itinerary-card"/g) || []).length === 20 },
+  { name: '20 Interactive Day Cards', pass: (html.match(/class="itinerary-card(\s|")/g) || []).length === 20 },
   { name: 'Day 15 French Pass 5,360 m card', pass: html.includes('Cross French Pass (5,360 m) & Trek to Hidden Valley') },
   { name: 'Day 16 Dhampus Pass 5,250 m card', pass: html.includes('Cross Dhampus Pass (5,250 m) & Trek to Yak Kharka') },
 
