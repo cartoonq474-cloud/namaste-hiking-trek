@@ -1,4 +1,79 @@
 const trekAltitudeProfiles = {
+  "dhaulagiri_circuit": {
+    "name": "Dhaulagiri Circuit Trek (20 Days)",
+    "points": [
+        { "day": "Day 1", "spot": "Kathmandu", "altitudeM": 1355, "altitudeFt": 4445 },
+        { "day": "Day 2", "spot": "Kathmandu Valley", "altitudeM": 1355, "altitudeFt": 4445 },
+        { "day": "Day 3", "spot": "Beni", "altitudeM": 836, "altitudeFt": 2743 },
+        { "day": "Day 4", "spot": "Babiyachaur", "altitudeM": 970, "altitudeFt": 3182 },
+        { "day": "Day 5", "spot": "Dharapani", "altitudeM": 1560, "altitudeFt": 5118 },
+        { "day": "Day 6", "spot": "Muri", "altitudeM": 1850, "altitudeFt": 6070 },
+        { "day": "Day 7", "spot": "Boghara", "altitudeM": 2080, "altitudeFt": 6824 },
+        { "day": "Day 8", "spot": "Dobang", "altitudeM": 2520, "altitudeFt": 8268 },
+        { "day": "Day 9", "spot": "Choriban Khola", "altitudeM": 3110, "altitudeFt": 10203 },
+        { "day": "Day 10", "spot": "Italian Base Camp", "altitudeM": 3660, "altitudeFt": 12008 },
+        { "day": "Day 11", "spot": "Italian BC (Rest)", "altitudeM": 3660, "altitudeFt": 12008 },
+        { "day": "Day 12", "spot": "Glacier Camp", "altitudeM": 4200, "altitudeFt": 13780 },
+        { "day": "Day 13", "spot": "Dhaulagiri Base Camp", "altitudeM": 4750, "altitudeFt": 15584 },
+        { "day": "Day 14", "spot": "Dhaulagiri BC (Rest)", "altitudeM": 4750, "altitudeFt": 15584 },
+        { "day": "Day 15", "spot": "French Pass / Hidden Valley", "altitudeM": 5360, "altitudeFt": 17585 },
+        { "day": "Day 16", "spot": "Dhampus Pass / Yak Kharka", "altitudeM": 5250, "altitudeFt": 17224 },
+        { "day": "Day 17", "spot": "Jomsom", "altitudeM": 2720, "altitudeFt": 8924 },
+        { "day": "Day 18", "spot": "Pokhara", "altitudeM": 822, "altitudeFt": 2697 },
+        { "day": "Day 19", "spot": "Kathmandu", "altitudeM": 1355, "altitudeFt": 4445 },
+        { "day": "Day 20", "spot": "Kathmandu Departure", "altitudeM": 1355, "altitudeFt": 4445 }
+    ]
+  },
+  "dhaulagiri-circuit-trek": {
+    "name": "Dhaulagiri Circuit Trek (20 Days)",
+    "points": [
+        { "day": "Day 1", "spot": "Kathmandu", "altitudeM": 1355, "altitudeFt": 4445 },
+        { "day": "Day 2", "spot": "Kathmandu Valley", "altitudeM": 1355, "altitudeFt": 4445 },
+        { "day": "Day 3", "spot": "Beni", "altitudeM": 836, "altitudeFt": 2743 },
+        { "day": "Day 4", "spot": "Babiyachaur", "altitudeM": 970, "altitudeFt": 3182 },
+        { "day": "Day 5", "spot": "Dharapani", "altitudeM": 1560, "altitudeFt": 5118 },
+        { "day": "Day 6", "spot": "Muri", "altitudeM": 1850, "altitudeFt": 6070 },
+        { "day": "Day 7", "spot": "Boghara", "altitudeM": 2080, "altitudeFt": 6824 },
+        { "day": "Day 8", "spot": "Dobang", "altitudeM": 2520, "altitudeFt": 8268 },
+        { "day": "Day 9", "spot": "Choriban Khola", "altitudeM": 3110, "altitudeFt": 10203 },
+        { "day": "Day 10", "spot": "Italian Base Camp", "altitudeM": 3660, "altitudeFt": 12008 },
+        { "day": "Day 11", "spot": "Italian BC (Rest)", "altitudeM": 3660, "altitudeFt": 12008 },
+        { "day": "Day 12", "spot": "Glacier Camp", "altitudeM": 4200, "altitudeFt": 13780 },
+        { "day": "Day 13", "spot": "Dhaulagiri Base Camp", "altitudeM": 4750, "altitudeFt": 15584 },
+        { "day": "Day 14", "spot": "Dhaulagiri BC (Rest)", "altitudeM": 4750, "altitudeFt": 15584 },
+        { "day": "Day 15", "spot": "French Pass / Hidden Valley", "altitudeM": 5360, "altitudeFt": 17585 },
+        { "day": "Day 16", "spot": "Dhampus Pass / Yak Kharka", "altitudeM": 5250, "altitudeFt": 17224 },
+        { "day": "Day 17", "spot": "Jomsom", "altitudeM": 2720, "altitudeFt": 8924 },
+        { "day": "Day 18", "spot": "Pokhara", "altitudeM": 822, "altitudeFt": 2697 },
+        { "day": "Day 19", "spot": "Kathmandu", "altitudeM": 1355, "altitudeFt": 4445 },
+        { "day": "Day 20", "spot": "Kathmandu Departure", "altitudeM": 1355, "altitudeFt": 4445 }
+    ]
+  },
+  "dhaulagiri": {
+    "name": "Dhaulagiri Circuit Trek (20 Days)",
+    "points": [
+        { "day": "Day 1", "spot": "Kathmandu", "altitudeM": 1355, "altitudeFt": 4445 },
+        { "day": "Day 2", "spot": "Kathmandu Valley", "altitudeM": 1355, "altitudeFt": 4445 },
+        { "day": "Day 3", "spot": "Beni", "altitudeM": 836, "altitudeFt": 2743 },
+        { "day": "Day 4", "spot": "Babiyachaur", "altitudeM": 970, "altitudeFt": 3182 },
+        { "day": "Day 5", "spot": "Dharapani", "altitudeM": 1560, "altitudeFt": 5118 },
+        { "day": "Day 6", "spot": "Muri", "altitudeM": 1850, "altitudeFt": 6070 },
+        { "day": "Day 7", "spot": "Boghara", "altitudeM": 2080, "altitudeFt": 6824 },
+        { "day": "Day 8", "spot": "Dobang", "altitudeM": 2520, "altitudeFt": 8268 },
+        { "day": "Day 9", "spot": "Choriban Khola", "altitudeM": 3110, "altitudeFt": 10203 },
+        { "day": "Day 10", "spot": "Italian Base Camp", "altitudeM": 3660, "altitudeFt": 12008 },
+        { "day": "Day 11", "spot": "Italian BC (Rest)", "altitudeM": 3660, "altitudeFt": 12008 },
+        { "day": "Day 12", "spot": "Glacier Camp", "altitudeM": 4200, "altitudeFt": 13780 },
+        { "day": "Day 13", "spot": "Dhaulagiri Base Camp", "altitudeM": 4750, "altitudeFt": 15584 },
+        { "day": "Day 14", "spot": "Dhaulagiri BC (Rest)", "altitudeM": 4750, "altitudeFt": 15584 },
+        { "day": "Day 15", "spot": "French Pass / Hidden Valley", "altitudeM": 5360, "altitudeFt": 17585 },
+        { "day": "Day 16", "spot": "Dhampus Pass / Yak Kharka", "altitudeM": 5250, "altitudeFt": 17224 },
+        { "day": "Day 17", "spot": "Jomsom", "altitudeM": 2720, "altitudeFt": 8924 },
+        { "day": "Day 18", "spot": "Pokhara", "altitudeM": 822, "altitudeFt": 2697 },
+        { "day": "Day 19", "spot": "Kathmandu", "altitudeM": 1355, "altitudeFt": 4445 },
+        { "day": "Day 20", "spot": "Kathmandu Departure", "altitudeM": 1355, "altitudeFt": 4445 }
+    ]
+  },
   "pikey_peak": {
     "name": "Pikey Peak Trek (9 Days)",
     "points": [

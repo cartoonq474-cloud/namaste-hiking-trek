@@ -4,6 +4,22 @@
 
 export const sampleTreks = [
   {
+    id: "dhaulagiri-circuit-trek",
+    slug: "dhaulagiri-circuit-trek",
+    title: "Dhaulagiri Circuit Trek",
+    region: "dhaulagiri",
+    subregion: "Myagdi & Kali Gandaki Valley",
+    durationDays: 20,
+    difficulty: "challenging",
+    maxAltitudeM: 5360,
+    basePriceUSD: 1999,
+    summary: "Wilderness high-altitude expedition circuit crossing French Pass (5,360m) and Dhampus Pass (5,250m) with supported camping at Dhaulagiri Base Camp and Hidden Valley.",
+    bestSeason: ["spring", "autumn"],
+    image: "../../images/hero-himalayas.jpg",
+    tags: ["EXPEDITION CAMPING", "HIGH PASSES", "REMOTE WILDERNESS", "CHALLENGING"],
+    reviews: 42
+  },
+  {
     id: "pikey-peak-trek",
     slug: "pikey-peak-trek",
     title: "Pikey Peak Trek",
