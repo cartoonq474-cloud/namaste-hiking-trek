@@ -227,38 +227,11 @@ function getSidebarAndFooter() {
     </article>
   </main>
 
-  <!-- Video Review Modal -->
-  <div id="video-review-modal" class="video-modal-backdrop" role="dialog" aria-modal="true" aria-label="Video Review Modal">
-    <div class="video-modal-card">
-      <button class="video-modal-close" id="close-video-modal" aria-label="Close Video Review">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-      </button>
-      <div class="video-modal-media">
-        <iframe id="video-modal-iframe" src="" title="Customer Video Review" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="video-modal-details">
-        <div class="video-modal-meta">
-          <span class="video-modal-author" id="video-modal-author">Climber Review</span>
-          <span class="video-modal-country" id="video-modal-country">United Kingdom</span>
-          <span class="video-modal-tag" id="video-modal-tag">Dhaulagiri Circuit Trek</span>
-        </div>
-        <p class="video-modal-quote" id="video-modal-quote">
-          "Crossing French Pass and waking up beneath the colossal ice wall of Dhaulagiri I was the greatest mountain experience of my life. The Namaste Hiking Trek kitchen crew, hot soups, and guides were exceptional."
-        </p>
-      </div>
-    </div>
-  </div>
-
   <!-- Inquiry Modal -->
-  <div id="inquiry-modal" class="inquiry-modal-backdrop" role="dialog" aria-modal="true" aria-label="Custom Trip Inquiry Modal">
-    <div class="inquiry-modal-card">
-      <button class="inquiry-modal-close" id="close-inquiry-modal" aria-label="Close Inquiry Modal">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-      </button>
-      <div class="inquiry-modal-header">
-        <span class="pill pill-copper" style="margin-bottom: 6px;">CUSTOM EXPEDITION INQUIRY</span>
-        <h3 style="font-size: 1.5rem; color: var(--color-primary-navy); margin-bottom: 4px;">Customize Your Dhaulagiri Circuit Trek</h3>
-      </div>
+  <div id="inquiry-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Inquire About Dhaulagiri Circuit Trek</h3>
       <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 20px;">
         Fill out this quick form and our lead Himalayan guide will respond within 4 hours.
       </p>
