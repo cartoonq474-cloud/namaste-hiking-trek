@@ -613,6 +613,66 @@
       padding: 4px 12px;
       border-radius: 6px;
     }
+
+    /* Team Section Category Filter & Grid */
+    .team-filter-bar-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    .team-filter-pills {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 9999px;
+      padding: 4px;
+      display: inline-flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .team-filter-btn {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 9999px;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #64748b;
+      background: transparent;
+      transition: all 0.2s ease;
+    }
+    .team-filter-btn.active {
+      background: #ffffff;
+      color: #0f172a;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+    .team-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 992px) {
+      .team-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 640px) {
+      .team-cards-grid {
+        grid-template-columns: 1fr;
+      }
+      .team-filter-btn {
+        padding: 6px 14px;
+        font-size: 0.82rem;
+      }
+    }
+    .team-card-item {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .team-card-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    }
   </style>
 </head>
 <body>
@@ -1206,154 +1266,378 @@
 
     <!-- Section 5: Meet Our Founder & Certified Mountain Guides -->
     <section id="our-team" class="section-padding" style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
-      <div class="container">
-        <div class="text-center" style="margin-bottom: 36px;">
-          <h2 class="section-title">The People Behind Your Himalayan Journey</h2>
-          <p style="color: #64748b; max-width: 680px; margin: 8px auto 0 auto; font-size: 0.95rem;">
-            When you book with Namaste Hiking Trek, you are guided by career mountain professionals licensed by the Government of Nepal and trained in wilderness medical response.
-          </p>
-        </div>
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 36px;">
+      <h2 class="section-title">The People Behind Your Himalayan Journey</h2>
+      <p style="color: #64748b; max-width: 680px; margin: 8px auto 0 auto; font-size: 0.95rem;">
+        When you book with Namaste Hiking Trek, you are guided by career mountain professionals licensed by the Government of Nepal and trained in wilderness medical response.
+      </p>
+    </div>
 
-        <!-- Founder Spotlight: Lal Gurung -->
-        <div class="founder-card-wrapper" style="margin-bottom: 48px;">
-          <div class="founder-img-col">
-            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" alt="Lal Gurung - Founder &amp; Managing Director">
-            <div class="founder-badge-overlay">
-              <div style="font-weight: 700; font-size: 1.1rem; color: white;">Lal Gurung</div>
-              <div style="font-size: 0.85rem; color: #f59e0b; font-weight: 600;">Founder &amp; Managing Director · Dhading Native</div>
-            </div>
-          </div>
-
-          <div class="founder-content-col">
-            <h3 style="font-size: 1.85rem; color: #0f172a; margin-top: 6px; margin-bottom: 14px; line-height: 1.3;">
-              "Mountains Are Our Home. Safety &amp; Integrity Are Our Non-Negotiable Promise."
-            </h3>
-
-            <div style="background: #f1f5f9; border-left: 4px solid var(--color-copper-orange, #d97706); padding: 14px 18px; border-radius: 0 12px 12px 0; margin-bottom: 16px; font-style: italic; color: #334155; font-size: 0.95rem; line-height: 1.6;">
-              "Growing up in Dhading and guiding trails across Nepal for over 20 years taught me that mountain success isn't measured solely by summits, but by the trust we earn, the safety we uphold, and the care we give to every trekker and porter."
-            </div>
-
-            <p style="color: #475569; font-size: 0.94rem; line-height: 1.7; margin-bottom: 12px;">
-              Lal Gurung holds an official summit certificate for Mera Peak (6,476m) and has personally led over <strong>100+ Everest Base Camp</strong>, <strong>80+ Annapurna</strong>, <strong>80+ Mustang</strong>, <strong>70+ Manaslu</strong>, and <strong>70+ Langtang</strong> expeditions.
-            </p>
-            <p style="color: #475569; font-size: 0.94rem; line-height: 1.7; margin-bottom: 16px;">
-              Today, Lal personally oversees every custom route itinerary, conducts pre-trek client safety briefings at our Kathmandu headquarters, monitors daily mountain weather conditions, and coordinates emergency logistics 24/7.
-            </p>
-
-            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-              <div style="font-size: 0.85rem; color: #0f172a;"><strong>Qualifications:</strong> NATHM Guide License, NMA Alpine Climbing, Wilderness First Aid</div>
-              <div style="font-size: 0.85rem; color: #0f172a;"><strong>Languages:</strong> English, Nepali, Hindi, Gurung</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 6 Lead Mountain Guides Grid -->
-        <div style="margin-bottom: 24px;">
-          <h3 style="font-size: 1.35rem; color: #0f172a; margin-bottom: 8px; text-align: center;">Our Certified Mountain Lead Guides</h3>
-          <p style="color: #64748b; font-size: 0.9rem; text-align: center; margin-bottom: 24px;">Lead guides hold official NATHM licenses, high-altitude medical training, and decades of Himalayan trail experience.</p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
-          <!-- Guide 1: Kamal Gurung -->
-          <div class="card" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0;">
-            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Kamal Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706);">
-              <div>
-                <h4 style="font-size: 1.1rem; color: #0f172a; margin-bottom: 2px;">Kamal Gurung</h4>
-                <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Marketing Director &amp; Guide</div>
-                <div style="font-size: 0.8rem; color: #64748b;">12+ Years Experience · Dhading</div>
-              </div>
-            </div>
-            <div style="font-size: 0.84rem; color: #475569; line-height: 1.6;">
-              Specialist in custom route design for Everest, Annapurna, and Manaslu. Praised by travelers for attentive pacing, warm humor, and seamless logistics.
-            </div>
-          </div>
-
-          <!-- Guide 2: Bhagawan Kumal -->
-          <div class="card" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0;">
-            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Bhagawan Kumal" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706);">
-              <div>
-                <h4 style="font-size: 1.1rem; color: #0f172a; margin-bottom: 2px;">Bhagawan Kumal</h4>
-                <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Senior Guide &amp; Team Leader</div>
-                <div style="font-size: 0.8rem; color: #64748b;">22 Years Experience · Bachelor's</div>
-              </div>
-            </div>
-            <div style="font-size: 0.84rem; color: #475569; line-height: 1.6;">
-              Fluent in English, Nepali, Hindi, and Korean. 150+ Everest, 200+ Annapurna expeditions. Master of high-altitude pacing and cultural storytelling.
-            </div>
-          </div>
-
-          <!-- Guide 3: Bir Gurung ("Prince") -->
-          <div class="card" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0;">
-            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80" alt="Bir Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706);">
-              <div>
-                <h4 style="font-size: 1.1rem; color: #0f172a; margin-bottom: 2px;">Bir Gurung ("Prince")</h4>
-                <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Trek Leader &amp; Guide</div>
-                <div style="font-size: 0.8rem; color: #64748b;">12+ Years Experience · Bachelor's</div>
-              </div>
-            </div>
-            <div style="font-size: 0.84rem; color: #475569; line-height: 1.6;">
-              100+ Everest, 200+ Annapurna, 30+ Manaslu crossings. Certified mountain triage first responder and high-pass weather specialist.
-            </div>
-          </div>
-
-          <!-- Guide 4: Bishal Timalsina -->
-          <div class="card" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0;">
-            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="Bishal Timalsina" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706);">
-              <div>
-                <h4 style="font-size: 1.1rem; color: #0f172a; margin-bottom: 2px;">Bishal Timalsina</h4>
-                <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Senior Trekking Guide</div>
-                <div style="font-size: 0.8rem; color: #64748b;">10 Years Experience · Dhading</div>
-              </div>
-            </div>
-            <div style="font-size: 0.84rem; color: #475569; line-height: 1.6;">
-              50+ Everest, 30+ Annapurna departures. Known for deep knowledge of trail flora/fauna, navigation precision, and daily pulse oximeter monitoring.
-            </div>
-          </div>
-
-          <!-- Guide 5: David Gurung -->
-          <div class="card" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0;">
-            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="David Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706);">
-              <div>
-                <h4 style="font-size: 1.1rem; color: #0f172a; margin-bottom: 2px;">David Gurung</h4>
-                <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Adventure Trekking Guide</div>
-                <div style="font-size: 0.8rem; color: #64748b;">7 Years Experience · B.A. Tourism</div>
-              </div>
-            </div>
-            <div style="font-size: 0.84rem; color: #475569; line-height: 1.6;">
-              Degree in Tourism Management. Solo and first-time trekker specialist. Empathetic pacing, photography guidance, and teahouse host relations.
-            </div>
-          </div>
-
-          <!-- Guide 6: Hemlal Gurung -->
-          <div class="card" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0;">
-            <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Hemlal Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706);">
-              <div>
-                <h4 style="font-size: 1.1rem; color: #0f172a; margin-bottom: 2px;">Hemlal Gurung</h4>
-                <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Adventure Mountain Guide</div>
-                <div style="font-size: 0.8rem; color: #64748b;">9 Years Experience · +2 Business</div>
-              </div>
-            </div>
-            <div style="font-size: 0.84rem; color: #475569; line-height: 1.6;">
-              Praised in traveler reviews for unshakeable calm during weather flight delays, resourceful teahouse bookings, and attentiveness to health logs.
-            </div>
-          </div>
-        </div>
-
-        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px 24px; text-align: center; margin-top: 24px;">
-          <p style="color: #64748b; font-size: 0.88rem; margin: 0;">
-            <strong>Our Operating Scale:</strong> We maintain a core roster of <strong>15 permanent senior licensed guide leaders</strong>, dedicated Kathmandu logistics managers, and an ethical network of seasonal mountain porters and kitchen staff hired directly from the trail valleys we explore.
-          </p>
+    <!-- Founder Spotlight: Lal Gurung -->
+    <div class="founder-card-wrapper" style="margin-bottom: 44px;">
+      <div class="founder-img-col">
+        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" alt="Lal Gurung - Founder &amp; Managing Director">
+        <div class="founder-badge-overlay">
+          <div style="font-weight: 700; font-size: 1.1rem; color: white;">Lal Gurung</div>
+          <div style="font-size: 0.85rem; color: #f59e0b; font-weight: 600;">Founder &amp; Managing Director · Dhading Native</div>
         </div>
       </div>
-    </section>
 
-    <!-- Section 6: Who Our Treks Are For (Trip Suitability) -->
+      <div class="founder-content-col">
+        <h3 style="font-size: 1.85rem; color: #0f172a; margin-top: 6px; margin-bottom: 14px; line-height: 1.3;">
+          "Mountains Are Our Home. Safety &amp; Integrity Are Our Non-Negotiable Promise."
+        </h3>
+
+        <div style="background: #f1f5f9; border-left: 4px solid var(--color-copper-orange, #d97706); padding: 14px 18px; border-radius: 0 12px 12px 0; margin-bottom: 16px; font-style: italic; color: #334155; font-size: 0.95rem; line-height: 1.6;">
+          "Growing up in Dhading and guiding trails across Nepal for over 20 years taught me that mountain success isn't measured solely by summits, but by the trust we earn, the safety we uphold, and the care we give to every trekker and porter."
+        </div>
+
+        <p style="color: #475569; font-size: 0.94rem; line-height: 1.7; margin-bottom: 12px;">
+          Lal Gurung holds an official summit certificate for Mera Peak (6,476m) and has personally led over <strong>100+ Everest Base Camp</strong>, <strong>80+ Annapurna</strong>, <strong>80+ Upper Mustang</strong>, <strong>70+ Manaslu</strong>, and <strong>70+ Langtang</strong> expeditions.
+        </p>
+        <p style="color: #475569; font-size: 0.94rem; line-height: 1.7; margin-bottom: 16px;">
+          Today, Lal personally oversees every custom route itinerary, conducts pre-trek client safety briefings at our Kathmandu headquarters, monitors daily mountain weather conditions, and coordinates emergency logistics 24/7.
+        </p>
+
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+          <div style="font-size: 0.85rem; color: #0f172a;"><strong>Qualifications:</strong> NATHM Guide License, NMA Alpine Climbing, Wilderness First Aid</div>
+          <div style="font-size: 0.85rem; color: #0f172a;"><strong>Languages:</strong> English, Nepali, Hindi, Cantonese, Gurung</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Filter Bar (Pill Style) -->
+    <div class="team-filter-bar-wrap" style="display: flex; justify-content: center; margin-bottom: 32px;">
+      <div class="team-filter-pills" style="background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 9999px; padding: 4px; display: inline-flex; gap: 4px; flex-wrap: wrap; justify-content: center;">
+        <button type="button" class="team-filter-btn active" data-filter="all">All Team (14)</button>
+        <button type="button" class="team-filter-btn" data-filter="leadership">Expedition Leadership (3)</button>
+        <button type="button" class="team-filter-btn" data-filter="guide">Certified Mountain Guides (7)</button>
+        <button type="button" class="team-filter-btn" data-filter="logistics">Logistics &amp; Cultural Specialists (3)</button>
+      </div>
+    </div>
+
+    <!-- Team Members Grid (13 Cards) -->
+    <div class="team-cards-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+
+      <!-- 1. Kamal Gurung (Leadership) -->
+      <div class="team-card-item" data-category="leadership" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Kamal Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Kamal Gurung</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Marketing Director &amp; Guide</div>
+              <div style="font-size: 0.8rem; color: #64748b;">12+ Years Experience · Dhading</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> 100+ Everest · 80+ Annapurna · 70+ Manaslu
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Specialist in custom route design for Everest, Annapurna, and Manaslu. Praised by travelers for attentive pacing, warm communication, and seamless trip logistics.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> English, Nepali, Hindi
+        </div>
+      </div>
+
+      <!-- 2. Bhagawan Kumal (Leadership) -->
+      <div class="team-card-item" data-category="leadership" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Bhagawan Kumal" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Bhagawan Kumal</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Senior Guide &amp; Team Leader</div>
+              <div style="font-size: 0.8rem; color: #64748b;">22 Years Experience · Bachelor's</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> 150+ Everest · 200+ Annapurna · Kanchenjunga
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Himalayan veteran with over two decades of high-altitude navigation. Renowned for calm leadership on technical high passes and fluent communication with international climbers.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> English, Nepali, Hindi, Korean
+        </div>
+      </div>
+
+      <!-- 3. Bir Gurung ("Prince") (Leadership) -->
+      <div class="team-card-item" data-category="leadership" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80" alt="Bir Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Bir Gurung ("Prince")</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Mountain Guide &amp; Trek Leader</div>
+              <div style="font-size: 0.8rem; color: #64748b;">12+ Years Experience · Bachelor's</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> 100+ Everest · 200+ Annapurna · 30+ Manaslu
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Certified mountain triage first responder and weather coordinator. Expert in high-pass logistics across Thorong La, Cho La, and Larkya La with proactive safety management.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> English, Nepali, Hindi
+        </div>
+      </div>
+
+      <!-- 4. Santa Bahadur Gurung (Bishal Timalsina) (Guide) -->
+      <div class="team-card-item" data-category="guide" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="Santa Bahadur Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Santa Bahadur Gurung</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Senior Trekking Guide</div>
+              <div style="font-size: 0.8rem; color: #64748b;">10 Years Experience · Dhading</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> 50+ Everest · 30+ Annapurna · NATHM Licensed
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            50+ Everest, 30+ Annapurna departures. Known for deep knowledge of trail geography, high navigation precision, and daily SpO2 pulse oximeter monitoring.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> English, Nepali, Hindi
+        </div>
+      </div>
+
+      <!-- 5. David Gurung (Guide) -->
+      <div class="team-card-item" data-category="guide" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="David Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">David Gurung</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Adventure Trekking Guide</div>
+              <div style="font-size: 0.8rem; color: #64748b;">7 Years Experience · B.A. Tourism</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> Everest · Annapurna Circuit · Poon Hill
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Holds a Bachelor's in Tourism Management and NATHM certification. Specialist in solo and first-time trekkers, empathetic acclimatization pacing, and landscape photography.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> English, Nepali, Hindi
+        </div>
+      </div>
+
+      <!-- 6. Hemlal Gurung (Guide) -->
+      <div class="team-card-item" data-category="guide" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Hemlal Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Hemlal Gurung</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Adventure Mountain Guide</div>
+              <div style="font-size: 0.8rem; color: #64748b;">9 Years Experience · +2 Business</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> 25+ Everest · 15+ Annapurna · 15+ Manaslu
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Frequently praised in traveler reviews for unshakeable calm during weather flight delays, resourceful teahouse reservations, and genuine attentiveness to trekker comfort.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> English, Nepali, Hindi
+        </div>
+      </div>
+
+      <!-- 7. Ganga Gurung (Guide) -->
+      <div class="team-card-item" data-category="guide" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=200&q=80" alt="Ganga Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Ganga Gurung</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Mountain Trekking Guide</div>
+              <div style="font-size: 0.8rem; color: #64748b;">8+ Years Experience · Dhading</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> 30+ Everest · 15+ Annapurna · 10+ Manaslu
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Specialist in high-altitude guest care and wilderness first aid. Praised for his friendly, encouraging guidance that motivates trekkers across tough uphill ascents.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> English, Nepali, Hindi
+        </div>
+      </div>
+
+      <!-- 8. Surya Bahadur Kumal (Guide) -->
+      <div class="team-card-item" data-category="guide" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=200&q=80" alt="Surya Bahadur Kumal" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Surya Bahadur Kumal</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Adventure Mountain Guide</div>
+              <div style="font-size: 0.8rem; color: #64748b;">8+ Years Experience · +2 Education</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> 20+ Everest · 15+ Annapurna · 10+ Mustang
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Multilingual guide specializing in Everest Base Camp and Mustang. Expert in organizing porter team rotations, hydration protocols, and cultural trail interactions.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> English, Nepali, Hindi, Korean
+        </div>
+      </div>
+
+      <!-- 9. Suman Gurung (Guide) -->
+      <div class="team-card-item" data-category="guide" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Suman Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Suman Gurung</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Adventure Trekking Guide</div>
+              <div style="font-size: 0.8rem; color: #64748b;">7 Years Experience · Mountain Veteran</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> Kanchenjunga · Manaslu · Everest
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Specialized in remote and restricted area trekking. Experienced with high-altitude trail assistance, teahouse operations, and maintaining strict safety protocols on steep terrain.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> Nepali, English, Hindi
+        </div>
+      </div>
+
+      <!-- 10. Ram Gurung (Guide) -->
+      <div class="team-card-item" data-category="guide" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Ram Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Ram Gurung</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Mountain Trekking Guide</div>
+              <div style="font-size: 0.8rem; color: #64748b;">6+ Years Experience · Dhading</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> Everest · Annapurna · Manaslu
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Dhading native with profound familiarity with alpine pass weather. Dedicated to personalized group safety, patient encouragement, and daily gear health checks.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> Nepali, English, Hindi
+        </div>
+      </div>
+
+      <!-- 11. Jiban Gurung (Logistics & Culture) -->
+      <div class="team-card-item" data-category="logistics" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=200&q=80" alt="Jiban Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Jiban Gurung</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Guide &amp; Route Logistics</div>
+              <div style="font-size: 0.8rem; color: #64748b;">8 Years Experience · Tibet Tours</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> 40+ Everest · 30+ Annapurna · 20+ Mustang
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            High-altitude logistics and tour specialist. Leads cross-border Tibet overland itineraries and oversees ethical porter load distribution and trail luggage transfers.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> English, Nepali, Hindi
+        </div>
+      </div>
+
+      <!-- 12. Kapil Jung Kunwar (Logistics & Culture) -->
+      <div class="team-card-item" data-category="logistics" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="Kapil Jung Kunwar" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Kapil Jung Kunwar</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Cultural City &amp; Tour Guide</div>
+              <div style="font-size: 0.8rem; color: #64748b;">14 Years Experience · Kathmandu</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> Kathmandu Valley Heritage · Pokhara
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Licensed cultural guide leading immersions through UNESCO World Heritage sites in Kathmandu, Patan, and Bhaktapur. Renowned for rich historical and spiritual storytelling.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> English, Nepali, Hindi
+        </div>
+      </div>
+
+      <!-- 13. Nishan Gurung (Logistics & Field Support) -->
+      <div class="team-card-item" data-category="logistics" style="padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=200&q=80" alt="Nishan Gurung" style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-copper-orange, #d97706); flex-shrink: 0;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: #0f172a; margin: 0 0 2px 0;">Nishan Gurung</h3>
+              <div style="font-size: 0.8rem; font-weight: 700; color: #059669; text-transform: uppercase;">Field Operations &amp; Support</div>
+              <div style="font-size: 0.8rem; color: #64748b;">5+ Years Experience · Trail Crew</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: #0f172a; font-weight: 600; margin-bottom: 8px;">
+            <span style="color: #d97706;">★</span> Everest · Annapurna Support Operations
+          </div>
+          <div style="font-size: 0.84rem; color: #475569; line-height: 1.6; margin-bottom: 12px;">
+            Coordinates trail gear transport, staging medical kits, and teahouse liaison. Essential part of our Kathmandu and high-altitude emergency supply chain.
+          </div>
+        </div>
+        <div style="border-top: 1px solid #f1f5f9; padding-top: 10px; font-size: 0.78rem; color: #64748b;">
+          <strong>Languages:</strong> Nepali, English
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Operating Scale Banner & Directory Link -->
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 22px 28px; margin-top: 36px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+      <div style="max-width: 680px;">
+        <h4 style="font-size: 1.05rem; color: #0f172a; margin: 0 0 4px 0;">Our Ethical Operating Scale</h4>
+        <p style="color: #64748b; font-size: 0.88rem; margin: 0;">
+          We maintain a core roster of <strong>15 permanent licensed guide leaders</strong>, dedicated Kathmandu flight and logistics dispatchers, and an ethical network of insured mountain porters hired directly from the Himalayan valleys we explore.
+        </p>
+      </div>
+      <div>
+        <a href="team.html" class="btn btn-outline" style="border-radius: 9999px; padding: 10px 22px; font-weight: 700; border: 1px solid #cbd5e1; color: #0f172a; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+          Explore Full Team Directory →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
     <section id="suitability" class="section-padding" style="background: #ffffff; border-bottom: 1px solid #e2e8f0;">
       <div class="container">
         <div class="text-center" style="margin-bottom: 36px;">
@@ -2694,6 +2978,25 @@
     });
 
     // Reviews Platform Tabs Switcher (Google Reviews / TripAdvisor)
+    // Team Category Filter Tabs
+    document.querySelectorAll('.team-filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var filter = this.getAttribute('data-filter');
+        document.querySelectorAll('.team-filter-btn').forEach(function(b) {
+          b.classList.remove('active');
+        });
+        this.classList.add('active');
+
+        document.querySelectorAll('.team-card-item').forEach(function(card) {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
     document.querySelectorAll('.about-tab-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var target = this.getAttribute('data-target');
