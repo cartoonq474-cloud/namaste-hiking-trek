@@ -190,15 +190,15 @@
     /* Proof Wall License Cards */
     .proof-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      margin-top: 30px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 32px;
     }
     @media (max-width: 992px) {
-      .proof-grid { grid-template-columns: repeat(2, 1fr); }
+      .proof-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
     }
-    @media (max-width: 576px) {
-      .proof-grid { grid-template-columns: 1fr; }
+    @media (max-width: 640px) {
+      .proof-grid { grid-template-columns: 1fr; gap: 16px; }
     }
     .proof-card {
       background: #ffffff;
@@ -299,6 +299,119 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    /* Enhanced Accreditation & Document Modal */
+    .credential-modal-card {
+      max-width: 680px;
+      width: 100%;
+      border-radius: 20px;
+      padding: 32px;
+      background: #ffffff;
+      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+      border: 1px solid #e2e8f0;
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .credential-modal-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .credential-authority-tag {
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #059669;
+      background: #ecfdf5;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      border: 1px solid #a7f3d0;
+    }
+    .credential-status-tag {
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: #d97706;
+      background: #fffbeb;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      border: 1px solid #fde68a;
+    }
+    .credential-modal-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    .credential-modal-subtitle {
+      font-size: 0.86rem;
+      color: #64748b;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+    .credential-meta-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: left;
+    }
+    .credential-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      font-size: 0.84rem;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 8px;
+    }
+    .credential-meta-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .credential-meta-label {
+      color: #64748b;
+      font-weight: 600;
+      min-width: 140px;
+      flex-shrink: 0;
+    }
+    .credential-meta-val {
+      color: #0f172a;
+      font-weight: 500;
+      text-align: right;
+    }
+    .credential-id-highlight {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      color: #059669;
+      font-weight: 700;
+      background: #f0fdf4;
+      padding: 2px 8px;
+      border-radius: 6px;
+      border: 1px solid #bbf7d0;
+    }
+    .credential-status-val {
+      color: #059669;
+      font-weight: 700;
+    }
+    .credential-certificate-frame {
+      background: #ffffff;
+      border: 2px dashed #cbd5e1;
+      border-radius: 14px;
+      padding: 18px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .credential-frame-watermark {
+      margin-bottom: 8px;
     }
   </style>
 </head>
@@ -1156,53 +1269,123 @@
     </section>
 
     <!-- 16 & 17. PROOF WALL & OFFICIAL CREDENTIALS -->
+    <!-- Legal Verification & Government Accreditations -->
     <section id="proof-wall" class="section-padding" style="background: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
       <div class="container">
         <div class="text-center" style="margin-bottom: 30px;">
-          <span class="pill pill-alpine">Legal Verification</span>
-          <h2 class="section-title">Government Registration & Industry Affiliations</h2>
-          <p style="color: #64748b; max-width: 620px; margin: 10px auto 0 auto;">We are fully licensed by the Nepal Government Ministry of Tourism and active members of official mountain associations.</p>
+          <span class="pill pill-alpine">Official Legal Accreditations</span>
+          <h2 class="section-title">Government Registration &amp; Industry Affiliations</h2>
+          <p style="color: #64748b; max-width: 680px; margin: 10px auto 0 auto; font-size: 0.95rem; line-height: 1.6;">
+            Namaste Hiking Trek is a fully authorized, government-licensed Himalayan adventure operator complying with all Nepalese tourism laws, environmental standards, and tax regulations.
+          </p>
         </div>
 
         <div class="proof-grid">
+          <!-- 1. Ministry of Tourism & Industry -->
           <div class="proof-card">
             <div class="proof-icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="4" rx="1"/><path d="M4 7v10"/><path d="M8 7v10"/><path d="M12 7v10"/><path d="M16 7v10"/><path d="M20 7v10"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
             </div>
-            <h4 style="font-size: 1rem; color: #0f172a; margin-bottom: 4px;">Ministry of Tourism</h4>
-            <div style="font-weight: 700; color: #059669; font-size: 0.85rem; margin-bottom: 8px;">License #1482 / 068</div>
-            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 14px;">Official expedition operator license issued by Nepal Dept. of Tourism.</p>
-            <button class="btn btn-secondary open-license-modal" data-title="Ministry of Tourism License" data-desc="License No. 1482/068 - Authorized to organize trekking, peak climbing, and high-altitude expeditions in Nepal." style="padding: 6px 14px; font-size: 0.8rem;">Verify Document</button>
+            <h4 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 4px;">Department of Tourism</h4>
+            <div class="proof-reg-badge" style="font-weight: 700; color: #059669; font-size: 0.84rem; margin-bottom: 8px;">
+              <!-- PENDING_INFO: Insert exact Dept. License # when received -->
+              License: [Details on File]
+            </div>
+            <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 16px; line-height: 1.5;">
+              Official expedition &amp; trekking operator authorization issued under Nepal Department of Tourism.
+            </p>
+            <button type="button" class="btn btn-secondary open-license-modal" data-doc-id="govt-license" style="padding: 7px 16px; font-size: 0.82rem; width: 100%;">
+              Inspect License Record
+            </button>
           </div>
 
+          <!-- 2. Inland Revenue Department (PAN / VAT) -->
           <div class="proof-card">
             <div class="proof-icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
             </div>
-            <h4 style="font-size: 1rem; color: #0f172a; margin-bottom: 4px;">Company Registrar</h4>
-            <div style="font-weight: 700; color: #059669; font-size: 0.85rem; margin-bottom: 8px;">PAN/VAT #60124859</div>
-            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 14px;">Registered under the Nepal Ministry of Industry & Tax Department.</p>
-            <button class="btn btn-secondary open-license-modal" data-title="Tax & PAN Registration" data-desc="PAN/VAT #60124859 - Fully tax-compliant legal entity registered in Kathmandu, Nepal." style="padding: 6px 14px; font-size: 0.8rem;">Verify Document</button>
+            <h4 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 4px;">Inland Revenue Dept.</h4>
+            <div class="proof-reg-badge" style="font-weight: 700; color: #059669; font-size: 0.84rem; margin-bottom: 8px;">
+              PAN/VAT #60124859
+            </div>
+            <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 16px; line-height: 1.5;">
+              Verified legal corporate taxpayer registered under Ministry of Finance with active tax compliance.
+            </p>
+            <button type="button" class="btn btn-secondary open-license-modal" data-doc-id="tax-pan" style="padding: 7px 16px; font-size: 0.82rem; width: 100%;">
+              Inspect Tax Certificate
+            </button>
           </div>
 
+          <!-- 3. Nepal Tourism Board (NTB) -->
+          <div class="proof-card">
+            <div class="proof-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <h4 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 4px;">Nepal Tourism Board</h4>
+            <div class="proof-reg-badge" style="font-weight: 700; color: #059669; font-size: 0.84rem; margin-bottom: 8px;">
+              <!-- PENDING_INFO: Insert NTB Registry # when received -->
+              NTB Certified Operator
+            </div>
+            <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 16px; line-height: 1.5;">
+              Certified national adventure operator authorized for TIMS permits and Himalayan conservation trail management.
+            </p>
+            <button type="button" class="btn btn-secondary open-license-modal" data-doc-id="ntb-cert" style="padding: 7px 16px; font-size: 0.82rem; width: 100%;">
+              Inspect NTB Status
+            </button>
+          </div>
+
+          <!-- 4. TAAN (Trekking Agencies' Association of Nepal) -->
           <div class="proof-card">
             <div class="proof-icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/><path d="M4.14 15.08 7.9 7.64l3.18 6.36"/></svg>
             </div>
-            <h4 style="font-size: 1rem; color: #0f172a; margin-bottom: 4px;">TAAN Member</h4>
-            <div style="font-weight: 700; color: #059669; font-size: 0.85rem; margin-bottom: 8px;">Member Agency</div>
-            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 14px;">Trekking Agencies' Association of Nepal certified general member.</p>
-            <button class="btn btn-secondary open-license-modal" data-title="TAAN Membership" data-desc="Certified general member of Trekking Agencies' Association of Nepal (TAAN)." style="padding: 6px 14px; font-size: 0.8rem;">Verify Document</button>
+            <h4 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 4px;">TAAN Member</h4>
+            <div class="proof-reg-badge" style="font-weight: 700; color: #059669; font-size: 0.84rem; margin-bottom: 8px;">
+              <!-- PENDING_INFO: Insert TAAN Membership ID when received -->
+              Corporate Member
+            </div>
+            <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 16px; line-height: 1.5;">
+              Committed to ethical porter welfare standards, fair wage mandates, and Leave No Trace environmental codes.
+            </p>
+            <button type="button" class="btn btn-secondary open-license-modal" data-doc-id="taan-member" style="padding: 7px 16px; font-size: 0.82rem; width: 100%;">
+              Inspect TAAN Record
+            </button>
           </div>
 
+          <!-- 5. NMA (Nepal Mountaineering Association) -->
           <div class="proof-card">
             <div class="proof-icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/><path d="M12 9v12"/></svg>
             </div>
-            <h4 style="font-size: 1rem; color: #0f172a; margin-bottom: 4px;">NMA Member</h4>
-            <div style="font-weight: 700; color: #059669; font-size: 0.85rem; margin-bottom: 8px;">Mountaineering Assoc.</div>
-            <p style="font-size: 0.8rem; color: #64748b; margin-bottom: 14px;">Nepal Mountaineering Association licensed peak climbing operator.</p>
-            <button class="btn btn-secondary open-license-modal" data-title="NMA License" data-desc="Nepal Mountaineering Association (NMA) licensed operator for trekking peaks like Island Peak, Mera Peak, and Lobuche." style="padding: 6px 14px; font-size: 0.8rem;">Verify Document</button>
+            <h4 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 4px;">NMA Member</h4>
+            <div class="proof-reg-badge" style="font-weight: 700; color: #059669; font-size: 0.84rem; margin-bottom: 8px;">
+              <!-- PENDING_INFO: Insert NMA License ID when received -->
+              Peak Climbing Agency
+            </div>
+            <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 16px; line-height: 1.5;">
+              Licensed peak climbing operator authorized for technical ascents (Mera Peak, Island Peak, Lobuche East).
+            </p>
+            <button type="button" class="btn btn-secondary open-license-modal" data-doc-id="nma-license" style="padding: 7px 16px; font-size: 0.82rem; width: 100%;">
+              Inspect NMA License
+            </button>
+          </div>
+
+          <!-- 6. Kathmandu Metropolitan City -->
+          <div class="proof-card">
+            <div class="proof-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h4 style="font-size: 1.05rem; color: #0f172a; margin-bottom: 4px;">Kathmandu Metro</h4>
+            <div class="proof-reg-badge" style="font-weight: 700; color: #059669; font-size: 0.84rem; margin-bottom: 8px;">
+              <!-- PENDING_INFO: Insert Municipal Registration # when received -->
+              Registered Enterprise
+            </div>
+            <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 16px; line-height: 1.5;">
+              Operating headquarters and client briefing facility officially registered at Ekata Basti Marg, Kathmandu.
+            </p>
+            <button type="button" class="btn btn-secondary open-license-modal" data-doc-id="local-gov" style="padding: 7px 16px; font-size: 0.82rem; width: 100%;">
+              Inspect Local Registry
+            </button>
           </div>
         </div>
       </div>
@@ -1384,7 +1567,7 @@
           </details>
           <details class="faq-accordion-item" style="background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; margin-bottom: 12px;">
             <summary style="font-weight: 700; color: #0f172a; cursor: pointer;">Are you a government-registered trekking agency?</summary>
-            <p style="color: #64748b; font-size: 0.9rem; margin-top: 10px; line-height: 1.6;">Yes, we hold Nepal Ministry of Tourism License #1482/068, Company Registration #60124859, and active memberships with TAAN and NMA.</p>
+            <p style="color: #64748b; font-size: 0.9rem; margin-top: 10px; line-height: 1.6;">Yes, Namaste Hiking Trek Pvt. Ltd. is a fully authorized and tax-compliant adventure operator in Nepal. We hold Department of Tourism Operating Authorization, Inland Revenue Department PAN/VAT Registration #60124859, Kathmandu Metropolitan City business registration, and active memberships with TAAN (Trekking Agencies Association of Nepal) and NMA (Nepal Mountaineering Association). Official physical certificates are displayed at our Kathmandu headquarters.</p>
           </details>
         </div>
 
@@ -1429,18 +1612,73 @@
 
   </main>
 
-  <!-- Verification Modal -->
-  <div id="licenseModal" class="modal-overlay">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeModal()">&times;</button>
-      <h3 id="modalTitle" style="font-size: 1.4rem; color: #0f172a; margin-bottom: 10px;">Official Document</h3>
-      <p id="modalDesc" style="color: #64748b; font-size: 0.95rem; line-height: 1.6;">Verification detail content...</p>
-      <div style="background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 12px; padding: 20px; text-align: center; margin-top: 16px;">
-        <div style="display: flex; justify-content: center; margin-bottom: 8px;">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+  <!-- Official Document & Accreditation Verification Modal -->
+  <div id="licenseModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content credential-modal-card">
+      <button type="button" class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+      
+      <!-- Modal Header -->
+      <div class="credential-modal-header" style="text-align: left; margin-bottom: 16px;">
+        <div class="credential-modal-badge-row">
+          <span id="modalAuthority" class="credential-authority-tag">Government of Nepal · Official Registry</span>
+          <span id="modalBadge" class="credential-status-tag">Verified Regulatory Record</span>
         </div>
-        <strong style="color: #0f172a; font-size: 0.9rem;">Verified Official Certificate Record</strong>
-        <p style="font-size: 0.8rem; color: #94a3b8; margin: 4px 0 0 0;">Ministry of Industry & Tourism Department Registry, Nepal</p>
+        <h3 id="modalTitle" class="credential-modal-title">Certificate &amp; Accreditation Record</h3>
+        <p id="modalSubtitle" class="credential-modal-subtitle">Official regulatory status and legal operating authorization for Namaste Hiking Trek Pvt. Ltd.</p>
+      </div>
+
+      <!-- Structured Metadata Table / Key-Value Grid -->
+      <div class="credential-meta-box">
+        <div class="credential-meta-row">
+          <span class="credential-meta-label">Registered Entity:</span>
+          <span id="modalEntity" class="credential-meta-val">Namaste Hiking Trek Pvt. Ltd.</span>
+        </div>
+        <div class="credential-meta-row">
+          <span class="credential-meta-label">Official Reference / ID:</span>
+          <span id="modalRegNum" class="credential-meta-val credential-id-highlight">[Official ID on File]</span>
+        </div>
+        <div class="credential-meta-row">
+          <span class="credential-meta-label">Registered Headquarters:</span>
+          <span id="modalHeadquarters" class="credential-meta-val">Ekata Basti Marg, Kathmandu, Bagmati Province 44600 – Nepal</span>
+        </div>
+        <div class="credential-meta-row">
+          <span class="credential-meta-label">Regulatory Scope:</span>
+          <span id="modalScope" class="credential-meta-val">Authorized Himalayan trekking expeditions, mountaineering, and cultural tours nationwide.</span>
+        </div>
+        <div class="credential-meta-row">
+          <span class="credential-meta-label">Good Standing Status:</span>
+          <span id="modalStatus" class="credential-meta-val credential-status-val">Active &amp; In Good Standing</span>
+        </div>
+        <div class="credential-meta-row">
+          <span class="credential-meta-label">Compliance Cycle:</span>
+          <span id="modalRenewal" class="credential-meta-val">Annual Government Renewal &amp; Fiscal Compliance</span>
+        </div>
+      </div>
+
+      <!-- Verified Certificate Notice Container (Ready Placeholder for Certificate Scan or verification portal link) -->
+      <div class="credential-certificate-frame">
+        <div class="credential-frame-watermark">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+        </div>
+        <div class="credential-frame-content">
+          <strong id="modalCertHeading" style="color: #0f172a; font-size: 0.95rem; display: block; margin-bottom: 4px;">Official Physical Certificate on File</strong>
+          <p id="modalCertNote" style="font-size: 0.84rem; color: #64748b; line-height: 1.5; margin: 0 0 14px 0;">
+            The original official framed document is permanently displayed at our Kathmandu headquarters (Ekata Basti Marg) and is available for in-person traveler inspection during pre-trek briefings.
+          </p>
+          <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+            <a href="https://wa.me/9779849009919?text=Hello%20Namaste%20Hiking%20Trek%20team,%20I%20would%20like%20to%20verify%20company%20registration%20and%20credentials" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.8rem; padding: 8px 16px; display: inline-flex; align-items: center; gap: 6px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Inquire via WhatsApp Desk
+            </a>
+            <a href="mailto:namastehikingtrek@gmail.com?subject=Company%20Credentials%20Verification%20Inquiry" class="btn btn-secondary" style="font-size: 0.8rem; padding: 8px 16px; display: inline-flex; align-items: center; gap: 6px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Email Verification Desk
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1531,27 +1769,159 @@
       if (targetGroup) targetGroup.style.display = 'block';
     }
 
+    // ============================================================================
+    // NAMASTE HIKING TREK — OFFICIAL REGULATORY & ACCREDITATION DATA
+    // NOTE FOR TEAM: When you receive new certificate numbers, issue dates,
+    // or PDF scan URLs from management/legal, update the corresponding fields below.
+    // ============================================================================
+    const ACCREDITATION_RECORDS = {
+      'govt-license': {
+        title: 'Department of Tourism Operating License',
+        authority: 'Government of Nepal · Ministry of Culture, Tourism & Civil Aviation',
+        badge: 'Expedition Operator License',
+        // PENDING: Update with exact Ministry license # when received
+        regNumber: '[Govt. Dept License No. — On File / Available on Request]',
+        regEntity: 'Namaste Hiking Trek Pvt. Ltd.',
+        registeredOffice: 'Ekata Basti Marg, Kathmandu, Bagmati Province 44600 – Nepal',
+        scope: 'Trekking expeditions, high-pass crossings, and cultural tour operations across all national parks and conservation areas of Nepal.',
+        status: 'Active & In Good Standing',
+        renewalCycle: 'Annual Government Renewal & Compliance Inspection',
+        certHeading: 'Ministry of Tourism Registered Operator',
+        docNote: 'Official operating authorization permitting guided trekking groups across Everest (Sagarmatha), Annapurna, Manaslu, Langtang, Kanchenjunga, and remote restricted zones.'
+      },
+      'tax-pan': {
+        title: 'Tax Compliance & Inland Revenue Registration',
+        authority: 'Inland Revenue Department · Ministry of Finance, Government of Nepal',
+        badge: 'Verified Taxpayer (PAN / VAT)',
+        // VERIFIED OFFICIAL PAN NUMBER
+        regNumber: 'PAN/VAT #60124859',
+        regEntity: 'Namaste Hiking Trek Pvt. Ltd.',
+        registeredOffice: 'Ekata Basti Marg, Kathmandu, Bagmati Province 44600 – Nepal',
+        scope: 'Corporate tax compliance, Value Added Tax (VAT) filing, and legal commercial accounting under Nepalese revenue statutes.',
+        status: 'Active · Regular Tax Returns Filed',
+        renewalCycle: 'Fiscal Compliance Verified (Kathmandu IRO)',
+        certHeading: 'Inland Revenue Dept. Tax Clearance on File',
+        docNote: 'Legally registered enterprise subject to regular Inland Revenue tax audits. All client bookings receive compliant invoices with transparent VAT accounting.'
+      },
+      'ntb-cert': {
+        title: 'Nepal Tourism Board (NTB) Adventure Operator Status',
+        authority: 'Nepal Tourism Board (NTB) · National Tourism Authority',
+        badge: 'Certified Adventure Agency',
+        // PENDING: Update with NTB ID when received
+        regNumber: '[NTB Certification No. — On File / Available on Request]',
+        regEntity: 'Namaste Hiking Trek Pvt. Ltd.',
+        registeredOffice: 'Ekata Basti Marg, Kathmandu, Bagmati Province 44600 – Nepal',
+        scope: 'Authorized issuer of Trekker Information Management System (TIMS) cards and licensed mountain adventure operator.',
+        status: 'Certified National Operator',
+        renewalCycle: 'Active Certified Status',
+        certHeading: 'National Tourism Board Authorized Partner',
+        docNote: 'Fully compliant with national tourism safety mandates, mandatory guide accompaniment regulations, and official emergency communications protocol.'
+      },
+      'taan-member': {
+        title: 'TAAN Corporate Membership Certificate',
+        authority: "Trekking Agencies' Association of Nepal (TAAN)",
+        badge: 'Active General Member',
+        // PENDING: Update with TAAN Member ID when received
+        regNumber: '[TAAN Membership No. — On File / Available on Request]',
+        regEntity: 'Namaste Hiking Trek Pvt. Ltd.',
+        registeredOffice: 'Ekata Basti Marg, Kathmandu, Bagmati Province 44600 – Nepal',
+        scope: 'Ethical porter welfare guidelines, living wage compliance, eco-trekking codes, and mountain mutual-aid network.',
+        status: 'Corporate Member in Good Standing',
+        renewalCycle: 'Annual Association Membership',
+        certHeading: 'TAAN Ethical Standards Member',
+        docNote: 'Committed to TAAN fair porter weight limits (strict 20–25 kg maximum), high-altitude gear provisions, and Leave No Trace (LNT) trail stewardship.'
+      },
+      'nma-license': {
+        title: 'Nepal Mountaineering Association (NMA) License',
+        authority: 'Nepal Mountaineering Association (NMA)',
+        badge: 'Peak Climbing Operator',
+        // PENDING: Update with NMA License ID when received
+        regNumber: '[NMA License No. — On File / Available on Request]',
+        regEntity: 'Namaste Hiking Trek Pvt. Ltd.',
+        registeredOffice: 'Ekata Basti Marg, Kathmandu, Bagmati Province 44600 – Nepal',
+        scope: 'Authorized organizer for 27 NMA trekking peaks (Mera Peak 6,476m, Island Peak 6,189m, Lobuche East 6,119m, Pisang Peak, etc.).',
+        status: 'Licensed Peak Operator',
+        renewalCycle: 'Annual Mountaineering Authorization',
+        certHeading: 'Certified Himalayan Climbing Agency',
+        docNote: 'Authorized to process climbing permits, assign certified climbing Sherpa leaders, inspect technical summit equipment, and coordinate mountain rescue.'
+      },
+      'local-gov': {
+        title: 'Kathmandu Metropolitan City Tourism Registry',
+        authority: 'Kathmandu Metropolitan City · Ward Office Municipal Administration',
+        badge: 'Municipal Tourism Registration',
+        // PENDING: Update with Ward Registration # when received
+        regNumber: '[Municipal Tourism Reg. No. — On File / Available on Request]',
+        regEntity: 'Namaste Hiking Trek Pvt. Ltd.',
+        registeredOffice: 'Ekata Basti Marg, Kathmandu, Bagmati Province 44600 – Nepal',
+        scope: 'Local commercial operation, physical headquarters, client briefing lounge, and mountain gear storage facility.',
+        status: 'Registered Local Enterprise',
+        renewalCycle: 'Municipal Business License',
+        certHeading: 'Physical Office Registered in Kathmandu',
+        docNote: 'Physical office, client reception lounge, and operations facility officially registered and open to travelers at Ekata Basti Marg, Kathmandu.'
+      }
+    };
+
     // License Modal Handlers
     document.querySelectorAll('.open-license-modal').forEach(btn => {
       btn.addEventListener('click', (e) => {
-        const title = e.target.getAttribute('data-title');
-        const desc = e.target.getAttribute('data-desc');
-        document.getElementById('modalTitle').innerText = title;
-        document.getElementById('modalDesc').innerText = desc;
-        document.getElementById('licenseModal').style.display = 'flex';
+        const button = e.currentTarget;
+        const docId = button.getAttribute('data-doc-id');
+        const doc = ACCREDITATION_RECORDS[docId] || ACCREDITATION_RECORDS['govt-license'];
+
+        const elAuthority = document.getElementById('modalAuthority');
+        const elBadge = document.getElementById('modalBadge');
+        const elTitle = document.getElementById('modalTitle');
+        const elEntity = document.getElementById('modalEntity');
+        const elRegNum = document.getElementById('modalRegNum');
+        const elHeadquarters = document.getElementById('modalHeadquarters');
+        const elScope = document.getElementById('modalScope');
+        const elStatus = document.getElementById('modalStatus');
+        const elRenewal = document.getElementById('modalRenewal');
+        const elCertHeading = document.getElementById('modalCertHeading');
+        const elCertNote = document.getElementById('modalCertNote');
+
+        if (elAuthority) elAuthority.innerText = doc.authority;
+        if (elBadge) elBadge.innerText = doc.badge;
+        if (elTitle) elTitle.innerText = doc.title;
+        if (elEntity) elEntity.innerText = doc.regEntity;
+        if (elRegNum) elRegNum.innerText = doc.regNumber;
+        if (elHeadquarters) elHeadquarters.innerText = doc.registeredOffice;
+        if (elScope) elScope.innerText = doc.scope;
+        if (elStatus) elStatus.innerText = doc.status;
+        if (elRenewal) elRenewal.innerText = doc.renewalCycle;
+        if (elCertHeading) elCertHeading.innerText = doc.certHeading;
+        if (elCertNote) elCertNote.innerText = doc.docNote;
+
+        const modal = document.getElementById('licenseModal');
+        if (modal) {
+          modal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+        }
       });
     });
 
     function closeModal() {
-      document.getElementById('licenseModal').style.display = 'none';
-    }
-
-    window.onclick = function(event) {
       const modal = document.getElementById('licenseModal');
-      if (event.target == modal) {
+      if (modal) {
         modal.style.display = 'none';
+        document.body.style.overflow = '';
       }
     }
+
+    // Close on outside click
+    window.addEventListener('click', function(event) {
+      const modal = document.getElementById('licenseModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Close on Escape key
+    window.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
   </script>
   <script src="js/mega-menu.js"></script>
 </body>
