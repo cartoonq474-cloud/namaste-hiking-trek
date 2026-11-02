@@ -100,3 +100,4 @@ if (hasImbalance) {
 const destPath = 'trek/dhaulagiri-circuit-trek/index.html';
 fs.writeFileSync(destPath, fullHtml, 'utf8');
 console.log(`SUCCESS: Successfully wrote ${fullHtml.length} bytes to ${destPath}`);
+

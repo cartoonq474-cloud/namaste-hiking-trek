@@ -23,7 +23,7 @@ function buildDetailsModule() {
     },
     {
       id: "guide-3",
-      cat: "accommodation",
+      cat: "logistics",
       num: "03",
       title: "Expedition Camping Realities: High-Altitude Tents, Sub-Zero Nights & Daily Camp Life",
       content: `Unlike popular teahouse routes in the Annapurna or Everest regions, the central stages of the Dhaulagiri Circuit require self-contained expedition camping for 7+ consecutive nights. From Choriban Khola through Italian Base Camp, Glacier Camp, Dhaulagiri Base Camp, Hidden Valley, and Yak Kharka, there are no permanent lodge facilities.<br><br>
@@ -32,7 +32,7 @@ function buildDetailsModule() {
     },
     {
       id: "guide-4",
-      cat: "food",
+      cat: "logistics",
       num: "04",
       title: "The Expedition Kitchen: High-Altitude Nutrition, Caloric Needs & Camp Meals",
       content: `Maintaining adequate caloric intake is crucial when trekking 6 to 8 hours daily at extreme elevation. High altitude suppresses appetite while drastically accelerating metabolic expenditure. Our experienced expedition cooks and kitchen crew prepare three hot, freshly cooked meals daily using pressurized kerosene and gas stoves in the kitchen tent.<br><br>
@@ -50,7 +50,7 @@ function buildDetailsModule() {
     },
     {
       id: "guide-6",
-      cat: "accommodation",
+      cat: "logistics",
       num: "06",
       title: "Sanitation, Toilet Tents & Personal Hygiene in Remote High Camps",
       content: `In the remote camping sections above Dobang, there are no indoor bathrooms or plumbed plumbing facilities. Our crew erects a dedicated, private toilet tent at every campsite positioned safely away from water sources. The toilet tent features a deep, dug dry pit with clean soil or ashes provided for covering after each use.<br><br>
@@ -68,7 +68,7 @@ function buildDetailsModule() {
     },
     {
       id: "guide-8",
-      cat: "difficulty",
+      cat: "route",
       num: "08",
       title: "Trek Difficulty Breakdown: Strenuous Grade 5 Physical & Glacial Demands",
       content: `The Dhaulagiri Circuit is classified as Strenuous to Very Challenging (Grade 5 Expedition Trek). Unlike teahouse routes with established steps and lodge comforts, this expedition demands continuous endurance over 20 days, including 13 days of strenuous mountain walking and 7+ days living in remote alpine tents.<br><br>
@@ -77,7 +77,7 @@ function buildDetailsModule() {
     },
     {
       id: "guide-9",
-      cat: "difficulty",
+      cat: "health",
       num: "09",
       title: "12-Week Physical Preparation Plan for High-Altitude Mountain Endurance",
       content: `A structured training plan over 12 weeks builds the cardiovascular base, leg strength, and mental endurance required for Dhaulagiri. Your regimen should focus on aerobic conditioning, eccentric quadricep strength for sustained descents, and pack-bearing stamina.<br><br>
@@ -89,7 +89,7 @@ function buildDetailsModule() {
     },
     {
       id: "guide-10",
-      cat: "difficulty",
+      cat: "health",
       num: "10",
       title: "Weekly Mountain Training Schedule: Balancing Cardio, Leg Strength & Recovery",
       content: `To maximize consistency and prevent overuse injuries before departure, follow a balanced weekly training template:<br><br>
@@ -98,109 +98,119 @@ function buildDetailsModule() {
       • <strong>Wednesday:</strong> Lower-body strength training: Bulgarian split squats, step-ups onto 18-inch box, Romanian deadlifts, calf raises, and 10 minutes of core stability.<br>
       • <strong>Thursday:</strong> 60-minute tempo cardio session or swimming to build lung capacity and thoracic endurance.<br>
       • <strong>Friday:</strong> Complete rest, stretching, and foam rolling.<br>
-      • <strong>Saturday:</strong> Long outdoor mountain hike (4 to 7 hours) with an 8 kg loaded backpack on steep, uneven trails.<br>
-      • <strong>Sunday:</strong> 2 to 3-hour easy trail walk focusing on controlled downhill foot placement and balance.`,
-      takeaway: "<strong>Recovery Discipline:</strong> Listen to your body. If persistent knee, Achilles, or lower back pain arises, substitute high-impact jogging with low-impact rowing or swimming."
+      • <strong>Saturday:</strong> Long wilderness hike (4 to 7 hours) on rough outdoor trails wearing your actual trekking boots and carrying a loaded 7 kg pack.<br>
+      • <strong>Sunday:</strong> Light yoga, mobility drills, and active recovery walk.`,
+      takeaway: "<strong>Consistency Over Intensity:</strong> Progressive load building over 3 months builds resilient tendons and ligaments, preventing knee tendonitis and trail fatigue."
     },
     {
       id: "guide-11",
       cat: "health",
       num: "11",
-      title: "Altitude Acclimatization Strategy: Mandatory Rest Days at Italian & Dhaulagiri Base Camps",
-      content: `Ascending into extreme elevation requires careful physiologic acclimatization. The Dhaulagiri Circuit itinerary follows a proven medical staging curve: a gradual 5-day walk up the lower valley from Babiyachaur (970 m) to Dobang (2,520 m), followed by progression to Italian Base Camp (3,660 m).<br><br>
-      Our itinerary incorporates two non-negotiable acclimatization rest days: <strong>Day 11 at Italian Base Camp (3,660 m)</strong> and <strong>Day 14 at Dhaulagiri Base Camp (4,750 m)</strong>. These days allow your red blood cell count to increase, breathing depth to adjust, and resting heart rate to stabilize before ascending toward French Pass (5,360 m). During rest days, your guide leads short active walks to higher ridges before returning to camp to sleep ('climb high, sleep low').`,
-      takeaway: "<strong>Medical Protocol:</strong> Our Sherpa guides take twice-daily pulse oximeter readings (oxygen saturation SpO2 and pulse rate) at breakfast and dinner to track your body's adaptation."
+      title: "Mental Toughness, Weather Uncertainty & Handling Remote Wilderness Isolation",
+      content: `High-altitude wilderness trekking is as much a mental challenge as a physical one. Spending a week without hot showers, cell service, heated common rooms, or modern conveniences in sub-zero camps requires psychological resilience and patience.<br><br>
+      Weather in the Dhaulagiri massif can change rapidly from clear blue skies to blinding snowfall and gale-force wind within hours. Delays and flexible scheduling are normal parts of mountaineering expeditions. Maintaining a positive group mindset, supporting your teammates, trusting your expedition leader's decisions, and finding joy in the raw simplicity of camp life are the hallmarks of successful expedition members.`,
+      takeaway: "<strong>Mindset Principle:</strong> Control what you can control: hydration, pacing, warm layering, and positive attitude. Leave itinerary timing flexibility to your lead Sherpa guide."
     },
     {
       id: "guide-12",
-      cat: "health",
+      cat: "route",
       num: "12",
-      title: "Acute Mountain Sickness (AMS), HAPE & HACE Protocols & Symptom Recognition",
-      content: `Above 3,000 meters, atmospheric pressure drops, providing roughly 50% of sea-level oxygen at 5,000 m. Trekkers must be hyper-vigilant for early symptoms of Acute Mountain Sickness (AMS): persistent throbbing headache, loss of appetite, nausea, dizziness, insomnia, and unusual lethargy. Mild AMS is normal and manageable with rest, hydration, and light analgesics.<br><br>
-      However, severe altitude conditions—High Altitude Pulmonary Edema (HAPE) and High Altitude Cerebral Edema (HACE)—are life-threatening emergencies. Warning signs include severe breathlessness at rest, persistent coughing with pink frothy sputum, rattling in the chest, ataxia (loss of coordination / inability to walk heel-to-toe in a straight line), and confusion. If severe symptoms occur, the golden rule is absolute: <strong>immediate descent to lower altitude</strong>. Our guides carry supplemental medical oxygen cylinders and coordinate satellite emergency evacuation if required.`,
-      takeaway: "<strong>Transparency Rule:</strong> Never hide symptoms from your guide to 'keep up with the group.' Early reporting allows simple remedies before minor symptoms escalate into emergencies."
+      title: "The High Passes: Tactical Timings & Crossing French Pass (5,360m) & Dhampus Pass (5,250m)",
+      content: `Crossing French Pass (5,360 m / 17,585 ft) on Day 15 and Dhampus Pass (5,250 m / 17,224 ft) on Day 16 represents the crux of the circuit. These crossings demand precise tactical timing to ensure safety.<br><br>
+      • <strong>French Pass:</strong> The team wakes at 4:30 AM at Dhaulagiri Base Camp, departs by 5:30 AM under headlamps, ascends the steep lateral moraine and snow slopes onto the crest of the pass by mid-morning, capturing awe-inspiring views of Dhaulagiri I, Tukuche Peak, and the vast Hidden Valley before descending to camp.<br>
+      • <strong>Dhampus Pass:</strong> Departing early from Hidden Valley, the trail ascends gentle snow slopes to the broad saddle of Dhampus Pass. From the pass, magnificent vistas open eastward across the Annapurna massif and Nilgiri, followed by an immense 1,570-meter descent down steep scree trails to Yak Kharka (3,680 m).<br><br>
+      Afternoon winds across both passes frequently reach 40–60 km/h, bringing wind-chill temperatures down to -25°C. Reaching pass summits before 10:30 AM is critical.`,
+      takeaway: "<strong>Alpine Safety Rule:</strong> Early alpine starts beat afternoon cloud build-up and fierce pass winds. Always keep microspikes, windproof mittens, and goggles in your daypack."
     },
     {
       id: "guide-13",
-      cat: "health",
+      cat: "route",
       num: "13",
-      title: "Diamox (Acetazolamide) Guidelines & Personal Wilderness Medical Kit",
-      content: `Diamox (Acetazolamide) is a carbonic anhydrase inhibitor that acidifies the blood, stimulating deeper and more frequent breathing, especially during sleep. It accelerates natural acclimatization but does not mask deteriorating symptoms of severe altitude illness.<br><br>
-      Standard prophylactic dosage is 125 mg to 250 mg taken orally twice daily (morning and evening), typically commenced 24 hours before ascending above 3,000 m (around Dobang or Choriban Khola) and continued until descending past Dhampus Pass. Common harmless side effects include tingling in fingers and toes (paresthesia), increased urination, and altered taste of carbonated beverages. Consult your physician prior to travel (especially if allergic to sulfa-based medications).<br><br>
-      <strong>Essential Personal Medical Kit:</strong> Diamox (30 tablets), Ibuprofen/Paracetamol (pain/headache), Imodium & Ciprofloxacin (gastrointestinal), blister care (moleskin, Compeed, sterile lancets), throat lozenges, rehydration salts (ORS), and broad-spectrum antibiotics.`,
-      takeaway: "<strong>Hydration with Diamox:</strong> Because Diamox is a mild diuretic, you must increase daily fluid consumption by an additional 500ml–1L to prevent dehydration."
+      title: "Glacial Moraine Navigation: Chhonbardan Glacier, Loose Scree & Microspikes Usage",
+      content: `Between Italian Base Camp and French Pass, the route traverses the dynamic Chhonbardan Glacier. Unlike bare ice glaciers, the Chhonbardan is a classic Himalayan debris-covered glacier carpeted in rocky rubble, shifting moraine ridges, ablation valleys, and unstable scree slopes.<br><br>
+      Footing can be slippery and uneven. Trekking poles with carbide tips are mandatory to maintain three points of contact. When traversing moraine troughs, maintain safe distance between trekkers to prevent dislodging loose rocks onto companions below. During spring and late autumn, hard snow and black ice patches can form across the upper glacier; personal traction microspikes or light crampons provide critical grip. Always follow your guide's exact footstep line across moraine ridges.`,
+      takeaway: "<strong>Gear Requirement:</strong> Pack high-quality steel microspikes and sturdy 3-section trekking poles with snow baskets. Never wander onto the glacier alone without guide supervision."
     },
     {
       id: "guide-14",
-      cat: "route",
+      cat: "health",
       num: "14",
-      title: "Crossing French Pass (5,360 m): Pre-Dawn Alpine Ascent, Snowfields & Safety",
-      content: `Crossing French Pass (5,360 m / 17,585 ft) on Day 15 is the physical and emotional climax of the Dhaulagiri Circuit. The day begins at 4:00 AM with hot porridge and tea. Leaving Dhaulagiri Base Camp with headlamps illuminated, the trail leaves the moraine and climbs steadily up steep shale, gravel, and snow slopes.<br><br>
-      Pacing is vital: take short, rhythmic steps, synchronizing one breath per step. As the sun rises over the Himalayas, the sheer north face of Dhaulagiri I glows pink and gold. Reaching the crest at 5,360 m marked by prayer flags, you stand between the Dhaulagiri massif and Mukut Himal, with views stretching north toward Upper Mustang and Dolpo. The descent on the eastern side into Hidden Valley involves traversing snowfields and moraine benches where microspikes or crampons provide essential security.`,
-      takeaway: "<strong>Alpine Start:</strong> Crossing early avoids softening snow and high afternoon ridge winds. Protect your eyes with Category 4 sunglasses to avoid debilitating snow blindness."
+      title: "High-Altitude Physiology: Acclimatization Staging, Oximeter Tracking & AMS Symptoms",
+      content: `At French Pass (5,360 m), effective oxygen availability drops to approximately 51% of sea-level values. Gradual acclimatization is non-negotiable. Our 20-day itinerary incorporates two scheduled acclimatization rest days: Day 11 at Italian Base Camp (3,660 m) and Day 14 at Dhaulagiri Base Camp (4,750 m).<br><br>
+      Your lead guide conducts daily medical check-ins every morning and evening, recording your resting pulse and blood oxygen saturation (SpO2) using a pulse oximeter. Be vigilant for early Acute Mountain Sickness (AMS) symptoms: persistent headache, nausea, dizziness, loss of appetite, and insomnia. Communicate all symptoms immediately to your guide. Mild AMS is managed with rest, hydration, and prophylactic Acetazolamide (Diamox 125–250 mg twice daily).`,
+      takeaway: "<strong>Golden Rule of Altitude:</strong> Never ascend with symptoms of altitude sickness. If symptoms worsen despite rest and medication, immediate descent to lower altitude is mandatory."
     },
     {
       id: "guide-15",
-      cat: "route",
+      cat: "health",
       num: "15",
-      title: "Hidden Valley Survival (5,200 m): Camping in Nepal's Most Remote High Basin",
-      content: `Hidden Valley is a vast, isolated alpine desert basin lying between French Pass and Dhampus Pass at an elevation of approximately 5,000 to 5,200 m. Enclosed by glaciated peaks, the valley is completely barren and uninhabited. It is one of the highest scheduled overnight camps on any trekking circuit in the Himalayas.<br><br>
-      Camping here is an authentic wilderness experience. The wind can be ferocious, and nighttime temperatures routinely drop between -15°C and -22°C. Our team anchors the tents with heavy rocks in addition to snow stakes. Drink plenty of hot soup in the dining tent and change into completely dry thermal base layers before getting into your sleeping bag. Hidden Valley provides an unforgettable night under some of the clearest, darkest starry skies on the planet.`,
-      takeaway: "<strong>Survival Strategy:</strong> Keep all water bottles, boots, headlamps, and wet wipes inside your sleeping bag to prevent them from freezing rock-solid by morning."
+      title: "Emergency Evacuation Protocols: Wilderness First Aid, Medical Oxygen & Helicopter Rescue",
+      content: `In the remote gorges and glaciated valleys of Dhaulagiri, rapid medical evacuation requires robust protocols. Our lead guides are certified in Wilderness First Responder (WFR) emergency medicine and carry a comprehensive expedition medical trauma kit.<br><br>
+      • <strong>Medical Oxygen:</strong> We carry pressurized bottled medical oxygen with non-rebreather masks for high-altitude pulmonary edema (HAPE) or cerebral edema (HACE) stabilization.<br>
+      • <strong>Satellite Communications:</strong> A Garmin InReach or Iridium satellite device accompanies every group, maintaining direct 24/7 contact with our Kathmandu operations base and emergency rescue dispatchers.<br>
+      • <strong>Helicopter Rescue:</strong> In critical medical emergencies, our operations team coordinates high-altitude helicopter rescue dispatch. Landing zones exist at Italian Base Camp, Dhaulagiri Base Camp, Hidden Valley, and Yak Kharka, weather permitting.`,
+      takeaway: "<strong>Insurance Requirement:</strong> You must possess comprehensive travel insurance explicitly covering trekking up to 6,000 m and emergency helicopter evacuation with direct cashless payment guarantees."
     },
     {
       id: "guide-16",
       cat: "route",
       num: "16",
-      title: "Dhampus Pass (5,250 m) & The Demanding 1,550 m Descent to Yak Kharka",
-      content: `Day 16 presents the second formidable high pass of the expedition: Dhampus Pass (commonly reported around 5,200 to 5,250 m). Climbing gently out of Hidden Valley across snowy slopes, reaching Dhampus Pass marks the exit from the Dhaulagiri wilderness into the Annapurna/Mustang territory.<br><br>
-      From the pass, an extraordinary panorama reveals Annapurna I (8,091 m), Annapurna South, Nilgiri, Tilicho Peak, and the vast brown desert hills of Mustang across the Kali Gandaki Gorge. What follows is a grueling, sustained descent of 1,570 vertical meters down steep, rocky scree slopes to Yak Kharka (3,680 m). This descent places heavy stress on knees, quadriceps, and toes. Use two trekking poles, loosen boot laces slightly across the forefoot if toes pinch, and take deliberate, controlled steps down the zigzagging switchbacks.`,
-      takeaway: "<strong>Descent Technique:</strong> Shorten your stride and keep your center of gravity slightly forward over your knees. Descending 1,550 m on tired legs requires high concentration."
+      title: "Weather Patterns & Best Climbing Windows: Autumn vs Spring Climatic Realities",
+      content: `The Dhaulagiri massif generates complex microclimates. Choosing the optimal seasonal window is critical for pass crossing safety and mountain visibility.<br><br>
+      • <strong>Autumn (Late September to Late November):</strong> The premier expedition season. Post-monsoon high-pressure systems bring crystal-clear visibility, stable high-pressure windows, and dry moraine trails. October daytime temperatures reach 10°C to 15°C in lower valleys and -5°C to -18°C in high camps. November is colder but exceptionally clear.<br>
+      • <strong>Spring (April to Late May):</strong> Warmer temperatures and vibrant blooming rhododendron forests in the lower Myagdi Valley. Upper moraines feature remaining winter snowpack, making microspikes essential. Afternoon cloud convection and snow flurries are more frequent than in autumn.<br>
+      • <strong>Winter (Dec–Feb) & Monsoon (Jun–Aug):</strong> Strictly not recommended. Winter brings impassable deep snowdrifts on French Pass and -30°C temps; monsoon brings dangerous landslides in the Myagdi gorge and leech-infested trails.`,
+      takeaway: "<strong>Peak Success Window:</strong> Mid-October through early November offers the highest statistical probability of clear pass crossings and stable weather."
     },
     {
       id: "guide-17",
-      cat: "logistics",
+      cat: "permits",
       num: "17",
-      title: "Jomsom Mountain Flight Realities, Weather Cancellations & Overland Contingencies",
-      content: `On Day 18, our itinerary schedules the short, dramatic mountain flight from Jomsom to Pokhara (approx. 20 minutes) soaring through the Kali Gandaki Gorge. However, Jomsom Airport is famous for strong midday thermal valley winds and morning fog in the lower gorge, which can cause flight delays or cancellations.<br><br>
-      All flights operate exclusively in the early morning between 6:30 AM and 10:00 AM before the valley winds pick up. If weather grounds aircraft, Namaste Hiking Trek immediately initiates our proven overland contingency plan: securing private 4WD Scorpio Jeeps to drive from Jomsom through Tatopani and Beni to Pokhara (approx. 6–8 hours). Our built-in buffer on Days 18 and 19 ensures that international flight departures from Kathmandu are safely protected.`,
-      takeaway: "<strong>Buffer Philosophy:</strong> Never schedule your international departure flight on the same day as your Jomsom-Pokhara flight. Our 20-day plan includes built-in safety margins."
+      title: "Required Permits, National Park Regulations & Checkpoints: ACAP & TIMS",
+      content: `The Dhaulagiri Circuit crosses administrative boundaries requiring two primary trekking permits. All paperwork and fee processing are handled in advance by Namaste Hiking Trek in Kathmandu:<br><br>
+      1. <strong>Annapurna Conservation Area Project (ACAP) Permit:</strong> Required as the circuit crosses Dhampus Pass into the Mustang / Kali Gandaki conservation zone (NPR 3,000 / approx. $25 USD).<br>
+      2. <strong>Trekkers' Information Management System (TIMS) Card:</strong> Mandatory national tracking card administered by the Trekking Agencies Association of Nepal (TAAN) and Nepal Tourism Board (NPR 2,000 / approx. $17 USD).<br><br>
+      Permits are inspected at police and national park checkpoints in Beni, Babiyachaur, and Jomsom. Trekkers must carry 4 passport-sized photos and their physical passport during transit.`,
+      takeaway: "<strong>Hassle-Free Logistics:</strong> All permit fees, local taxes, and government royalties are fully inclusive in your Namaste Hiking Trek expedition package."
     },
     {
       id: "guide-18",
       cat: "permits",
       num: "18",
-      title: "Permits & Regulatory Checkpoints: ACAP, TIMS & Local Myagdi Fees",
-      content: `The Dhaulagiri Circuit passes through both Myagdi district and the Annapurna Conservation Area (as the route descends past Dhampus Pass toward Jomsom and Mustang). Three official permits and registration documents are mandatory:<br><br>
-      1. <strong>Annapurna Conservation Area Project (ACAP) Permit:</strong> Official entry permit issued by the National Trust for Nature Conservation (NTNC). Fee: approx. 3,000 NPR (approx. $25 USD) for foreign nationals.<br>
-      2. <strong>TIMS Card (Trekkers' Information Management System):</strong> Mandatory tracking permit issued by TAAN/Nepal Tourism Board. Fee: 2,000 NPR (approx. $17 USD).<br>
-      3. <strong>Myagdi Rural Municipality Entry Permit:</strong> Local government fee registered at checkpoints in Beni and Dharapani.<br><br>
-      Namaste Hiking Trek manages all permit applications, paperwork, and checkpoint stamping in advance. You only need to supply 4 passport-sized photographs and a clear scan of your passport biodata page upon booking.`,
-      takeaway: "<strong>Checkpoint Protocols:</strong> Your lead guide carries the official permit dossier. Original passports should remain accessible in your daypack during transit checkpoints."
+      title: "Travel Insurance Compliance: Verifying 6,000m Coverage & Evacuation Clauses",
+      content: `Standard international travel insurance policies almost universally exclude trekking above 3,000 m or categorize pass crossings over 5,000 m as 'extreme mountaineering'. Participating in the Dhaulagiri Circuit without compliant insurance is strictly prohibited.<br><br>
+      Before departure, verify that your policy explicitly includes:<br>
+      • Medical expenses and hospitalization up to at least $100,000 USD.<br>
+      • Emergency helicopter evacuation and search-and-rescue coverage up to 6,000 m (19,685 ft).<br>
+      • Direct-billing / cashless evacuation guarantee with Kathmandu emergency medical providers.<br>
+      • Trip cancellation and flight interruption protection covering domestic Jomsom–Pokhara flight weather delays.<br><br>
+      Recommended global providers with proven Nepal track records include Global Rescue, World Nomads (Explorer plan), Ripcord Rescue Travel Insurance, and Allianz Global Assistance.`,
+      takeaway: "<strong>Verification Step:</strong> Provide a copy of your insurance policy certificate and 24-hour emergency medical assistance phone number to our office during the Kathmandu trip briefing."
     },
     {
       id: "guide-19",
-      cat: "weather",
+      cat: "logistics",
       num: "19",
-      title: "Seasonal Weather Analysis: Autumn Crystal Skies vs. Spring Snowmelt",
-      content: `Choosing the right season is paramount for completing the high passes of Dhaulagiri safely:<br><br>
-      <strong>Autumn (Late September to Late November):</strong> The undisputed gold-standard climbing season. Post-monsoon atmospheric high pressure sweeps away dust and clouds, delivering crystal-clear skies, razor-sharp mountain panoramas, and minimal precipitation. Daytime temperatures in lower valleys reach 18°C–22°C; nights at base camps drop to -10°C to -18°C. Snow on French Pass is generally compact and stable.<br><br>
-      <strong>Spring (April to Late May):</strong> The pre-monsoon spring season brings warmer ambient temperatures and vibrant blooming rhododendron and magnolia forests throughout the lower Myagdi Valley. Days are longer and warmer. However, high passes often retain winter snowpacks requiring careful moraine route-finding. Afternoons can see convective cloud buildup with light snowfall at high camps.<br><br>
-      <strong>Monsoon (June–August) & Winter (December–February):</strong> Not recommended. Monsoon brings severe mud, leeches, and landslides in the Myagdi gorge; winter brings impassable 2-meter snowdrifts and sub -30°C blizzard conditions on French Pass.`,
-      takeaway: "<strong>Best Month:</strong> October offers the highest statistical probability of clear weather, firm snow conditions on French Pass, and optimal flight operations at Jomsom."
+      title: "Expedition Gear Selection: -20°C Sleeping Bags, Thermal Boots & Daypack Setup",
+      content: `High-altitude camping requires specialized personal gear engineered for sub-zero mountain environments. Substandard gear risks frostbite and hypothermia.<br><br>
+      • <strong>Sleeping System:</strong> A 4-season down sleeping bag with a comfort rating of -15°C to -20°C (comfort limit -25°C) filled with 800+ fill-power water-resistant down. We provide supplementary insulated sleeping pads.<br>
+      • <strong>Footwear:</strong> Sturdy, waterproof B1 or B2-rated mountaineering trekking boots with rigid Vibram soles and ankle support. Boots must be thoroughly broken in before arriving in Nepal to avoid debilitating blisters.<br>
+      • <strong>Layering Architecture:</strong> Merino wool thermal base layers (top and bottom, 200–250 g/m²); mid-layer fleece or Polartec jacket; heavy expedition down parka (800+ fill, box-wall baffled construction); and waterproof/windproof Gore-Tex hard shell jacket and pants.<br>
+      • <strong>Gloves & Headwear:</strong> Lightweight liner gloves, heavy windproof ski gloves, insulated down mittens for pass days, thermal beanie, and UV400 category 3 or 4 glacier glasses.`,
+      takeaway: "<strong>Gear Rental in Kathmandu:</strong> High-end expedition down jackets and -20°C sleeping bags can be rented in Kathmandu through our team for just $1–$2 USD per day."
     },
     {
       id: "guide-20",
-      cat: "money",
+      cat: "logistics",
       num: "20",
-      title: "Trail Cash Management, Budgeting & Complete ATM Unavailability from Beni to Jomsom",
-      content: `There are absolutely zero ATM facilities, bank branches, or credit card terminals anywhere along the trail between Beni (Day 3) and Jomsom (Day 17). Trekkers must withdraw all necessary Nepali Rupees (NPR) in Kathmandu or Beni before departing into the mountains.<br><br>
-      While your package includes all standard meals, camping accommodation, permits, and transportation, you will need cash for personal incidental expenses at the lower teahouses: hot showers ($3–$5), battery charging ($2–$4), Wi-Fi cards ($3–$5), snacks, soft drinks/beer, and tipping your support crew. We recommend budgeting approximately <strong>25,000 to 35,000 NPR (approx. $190 to $270 USD)</strong> in small denomination notes (100, 500, 1000 NPR) carried securely in a waterproof neck pouch.`,
-      takeaway: "<strong>ATM Advisory:</strong> Kathmandu ATMs occasionally run out of cash or reject foreign cards. Withdraw funds 24 hours prior to road departure."
+      title: "The Jomsom Return: Mountain Flights to Pokhara, Weather Delays & Kali Gandaki Road",
+      content: `On Day 18, the itinerary schedules a scenic morning flight from Jomsom Airport (2,720 m) through the deep Kali Gandaki gorge between Dhaulagiri and Annapurna to Pokhara (approx. 20 minutes). This thrilling mountain flight provides sensational aerial views of Nilgiri, Dhaulagiri, and Annapurna South.<br><br>
+      Jomsom Airport is famous for strong thermal valley winds that build up rapidly by late morning. Consequently, all flights operate strictly between 6:30 AM and 10:30 AM. If morning flights are cancelled due to low cloud or gale-force winds in the Kali Gandaki, our ground operations team immediately arranges private 4WD overland jeep transfer down the Beni-Jomsom road corridor to Pokhara (approx. 6–8 hours). Having built-in contingency time in Kathmandu before international departures is essential.`,
+      takeaway: "<strong>Contingency Buffer:</strong> Never schedule your international departure flight home on the same day as your Jomsom–Pokhara flight. Day 19 road transit to Kathmandu provides this vital safety cushion."
     },
     {
       id: "guide-21",
-      cat: "porters",
+      cat: "permits",
       num: "21",
       title: "Ethical Porter Welfare, IPPG Standards & Fair Tipping Culture",
       content: `The porters and kitchen crew are the true heroes of the Dhaulagiri Circuit. Carrying expedition tents, cooking stoves, fresh vegetables, and duffel bags through freezing moraines requires exceptional endurance and dedication. Namaste Hiking Trek strictly enforces International Porter Protection Group (IPPG) ethical standards:<br><br>
@@ -214,11 +224,11 @@ function buildDetailsModule() {
   ];
 
   let cardsHtml = '';
-  guides.forEach((g, idx) => {
+  guides.forEach((g) => {
     cardsHtml += `
               <!-- Guide Card ${g.num} -->
-              <div class="detail-accordion-card" data-category="${g.cat}" id="${g.id}">
-                <div class="detail-accordion-header" onclick="toggleDetailCard(this)">
+              <div class="detail-accordion-card" id="detail-card-${g.num}" data-detail-id="${g.num}" data-guide-category="${g.cat}">
+                <div class="detail-accordion-header">
                   <div class="detail-accordion-header-left">
                     <div class="detail-icon-container">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
@@ -246,7 +256,7 @@ function buildDetailsModule() {
 `;
   });
 
-  const code = `// Module 8: Section 6 - Read Before You Book (21 Canonical Guides for Dhaulagiri Circuit Trek)
+  const fullContent = `// Module 8: Section 6 - Read Before You Book (21 Canonical Guides for Dhaulagiri Circuit Trek)
 function getDetailsSection() {
   return \`
         <!-- Section 6: Read Before You Book -->
@@ -284,7 +294,7 @@ function getDetailsSection() {
 
               <!-- Global Toggle Button -->
               <div style="display: flex; gap: 10px;">
-                <button type="button" id="toggle-all-guides-btn" class="btn btn-secondary btn-sm" style="font-size: 0.82rem; padding: 6px 14px; border-radius: 6px; cursor: pointer;">Expand All Guides</button>
+                <button type="button" id="guidesToggleAllBtn" class="btn btn-secondary btn-sm" style="font-size: 0.82rem; padding: 6px 14px; border-radius: 6px; cursor: pointer;"><span>Expand All Guides</span></button>
               </div>
             </div>
 
@@ -292,25 +302,25 @@ function getDetailsSection() {
             <div style="margin-bottom: 20px; display: flex; flex-direction: column; gap: 12px;">
               <!-- Live Search Input -->
               <div style="position: relative;">
-                <input type="text" id="guide-search-input" placeholder="Search guides by keyword (e.g., French Pass, Diamox, camping, flights, porters)..." style="width: 100%; padding: 12px 16px 12px 42px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.92rem; outline: none; transition: border-color 0.2s;" onkeyup="filterGuidesByKeyword(this.value)">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%);"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="guideSearchInput" class="guide-search-input" placeholder="Search guides by keyword (e.g., French Pass, Diamox, camping, flights, porters)..." style="width: 100%; padding: 12px 42px 12px 42px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 0.92rem; outline: none; transition: border-color 0.2s;">
+                <button type="button" id="guideSearchClearBtn" style="display: none; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 1.1rem; color: #94a3b8; cursor: pointer; padding: 4px;" aria-label="Clear search">✕</button>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); pointer-events: none;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
               </div>
 
               <!-- Filter Pills -->
               <div id="guide-filter-pills" style="display: flex; gap: 8px; flex-wrap: wrap;">
-                <button type="button" class="guide-filter-pill active" data-filter="all" onclick="filterGuidesByCategory('all', this)" style="padding: 5px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; cursor: pointer; border: 1px solid var(--color-copper-orange); background: var(--color-copper-orange); color: #fff;">All 21 Guides</button>
-                <button type="button" class="guide-filter-pill" data-filter="route" onclick="filterGuidesByCategory('route', this)" style="padding: 5px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; cursor: pointer; border: 1px solid #cbd5e1; background: #fff; color: #475569;">Route &amp; Passes</button>
-                <button type="button" class="guide-filter-pill" data-filter="health" onclick="filterGuidesByCategory('health', this)" style="padding: 5px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; cursor: pointer; border: 1px solid #cbd5e1; background: #fff; color: #475569;">Altitude &amp; Safety</button>
-                <button type="button" class="guide-filter-pill" data-filter="accommodation" onclick="filterGuidesByCategory('accommodation', this)" style="padding: 5px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; cursor: pointer; border: 1px solid #cbd5e1; background: #fff; color: #475569;">Camping &amp; Lodges</button>
-                <button type="button" class="guide-filter-pill" data-filter="difficulty" onclick="filterGuidesByCategory('difficulty', this)" style="padding: 5px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; cursor: pointer; border: 1px solid #cbd5e1; background: #fff; color: #475569;">Fitness &amp; Training</button>
-                <button type="button" class="guide-filter-pill" data-filter="logistics" onclick="filterGuidesByCategory('logistics', this)" style="padding: 5px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; cursor: pointer; border: 1px solid #cbd5e1; background: #fff; color: #475569;">Logistics &amp; Flights</button>
+                <button type="button" class="guide-pill-btn active" data-filter="all" aria-selected="true" style="padding: 6px 14px; border-radius: 20px; font-size: 0.84rem; font-weight: 600; cursor: pointer; border: 1px solid var(--color-copper-orange); background: var(--color-copper-orange); color: #fff;">All 21 Guides</button>
+                <button type="button" class="guide-pill-btn" data-filter="route" aria-selected="false" style="padding: 6px 14px; border-radius: 20px; font-size: 0.84rem; font-weight: 600; cursor: pointer; border: 1px solid #cbd5e1; background: #fff; color: #475569;">Route &amp; Passes</button>
+                <button type="button" class="guide-pill-btn" data-filter="health" aria-selected="false" style="padding: 6px 14px; border-radius: 20px; font-size: 0.84rem; font-weight: 600; cursor: pointer; border: 1px solid #cbd5e1; background: #fff; color: #475569;">Altitude &amp; Safety</button>
+                <button type="button" class="guide-pill-btn" data-filter="logistics" aria-selected="false" style="padding: 6px 14px; border-radius: 20px; font-size: 0.84rem; font-weight: 600; cursor: pointer; border: 1px solid #cbd5e1; background: #fff; color: #475569;">Logistics &amp; Camping</button>
+                <button type="button" class="guide-pill-btn" data-filter="permits" aria-selected="false" style="padding: 6px 14px; border-radius: 20px; font-size: 0.84rem; font-weight: 600; cursor: pointer; border: 1px solid #cbd5e1; background: #fff; color: #475569;">Permits &amp; Prep</button>
               </div>
             </div>
 
             <!-- 21 Accordion Cards -->
-            <div class="detail-accordion-list" style="display: flex; flex-direction: column; gap: 12px;">
-${cardsHtml}
-            </div>
+            <div id="detailsAccordionWrapper" class="guides-accordion-container detail-accordion-list" style="display: flex; flex-direction: column; gap: 12px;">` +
+cardsHtml +
+`            </div>
 
           </div>
         </section>
@@ -320,7 +330,7 @@ ${cardsHtml}
 module.exports = { getDetailsSection };
 `;
 
-  fs.writeFileSync('scratch/dhaulagiri_builder/mod8_details.js', code, 'utf8');
+  fs.writeFileSync('scratch/dhaulagiri_builder/mod8_details.js', fullContent, 'utf8');
   console.log('Successfully wrote scratch/dhaulagiri_builder/mod8_details.js');
 }
 

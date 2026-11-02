@@ -27,8 +27,8 @@ function getSidebarAndFooter() {
               </div>
               <div id="sidebar-gd-table" class="group-discount-table" style="display: none; margin-bottom: 18px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; font-size: 0.82rem;">
                 <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E2E8F0; color: #64748B;">
-                  <span>1 Person</span>
-                  <strong style="color: #0F172A;">$890</strong>
+                  <span>1 Person (Solo Private)</span>
+                  <strong style="color: #0F172A;">$2,499</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E2E8F0; color: #64748B;">
                   <span>2 - 4 Persons</span>
@@ -36,15 +36,15 @@ function getSidebarAndFooter() {
                 </div>
                 <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E2E8F0; color: #64748B;">
                   <span>5 - 8 Persons</span>
-                  <strong style="color: #0F172A;">$749 / person</strong>
+                  <strong style="color: #0F172A;">$1,899 / person</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #E2E8F0; color: #64748B;">
                   <span>9 - 12 Persons</span>
-                  <strong style="color: #0F172A;">$1,720 / person</strong>
+                  <strong style="color: #0F172A;">$1,799 / person</strong>
                 </div>
                 <div style="display: flex; justify-content: space-between; padding: 4px 0; color: #64748B;">
                   <span>13+ Persons</span>
-                  <strong style="color: #008060;">$649 / person</strong>
+                  <strong style="color: #008060;">$1,699 / person</strong>
                 </div>
               </div>
 
@@ -118,60 +118,105 @@ function getSidebarAndFooter() {
               <h3 class="yml-card-title">Everest Base Camp Trek</h3>
               <div class="yml-card-rating">
                 <span class="yml-stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
-                <span class="yml-rating-text">5.0 · 169 reviews</span>
+                <span class="yml-score">5.0</span>
+                <span class="yml-count">(124 reviews)</span>
+              </div>
+              <div class="yml-card-meta">
+                <span class="yml-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  14 days
+                </span>
+                <span class="yml-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l7 19-7-4-7 4 7-19z"/></svg>
+                  5,364 m
+                </span>
+                <span class="yml-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Challenging
+                </span>
               </div>
               <div class="yml-card-footer">
-                <div class="yml-card-price">
-                  <span class="yml-price-label">Starting from</span>
-                  <span class="yml-price-value">USD <strong>1299</strong></span>
+                <div>
+                  <span class="yml-from">FROM</span>
+                  <span class="yml-price">$1,399</span>
                 </div>
-                <span class="yml-view-trip-btn">View Trip →</span>
+                <span class="yml-explore-link">Explore Trip &rarr;</span>
               </div>
             </div>
           </a>
 
-          <!-- Card 2: Langtang Gosaikunda Trek -->
-          <a href="../langtang-gosaikunda-trek/" class="yml-card">
+          <!-- Card 2: Annapurna Circuit Trek -->
+          <a href="../annapurna-circuit-trek/" class="yml-card">
             <div class="yml-card-image">
-              <img src="../../images/treks/langtang-gosaikunda/langtang-gosaikunda-sacred-alpine-lake-panoramic-view-01.jpg" alt="Langtang Gosaikunda Trek" loading="lazy">
-              <div class="yml-card-overlay"></div>
-              <span class="yml-card-badge">Langtang Region</span>
-            </div>
-            <div class="yml-card-body">
-              <h3 class="yml-card-title">Langtang Gosaikunda Trek</h3>
-              <div class="yml-card-rating">
-                <span class="yml-stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
-                <span class="yml-rating-text">5.0 · 84 reviews</span>
-              </div>
-              <div class="yml-card-footer">
-                <div class="yml-card-price">
-                  <span class="yml-price-label">Starting from</span>
-                  <span class="yml-price-value">USD <strong>899</strong></span>
-                </div>
-                <span class="yml-view-trip-btn">View Trip →</span>
-              </div>
-            </div>
-          </a>
-
-          <!-- Card 3: Annapurna Base Camp Trek -->
-          <a href="../annapurna-base-camp-trek/" class="yml-card">
-            <div class="yml-card-image">
-              <img src="../../images/similar-trek-tengboche.png" alt="Annapurna Base Camp Trek" loading="lazy">
+              <img src="../../images/treks/annapurna-circuit/annapurna-circuit-thorong-la-pass-landscape-1.jpg" alt="Annapurna Circuit Trek" loading="lazy">
               <div class="yml-card-overlay"></div>
               <span class="yml-card-badge">Annapurna Region</span>
             </div>
             <div class="yml-card-body">
-              <h3 class="yml-card-title">Annapurna Base Camp Trek</h3>
+              <h3 class="yml-card-title">Annapurna Circuit Trek</h3>
               <div class="yml-card-rating">
                 <span class="yml-stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
-                <span class="yml-rating-text">5.0 · 112 reviews</span>
+                <span class="yml-score">5.0</span>
+                <span class="yml-count">(98 reviews)</span>
+              </div>
+              <div class="yml-card-meta">
+                <span class="yml-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  16 days
+                </span>
+                <span class="yml-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l7 19-7-4-7 4 7-19z"/></svg>
+                  5,416 m
+                </span>
+                <span class="yml-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Challenging
+                </span>
               </div>
               <div class="yml-card-footer">
-                <div class="yml-card-price">
-                  <span class="yml-price-label">Starting from</span>
-                  <span class="yml-price-value">USD <strong>849</strong></span>
+                <div>
+                  <span class="yml-from">FROM</span>
+                  <span class="yml-price">$1,199</span>
                 </div>
-                <span class="yml-view-trip-btn">View Trip →</span>
+                <span class="yml-explore-link">Explore Trip &rarr;</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 3: Manaslu Circuit Trek -->
+          <a href="../manaslu-circuit-trek/" class="yml-card">
+            <div class="yml-card-image">
+              <img src="../../images/treks/manaslu-circuit/manaslu-circuit-larkya-la-pass-mountain-panorama-1.jpg" alt="Manaslu Circuit Trek" loading="lazy">
+              <div class="yml-card-overlay"></div>
+              <span class="yml-card-badge">Manaslu Region</span>
+            </div>
+            <div class="yml-card-body">
+              <h3 class="yml-card-title">Manaslu Circuit Trek</h3>
+              <div class="yml-card-rating">
+                <span class="yml-stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#10b981" stroke="none" style="display:inline-block; vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                <span class="yml-score">4.9</span>
+                <span class="yml-count">(76 reviews)</span>
+              </div>
+              <div class="yml-card-meta">
+                <span class="yml-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  15 days
+                </span>
+                <span class="yml-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l7 19-7-4-7 4 7-19z"/></svg>
+                  5,106 m
+                </span>
+                <span class="yml-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Strenuous
+                </span>
+              </div>
+              <div class="yml-card-footer">
+                <div>
+                  <span class="yml-from">FROM</span>
+                  <span class="yml-price">$1,299</span>
+                </div>
+                <span class="yml-explore-link">Explore Trip &rarr;</span>
               </div>
             </div>
           </a>
@@ -182,11 +227,38 @@ function getSidebarAndFooter() {
     </article>
   </main>
 
+  <!-- Video Review Modal -->
+  <div id="video-review-modal" class="video-modal-backdrop" role="dialog" aria-modal="true" aria-label="Video Review Modal">
+    <div class="video-modal-card">
+      <button class="video-modal-close" id="close-video-modal" aria-label="Close Video Review">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="video-modal-media">
+        <iframe id="video-modal-iframe" src="" title="Customer Video Review" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video-modal-details">
+        <div class="video-modal-meta">
+          <span class="video-modal-author" id="video-modal-author">Climber Review</span>
+          <span class="video-modal-country" id="video-modal-country">United Kingdom</span>
+          <span class="video-modal-tag" id="video-modal-tag">Dhaulagiri Circuit Trek</span>
+        </div>
+        <p class="video-modal-quote" id="video-modal-quote">
+          "Crossing French Pass and waking up beneath the colossal ice wall of Dhaulagiri I was the greatest mountain experience of my life. The Namaste Hiking Trek kitchen crew, hot soups, and guides were exceptional."
+        </p>
+      </div>
+    </div>
+  </div>
+
   <!-- Inquiry Modal -->
-  <div id="inquiry-modal" class="modal-overlay">
-    <div class="modal-card">
-      <button class="modal-close" id="modal-close-btn">&times;</button>
-      <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Inquire About Dhaulagiri Circuit Trek</h3>
+  <div id="inquiry-modal" class="inquiry-modal-backdrop" role="dialog" aria-modal="true" aria-label="Custom Trip Inquiry Modal">
+    <div class="inquiry-modal-card">
+      <button class="inquiry-modal-close" id="close-inquiry-modal" aria-label="Close Inquiry Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="inquiry-modal-header">
+        <span class="pill pill-copper" style="margin-bottom: 6px;">CUSTOM EXPEDITION INQUIRY</span>
+        <h3 style="font-size: 1.5rem; color: var(--color-primary-navy); margin-bottom: 4px;">Customize Your Dhaulagiri Circuit Trek</h3>
+      </div>
       <p style="font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 20px;">
         Fill out this quick form and our lead Himalayan guide will respond within 4 hours.
       </p>
@@ -223,7 +295,7 @@ function getSidebarAndFooter() {
           <ul class="footer-nav-links">
             <li><a href="../../index.html">Home</a></li>
             <li><a href="../../nepal-trekking-packages/">All Trek Packages</a></li>
-            <li><a href="../../trek/pikey-peak-trek/">Dhaulagiri Circuit Trek</a></li>
+            <li><a href="../../trek/dhaulagiri-circuit-trek/">Dhaulagiri Circuit Trek</a></li>
             <li><a href="../../trek/everest-base-camp-trek/">Everest Base Camp</a></li>
             <li><a href="../../trekking-regions-nepal/">Trekking Regions</a></li>
             <li><a href="../../custom-plan.html">Tailor-Made Trip</a></li>
@@ -299,21 +371,43 @@ function getSidebarAndFooter() {
   <script src="../../js/mega-menu.js"></script>
 
   <script>
+    // Hero Summary Learn More Toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('dhaulagiri-toggle-btn');
+      const moreText = document.getElementById('dhaulagiri-more-text');
+      const toggleLabel = document.getElementById('dhaulagiri-toggle-label');
+      const toggleIcon = document.getElementById('dhaulagiri-toggle-icon');
+      if (toggleBtn && moreText) {
+        toggleBtn.addEventListener('click', () => {
+          const isExpanded = moreText.style.display !== 'none';
+          if (isExpanded) {
+            moreText.style.display = 'none';
+            toggleLabel.textContent = 'Learn More';
+            if (toggleIcon) toggleIcon.style.transform = 'rotate(0deg)';
+          } else {
+            moreText.style.display = 'inline';
+            toggleLabel.textContent = 'Show Less';
+            if (toggleIcon) toggleIcon.style.transform = 'rotate(180deg)';
+          }
+        });
+      }
+    });
+
     // Sidebar Guest Counter & Price Recalculator
     let currentGuests = 2;
     const tieredPrices = {
-      1: 890,
+      1: 2499,
       2: 1999,
-      3: 1999,
-      4: 1999,
-      5: 749,
-      6: 749,
-      7: 749,
-      8: 749,
-      9: 699,
-      10: 699,
-      11: 699,
-      12: 699
+      3: 1899,
+      4: 1899,
+      5: 1799,
+      6: 1799,
+      7: 1799,
+      8: 1799,
+      9: 1699,
+      10: 1699,
+      11: 1699,
+      12: 1699
     };
 
     function changeSidebarGuests(delta) {
@@ -324,7 +418,7 @@ function getSidebarAndFooter() {
         countEl.textContent = currentGuests + (currentGuests === 1 ? ' Traveler' : ' Travelers');
       }
       if (priceEl) {
-        let perPerson = 649;
+        let perPerson = 1699;
         if (currentGuests <= 12) perPerson = tieredPrices[currentGuests] || 1999;
         priceEl.textContent = '$' + perPerson;
       }

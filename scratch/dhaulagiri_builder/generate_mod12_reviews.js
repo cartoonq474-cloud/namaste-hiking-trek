@@ -15,3 +15,4 @@ let dhReviews = pikeyReviews
 
 fs.writeFileSync('scratch/dhaulagiri_builder/mod12_reviews.js', dhReviews, 'utf8');
 console.log('Successfully wrote scratch/dhaulagiri_builder/mod12_reviews.js');
+

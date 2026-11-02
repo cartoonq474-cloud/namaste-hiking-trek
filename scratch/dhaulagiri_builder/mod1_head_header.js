@@ -139,3 +139,4 @@ function getHeadAndHeader() {
 }
 
 module.exports = { getHeadAndHeader };
+

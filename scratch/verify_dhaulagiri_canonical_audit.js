@@ -68,9 +68,9 @@ const checks = [
   // 9. Section 6 Read Before You Book
   { name: 'Read before you book title for Dhaulagiri', pass: html.includes('Read before you book, Dhaulagiri Circuit Trek') },
   { name: 'SVG progress ring & counter (21 guides)', pass: html.includes('details-progress-ring-bar') && html.includes('21 guides completed') },
-  { name: 'Search input #guide-search-input', pass: html.includes('id="guide-search-input"') },
+  { name: 'Search input #guideSearchInput', pass: html.includes('id="guideSearchInput"') },
   { name: 'Filter pills #guide-filter-pills', pass: html.includes('id="guide-filter-pills"') },
-  { name: 'Toggle all guides button #toggle-all-guides-btn', pass: html.includes('id="toggle-all-guides-btn"') },
+  { name: 'Toggle all guides button #guidesToggleAllBtn', pass: html.includes('id="guidesToggleAllBtn"') },
   { name: '21 Detail Accordion Cards', pass: (html.match(/class="detail-accordion-card"/g) || []).length === 21 },
   { name: 'No legacy EBC accordion titles', pass: !html.includes('Tell Me About the Flight to Lukla') && !html.includes('Sherpa Traditions of Everest Region') },
 

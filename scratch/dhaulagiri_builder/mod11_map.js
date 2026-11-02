@@ -76,3 +76,4 @@ function getMapSection() {
 }
 
 module.exports = { getMapSection };
+

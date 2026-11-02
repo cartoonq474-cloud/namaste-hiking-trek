@@ -17,3 +17,4 @@ let dhMod14 = pikeyMod14
 
 fs.writeFileSync('scratch/dhaulagiri_builder/mod14_sidebar_footer.js', dhMod14, 'utf8');
 console.log('Successfully wrote scratch/dhaulagiri_builder/mod14_sidebar_footer.js');
+

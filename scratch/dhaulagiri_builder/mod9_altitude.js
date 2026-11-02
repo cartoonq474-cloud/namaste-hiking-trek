@@ -80,3 +80,4 @@ function getAltitudeSection() {
 }
 
 module.exports = { getAltitudeSection };
+
