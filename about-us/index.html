@@ -404,25 +404,214 @@
       z-index: 2;
     }
 
-    /* Reviews Section Cards */
-    .about-reviews-grid {
+    /* Reviews Section Styling (Screenshot Exact Match) */
+    .reviews-top-summary-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 36px;
+      margin-bottom: 24px;
+    }
+    .platform-summary-block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .platform-summary-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .platform-summary-details {
+      display: flex;
+      flex-direction: column;
+    }
+    .platform-summary-score-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      line-height: 1;
+    }
+    .platform-score-num {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1;
+    }
+    .platform-stars-gold {
+      color: #f59e0b;
+      font-size: 1.15rem;
+      letter-spacing: 2px;
+      line-height: 1;
+    }
+    .platform-ta-dots {
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
+    }
+    .ta-green-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #00aa6c;
+      display: inline-block;
+    }
+    .platform-reviews-count {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-top: 4px;
+    }
+    .platform-summary-divider {
+      width: 1px;
+      height: 38px;
+      background: #cbd5e1;
+    }
+
+    /* Platform Tabs Switcher */
+    .reviews-tabs-switcher-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    .reviews-tabs-pill-box {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 9999px;
+      padding: 4px;
+      display: inline-flex;
+      gap: 4px;
+    }
+    .about-tab-btn {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 9999px;
+      padding: 8px 22px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #64748b;
+      background: transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .about-tab-btn.active {
+      background: #ffffff;
+      color: #0f172a;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Cards Grid */
+    .about-reviews-panel {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 24px;
-      margin-top: 32px;
     }
-    @media (max-width: 860px) {
-      .about-reviews-grid { grid-template-columns: 1fr; }
+    @media (max-width: 768px) {
+      .about-reviews-panel {
+        grid-template-columns: 1fr;
+      }
+      .reviews-top-summary-bar {
+        flex-direction: row;
+        gap: 20px;
+      }
+      .platform-score-num {
+        font-size: 1.3rem;
+      }
+      .about-tab-btn {
+        padding: 8px 16px;
+        font-size: 0.88rem;
+      }
     }
-    .about-review-card {
+    .review-feature-card {
       background: #ffffff;
       border: 1px solid #e2e8f0;
-      border-radius: 16px;
+      border-radius: 14px;
       padding: 24px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .review-feature-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    }
+    .review-card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .review-user-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .review-user-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #2563eb;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .review-user-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0;
+      line-height: 1.3;
+    }
+    .review-user-country {
+      font-size: 0.82rem;
+      color: #64748b;
+      display: block;
+    }
+    .review-platform-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .review-rating-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .review-stars-gold {
+      color: #f59e0b;
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+    .review-date-text {
+      font-size: 0.82rem;
+      color: #64748b;
+    }
+    .review-body-text {
+      font-size: 0.92rem;
+      color: #334155;
+      line-height: 1.65;
+      margin: 0 0 16px 0;
+    }
+    .review-tag-wrap {
+      margin-top: auto;
+    }
+    .review-tag-badge {
+      display: inline-block;
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 6px;
     }
   </style>
 </head>
@@ -1527,98 +1716,386 @@
 
     <!-- Section 12: Real Traveler Reviews & Independent Proof Points -->
     <section id="reviews" class="section-padding" style="background: #ffffff; border-bottom: 1px solid #e2e8f0;">
-      <div class="container">
-        <div class="text-center" style="margin-bottom: 36px;">
-          <h2 class="section-title">Verified Reviews &amp; Field Experiences</h2>
-          <p style="color: #64748b; max-width: 680px; margin: 8px auto 0 auto; font-size: 0.95rem;">
-            TripAdvisor Travelers' Choice Best of the Best 2024 &amp; 2025. Authentic traveler feedback from international adventurers guided by our team.
-          </p>
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 32px;">
+      <h2 class="section-title">Verified Reviews &amp; Field Experiences</h2>
+      <p style="color: #64748b; max-width: 680px; margin: 8px auto 0 auto; font-size: 0.95rem;">
+        Authentic traveler feedback from international adventurers guided across the Himalayas by Namaste Hiking Trek.
+      </p>
+    </div>
+
+    <!-- Rating Summary Header (Google 4.9 | TripAdvisor 5.0) -->
+    <div class="reviews-top-summary-bar">
+      <!-- Google Summary -->
+      <div class="platform-summary-block">
+        <div class="platform-summary-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.11 0-5.74-2.1-6.68-4.93H1.41v3.15C3.39 21.32 7.42 24 12 24z"/>
+            <path fill="#FBBC05" d="M5.32 14.27c-.24-.72-.38-1.49-.38-2.27s.14-1.53.38-2.27V6.58H1.41C.51 8.37 0 10.13 0 12s.51 3.63 1.41 5.42l3.91-3.15z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.42 0 3.39 2.68 1.41 6.58l3.91 3.15c.94-2.83 3.57-4.98 6.68-4.98z"/>
+          </svg>
         </div>
-
-        <div class="about-reviews-grid">
-          <!-- Review 1: AmarSingh (USA) -->
-          <div class="about-review-card">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                <div style="font-weight: 700; color: #0f172a; font-size: 1rem;">AmarSingh · United States</div>
-                <div style="color: #059669; font-size: 0.82rem; font-weight: 700;">★ 5.0 TripAdvisor Verified</div>
-              </div>
-              <div style="font-size: 0.82rem; color: #64748b; margin-bottom: 12px;"><strong>Trek:</strong> Annapurna Base Camp &amp; EBC Planning</div>
-              <p style="color: #475569; font-size: 0.9rem; line-height: 1.7; font-style: italic; margin-bottom: 16px;">
-                "Lal Gurung was extremely helpful during planning—he customized the itinerary to fit our needs and kept us informed with clear, honest communication when weather looked uncertain. Our guide, Hemal Gurung, was outstanding—calm, encouraging, and resourceful. Our porters, Santosh and Tek Gurung, were friendly and dependable. We stayed in the best tea houses and felt genuine care throughout the trip."
-              </p>
-            </div>
-            <div style="font-size: 0.78rem; color: #94a3b8; border-top: 1px solid #f1f5f9; padding-top: 10px;">
-              Verified review on TripAdvisor · November 2025 departure
-            </div>
+        <div class="platform-summary-details">
+          <div class="platform-summary-score-row">
+            <span class="platform-score-num">4.9</span>
+            <span class="platform-stars-gold">★★★★★</span>
           </div>
-
-          <!-- Review 2: Ibrahim A -->
-          <div class="about-review-card">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                <div style="font-weight: 700; color: #0f172a; font-size: 1rem;">Ibrahim A · International Trekker</div>
-                <div style="color: #059669; font-size: 0.82rem; font-weight: 700;">★ 5.0 TripAdvisor Verified</div>
-              </div>
-              <div style="font-size: 0.82rem; color: #64748b; margin-bottom: 12px;"><strong>Trek:</strong> 17-Day Annapurna Circuit</div>
-              <p style="color: #475569; font-size: 0.9rem; line-height: 1.7; font-style: italic; margin-bottom: 16px;">
-                "From the moment we arrived until the end of the trip, the guidance was outstanding. Our guide, Hemlal, and porter were excellent companions and ensured every detail was handled professionally. We were consistently impressed with the quality of the rooms, the food, and the overall organization. Their fee is reasonable and well-worth the cost for a safe and memorable trek."
-              </p>
-            </div>
-            <div style="font-size: 0.78rem; color: #94a3b8; border-top: 1px solid #f1f5f9; padding-top: 10px;">
-              Verified review on TripAdvisor · 17-Day Expedition
-            </div>
-          </div>
-
-          <!-- Review 3: James T -->
-          <div class="about-review-card">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                <div style="font-weight: 700; color: #0f172a; font-size: 1rem;">James T · United Kingdom</div>
-                <div style="color: #059669; font-size: 0.82rem; font-weight: 700;">★ 5.0 TripAdvisor Verified</div>
-              </div>
-              <div style="font-size: 0.82rem; color: #64748b; margin-bottom: 12px;"><strong>Trek:</strong> Annapurna Circuit High Pass</div>
-              <p style="color: #475569; font-size: 0.9rem; line-height: 1.7; font-style: italic; margin-bottom: 16px;">
-                "Our group leader, Ritesh, was terrific—informative, safety conscious, patient, and organised. The company's values are excellent: they treat their staff well and porters are not overloaded (unlike other providers on the trail, whose porters struggled with excessive loads)."
-              </p>
-            </div>
-            <div style="font-size: 0.78rem; color: #94a3b8; border-top: 1px solid #f1f5f9; padding-top: 10px;">
-              Verified review on TripAdvisor · High-Pass Crossing
-            </div>
-          </div>
-
-          <!-- Review 4: Max -->
-          <div class="about-review-card">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                <div style="font-weight: 700; color: #0f172a; font-size: 1rem;">Max · Solo Adventurer</div>
-                <div style="color: #059669; font-size: 0.82rem; font-weight: 700;">★ 5.0 TripAdvisor Verified</div>
-              </div>
-              <div style="font-size: 0.82rem; color: #64748b; margin-bottom: 12px;"><strong>Trek:</strong> Everest Base Camp Trek</div>
-              <p style="color: #475569; font-size: 0.9rem; line-height: 1.7; font-style: italic; margin-bottom: 16px;">
-                "First time trekking in Nepal, and it became one of my most unforgettable experiences. The weather was perfect, the scenery was breathtaking, and most importantly, the guides took such good care of us. Thanks to them, the entire journey stayed on schedule and felt completely pressure-free."
-              </p>
-            </div>
-            <div style="font-size: 0.78rem; color: #94a3b8; border-top: 1px solid #f1f5f9; padding-top: 10px;">
-              Verified review on TripAdvisor · Everest Region
-            </div>
-          </div>
-        </div>
-
-        <!-- Case Study: Lukla Flight Contingency Protocol -->
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 18px; padding: 28px 32px; margin-top: 36px;">
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-            <h3 style="font-size: 1.25rem; color: #0f172a; margin: 0;">How We Handle Real Trail Crises: The Lukla Weather Protocol</h3>
-          </div>
-          <p style="color: #475569; font-size: 0.92rem; line-height: 1.7; margin-bottom: 12px;">
-            During monsoon transition periods, Lukla mountain flights can be grounded for days by thick cloud cover. When flight cancellations hit the airport, foreign agencies often leave trekkers stranded in hotel lobbies.
-          </p>
-          <p style="color: #475569; font-size: 0.92rem; line-height: 1.7; margin: 0;">
-            At Namaste Hiking Trek, our Kathmandu logistics desk immediately activates pre-planned overland contingency: dispatching private 4WD jeeps via the Salleri/Tham Danda route or coordinating group helicopter shuttles from Phaplu. Because we operate our own vehicles and field crew, our guests bypass gridlock and preserve their trekking schedules without losing valuable acclimatization days.
-          </p>
+          <div class="platform-reviews-count">121 reviews</div>
         </div>
       </div>
-    </section>
+
+      <!-- Vertical Divider Line -->
+      <div class="platform-summary-divider"></div>
+
+      <!-- TripAdvisor Summary -->
+      <div class="platform-summary-block">
+        <div class="platform-summary-icon">
+          <svg width="28" height="28" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="#34E0A1"/>
+            <path d="M 6,15 C 6,11 13,8 20,8 C 27,8 34,11 34,15 C 36,13 33,9 31,8 C 25,6 15,6 9,8 C 7,9 4,13 6,15 Z" fill="#000000"/>
+            <circle cx="13.5" cy="21.5" r="6.5" fill="#000000"/>
+            <circle cx="13.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+            <circle cx="13.5" cy="21.5" r="2.2" fill="#000000"/>
+            <circle cx="26.5" cy="21.5" r="6.5" fill="#000000"/>
+            <circle cx="26.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+            <circle cx="26.5" cy="21.5" r="2.2" fill="#000000"/>
+            <polygon points="20,26 17.2,20.5 22.8,20.5" fill="#000000"/>
+          </svg>
+        </div>
+        <div class="platform-summary-details">
+          <div class="platform-summary-score-row">
+            <span class="platform-score-num">5.0</span>
+            <span class="platform-ta-dots">
+              <span class="ta-green-dot"></span>
+              <span class="ta-green-dot"></span>
+              <span class="ta-green-dot"></span>
+              <span class="ta-green-dot"></span>
+              <span class="ta-green-dot"></span>
+            </span>
+          </div>
+          <div class="platform-reviews-count">19 reviews</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Platform Tabs Switcher (Pill Style) -->
+    <div class="reviews-tabs-switcher-wrap">
+      <div class="reviews-tabs-pill-box">
+        <button type="button" class="about-tab-btn active" data-target="about-google-reviews">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0;">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.11 0-5.74-2.1-6.68-4.93H1.41v3.15C3.39 21.32 7.42 24 12 24z"/>
+            <path fill="#FBBC05" d="M5.32 14.27c-.24-.72-.38-1.49-.38-2.27s.14-1.53.38-2.27V6.58H1.41C.51 8.37 0 10.13 0 12s.51 3.63 1.41 5.42l3.91-3.15z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.42 0 3.39 2.68 1.41 6.58l3.91 3.15c.94-2.83 3.57-4.98 6.68-4.98z"/>
+          </svg>
+          Google Reviews
+        </button>
+        <button type="button" class="about-tab-btn" data-target="about-tripadvisor-reviews">
+          <svg width="18" height="18" viewBox="0 0 40 40" aria-hidden="true" style="flex-shrink: 0;">
+            <circle cx="20" cy="20" r="19" fill="#34E0A1"/>
+            <path d="M 6,15 C 6,11 13,8 20,8 C 27,8 34,11 34,15 C 36,13 33,9 31,8 C 25,6 15,6 9,8 C 7,9 4,13 6,15 Z" fill="#000000"/>
+            <circle cx="13.5" cy="21.5" r="6.5" fill="#000000"/>
+            <circle cx="13.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+            <circle cx="13.5" cy="21.5" r="2.2" fill="#000000"/>
+            <circle cx="26.5" cy="21.5" r="6.5" fill="#000000"/>
+            <circle cx="26.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+            <circle cx="26.5" cy="21.5" r="2.2" fill="#000000"/>
+            <polygon points="20,26 17.2,20.5 22.8,20.5" fill="#000000"/>
+          </svg>
+          TripAdvisor
+        </button>
+      </div>
+    </div>
+
+    <!-- TAB PANEL 1: GOOGLE REVIEWS (Active by Default) -->
+    <div id="about-google-reviews" class="about-reviews-panel active">
+      <!-- Card 1: Ibe -->
+      <div class="review-feature-card">
+        <div class="review-card-head">
+          <div class="review-user-group">
+            <div class="review-user-avatar">I</div>
+            <div class="review-user-meta">
+              <h3 class="review-user-name">Ibe</h3>
+              <span class="review-user-country">United Kingdom</span>
+            </div>
+          </div>
+          <div class="review-platform-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.11 0-5.74-2.1-6.68-4.93H1.41v3.15C3.39 21.32 7.42 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.32 14.27c-.24-.72-.38-1.49-.38-2.27s.14-1.53.38-2.27V6.58H1.41C.51 8.37 0 10.13 0 12s.51 3.63 1.41 5.42l3.91-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.42 0 3.39 2.68 1.41 6.58l3.91 3.15c.94-2.83 3.57-4.98 6.68-4.98z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="review-rating-row">
+          <span class="review-stars-gold">★★★★★</span>
+          <span class="review-date-text">Apr 2026</span>
+        </div>
+        <p class="review-body-text">
+          "I cannot recommend this trekking company highly enough. From the very first inquiry to the completion of our Annapurna Circuit trek, everything was handled professionally and seamlessly. Communication during the booking process was excellent—every question was answered promptly, clearly, and thoroughly, which gave us confidence before we even arrived in Nepal."
+        </p>
+        <div class="review-tag-wrap">
+          <span class="review-tag-badge">Annapurna Circuit Trek</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Rachel Attya -->
+      <div class="review-feature-card">
+        <div class="review-card-head">
+          <div class="review-user-group">
+            <div class="review-user-avatar">R</div>
+            <div class="review-user-meta">
+              <h3 class="review-user-name">Rachel Attya</h3>
+              <span class="review-user-country">Germany</span>
+            </div>
+          </div>
+          <div class="review-platform-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.11 0-5.74-2.1-6.68-4.93H1.41v3.15C3.39 21.32 7.42 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.32 14.27c-.24-.72-.38-1.49-.38-2.27s.14-1.53.38-2.27V6.58H1.41C.51 8.37 0 10.13 0 12s.51 3.63 1.41 5.42l3.91-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.42 0 3.39 2.68 1.41 6.58l3.91 3.15c.94-2.83 3.57-4.98 6.68-4.98z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="review-rating-row">
+          <span class="review-stars-gold">★★★★★</span>
+          <span class="review-date-text">Feb 2026</span>
+        </div>
+        <p class="review-body-text">
+          "We had an incredible experience with Namaste Hiking Trek on our 17-day Annapurna Circuit trek. From the moment we arrived until the end of the trip, the service and guidance were outstanding. Our guide, Hemlal, and porter were excellent companions, and ensured every detail was handled professionally and thoughtfully. Accommodations and food were consistently great. Their fee is reasonable and well-worth the cost."
+        </p>
+        <div class="review-tag-wrap">
+          <span class="review-tag-badge">Annapurna Circuit Trek</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Srinivas Raju -->
+      <div class="review-feature-card">
+        <div class="review-card-head">
+          <div class="review-user-group">
+            <div class="review-user-avatar">S</div>
+            <div class="review-user-meta">
+              <h3 class="review-user-name">Srinivas Raju</h3>
+              <span class="review-user-country">United States</span>
+            </div>
+          </div>
+          <div class="review-platform-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.11 0-5.74-2.1-6.68-4.93H1.41v3.15C3.39 21.32 7.42 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.32 14.27c-.24-.72-.38-1.49-.38-2.27s.14-1.53.38-2.27V6.58H1.41C.51 8.37 0 10.13 0 12s.51 3.63 1.41 5.42l3.91-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.42 0 3.39 2.68 1.41 6.58l3.91 3.15c.94-2.83 3.57-4.98 6.68-4.98z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="review-rating-row">
+          <span class="review-stars-gold">★★★★★</span>
+          <span class="review-date-text">Nov 2025</span>
+        </div>
+        <p class="review-body-text">
+          "I completed a trek in Nepal with Namaste Hiking Trek, and I cannot recommend them highly enough. Founder Lal Gurung made the entire planning process flawless. The communication from the initial inquiry was professional, prompt, and reassuring. Our guide Hem took incredible care of me throughout the hike, always prioritizing safety and well-being. Thank you to the entire team for an unforgettable Himalayan adventure!"
+        </p>
+        <div class="review-tag-wrap">
+          <span class="review-tag-badge">Khopra Ridge Trek</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Clavus Chong -->
+      <div class="review-feature-card">
+        <div class="review-card-head">
+          <div class="review-user-group">
+            <div class="review-user-avatar">C</div>
+            <div class="review-user-meta">
+              <h3 class="review-user-name">Clavus Chong</h3>
+              <span class="review-user-country">Singapore</span>
+            </div>
+          </div>
+          <div class="review-platform-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.11 0-5.74-2.1-6.68-4.93H1.41v3.15C3.39 21.32 7.42 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.32 14.27c-.24-.72-.38-1.49-.38-2.27s.14-1.53.38-2.27V6.58H1.41C.51 8.37 0 10.13 0 12s.51 3.63 1.41 5.42l3.91-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.42 0 3.39 2.68 1.41 6.58l3.91 3.15c.94-2.83 3.57-4.98 6.68-4.98z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="review-rating-row">
+          <span class="review-stars-gold">★★★★★</span>
+          <span class="review-date-text">Oct 2025</span>
+        </div>
+        <p class="review-body-text">
+          "I chose Pikey Peak as my very first trip in Nepal. Have heard a lot of comments about Nepal and its mountains. I can say choosing this company has given me the best first-Nepal-experience ever! The hiking team is so helpful and friendly and I didn't have to worry about a thing during the entire journey. It was a truly pleasant, safe hiking experience."
+        </p>
+        <div class="review-tag-wrap">
+          <span class="review-tag-badge">Pikey Peak Trek</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB PANEL 2: TRIPADVISOR REVIEWS -->
+    <div id="about-tripadvisor-reviews" class="about-reviews-panel" style="display: none;">
+      <!-- Card 1: AmarSingh -->
+      <div class="review-feature-card">
+        <div class="review-card-head">
+          <div class="review-user-group">
+            <div class="review-user-avatar">A</div>
+            <div class="review-user-meta">
+              <h3 class="review-user-name">AmarSingh</h3>
+              <span class="review-user-country">United States</span>
+            </div>
+          </div>
+          <div class="review-platform-icon">
+            <svg width="22" height="22" viewBox="0 0 40 40" aria-hidden="true">
+              <circle cx="20" cy="20" r="19" fill="#34E0A1"/>
+              <path d="M 6,15 C 6,11 13,8 20,8 C 27,8 34,11 34,15 C 36,13 33,9 31,8 C 25,6 15,6 9,8 C 7,9 4,13 6,15 Z" fill="#000000"/>
+              <circle cx="13.5" cy="21.5" r="6.5" fill="#000000"/>
+              <circle cx="13.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+              <circle cx="13.5" cy="21.5" r="2.2" fill="#000000"/>
+              <circle cx="26.5" cy="21.5" r="6.5" fill="#000000"/>
+              <circle cx="26.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+              <circle cx="26.5" cy="21.5" r="2.2" fill="#000000"/>
+              <polygon points="20,26 17.2,20.5 22.8,20.5" fill="#000000"/>
+            </svg>
+          </div>
+        </div>
+        <div class="review-rating-row">
+          <span class="review-stars-gold">★★★★★</span>
+          <span class="review-date-text">Nov 2025</span>
+        </div>
+        <p class="review-body-text">
+          "Lal Gurung was extremely helpful during planning—he customized the itinerary to fit our needs and kept us informed with clear, honest communication when weather looked uncertain. Our guide, Hemal Gurung, was outstanding—calm, encouraging, and resourceful. Our porters, Santosh and Tek Gurung, were dependable. We stayed in the best tea houses and felt genuine care throughout the trip."
+        </p>
+        <div class="review-tag-wrap">
+          <span class="review-tag-badge">Annapurna Base Camp Trek</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Ibrahim A -->
+      <div class="review-feature-card">
+        <div class="review-card-head">
+          <div class="review-user-group">
+            <div class="review-user-avatar">I</div>
+            <div class="review-user-meta">
+              <h3 class="review-user-name">Ibrahim A</h3>
+              <span class="review-user-country">United Arab Emirates</span>
+            </div>
+          </div>
+          <div class="review-platform-icon">
+            <svg width="22" height="22" viewBox="0 0 40 40" aria-hidden="true">
+              <circle cx="20" cy="20" r="19" fill="#34E0A1"/>
+              <path d="M 6,15 C 6,11 13,8 20,8 C 27,8 34,11 34,15 C 36,13 33,9 31,8 C 25,6 15,6 9,8 C 7,9 4,13 6,15 Z" fill="#000000"/>
+              <circle cx="13.5" cy="21.5" r="6.5" fill="#000000"/>
+              <circle cx="13.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+              <circle cx="13.5" cy="21.5" r="2.2" fill="#000000"/>
+              <circle cx="26.5" cy="21.5" r="6.5" fill="#000000"/>
+              <circle cx="26.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+              <circle cx="26.5" cy="21.5" r="2.2" fill="#000000"/>
+              <polygon points="20,26 17.2,20.5 22.8,20.5" fill="#000000"/>
+            </svg>
+          </div>
+        </div>
+        <div class="review-rating-row">
+          <span class="review-stars-gold">★★★★★</span>
+          <span class="review-date-text">Dec 2025</span>
+        </div>
+        <p class="review-body-text">
+          "From the moment we arrived until the end of the trip, the service and guidance were outstanding. Our guide, Hemlal, and porter were excellent companions and ensured every detail was handled professionally and thoughtfully. We were consistently impressed with the quality of the rooms, the food, and the overall organization. Their fee is reasonable and well-worth the cost for a safe and memorable trek."
+        </p>
+        <div class="review-tag-wrap">
+          <span class="review-tag-badge">Annapurna Circuit Trek</span>
+        </div>
+      </div>
+
+      <!-- Card 3: James T -->
+      <div class="review-feature-card">
+        <div class="review-card-head">
+          <div class="review-user-group">
+            <div class="review-user-avatar">J</div>
+            <div class="review-user-meta">
+              <h3 class="review-user-name">James T</h3>
+              <span class="review-user-country">United Kingdom</span>
+            </div>
+          </div>
+          <div class="review-platform-icon">
+            <svg width="22" height="22" viewBox="0 0 40 40" aria-hidden="true">
+              <circle cx="20" cy="20" r="19" fill="#34E0A1"/>
+              <path d="M 6,15 C 6,11 13,8 20,8 C 27,8 34,11 34,15 C 36,13 33,9 31,8 C 25,6 15,6 9,8 C 7,9 4,13 6,15 Z" fill="#000000"/>
+              <circle cx="13.5" cy="21.5" r="6.5" fill="#000000"/>
+              <circle cx="13.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+              <circle cx="13.5" cy="21.5" r="2.2" fill="#000000"/>
+              <circle cx="26.5" cy="21.5" r="6.5" fill="#000000"/>
+              <circle cx="26.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+              <circle cx="26.5" cy="21.5" r="2.2" fill="#000000"/>
+              <polygon points="20,26 17.2,20.5 22.8,20.5" fill="#000000"/>
+            </svg>
+          </div>
+        </div>
+        <div class="review-rating-row">
+          <span class="review-stars-gold">★★★★★</span>
+          <span class="review-date-text">Oct 2025</span>
+        </div>
+        <p class="review-body-text">
+          "Our group leader, Ritesh, was terrific—informative, safety conscious, patient, and organised. The company's values are excellent: they treat their staff well and porters are not overloaded (unlike other providers on the trail, whose porters struggled with excessive loads). We felt genuinely looked after every step of the journey."
+        </p>
+        <div class="review-tag-wrap">
+          <span class="review-tag-badge">Annapurna Circuit High Pass</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Max -->
+      <div class="review-feature-card">
+        <div class="review-card-head">
+          <div class="review-user-group">
+            <div class="review-user-avatar">M</div>
+            <div class="review-user-meta">
+              <h3 class="review-user-name">Max</h3>
+              <span class="review-user-country">Australia</span>
+            </div>
+          </div>
+          <div class="review-platform-icon">
+            <svg width="22" height="22" viewBox="0 0 40 40" aria-hidden="true">
+              <circle cx="20" cy="20" r="19" fill="#34E0A1"/>
+              <path d="M 6,15 C 6,11 13,8 20,8 C 27,8 34,11 34,15 C 36,13 33,9 31,8 C 25,6 15,6 9,8 C 7,9 4,13 6,15 Z" fill="#000000"/>
+              <circle cx="13.5" cy="21.5" r="6.5" fill="#000000"/>
+              <circle cx="13.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+              <circle cx="13.5" cy="21.5" r="2.2" fill="#000000"/>
+              <circle cx="26.5" cy="21.5" r="6.5" fill="#000000"/>
+              <circle cx="26.5" cy="21.5" r="4.5" fill="#34E0A1"/>
+              <circle cx="26.5" cy="21.5" r="2.2" fill="#000000"/>
+              <polygon points="20,26 17.2,20.5 22.8,20.5" fill="#000000"/>
+            </svg>
+          </div>
+        </div>
+        <div class="review-rating-row">
+          <span class="review-stars-gold">★★★★★</span>
+          <span class="review-date-text">May 2026</span>
+        </div>
+        <p class="review-body-text">
+          "First time trekking in Nepal, and it became one of my most unforgettable experiences. The weather was perfect, the scenery was breathtaking, and most importantly, the guides took such good care of us. Thanks to them, the entire journey stayed on schedule and felt completely pressure-free."
+        </p>
+        <div class="review-tag-wrap">
+          <span class="review-tag-badge">Everest Base Camp Trek</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case Study: Lukla Flight Contingency Protocol -->
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 18px; padding: 28px 32px; margin-top: 36px;">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <h3 style="font-size: 1.25rem; color: #0f172a; margin: 0;">How We Handle Real Trail Crises: The Lukla Weather Protocol</h3>
+      </div>
+      <p style="color: #475569; font-size: 0.92rem; line-height: 1.7; margin-bottom: 12px;">
+        During monsoon transition periods, Lukla mountain flights can be grounded for days by thick cloud cover. When flight cancellations hit the airport, foreign agencies often leave trekkers stranded in hotel lobbies.
+      </p>
+      <p style="color: #475569; font-size: 0.92rem; line-height: 1.7; margin: 0;">
+        At Namaste Hiking Trek, our Kathmandu logistics desk immediately activates pre-planned overland contingency: dispatching private 4WD jeeps via the Salleri/Tham Danda route or coordinating group helicopter shuttles from Phaplu. Because we operate our own vehicles and field crew, our guests bypass gridlock and preserve their trekking schedules without losing valuable acclimatization days.
+      </p>
+    </div>
+  </div>
+</section>
 
     <!-- Section 13: Booking With Confidence -->
     <section id="booking-confidence" class="section-padding" style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
@@ -2215,6 +2692,26 @@
         }
       });
     });
+
+    // Reviews Platform Tabs Switcher (Google Reviews / TripAdvisor)
+    document.querySelectorAll('.about-tab-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var target = this.getAttribute('data-target');
+        document.querySelectorAll('.about-tab-btn').forEach(function(b) {
+          b.classList.remove('active');
+        });
+        this.classList.add('active');
+
+        document.querySelectorAll('.about-reviews-panel').forEach(function(panel) {
+          if (panel.id === target) {
+            panel.style.display = 'grid';
+          } else {
+            panel.style.display = 'none';
+          }
+        });
+      });
+    });
+
   </script>
   <script src="../js/mega-menu.js"></script>
 </body>
