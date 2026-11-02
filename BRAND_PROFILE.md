@@ -149,3 +149,4 @@ console.log(brandProfile.guides); // Detailed profiles for all 15 mountain guide
    - When showcasing guides on trek pages, reference actual certified team members (Lal Gurung, Kamal Gurung, Bhagawan Kumal, Bir Gurung, etc.) from the guide directory above.
 4. **Official Pricing**:
    - Maintain the tiered pricing matrix defined in `services` when updating sidebar booking cards or pricing visualizers.
+
