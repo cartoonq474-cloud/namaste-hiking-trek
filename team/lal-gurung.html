@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lal Gurung — Founder & Managing Director · Mera Peak Summitter (6,476m) | Namaste Hiking Trek</title>
-  <meta name="description" content="Profile, background, mountain experience, certifications, and guest reviews for Lal Gurung, licensed Sherpa guide at Namaste Hiking Trek Nepal.">
+  <title>Lal Gurung — Founder & Managing Director | Namaste Hiking Trek</title>
+  <meta name="description" content="Official profile, mountain credentials, completed expeditions, and traveler reviews for Lal Gurung, Founder & Managing Director at Namaste Hiking Trek Nepal.">
   <link rel="canonical" href="https://namastehikingtrek.com/team/lal-gurung.html" />
 
   <!-- Favicon -->
@@ -12,11 +12,11 @@
   <link rel="apple-touch-icon" href="../images/logo.png">
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="profile">
   <meta property="og:url" content="https://namastehikingtrek.com/team/lal-gurung.html">
-  <meta property="og:title" content="Lal Gurung — Licensed Sherpa Mountain Guide">
-  <meta property="og:description" content="Meet Lal Gurung, Founder & Managing Director · Mera Peak Summitter (6,476m) at Namaste Hiking Trek Nepal.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80">
+  <meta property="og:title" content="Lal Gurung — Founder & Managing Director · Namaste Hiking Trek">
+  <meta property="og:description" content="Meet Lal Gurung, Founder & Managing Director at Namaste Hiking Trek Nepal. 20 Years experience.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80">
 
   <link rel="stylesheet" href="../index.css">
 
@@ -25,76 +25,109 @@
     .profile-hero {
       background: linear-gradient(160deg, #071d36 0%, #0c2b4e 100%);
       color: #ffffff;
-      padding: 60px 0 110px 0;
+      padding: 60px 0 80px 0;
       position: relative;
     }
-    .profile-hero::after {
-      content: "";
+    .profile-hero-grid {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (max-width: 860px) {
+      .profile-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+    .profile-photo-wrap {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 4px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .profile-photo-wrap img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+    .profile-badge-overlay {
       position: absolute;
+      bottom: 0;
       left: 0;
       right: 0;
-      bottom: -1px;
-      height: 70px;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80' preserveAspectRatio='none'%3E%3Cpath fill='%23f8fafc' d='M0,80 L0,40 L240,10 L480,45 L720,8 L960,42 L1200,12 L1440,40 L1440,80 Z'/%3E%3C/svg%3E") no-repeat center/cover;
+      background: linear-gradient(transparent, rgba(7, 29, 54, 0.95));
+      padding: 20px 16px 12px 16px;
+      text-align: center;
     }
-    .profile-hero-grid {
-      display: flex;
-      gap: 36px;
-      align-items: center;
-      flex-wrap: wrap;
+    .guide-tag-pill {
+      display: inline-block;
+      background: #059669;
+      color: #ffffff;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
-    .profile-photo {
-      width: 190px;
-      height: 190px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid #ffffff;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-      flex-shrink: 0;
-    }
-    .profile-stats-strip {
+    .stats-card-row {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
-      max-width: 1000px;
-      margin: -55px auto 0 auto;
-      position: relative;
-      z-index: 10;
-      padding: 0 20px;
+      margin-top: 24px;
     }
     @media (max-width: 768px) {
-      .profile-stats-strip { grid-template-columns: repeat(2, 1fr); margin-top: -40px; }
-      .profile-hero-grid { justify-content: center; text-align: center; }
-      .rev-grid-layout { grid-template-columns: 1fr !important; }
+      .stats-card-row { grid-template-columns: repeat(2, 1fr); }
     }
-    .profile-stat-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      padding: 20px 16px;
+    .stats-card-item {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      padding: 12px 14px;
       text-align: center;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
     }
-    .route-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 8px 18px;
-      background: #f1f5f9;
-      color: #0f172a;
-      border: 1px solid #cbd5e1;
-      border-radius: 30px;
-      font-size: 0.88rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: all 0.2s ease;
+    .stats-card-num {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #f59e0b;
+      margin-bottom: 2px;
     }
-    .route-pill:hover {
-      background: #10b981;
-      color: #ffffff;
-      border-color: #10b981;
+    .stats-card-label {
+      font-size: 0.72rem;
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
   </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Lal Gurung",
+  "jobTitle": "Founder & Managing Director",
+  "worksFor": {
+    "@type": "TravelAgency",
+    "name": "Namaste Hiking Trek",
+    "url": "https://namastehikingtrek.com"
+  },
+  "knowsLanguage": [
+    "English",
+    "Nepali",
+    "Hindi",
+    "Cantonese",
+    "Gurung"
+  ],
+  "description": "Born in Dhading, Lal Gurung began his mountain career over two decades ago, learning the Himalayan trail networks from the ground up as a young porter before qualifying as a licensed mountain guide through the National Academy of Tourism and Hotel Management (NATHM).",
+  "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+  "url": "https://namastehikingtrek.com/team/lal-gurung.html"
+}
+  </script>
 </head>
 <body>
 
@@ -115,262 +148,19 @@
       <!-- Navigation Links -->
       <nav>
         <ul class="nav-menu">
-          <!-- Mega Menu Dropdown for All Treks -->
-          <li class="nav-item-dropdown mega-nav-item">
-            <a href="../nepal-trekking-packages/" class="nav-link ">All Treks ▾</a>
-            <div class="mega-menu-dropdown">
-              <div class="mega-menu-container">
-                
-                <!-- Left Sidebar Navigation -->
-                <div class="mega-menu-sidebar">
-                  <div class="mega-sidebar-item active" data-target="tab-popular">Popular Treks in Nepal</div>
-                  <div class="mega-sidebar-item" data-target="tab-annapurna">Annapurna</div>
-                  <div class="mega-sidebar-item" data-target="tab-everest">Everest</div>
-                  <div class="mega-sidebar-item" data-target="tab-manaslu">Manaslu</div>
-                  <div class="mega-sidebar-item" data-target="tab-langtang">Langtang</div>
-                  <div class="mega-sidebar-item" data-target="tab-kanchenjunga">Kanchenjunga</div>
-                  <div class="mega-sidebar-item" data-target="tab-dolpo">Dolpo</div>
-                  <div class="mega-sidebar-item" data-target="tab-makalu">Makalu</div>
-                  <div class="mega-sidebar-item" data-target="tab-rolwaling">Rolwaling</div>
-                  <div class="mega-sidebar-item" data-target="tab-farwest">Far West</div>
-                  <div class="mega-sidebar-item" data-target="tab-ganesh">Ganesh Himal</div>
-                </div>
-
-                <!-- Right Content Area -->
-                <div class="mega-menu-content-wrap">
-                  <div class="mega-top-bar">
-                    <button class="mega-talk-pill open-inquiry-btn">Confused? Let's Talk ↗</button>
-                  </div>
-
-                  <!-- Tab 1: Popular Treks in Nepal (Default 4-Column Grid) -->
-                  <div class="mega-tab-content active" id="tab-popular">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">Two weeks Trek</div>
-                        <a href="../trek/everest-base-camp-trek/" class="mega-trek-link"><span>Everest Base Camp Trek</span> <span class="days-badge">14 DAYS</span></a>
-                        <a href="../trek/manaslu-circuit-trek/" class="mega-trek-link"><span>Manaslu Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
-                        <a href="../trek/annapurna-circuit-trek/" class="mega-trek-link"><span>Annapurna Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
-                        <a href="../trek/annapurna-base-camp-trek/" class="mega-trek-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">12 DAYS</span></a>
-                      </div>
-
-                      <div class="mega-col">
-                        <div class="mega-col-title">One week Treks</div>
-                        <a href="../trek/langtang-valley-trek/" class="mega-trek-link"><span>Langtang Valley Trek</span> <span class="days-badge">8 DAYS</span></a>
-                        <a href="../trek/ghorepani-poon-hill-trek/" class="mega-trek-link"><span>Ghorepani Poon Hill Trek</span> <span class="days-badge">4 DAYS</span></a>
-                        <a href="../trek/mardi-himal-trek/" class="mega-trek-link"><span>Mardi Base Camp Trek</span> <span class="days-badge">6 DAYS</span></a>
-                        <a href="../trek/everest-view-trek/" class="mega-trek-link"><span>Everest View Trek</span> <span class="days-badge">7 DAYS</span></a>
-                      </div>
-
-                      <div class="mega-col">
-                        <div class="mega-col-title">Remote and Unexplored</div>
-                        <a href="../trek/kanchenjunga-base-camp-trek/" class="mega-trek-link"><span>Kanchenjunga Circuit Trek</span> <span class="days-badge">18 DAYS</span></a>
-                        <a href="../trek/manaslu-tsum-valley-trek/" class="mega-trek-link"><span>Manaslu Tsum Valley Trek</span> <span class="days-badge">18 DAYS</span></a>
-                        <a href="../trek/nar-phu-valley-trek/" class="mega-trek-link"><span>Narphu Valley Trek</span> <span class="days-badge">16 DAYS</span></a>
-                      </div>
-
-                      <div class="mega-col">
-                        <div class="mega-col-title">Camping Off the Grid – Extreme Wilderness</div>
-                        <a href="../trek/dhaulagiri-circuit-trek/" class="mega-trek-link"><span>Dhaulagiri Circuit Trek</span> <span class="days-badge">16 DAYS</span></a>
-                        <a href="../trek/rolwaling-valley-trek/" class="mega-trek-link"><span>Sherpani Col Pass Trek</span> <span class="days-badge">22 DAYS</span></a>
-                        <a href="../dolpo-region-treks/" class="mega-trek-link"><span>Upper Dolpo Circuit Trek</span> <span class="days-badge">24 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 2: Annapurna -->
-                  <div class="mega-tab-content" id="tab-annapurna">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">Classic Treks</div>
-                        <a href="../trek/annapurna-base-camp-trek/" class="mega-trek-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">12 DAYS</span></a>
-                        <a href="../trek/annapurna-circuit-trek/" class="mega-trek-link"><span>Annapurna Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
-                        <a href="../trek/tilicho-lake-trek/" class="mega-trek-link"><span>Tilicho Lake & Annapurna Circuit</span> <span class="days-badge">14 DAYS</span></a>
-                      </div>
-                      <div class="mega-col">
-                        <div class="mega-col-title">Short & Panoramic</div>
-                        <a href="../trek/ghorepani-poon-hill-trek/" class="mega-trek-link"><span>Ghorepani Poon Hill Trek</span> <span class="days-badge">4 DAYS</span></a>
-                        <a href="../trek/mardi-himal-trek/" class="mega-trek-link"><span>Mardi Himal Ridge Trek</span> <span class="days-badge">6 DAYS</span></a>
-                        <a href="../trek/khopra-ridge-trek/" class="mega-trek-link"><span>Khopra Ridge & Mohare Danda</span> <span class="days-badge">9 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 3: Everest -->
-                  <div class="mega-tab-content" id="tab-everest">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">High Expedition
-                        <a href="../trek/mera-peak-climbing/" class="mega-trek-link"><span>Mera Peak Climbing</span> <span class="days-badge">18 DAYS</span></a></div>
-                        <a href="../trek/everest-base-camp-trek/" class="mega-trek-link"><span>Everest Base Camp Trek</span> <span class="days-badge">14 DAYS</span></a>
-                        <a href="../trek/everest-base-camp-luxury-trek/" class="mega-trek-link"><span>Everest Base Camp Luxury Trek</span> <span class="days-badge">12 DAYS</span></a>
-                        <a href="../trek/everest-three-passes-trek/" class="mega-trek-link"><span>Everest Three Passes Trek</span> <span class="days-badge">19 DAYS</span></a>
-                        <a href="../trek/everest-base-camp-with-cho-la-pass-trek/" class="mega-trek-link"><span>Everest Base Camp with Cho La Pass</span> <span class="days-badge">19 DAYS</span></a>
-                      </div>
-                      <div class="mega-col">
-                        <div class="mega-col-title">Scenic & Cultural</div>
-                        <a href="../trek/gokyo-lakes-trek/" class="mega-trek-link"><span>Gokyo Lakes Trek</span> <span class="days-badge">12 DAYS</span></a>
-                        <a href="../trek/everest-view-trek/" class="mega-trek-link"><span>Everest View Trek</span> <span class="days-badge">7 DAYS</span></a>
-                        <a href="../trek/pikey-peak-trek/" class="mega-trek-link"><span>Pikey Peak Panorama Trek</span> <span class="days-badge">9 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 4: Manaslu -->
-                  <div class="mega-tab-content" id="tab-manaslu">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">Circuit & Passes</div>
-                        <a href="../trek/manaslu-circuit-trek/" class="mega-trek-link"><span>Manaslu Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
-                        <a href="../trek/manaslu-tsum-valley-trek/" class="mega-trek-link"><span>Manaslu & Tsum Valley Combo</span> <span class="days-badge">18 DAYS</span></a>
-                      </div>
-                      <div class="mega-col">
-                        <div class="mega-col-title">Restricted Valley</div>
-                        <a href="../trek/tsum-valley-trek/" class="mega-trek-link"><span>Hidden Tsum Valley Trek</span> <span class="days-badge">14 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 5: Langtang -->
-                  <div class="mega-tab-content" id="tab-langtang">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">Valley & Lakes</div>
-                        <a href="../trek/langtang-valley-trek/" class="mega-trek-link"><span>Langtang Valley Trek</span> <span class="days-badge">8 DAYS</span></a>
-                        <a href="../trek/gosaikunda-lake-trek/" class="mega-trek-link"><span>Sacred Gosaikunda Lake Trek</span> <span class="days-badge">7 DAYS</span></a>
-                      </div>
-                      <div class="mega-col">
-                        <div class="mega-col-title">Heritage & Ridge</div>
-                        <a href="../trek/tamang-heritage-trail-trek/" class="mega-trek-link"><span>Tamang Heritage Trail</span> <span class="days-badge">9 DAYS</span></a>
-                        <a href="../trek/helambu-trek/" class="mega-trek-link"><span>Helambu Circuit Trek</span> <span class="days-badge">6 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 6: Kanchenjunga -->
-                  <div class="mega-tab-content" id="tab-kanchenjunga">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">Far Eastern Wilderness</div>
-                        <a href="../trek/kanchenjunga-base-camp-trek/" class="mega-trek-link"><span>Kanchenjunga Circuit Trek</span> <span class="days-badge">18 DAYS</span></a>
-                        <a href="../kanchenjunga-region-treks/" class="mega-trek-link"><span>Kanchenjunga North & South</span> <span class="days-badge">22 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 7: Dolpo -->
-                  <div class="mega-tab-content" id="tab-dolpo">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">Trans-Himalayan Plateau</div>
-                        <a href="../dolpo-region-treks/" class="mega-trek-link"><span>Upper Dolpo Circuit Trek</span> <span class="days-badge">24 DAYS</span></a>
-                        <a href="../dolpo-region-treks/" class="mega-trek-link"><span>Lower Dolpo & Phoksundo Lake</span> <span class="days-badge">15 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 8: Makalu -->
-                  <div class="mega-tab-content" id="tab-makalu">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">High Alpine Sanctuary</div>
-                        <a href="../trek/makalu-base-camp-trek/" class="mega-trek-link"><span>Makalu Base Camp Trek</span> <span class="days-badge">16 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 9: Rolwaling -->
-                  <div class="mega-tab-content" id="tab-rolwaling">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">Glacial Pass Expedition</div>
-                        <a href="../trek/rolwaling-valley-trek/" class="mega-trek-link"><span>Rolwaling & Tashi Lapcha Pass</span> <span class="days-badge">19 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 10: Far West & Mustang -->
-                  <div class="mega-tab-content" id="tab-farwest">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">Forbidden Kingdom & Rara</div>
-                        <a href="../trek/upper-mustang-trek/" class="mega-trek-link"><span>Upper Mustang Kingdom Trek</span> <span class="days-badge">14 DAYS</span></a>
-                        <a href="../trek/rara-lake-trek/" class="mega-trek-link"><span>Rara Lake Wilderness Trek</span> <span class="days-badge">10 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 11: Ganesh Himal -->
-                  <div class="mega-tab-content" id="tab-ganesh">
-                    <div class="mega-content-grid">
-                      <div class="mega-col">
-                        <div class="mega-col-title">Ruby Valley & Foothills</div>
-                        <a href="../trek/ruby-valley-trek/" class="mega-trek-link"><span>Ganesh Himal Ruby Valley Trek</span> <span class="days-badge">11 DAYS</span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
+          <li><a href="../nepal-trekking-packages/" class="nav-link">All Treks</a></li>
+          <li><a href="../nepal-tour-packages.html" class="nav-link">Tour Packages</a></li>
+          <li><a href="../peak-climbing-nepal/" class="nav-link">Peak Climbing</a></li>
+          <li><a href="../about-us.html" class="nav-link">About Us</a></li>
+          <li><a href="../team.html" class="nav-link active">Our Team</a></li>
+          <li><a href="../reviews.html" class="nav-link">Reviews</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-cta-item">
+            <a href="https://wa.me/9779849009919" class="nav-link-whatsapp" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              <span>Chat on WhatsApp</span>
+            </a>
           </li>
-
-          <!-- Standard Tour Packages Dropdown -->
-          <li class="nav-item-dropdown">
-            <a href="../nepal-tour-packages/" class="nav-link">Nepal Tours ▾</a>
-            <div class="nav-dropdown-menu">
-              <a href="../tour/kathmandu-pokhara-chitwan-tour/" class="nav-dropdown-link">Best of Nepal (8 Days)</a>
-              <a href="../tour/kathmandu-cultural-heritage-tour/" class="nav-dropdown-link">Kathmandu Heritage (4 Days)</a>
-              <a href="../tour/pokhara-valley-nature-tour/" class="nav-dropdown-link">Pokhara Scenic (4 Days)</a>
-              <a href="../tour/chitwan-national-park-safari/" class="nav-dropdown-link">Chitwan Jungle Safari (3 Days)</a>
-              <a href="../tour/nagarkot-sunrise-bhaktapur-tour/" class="nav-dropdown-link">Nagarkot Sunrise (3 Days)</a>
-              <a href="../tour/lumbini-birthplace-of-buddha-tour/" class="nav-dropdown-link">Lumbini Buddhist Tour (4 Days)</a>
-              <a href="../tour/nepal-luxury-helicopter-tour/" class="nav-dropdown-link">Luxury Helicopter Tour (5 Days)</a>
-            </div>
-          </li>
-
-          <!-- Standard Trekking Regions Dropdown -->
-          <li class="nav-item-dropdown">
-            <a href="../trekking-regions-nepal/" class="nav-link ">Trekking Regions ▾</a>
-            <div class="nav-dropdown-menu">
-              <a href="../everest-region-treks/" class="nav-dropdown-link">Everest Region Treks</a>
-              <a href="../annapurna-region-treks/" class="nav-dropdown-link">Annapurna Region Treks</a>
-              <a href="../langtang-region-treks/" class="nav-dropdown-link">Langtang Region Treks</a>
-              <a href="../manaslu-region-treks/" class="nav-dropdown-link">Manaslu Region Treks</a>
-              <a href="../mustang-region-treks/" class="nav-dropdown-link">Mustang Region Treks</a>
-              <a href="../dolpo-region-treks/" class="nav-dropdown-link">Dolpo Region Treks</a>
-              <a href="../kanchenjunga-region-treks/" class="nav-dropdown-link">Kanchenjunga Region Treks</a>
-              <a href="../ganesh-himal-region-treks/" class="nav-dropdown-link">Ganesh Himal Region Treks</a>
-              <a href="../makalu-region-treks/" class="nav-dropdown-link">Makalu Region Treks</a>
-              <a href="../rolwaling-region-treks/" class="nav-dropdown-link">Rolwaling Region Treks</a>
-              <a href="../restricted-area-treks-nepal/" class="nav-dropdown-link">Restricted Area Treks</a>
-              <a href="../peak-climbing-nepal/" class="nav-dropdown-link">Peak Climbing in Nepal</a>
-            </div>
-          </li>
-
-          
-          <!-- Travel Guide Dropdown -->
-          <li class="nav-item-dropdown">
-            <a href="../nepal-travel-guide/" class="nav-link">Travel Guide ▾</a>
-            <div class="nav-dropdown-menu">
-              <a href="../nepal-visa/" class="nav-dropdown-link">Nepal Visa</a>
-              <a href="../equipment-checklist/" class="nav-dropdown-link">Equipment Checklist</a>
-              <a href="../travel-insurance/" class="nav-dropdown-link">Travel Insurance</a>
-              <a href="../recommended-medical-kit/" class="nav-dropdown-link">Recommended Medical Kit</a>
-            </div>
-          </li>
-          <!-- Company Info Dropdown (Non-page Trigger) -->
-          <li class="nav-item-dropdown">
-            <span class="nav-link active">Company Info ▾</span>
-            <div class="nav-dropdown-menu">
-              <a href="../about-us.html" class="nav-dropdown-link">About Us</a>
-              <a href="../team.html" class="nav-dropdown-link">Meet Our Team</a>
-              <a href="../careers.html" class="nav-dropdown-link">Careers & Jobs</a>
-              <a href="../reviews.html" class="nav-dropdown-link">Reviews & Testimonials</a>
-            </div>
-          </li>
-
-          <li><a href="../blogs.html" class="nav-link ">Blog</a></li>
-          <li><a href="../contact.html" class="nav-link ">Contact</a></li>
         </ul>
       </nav>
 
@@ -380,339 +170,311 @@
     </div>
   </header>
 
-  <main style="background: #f8fafc;">
-
-    <!-- 01. PROFILE HERO -->
-    <header class="profile-hero">
-      <div class="container" style="max-width: 1000px;">
-        <div class="profile-hero-grid">
-          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80" alt="Lal Gurung" class="profile-photo">
-          <div>
-            <span class="pill pill-copper" style="margin-bottom: 10px; display: inline-block;">Founder & Managing Director · Mera Peak Summitter (6,476m)</span>
-            <h1 style="font-size: 2.8rem; color: white; font-weight: 800; margin: 4px 0 8px 0; line-height: 1.15;">Lal Gurung</h1>
-            <p style="color: #cbd5e1; font-size: 1.05rem; margin: 0;">Founder & Managing Director · Dhading Native • Namaste Hiking Trek Nepal</p>
-          </div>
-        </div>
+  <!-- Breadcrumb & Back Navigation -->
+  <div style="background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 14px 0;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+      <div style="font-size: 0.86rem; color: #64748b;">
+        <a href="../index.html" style="color: #64748b; text-decoration: none;">Home</a> /
+        <a href="../team.html" style="color: #64748b; text-decoration: none;">Our Team</a> /
+        <span style="color: #0f172a; font-weight: 600;">Lal Gurung</span>
       </div>
-    </header>
-
-    <!-- 02. STAT STRIP -->
-    <div class="profile-stats-strip">
-      
-        <div class="profile-stat-card">
-          <div style="height: 28px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
-          <div style="font-size: 1.15rem; font-weight: 800; color: #10b981;">Since 2002</div>
-          <div style="font-size: 0.75rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">Expedition Guiding</div>
-        </div>
-      
-        <div class="profile-stat-card">
-          <div style="height: 28px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg></div>
-          <div style="font-size: 1.15rem; font-weight: 800; color: #10b981;">5 Summits</div>
-          <div style="font-size: 0.75rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">Mt. Everest (8,848m)</div>
-        </div>
-      
-        <div class="profile-stat-card">
-          <div style="height: 28px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-          <div style="font-size: 1.15rem; font-weight: 800; color: #10b981;">English, Sherpa</div>
-          <div style="font-size: 0.75rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">Languages</div>
-        </div>
-      
-        <div class="profile-stat-card">
-          <div style="height: 28px; display: flex; align-items: center; justify-content: center; margin-bottom: 6px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#10b981" stroke="#10b981" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-          <div style="font-size: 1.15rem; font-weight: 800; color: #10b981;">4.95 / 5</div>
-          <div style="font-size: 0.75rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">Guest Trust Score</div>
-        </div>
-      
-    </div>
-
-    <!-- 03. BIOGRAPHY & STORY -->
-    <section class="section-padding" style="padding-top: 50px;">
-      <div class="container" style="max-width: 1000px;">
-        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; padding: 36px; box-shadow: 0 4px 18px rgba(0,0,0,0.04);">
-          <div style="background: #ecfdf5; border-left: 4px solid #10b981; padding: 18px 24px; border-radius: 8px; margin-bottom: 24px;">
-            <p style="font-size: 1.15rem; font-style: italic; font-weight: 700; color: #047857; margin: 0;">"Born in Pangboche, carrying loads at age 18 to leading direct Sherpa operations."</p>
-          </div>
-          <div style="color: #475569; font-size: 1rem; line-height: 1.7;">
-            <p style="margin-bottom: 16px;">Lal Gurung grew up in the high Himalayan village of Dhading, Nepal, right under the shadow of Mt. Ama Dablam. He began his mountain career in 1999 as an expedition porter, carrying duffel bags across Everest Base Camp and Cho La Pass. Over the next decade, through discipline and technical training, Ang qualified as a certified lead guide and high-altitude expedition leader.</p><p style="margin-bottom: 16px;">Between 2008 and 2018, Ang achieved 5 successful summits of Mt. Everest (8,848.86m) and led over 50 expeditions across Everest, Annapurna, and Manaslu. In 2011, he founded Namaste Hiking Trek to eliminate middleman brokers, guarantee fair 100% porter wages, and provide foreign trekkers with honest high-altitude safety management.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 04. NOTE FROM THE GUIDE / FOUNDER -->
-    <section style="padding-bottom: 40px;">
-      <div class="container" style="max-width: 1000px;">
-        <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 20px; padding: 36px; position: relative;">
-          <div style="font-size: 3rem; color: #10b981; font-family: Georgia, serif; line-height: 1; margin-bottom: 8px;">“</div>
-          <p style="font-size: 1.15rem; font-style: italic; color: #065f46; line-height: 1.7; margin-bottom: 14px;">Mountains are our home, not just a tourist destination. When you walk with our team, you become part of the Himalayan family, and your safety is our sacred promise.</p>
-          <strong style="color: #0f172a; font-size: 1rem;">— Lal Gurung, Founder</strong>
-        </div>
-      </div>
-    </section>
-
-    <!-- 05. ROUTES & TREKS LED -->
-    <section style="padding-bottom: 50px;">
-      <div class="container" style="max-width: 1000px;">
-        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; padding: 32px;">
-          <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 16px; font-weight: 800;">Featured Treks & Expeditions Led</h3>
-          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-            <a href="../trek/everest-base-camp-trek/" class="route-pill">Everest Base Camp Trek</a>
-<a href="../trek/everest-three-passes-trek/" class="route-pill">Everest Three Passes Trek</a>
-<a href="../peak-climbing-nepal/" class="route-pill">Island Peak Climbing</a>
-<a href="../peak-climbing-nepal/" class="route-pill">Mera Peak Expedition</a>
-<a href="../trek/manaslu-circuit-trek/" class="route-pill">Manaslu Circuit Trek</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 06. CERTIFICATIONS & TRAINING -->
-    <section style="padding-bottom: 50px;">
-      <div class="container" style="max-width: 1000px;">
-        <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 16px; font-weight: 800;">Verified Government Certifications</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
-          
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 16px;">
-      <div style="width: 44px; height: 44px; background: #ecfdf5; color: #10b981; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      </div>
-      <div>
-        <strong style="color: #0f172a; font-size: 0.95rem; display: block;">Govt. Senior Expedition Leader License</strong>
-        <span style="color: #64748b; font-size: 0.82rem;">Nepal Dept. of Tourism · License #1482</span>
+      <div style="display: flex; gap: 16px; font-size: 0.86rem;">
+        <a href="../team.html" style="color: #0284c7; font-weight: 600; text-decoration: none;">← Back to All Team</a>
+        <a href="../about-us.html#our-team" style="color: #64748b; text-decoration: none;">Explore Company Story</a>
       </div>
     </div>
-  
+  </div>
 
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 16px;">
-      <div style="width: 44px; height: 44px; background: #ecfdf5; color: #10b981; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      </div>
-      <div>
-        <strong style="color: #0f172a; font-size: 0.95rem; display: block;">High Altitude Wilderness Medical Cert</strong>
-        <span style="color: #64748b; font-size: 0.82rem;">Himalayan Rescue Association (HRA)</span>
-      </div>
-    </div>
-  
-
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; display: flex; align-items: center; gap: 16px;">
-      <div style="width: 44px; height: 44px; background: #ecfdf5; color: #10b981; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      </div>
-      <div>
-        <strong style="color: #0f172a; font-size: 0.95rem; display: block;">Everest 5x Summitter Certificate</strong>
-        <span style="color: #64748b; font-size: 0.82rem;">Nepal Mountaineering Association (NMA)</span>
-      </div>
-    </div>
-  
-        </div>
-      </div>
-    </section>
-
-    <!-- 07. VERIFIED GUEST REVIEWS (Prominent Previous H3 Heading Restored) -->
-    <section style="padding-bottom: 50px;">
-      <div class="container" style="max-width: 1000px;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
-          <div>
-            <span style="font-size: 0.8rem; font-weight: 800; color: #10b981; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 4px;">Verified Feedback</span>
-            <h3 style="font-size: 1.6rem; color: #0f172a; font-weight: 800; margin: 0;">What Trekkers Say About Ang</h3>
-          </div>
-          <div style="font-size: 0.88rem; color: #5a7a8a;">Rated <b style="color: #0f172a; font-size: 1.05rem;">4.9 / 5</b> across 120+ verified guest reviews</div>
-        </div>
-        
-        <div class="rev-grid-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-          
-    <div style="background: #ffffff; border: 1px solid #e9eef2; border-radius: 14px; padding: 22px 24px; box-shadow: 0 4px 16px rgba(27,45,84,0.05); display: flex; flex-direction: column; justify-content: space-between;">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
-          <div style="display: flex; gap: 3px; color: #e8a23d;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: #5a7a8a;"><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#34E0A1"/><circle cx="8.3" cy="12" r="2.1" fill="#000"/><circle cx="15.7" cy="12" r="2.1" fill="#000"/></svg>Tripadvisor</span>
-        </div>
-        <p style="color: #3a3a3a; font-size: 0.95rem; line-height: 1.65; margin: 0 0 16px 0;">
-          Our EBC expedition was legendary, and <span style="background: #fff3d6; color: #0f172a; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Lal Gurung</span> was the reason. He read the altitude perfectly, met us in Kathmandu, and arranged quick helicopter dispatch when bad weather hit Lukla.
-        </p>
-      </div>
-      <div style="display: flex; align-items: center; gap: 10px; font-size: 0.85rem; pt-3; border-top: 1px solid #f1f5f9; margin-top: 8px;">
-        <div style="width: 34px; height: 34px; border-radius: 50%; background: #243a6b; color: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">D</div>
-        <div>
-          <b style="color: #243a6b;">David M.</b> <span style="color: #5a7a8a;">· UK · Everest Base Camp · Oct 2025</span>
-        </div>
-      </div>
-    </div>
-  
-
-    <div style="background: #ffffff; border: 1px solid #e9eef2; border-radius: 14px; padding: 22px 24px; box-shadow: 0 4px 16px rgba(27,45,84,0.05); display: flex; flex-direction: column; justify-content: space-between;">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
-          <div style="display: flex; gap: 3px; color: #e8a23d;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: #5a7a8a;"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.7-2.4 3.6v3h3.9c2.3-2.1 3.5-5.2 3.5-8.8z"/><path fill="#34A853" d="M12 24c3.2 0 5.9-1.1 7.9-2.9l-3.9-3c-1.1.7-2.4 1.1-4 1.1-3.1 0-5.7-2.1-6.6-4.9H1.4v3.1C3.4 21.3 7.4 24 12 24z"/><path fill="#FBBC05" d="M5.4 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V6.6H1.4C.5 8.2 0 10 0 12s.5 3.8 1.4 5.4l4-3.1z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4C17.9 1.2 15.2 0 12 0 7.4 0 3.4 2.7 1.4 6.6l4 3.1C6.3 6.9 8.9 4.8 12 4.8z"/></svg>Google</span>
-        </div>
-        <p style="color: #3a3a3a; font-size: 0.95rem; line-height: 1.65; margin: 0 0 16px 0;">
-          We requested <span style="background: #fff3d6; color: #0f172a; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Ang Tshering</span> after a friend recommended him and he exceeded every expectation. Deeply knowledgeable about Sherpa culture, monasteries, and glacier safety.
-        </p>
-      </div>
-      <div style="display: flex; align-items: center; gap: 10px; font-size: 0.85rem; pt-3; border-top: 1px solid #f1f5f9; margin-top: 8px;">
-        <div style="width: 34px; height: 34px; border-radius: 50%; background: #243a6b; color: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">E</div>
-        <div>
-          <b style="color: #243a6b;">Elena R.</b> <span style="color: #5a7a8a;">· Germany · Three Passes Trek · Apr 2025</span>
-        </div>
-      </div>
-    </div>
-  
-
-    <div style="background: #ffffff; border: 1px solid #e9eef2; border-radius: 14px; padding: 22px 24px; box-shadow: 0 4px 16px rgba(27,45,84,0.05); display: flex; flex-direction: column; justify-content: space-between;">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
-          <div style="display: flex; gap: 3px; color: #e8a23d;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: #5a7a8a;"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.7-2.4 3.6v3h3.9c2.3-2.1 3.5-5.2 3.5-8.8z"/><path fill="#34A853" d="M12 24c3.2 0 5.9-1.1 7.9-2.9l-3.9-3c-1.1.7-2.4 1.1-4 1.1-3.1 0-5.7-2.1-6.6-4.9H1.4v3.1C3.4 21.3 7.4 24 12 24z"/><path fill="#FBBC05" d="M5.4 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V6.6H1.4C.5 8.2 0 10 0 12s.5 3.8 1.4 5.4l4-3.1z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4C17.9 1.2 15.2 0 12 0 7.4 0 3.4 2.7 1.4 6.6l4 3.1C6.3 6.9 8.9 4.8 12 4.8z"/></svg>Google</span>
-        </div>
-        <p style="color: #3a3a3a; font-size: 0.95rem; line-height: 1.65; margin: 0 0 16px 0;">
-          Fourteen days on Everest Base Camp with <span style="background: #fff3d6; color: #0f172a; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Ang Tshering</span> and his Sherpa crew. Safety was clearly his top priority, keeping our SpO2 logs twice daily. A true Himalayan legend!
-        </p>
-      </div>
-      <div style="display: flex; align-items: center; gap: 10px; font-size: 0.85rem; pt-3; border-top: 1px solid #f1f5f9; margin-top: 8px;">
-        <div style="width: 34px; height: 34px; border-radius: 50%; background: #243a6b; color: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">M</div>
-        <div>
-          <b style="color: #243a6b;">Marcus V.</b> <span style="color: #5a7a8a;">· Switzerland · EBC Trek · Nov 2024</span>
-        </div>
-      </div>
-    </div>
-  
-
-    <div style="background: #ffffff; border: 1px solid #e9eef2; border-radius: 14px; padding: 22px 24px; box-shadow: 0 4px 16px rgba(27,45,84,0.05); display: flex; flex-direction: column; justify-content: space-between;">
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
-          <div style="display: flex; gap: 3px; color: #e8a23d;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#e8a23d" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-          <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: #5a7a8a;"><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#34E0A1"/><circle cx="8.3" cy="12" r="2.1" fill="#000"/><circle cx="15.7" cy="12" r="2.1" fill="#000"/></svg>Tripadvisor</span>
-        </div>
-        <p style="color: #3a3a3a; font-size: 0.95rem; line-height: 1.65; margin: 0 0 16px 0;">
-          As a solo trekker I felt completely safe. <span style="background: #fff3d6; color: #0f172a; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Ang Tshering</span> is respectful, professional, and genuinely caring. He knows every stone in Dhading. Booking with Namaste Hiking Trek again!
-        </p>
-      </div>
-      <div style="display: flex; align-items: center; gap: 10px; font-size: 0.85rem; pt-3; border-top: 1px solid #f1f5f9; margin-top: 8px;">
-        <div style="width: 34px; height: 34px; border-radius: 50%; background: #243a6b; color: #ffffff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">J</div>
-        <div>
-          <b style="color: #243a6b;">Jessica L.</b> <span style="color: #5a7a8a;">· Canada · Gokyo Lakes · Mar 2025</span>
-        </div>
-      </div>
-    </div>
-  
-        </div>
-      </div>
-    </section>
-
-    <!-- 08. STORIES & ARTICLES BY GUIDE -->
-    <section style="padding-bottom: 50px;">
-      <div class="container" style="max-width: 1000px;">
-        <h3 style="font-size: 1.25rem; color: #0f172a; margin-bottom: 16px; font-weight: 800;">Mountain Articles & Advice</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
-          
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 22px; box-shadow: 0 4px 16px rgba(0,0,0,0.03);">
-      <span style="font-size: 0.75rem; font-weight: 800; color: #059669; text-transform: uppercase; letter-spacing: 0.5px;">Altitude Safety</span>
-      <h4 style="font-size: 1.05rem; color: #0f172a; margin: 8px 0 10px 0; line-height: 1.4;">Why Compressed 8-Day EBC Itineraries Are Dangerous</h4>
-      <span style="font-size: 0.8rem; color: #64748b;">By Lal Gurung · 7 min read</span>
-    </div>
-  
-
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 22px; box-shadow: 0 4px 16px rgba(0,0,0,0.03);">
-      <span style="font-size: 0.75rem; font-weight: 800; color: #059669; text-transform: uppercase; letter-spacing: 0.5px;">Sherpa Heritage</span>
-      <h4 style="font-size: 1.05rem; color: #0f172a; margin: 8px 0 10px 0; line-height: 1.4;">From Porter to Mera Peak Summitter (6,476m): My Himalayan Story</h4>
-      <span style="font-size: 0.8rem; color: #64748b;">By Lal Gurung · 10 min read</span>
-    </div>
-  
-        </div>
-      </div>
-    </section>
-
-    <!-- 09. DIRECT CTA BANNER -->
-    <section style="padding-bottom: 80px;">
-      <div class="container" style="max-width: 1000px;">
-        <div style="background: linear-gradient(135deg, #071d36 0%, #0c2b4e 100%); border-radius: 24px; padding: 40px; text-align: center; color: white;">
-          <h3 style="font-size: 2rem; color: white; font-weight: 800; margin-bottom: 10px;">Want Ang on Your Trek?</h3>
-          <p style="color: #cbd5e1; font-size: 1.05rem; max-width: 600px; margin: 0 auto 24px auto;">Request Lal Gurung by name when planning your trip, subject to guide availability for your dates.</p>
-          <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-            <button class="btn btn-primary open-inquiry-btn" style="padding: 14px 32px; font-size: 1rem;">Request Lal Gurung as My Guide →</button>
-            <a href="../team.html" class="btn btn-secondary" style="padding: 14px 24px; font-size: 1rem;">← Back to All Team Members</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Luxury Footer -->
-  <footer class="site-footer">
+  <!-- Hero Section -->
+  <section class="profile-hero">
     <div class="container">
-
-      <!-- Top 4-Column Luxury Layout -->
-      <div class="footer-luxury-layout">
-
-        <!-- Column 1: Main Pages -->
-        <div class="footer-nav-col">
-          <h4>Main Pages</h4>
-          <ul class="footer-nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../nepal-trekking-packages/">All Trek Packages</a></li>
-            <li><a href="../trek/everest-base-camp-trek/">Everest Base Camp</a></li>
-            <li><a href="../trekking-regions-nepal/">Trekking Regions</a></li>
-            <li><a href="../custom-plan.html">Tailor-Made Trip</a></li>
-          </ul>
+      <div class="profile-hero-grid">
+        <div class="profile-photo-wrap">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" alt="Lal Gurung - Founder & Managing Director">
+          <div class="profile-badge-overlay">
+            <span class="guide-tag-pill">Govt. Licensed Guide</span>
+          </div>
         </div>
 
-        <!-- Column 2: Essential Info -->
-        <div class="footer-nav-col">
-          <h4>Essential Info</h4>
-          <ul class="footer-nav-links">
-            <li><a href="../nepal-travel-guide/">Nepal Travel Guide</a></li>
-            <li><a href="../about-us.html">About Us</a></li>
-            <li><a href="../team.html">Meet Our Team</a></li>
-            <li><a href="../careers.html">Careers & Jobs</a></li>
-            <li><a href="../reviews.html">Reviews & Testimonials</a></li>
-            <li><a href="../blogs.html">Blog & Articles</a></li>
-            <li><a href="../contact.html">Contact Us</a></li>
-          </ul>
-        </div>
+        <div>
+          <div style="font-size: 0.88rem; font-weight: 700; color: #f59e0b; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">
+            Founder & Managing Director
+          </div>
+          <h1 style="font-size: clamp(2rem, 3.8vw, 2.8rem); font-weight: 800; margin: 0 0 10px 0; color: #ffffff;">
+            Lal Gurung
+          </h1>
+          <p style="font-size: 1.05rem; color: #cbd5e1; margin: 0 0 16px 0; line-height: 1.6;">
+            Dhading, Nepal · 20 Years Experience · 100+ Everest · 80+ Annapurna · 80+ Upper Mustang · 70+ Manaslu · 70+ Langtang
+          </p>
 
-        <!-- Column 3: Center Expedition Title & Pill CTA -->
-        <div class="footer-cta-center">
-          <h2 class="footer-cta-title">Expedition Expertise<br>at Your Service</h2>
-          <button class="btn-journey-pill open-inquiry-btn">
-            <span>Begin Your Journey</span>
-            <span class="arrow-circle-green">↗</span>
-          </button>
-        </div>
+          <div style="background: rgba(255, 255, 255, 0.08); border-left: 4px solid #f59e0b; padding: 12px 18px; border-radius: 0 10px 10px 0; margin-bottom: 22px; font-style: italic; color: #e2e8f0; font-size: 0.95rem; line-height: 1.6;">
+            "Nepal is a country blessed with every form of natural beauty. Mountain success is measured by the trust we earn, the safety we uphold, and the care we give to every trekker and porter."
+          </div>
 
-        <!-- Column 4: Social Media -->
-        <div class="footer-social-col" style="text-align: right;">
-          <h4>Social Media</h4>
-          <ul class="footer-nav-links">
-            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-            <li><a href="https://wa.me/9779800000000" target="_blank">WhatsApp</a></li>
-          </ul>
-        </div>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <button type="button" class="btn btn-primary open-inquiry-btn" style="padding: 10px 24px; font-weight: 700;">
+              Request Lal for Your Trek
+            </button>
+            <a href="https://wa.me/9779849009919" class="btn btn-outline" style="border: 2px solid #ffffff; color: #ffffff; padding: 10px 22px; font-weight: 700; text-decoration: none;" target="_blank" rel="noopener">
+              WhatsApp Us
+            </a>
+          </div>
 
-      </div>
-
-      <!-- Bottom Bar Strip -->
-      <div class="footer-bottom-strip">
-        <div>&copy; 2026 Namaste Hiking Trek. All Rights Reserved.</div>
-        <div class="footer-legal-links">
-          <a href="../privacy-policy.html">Privacy Policy</a>
-          <a href="../terms-and-conditions.html">Terms & Conditions</a>
+          <!-- Fast Facts Row -->
+          <div class="stats-card-row">
+            <div class="stats-card-item">
+              <div class="stats-card-num">20 Years</div>
+              <div class="stats-card-label">Experience</div>
+            </div>
+            <div class="stats-card-item">
+              <div class="stats-card-num">100%</div>
+              <div class="stats-card-label">Licensed</div>
+            </div>
+            <div class="stats-card-item">
+              <div class="stats-card-num">5.0 ★</div>
+              <div class="stats-card-label">Guest Rating</div>
+            </div>
+            <div class="stats-card-item">
+              <div class="stats-card-num">First Aid</div>
+              <div class="stats-card-label">Certified</div>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
+  </section>
 
-    <!-- Giant Watermark Brand Typography at Bottom -->
-    <div class="watermark-brand-container">
-      <div class="watermark-brand-text">NAMASTE.</div>
+  <!-- Main Profile Content -->
+  <section class="section-padding" style="background: #ffffff; padding-top: 50px;">
+    <div class="container" style="max-width: 1080px;">
+      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px;">
+
+        <!-- Left Column: Biography, Routes, Reviews -->
+        <div>
+          <!-- Biography -->
+          <div style="margin-bottom: 40px;">
+            <h2 style="font-size: 1.65rem; color: #0f172a; margin-bottom: 16px; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px;">
+              About &amp; Mountain Journey
+            </h2>
+            <p style="color: #475569; font-size: 0.96rem; line-height: 1.75; margin-bottom: 16px;">Born in Dhading, Lal Gurung began his mountain career over two decades ago, learning the Himalayan trail networks from the ground up as a young porter before qualifying as a licensed mountain guide through the National Academy of Tourism and Hotel Management (NATHM).</p>
+<p style="color: #475569; font-size: 0.96rem; line-height: 1.75; margin-bottom: 16px;">Having summited Mera Peak (6,476m) and led over 400 high-altitude expeditions across Everest, Annapurna, Manaslu, Mustang, and Langtang, Lal founded Namaste Hiking Trek to deliver authentic, locally-operated mountain adventures with transparent pricing and uncompromising safety standards.</p>
+<p style="color: #475569; font-size: 0.96rem; line-height: 1.75; margin-bottom: 16px;">Today, Lal personally oversees every customized itinerary, conducts pre-trek client safety briefings at our Kathmandu headquarters, monitors daily mountain weather conditions, and coordinates emergency logistics 24/7.</p>
+          </div>
+
+          <!-- Featured Treks Led -->
+          <div style="margin-bottom: 40px;">
+            <h3 style="font-size: 1.45rem; color: #0f172a; margin-bottom: 16px; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px;">
+              Featured Treks &amp; Expeditions Led
+            </h3>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; transition: transform 0.2s ease;">
+      <div>
+        <h4 style="font-size: 1.05rem; color: #0f172a; margin: 0 0 4px 0;">Everest Base Camp Trek</h4>
+        <div style="font-size: 0.8rem; color: #64748b;">14 Days · 100+ Expeditions Led</div>
+      </div>
+      <a href="../trek/everest-base-camp-trek/index.html" class="btn btn-outline" style="padding: 6px 14px; font-size: 0.8rem; text-decoration: none; border-radius: 9999px;">View Trek →</a>
+    </div>
+  
+
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; transition: transform 0.2s ease;">
+      <div>
+        <h4 style="font-size: 1.05rem; color: #0f172a; margin: 0 0 4px 0;">Annapurna Circuit Trek</h4>
+        <div style="font-size: 0.8rem; color: #64748b;">17 Days · 80+ Expeditions Led</div>
+      </div>
+      <a href="../trek/annapurna-circuit-trek/index.html" class="btn btn-outline" style="padding: 6px 14px; font-size: 0.8rem; text-decoration: none; border-radius: 9999px;">View Trek →</a>
+    </div>
+  
+
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; transition: transform 0.2s ease;">
+      <div>
+        <h4 style="font-size: 1.05rem; color: #0f172a; margin: 0 0 4px 0;">Upper Mustang Trek</h4>
+        <div style="font-size: 0.8rem; color: #64748b;">14 Days · 80+ Expeditions Led</div>
+      </div>
+      <a href="../trek/upper-mustang-trek/index.html" class="btn btn-outline" style="padding: 6px 14px; font-size: 0.8rem; text-decoration: none; border-radius: 9999px;">View Trek →</a>
+    </div>
+  
+
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; transition: transform 0.2s ease;">
+      <div>
+        <h4 style="font-size: 1.05rem; color: #0f172a; margin: 0 0 4px 0;">Manaslu Circuit Trek</h4>
+        <div style="font-size: 0.8rem; color: #64748b;">14 Days · 70+ Expeditions Led</div>
+      </div>
+      <a href="../trek/manaslu-circuit-trek/index.html" class="btn btn-outline" style="padding: 6px 14px; font-size: 0.8rem; text-decoration: none; border-radius: 9999px;">View Trek →</a>
+    </div>
+  
+
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; transition: transform 0.2s ease;">
+      <div>
+        <h4 style="font-size: 1.05rem; color: #0f172a; margin: 0 0 4px 0;">Langtang Valley Trek</h4>
+        <div style="font-size: 0.8rem; color: #64748b;">8 Days · 70+ Expeditions Led</div>
+      </div>
+      <a href="../trek/langtang-valley-trek/index.html" class="btn btn-outline" style="padding: 6px 14px; font-size: 0.8rem; text-decoration: none; border-radius: 9999px;">View Trek →</a>
+    </div>
+  
+            </div>
+          </div>
+
+          <!-- Verified Traveler Reviews -->
+          
+          <div style="margin-bottom: 40px;">
+            <h3 style="font-size: 1.45rem; color: #0f172a; margin-bottom: 16px; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px;">
+              What Trekkers Say About Lal
+            </h3>
+            
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 22px; margin-bottom: 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <div style="font-weight: 700; color: #0f172a; font-size: 0.95rem;">AmarSingh · United States</div>
+        <div style="color: #f59e0b; font-size: 0.85rem; letter-spacing: 1px;">★★★★★</div>
+      </div>
+      <div style="font-size: 0.8rem; color: #059669; font-weight: 600; margin-bottom: 10px;">Annapurna Base Camp Trek · Nov 2025</div>
+      <p style="font-size: 0.9rem; color: #475569; line-height: 1.65; margin: 0; font-style: italic;">"Lal Gurung was extremely helpful during planning—he customized the itinerary to fit our needs and kept us informed with clear, honest communication when weather looked uncertain. We stayed in the best tea houses and felt genuine care throughout the trip."</p>
+    </div>
+  
+
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 22px; margin-bottom: 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <div style="font-weight: 700; color: #0f172a; font-size: 0.95rem;">Srinivas Raju · United States</div>
+        <div style="color: #f59e0b; font-size: 0.85rem; letter-spacing: 1px;">★★★★★</div>
+      </div>
+      <div style="font-size: 0.8rem; color: #059669; font-weight: 600; margin-bottom: 10px;">Khopra Ridge Trek · Nov 2025</div>
+      <p style="font-size: 0.9rem; color: #475569; line-height: 1.65; margin: 0; font-style: italic;">"Namaste Hiking Trek run by Mr Lal Gurung made the entire planning process flawless. The communication from the initial inquiry right up to the start of the hike was professional, prompt, and incredibly reassuring."</p>
+    </div>
+  
+
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 22px; margin-bottom: 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <div style="font-weight: 700; color: #0f172a; font-size: 0.95rem;">Harmonica · International</div>
+        <div style="color: #f59e0b; font-size: 0.85rem; letter-spacing: 1px;">★★★★★</div>
+      </div>
+      <div style="font-size: 0.8rem; color: #059669; font-weight: 600; margin-bottom: 10px;">Langtang Valley Trek · May 2025</div>
+      <p style="font-size: 0.9rem; color: #475569; line-height: 1.65; margin: 0; font-style: italic;">"We had a pleasant Langtang valley trekking from their professional assist and thoughtful service. Thanks the manager Mr. Lal Gurung and all members for the great laughs and teaching us dhumple!"</p>
+    </div>
+  
+          </div>
+          
+        </div>
+
+        <!-- Right Column: Sidebar Fast Info -->
+        <div>
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 26px; position: sticky; top: 100px;">
+            <h3 style="font-size: 1.25rem; color: #0f172a; margin: 0 0 16px 0;">Guide Profile Details</h3>
+
+            <div style="margin-bottom: 16px; font-size: 0.88rem;">
+              <strong style="color: #0f172a; display: block; margin-bottom: 4px;">Role &amp; Title:</strong>
+              <span style="color: #64748b;">Founder & Managing Director</span>
+            </div>
+
+            <div style="margin-bottom: 16px; font-size: 0.88rem;">
+              <strong style="color: #0f172a; display: block; margin-bottom: 4px;">Home District:</strong>
+              <span style="color: #64748b;">Dhading, Nepal</span>
+            </div>
+
+            <div style="margin-bottom: 16px; font-size: 0.88rem;">
+              <strong style="color: #0f172a; display: block; margin-bottom: 4px;">Spoken Languages:</strong>
+              <span style="color: #64748b;">English, Nepali, Hindi, Cantonese, Gurung</span>
+            </div>
+
+            <div style="margin-bottom: 16px; font-size: 0.88rem;">
+              <strong style="color: #0f172a; display: block; margin-bottom: 4px;">Verified Qualifications:</strong>
+              <span style="color: #64748b;">NATHM Guide License, NMA Alpine Climbing, Mera Peak Summit (6,476m), Wilderness First Aid</span>
+            </div>
+
+            <div style="margin-bottom: 24px; font-size: 0.88rem;">
+              <strong style="color: #0f172a; display: block; margin-bottom: 4px;">Operating Longevity:</strong>
+              <span style="color: #64748b;">20 Years active mountain guiding</span>
+            </div>
+
+            <button type="button" class="btn btn-primary open-inquiry-btn" style="width: 100%; text-align: center; padding: 12px; font-weight: 700; margin-bottom: 10px;">
+              Request Lal
+            </button>
+            <a href="../team.html" class="btn btn-outline" style="width: 100%; text-align: center; padding: 10px; font-weight: 600; text-decoration: none; display: block; box-sizing: border-box; border-radius: 9999px;">
+              View All 14 Team Members
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section-padding" style="background: linear-gradient(rgba(7, 29, 54, 0.92), rgba(7, 29, 54, 0.96)), url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; color: white; text-align: center;">
+    <div class="container">
+      <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.4rem); font-weight: 800; color: #ffffff; margin-bottom: 12px;">
+        Want Lal Gurung on Your Trek?
+      </h2>
+      <p style="color: #cbd5e1; max-width: 620px; margin: 0 auto 28px auto; font-size: 1rem; line-height: 1.7;">
+        Tell us your preferred dates, group size, and route. We will check Lal's departure schedule and confirm availability within 24 hours.
+      </p>
+      <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+        <button class="btn btn-primary open-inquiry-btn" style="padding: 12px 30px; font-weight: 700; font-size: 1rem;">
+          Reserve Your Guide Today
+        </button>
+        <a href="https://wa.me/9779849009919" class="btn btn-outline" style="background: transparent; color: white; border: 2px solid white; padding: 12px 26px; font-weight: 700; font-size: 1rem; text-decoration: none;" target="_blank" rel="noopener">
+          WhatsApp Us Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer" style="background: #071d36; color: #cbd5e1; padding: 60px 0 24px 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px;">
+        <div>
+          <a href="../index.html" class="logo-brand" style="margin-bottom: 16px; display: inline-block;">
+            <img src="../images/logo.png" alt="Namaste Hiking Trek Logo" style="height: 48px; filter: brightness(0) invert(1);">
+          </a>
+          <p style="font-size: 0.88rem; line-height: 1.7; color: #94a3b8; margin-bottom: 16px;">
+            Namaste Hiking Trek is a locally-owned, government-registered trekking agency based in Kathmandu, Nepal. Dedicated to authentic, safe, and ethical Himalayan trekking.
+          </p>
+          <div style="font-size: 0.85rem; color: #94a3b8;">
+            <strong>Registration:</strong> PAN/VAT #60124859 · Dept. of Tourism #2841
+          </div>
+        </div>
+
+        <div>
+          <h4 style="color: #ffffff; font-size: 1rem; margin-bottom: 16px;">Main Pages</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.88rem; line-height: 2;">
+            <li><a href="../about-us.html" style="color: #94a3b8; text-decoration: none;">About Us</a></li>
+            <li><a href="../team.html" style="color: #ffffff; font-weight: 600; text-decoration: none;">Our Team</a></li>
+            <li><a href="../reviews.html" style="color: #94a3b8; text-decoration: none;">Reviews</a></li>
+            <li><a href="../blogs.html" style="color: #94a3b8; text-decoration: none;">Blog &amp; Guides</a></li>
+            <li><a href="../contact.html" style="color: #94a3b8; text-decoration: none;">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: #ffffff; font-size: 1rem; margin-bottom: 16px;">Essential Info</h4>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.88rem; line-height: 2;">
+            <li><a href="../equipment-checklist.html" style="color: #94a3b8; text-decoration: none;">Packing List</a></li>
+            <li><a href="../nepal-visa.html" style="color: #94a3b8; text-decoration: none;">Nepal Visa Guide</a></li>
+            <li><a href="../travel-insurance.html" style="color: #94a3b8; text-decoration: none;">Travel Insurance</a></li>
+            <li><a href="../terms-and-conditions.html" style="color: #94a3b8; text-decoration: none;">Terms &amp; Conditions</a></li>
+            <li><a href="../privacy-policy.html" style="color: #94a3b8; text-decoration: none;">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: #ffffff; font-size: 1rem; margin-bottom: 16px;">Kathmandu Office</h4>
+          <p style="font-size: 0.88rem; line-height: 1.7; color: #94a3b8; margin-bottom: 12px;">
+            Ekata Basti Marg, Kathmandu, Nepal<br>
+            Phone: +977 9849009919<br>
+            Email: namastehikingtrek@gmail.com
+          </p>
+          <div style="font-size: 0.85rem; color: #059669; font-weight: 700;">
+            24/7 Emergency Dispatch Available
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; text-align: center; font-size: 0.82rem; color: #64748b;">
+        &copy; 2026 Namaste Hiking Trek Pvt. Ltd. All rights reserved. Locally owned &amp; operated in Nepal.
+      </div>
     </div>
   </footer>
 
-  <script type="module" src="../js/inquiry-modal.js"></script>
-  <script src="../js/header-scroll.js"></script>
   <script src="../js/mega-menu.js"></script>
 </body>
 </html>
