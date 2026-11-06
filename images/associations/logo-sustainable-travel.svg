@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" width="240" height="50" role="img" aria-label="Sustainable Travel International">
+  <!-- Sustainable Travel International Emblem -->
+  <g transform="translate(4, 3)">
+    <!-- Outer Teal Ring -->
+    <circle cx="22" cy="22" r="20" stroke="#006B70" stroke-width="2.5" fill="none"/>
+    <!-- Inner Cyan Ring -->
+    <circle cx="22" cy="22" r="14.5" stroke="#00A896" stroke-width="2" fill="none"/>
+    <!-- Center Leaf / Globe Compass Element -->
+    <circle cx="22" cy="22" r="8.5" fill="#02C39A"/>
+    <!-- White Axis Coordinates -->
+    <path d="M22 6 L22 38 M6 22 L38 22" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="22" cy="22" r="3.8" fill="#006B70"/>
+    <circle cx="22" cy="22" r="1.5" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Typography -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <text x="56" y="23" font-size="12.5" font-weight="800" fill="#006B70" letter-spacing="0.05em">SUSTAINABLE</text>
+    <text x="56" y="38" font-size="9.5" font-weight="700" fill="#008289" letter-spacing="0.07em">TRAVEL INTERNATIONAL</text>
+  </g>
+</svg>
+

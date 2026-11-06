@@ -30,10 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const countText = document.getElementById('platform-count-text');
 
   const platformMeta = {
-    google: { score: '4.9', count: '(1,240+ Verified Google Reviews)' },
-    tripadvisor: { score: '5.0', count: '(890+ Verified TripAdvisor Reviews • Certificate of Excellence)' },
-    trustpilot: { score: '4.9', count: '(650+ Verified Trustpilot Reviews • Rated \'Excellent\')' },
-    sourceforge: { score: '4.9', count: '(480+ Verified Client Reviews)' }
+    google: { score: '4.9', count: '(150+ Verified Google Reviews • Rated 4.9/5)' },
+    tripadvisor: { score: '5.0', count: '(123+ Verified TripAdvisor Reviews • Best of the Best 2024 & 2025)' },
+    trustpilot: { score: '5.0', count: '(Rated 5.0/5 Excellent • 100% Verified)' }
   };
 
   subtabBtns.forEach(subBtn => {

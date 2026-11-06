@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 30" width="168" height="30">
+  <rect x="0" y="2" width="26" height="26" rx="6" fill="#FF5533"/>
+  <g transform="translate(4, 7.5)" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round">
+    <ellipse cx="6" cy="7.5" rx="4.5" ry="4.5" fill="#FFFFFF"/>
+    <ellipse cx="12" cy="7.5" rx="4.5" ry="4.5" fill="#FFFFFF"/>
+    <circle cx="6" cy="7.5" r="1.8" fill="#FF5533"/>
+    <circle cx="12" cy="7.5" r="1.8" fill="#FF5533"/>
+  </g>
+  <text x="34" y="21" fill="#FFFFFF" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15.5" font-weight="800" letter-spacing="-0.3">GetYourGuide</text>
+</svg>
