@@ -1368,35 +1368,29 @@ textarea {
 
 /* Recommended On Platform Trust Strip */
 .footer-recommended-strip {
-  margin-top: 48px;
-  padding-top: 28px;
+  margin-top: 36px;
+  padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 22px;
   flex-wrap: wrap;
 }
 
 .recommended-label {
-  font-family: var(--font-heading);
-  font-size: 0.82rem;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
   font-weight: 700;
-  color: #94A3B8;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+  text-transform: none;
   white-space: nowrap;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
 }
 
 .recommended-label::after {
-  content: '';
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--footer-mint-accent);
+  display: none;
 }
 
 .recommended-logos-row {
