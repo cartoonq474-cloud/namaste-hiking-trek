@@ -1241,8 +1241,7 @@ textarea {
 .footer-hero-cta {
   position: relative;
   padding: 105px 0 75px;
-  background: radial-gradient(circle at 82% 55%, rgba(45, 212, 191, 0.09) 0%, transparent 55%),
-              linear-gradient(135deg, #051124 0%, #071933 50%, #040d1a 100%);
+  background-color: #04101e;
   overflow: hidden;
   border-top: 1px solid var(--footer-border-subtle);
 }
@@ -1256,6 +1255,12 @@ textarea {
   height: 100%;
   pointer-events: none;
   z-index: 1;
+  background-image: 
+    linear-gradient(to right, #04101e 0%, #04101e 35%, rgba(4, 16, 30, 0.92) 48%, rgba(4, 16, 30, 0.15) 65%, transparent 82%),
+    url('images/footer-mountain-bg.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
 }
 
 .footer-hero-container {
@@ -2045,7 +2050,11 @@ textarea {
 
   .footer-mountain-bg {
     width: 100%;
-    opacity: 0.35;
+    opacity: 0.85;
+    background-image: 
+      linear-gradient(to bottom, rgba(4, 16, 30, 0.88) 0%, rgba(4, 16, 30, 0.75) 50%, rgba(4, 16, 30, 0.95) 100%),
+      url('images/footer-mountain-bg.png');
+    background-position: center bottom;
   }
 
   .footer-hero-actions {
