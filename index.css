@@ -225,30 +225,90 @@ textarea {
 .logo-brand {
   display: inline-flex;
   align-items: center;
-  line-height: 0;
+  gap: 12px;
   text-decoration: none;
+  line-height: 1;
 }
 
 .logo-brand img {
-  height: 70px;
-  width: auto;
+  height: 52px;
+  width: 52px;
   object-fit: contain;
   display: block;
-  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .logo-brand:hover img {
-  transform: scale(1.04);
-}
-
-@media (max-width: 768px) {
-  .logo-brand img {
-    height: 62px;
-  }
+  transform: scale(1.05);
 }
 
 .logo-text-group {
-  display: none !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.05;
+}
+
+.brand-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: var(--color-primary-navy);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.brand-subtitle {
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  color: #00E599;
+  text-transform: uppercase;
+  margin-top: 2px;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.header-theme-dark .brand-title,
+.main-header.header-dark .brand-title {
+  color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+  .logo-brand img {
+    height: 48px;
+    width: 48px;
+  }
+  .brand-title {
+    font-size: 1.22rem;
+  }
+  .brand-subtitle {
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-brand {
+    gap: 8px;
+  }
+  .logo-brand img {
+    height: 42px;
+    width: 42px;
+  }
+  .brand-title {
+    font-size: 1.08rem;
+    letter-spacing: 0.05em;
+  }
+  .brand-subtitle {
+    font-size: 0.56rem;
+    letter-spacing: 0.18em;
+  }
 }
 
 /* Nav Menu */
@@ -1564,7 +1624,7 @@ textarea {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 900;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   color: #FFFFFF;
   line-height: 1.1;
   text-transform: uppercase;
@@ -1574,9 +1634,10 @@ textarea {
   font-family: var(--font-heading);
   font-size: 0.68rem;
   font-weight: 800;
-  letter-spacing: 0.22em;
-  color: var(--footer-mint-accent);
+  letter-spacing: 0.24em;
+  color: #00E599;
   text-transform: uppercase;
+  margin-top: 2px;
 }
 
 .footer-brand-mission {
