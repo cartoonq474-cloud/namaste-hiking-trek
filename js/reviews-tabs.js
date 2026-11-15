@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const countText = document.getElementById('platform-count-text');
 
   const platformMeta = {
-    google: { score: '4.9', count: '(150+ Verified Google Reviews • Rated 4.9/5)' },
+    google: { score: '5.0', count: '(150+ Verified Google Reviews • Rated 5.0/5)' },
     tripadvisor: { score: '5.0', count: '(123+ Verified TripAdvisor Reviews • Best of the Best 2024 & 2025)' },
     trustpilot: { score: '5.0', count: '(Rated 5.0/5 Excellent • 100% Verified)' }
   };
