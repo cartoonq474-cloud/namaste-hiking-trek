@@ -15,7 +15,7 @@ export const sampleTreks = [
     basePriceUSD: 1999,
     summary: "Wilderness high-altitude expedition circuit crossing French Pass (5,360m) and Dhampus Pass (5,250m) with supported camping at Dhaulagiri Base Camp and Hidden Valley.",
     bestSeason: ["spring", "autumn"],
-    image: "../../images/hero-himalayas.jpg",
+    image: "images/gallery-peak.jpg",
     tags: ["EXPEDITION CAMPING", "HIGH PASSES", "REMOTE WILDERNESS", "CHALLENGING"],
     reviews: 42
   },
@@ -31,7 +31,7 @@ export const sampleTreks = [
     basePriceUSD: 890,
     summary: "Overland Himalayan trek via Dhap to Pikey Peak (4,065m) for sunrise views of Everest, Kanchenjunga & Makalu, visiting ancient Sherpa villages & monasteries.",
     bestSeason: ["spring", "autumn"],
-    image: "../../images/hero-himalayas.jpg",
+    image: "images/treks/pikey-peak/pikey-peak-himalayan-sunrise-01.jpg",
     tags: ["PANORAMA", "SHERPA CULTURE", "OVERLAND", "EASY-MODERATE"],
     reviews: 68
   },
@@ -127,7 +127,7 @@ export const sampleTreks = [
     basePriceUSD: 890,
     summary: "Combines the glacial valley of Langtang, sacred alpine lakes at Gosaikunda (4,380m), and scenic Laurebina Pass (4,610m).",
     bestSeason: ["spring", "autumn"],
-    image: "../../images/treks/langtang-valley/langtang-trek-trekkers-mountain-view-01.jpg",
+    image: "images/treks/gosaikunda-lake/gosaikunda-lake-trek-mountain-panorama-prayer-flags-09.jpg",
     tags: ["HOLY LAKES", "HIGH PASS", "TAMANG CULTURE"],
     reviews: 142
   },
@@ -156,6 +156,14 @@ export function initTrekFinder(containerId, treks = sampleTreks) {
   const isTreksPage = window.location.pathname.includes('treks') || window.location.pathname.includes('nepal-trekking-packages');
   const linkPrefix = window.location.pathname.includes('/nepal-trekking-packages/') ? '../' : '';
 
+  // Dynamic Image Path Normalizer to resolve relative paths across root and subfolder depths
+  const getTrekImageSrc = (img) => {
+    if (!img) return `${linkPrefix}images/hero-himalayas.jpg`;
+    if (img.startsWith('http://') || img.startsWith('https://')) return img;
+    const cleanPath = img.replace(/^(\.\.\/)+/, '');
+    return `${linkPrefix}${cleanPath}`;
+  };
+
   const renderCards = (filtered) => {
     if (filtered.length === 0) {
       container.innerHTML = `<div class="exotic-trek-card" style="padding: 40px; text-align: center; grid-column: 1 / -1;"><p style="color:#64748B;">No treks matched your selected destination. Please try selecting another category!</p></div>`;
@@ -167,7 +175,7 @@ export function initTrekFinder(containerId, treks = sampleTreks) {
         
         <!-- Image Banner with Duration Badge & Glassmorphism Hover Info Overlay -->
         <div class="exotic-img-wrapper">
-          <img src="${t.image}" alt="${t.title}" loading="lazy">
+          <img src="${getTrekImageSrc(t.image)}" alt="${t.title}" loading="lazy">
           <span class="duration-badge-top">${t.durationDays} DAYS</span>
 
           <!-- Glassmorphism Hover Overlay -->
