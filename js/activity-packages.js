@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const activityData = {
     trekking: [
       {
-        image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/everest-base-camp/everest-base-camp-trekkers-team-circle-02.jpg",
         duration: "14 DAYS",
         tags: ["CLASSIC", "HIGH ALTITUDE", "TEAHOUSE"],
         name: "Everest Base Camp Trek",
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 142
       },
       {
-        image: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/annapurna-circuit/annapurna-circuit-tilicho-lake-trekking-group-tilicho-lake-11.jpg",
         duration: "12 DAYS",
         tags: ["SCENIC", "PASS CROSSING", "LODGE"],
         name: "Annapurna Circuit Expedition",
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 118
       },
       {
-        image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/manaslu-circuit/manaslu-circuit-mountain-sunrise-04.jpg",
         duration: "16 DAYS",
         tags: ["RESTRICTED", "REMOTE", "CULTURE"],
         name: "Manaslu Circuit & Larke Pass",
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     climbing: [
       {
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/everest-base-camp/everest-base-camp-island-peak-view-dingboche-32.jpg",
         duration: "19 DAYS",
         tags: ["GLACIER", "SUMMIT", "TECHNICAL"],
         name: "Island Peak Climbing (6,189m)",
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 112
       },
       {
-        image: "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/mera-peak/mera-peak-climbers-summit-banner-05.jpg",
         duration: "18 DAYS",
         tags: ["TREKKING PEAK", "HIGH PASS", "EXPEDITION"],
         name: "Mera Peak Expedition (6,476m)",
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 74
       },
       {
-        image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/everest-base-camp/everest-base-camp-trail-to-lobuche-22.jpg",
         duration: "21 DAYS",
         tags: ["EVEREST REGION", "ICE CLIMB", "ALPINE"],
         name: "Lobuche East Peak (6,119m)",
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     tours: [
       {
-        image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/pikey-peak/pikey-peak-jhapre-stupa-village-03.jpg",
         duration: "7 DAYS",
         tags: ["HERITAGE", "TEMPLE", "EASY"],
         name: "Kathmandu & Pokhara Heritage",
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 92
       },
       {
-        image: "https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/pikey-peak/pikey-peak-thupten-chholing-monastery-02.jpg",
         duration: "10 DAYS",
         tags: ["SAFARI", "PILGRIMAGE", "NATURE"],
         name: "Nepal Wildlife & Lumbini Tour",
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 106
       },
       {
-        image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/everest-cho-la-pass/everest-cho-la-pass-snowy-trail-stupa-03.jpg",
         duration: "12 DAYS",
         tags: ["CROSS BORDER", "DRAGON KINGDOM", "CULTURE"],
         name: "Bhutan & Nepal Combined Tour",
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     hikes: [
       {
-        image: "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/pikey-peak/pikey-peak-himalayan-sunrise-01.jpg",
         duration: "1 DAY",
         tags: ["SUNRISE", "VALLEY VIEW", "DAY TRIP"],
         name: "Nagarkot Sunrise & Changunarayan",
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 68
       },
       {
-        image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/pikey-peak/pikey-peak-ridge-trail-view-05.jpg",
         duration: "1 DAY",
         tags: ["MONASTERY", "RIDGE WALK", "FOREST"],
         name: "Champadevi Ridge & Monastery Trail",
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 34
       },
       {
-        image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/annapurna-circuit/annapurna-circuit-tilicho-lake-trekking-group-forest-trail-02.jpg",
         duration: "2 DAYS",
         tags: ["NATIONAL PARK", "OVERNIGHT", "FLORA"],
         name: "Shivapuri Peak & Chisapani Hike",
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     heli: [
       {
-        image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/everest-base-camp/everest-base-camp-high-mountain-sunrise-13.jpg",
         duration: "1 DAY",
         tags: ["HELI TOUR", "EVEREST", "LUXURY"],
         name: "Everest Base Camp Heli Flyover",
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 118
       },
       {
-        image: "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/annapurna-base-camp/annapurna-base-camp-trekkers-mountain-viewpoint-05.jpg",
         duration: "1 DAY",
         tags: ["ANNAPURNA", "PANORAMA", "EXPRESS"],
         name: "Annapurna Base Camp Heli Sightseeing",
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reviews: 42
       },
       {
-        image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80",
+        image: "images/treks/gosaikunda-lake/gosaikunda-lake-trek-mountain-panorama-prayer-flags-09.jpg",
         duration: "1 DAY",
         tags: ["SACRED LAKE", "LANGTANG", "CHARTER"],
         name: "Langtang Gosainkunda Heli Charter",
