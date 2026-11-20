@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     trekking: [
       {
         image: "images/treks/everest-base-camp/everest-base-camp-trekkers-team-circle-02.jpg",
-        duration: "14 DAYS",
+        duration: "16 DAYS",
         tags: ["CLASSIC", "HIGH ALTITUDE", "TEAHOUSE"],
         name: "Everest Base Camp Trek",
         slug: "everest-base-camp-trek",
@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         altitude: "5545 m",
         difficulty: "challenging",
         summary: "Trek to the foot of Mt. Everest through Sherpa villages, Tengboche Monastery, and Kala Patthar viewpoint.",
-        price: "$1399",
+        price: "$1,345",
         reviews: 142
       },
       {
         image: "images/treks/annapurna-circuit/annapurna-circuit-tilicho-lake-trekking-group-tilicho-lake-11.jpg",
-        duration: "12 DAYS",
+        duration: "16 DAYS",
         tags: ["SCENIC", "PASS CROSSING", "LODGE"],
         name: "Annapurna Circuit Expedition",
         slug: "annapurna-circuit-trek",
@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
         altitude: "5416 m",
         difficulty: "moderate",
         summary: "Traverse diverse eco-zones from lush rhododendron forests to the dramatic Thorong La Pass high-altitude desert.",
-        price: "$1150",
+        price: "$1,160",
         reviews: 118
       },
       {
         image: "images/treks/manaslu-circuit/manaslu-circuit-mountain-sunrise-04.jpg",
-        duration: "16 DAYS",
+        duration: "15 DAYS",
         tags: ["RESTRICTED", "REMOTE", "CULTURE"],
         name: "Manaslu Circuit & Larke Pass",
         slug: "manaslu-circuit-trek",
@@ -45,21 +45,21 @@ document.addEventListener('DOMContentLoaded', () => {
         altitude: "5106 m",
         difficulty: "challenging",
         summary: "Unspoiled Tibetan Buddhist culture around Mt. Manaslu (8,163m) with crossing of snow-bound Larke La Pass.",
-        price: "$1399",
+        price: "$1,130",
         reviews: 64
       }
     ],
     climbing: [
       {
         image: "images/treks/everest-base-camp/everest-base-camp-island-peak-view-dingboche-32.jpg",
-        duration: "19 DAYS",
+        duration: "20 DAYS",
         tags: ["GLACIER", "SUMMIT", "TECHNICAL"],
         name: "Island Peak Climbing (6,189m)",
         region: "Imja Valley, Everest Region",
         altitude: "6189 m",
         difficulty: "strenuous",
         summary: "Combine Everest Base Camp trekking with a thrilling 6,000m+ Himalayan summit climb using crampons and fixed ropes.",
-        price: "$1899",
+        price: "$2,420",
         reviews: 112
       },
       {
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         altitude: "6476 m",
         difficulty: "challenging",
         summary: "Nepal's highest non-technical trekking peak offering panoramic summit views of 5 of the world's 14 8,000m peaks.",
-        price: "$1999",
+        price: "$2,280",
         reviews: 74
       },
       {
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         altitude: "6119 m",
         difficulty: "strenuous",
         summary: "Technical alpine ridge climbing overlooking Everest, Lhotse, Nuptse, and Ama Dablam from the Lobuche High Camp.",
-        price: "$2199",
+        price: "$2,350",
         reviews: 56
       }
     ],
@@ -114,14 +114,14 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         image: "images/treks/everest-cho-la-pass/everest-cho-la-pass-snowy-trail-stupa-03.jpg",
-        duration: "12 DAYS",
+        duration: "5 DAYS",
         tags: ["CROSS BORDER", "DRAGON KINGDOM", "CULTURE"],
         name: "Bhutan & Nepal Combined Tour",
         region: "Kathmandu & Paro/Thimphu",
         altitude: "2320 m",
         difficulty: "moderate",
         summary: "Experience Kathmandu's historic temples and fly into Bhutan to hike Tiger's Nest Monastery in the Land of the Thunder Dragon.",
-        price: "$1799",
+        price: "$1,185",
         reviews: 52
       }
     ],
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         altitude: "5364 m",
         difficulty: "easy",
         summary: "Fly directly over Everest Base Camp & Khumbu Icefall with breakfast landing at Hotel Everest View (3,880m).",
-        price: "$999",
+        price: "$1,700",
         reviews: 118
       },
       {
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
         altitude: "4130 m",
         difficulty: "easy",
         summary: "Direct morning helicopter shuttle from Pokhara into the heart of the 360-degree Annapurna mountain amphitheater.",
-        price: "$749",
+        price: "$1,700",
         reviews: 42
       },
       {
