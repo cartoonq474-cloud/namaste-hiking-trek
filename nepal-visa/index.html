@@ -41,9 +41,31 @@
         <ul class="nav-menu">
           <!-- Mega Menu Dropdown for All Treks -->
           <li class="nav-item-dropdown mega-nav-item">
-            <a href="../nepal-trekking-packages/" class="nav-link">All Treks ▾</a>
+            <div class="nav-link-row">
+              <a href="../nepal-trekking-packages/" class="nav-link">All Treks <span class="nav-link-arrow-desktop">▾</span></a>
+              <button type="button" class="mobile-dropdown-arrow" aria-label="Toggle All Treks submenu">▾</button>
+            </div>
+            <!-- Mobile Accordion Menu for All Treks -->
+            <div class="mobile-accordion-menu">
+              <a href="../nepal-trekking-packages/" class="mobile-accordion-overview-link">Explore All 34+ Trek Packages →</a>
+              <div class="mobile-accordion-group-title">Popular Himalayan Treks</div>
+              <a href="../trek/mera-peak-climbing/" class="nav-dropdown-link"><span>Mera Peak Climbing</span> <span class="days-badge">18 DAYS</span></a>
+              <a href="../trek/everest-base-camp-trek/" class="nav-dropdown-link"><span>Everest Base Camp Trek</span> <span class="days-badge">14 DAYS</span></a>
+              <a href="../trek/everest-base-camp-luxury-trek/" class="nav-dropdown-link"><span>Everest Base Camp Luxury Trek</span> <span class="days-badge">12 DAYS</span></a>
+              <a href="../trek/annapurna-base-camp-luxury-trek/" class="nav-dropdown-link"><span>Annapurna Base Camp Luxury Trek</span> <span class="days-badge">15 DAYS</span></a>
+              <a href="../trek/everest-base-camp-with-cho-la-pass-trek/" class="nav-dropdown-link"><span>EBC with Cho La Pass Trek</span> <span class="days-badge">18 DAYS</span></a>
+              <a href="../trek/annapurna-circuit-trek/" class="nav-dropdown-link"><span>Annapurna Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
+              <a href="../trek/manaslu-circuit-trek/" class="nav-dropdown-link"><span>Manaslu Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
+              <a href="../trek/annapurna-base-camp-trek/" class="nav-dropdown-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">12 DAYS</span></a>
+              <a href="../trek/langtang-valley-trek/" class="nav-dropdown-link"><span>Langtang Valley Trek</span> <span class="days-badge">8 DAYS</span></a>
+              <a href="../trek/ghorepani-poon-hill-trek/" class="nav-dropdown-link"><span>Ghorepani Poon Hill Trek</span> <span class="days-badge">4 DAYS</span></a>
+              <a href="../trek/mardi-himal-trek/" class="nav-dropdown-link"><span>Mardi Base Camp Trek</span> <span class="days-badge">6 DAYS</span></a>
+              <a href="../trek/everest-three-passes-trek/" class="nav-dropdown-link"><span>Everest Three Passes Trek</span> <span class="days-badge">19 DAYS</span></a>
+              <a href="../trek/kanchenjunga-base-camp-trek/" class="nav-dropdown-link"><span>Kanchenjunga Circuit Trek</span> <span class="days-badge">18 DAYS</span></a>
+            </div>
             <div class="mega-menu-dropdown">
               <div class="mega-menu-container">
+                
                 <!-- Left Sidebar Navigation -->
                 <div class="mega-menu-sidebar">
                   <div class="mega-sidebar-item active" data-target="tab-popular">Popular Treks in Nepal</div>
@@ -65,7 +87,7 @@
                     <button class="mega-talk-pill open-inquiry-btn">Confused? Let's Talk ↗</button>
                   </div>
 
-                  <!-- Tab 1: Popular Treks in Nepal -->
+                  <!-- Tab 1: Popular Treks in Nepal (Default 4-Column Grid) -->
                   <div class="mega-tab-content active" id="tab-popular">
                     <div class="mega-content-grid">
                       <div class="mega-col">
@@ -75,6 +97,7 @@
                         <a href="../trek/annapurna-circuit-trek/" class="mega-trek-link"><span>Annapurna Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
                         <a href="../trek/annapurna-base-camp-trek/" class="mega-trek-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">12 DAYS</span></a>
                       </div>
+
                       <div class="mega-col">
                         <div class="mega-col-title">One week Treks</div>
                         <a href="../trek/langtang-valley-trek/" class="mega-trek-link"><span>Langtang Valley Trek</span> <span class="days-badge">8 DAYS</span></a>
@@ -82,12 +105,14 @@
                         <a href="../trek/mardi-himal-trek/" class="mega-trek-link"><span>Mardi Base Camp Trek</span> <span class="days-badge">6 DAYS</span></a>
                         <a href="../trek/everest-view-trek/" class="mega-trek-link"><span>Everest View Trek</span> <span class="days-badge">7 DAYS</span></a>
                       </div>
+
                       <div class="mega-col">
                         <div class="mega-col-title">Remote and Unexplored</div>
                         <a href="../trek/kanchenjunga-base-camp-trek/" class="mega-trek-link"><span>Kanchenjunga Circuit Trek</span> <span class="days-badge">18 DAYS</span></a>
                         <a href="../trek/manaslu-tsum-valley-trek/" class="mega-trek-link"><span>Manaslu Tsum Valley Trek</span> <span class="days-badge">18 DAYS</span></a>
                         <a href="../trek/nar-phu-valley-trek/" class="mega-trek-link"><span>Narphu Valley Trek</span> <span class="days-badge">16 DAYS</span></a>
                       </div>
+
                       <div class="mega-col">
                         <div class="mega-col-title">Camping Off the Grid – Extreme Wilderness</div>
                         <a href="../trek/dhaulagiri-circuit-trek/" class="mega-trek-link"><span>Dhaulagiri Circuit Trek</span> <span class="days-badge">16 DAYS</span></a>
@@ -102,15 +127,16 @@
                     <div class="mega-content-grid">
                       <div class="mega-col">
                         <div class="mega-col-title">Classic Treks</div>
+                        <a href="../trek/annapurna-base-camp-luxury-trek/" class="mega-trek-link" style="color: var(--color-copper-orange); font-weight: 700;"><span>Annapurna Base Camp Luxury Trek</span> <span class="days-badge" style="background: var(--color-copper-orange); color: white;">15 DAYS</span></a>
                         <a href="../trek/annapurna-base-camp-trek/" class="mega-trek-link"><span>Annapurna Base Camp Trek</span> <span class="days-badge">12 DAYS</span></a>
                         <a href="../trek/annapurna-circuit-trek/" class="mega-trek-link"><span>Annapurna Circuit Trek</span> <span class="days-badge">13 DAYS</span></a>
-                        <a href="../trek/tilicho-lake-trek/" class="mega-trek-link"><span>Tilicho Lake & Annapurna Circuit</span> <span class="days-badge">16 DAYS</span></a>
+                        <a href="../trek/annapurna-circuit-trek-with-tilicho-lake/" class="mega-trek-link"><span>Annapurna Circuit with Tilicho Lake</span> <span class="days-badge">16 DAYS</span></a>
                       </div>
                       <div class="mega-col">
                         <div class="mega-col-title">Short & Panoramic</div>
                         <a href="../trek/ghorepani-poon-hill-trek/" class="mega-trek-link"><span>Ghorepani Poon Hill Trek</span> <span class="days-badge">4 DAYS</span></a>
                         <a href="../trek/mardi-himal-trek/" class="mega-trek-link"><span>Mardi Himal Ridge Trek</span> <span class="days-badge">6 DAYS</span></a>
-                        <a href="../trek/khopra-ridge-trek/" class="mega-trek-link"><span>Khopra Ridge & Mohare Danda</span> <span class="days-badge">9 DAYS</span></a>
+                        <a href="../trek/khopra-ridge-trek/" class="mega-trek-link"><span>Khopra Ridge & Mohare Danda</span> <span class="days-badge">12 DAYS</span></a>
                       </div>
                     </div>
                   </div>
@@ -156,13 +182,12 @@
                       <div class="mega-col">
                         <div class="mega-col-title">Valley & Lakes</div>
                         <a href="../trek/langtang-valley-trek/" class="mega-trek-link"><span>Langtang Valley Trek</span> <span class="days-badge">8 DAYS</span></a>
-                        <a href="../trek/langtang-gosaikunda-trek/" class="mega-trek-link"><span>Langtang Gosaikunda Pass Trek</span> <span class="days-badge">14 DAYS</span></a>
-                        <a href="../trek/gosaikunda-lake-trek/" class="mega-trek-link"><span>Gosaikunda Sacred Lake Trek</span> <span class="days-badge">7 DAYS</span></a>
+                        <a href="../trek/gosaikunda-lake-trek/" class="mega-trek-link"><span>Sacred Gosaikunda Lake Trek</span> <span class="days-badge">7 DAYS</span></a>
                       </div>
                       <div class="mega-col">
-                        <div class="mega-col-title">Heritage Trails</div>
-                        <a href="../trek/tamang-heritage-trail-trek/" class="mega-trek-link"><span>Tamang Heritage Trail</span> <span class="days-badge">8 DAYS</span></a>
-                        <a href="../trek/helambu-trek/" class="mega-trek-link"><span>Helambu Cultural Circuit Trek</span> <span class="days-badge">8 DAYS</span></a>
+                        <div class="mega-col-title">Heritage & Ridge</div>
+                        <a href="../trek/tamang-heritage-trail-trek/" class="mega-trek-link"><span>Tamang Heritage Trail</span> <span class="days-badge">9 DAYS</span></a>
+                        <a href="../trek/helambu-trek/" class="mega-trek-link"><span>Helambu Circuit Trek</span> <span class="days-badge">6 DAYS</span></a>
                       </div>
                     </div>
                   </div>
@@ -171,8 +196,9 @@
                   <div class="mega-tab-content" id="tab-kanchenjunga">
                     <div class="mega-content-grid">
                       <div class="mega-col">
-                        <div class="mega-col-title">Eastern Wilderness</div>
+                        <div class="mega-col-title">Far Eastern Wilderness</div>
                         <a href="../trek/kanchenjunga-base-camp-trek/" class="mega-trek-link"><span>Kanchenjunga Circuit Trek</span> <span class="days-badge">18 DAYS</span></a>
+                        <a href="../kanchenjunga-region-treks/" class="mega-trek-link"><span>Kanchenjunga North & South</span> <span class="days-badge">22 DAYS</span></a>
                       </div>
                     </div>
                   </div>
@@ -183,6 +209,7 @@
                       <div class="mega-col">
                         <div class="mega-col-title">Trans-Himalayan Plateau</div>
                         <a href="../dolpo-region-treks/" class="mega-trek-link"><span>Upper Dolpo Circuit Trek</span> <span class="days-badge">24 DAYS</span></a>
+                        <a href="../dolpo-region-treks/" class="mega-trek-link"><span>Lower Dolpo & Phoksundo Lake</span> <span class="days-badge">15 DAYS</span></a>
                       </div>
                     </div>
                   </div>
@@ -191,7 +218,7 @@
                   <div class="mega-tab-content" id="tab-makalu">
                     <div class="mega-content-grid">
                       <div class="mega-col">
-                        <div class="mega-col-title">Granite Giant</div>
+                        <div class="mega-col-title">High Alpine Sanctuary</div>
                         <a href="../trek/makalu-base-camp-trek/" class="mega-trek-link"><span>Makalu Base Camp Trek</span> <span class="days-badge">16 DAYS</span></a>
                       </div>
                     </div>
@@ -201,7 +228,7 @@
                   <div class="mega-tab-content" id="tab-rolwaling">
                     <div class="mega-content-grid">
                       <div class="mega-col">
-                        <div class="mega-col-title">Technical Alpine</div>
+                        <div class="mega-col-title">Glacial Pass Expedition</div>
                         <a href="../trek/rolwaling-valley-trek/" class="mega-trek-link"><span>Rolwaling & Tashi Lapcha Pass</span> <span class="days-badge">19 DAYS</span></a>
                       </div>
                     </div>
@@ -227,6 +254,7 @@
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -234,20 +262,27 @@
 
           <!-- Standard Tour Packages Dropdown -->
           <li class="nav-item-dropdown">
-            <a href="../nepal-tour-packages/" class="nav-link">Nepal Tours ▾</a>
+            <div class="nav-link-row">
+              <a href="../nepal-tour-packages/" class="nav-link">Nepal Tours <span class="nav-link-arrow-desktop">▾</span></a>
+              <button type="button" class="mobile-dropdown-arrow" aria-label="Toggle Nepal Tours submenu">▾</button>
+            </div>
             <div class="nav-dropdown-menu">
               <a href="../tour/kathmandu-pokhara-chitwan-tour/" class="nav-dropdown-link">Best of Nepal (8 Days)</a>
               <a href="../tour/kathmandu-cultural-heritage-tour/" class="nav-dropdown-link">Kathmandu Heritage (4 Days)</a>
               <a href="../tour/pokhara-valley-nature-tour/" class="nav-dropdown-link">Pokhara Scenic (4 Days)</a>
               <a href="../tour/chitwan-national-park-safari/" class="nav-dropdown-link">Chitwan Jungle Safari (3 Days)</a>
               <a href="../tour/nagarkot-sunrise-bhaktapur-tour/" class="nav-dropdown-link">Nagarkot Sunrise (3 Days)</a>
+              <a href="../tour/lumbini-birthplace-of-buddha-tour/" class="nav-dropdown-link">Lumbini Buddhist Tour (4 Days)</a>
               <a href="../tour/nepal-luxury-helicopter-tour/" class="nav-dropdown-link">Luxury Helicopter Tour (5 Days)</a>
             </div>
           </li>
 
           <!-- Standard Trekking Regions Dropdown -->
           <li class="nav-item-dropdown">
-            <a href="../trekking-regions-nepal/" class="nav-link">Trekking Regions ▾</a>
+            <div class="nav-link-row">
+              <a href="../trekking-regions-nepal/" class="nav-link">Trekking Regions <span class="nav-link-arrow-desktop">▾</span></a>
+              <button type="button" class="mobile-dropdown-arrow" aria-label="Toggle Trekking Regions submenu">▾</button>
+            </div>
             <div class="nav-dropdown-menu">
               <a href="../everest-region-treks/" class="nav-dropdown-link">Everest Region Treks</a>
               <a href="../annapurna-region-treks/" class="nav-dropdown-link">Annapurna Region Treks</a>
@@ -264,23 +299,31 @@
             </div>
           </li>
 
+          
           <!-- Travel Guide Dropdown -->
           <li class="nav-item-dropdown">
-            <a href="../nepal-travel-guide/" class="nav-link ">Travel Guide ▾</a>
+            <div class="nav-link-row">
+              <a href="../nepal-travel-guide/" class="nav-link">Travel Guide <span class="nav-link-arrow-desktop">▾</span></a>
+              <button type="button" class="mobile-dropdown-arrow" aria-label="Toggle Travel Guide submenu">▾</button>
+            </div>
             <div class="nav-dropdown-menu">
-              <a href="../nepal-visa/" class="nav-dropdown-link active">Nepal Visa</a>
-              <a href="../equipment-checklist/" class="nav-dropdown-link ">Equipment Checklist</a>
-              <a href="../travel-insurance/" class="nav-dropdown-link ">Travel Insurance</a>
-              <a href="../recommended-medical-kit/" class="nav-dropdown-link ">Recommended Medical Kit</a>
+              <a href="../nepal-visa/" class="nav-dropdown-link">Nepal Visa</a>
+              <a href="../equipment-checklist/" class="nav-dropdown-link">Equipment Checklist</a>
+              <a href="../travel-insurance/" class="nav-dropdown-link">Travel Insurance</a>
+              <a href="../recommended-medical-kit/" class="nav-dropdown-link">Recommended Medical Kit</a>
             </div>
           </li>
-
           <!-- Company Info Dropdown (Non-page Trigger) -->
           <li class="nav-item-dropdown">
-            <span class="nav-link">Company Info ▾</span>
+            <div class="nav-link-row">
+              <span class="nav-link">Company Info <span class="nav-link-arrow-desktop">▾</span></span>
+              <button type="button" class="mobile-dropdown-arrow" aria-label="Toggle Company Info submenu">▾</button>
+            </div>
             <div class="nav-dropdown-menu">
+              <a href="../why-us.html" class="nav-dropdown-link">Why Us</a>
               <a href="../about-us.html" class="nav-dropdown-link">About Us</a>
-              <a href="../legal-documents/" class="nav-dropdown-link">Legal Documents</a>
+              <a href="../csr.html" class="nav-dropdown-link">CSR</a>
+              <a href="../legal-documents.html" class="nav-dropdown-link">Legal Documents</a>
               <a href="../team.html" class="nav-dropdown-link">Meet Our Team</a>
               <a href="../careers.html" class="nav-dropdown-link">Careers & Jobs</a>
               <a href="../reviews.html" class="nav-dropdown-link">Reviews & Testimonials</a>
@@ -289,11 +332,22 @@
 
           <li><a href="../blogs.html" class="nav-link">Blog</a></li>
           <li><a href="../contact.html" class="nav-link">Contact</a></li>
+
+          <!-- Mobile Drawer Action Strip -->
+          <li class="mobile-nav-drawer-actions">
+            <button class="btn btn-primary open-inquiry-btn mobile-drawer-cta">
+              <span>Book Your Trek</span> <span>↗</span>
+            </button>
+            <a href="https://wa.me/9779849009919" target="_blank" class="mobile-drawer-whatsapp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </li>
         </ul>
       </nav>
 
       <div>
-        <button class="btn btn-primary open-inquiry-btn">Book Custom Trip</button>
+        <button class="btn btn-primary open-inquiry-btn">Book Your Trek</button>
       </div>
     </div>
   </header>
@@ -577,6 +631,79 @@
   <!-- Luxury Footer -->
   <footer class="site-luxury-footer">
 
+    <!-- Layer 0 / Pre-Footer: Associations Bar (Authentic Industry & Regulatory Accreditations) -->
+    <div class="footer-associations-bar">
+      <div class="container">
+        <h3 class="associations-title">WE'RE ASSOCIATED WITH</h3>
+        <p class="associations-subtitle">Officially licensed, accredited, and affiliated with national tourism boards and global sustainable adventure alliances • <a href="../legal-documents.html" style="color: #10B981; font-weight: 700; text-decoration: underline; margin-left: 4px;">View Legal Certificates & Licenses ↗</a></p>
+        <div class="associations-grid">
+
+          <!-- 1. Government of Nepal -->
+          <a href="https://www.tourismdepartment.gov.np/" target="_blank" rel="noopener" class="association-card" title="Government of Nepal - Department of Tourism">
+            <img loading="lazy" src="../images/associations/logo-nepal-gov.svg" alt="Government of Nepal - Department of Tourism" class="assoc-logo-img">
+          </a>
+
+          <!-- 2. Nepal Tourism Board -->
+          <a href="https://ntb.gov.np/" target="_blank" rel="noopener" class="association-card" title="Nepal Tourism Board (NTB)">
+            <img loading="lazy" src="../images/associations/logo-ntb.svg" alt="Nepal Tourism Board (NTB)" class="assoc-logo-img">
+          </a>
+
+          <!-- 3. TAAN -->
+          <a href="https://www.taan.org.np/" target="_blank" rel="noopener" class="association-card" title="Trekking Agencies' Association of Nepal (TAAN)">
+            <img loading="lazy" src="../images/associations/logo-taan.jpg" alt="TAAN - Trekking Agencies' Association of Nepal" class="assoc-logo-img assoc-logo-taan">
+          </a>
+
+          <!-- 4. NMA -->
+          <a href="https://www.nepalmountaineering.org/" target="_blank" rel="noopener" class="association-card" title="Nepal Mountaineering Association (NMA)">
+            <img loading="lazy" src="../images/associations/logo-nma.png" alt="NMA - Nepal Mountaineering Association" class="assoc-logo-img assoc-logo-nma">
+          </a>
+
+          <!-- 5. NATHM -->
+          <a href="https://nathm.gov.np/" target="_blank" rel="noopener" class="association-card" title="Nepal Academy of Tourism and Hotel Management (NATHM)">
+            <img loading="lazy" src="../images/associations/logo-nathm.jpg" alt="NATHM - Guide Training &amp; Licensing" class="assoc-logo-img">
+          </a>
+
+          <!-- 6. HRA -->
+          <a href="https://www.himalayanrescue.org/" target="_blank" rel="noopener" class="association-card" title="Himalayan Rescue Association Nepal (HRA)">
+            <img loading="lazy" src="../images/associations/logo-hra.png" alt="HRA - Himalayan Rescue Association Nepal" class="assoc-logo-img">
+          </a>
+
+          <!-- 7. Travelife Certified -->
+          <a href="https://www.travelife.info/" target="_blank" rel="noopener" class="association-card" title="Travelife Certified - Sustainability in Tourism">
+            <img loading="lazy" src="../images/associations/logo-travelife.png" alt="Travelife Certified - Excellence in Sustainability" class="assoc-logo-img">
+          </a>
+
+          <!-- 8. ATTA -->
+          <a href="https://www.adventuretravel.biz/" target="_blank" rel="noopener" class="association-card" title="Adventure Travel Trade Association (ATTA Member)">
+            <img loading="lazy" src="../images/associations/logo-atta.png" alt="ATTA - Adventure Travel Trade Association" class="assoc-logo-img">
+          </a>
+
+          <!-- 9. KEEP -->
+          <a href="https://keepnepal.org/" target="_blank" rel="noopener" class="association-card" title="Kathmandu Environmental Education Project (KEEP)">
+            <img loading="lazy" src="../images/associations/logo-keep.svg" alt="KEEP - Kathmandu Environmental Education Project" class="assoc-logo-img">
+          </a>
+
+          <!-- 10. PATA -->
+          <a href="https://pata.org.np/" target="_blank" rel="noopener" class="association-card" title="Pacific Asia Travel Association (PATA Nepal Chapter)">
+            <img loading="lazy" src="../images/associations/logo-pata.png" alt="PATA - Pacific Asia Travel Association Nepal Chapter" class="assoc-logo-img">
+          </a>
+
+          <!-- 11. ATCF -->
+          <a href="https://adventuretravelconservationfund.org/" target="_blank" rel="noopener" class="association-card" title="Adventure Travel Conservation Fund (ATCF)">
+            <img loading="lazy" src="../images/associations/logo-atcf.png" alt="ATCF - Adventure Travel Conservation Fund" class="assoc-logo-img assoc-logo-atcf">
+          </a>
+
+          <!-- 12. Sustainable Travel International -->
+          <a href="https://sustainabletravel.org/" target="_blank" rel="noopener" class="association-card" title="Sustainable Travel International">
+            <img loading="lazy" src="../images/associations/logo-sustainable-travel.svg" alt="Sustainable Travel International" class="assoc-logo-img">
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- Layer 1: Pre-Footer Mountain Hero CTA -->
     <section class="footer-hero-cta">
             <!-- Vector Panoramic Geometric Origami Mountains Overlay -->
@@ -611,42 +738,42 @@
           <div class="recommended-logos-row">
             <!-- 1. TripAdvisor -->
             <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener noreferrer" class="rec-logo-item" title="Recommended on TripAdvisor">
-              <img src="../images/recommended/tripadvisor.svg" alt="TripAdvisor" class="rec-logo-img" style="height: 28px;">
+              <img loading="lazy" decoding="async" width="140" height="28" src="../images/recommended/tripadvisor.svg" alt="TripAdvisor" class="rec-logo-img" style="height: 28px;">
             </a>
 
             <!-- 2. Google -->
             <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer" class="rec-logo-item" title="Recommended on Google">
-              <img src="../images/recommended/google.svg" alt="Google" class="rec-logo-img" style="height: 25px;">
+              <img loading="lazy" decoding="async" width="80" height="25" src="../images/recommended/google.svg" alt="Google" class="rec-logo-img" style="height: 25px;">
             </a>
 
             <!-- 3. Bookmundi -->
             <a href="https://www.bookmundi.com/" target="_blank" rel="noopener noreferrer" class="rec-logo-item" title="Recommended on Bookmundi">
-              <img src="../images/recommended/bookmundi.svg" alt="Bookmundi" class="rec-logo-img" style="height: 28px;">
+              <img loading="lazy" decoding="async" width="120" height="28" src="../images/recommended/bookmundi.svg" alt="Bookmundi" class="rec-logo-img" style="height: 28px;">
             </a>
 
             <!-- 4. MyRealTrip -->
             <a href="https://www.myrealtrip.com/" target="_blank" rel="noopener noreferrer" class="rec-logo-item" title="Recommended on MyRealTrip">
-              <img src="../images/recommended/myrealtrip.svg" alt="MyRealTrip" class="rec-logo-img" style="height: 24px;">
+              <img loading="lazy" decoding="async" width="110" height="24" src="../images/recommended/myrealtrip.svg" alt="MyRealTrip" class="rec-logo-img" style="height: 24px;">
             </a>
 
             <!-- 5. GetYourGuide -->
             <a href="https://www.getyourguide.com/" target="_blank" rel="noopener noreferrer" class="rec-logo-item" title="Recommended on GetYourGuide">
-              <img src="../images/recommended/getyourguide.svg" alt="GetYourGuide" class="rec-logo-img" style="height: 24px;">
+              <img loading="lazy" decoding="async" width="120" height="24" src="../images/recommended/getyourguide.svg" alt="GetYourGuide" class="rec-logo-img" style="height: 24px;">
             </a>
 
             <!-- 6. TourRadar -->
             <a href="https://www.tourradar.com/" target="_blank" rel="noopener noreferrer" class="rec-logo-item" title="Recommended on TourRadar">
-              <img src="../images/recommended/tourradar.svg" alt="TourRadar" class="rec-logo-img" style="height: 25px;">
+              <img loading="lazy" decoding="async" width="115" height="25" src="../images/recommended/tourradar.svg" alt="TourRadar" class="rec-logo-img" style="height: 25px;">
             </a>
 
             <!-- 7. Trustpilot -->
             <a href="https://www.trustpilot.com/" target="_blank" rel="noopener noreferrer" class="rec-logo-item" title="Recommended on Trustpilot">
-              <img src="../images/recommended/trustpilot.svg" alt="Trustpilot" class="rec-logo-img" style="height: 25px;">
+              <img loading="lazy" decoding="async" width="100" height="25" src="../images/recommended/trustpilot.svg" alt="Trustpilot" class="rec-logo-img" style="height: 25px;">
             </a>
 
             <!-- 8. Viator -->
             <a href="https://www.viator.com/" target="_blank" rel="noopener noreferrer" class="rec-logo-item" title="Recommended on Viator">
-              <img src="../images/recommended/viator.svg" alt="Viator" class="rec-logo-img" style="height: 25px;">
+              <img loading="lazy" decoding="async" width="90" height="25" src="../images/recommended/viator.svg" alt="Viator" class="rec-logo-img" style="height: 25px;">
             </a>
           </div>
         </div>
@@ -841,9 +968,10 @@
         </button>
         <ul class="footer-links-list">
           <li><a href="../about-us.html">Our Story</a></li>
+          <li><a href="../why-us.html">Why Us</a></li>
           <li><a href="../team.html">Meet Our Team</a></li>
-          <li><a href="../legal-documents/">Official Registrations & Legal Docs</a></li>
-          <li><a href="../about-us.html#why-choose-us">Why Trek With Us</a></li>
+          <li><a href="../csr.html">CSR</a></li>
+          <li><a href="../legal-documents.html">Official Registrations & Legal Docs</a></li>
           <li><a href="../reviews.html">Traveler Reviews</a></li>
           <li><a href="../about-us.html#sustainability">Responsible Travel</a></li>
           <li><a href="../contact.html">Contact Us</a></li>
