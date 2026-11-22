@@ -7,7 +7,7 @@
    - Snow Canvas: #F8FAFC / #FFFFFF
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+/* Google Fonts loaded asynchronously in HTML head */
 
 :root {
   /* Brand Color Palette */
@@ -7681,7 +7681,7 @@ textarea {
 }
 
 .itinerary-day-title-new span.day-label {
-  color: #10B981;
+  color: #047857;
   margin-right: 4px;
 }
 
