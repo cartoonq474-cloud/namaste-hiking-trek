@@ -8,6 +8,17 @@
 
     if (!video1 || !video2) return;
 
+    // Mobile & Bandwidth Optimization:
+    // On mobile devices (<768px) or low-bandwidth/save-data connections, do not load heavy 20MB+ video files.
+    // Display the crisp, preloaded hero poster image instead to ensure blazing fast LCP.
+    const isMobile = window.innerWidth < 768 || (window.matchMedia && window.matchMedia('(max-width: 767px)').matches);
+    const isSaveData = navigator.connection && (navigator.connection.saveData || navigator.connection.effectiveType === '2g' || navigator.connection.effectiveType === 'slow-2g');
+    if (isMobile || isSaveData) {
+      if (video1) { video1.removeAttribute('src'); video1.preload = 'none'; }
+      if (video2) { video2.removeAttribute('src'); video2.preload = 'none'; }
+      return;
+    }
+
     const playlist = [
       'video/Clip%20Video%20First.mp4',
       'video/Clip%20Video%20Second.mp4',

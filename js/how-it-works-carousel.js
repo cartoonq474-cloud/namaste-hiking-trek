@@ -39,9 +39,12 @@
       if (currentIndex > maxIndex) currentIndex = maxIndex;
       if (currentIndex < 0) currentIndex = 0;
 
-      // Calculate card width from actual rendered size
-      const cardWidth = cards[0].offsetWidth;
-      const offset = currentIndex * (cardWidth + gap);
+      // Calculate card offset without forced reflow when index is 0
+      let offset = 0;
+      if (currentIndex > 0 && cards[0]) {
+        const cardWidth = cards[0].offsetWidth;
+        offset = currentIndex * (cardWidth + gap);
+      }
       track.style.transform = 'translateX(-' + offset + 'px)';
 
       // Update button states

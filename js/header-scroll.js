@@ -8,17 +8,35 @@
   if (!header) return;
 
   const SCROLL_THRESHOLD = 40;
+  let ticking = false;
+  let isScrolled = false;
+
+  function updateHeaderState() {
+    const shouldScroll = window.scrollY > SCROLL_THRESHOLD;
+    if (shouldScroll !== isScrolled) {
+      isScrolled = shouldScroll;
+      if (isScrolled) {
+        header.classList.add('header-scrolled');
+      } else {
+        header.classList.remove('header-scrolled');
+      }
+    }
+    ticking = false;
+  }
 
   function onScroll() {
-    if (window.scrollY > SCROLL_THRESHOLD) {
-      header.classList.add('header-scrolled');
-    } else {
-      header.classList.remove('header-scrolled');
+    if (!ticking) {
+      requestAnimationFrame(updateHeaderState);
+      ticking = true;
     }
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll(); // Run on page load
+  // Initial check without forced reflow
+  if (window.scrollY > SCROLL_THRESHOLD) {
+    header.classList.add('header-scrolled');
+    isScrolled = true;
+  }
 
   // 2. Mobile Hamburger Toggle Menu & Accordion Controller
   const toggleBtn = document.querySelector('.mobile-nav-toggle');
