@@ -74,8 +74,8 @@ Detailed profiles for **15 leadership and mountain guide specialists**:
 
 | Name | Role | Experience | Key Regions & Specialties |
 | :--- | :--- | :--- | :--- |
-| **Lal Gurung** | **Founder / Managing Director** | 20+ Years | Dhading native; Mera Peak summit certificate; 100+ Everest, 80+ Annapurna, 80+ Mustang, 70+ Manaslu, 70+ Langtang trips. High-altitude risk management, logistics, and company vision. |
-| **Kamal Gurung** | **Marketing Director & Adventure Guide** | 12+ Years | Dhading native; Everest, Annapurna, Manaslu, Mustang; personalized itinerary customization, client care, and expedition coordination. |
+| **Lal Gurung** | **Founder & Head of Trekking Operations** | 20+ Years | Dhading native; Mera Peak summit certificate; 100+ Everest, 80+ Annapurna, 80+ Mustang, 70+ Manaslu, 70+ Langtang trips. Brand development, Himalayan trekking expertise, guiding standards, and guest experience. |
+| **Kamal Gurung** | **Managing Director & Lead Guide** | 12+ Years | Dhading native; named proprietor in official government tourism records; company governance, registration, business administration, personalized itinerary curation, and expedition coordination. |
 | **Bhagawan Kumal** | **Senior Trekking Guide & Team Leader** | 22 Years | Bachelor's degree; fluent in English, Nepali, Hindi, Korean; 150+ Everest, 200+ Annapurna, 30+ Manaslu, Kanchenjunga expeditions. |
 | **Bishal Timalsina** | **Senior Trekking Guide** | 10 Years | Dhading native; 50+ Everest, 30+ Annapurna; altitude safety, mountain navigation, first aid. |
 | **Bir Gurung (Prince)** | **Trekking & Mountain Guide** | 12+ Years | Bachelor's degree; 100+ Everest, 200+ Annapurna, 30+ Manaslu, 5 Kanchenjunga expeditions; client care and weather logistics. |

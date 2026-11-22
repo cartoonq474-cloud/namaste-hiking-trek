@@ -1635,7 +1635,7 @@ textarea {
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.24em;
-  color: #047857;
+  color: #34D399;
   text-transform: uppercase;
   margin-top: 2px;
 }
@@ -1936,7 +1936,7 @@ textarea {
 .footer-news-footnote {
   font-family: var(--font-body);
   font-size: 0.76rem;
-  color: #64748B;
+  color: #94A3B8;
   margin-top: 8px;
   display: block;
 }
@@ -3246,7 +3246,7 @@ textarea {
 }
 
 .faq-accordion-item.active .faq-question-title {
-  color: #10B981;
+  color: #047857;
 }
 
 .faq-chevron {
@@ -4642,7 +4642,7 @@ textarea {
 }
 
 .btn-support-green {
-  background: #10B981;
+  background: #047857;
   color: #FFFFFF;
   border-radius: 9999px;
   padding: 10px 24px;
@@ -5682,8 +5682,8 @@ textarea {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #D97706;
-  background: rgba(251, 191, 36, 0.12);
+  color: #92400E;
+  background: rgba(251, 191, 36, 0.18);
   border: 1px solid rgba(251, 191, 36, 0.25);
   padding: 4px 12px;
   border-radius: 50px;
