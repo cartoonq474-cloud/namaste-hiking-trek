@@ -20,7 +20,8 @@ The `image-name-map.csv` file records every original filename, optimized filenam
 | Manaslu Circuit | 14 |
 | Mardi Himal | 32 |
 | Mera Peak | 12 |
-| **Total** | **156** |
+| official documents of Namaste hiking trek | 6 images (4 PDFs) |
+| **Total** | **162 (156 trek + 6 documents)** |
 
 Verification: all 156 images opened successfully after renaming, every filename is unique, all checksums still match the original files, and no exact duplicate files were found.
 

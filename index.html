@@ -256,12 +256,19 @@
 }
   </script>
 
+  <!-- Critical Hero Image Preload for Fast LCP -->
+  <link rel="preload" as="image" href="images/hero-himalayas.jpg" fetchpriority="high">
+
   <!-- Core Stylesheet -->
-    <!-- Brand Typography: Outfit (Display & Headings) & Inter (UI & Body) -->
+  <!-- Brand Typography: Outfit (Display & Headings) & Inter (UI & Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="index.css?v=29">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </noscript>
+  <link rel="stylesheet" href="index.css?v=29">
 </head>
 
 <body>
@@ -615,8 +622,8 @@
     <section class="hero-container-light">
       <!-- Background Video Dual-Layer for Seamless Crossfade Transitions -->
       <div class="hero-video-bg-wrap" aria-hidden="true">
-        <video id="hero-bg-video-1" class="hero-bg-video active" autoplay muted playsinline preload="auto" poster="images/hero-himalayas.jpg"></video>
-        <video id="hero-bg-video-2" class="hero-bg-video" muted playsinline preload="auto"></video>
+        <video id="hero-bg-video-1" class="hero-bg-video active" autoplay muted playsinline preload="none" poster="images/hero-himalayas.jpg"></video>
+        <video id="hero-bg-video-2" class="hero-bg-video" muted playsinline preload="none"></video>
         <div class="hero-video-overlay"></div>
       </div>
 
@@ -798,7 +805,7 @@
 
           <!-- Exact mountain sketch artwork (the original picture) -->
           <img loading="lazy" src="images/himalayan-peaks-skyline-exact.png" class="skyline-mountain-img"
-            alt="Himalayan Mountain Peaks Elevation Skyline Diagram">
+            alt="Himalayan Mountain Peaks Elevation Skyline Diagram" width="1024" height="341">
 
           <!-- Crisp SVG text labels overlaid — positioned precisely on top of the original faint text -->
           <svg class="skyline-label-overlay" viewBox="0 0 1024 206" xmlns="http://www.w3.org/2000/svg"
@@ -1167,7 +1174,7 @@
                 <div class="dest-card-subregion">Solukhumbu District, Nepal</div>
               </div>
               <div class="dest-card-bottom-row">
-                <a href="nepal-trekking-packages/" class="btn-explore-dest">Explore Region →</a>
+                <a href="nepal-trekking-packages/" class="btn-explore-dest" tabindex="-1" aria-hidden="true">Explore Region →</a>
               </div>
             </div>
           </div>
@@ -1210,7 +1217,7 @@
                 <div class="dest-card-subregion">Gandaki Province, Nepal</div>
               </div>
               <div class="dest-card-bottom-row">
-                <a href="nepal-trekking-packages/" class="btn-explore-dest">Explore Region →</a>
+                <a href="nepal-trekking-packages/" class="btn-explore-dest" tabindex="-1" aria-hidden="true">Explore Region →</a>
               </div>
             </div>
           </div>
@@ -1253,7 +1260,7 @@
                 <div class="dest-card-subregion">Rasuwa District, Nepal</div>
               </div>
               <div class="dest-card-bottom-row">
-                <a href="nepal-trekking-packages/" class="btn-explore-dest">Explore Region →</a>
+                <a href="nepal-trekking-packages/" class="btn-explore-dest" tabindex="-1" aria-hidden="true">Explore Region →</a>
               </div>
             </div>
           </div>
@@ -1296,7 +1303,7 @@
                 <div class="dest-card-subregion">Gorkha Region, Nepal</div>
               </div>
               <div class="dest-card-bottom-row">
-                <a href="nepal-trekking-packages/" class="btn-explore-dest">Explore Region →</a>
+                <a href="nepal-trekking-packages/" class="btn-explore-dest" tabindex="-1" aria-hidden="true">Explore Region →</a>
               </div>
             </div>
           </div>
@@ -1340,7 +1347,7 @@
                 <div class="dest-card-subregion">Taplejung District, Nepal</div>
               </div>
               <div class="dest-card-bottom-row">
-                <a href="nepal-trekking-packages/" class="btn-explore-dest">Explore Region →</a>
+                <a href="nepal-trekking-packages/" class="btn-explore-dest" tabindex="-1" aria-hidden="true">Explore Region →</a>
               </div>
             </div>
           </div>
@@ -1612,7 +1619,7 @@
                 <div class="dest-card-subregion">Mustang District, Nepal</div>
               </div>
               <div class="dest-card-bottom-row">
-                <a href="nepal-trekking-packages/" class="btn-explore-dest">Explore Region →</a>
+                <a href="nepal-trekking-packages/" class="btn-explore-dest" tabindex="-1" aria-hidden="true">Explore Region →</a>
               </div>
             </div>
           </div>
@@ -1656,7 +1663,7 @@
                 <div class="dest-card-subregion">Dolpa District, Nepal</div>
               </div>
               <div class="dest-card-bottom-row">
-                <a href="nepal-trekking-packages/" class="btn-explore-dest">Explore Region →</a>
+                <a href="nepal-trekking-packages/" class="btn-explore-dest" tabindex="-1" aria-hidden="true">Explore Region →</a>
               </div>
             </div>
           </div>
@@ -1700,7 +1707,7 @@
                 <div class="dest-card-subregion">Dolakha Region, Nepal</div>
               </div>
               <div class="dest-card-bottom-row">
-                <a href="nepal-trekking-packages/" class="btn-explore-dest">Explore Region →</a>
+                <a href="nepal-trekking-packages/" class="btn-explore-dest" tabindex="-1" aria-hidden="true">Explore Region →</a>
               </div>
             </div>
           </div>
@@ -1744,7 +1751,7 @@
                 <div class="dest-card-subregion">Sankhuwasabha District, Nepal</div>
               </div>
               <div class="dest-card-bottom-row">
-                <a href="nepal-trekking-packages/" class="btn-explore-dest">Explore Region →</a>
+                <a href="nepal-trekking-packages/" class="btn-explore-dest" tabindex="-1" aria-hidden="true">Explore Region →</a>
               </div>
             </div>
           </div>
@@ -1788,7 +1795,7 @@
                 <div class="dest-card-subregion">Humla District, Nepal</div>
               </div>
               <div class="dest-card-bottom-row">
-                <a href="nepal-trekking-packages/" class="btn-explore-dest">Explore Region →</a>
+                <a href="nepal-trekking-packages/" class="btn-explore-dest" tabindex="-1" aria-hidden="true">Explore Region →</a>
               </div>
             </div>
           </div>
@@ -3481,7 +3488,7 @@
                     <img loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80"
                       alt="Angelina" class="video-avatar">
                     <div class="video-user-info">
-                      <h5>Angelina <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h5>
+                      <h3>Angelina <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h3>
                       <span>Everest Base Camp Trekker</span>
                     </div>
                   </div>
@@ -3501,7 +3508,7 @@
                       src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80"
                       alt="David" class="video-avatar">
                     <div class="video-user-info">
-                      <h5>David <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h5>
+                      <h3>David <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h3>
                       <span>Annapurna Circuit Group</span>
                     </div>
                   </div>
@@ -3521,7 +3528,7 @@
                       src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
                       alt="Emma" class="video-avatar">
                     <div class="video-user-info">
-                      <h5>Emma <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h5>
+                      <h3>Emma <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h3>
                       <span>Langtang Valley Explorer</span>
                     </div>
                   </div>
@@ -3541,7 +3548,7 @@
                       src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80"
                       alt="Chad" class="video-avatar">
                     <div class="video-user-info">
-                      <h5>Chad <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h5>
+                      <h3>Chad <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h3>
                       <span>Manaslu Restricted Circuit</span>
                     </div>
                   </div>
@@ -3561,7 +3568,7 @@
                     <img loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80"
                       alt="Angelina" class="video-avatar">
                     <div class="video-user-info">
-                      <h5>Angelina <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h5>
+                      <h3>Angelina <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h3>
                       <span>Everest Base Camp Trekker</span>
                     </div>
                   </div>
@@ -3581,7 +3588,7 @@
                       src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80"
                       alt="David" class="video-avatar">
                     <div class="video-user-info">
-                      <h5>David <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h5>
+                      <h3>David <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h3>
                       <span>Annapurna Circuit Group</span>
                     </div>
                   </div>
@@ -3601,7 +3608,7 @@
                       src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
                       alt="Emma" class="video-avatar">
                     <div class="video-user-info">
-                      <h5>Emma <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h5>
+                      <h3>Emma <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h3>
                       <span>Langtang Valley Explorer</span>
                     </div>
                   </div>
@@ -3621,7 +3628,7 @@
                       src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80"
                       alt="Chad" class="video-avatar">
                     <div class="video-user-info">
-                      <h5>Chad <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h5>
+                      <h3>Chad <span style="color:#60A5FA;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><polyline points="20 6 9 17 4 12"/></svg></span></h3>
                       <span>Manaslu Restricted Circuit</span>
                     </div>
                   </div>
@@ -3644,7 +3651,7 @@
                   <span style="font-size:0.8rem; color:rgba(255,255,255,0.75);">4 September</span>
                 </div>
                 <div class="customer-card-body">
-                  <h4>Delivers on all promises!</h4>
+                  <h3>Delivers on all promises!</h3>
                   <p>The guidance and logistics provided by Namaste Hiking Trek were flawless. From hotel pickups to tea
                     house bookings, our lead Sherpa guide kept us safe and comfortable on Kala Patthar!</p>
                 </div>
@@ -3665,7 +3672,7 @@
                   <span style="font-size:0.8rem; color:rgba(255,255,255,0.75);">23 June</span>
                 </div>
                 <div class="customer-card-body">
-                  <h4>Actually life-changing</h4>
+                  <h3>Actually life-changing</h3>
                   <p>Thanks to Namaste Hiking Trek, my Annapurna Sanctuary trek was a total dream! Their safety
                     protocols and acclimatization pace made Thorong La Pass completely doable for my family.</p>
                 </div>
@@ -3686,7 +3693,7 @@
                   <span style="font-size:0.8rem; color:rgba(255,255,255,0.75);">16 September</span>
                 </div>
                 <div class="customer-card-body">
-                  <h4>Excellent Service & Welfare</h4>
+                  <h3>Excellent Service & Welfare</h3>
                   <p>I appreciate their strong Porter Welfare policy. Our porters were provided warm gear and fair
                     wages. The team's care and high-altitude pulse oximeter monitoring gave us total confidence.</p>
                 </div>
@@ -3707,7 +3714,7 @@
                   <span style="font-size:0.8rem; color:rgba(255,255,255,0.75);">13 October</span>
                 </div>
                 <div class="customer-card-body">
-                  <h4>Best Himalayan Experience</h4>
+                  <h3>Best Himalayan Experience</h3>
                   <p>Tailor-made itinerary was smooth and perfectly paced. Flight to Lukla was handled seamlessly by
                     their Thamel team. Will definitely trek with them again for Gokyo Lakes next spring!</p>
                 </div>
@@ -3729,7 +3736,7 @@
                   <span style="font-size:0.8rem; color:rgba(255,255,255,0.75);">4 September</span>
                 </div>
                 <div class="customer-card-body">
-                  <h4>Delivers on all promises!</h4>
+                  <h3>Delivers on all promises!</h3>
                   <p>The guidance and logistics provided by Namaste Hiking Trek were flawless. From hotel pickups to tea
                     house bookings, our lead Sherpa guide kept us safe and comfortable on Kala Patthar!</p>
                 </div>
@@ -3750,7 +3757,7 @@
                   <span style="font-size:0.8rem; color:rgba(255,255,255,0.75);">23 June</span>
                 </div>
                 <div class="customer-card-body">
-                  <h4>Actually life-changing</h4>
+                  <h3>Actually life-changing</h3>
                   <p>Thanks to Namaste Hiking Trek, my Annapurna Sanctuary trek was a total dream! Their safety
                     protocols and acclimatization pace made Thorong La Pass completely doable for my family.</p>
                 </div>
@@ -3771,7 +3778,7 @@
                   <span style="font-size:0.8rem; color:rgba(255,255,255,0.75);">16 September</span>
                 </div>
                 <div class="customer-card-body">
-                  <h4>Excellent Service & Welfare</h4>
+                  <h3>Excellent Service & Welfare</h3>
                   <p>I appreciate their strong Porter Welfare policy. Our porters were provided warm gear and fair
                     wages. The team's care and high-altitude pulse oximeter monitoring gave us total confidence.</p>
                 </div>
@@ -3792,7 +3799,7 @@
                   <span style="font-size:0.8rem; color:rgba(255,255,255,0.75);">13 October</span>
                 </div>
                 <div class="customer-card-body">
-                  <h4>Best Himalayan Experience</h4>
+                  <h3>Best Himalayan Experience</h3>
                   <p>Tailor-made itinerary was smooth and perfectly paced. Flight to Lukla was handled seamlessly by
                     their Thamel team. Will definitely trek with them again for Gokyo Lakes next spring!</p>
                 </div>
@@ -4417,7 +4424,7 @@
                 <div class="team-info-row">
                   <div class="team-green-pill"></div>
                   <div class="team-name-role">
-                    <h4>Kamal Gurung</h4>
+                    <h3>Kamal Gurung</h3>
                     <span>Marketing Director &amp; Guide</span>
                   </div>
                 </div>
@@ -4439,7 +4446,7 @@
                 <div class="team-info-row">
                   <div class="team-green-pill"></div>
                   <div class="team-name-role">
-                    <h4>Bhagawan Kumal</h4>
+                    <h3>Bhagawan Kumal</h3>
                     <span>Senior Guide &amp; Team Leader</span>
                   </div>
                 </div>
@@ -4461,7 +4468,7 @@
                 <div class="team-info-row">
                   <div class="team-green-pill"></div>
                   <div class="team-name-role">
-                    <h4>Santa Bahadur Gurung</h4>
+                    <h3>Santa Bahadur Gurung</h3>
                     <span>Senior Trekking Guide</span>
                   </div>
                 </div>
@@ -4483,7 +4490,7 @@
                 <div class="team-info-row">
                   <div class="team-green-pill"></div>
                   <div class="team-name-role">
-                    <h4>David Gurung</h4>
+                    <h3>David Gurung</h3>
                     <span>Adventure Trekking Guide</span>
                   </div>
                 </div>
@@ -4505,7 +4512,7 @@
                 <div class="team-info-row">
                   <div class="team-green-pill"></div>
                   <div class="team-name-role">
-                    <h4>Hemlal Gurung</h4>
+                    <h3>Hemlal Gurung</h3>
                     <span>Adventure Mountain Guide</span>
                   </div>
                 </div>
@@ -4729,7 +4736,7 @@
               <div class="laptop-screen">
                 <img loading="lazy" src="images/treks/mardi-himal/mardi-himal-high-camp-sunrise-06.jpg" alt="Namaste Hiking Trek Newsletter Preview - High Camp Sunrise" class="laptop-screen-img">
                 <div class="laptop-brand-badge">
-                  <img loading="lazy" src="images/logo.png" alt="Namaste Hiking Trek Logo">
+                  <img loading="lazy" src="images/logo.png" alt="Namaste Hiking Trek Logo" width="38" height="38">
                 </div>
               </div>
               <div class="laptop-keyboard"></div>
@@ -5020,7 +5027,7 @@
     <div class="footer-associations-bar">
       <div class="container">
         <h3 class="associations-title">WE'RE ASSOCIATED WITH</h3>
-        <p class="associations-subtitle">Officially licensed, accredited, and affiliated with national tourism boards and global sustainable adventure alliances • <a href="legal-documents.html" style="color: #10B981; font-weight: 700; text-decoration: underline; margin-left: 4px;">View Legal Certificates & Licenses ↗</a></p>
+        <p class="associations-subtitle">Officially licensed, accredited, and affiliated with national tourism boards and global sustainable adventure alliances • <a href="legal-documents.html" style="color: #047857; font-weight: 700; text-decoration: underline; margin-left: 4px;">View Legal Certificates & Licenses ↗</a></p>
         <div class="associations-grid">
 
           <!-- 1. Government of Nepal -->

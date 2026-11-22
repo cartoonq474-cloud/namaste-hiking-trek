@@ -2028,7 +2028,7 @@ textarea {
   justify-content: space-between;
   font-family: var(--font-body);
   font-size: 0.84rem;
-  color: #64748B;
+  color: #94A3B8;
   position: relative;
   z-index: 2;
 }
@@ -2040,7 +2040,7 @@ textarea {
 
 .footer-bottom-legal a {
   font-family: var(--font-body);
-  color: #64748B;
+  color: #94A3B8;
   text-decoration: none;
   transition: color 0.2s ease;
 }
