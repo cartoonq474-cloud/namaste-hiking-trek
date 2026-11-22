@@ -267,7 +267,7 @@ textarea {
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.24em;
-  color: #00E599;
+  color: #047857;
   text-transform: uppercase;
   margin-top: 2px;
   padding: 0;
@@ -925,8 +925,8 @@ textarea {
 
 .pill-copper,
 .pill-alpine {
-  background-color: rgba(16, 185, 129, 0.12);
-  color: #10B981;
+  background-color: rgba(4, 120, 87, 0.12);
+  color: #047857;
 }
 
 /* Section Header */
@@ -1635,7 +1635,7 @@ textarea {
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.24em;
-  color: #00E599;
+  color: #047857;
   text-transform: uppercase;
   margin-top: 2px;
 }
@@ -2513,7 +2513,7 @@ textarea {
 }
 
 .btn-cta-green {
-  background-color: #10B981;
+  background-color: #047857;
   color: white;
   border-radius: var(--radius-full);
   padding: 10px 24px;
@@ -3599,7 +3599,7 @@ textarea {
 .price-amount {
   font-size: 1.6rem;
   font-weight: 800;
-  color: #10B981;
+  color: #047857;
 }
 
 .btn-inquire-orange {
@@ -3661,7 +3661,7 @@ textarea {
 }
 
 .resources-title-main .highlight-emerald {
-  color: #10B981;
+  color: #047857;
 }
 
 .resources-tabs-container {
@@ -4456,7 +4456,7 @@ textarea {
 }
 
 .team-title-main .highlight-emerald {
-  color: #10B981;
+  color: #047857;
 }
 
 .team-subtitle-text {
@@ -4677,7 +4677,7 @@ textarea {
 }
 
 .act-title-main .highlight-emerald {
-  color: #10B981;
+  color: #047857;
 }
 
 .act-subtitle-text {
@@ -4962,7 +4962,7 @@ textarea {
 .act-price-val {
   font-size: 1.85rem;
   font-weight: 900;
-  color: #10B981;
+  color: #047857;
   line-height: 1.1;
   margin-top: 2px;
 }
@@ -5529,8 +5529,8 @@ textarea {
 }
 
 .badge-emerald-highlight {
-  background: rgba(16, 185, 129, 0.12);
-  color: #10B981;
+  background: rgba(4, 120, 87, 0.12);
+  color: #047857;
   padding: 2px 14px;
   border-radius: 10px;
   border: 1px solid rgba(16, 185, 129, 0.25);
@@ -7271,7 +7271,7 @@ textarea {
 .pulsing-dot {
   width: 8px;
   height: 8px;
-  background-color: #10B981;
+  background-color: #047857;
   border-radius: 50%;
   display: inline-block;
   margin-right: 6px;
