@@ -926,7 +926,8 @@ textarea {
 .pill-copper,
 .pill-alpine {
   background-color: rgba(4, 120, 87, 0.12);
-  color: #047857;
+  color: #064e3b;
+  font-weight: 700;
 }
 
 /* Section Header */
@@ -3011,8 +3012,8 @@ textarea {
 }
 
 .platform-subtab-btn.active {
-  color: var(--color-copper-orange);
-  border-bottom-color: var(--color-copper-orange);
+  color: #064e3b;
+  border-bottom-color: #064e3b;
 }
 
 .platform-summary-banner {
@@ -5901,7 +5902,7 @@ textarea {
 
 .pill-highlight-green {
   background: #D1FAE5;
-  color: #047857;
+  color: #064e3b;
   padding: 2px 8px;
   border-radius: 6px;
   font-weight: 700;
@@ -5911,7 +5912,7 @@ textarea {
 
 .pill-highlight-yellow {
   background: #FEF3C7;
-  color: #B45309;
+  color: #78350F;
   padding: 2px 8px;
   border-radius: 6px;
   font-weight: 700;
@@ -6535,7 +6536,7 @@ textarea {
 .trek-gallery-badge-text span:last-child {
   font-size: 0.8rem;
   font-weight: 800;
-  color: #00af87;
+  color: #00664f;
   line-height: 1.2;
 }
 
@@ -7845,7 +7846,7 @@ textarea {
 }
 
 .details-subtitle-text a {
-  color: #10B981;
+  color: #047857;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -8074,8 +8075,8 @@ textarea {
 }
 
 .guides-bulk-toggle-btn:hover {
-  border-color: #10B981;
-  color: #10B981;
+  border-color: #047857;
+  color: #047857;
   box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);
 }
 
@@ -8457,12 +8458,13 @@ textarea {
   border-radius: 20px;
   cursor: pointer;
   transition: all var(--transition-fast);
-  color: var(--color-neutral-500);
+  color: #334155;
 }
 
 .altitude-unit-toggle-btn.active {
-  background: #f0fdf4 !important; /* Brand soft light green */
-  color: #10B981 !important; /* Brand green */
+  background: #f0fdf4 !important;
+  color: #064e3b !important;
+  font-weight: 800; /* Brand green */
   box-shadow: 0 2px 6px rgba(16, 185, 129, 0.08);
 }
 
@@ -8523,12 +8525,13 @@ textarea {
   border-radius: 20px;
   cursor: pointer;
   transition: all var(--transition-fast);
-  color: var(--color-neutral-500);
+  color: #334155;
 }
 
 .weather-unit-btn.active {
-  background: #f0fdf4 !important; /* Brand soft light green */
-  color: #10B981 !important; /* Brand green */
+  background: #f0fdf4 !important;
+  color: #064e3b !important;
+  font-weight: 800; /* Brand green */
   box-shadow: 0 2px 6px rgba(16, 185, 129, 0.08);
 }
 
@@ -8941,7 +8944,7 @@ textarea {
 
 .departure-status-pill {
   background: #e6f4f1;
-  color: #008060;
+  color: #064e3b;
   font-size: 0.75rem;
   font-weight: 700;
   padding: 4px 10px;
