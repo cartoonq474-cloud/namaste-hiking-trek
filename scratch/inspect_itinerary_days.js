@@ -1,16 +1,26 @@
 const fs = require('fs');
 
-const parsed = JSON.parse(fs.readFileSync('scratch/parsed_user_content.json', 'utf8'));
-const lines = parsed.itineraryText.split('\n');
+const html = fs.readFileSync('trek/everest-three-high-passes-trek/index.html', 'utf8');
 
-function printDay(dayNum) {
-  const start = lines.findIndex(l => l.trim().startsWith(`Day ${dayNum}:`));
-  const end = lines.findIndex((l, i) => i > start && l.trim().match(/^Day \d+:/));
-  console.log(`--- DAY ${dayNum} ---`);
-  console.log(lines.slice(start, end !== -1 ? end : start + 15).join('\n'));
+const dayRegex = /<div class="itinerary-day-title-new">[\s\S]*?<span class="day-label">(Day\s*\d+)<\/span>:\s*([^<]+)<\/h4>([\s\S]*?)(?=<div class="itinerary-day-title-new"|<div class="details-summary-card"|<section id="altitude)/gi;
+
+let match;
+const days = [];
+while ((match = dayRegex.exec(html)) !== null) {
+  const dayNum = match[1];
+  const dayTitle = match[2].trim();
+  const body = match[3];
+  const imgs = [];
+  const imgR = /<img[^>]+src=["']([^"']+)["'][^>]*>/gi;
+  let im;
+  while ((im = imgR.exec(body)) !== null) {
+    imgs.push(im[1]);
+  }
+  days.push({ dayNum, dayTitle, imgs });
 }
 
-printDay(3);
-printDay(4);
-printDay(10);
-printDay(11);
+console.log('Total itinerary days found:', days.length);
+days.forEach(d => {
+  console.log(`${d.dayNum}: ${d.dayTitle} (${d.imgs.length} images)`);
+  d.imgs.forEach(img => console.log('   -> ' + img));
+});
