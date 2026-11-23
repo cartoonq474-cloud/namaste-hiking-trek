@@ -1282,7 +1282,7 @@ textarea {
   --footer-bg-elevated: #0B192C;
   --footer-mint-accent: #00E599;
   --footer-mint-hover: #05f0a2;
-  --footer-forest-green: #007A5E;
+  --footer-forest-green: #00664e;
   --footer-card-mint: #E6F7F2;
   --footer-text-white: #FFFFFF;
   --footer-text-muted: #94A3B8;
@@ -1937,7 +1937,7 @@ textarea {
 .footer-news-footnote {
   font-family: var(--font-body);
   font-size: 0.76rem;
-  color: #94A3B8;
+  color: #475569;
   margin-top: 8px;
   display: block;
 }
@@ -8510,8 +8510,8 @@ textarea {
 }
 
 .weather-tab-btn.active {
-  background: #10B981 !important; /* Brand green */
-  border-color: #10B981 !important;
+  background: #047857 !important;
+  border-color: #047857 !important;
   color: white !important;
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
 }
@@ -8604,7 +8604,7 @@ textarea {
   position: absolute;
   top: 24px;
   right: -8px;
-  background: #f59e0b; /* Orange best seller color */
+  background: #b45309; /* High contrast amber 700 */
   color: white;
   font-size: 0.72rem;
   font-weight: 800;
@@ -10509,7 +10509,7 @@ textarea {
 .yml-pill-tag {
   display: inline-block;
   background: #e0f2fe;
-  color: #0284c7;
+  color: #0369a1;
   font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 2px;
