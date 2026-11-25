@@ -27,111 +27,199 @@
 
   <!-- Static JSON-LD Structured Data (Centerpiece Annotation — No JS Required) -->
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "TouristTrip",
-        "@id": "https://namastehikingtrek.com/trek/everest-base-camp-with-cho-la-pass-trek/#trip",
-        "name": "Everest Base Camp with Cho La Pass Trek (19 Days)",
-        "description": "Connect Everest Base Camp (5,364m), Kala Patthar (5,545m), Cho La Pass (5,420m), and Gokyo Lakes in a 19-day journey through the Khumbu with certified Sherpa guides.",
-        "touristType": ["Hikers", "Alpine Enthusiasts", "Adventure Travelers"],
-        "subTrip": [
-          { "@type": "TouristTrip", "name": "Day 1: Arrival in Kathmandu (1,355 m) & Hotel Transfer" },
-          { "@type": "TouristTrip", "name": "Day 2: Kathmandu Valley Sightseeing & Trek Preparation" },
-          { "@type": "TouristTrip", "name": "Day 3: Scenic Flight to Lukla (2,850 m) & Trek to Phakding (2,650 m)" },
-          { "@type": "TouristTrip", "name": "Day 4: Trek from Phakding to Namche Bazaar (3,443 m) via Dudh Koshi Valley" },
-          { "@type": "TouristTrip", "name": "Day 5: Dedicated Acclimatization in Namche Bazaar & Hike to Everest View Hotel (3,880 m)" },
-          { "@type": "TouristTrip", "name": "Day 6: Trek from Namche Bazaar to Tengboche Monastery (3,860 m)" },
-          { "@type": "TouristTrip", "name": "Day 7: Trek from Tengboche to Dingboche (4,450 m) beneath Ama Dablam" },
-          { "@type": "TouristTrip", "name": "Day 8: Dedicated Acclimatization in Dingboche & Hike to Nangkartshang Hill (5,100 m)" },
-          { "@type": "TouristTrip", "name": "Day 9: Trek from Dingboche to Lobuche (4,910 m) via Thukla Pass Memorials" },
-          { "@type": "TouristTrip", "name": "Day 10: Lobuche to Gorak Shep (5,180 m), Everest Base Camp (5,364 m) & Return to Gorak Shep" },
-          { "@type": "TouristTrip", "name": "Day 11: Dawn Ascent to Kala Patthar (5,545 m) & Trek to Dzongla (4,830 m)" },
-          { "@type": "TouristTrip", "name": "Day 12: Cross Glaciated Cho La Pass (5,420 m) & Descend to Thangna (4,700 m)" },
-          { "@type": "TouristTrip", "name": "Day 13: Trek from Thangna across Ngozumpa Glacier to Gokyo Lakes (4,750 m)" },
-          { "@type": "TouristTrip", "name": "Day 14: Ascent of Gokyo Ri (5,357 m) for Four 8,000m Peaks & Explore Gokyo Lakes" },
-          { "@type": "TouristTrip", "name": "Day 15: Trek from Gokyo down the Gokyo Valley to Dole (4,038 m)" },
-          { "@type": "TouristTrip", "name": "Day 16: Trek from Dole to Namche Bazaar (3,443 m) via Mong La" },
-          { "@type": "TouristTrip", "name": "Day 17: Trek from Namche Bazaar to Lukla (2,850 m, 19.5 km)" },
-          { "@type": "TouristTrip", "name": "Day 18: Morning Flight from Lukla to Kathmandu (1,355 m) & Hotel Transfer" },
-          { "@type": "TouristTrip", "name": "Day 19: Final Departure from Kathmandu & Farewell" }
-        ],
-        "offers": {
-          "@type": "Offer",
-          "price": "1535",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://namastehikingtrek.com/trek/everest-base-camp-with-cho-la-pass-trek/"
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://namastehikingtrek.com/trek/everest-base-camp-with-cho-la-pass-trek/#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://namastehikingtrek.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Nepal Trekking Packages", "item": "https://namastehikingtrek.com/nepal-trekking-packages/" },
-          { "@type": "ListItem", "position": 3, "name": "Everest Region Treks", "item": "https://namastehikingtrek.com/everest-region-treks/" },
-          { "@type": "ListItem", "position": 4, "name": "Everest Base Camp with Cho La Pass Trek", "item": "https://namastehikingtrek.com/trek/everest-base-camp-with-cho-la-pass-trek/" }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://namastehikingtrek.com/trek/everest-base-camp-with-cho-la-pass-trek/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How difficult is the Everest Base Camp with Cho La Pass Trek compared to standard EBC?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The EBC with Cho La Pass Trek is rated Demanding/Strenuous (Alpine Grade 4). It is significantly more demanding than the classic 14-day EBC trek because it adds the glaciated 5,420m Cho La Pass crossing, traversing rough moraine, icy slopes, and crossing the massive Ngozumpa Glacier into the Gokyo Valley."
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TouristTrip",
+          "@id": "https://namastehikingtrek.com/trek/everest-base-camp-with-cho-la-pass-trek/#trip",
+          "name": "Everest Base Camp with Cho La Pass Trek (19 Days)",
+          "description": "Connect Everest Base Camp (5,364m), Kala Patthar (5,545m), Cho La Pass (5,420m), and Gokyo Lakes in a 19-day journey through the Khumbu with certified Sherpa guides.",
+          "touristType": [
+            "Hikers",
+            "Alpine Enthusiasts",
+            "Adventure Travelers"
+          ],
+          "subTrip": [
+            {
+              "@type": "TouristTrip",
+              "name": "Day 1: Arrival in Kathmandu (1,355 m) & Hotel Transfer"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 2: Kathmandu Valley Sightseeing & Trek Preparation"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 3: Scenic Flight to Lukla (2,850 m) & Trek to Phakding (2,650 m)"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 4: Trek from Phakding to Namche Bazaar (3,443 m) via Dudh Koshi Valley"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 5: Dedicated Acclimatization in Namche Bazaar & Hike to Everest View Hotel (3,880 m)"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 6: Trek from Namche Bazaar to Tengboche Monastery (3,860 m)"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 7: Trek from Tengboche to Dingboche (4,450 m) beneath Ama Dablam"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 8: Dedicated Acclimatization in Dingboche & Hike to Nangkartshang Hill (5,100 m)"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 9: Trek from Dingboche to Lobuche (4,910 m) via Thukla Pass Memorials"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 10: Lobuche to Gorak Shep (5,180 m), Everest Base Camp (5,364 m) & Return to Gorak Shep"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 11: Dawn Ascent to Kala Patthar (5,545 m) & Trek to Dzongla (4,830 m)"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 12: Cross Glaciated Cho La Pass (5,420 m) & Descend to Thangna (4,700 m)"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 13: Trek from Thangna across Ngozumpa Glacier to Gokyo Lakes (4,750 m)"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 14: Ascent of Gokyo Ri (5,357 m) for Four 8,000m Peaks & Explore Gokyo Lakes"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 15: Trek from Gokyo down the Gokyo Valley to Dole (4,038 m)"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 16: Trek from Dole to Namche Bazaar (3,443 m) via Mong La"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 17: Trek from Namche Bazaar to Lukla (2,850 m, 19.5 km)"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 18: Morning Flight from Lukla to Kathmandu (1,355 m) & Hotel Transfer"
+            },
+            {
+              "@type": "TouristTrip",
+              "name": "Day 19: Final Departure from Kathmandu & Farewell"
             }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "price": "1535",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://namastehikingtrek.com/trek/everest-base-camp-with-cho-la-pass-trek/"
           },
-          {
-            "@type": "Question",
-            "name": "Do I need technical mountaineering skills or crampons for Cho La Pass?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Technical mountaineering experience is not required, but you must be comfortable walking on snow, ice, and steep scree. We strongly recommend lightweight microspikes or trekking crampons and gaiters, especially during early spring and late autumn when the Cho La glacier has firm black ice."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why does this itinerary approach Everest Base Camp first before Cho La Pass?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Approaching Everest Base Camp first allows for steady, progressive acclimatization through Namche Bazaar (Day 5) and Dingboche (Day 8). By the time you reach Dzongla to cross Cho La Pass on Day 12, your body is well-adapted to high altitude above 5,000m."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What happens if Cho La Pass is blocked by heavy snow or blizzards?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Safety is our absolute priority. If Cho La Pass is buried under unseasonal heavy blizzards or deemed unsafe by our head guide, we reroute via the lower Pheriche/Pangboche valley to connect with Gokyo safely, ensuring you still experience both Everest Base Camp and Gokyo."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How many dedicated acclimatization days are included in this 19-day schedule?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "This itinerary includes two dedicated acclimatization days: Day 5 in Namche Bazaar (with a hike to Everest View Hotel, ~3,880m) and Day 8 in Dingboche (with a hike to Nangkartshang Hill, ~5,100m). A shorter walking day follows on Day 13 before the Gokyo Ri ascent."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What permits are required for the EBC with Cho La Pass Trek?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You need two permits: the Sagarmatha National Park Entry Permit (NPR 3,000) and the Khumbu Pasang Lhamu Rural Municipality Permit (NPR 3,000). Both permits are arranged by Namaste Hiking Trek and are fully included in the package price."
-            }
+          "provider": {
+            "@type": "TravelAgency",
+            "@id": "https://namastehikingtrek.com/#agency",
+            "name": "Namaste Hiking Trek",
+            "url": "https://namastehikingtrek.com",
+            "email": "info@namastehikingtrek.com"
           }
-        ]
-      }
-    ]
-  }
-  </script>
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://namastehikingtrek.com/trek/everest-base-camp-with-cho-la-pass-trek/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://namastehikingtrek.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Nepal Trekking Packages",
+              "item": "https://namastehikingtrek.com/nepal-trekking-packages/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Everest Region Treks",
+              "item": "https://namastehikingtrek.com/everest-region-treks/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Everest Base Camp with Cho La Pass Trek",
+              "item": "https://namastehikingtrek.com/trek/everest-base-camp-with-cho-la-pass-trek/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://namastehikingtrek.com/trek/everest-base-camp-with-cho-la-pass-trek/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How difficult is the Everest Base Camp with Cho La Pass Trek compared to standard EBC?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The EBC with Cho La Pass Trek is rated Demanding/Strenuous (Alpine Grade 4). It is significantly more demanding than the classic 14-day EBC trek because it adds the glaciated 5,420m Cho La Pass crossing, traversing rough moraine, icy slopes, and crossing the massive Ngozumpa Glacier into the Gokyo Valley."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need technical mountaineering skills or crampons for Cho La Pass?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Technical mountaineering experience is not required, but you must be comfortable walking on snow, ice, and steep scree. We strongly recommend lightweight microspikes or trekking crampons and gaiters, especially during early spring and late autumn when the Cho La glacier has firm black ice."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does this itinerary approach Everest Base Camp first before Cho La Pass?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Approaching Everest Base Camp first allows for steady, progressive acclimatization through Namche Bazaar (Day 5) and Dingboche (Day 8). By the time you reach Dzongla to cross Cho La Pass on Day 12, your body is well-adapted to high altitude above 5,000m."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens if Cho La Pass is blocked by heavy snow or blizzards?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Safety is our absolute priority. If Cho La Pass is buried under unseasonal heavy blizzards or deemed unsafe by our head guide, we reroute via the lower Pheriche/Pangboche valley to connect with Gokyo safely, ensuring you still experience both Everest Base Camp and Gokyo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How many dedicated acclimatization days are included in this 19-day schedule?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This itinerary includes two dedicated acclimatization days: Day 5 in Namche Bazaar (with a hike to Everest View Hotel, ~3,880m) and Day 8 in Dingboche (with a hike to Nangkartshang Hill, ~5,100m). A shorter walking day follows on Day 13 before the Gokyo Ri ascent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What permits are required for the EBC with Cho La Pass Trek?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You need two permits: the Sagarmatha National Park Entry Permit (NPR 3,000) and the Khumbu Pasang Lhamu Rural Municipality Permit (NPR 3,000). Both permits are arranged by Namaste Hiking Trek and are fully included in the package price."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 
   <link rel="stylesheet" href="../../index.css?v=7">
   <style>
@@ -7286,6 +7374,14 @@
           <span>Send a trek inquiry ↗</span>
         </button>
 
+        <a href="mailto:info@namastehikingtrek.com" class="footer-contact-link">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>info@namastehikingtrek.com</span>
+        </a>
+
         <!-- Social Media Badges (Real Logos & Authentic Brand Colors) -->
         <div class="footer-social-row">
           <!-- 1. Facebook -->
@@ -7498,6 +7594,7 @@
 
   <script type="module" src="../../js/altitude-visualizer.js"></script>
   <script type="module" src="../../js/weather-visualizer.js"></script>
+  <script src="../../js/form-delivery.js"></script>
   <script type="module" src="../../js/inquiry-modal.js"></script>
   <script src="../../js/trek-details.js?v=11"></script>
   <script src="../../js/header-scroll.js"></script>

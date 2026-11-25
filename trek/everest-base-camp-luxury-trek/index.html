@@ -27,355 +27,362 @@
 
   <!-- Static JSON-LD Structured Data (Centerpiece Annotation — No JS Required) -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "TouristTrip",
-      "@id": "https://namastehikingtrek.com/trek/everest-base-camp-luxury-trek/#trip",
-      "name": "Everest Base Camp Luxury Trek",
-      "description": "12-day luxury lodge and helicopter-assisted journey through Sagarmatha National Park to Everest Base Camp (5,364m) and Kala Patthar (5,545m).",
-      "touristType": [
-        "Hikers",
-        "Trekking Enthusiasts",
-        "Luxury Travelers"
-      ],
-      "subTrip": [
-        {
-          "@type": "TouristTrip",
-          "name": "Day 1: Arrival in Kathmandu and transfer to your luxury hotel"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TouristTrip",
+        "@id": "https://namastehikingtrek.com/trek/everest-base-camp-luxury-trek/#trip",
+        "name": "Everest Base Camp Luxury Trek",
+        "description": "12-day luxury lodge and helicopter-assisted journey through Sagarmatha National Park to Everest Base Camp (5,364m) and Kala Patthar (5,545m).",
+        "touristType": [
+          "Hikers",
+          "Trekking Enthusiasts",
+          "Luxury Travelers"
+        ],
+        "subTrip": [
+          {
+            "@type": "TouristTrip",
+            "name": "Day 1: Arrival in Kathmandu and transfer to your luxury hotel"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 2: Helicopter flight from Kathmandu to Lukla and trek to Phakding"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 3: Trek from Phakding to Namche Bazaar through Sagarmatha National Park"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 4: Acclimatization day in Namche Bazaar with hike to Everest View Hotel"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 5: Trek from Namche Bazaar to Deboche via Tengboche Monastery"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 6: Trek from Deboche to Dingboche through the Imja Valley"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 7: Second acclimatization day in Dingboche with hike to Nangkartshang Peak"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 8: Trek from Dingboche to Lobuche via Thokla Pass and Memorial Hill"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 9: Trek to Gorak Shep and excursion to Everest Base Camp"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 10: Morning ascent of Kala Patthar and descent to Pheriche"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 11: Scenic helicopter return from Pheriche to Kathmandu"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 12: Final departure from Kathmandu or onward travel in Nepal"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "2975",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://namastehikingtrek.com/trek/everest-base-camp-luxury-trek/"
         },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 2: Helicopter flight from Kathmandu to Lukla and trek to Phakding"
-        },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 3: Trek from Phakding to Namche Bazaar through Sagarmatha National Park"
-        },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 4: Acclimatization day in Namche Bazaar with hike to Everest View Hotel"
-        },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 5: Trek from Namche Bazaar to Deboche via Tengboche Monastery"
-        },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 6: Trek from Deboche to Dingboche through the Imja Valley"
-        },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 7: Second acclimatization day in Dingboche with hike to Nangkartshang Peak"
-        },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 8: Trek from Dingboche to Lobuche via Thokla Pass and Memorial Hill"
-        },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 9: Trek to Gorak Shep and excursion to Everest Base Camp"
-        },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 10: Morning ascent of Kala Patthar and descent to Pheriche"
-        },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 11: Scenic helicopter return from Pheriche to Kathmandu"
-        },
-        {
-          "@type": "TouristTrip",
-          "name": "Day 12: Final departure from Kathmandu or onward travel in Nepal"
+        "provider": {
+          "@type": "TravelAgency",
+          "@id": "https://namastehikingtrek.com/#agency",
+          "name": "Namaste Hiking Trek",
+          "url": "https://namastehikingtrek.com",
+          "email": "info@namastehikingtrek.com"
         }
-      ],
-      "offers": {
-        "@type": "Offer",
-        "price": "2975",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "url": "https://namastehikingtrek.com/trek/everest-base-camp-luxury-trek/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://namastehikingtrek.com/trek/everest-base-camp-luxury-trek/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://namastehikingtrek.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Trekking Regions",
+            "item": "https://namastehikingtrek.com/trekking-regions-nepal/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Everest Region",
+            "item": "https://namastehikingtrek.com/everest-region-treks/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Everest Base Camp Luxury Trek",
+            "item": "https://namastehikingtrek.com/trek/everest-base-camp-luxury-trek/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://namastehikingtrek.com/trek/everest-base-camp-luxury-trek/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many days is the Everest Base Camp Luxury Trek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A typical Everest Base Camp Luxury Trek itinerary is arranged over 12 calendar days from Kathmandu arrival to departure. It features 9 mountain walking days (including two dedicated acclimatization days in Namche Bazaar and Dingboche), a scenic helicopter flight to Lukla on Day 2, and a helicopter flyback from Pheriche to Kathmandu on Day 11."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the maximum altitude reached on the Everest Base Camp Luxury Trek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The highest viewpoint reached on the trek is the summit of Kala Patthar at approximately 5,545 meters (18,192 ft). Everest Base Camp itself is situated at approximately 5,364 meters (17,598 ft), while Gorak Shep (5,164 m) is the highest overnight stay."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Everest Base Camp Luxury Trek suitable for beginners?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The trek can be undertaken by first-time trekkers who possess good baseline cardiovascular fitness and have trained diligently for uphill hiking. While the luxury lodges and helicopter return eliminate return trail fatigue, the high altitude, steep climbs, and cold temperatures still demand genuine physical endurance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need travel insurance for the Everest Base Camp Luxury Trek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, comprehensive travel insurance is mandatory. Your policy must cover high-altitude trekking up to 6,000 meters, emergency helicopter rescue, medical hospitalization, and trip cancellation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is drinking water included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Boiled or filtered drinking water is provided at lodges according to your package specification. We advise bringing two 1-liter reusable insulated bottles to avoid single-use plastic waste."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do if altitude symptoms develop?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Inform your lead Sherpa guide immediately. Our protocol is: stop ascent, rest, hydrate, perform oximeter screening, and descend if symptoms persist. Never attempt to push through altitude illness. Helicopter evacuation is dispatched if acute symptoms (HAPE/HACE) develop."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What meals are included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Full-board meals are included throughout the trekking days: daily breakfast, lunch, and dinner at lodges, featuring a blend of hearty traditional Dal Bhat, soups, noodles, pasta, and continental dishes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are helicopter transfers included in this 12-day plan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The standard 12-day luxury package includes two planned helicopter sectors: Kathmandu to Lukla on Day 2 and Pheriche to Kathmandu on Day 11, subject to confirmed quotation terms and weather clearance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Everest Base Camp Luxury Trek physically difficult?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, it is classified as a demanding high-altitude trek. Even with premium lodges and private support, walking for 5 to 8 hours daily at elevations above 4,000 and 5,000 meters requires strong leg endurance, cardiovascular stamina, and disciplined pacing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if the helicopter is delayed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Safety always comes first. If adverse mountain weather temporarily delays your flight, our operations team coordinates revised departure slots and arranges extra lodge accommodations until safe flying conditions resume."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I do the Everest Base Camp Luxury Trek privately?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Private luxury departures are our specialty and can be customized for solo travelers, couples, families, and private groups of friends. A private trek provides a dedicated guide and porter team, custom walking pace, flexible rest stops, and private helicopter options."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can solo travelers book the luxury Everest Base Camp trek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, solo travelers can book a private luxury itinerary with a dedicated 1-on-1 licensed Sherpa guide and porter. A single supplement covers private single-occupancy hotel rooms in Kathmandu and private lodge rooms on the mountain."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many acclimatization days are included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Two full acclimatization days are included: Day 4 in Namche Bazaar (3,440 m) and Day 7 in Dingboche (4,410 m), incorporating guided 'climb high, sleep low' day hikes to optimize physiological adaptation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best season for the Everest Base Camp Luxury Trek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The premier seasons are Autumn (late September to November) for crystal-clear skies and magnificent panoramas, and Spring (March to May) for warmer temperatures, blossoming rhododendrons, and active expedition Base Camp life."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which permits and registrations are required?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The trek requires the Sagarmatha National Park Entry Permit, Khumbu Pasang Lhamu Rural Municipality Permit, and TIMS/Trek-Card registration. All permits are fully arranged and paid for by Namaste Hiking Trek."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Everest Base Camp Luxury Trek suitable for families?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Families with active teenagers (aged 12 and above) who are physically fit and enjoy outdoor hiking can undertake this trek successfully. The private format allows the family to set its own daily schedule, take regular rest breaks, and manage acclimatization smoothly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the helicopter fly in all weather conditions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Mountain aviation operates strictly under Visual Flight Rules (VFR). Flights cannot operate during dense fog, heavy blizzards, or dangerously high wind turbulence. If a flight is delayed, our team coordinates departure as soon as conditions improve."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the helicopter private or shared?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depending on your quotation and group preference, flights can be arranged as a shared charter (sharing aircraft seats with other trekkers) or an exclusive private VIP charter. Your booking agreement will clearly state the flight arrangement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are hot showers included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hot gas or solar showers are available at lodges along the trail. In luxury lodges at lower elevations, hot showers are generally included in the room tier. At higher elevations (Lobuche and Gorak Shep), hot bucket showers may be subject to a nominal lodge fee (NPR 500–800) due to fuel transport costs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the Everest Base Camp Luxury Trek suitable for couples?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. It is one of the premier trekking choices for couples and honeymooners seeking an authentic Himalayan adventure without sacrificing privacy. We prioritize private rooms, double beds, and en-suite bathrooms wherever available."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes the Everest Base Camp trek a luxury trek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Luxury is created through a holistic upgrade across five pillars: premium 4/5-star Kathmandu hotels, the best available mountain lodges with private rooms and attached bathrooms where available, two helicopter flight sectors (Kathmandu-Lukla and Pheriche-Kathmandu), dedicated Sherpa guide and porter support, and full-board meal arrangements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there five-star accommodation at Everest Base Camp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No conventional five-star hotels exist at Everest Base Camp or Gorak Shep. At extreme elevations above 5,000 meters, infrastructure is inherently rustic due to the remote, glaciated environment. Luxury here means clean, warm private rooms, dedicated service, warm meals, and organized logistics rather than luxury resort amenities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do luxury lodges have private bathrooms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Private en-suite bathrooms with western flush toilets and hot running water are available in Kathmandu, Phakding, and Namche Bazaar, and at select lodges in Dingboche. In Lobuche and Gorak Shep, extreme sub-zero freezing restricts plumbing, making clean shared facilities standard."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are tips included in the package?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tips for guides and porters are not included and are left to your personal discretion. In Nepal trekking culture, tipping is customary to show appreciation for the hard work and care of your mountain crew."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I customize the Everest Base Camp Luxury Trek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! As a private luxury trip, we can customize your schedule by adding extra acclimatization nights, upgrading to 5-star Kathmandu suites, adding private helicopter tours to Gokyo Lakes, or combining wildlife safaris."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I add extra acclimatization days?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, additional acclimatization days can easily be scheduled in Namche Bazaar, Dingboche, or Pheriche upon request during your initial booking consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I confirm before paying for the trek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Confirm your travel dates, exact hotel and lodge categories, private vs. shared helicopter status, baggage allowances, included meals, permit fees, deposit/balance payment deadlines, and comprehensive travel insurance coverage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get vegetarian or vegan meals?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Teahouses along the Everest route offer an extensive range of vegetarian and vegan dishes including vegetable curries, lentil soups, rice, momos, noodles, and potato dishes. Inform us in advance of any dietary restrictions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Wi-Fi available during the luxury Everest Base Camp trek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Wi-Fi is available across most lodges. In lower settlements, lodges provide local Wi-Fi, while higher settlements use prepaid Everest Link satellite cards. Mobile 4G data (Ncell / NTC) is also accessible through Dingboche."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much luggage can I take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The luggage limit is 15 kg (33 lbs) per person total, which covers your main duffle bag (carried by porters) and your daily daypack (carried by yourself). This weight aligns with helicopter aviation safety payload limits."
+            }
+          }
+        ]
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://namastehikingtrek.com/trek/everest-base-camp-luxury-trek/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://namastehikingtrek.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Trekking Regions",
-          "item": "https://namastehikingtrek.com/trekking-regions-nepal/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Everest Region",
-          "item": "https://namastehikingtrek.com/everest-region-treks/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Everest Base Camp Luxury Trek",
-          "item": "https://namastehikingtrek.com/trek/everest-base-camp-luxury-trek/"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://namastehikingtrek.com/trek/everest-base-camp-luxury-trek/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How many days is the Everest Base Camp Luxury Trek?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A typical Everest Base Camp Luxury Trek itinerary is arranged over 12 calendar days from Kathmandu arrival to departure. It features 9 mountain walking days (including two dedicated acclimatization days in Namche Bazaar and Dingboche), a scenic helicopter flight to Lukla on Day 2, and a helicopter flyback from Pheriche to Kathmandu on Day 11."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the maximum altitude reached on the Everest Base Camp Luxury Trek?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The highest viewpoint reached on the trek is the summit of Kala Patthar at approximately 5,545 meters (18,192 ft). Everest Base Camp itself is situated at approximately 5,364 meters (17,598 ft), while Gorak Shep (5,164 m) is the highest overnight stay."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the Everest Base Camp Luxury Trek suitable for beginners?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The trek can be undertaken by first-time trekkers who possess good baseline cardiovascular fitness and have trained diligently for uphill hiking. While the luxury lodges and helicopter return eliminate return trail fatigue, the high altitude, steep climbs, and cold temperatures still demand genuine physical endurance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need travel insurance for the Everest Base Camp Luxury Trek?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, comprehensive travel insurance is mandatory. Your policy must cover high-altitude trekking up to 6,000 meters, emergency helicopter rescue, medical hospitalization, and trip cancellation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is drinking water included?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Boiled or filtered drinking water is provided at lodges according to your package specification. We advise bringing two 1-liter reusable insulated bottles to avoid single-use plastic waste."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What should I do if altitude symptoms develop?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Inform your lead Sherpa guide immediately. Our protocol is: stop ascent, rest, hydrate, perform oximeter screening, and descend if symptoms persist. Never attempt to push through altitude illness. Helicopter evacuation is dispatched if acute symptoms (HAPE/HACE) develop."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What meals are included?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Full-board meals are included throughout the trekking days: daily breakfast, lunch, and dinner at lodges, featuring a blend of hearty traditional Dal Bhat, soups, noodles, pasta, and continental dishes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are helicopter transfers included in this 12-day plan?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The standard 12-day luxury package includes two planned helicopter sectors: Kathmandu to Lukla on Day 2 and Pheriche to Kathmandu on Day 11, subject to confirmed quotation terms and weather clearance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the Everest Base Camp Luxury Trek physically difficult?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, it is classified as a demanding high-altitude trek. Even with premium lodges and private support, walking for 5 to 8 hours daily at elevations above 4,000 and 5,000 meters requires strong leg endurance, cardiovascular stamina, and disciplined pacing."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens if the helicopter is delayed?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Safety always comes first. If adverse mountain weather temporarily delays your flight, our operations team coordinates revised departure slots and arranges extra lodge accommodations until safe flying conditions resume."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I do the Everest Base Camp Luxury Trek privately?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Private luxury departures are our specialty and can be customized for solo travelers, couples, families, and private groups of friends. A private trek provides a dedicated guide and porter team, custom walking pace, flexible rest stops, and private helicopter options."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can solo travelers book the luxury Everest Base Camp trek?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, solo travelers can book a private luxury itinerary with a dedicated 1-on-1 licensed Sherpa guide and porter. A single supplement covers private single-occupancy hotel rooms in Kathmandu and private lodge rooms on the mountain."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many acclimatization days are included?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Two full acclimatization days are included: Day 4 in Namche Bazaar (3,440 m) and Day 7 in Dingboche (4,410 m), incorporating guided 'climb high, sleep low' day hikes to optimize physiological adaptation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the best season for the Everest Base Camp Luxury Trek?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The premier seasons are Autumn (late September to November) for crystal-clear skies and magnificent panoramas, and Spring (March to May) for warmer temperatures, blossoming rhododendrons, and active expedition Base Camp life."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which permits and registrations are required?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The trek requires the Sagarmatha National Park Entry Permit, Khumbu Pasang Lhamu Rural Municipality Permit, and TIMS/Trek-Card registration. All permits are fully arranged and paid for by Namaste Hiking Trek."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the Everest Base Camp Luxury Trek suitable for families?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Families with active teenagers (aged 12 and above) who are physically fit and enjoy outdoor hiking can undertake this trek successfully. The private format allows the family to set its own daily schedule, take regular rest breaks, and manage acclimatization smoothly."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can the helicopter fly in all weather conditions?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Mountain aviation operates strictly under Visual Flight Rules (VFR). Flights cannot operate during dense fog, heavy blizzards, or dangerously high wind turbulence. If a flight is delayed, our team coordinates departure as soon as conditions improve."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the helicopter private or shared?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depending on your quotation and group preference, flights can be arranged as a shared charter (sharing aircraft seats with other trekkers) or an exclusive private VIP charter. Your booking agreement will clearly state the flight arrangement."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are hot showers included?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Hot gas or solar showers are available at lodges along the trail. In luxury lodges at lower elevations, hot showers are generally included in the room tier. At higher elevations (Lobuche and Gorak Shep), hot bucket showers may be subject to a nominal lodge fee (NPR 500–800) due to fuel transport costs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the Everest Base Camp Luxury Trek suitable for couples?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. It is one of the premier trekking choices for couples and honeymooners seeking an authentic Himalayan adventure without sacrificing privacy. We prioritize private rooms, double beds, and en-suite bathrooms wherever available."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What makes the Everest Base Camp trek a luxury trek?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Luxury is created through a holistic upgrade across five pillars: premium 4/5-star Kathmandu hotels, the best available mountain lodges with private rooms and attached bathrooms where available, two helicopter flight sectors (Kathmandu-Lukla and Pheriche-Kathmandu), dedicated Sherpa guide and porter support, and full-board meal arrangements."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there five-star accommodation at Everest Base Camp?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No conventional five-star hotels exist at Everest Base Camp or Gorak Shep. At extreme elevations above 5,000 meters, infrastructure is inherently rustic due to the remote, glaciated environment. Luxury here means clean, warm private rooms, dedicated service, warm meals, and organized logistics rather than luxury resort amenities."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do luxury lodges have private bathrooms?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Private en-suite bathrooms with western flush toilets and hot running water are available in Kathmandu, Phakding, and Namche Bazaar, and at select lodges in Dingboche. In Lobuche and Gorak Shep, extreme sub-zero freezing restricts plumbing, making clean shared facilities standard."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are tips included in the package?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tips for guides and porters are not included and are left to your personal discretion. In Nepal trekking culture, tipping is customary to show appreciation for the hard work and care of your mountain crew."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I customize the Everest Base Camp Luxury Trek?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes! As a private luxury trip, we can customize your schedule by adding extra acclimatization nights, upgrading to 5-star Kathmandu suites, adding private helicopter tours to Gokyo Lakes, or combining wildlife safaris."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I add extra acclimatization days?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, additional acclimatization days can easily be scheduled in Namche Bazaar, Dingboche, or Pheriche upon request during your initial booking consultation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What should I confirm before paying for the trek?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Confirm your travel dates, exact hotel and lodge categories, private vs. shared helicopter status, baggage allowances, included meals, permit fees, deposit/balance payment deadlines, and comprehensive travel insurance coverage."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I get vegetarian or vegan meals?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Teahouses along the Everest route offer an extensive range of vegetarian and vegan dishes including vegetable curries, lentil soups, rice, momos, noodles, and potato dishes. Inform us in advance of any dietary restrictions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Wi-Fi available during the luxury Everest Base Camp trek?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Wi-Fi is available across most lodges. In lower settlements, lodges provide local Wi-Fi, while higher settlements use prepaid Everest Link satellite cards. Mobile 4G data (Ncell / NTC) is also accessible through Dingboche."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much luggage can I take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The luggage limit is 15 kg (33 lbs) per person total, which covers your main duffle bag (carried by porters) and your daily daypack (carried by yourself). This weight aligns with helicopter aviation safety payload limits."
-          }
-        }
-      ]
-    }
-  ]
-}
+    ]
+  }
   </script>
 
   <link rel="stylesheet" href="../../index.css?v=7">
@@ -6105,6 +6112,14 @@
           <span>Send a trek inquiry ↗</span>
         </button>
 
+        <a href="mailto:info@namastehikingtrek.com" class="footer-contact-link">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>info@namastehikingtrek.com</span>
+        </a>
+
         <!-- Social Media Badges (Real Logos & Authentic Brand Colors) -->
         <div class="footer-social-row">
           <!-- 1. Facebook -->
@@ -6317,6 +6332,7 @@
 
   <script type="module" src="../../js/altitude-visualizer.js"></script>
   <script type="module" src="../../js/weather-visualizer.js"></script>
+  <script src="../../js/form-delivery.js"></script>
   <script type="module" src="../../js/inquiry-modal.js"></script>
   <script src="../../js/trek-details.js?v=11"></script>
   <script src="../../js/header-scroll.js"></script>

@@ -14,7 +14,7 @@
 | **Professional Slogan / Title** | **Best Trekking Company in Nepal** |
 | **Headquarters Address** | Ekata Basti Marg, Kathmandu, Bagmati Province 44600 – Nepal |
 | **Primary Phone & WhatsApp** | `+977 984-9009919` (`9849009919`) |
-| **Primary Inquiries Email** | `namastehikingtrek@gmail.com` |
+| **Primary Inquiries Email** | `info@namastehikingtrek.com` |
 | **Secondary Emails** | `namastehikingtrek@hotmail.com` • `namastehikingtrek@outlook.com` |
 | **Official Website** | [https://namastehikingtrek.com](https://namastehikingtrek.com) |
 | **Facebook Official** | [Namaste Hiking Trek Facebook](https://www.facebook.com/profile.php?id=61567404111243) |
@@ -142,7 +142,7 @@ console.log(brandProfile.guides); // Detailed profiles for all 15 mountain guide
 ### Key Brand Rules for Content & Development:
 1. **Always use official contact channels**:
    - Phone: `+977 984-9009919`
-   - Email: `namastehikingtrek@gmail.com`
+   - Email: `info@namastehikingtrek.com`
 2. **Use official TripAdvisor awards**:
    - Highlight **TripAdvisor Travelers' Choice Best of the Best 2024 & 2025**.
 3. **Guide attribution**:

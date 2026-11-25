@@ -618,10 +618,10 @@
       <h3 style="font-size: 1.5rem; margin-bottom: 6px;">Plan Your Makalu Trip</h3>
       <form id="inquiry-form">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
-          <input type="text" class="form-input" required placeholder="Full Name *">
-          <input type="email" class="form-input" required placeholder="Email Address *">
+          <input type="text" name="full_name" class="form-input" required placeholder="Full Name *">
+          <input type="email" name="email" class="form-input" required placeholder="Email Address *">
         </div>
-        <textarea class="form-textarea" rows="3" placeholder="Travel dates or custom questions..." style="width:100%; margin-bottom: 16px;"></textarea>
+        <textarea name="notes" class="form-textarea" rows="3" placeholder="Travel dates or custom questions..." style="width:100%; margin-bottom: 16px;"></textarea>
         <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit Inquiry</button>
       </form>
     </div>
@@ -857,6 +857,14 @@
           <span>Send a trek inquiry ↗</span>
         </button>
 
+        <a href="mailto:info@namastehikingtrek.com" class="footer-contact-link">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>info@namastehikingtrek.com</span>
+        </a>
+
         <!-- Social Media Badges (Real Logos & Authentic Brand Colors) -->
         <div class="footer-social-row">
           <!-- 1. Facebook -->
@@ -1066,6 +1074,7 @@
     </div>
 
   </footer>
+  <script src="../js/form-delivery.js"></script>
   <script type="module" src="../js/inquiry-modal.js"></script>
   <script src="../js/header-scroll.js"></script>
   <script src="../js/mega-menu.js"></script>

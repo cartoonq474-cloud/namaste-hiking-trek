@@ -14,7 +14,7 @@
 | **Founding Year** | 2016 (10+ Years Operational Excellence) |
 | **Headquarters Address** | Ekata Basti Marg, Kathmandu, Bagmati Province 44600 – Nepal |
 | **Primary Phone & WhatsApp** | `+977 984-9009919` (24/7 Rapid Response) |
-| **Primary Inquiries Email** | `namastehikingtrek@gmail.com` |
+| **Primary Inquiries Email** | `info@namastehikingtrek.com` |
 | **Secondary Inquiries Emails**| `namastehikingtrek@hotmail.com` • `namastehikingtrek@outlook.com` |
 | **Official Website** | [https://namastehikingtrek.com](https://namastehikingtrek.com) |
 | **Facebook Page** | [facebook.com/profile.php?id=61567404111243](https://www.facebook.com/profile.php?id=61567404111243) |
@@ -189,7 +189,7 @@ All standard trekking and climbing packages operated by Namaste Hiking Trek incl
 
 ## 7. How to Book & Inquire
 
-- **Direct Inquiries**: Email `namastehikingtrek@gmail.com`
+- **Direct Inquiries**: Email `info@namastehikingtrek.com`
 - **Instant WhatsApp Support**: `+977 984-9009919` (Available 24 hours / 7 days)
 - **Official Website**: [https://namastehikingtrek.com](https://namastehikingtrek.com)
 - **Head Office**: Ekata Basti Marg, Kathmandu, Bagmati Province 44600, Nepal.

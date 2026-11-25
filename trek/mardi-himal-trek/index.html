@@ -37,16 +37,44 @@
         "@id": "https://namastehikingtrek.com/trek/mardi-himal-trek/#trip",
         "name": "Mardi Himal Trek (8 Days)",
         "description": "8-day Himalayan trekking journey in Nepal's Annapurna region beneath Mardi Himal and Machhapuchhre (Fishtail) to High Camp (3,580m) and Base Camp area (4,500m).",
-        "touristType": ["Hikers", "Trekking Enthusiasts", "Nature Lovers"],
+        "touristType": [
+          "Hikers",
+          "Trekking Enthusiasts",
+          "Nature Lovers"
+        ],
         "subTrip": [
-          { "@type": "TouristTrip", "name": "Day 1: Kathmandu to Pokhara (800m)" },
-          { "@type": "TouristTrip", "name": "Day 2: Pokhara to Kande & Trek to Forest Camp (2,550m)" },
-          { "@type": "TouristTrip", "name": "Day 3: Forest Camp to Low Camp (3,000m)" },
-          { "@type": "TouristTrip", "name": "Day 4: Low Camp to Badal Danda & High Camp (3,580m)" },
-          { "@type": "TouristTrip", "name": "Day 5: High Camp to Upper Viewpoint (4,200m) & Base Camp (4,500m) and Return" },
-          { "@type": "TouristTrip", "name": "Day 6: High Camp to Siding Village (1,750m)" },
-          { "@type": "TouristTrip", "name": "Day 7: Siding to Lumre & Drive to Pokhara (800m)" },
-          { "@type": "TouristTrip", "name": "Day 8: Pokhara to Kathmandu (1,400m)" }
+          {
+            "@type": "TouristTrip",
+            "name": "Day 1: Kathmandu to Pokhara (800m)"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 2: Pokhara to Kande & Trek to Forest Camp (2,550m)"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 3: Forest Camp to Low Camp (3,000m)"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 4: Low Camp to Badal Danda & High Camp (3,580m)"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 5: High Camp to Upper Viewpoint (4,200m) & Base Camp (4,500m) and Return"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 6: High Camp to Siding Village (1,750m)"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 7: Siding to Lumre & Drive to Pokhara (800m)"
+          },
+          {
+            "@type": "TouristTrip",
+            "name": "Day 8: Pokhara to Kathmandu (1,400m)"
+          }
         ],
         "offers": {
           "@type": "Offer",
@@ -54,15 +82,37 @@
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "url": "https://namastehikingtrek.com/trek/mardi-himal-trek/"
+        },
+        "provider": {
+          "@type": "TravelAgency",
+          "@id": "https://namastehikingtrek.com/#agency",
+          "name": "Namaste Hiking Trek",
+          "url": "https://namastehikingtrek.com",
+          "email": "info@namastehikingtrek.com"
         }
       },
       {
         "@type": "BreadcrumbList",
         "@id": "https://namastehikingtrek.com/trek/mardi-himal-trek/#breadcrumb",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://namastehikingtrek.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Annapurna Region", "item": "https://namastehikingtrek.com/trekking-regions-nepal/" },
-          { "@type": "ListItem", "position": 3, "name": "Mardi Himal Trek", "item": "https://namastehikingtrek.com/trek/mardi-himal-trek/" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://namastehikingtrek.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Annapurna Region",
+            "item": "https://namastehikingtrek.com/trekking-regions-nepal/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Mardi Himal Trek",
+            "item": "https://namastehikingtrek.com/trek/mardi-himal-trek/"
+          }
         ]
       },
       {
@@ -4400,6 +4450,14 @@
           <span>Send a trek inquiry ↗</span>
         </button>
 
+        <a href="mailto:info@namastehikingtrek.com" class="footer-contact-link">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>info@namastehikingtrek.com</span>
+        </a>
+
         <!-- Social Media Badges (Real Logos & Authentic Brand Colors) -->
         <div class="footer-social-row">
           <!-- 1. Facebook -->
@@ -4614,6 +4672,7 @@
 
   <script type="module" src="../../js/altitude-visualizer.js"></script>
   <script type="module" src="../../js/weather-visualizer.js"></script>
+  <script src="../../js/form-delivery.js"></script>
   <script type="module" src="../../js/inquiry-modal.js"></script>
   <script src="../../js/trek-details.js?v=11"></script>
   <script src="../../js/header-scroll.js"></script>

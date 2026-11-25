@@ -15,13 +15,16 @@ export function injectStructuredData() {
         "@id": "https://namastehikingtrek.com/#agency",
         "name": "Namaste Hiking Trek",
         "url": "https://namastehikingtrek.com",
-        "logo": "https://namastehikingtrek.com/assets/logo.png",
+        "logo": "https://namastehikingtrek.com/images/logo.png",
         "description": "Licensed local trekking company in Nepal specializing in Everest, Annapurna, Langtang, and Manaslu expeditions.",
-        "telephone": "+977-1-4700000",
+        "telephone": "+977-984-9009919",
+        "email": "info@namastehikingtrek.com",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Thamel",
+          "streetAddress": "Ekata Basti Marg",
           "addressLocality": "Kathmandu",
+          "addressRegion": "Bagmati Province",
+          "postalCode": "44600",
           "addressCountry": "NP"
         },
         "geo": {
@@ -30,9 +33,8 @@ export function injectStructuredData() {
           "longitude": 85.3240
         },
         "sameAs": [
-          "https://www.facebook.com/namastehikingtrek",
-          "https://www.instagram.com/namastehikingtrek",
-          "https://www.tripadvisor.com/namastehikingtrek"
+          "https://www.facebook.com/profile.php?id=61567404111243",
+          "https://www.instagram.com/namastehikingtrek"
         ]
       },
       {

@@ -93,32 +93,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 5. Form Submission Handler
-  if (reviewForm) {
-    reviewForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const submitBtn = reviewForm.querySelector('button[type="submit"]');
-
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.innerText = 'Submitting Your Review...';
-      }
-
-      setTimeout(() => {
-        if (reviewForm) {
-          reviewForm.innerHTML = `
-            <div style="text-align: center; padding: 30px 10px;">
-              <div style="width: 64px; height: 64px; background: #ECFDF5; color: #10B981; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">
-                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              </div>
-              <h3 style="font-size: 1.6rem; color: #0F172A; margin-bottom: 8px;">Review Submitted Successfully!</h3>
-              <p style="color: #64748B; font-size: 0.98rem; line-height: 1.6; max-width: 480px; margin: 0 auto 20px auto;">
-                Thank you for sharing your experience with Namaste Hiking Trek! Our team will verify and publish your review shortly.
-              </p>
-              <button onclick="document.getElementById('leave-review-modal').classList.remove('active')" class="btn btn-primary" style="padding: 10px 26px;">Close Window</button>
+  if (reviewForm && window.NamasteFormDelivery) {
+    window.NamasteFormDelivery.bindForm(reviewForm, {
+      sourceName: 'Trekker Review Submission Form',
+      subjectPrefix: 'New Trekker Review',
+      sendingText: 'Submitting Your Review...',
+      onSuccess: () => {
+        reviewForm.innerHTML = `
+          <div style="text-align: center; padding: 30px 10px;">
+            <div style="width: 64px; height: 64px; background: #ECFDF5; color: #10B981; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             </div>
-          `;
-        }
-      }, 1200);
+            <h3 style="font-size: 1.6rem; color: #0F172A; margin-bottom: 8px;">Review Submitted Successfully!</h3>
+            <p style="color: #64748B; font-size: 0.98rem; line-height: 1.6; max-width: 480px; margin: 0 auto 20px auto;">
+              Thank you for sharing your experience with Namaste Hiking Trek! Your review has been delivered to <strong>${window.NamasteFormDelivery.TARGET_EMAIL}</strong> for verification.
+            </p>
+            <button onclick="document.getElementById('leave-review-modal').classList.remove('active')" class="btn btn-primary" style="padding: 10px 26px;">Close Window</button>
+          </div>
+        `;
+      }
     });
   }
 

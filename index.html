@@ -36,235 +36,242 @@
 
   <!-- Static JSON-LD Structured Data (Centerpiece Annotation — No JS Required) -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "TravelAgency",
-      "@id": "https://namastehikingtrek.com/#agency",
-      "name": "Namaste Hiking Trek",
-      "legalName": "Namaste Hiking Trek Pvt. Ltd.",
-      "taxID": "623606649",
-      "alternateName": [
-        "Namaste Hiking",
-        "Namaste Hiking Trek Nepal",
-        "Namaste Trek"
-      ],
-      "url": "https://namastehikingtrek.com",
-      "logo": "https://namastehikingtrek.com/images/logo.png",
-      "image": "https://namastehikingtrek.com/images/hero-himalayas.jpg",
-      "description": "Government-licensed local trekking and climbing company in Nepal specializing in Everest, Annapurna, Langtang, and Manaslu expeditions with 20+ years of high-altitude leadership.",
-      "priceRange": "$ - $$",
-      "currenciesAccepted": "USD, EUR, GBP, AUD, CAD, NPR",
-      "paymentAccepted": "Credit Card, Bank Wire Transfer, Cash",
-      "telephone": "+977-984-9009919",
-      "email": "namastehikingtrek@gmail.com",
-      "founder": {
-        "@type": "Person",
-        "name": "Lal Gurung",
-        "jobTitle": "Founder & Head of Trekking Operations"
-      },
-      "employee": [
-        {
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://namastehikingtrek.com/#agency",
+        "name": "Namaste Hiking Trek",
+        "legalName": "Namaste Hiking Trek Pvt. Ltd.",
+        "taxID": "623606649",
+        "alternateName": [
+          "Namaste Hiking",
+          "Namaste Hiking Trek Nepal",
+          "Namaste Trek"
+        ],
+        "url": "https://namastehikingtrek.com",
+        "logo": "https://namastehikingtrek.com/images/logo.png",
+        "image": "https://namastehikingtrek.com/images/hero-himalayas.jpg",
+        "description": "Government-licensed local trekking and climbing company in Nepal specializing in Everest, Annapurna, Langtang, and Manaslu expeditions with 20+ years of high-altitude leadership.",
+        "priceRange": "$ - $$",
+        "currenciesAccepted": "USD, EUR, GBP, AUD, CAD, NPR",
+        "paymentAccepted": "Credit Card, Bank Wire Transfer, Cash",
+        "telephone": "+977-984-9009919",
+        "email": "info@namastehikingtrek.com",
+        "founder": {
           "@type": "Person",
-          "name": "Kamal Gurung",
-          "jobTitle": "Managing Director & Lead Guide"
-        }
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Ekata Basti Marg",
-        "addressLocality": "Kathmandu",
-        "postalCode": "44600",
-        "addressRegion": "Bagmati Province",
-        "addressCountry": "NP"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 27.7172,
-        "longitude": 85.324
-      },
-      "areaServed": [
-        "Nepal",
-        "Himalayas",
-        "Everest Region",
-        "Annapurna Region",
-        "Langtang Region",
-        "Manaslu Region"
-      ],
-      "hasCredential": "https://namastehikingtrek.com/legal-documents/",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "name": "Trekking Agencies' Association of Nepal (TAAN)"
+          "name": "Lal Gurung",
+          "jobTitle": "Founder & Head of Trekking Operations"
         },
-        {
-          "@type": "Organization",
-          "name": "Nepal Mountaineering Association (NMA)"
-        },
-        {
-          "@type": "Organization",
-          "name": "Nepal Tourism Board (NTB)"
-        }
-      ],
-      "knowsAbout": [
-        "Trekking in Nepal",
-        "Himalayan Expeditions",
-        "Everest Base Camp Trek",
-        "Annapurna Circuit Trek",
-        "Manaslu Circuit Trek",
-        "Langtang Valley Trek",
-        "Peak Climbing in Nepal"
-      ],
-      "award": [
-        "TripAdvisor Travelers' Choice Best of the Best 2025",
-        "TripAdvisor Travelers' Choice Best of the Best 2024",
-        "TripAdvisor Travelers' Choice Award 2023",
-        "TripAdvisor Travelers' Choice Award 2022",
-        "TripAdvisor Travelers' Choice Award 2021"
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "150",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61567404111243",
-        "https://www.instagram.com/namastehikingtrek",
-        "https://x.com/namastehiking",
-        "https://www.linkedin.com/company/namaste-hiking-trek",
-        "https://www.youtube.com/@namastehikingtrek",
-        "https://www.pinterest.com/namastehikingtrek"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://namastehikingtrek.com/#website",
-      "url": "https://namastehikingtrek.com/",
-      "name": "Namaste Hiking Trek",
-      "legalName": "Namaste Hiking Trek Pvt. Ltd.",
-      "taxID": "623606649",
-      "description": "Government-licensed local trekking agency in Nepal specializing in Everest, Annapurna, Langtang, and Manaslu expeditions.",
-      "publisher": {
-        "@id": "https://namastehikingtrek.com/#agency"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://namastehikingtrek.com/treks.html?search={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@type": "TouristTrip",
-      "@id": "https://namastehikingtrek.com/trek/everest-base-camp-trek/#trip",
-      "name": "Everest Base Camp Trek",
-      "description": "14-day iconic teahouse trek through Sagarmatha National Park to Everest Base Camp (5,364m) and Kala Patthar (5,545m).",
-      "touristType": [
-        "Hikers",
-        "Trekking Enthusiasts"
-      ],
-      "itinerary": {
-        "@type": "ItemList",
-        "numberOfItems": 14,
-        "itemListElement": [
+        "employee": [
           {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Kathmandu to Lukla Flight & Trek to Phakding (2,610m)"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Trek to Namche Bazaar (3,440m)"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Acclimatization Day in Namche Bazaar"
+            "@type": "Person",
+            "name": "Kamal Gurung",
+            "jobTitle": "Managing Director & Lead Guide"
           }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ekata Basti Marg",
+          "addressLocality": "Kathmandu",
+          "postalCode": "44600",
+          "addressRegion": "Bagmati Province",
+          "addressCountry": "NP"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 27.7172,
+          "longitude": 85.324
+        },
+        "areaServed": [
+          "Nepal",
+          "Himalayas",
+          "Everest Region",
+          "Annapurna Region",
+          "Langtang Region",
+          "Manaslu Region"
+        ],
+        "hasCredential": "https://namastehikingtrek.com/legal-documents/",
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "name": "Trekking Agencies' Association of Nepal (TAAN)"
+          },
+          {
+            "@type": "Organization",
+            "name": "Nepal Mountaineering Association (NMA)"
+          },
+          {
+            "@type": "Organization",
+            "name": "Nepal Tourism Board (NTB)"
+          }
+        ],
+        "knowsAbout": [
+          "Trekking in Nepal",
+          "Himalayan Expeditions",
+          "Everest Base Camp Trek",
+          "Annapurna Circuit Trek",
+          "Manaslu Circuit Trek",
+          "Langtang Valley Trek",
+          "Peak Climbing in Nepal"
+        ],
+        "award": [
+          "TripAdvisor Travelers' Choice Best of the Best 2025",
+          "TripAdvisor Travelers' Choice Best of the Best 2024",
+          "TripAdvisor Travelers' Choice Award 2023",
+          "TripAdvisor Travelers' Choice Award 2022",
+          "TripAdvisor Travelers' Choice Award 2021"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "150",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61567404111243",
+          "https://www.instagram.com/namastehikingtrek",
+          "https://x.com/namastehiking",
+          "https://www.linkedin.com/company/namaste-hiking-trek",
+          "https://www.youtube.com/@namastehikingtrek",
+          "https://www.pinterest.com/namastehikingtrek"
         ]
       },
-      "offers": {
-        "@type": "Offer",
-        "price": "1399",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://namastehikingtrek.com/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What are the Legal & Permit Considerations for Trekking in Nepal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "All international trekkers in Nepal require official TIMS (Trekker's Information Management System) registration and specific National Park or Conservation Area permits (e.g. Sagarmatha or Annapurna Conservation permits). Restricted regions such as Manaslu and Upper Mustang require special government permits and a mandatory licensed local guide. Namaste Hiking Trek arranges all legal paperwork and permits seamlessly for you before your arrival."
-          }
+      {
+        "@type": "WebSite",
+        "@id": "https://namastehikingtrek.com/#website",
+        "url": "https://namastehikingtrek.com/",
+        "name": "Namaste Hiking Trek",
+        "legalName": "Namaste Hiking Trek Pvt. Ltd.",
+        "taxID": "623606649",
+        "description": "Government-licensed local trekking agency in Nepal specializing in Everest, Annapurna, Langtang, and Manaslu expeditions.",
+        "publisher": {
+          "@id": "https://namastehikingtrek.com/#agency"
         },
-        {
-          "@type": "Question",
-          "name": "How to Ensure Maximum Safety During High-Altitude Treks?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Safety is built directly into our day-by-day itineraries with mandatory acclimatization rest days. Our Sherpa guides carry pulse oximeters to measure blood oxygen levels twice daily, portable first-aid kits, and satellite communication devices. Additionally, we coordinate 24/7 emergency helicopter rescue standby for immediate evacuation if medically necessary."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the Benefits of Booking with a Licensed Local Operator?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Booking directly with a Kathmandu-based licensed operator ensures direct fair wages for your Sherpa guides and porters, transparent local pricing without middleman commissions, 24/7 real-time ground support during flight delays (such as Lukla weather disruptions), and authentic deep cultural immersion in Sherpa and Tamang villages."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What Travel & Medical Insurance Coverage Do I Need?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Your travel insurance policy must explicitly cover high-altitude mountain trekking up to 5,500 meters (18,000 ft) and emergency helicopter evacuation. We recommend providers like World Nomads, Global Rescue, or Allianz."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "When is the Best Season for Trekking in Nepal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Autumn (September to November) offers crisp crystal-clear mountain views and pleasant temperatures, making it peak season. Spring (March to May) features blooming rhododendron forests, warmer weather, and optimal climbing conditions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How Fit Do I Need to Be for Everest Base Camp or Annapurna?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You do not need to be an elite athlete, but moderate cardiovascular fitness is essential. We recommend 2-3 months of pre-trip conditioning including stair climbing, cardio exercises, and weekend day hikes carrying a 5kg pack."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is Acute Mountain Sickness (AMS) and How is it Prevented?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AMS is caused by reduced atmospheric oxygen at high elevations above 2,500m. Prevention involves slow gradual ascent, drinking 3-4 liters of water daily, avoiding alcohol, taking acclimatization days, and carrying Diamox (acetazolamide) after consulting your physician."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I Customize My Departure Dates and Itinerary?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely! Private tailor-made trips offer 100% flexibility. You choose your arrival date in Kathmandu, adjust daily walking hours, select luxury lodge upgrades, or add helicopter return options. Click 'Begin Your Journey' to request your custom quote."
-          }
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://namastehikingtrek.com/treks.html?search={search_term_string}",
+          "query-input": "required name=search_term_string"
         }
-      ]
-    }
-  ]
-}
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://namastehikingtrek.com/trek/everest-base-camp-trek/#trip",
+        "name": "Everest Base Camp Trek",
+        "description": "14-day iconic teahouse trek through Sagarmatha National Park to Everest Base Camp (5,364m) and Kala Patthar (5,545m).",
+        "touristType": [
+          "Hikers",
+          "Trekking Enthusiasts"
+        ],
+        "itinerary": {
+          "@type": "ItemList",
+          "numberOfItems": 14,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Kathmandu to Lukla Flight & Trek to Phakding (2,610m)"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Trek to Namche Bazaar (3,440m)"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Acclimatization Day in Namche Bazaar"
+            }
+          ]
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "1399",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "provider": {
+          "@type": "TravelAgency",
+          "@id": "https://namastehikingtrek.com/#agency",
+          "name": "Namaste Hiking Trek",
+          "url": "https://namastehikingtrek.com",
+          "email": "info@namastehikingtrek.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://namastehikingtrek.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are the Legal & Permit Considerations for Trekking in Nepal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All international trekkers in Nepal require official TIMS (Trekker's Information Management System) registration and specific National Park or Conservation Area permits (e.g. Sagarmatha or Annapurna Conservation permits). Restricted regions such as Manaslu and Upper Mustang require special government permits and a mandatory licensed local guide. Namaste Hiking Trek arranges all legal paperwork and permits seamlessly for you before your arrival."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to Ensure Maximum Safety During High-Altitude Treks?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Safety is built directly into our day-by-day itineraries with mandatory acclimatization rest days. Our Sherpa guides carry pulse oximeters to measure blood oxygen levels twice daily, portable first-aid kits, and satellite communication devices. Additionally, we coordinate 24/7 emergency helicopter rescue standby for immediate evacuation if medically necessary."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the Benefits of Booking with a Licensed Local Operator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Booking directly with a Kathmandu-based licensed operator ensures direct fair wages for your Sherpa guides and porters, transparent local pricing without middleman commissions, 24/7 real-time ground support during flight delays (such as Lukla weather disruptions), and authentic deep cultural immersion in Sherpa and Tamang villages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What Travel & Medical Insurance Coverage Do I Need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your travel insurance policy must explicitly cover high-altitude mountain trekking up to 5,500 meters (18,000 ft) and emergency helicopter evacuation. We recommend providers like World Nomads, Global Rescue, or Allianz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When is the Best Season for Trekking in Nepal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Autumn (September to November) offers crisp crystal-clear mountain views and pleasant temperatures, making it peak season. Spring (March to May) features blooming rhododendron forests, warmer weather, and optimal climbing conditions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How Fit Do I Need to Be for Everest Base Camp or Annapurna?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You do not need to be an elite athlete, but moderate cardiovascular fitness is essential. We recommend 2-3 months of pre-trip conditioning including stair climbing, cardio exercises, and weekend day hikes carrying a 5kg pack."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Acute Mountain Sickness (AMS) and How is it Prevented?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AMS is caused by reduced atmospheric oxygen at high elevations above 2,500m. Prevention involves slow gradual ascent, drinking 3-4 liters of water daily, avoiding alcohol, taking acclimatization days, and carrying Diamox (acetazolamide) after consulting your physician."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I Customize My Departure Dates and Itinerary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! Private tailor-made trips offer 100% flexibility. You choose your arrival date in Kathmandu, adjust daily walking hours, select luxury lodge upgrades, or add helicopter return options. Click 'Begin Your Journey' to request your custom quote."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
 
   <!-- Critical Hero Image Preload for Fast LCP -->
@@ -4733,8 +4740,7 @@
               address and subscribe to our newsletter. You can cancel at any time.
             </p>
 
-            <form id="newsletter-form" class="newsletter-form-pill"
-              onsubmit="event.preventDefault(); alert('Thank you for subscribing to Namaste Hiking Trek updates!');">
+            <form id="newsletter-form" class="newsletter-form-pill">
               <label for="newsletter-email-input" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Email Address</label>
               <input id="newsletter-email-input" type="email" class="newsletter-input" placeholder="Enter e-mail address" aria-label="Email Address for Newsletter" required>
               <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
@@ -5259,6 +5265,14 @@
           <span>Send a trek inquiry ↗</span>
         </button>
 
+        <a href="mailto:info@namastehikingtrek.com" class="footer-contact-link">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>info@namastehikingtrek.com</span>
+        </a>
+
         <!-- Social Media Badges (Real Logos & Authentic Brand Colors) -->
         <div class="footer-social-row">
           <!-- 1. Facebook -->
@@ -5471,6 +5485,7 @@
 
   <!-- Client JavaScript Modules -->
   <script type="module" src="js/trek-finder.js?v=16"></script>
+  <script src="js/form-delivery.js"></script>
   <script type="module" src="js/inquiry-modal.js"></script>
   <script src="js/header-scroll.js?v=2"></script>
   <script type="module" src="js/reviews-tabs.js?v=11"></script>

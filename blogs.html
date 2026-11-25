@@ -441,8 +441,8 @@
         <p style="color: var(--color-neutral-300); max-width: 600px; margin: 0 auto 24px auto;">
           Get seasonal trail updates, permit news, and exclusive trekking discounts delivered to your inbox once a month.
         </p>
-        <form style="display: flex; justify-content: center; gap: 12px; max-width: 500px; margin: 0 auto;" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
-          <input type="email" placeholder="Enter your email address" class="form-input" style="background: white;" required>
+        <form id="blog-newsletter-form" style="display: flex; justify-content: center; gap: 12px; max-width: 500px; margin: 0 auto;">
+          <input type="email" name="email" data-field-label="Email Address" placeholder="Enter your email address" class="form-input" style="background: white;" required>
           <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe</button>
         </form>
       </div>
@@ -704,6 +704,14 @@
           <span>Send a trek inquiry ↗</span>
         </button>
 
+        <a href="mailto:info@namastehikingtrek.com" class="footer-contact-link">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>info@namastehikingtrek.com</span>
+        </a>
+
         <!-- Social Media Badges (Real Logos & Authentic Brand Colors) -->
         <div class="footer-social-row">
           <!-- 1. Facebook -->
@@ -914,6 +922,7 @@
 
   </footer>
 
+  <script src="js/form-delivery.js"></script>
   <script type="module" src="js/inquiry-modal.js"></script>
   <script src="js/header-scroll.js"></script>
   <script src="js/mega-menu.js"></script>
