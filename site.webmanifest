@@ -1,0 +1,22 @@
+{
+  "name": "Namaste Hiking Trek",
+  "short_name": "Namaste Trek",
+  "description": "Best Trekking Company in Nepal — Licensed Himalayan Trekking & Tour Agency",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0C2B4E",
+  "icons": [
+    {
+      "src": "./images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
