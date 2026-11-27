@@ -7,7 +7,8 @@
   'use strict';
 
   var TARGET_EMAIL = 'info@namastehikingtrek.com';
-  var ENDPOINT = 'https://formsubmit.co/ajax/' + TARGET_EMAIL;
+  var ENDPOINT = 'https://api.web3forms.com/submit';
+  var ACCESS_KEY = '5542ba54-3acc-4dbd-980a-2fda07aca425';
   var WHATSAPP_URL = 'https://wa.me/9779849009919';
 
   function injectStatusStyles() {
@@ -92,10 +93,13 @@
     var controls = form.querySelectorAll('input, select, textarea');
     controls.forEach(function (el) {
       var type = (el.getAttribute('type') || el.tagName).toLowerCase();
-      if (el.name === '_honey') {
-        if (el.value && el.value.trim() !== '') honeypotTriggered = true;
+      if (el.name === '_honey' || el.name === 'botcheck') {
+        if ((type === 'checkbox' && el.checked) || (type !== 'checkbox' && el.value && el.value.trim() !== '')) {
+          honeypotTriggered = true;
+        }
         return;
       }
+      if (el.name === 'access_key') return;
       if (type === 'submit' || type === 'button' || type === 'reset' || type === 'image') return;
       if (type === 'hidden' && !el.name) return;
       if ((type === 'checkbox' || type === 'radio') && !el.checked) return;
@@ -183,7 +187,7 @@
     var controls = form.querySelectorAll('input, select, textarea');
     for (var i = 0; i < controls.length; i += 1) {
       var el = controls[i];
-      if (el.name === '_honey' || el.disabled) continue;
+      if (el.name === '_honey' || el.name === 'botcheck' || el.disabled) continue;
       if (!el.checkValidity()) {
         var label = getFieldLabel(el, form);
         if (el.validity.valueMissing) {
@@ -260,11 +264,12 @@
     }
 
     var payload = {
-      _subject: subject,
-      _template: 'table',
-      _honey: ''
+      access_key: ACCESS_KEY,
+      subject: subject,
+      from_name: extracted.visitorName || 'Namaste Hiking Trek Website',
+      botcheck: ''
     };
-    if (extracted.visitorEmail) payload._replyto = extracted.visitorEmail;
+    if (extracted.visitorEmail) payload.replyto = extracted.visitorEmail;
     if (trekTitle && !extracted.fields['Selected Trip']) {
       payload['Selected Trip'] = trekTitle;
     }
@@ -302,7 +307,7 @@
         data = null;
       }
 
-      var succeeded = res.ok && (!data || (data.success !== false && data.success !== 'false'));
+      var succeeded = res.ok && data && (data.success === true || data.success === 'true');
       if (!succeeded) {
         throw new Error((data && data.message) || ('HTTP ' + res.status));
       }
