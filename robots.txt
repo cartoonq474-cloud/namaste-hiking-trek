@@ -1,0 +1,75 @@
+# Block all Google crawlers from crawling and indexing this site.
+
+# Common Google crawlers
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-Video
+Disallow: /
+
+User-agent: Googlebot-News
+Disallow: /
+
+User-agent: Storebot-Google
+Disallow: /
+
+User-agent: Google-InspectionTool
+Disallow: /
+
+User-agent: GoogleOther
+Disallow: /
+
+User-agent: GoogleOther-Image
+Disallow: /
+
+User-agent: GoogleOther-Video
+Disallow: /
+
+User-agent: Google-CloudVertexBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Special-case Google crawlers (AdsBot ignores wildcard * rules)
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: AdsBot-Google-Mobile
+Disallow: /
+
+User-agent: Mediapartners-Google
+Disallow: /
+
+User-agent: FeedFetcher-Google
+Disallow: /
+
+User-agent: Google-Read-Aloud
+Disallow: /
+
+User-agent: Google-Safety
+Disallow: /
+
+User-agent: Google-analytics-postbacks
+Disallow: /
+
+User-agent: Google-Calendar-Importer
+Disallow: /
+
+User-agent: GoogleDocs
+Disallow: /
+
+User-agent: Google-Edu
+Disallow: /
+
+User-agent: Pageburst
+Disallow: /
+
+User-agent: PlayStore-Google
+Disallow: /
+
+User-agent: APIs-Google
+Disallow: /
